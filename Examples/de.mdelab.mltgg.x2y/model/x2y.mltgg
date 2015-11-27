@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mltgg:TGG xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mlexpressions="http://www.mdelab.de/mlexpressions/1.0" xmlns:mltgg="http://www.mdelab.de/mltgg/1.0" uuid="_An6LwD8fEeKTTbcgLXf6Gw" name="x2y" tggID="de.mdelab.mltgg.x2y.ruleSetID">
+  <ruleGroups uuid="_BBH9AD8fEeKTTbcgLXf6Gw" name="x2yAxiom" ruleGroupID="x2yAxiom" isAxiom="true">
+    <rules uuid="_EWn5MT8fEeKTTbcgLXf6Gw" name="r1" leftInputElements="_HmOBsT8fEeKTTbcgLXf6Gw" rightInputElements="_WyPf8T8fEeKTTbcgLXf6Gw" ruleID="r1">
+      <leftModelDomain uuid="_F4J9YT8fEeKTTbcgLXf6Gw">
+        <modelObjects uuid="_HmOBsT8fEeKTTbcgLXf6Gw" modifier="CREATE" incomingCorrespondenceLink="_Z6WgYj8fEeKTTbcgLXf6Gw" name="blockDiagram">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/blockDiagram.ecore#//BlockDiagram"/>
+          <attributeAssignments uuid="_PRUQkJSqEeWEF8r0o-7pUA">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_RjOBwJSqEeWEF8r0o-7pUA" expressionString="nameVar" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/blockDiagram.ecore#//Element/name"/>
+          </attributeAssignments>
+        </modelObjects>
+      </leftModelDomain>
+      <rightModelDomain uuid="_GUAy8j8fEeKTTbcgLXf6Gw">
+        <modelObjects uuid="_WyPf8T8fEeKTTbcgLXf6Gw" modifier="CREATE" incomingCorrespondenceLink="_bI1Fsj8fEeKTTbcgLXf6Gw" name="classDiagram">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram"/>
+          <attributeAssignments uuid="_pxhcAJSuEeWQnavgTjiHVg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_MYtScJSvEeWQnavgTjiHVg" expressionString="nameVar" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+      </rightModelDomain>
+      <correspondenceDomain uuid="_GqCGQz8fEeKTTbcgLXf6Gw">
+        <correspondenceNodes uuid="_YbWLwT8fEeKTTbcgLXf6Gw" modifier="CREATE" name="corrAxiom" outgoingLinks="_Z6WgYj8fEeKTTbcgLXf6Gw _bI1Fsj8fEeKTTbcgLXf6Gw">
+          <type xsi:type="ecore:EClass" href="x2y.ecore#//CorrAxiom"/>
+        </correspondenceNodes>
+        <correspondenceLinks uuid="_Z6WgYj8fEeKTTbcgLXf6Gw" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_HmOBsT8fEeKTTbcgLXf6Gw"/>
+        <correspondenceLinks uuid="_bI1Fsj8fEeKTTbcgLXf6Gw" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_WyPf8T8fEeKTTbcgLXf6Gw"/>
+      </correspondenceDomain>
+      <ruleParameters uuid="_QoetQJSpEeWEF8r0o-7pUA" name="nameVar">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_fciXcJSpEeWEF8r0o-7pUA" expressionString="blockDiagram.name" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_cUj54JSpEeWEF8r0o-7pUA" expressionString="classDiagram.name" expressionLanguageID="OCL"/>
+      </ruleParameters>
+    </rules>
+  </ruleGroups>
+</mltgg:TGG>
