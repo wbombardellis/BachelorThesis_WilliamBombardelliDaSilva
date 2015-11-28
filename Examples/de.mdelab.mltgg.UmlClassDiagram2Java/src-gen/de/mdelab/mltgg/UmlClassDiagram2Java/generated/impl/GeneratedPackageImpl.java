@@ -11,8 +11,8 @@ import de.mdelab.mltgg.UmlClassDiagram2Java.generated.GeneratedPackage;
 import de.mdelab.mltgg.UmlClassDiagram2Java.generated.UmlClassDiagram2JavaAxiom;
 import de.mdelab.mltgg.UmlClassDiagram2Java.generated.UmlClassDiagram2JavaAxiom_r1;
 import de.mdelab.mltgg.UmlClassDiagram2Java.generated.UmlClassDiagram2JavaOperationalTGG;
-import de.mdelab.mltgg.UmlClassDiagram2Java.generated.rg2;
-import de.mdelab.mltgg.UmlClassDiagram2Java.generated.rg2_r2;
+import de.mdelab.mltgg.UmlClassDiagram2Java.generated.UmlPackage2JavaPackage;
+import de.mdelab.mltgg.UmlClassDiagram2Java.generated.UmlPackage2JavaPackage_r2;
 
 import de.mdelab.mltgg.UmlClassDiagram2Java.impl.UmlClassDiagram2JavaPackageImpl;
 
@@ -58,7 +58,7 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass rg2EClass = null;
+	private EClass umlPackage2JavaPackageEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -72,7 +72,7 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass rg2_r2EClass = null;
+	private EClass umlPackage2JavaPackage_r2EClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -171,8 +171,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getrg2() {
-		return rg2EClass;
+	public EClass getUmlPackage2JavaPackage() {
+		return umlPackage2JavaPackageEClass;
 	}
 
 	/**
@@ -324,8 +324,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getrg2_r2() {
-		return rg2_r2EClass;
+	public EClass getUmlPackage2JavaPackage_r2() {
+		return umlPackage2JavaPackage_r2EClass;
 	}
 
 	/**
@@ -333,8 +333,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getrg2_r2_AddElementActivity() {
-		return (EReference) rg2_r2EClass.getEStructuralFeatures().get(0);
+	public EReference getUmlPackage2JavaPackage_r2_AddElementActivity() {
+		return (EReference) umlPackage2JavaPackage_r2EClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -342,8 +342,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getrg2_r2_MoveElementActivity() {
-		return (EReference) rg2_r2EClass.getEStructuralFeatures().get(1);
+	public EReference getUmlPackage2JavaPackage_r2_MoveElementActivity() {
+		return (EReference) umlPackage2JavaPackage_r2EClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -351,8 +351,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getrg2_r2_ChangeAttributeActivity() {
-		return (EReference) rg2_r2EClass.getEStructuralFeatures().get(2);
+	public EReference getUmlPackage2JavaPackage_r2_ChangeAttributeActivity() {
+		return (EReference) umlPackage2JavaPackage_r2EClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -360,8 +360,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getrg2_r2_TransformForwardActivity() {
-		return (EReference) rg2_r2EClass.getEStructuralFeatures().get(3);
+	public EReference getUmlPackage2JavaPackage_r2_TransformForwardActivity() {
+		return (EReference) umlPackage2JavaPackage_r2EClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -369,8 +369,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getrg2_r2_TransformMappingActivity() {
-		return (EReference) rg2_r2EClass.getEStructuralFeatures().get(4);
+	public EReference getUmlPackage2JavaPackage_r2_TransformMappingActivity() {
+		return (EReference) umlPackage2JavaPackage_r2EClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -378,8 +378,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getrg2_r2_TransformBackwardActivity() {
-		return (EReference) rg2_r2EClass.getEStructuralFeatures().get(5);
+	public EReference getUmlPackage2JavaPackage_r2_TransformBackwardActivity() {
+		return (EReference) umlPackage2JavaPackage_r2EClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -387,8 +387,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getrg2_r2_ConflictCheckForwardActivity() {
-		return (EReference) rg2_r2EClass.getEStructuralFeatures().get(6);
+	public EReference getUmlPackage2JavaPackage_r2_ConflictCheckForwardActivity() {
+		return (EReference) umlPackage2JavaPackage_r2EClass.getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -396,8 +396,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getrg2_r2_ConflictCheckMappingActivity() {
-		return (EReference) rg2_r2EClass.getEStructuralFeatures().get(7);
+	public EReference getUmlPackage2JavaPackage_r2_ConflictCheckMappingActivity() {
+		return (EReference) umlPackage2JavaPackage_r2EClass.getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -405,8 +405,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getrg2_r2_ConflictCheckBackwardActivity() {
-		return (EReference) rg2_r2EClass.getEStructuralFeatures().get(8);
+	public EReference getUmlPackage2JavaPackage_r2_ConflictCheckBackwardActivity() {
+		return (EReference) umlPackage2JavaPackage_r2EClass.getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -414,8 +414,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getrg2_r2_SynchronizeForwardActivity() {
-		return (EReference) rg2_r2EClass.getEStructuralFeatures().get(9);
+	public EReference getUmlPackage2JavaPackage_r2_SynchronizeForwardActivity() {
+		return (EReference) umlPackage2JavaPackage_r2EClass.getEStructuralFeatures().get(9);
 	}
 
 	/**
@@ -423,8 +423,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getrg2_r2_SynchronizeBackwardActivity() {
-		return (EReference) rg2_r2EClass.getEStructuralFeatures().get(10);
+	public EReference getUmlPackage2JavaPackage_r2_SynchronizeBackwardActivity() {
+		return (EReference) umlPackage2JavaPackage_r2EClass.getEStructuralFeatures().get(10);
 	}
 
 	/**
@@ -432,8 +432,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getrg2_r2_RepairForwardActivity() {
-		return (EReference) rg2_r2EClass.getEStructuralFeatures().get(11);
+	public EReference getUmlPackage2JavaPackage_r2_RepairForwardActivity() {
+		return (EReference) umlPackage2JavaPackage_r2EClass.getEStructuralFeatures().get(11);
 	}
 
 	/**
@@ -441,8 +441,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getrg2_r2_RepairBackwardActivity() {
-		return (EReference) rg2_r2EClass.getEStructuralFeatures().get(12);
+	public EReference getUmlPackage2JavaPackage_r2_RepairBackwardActivity() {
+		return (EReference) umlPackage2JavaPackage_r2EClass.getEStructuralFeatures().get(12);
 	}
 
 	/**
@@ -450,8 +450,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getrg2_r2__AddElement__EMap() {
-		return rg2_r2EClass.getEOperations().get(0);
+	public EOperation getUmlPackage2JavaPackage_r2__AddElement__EMap() {
+		return umlPackage2JavaPackage_r2EClass.getEOperations().get(0);
 	}
 
 	/**
@@ -459,8 +459,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getrg2_r2__ChangeAttributeValues__TGGNode_EMap() {
-		return rg2_r2EClass.getEOperations().get(1);
+	public EOperation getUmlPackage2JavaPackage_r2__ChangeAttributeValues__TGGNode_EMap() {
+		return umlPackage2JavaPackage_r2EClass.getEOperations().get(1);
 	}
 
 	/**
@@ -468,8 +468,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getrg2_r2__MoveElement__TGGNode_TGGNode_TGGNode() {
-		return rg2_r2EClass.getEOperations().get(2);
+	public EOperation getUmlPackage2JavaPackage_r2__MoveElement__TGGNode_TGGNode_TGGNode() {
+		return umlPackage2JavaPackage_r2EClass.getEOperations().get(2);
 	}
 
 	/**
@@ -477,8 +477,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getrg2_r2__TransformForward__TGGNode_boolean_boolean() {
-		return rg2_r2EClass.getEOperations().get(3);
+	public EOperation getUmlPackage2JavaPackage_r2__TransformForward__TGGNode_boolean_boolean() {
+		return umlPackage2JavaPackage_r2EClass.getEOperations().get(3);
 	}
 
 	/**
@@ -486,8 +486,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getrg2_r2__TransformMapping__TGGNode_boolean_boolean() {
-		return rg2_r2EClass.getEOperations().get(4);
+	public EOperation getUmlPackage2JavaPackage_r2__TransformMapping__TGGNode_boolean_boolean() {
+		return umlPackage2JavaPackage_r2EClass.getEOperations().get(4);
 	}
 
 	/**
@@ -495,8 +495,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getrg2_r2__TransformBackward__TGGNode_boolean_boolean() {
-		return rg2_r2EClass.getEOperations().get(5);
+	public EOperation getUmlPackage2JavaPackage_r2__TransformBackward__TGGNode_boolean_boolean() {
+		return umlPackage2JavaPackage_r2EClass.getEOperations().get(5);
 	}
 
 	/**
@@ -504,8 +504,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getrg2_r2__ConflictCheckForward__TGGNode() {
-		return rg2_r2EClass.getEOperations().get(6);
+	public EOperation getUmlPackage2JavaPackage_r2__ConflictCheckForward__TGGNode() {
+		return umlPackage2JavaPackage_r2EClass.getEOperations().get(6);
 	}
 
 	/**
@@ -513,8 +513,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getrg2_r2__ConflictCheckMapping__TGGNode() {
-		return rg2_r2EClass.getEOperations().get(7);
+	public EOperation getUmlPackage2JavaPackage_r2__ConflictCheckMapping__TGGNode() {
+		return umlPackage2JavaPackage_r2EClass.getEOperations().get(7);
 	}
 
 	/**
@@ -522,8 +522,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getrg2_r2__ConflictCheckBackward__TGGNode() {
-		return rg2_r2EClass.getEOperations().get(8);
+	public EOperation getUmlPackage2JavaPackage_r2__ConflictCheckBackward__TGGNode() {
+		return umlPackage2JavaPackage_r2EClass.getEOperations().get(8);
 	}
 
 	/**
@@ -531,8 +531,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getrg2_r2__SynchronizeForward__TGGNode_boolean() {
-		return rg2_r2EClass.getEOperations().get(9);
+	public EOperation getUmlPackage2JavaPackage_r2__SynchronizeForward__TGGNode_boolean() {
+		return umlPackage2JavaPackage_r2EClass.getEOperations().get(9);
 	}
 
 	/**
@@ -540,8 +540,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getrg2_r2__SynchronizeBackward__TGGNode_boolean() {
-		return rg2_r2EClass.getEOperations().get(10);
+	public EOperation getUmlPackage2JavaPackage_r2__SynchronizeBackward__TGGNode_boolean() {
+		return umlPackage2JavaPackage_r2EClass.getEOperations().get(10);
 	}
 
 	/**
@@ -549,8 +549,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getrg2_r2__RepairForward__TGGNode_boolean() {
-		return rg2_r2EClass.getEOperations().get(11);
+	public EOperation getUmlPackage2JavaPackage_r2__RepairForward__TGGNode_boolean() {
+		return umlPackage2JavaPackage_r2EClass.getEOperations().get(11);
 	}
 
 	/**
@@ -558,8 +558,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getrg2_r2__RepairBackward__TGGNode_boolean() {
-		return rg2_r2EClass.getEOperations().get(12);
+	public EOperation getUmlPackage2JavaPackage_r2__RepairBackward__TGGNode_boolean() {
+		return umlPackage2JavaPackage_r2EClass.getEOperations().get(12);
 	}
 
 	/**
@@ -595,7 +595,7 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 
 		umlClassDiagram2JavaAxiomEClass = createEClass(UML_CLASS_DIAGRAM2_JAVA_AXIOM);
 
-		rg2EClass = createEClass(RG2);
+		umlPackage2JavaPackageEClass = createEClass(UML_PACKAGE2_JAVA_PACKAGE);
 
 		umlClassDiagram2JavaAxiom_r1EClass = createEClass(UML_CLASS_DIAGRAM2_JAVA_AXIOM_R1);
 		createEReference(umlClassDiagram2JavaAxiom_r1EClass, UML_CLASS_DIAGRAM2_JAVA_AXIOM_R1__ADD_ELEMENT_ACTIVITY);
@@ -627,33 +627,48 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 		createEOperation(umlClassDiagram2JavaAxiom_r1EClass,
 				UML_CLASS_DIAGRAM2_JAVA_AXIOM_R1___SYNCHRONIZE_BACKWARD__ELIST_ELIST_TGGNODE_BOOLEAN);
 
-		rg2_r2EClass = createEClass(RG2_R2);
-		createEReference(rg2_r2EClass, RG2_R2__ADD_ELEMENT_ACTIVITY);
-		createEReference(rg2_r2EClass, RG2_R2__MOVE_ELEMENT_ACTIVITY);
-		createEReference(rg2_r2EClass, RG2_R2__CHANGE_ATTRIBUTE_ACTIVITY);
-		createEReference(rg2_r2EClass, RG2_R2__TRANSFORM_FORWARD_ACTIVITY);
-		createEReference(rg2_r2EClass, RG2_R2__TRANSFORM_MAPPING_ACTIVITY);
-		createEReference(rg2_r2EClass, RG2_R2__TRANSFORM_BACKWARD_ACTIVITY);
-		createEReference(rg2_r2EClass, RG2_R2__CONFLICT_CHECK_FORWARD_ACTIVITY);
-		createEReference(rg2_r2EClass, RG2_R2__CONFLICT_CHECK_MAPPING_ACTIVITY);
-		createEReference(rg2_r2EClass, RG2_R2__CONFLICT_CHECK_BACKWARD_ACTIVITY);
-		createEReference(rg2_r2EClass, RG2_R2__SYNCHRONIZE_FORWARD_ACTIVITY);
-		createEReference(rg2_r2EClass, RG2_R2__SYNCHRONIZE_BACKWARD_ACTIVITY);
-		createEReference(rg2_r2EClass, RG2_R2__REPAIR_FORWARD_ACTIVITY);
-		createEReference(rg2_r2EClass, RG2_R2__REPAIR_BACKWARD_ACTIVITY);
-		createEOperation(rg2_r2EClass, RG2_R2___ADD_ELEMENT__EMAP);
-		createEOperation(rg2_r2EClass, RG2_R2___CHANGE_ATTRIBUTE_VALUES__TGGNODE_EMAP);
-		createEOperation(rg2_r2EClass, RG2_R2___MOVE_ELEMENT__TGGNODE_TGGNODE_TGGNODE);
-		createEOperation(rg2_r2EClass, RG2_R2___TRANSFORM_FORWARD__TGGNODE_BOOLEAN_BOOLEAN);
-		createEOperation(rg2_r2EClass, RG2_R2___TRANSFORM_MAPPING__TGGNODE_BOOLEAN_BOOLEAN);
-		createEOperation(rg2_r2EClass, RG2_R2___TRANSFORM_BACKWARD__TGGNODE_BOOLEAN_BOOLEAN);
-		createEOperation(rg2_r2EClass, RG2_R2___CONFLICT_CHECK_FORWARD__TGGNODE);
-		createEOperation(rg2_r2EClass, RG2_R2___CONFLICT_CHECK_MAPPING__TGGNODE);
-		createEOperation(rg2_r2EClass, RG2_R2___CONFLICT_CHECK_BACKWARD__TGGNODE);
-		createEOperation(rg2_r2EClass, RG2_R2___SYNCHRONIZE_FORWARD__TGGNODE_BOOLEAN);
-		createEOperation(rg2_r2EClass, RG2_R2___SYNCHRONIZE_BACKWARD__TGGNODE_BOOLEAN);
-		createEOperation(rg2_r2EClass, RG2_R2___REPAIR_FORWARD__TGGNODE_BOOLEAN);
-		createEOperation(rg2_r2EClass, RG2_R2___REPAIR_BACKWARD__TGGNODE_BOOLEAN);
+		umlPackage2JavaPackage_r2EClass = createEClass(UML_PACKAGE2_JAVA_PACKAGE_R2);
+		createEReference(umlPackage2JavaPackage_r2EClass, UML_PACKAGE2_JAVA_PACKAGE_R2__ADD_ELEMENT_ACTIVITY);
+		createEReference(umlPackage2JavaPackage_r2EClass, UML_PACKAGE2_JAVA_PACKAGE_R2__MOVE_ELEMENT_ACTIVITY);
+		createEReference(umlPackage2JavaPackage_r2EClass, UML_PACKAGE2_JAVA_PACKAGE_R2__CHANGE_ATTRIBUTE_ACTIVITY);
+		createEReference(umlPackage2JavaPackage_r2EClass, UML_PACKAGE2_JAVA_PACKAGE_R2__TRANSFORM_FORWARD_ACTIVITY);
+		createEReference(umlPackage2JavaPackage_r2EClass, UML_PACKAGE2_JAVA_PACKAGE_R2__TRANSFORM_MAPPING_ACTIVITY);
+		createEReference(umlPackage2JavaPackage_r2EClass, UML_PACKAGE2_JAVA_PACKAGE_R2__TRANSFORM_BACKWARD_ACTIVITY);
+		createEReference(umlPackage2JavaPackage_r2EClass,
+				UML_PACKAGE2_JAVA_PACKAGE_R2__CONFLICT_CHECK_FORWARD_ACTIVITY);
+		createEReference(umlPackage2JavaPackage_r2EClass,
+				UML_PACKAGE2_JAVA_PACKAGE_R2__CONFLICT_CHECK_MAPPING_ACTIVITY);
+		createEReference(umlPackage2JavaPackage_r2EClass,
+				UML_PACKAGE2_JAVA_PACKAGE_R2__CONFLICT_CHECK_BACKWARD_ACTIVITY);
+		createEReference(umlPackage2JavaPackage_r2EClass, UML_PACKAGE2_JAVA_PACKAGE_R2__SYNCHRONIZE_FORWARD_ACTIVITY);
+		createEReference(umlPackage2JavaPackage_r2EClass, UML_PACKAGE2_JAVA_PACKAGE_R2__SYNCHRONIZE_BACKWARD_ACTIVITY);
+		createEReference(umlPackage2JavaPackage_r2EClass, UML_PACKAGE2_JAVA_PACKAGE_R2__REPAIR_FORWARD_ACTIVITY);
+		createEReference(umlPackage2JavaPackage_r2EClass, UML_PACKAGE2_JAVA_PACKAGE_R2__REPAIR_BACKWARD_ACTIVITY);
+		createEOperation(umlPackage2JavaPackage_r2EClass, UML_PACKAGE2_JAVA_PACKAGE_R2___ADD_ELEMENT__EMAP);
+		createEOperation(umlPackage2JavaPackage_r2EClass,
+				UML_PACKAGE2_JAVA_PACKAGE_R2___CHANGE_ATTRIBUTE_VALUES__TGGNODE_EMAP);
+		createEOperation(umlPackage2JavaPackage_r2EClass,
+				UML_PACKAGE2_JAVA_PACKAGE_R2___MOVE_ELEMENT__TGGNODE_TGGNODE_TGGNODE);
+		createEOperation(umlPackage2JavaPackage_r2EClass,
+				UML_PACKAGE2_JAVA_PACKAGE_R2___TRANSFORM_FORWARD__TGGNODE_BOOLEAN_BOOLEAN);
+		createEOperation(umlPackage2JavaPackage_r2EClass,
+				UML_PACKAGE2_JAVA_PACKAGE_R2___TRANSFORM_MAPPING__TGGNODE_BOOLEAN_BOOLEAN);
+		createEOperation(umlPackage2JavaPackage_r2EClass,
+				UML_PACKAGE2_JAVA_PACKAGE_R2___TRANSFORM_BACKWARD__TGGNODE_BOOLEAN_BOOLEAN);
+		createEOperation(umlPackage2JavaPackage_r2EClass,
+				UML_PACKAGE2_JAVA_PACKAGE_R2___CONFLICT_CHECK_FORWARD__TGGNODE);
+		createEOperation(umlPackage2JavaPackage_r2EClass,
+				UML_PACKAGE2_JAVA_PACKAGE_R2___CONFLICT_CHECK_MAPPING__TGGNODE);
+		createEOperation(umlPackage2JavaPackage_r2EClass,
+				UML_PACKAGE2_JAVA_PACKAGE_R2___CONFLICT_CHECK_BACKWARD__TGGNODE);
+		createEOperation(umlPackage2JavaPackage_r2EClass,
+				UML_PACKAGE2_JAVA_PACKAGE_R2___SYNCHRONIZE_FORWARD__TGGNODE_BOOLEAN);
+		createEOperation(umlPackage2JavaPackage_r2EClass,
+				UML_PACKAGE2_JAVA_PACKAGE_R2___SYNCHRONIZE_BACKWARD__TGGNODE_BOOLEAN);
+		createEOperation(umlPackage2JavaPackage_r2EClass,
+				UML_PACKAGE2_JAVA_PACKAGE_R2___REPAIR_FORWARD__TGGNODE_BOOLEAN);
+		createEOperation(umlPackage2JavaPackage_r2EClass,
+				UML_PACKAGE2_JAVA_PACKAGE_R2___REPAIR_BACKWARD__TGGNODE_BOOLEAN);
 	}
 
 	/**
@@ -696,9 +711,9 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 		// Add supertypes to classes
 		umlClassDiagram2JavaOperationalTGGEClass.getESuperTypes().add(theSdmPackage.getSdmOperationalTGG());
 		umlClassDiagram2JavaAxiomEClass.getESuperTypes().add(theOperationalTGGPackage.getOperationalAxiomGroup());
-		rg2EClass.getESuperTypes().add(theOperationalTGGPackage.getOperationalRuleGroup());
+		umlPackage2JavaPackageEClass.getESuperTypes().add(theOperationalTGGPackage.getOperationalRuleGroup());
 		umlClassDiagram2JavaAxiom_r1EClass.getESuperTypes().add(theOperationalTGGPackage.getOperationalAxiom());
-		rg2_r2EClass.getESuperTypes().add(theOperationalTGGPackage.getOperationalRule());
+		umlPackage2JavaPackage_r2EClass.getESuperTypes().add(theOperationalTGGPackage.getOperationalRule());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(umlClassDiagram2JavaOperationalTGGEClass, UmlClassDiagram2JavaOperationalTGG.class,
@@ -707,7 +722,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 		initEClass(umlClassDiagram2JavaAxiomEClass, UmlClassDiagram2JavaAxiom.class, "UmlClassDiagram2JavaAxiom",
 				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(rg2EClass, rg2.class, "rg2", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(umlPackage2JavaPackageEClass, UmlPackage2JavaPackage.class, "UmlPackage2JavaPackage", !IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(umlClassDiagram2JavaAxiom_r1EClass, UmlClassDiagram2JavaAxiom_r1.class,
 				"UmlClassDiagram2JavaAxiom_r1", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -799,49 +815,53 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEException(op, theHelpersPackage.getTransformationException());
 
-		initEClass(rg2_r2EClass, rg2_r2.class, "rg2_r2", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getrg2_r2_AddElementActivity(), theMlsdmPackage.getActivity(), null, "addElementActivity", null,
-				1, 1, rg2_r2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
-				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getrg2_r2_MoveElementActivity(), theMlsdmPackage.getActivity(), null, "moveElementActivity",
-				null, 1, 1, rg2_r2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
-				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getrg2_r2_ChangeAttributeActivity(), theMlsdmPackage.getActivity(), null,
-				"changeAttributeActivity", null, 1, 1, rg2_r2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-				!IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getrg2_r2_TransformForwardActivity(), theMlsdmPackage.getActivity(), null,
-				"transformForwardActivity", null, 1, 1, rg2_r2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-				!IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getrg2_r2_TransformMappingActivity(), theMlsdmPackage.getActivity(), null,
-				"transformMappingActivity", null, 1, 1, rg2_r2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-				!IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getrg2_r2_TransformBackwardActivity(), theMlsdmPackage.getActivity(), null,
-				"transformBackwardActivity", null, 1, 1, rg2_r2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-				!IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getrg2_r2_ConflictCheckForwardActivity(), theMlsdmPackage.getActivity(), null,
-				"conflictCheckForwardActivity", null, 1, 1, rg2_r2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-				!IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getrg2_r2_ConflictCheckMappingActivity(), theMlsdmPackage.getActivity(), null,
-				"conflictCheckMappingActivity", null, 1, 1, rg2_r2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-				!IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getrg2_r2_ConflictCheckBackwardActivity(), theMlsdmPackage.getActivity(), null,
-				"conflictCheckBackwardActivity", null, 1, 1, rg2_r2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-				!IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getrg2_r2_SynchronizeForwardActivity(), theMlsdmPackage.getActivity(), null,
-				"synchronizeForwardActivity", null, 1, 1, rg2_r2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-				!IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getrg2_r2_SynchronizeBackwardActivity(), theMlsdmPackage.getActivity(), null,
-				"synchronizeBackwardActivity", null, 1, 1, rg2_r2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-				!IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getrg2_r2_RepairForwardActivity(), theMlsdmPackage.getActivity(), null, "repairForwardActivity",
-				null, 1, 1, rg2_r2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
-				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getrg2_r2_RepairBackwardActivity(), theMlsdmPackage.getActivity(), null,
-				"repairBackwardActivity", null, 1, 1, rg2_r2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-				!IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		op = initEOperation(getrg2_r2__AddElement__EMap(), theMote2Package.getTGGNode(), "addElement", 1, 1, IS_UNIQUE,
+		initEClass(umlPackage2JavaPackage_r2EClass, UmlPackage2JavaPackage_r2.class, "UmlPackage2JavaPackage_r2",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getUmlPackage2JavaPackage_r2_AddElementActivity(), theMlsdmPackage.getActivity(), null,
+				"addElementActivity", null, 1, 1, UmlPackage2JavaPackage_r2.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getUmlPackage2JavaPackage_r2_MoveElementActivity(), theMlsdmPackage.getActivity(), null,
+				"moveElementActivity", null, 1, 1, UmlPackage2JavaPackage_r2.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getUmlPackage2JavaPackage_r2_ChangeAttributeActivity(), theMlsdmPackage.getActivity(), null,
+				"changeAttributeActivity", null, 1, 1, UmlPackage2JavaPackage_r2.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getUmlPackage2JavaPackage_r2_TransformForwardActivity(), theMlsdmPackage.getActivity(), null,
+				"transformForwardActivity", null, 1, 1, UmlPackage2JavaPackage_r2.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getUmlPackage2JavaPackage_r2_TransformMappingActivity(), theMlsdmPackage.getActivity(), null,
+				"transformMappingActivity", null, 1, 1, UmlPackage2JavaPackage_r2.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getUmlPackage2JavaPackage_r2_TransformBackwardActivity(), theMlsdmPackage.getActivity(), null,
+				"transformBackwardActivity", null, 1, 1, UmlPackage2JavaPackage_r2.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getUmlPackage2JavaPackage_r2_ConflictCheckForwardActivity(), theMlsdmPackage.getActivity(), null,
+				"conflictCheckForwardActivity", null, 1, 1, UmlPackage2JavaPackage_r2.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
 				IS_ORDERED);
+		initEReference(getUmlPackage2JavaPackage_r2_ConflictCheckMappingActivity(), theMlsdmPackage.getActivity(), null,
+				"conflictCheckMappingActivity", null, 1, 1, UmlPackage2JavaPackage_r2.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getUmlPackage2JavaPackage_r2_ConflictCheckBackwardActivity(), theMlsdmPackage.getActivity(),
+				null, "conflictCheckBackwardActivity", null, 1, 1, UmlPackage2JavaPackage_r2.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getUmlPackage2JavaPackage_r2_SynchronizeForwardActivity(), theMlsdmPackage.getActivity(), null,
+				"synchronizeForwardActivity", null, 1, 1, UmlPackage2JavaPackage_r2.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getUmlPackage2JavaPackage_r2_SynchronizeBackwardActivity(), theMlsdmPackage.getActivity(), null,
+				"synchronizeBackwardActivity", null, 1, 1, UmlPackage2JavaPackage_r2.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getUmlPackage2JavaPackage_r2_RepairForwardActivity(), theMlsdmPackage.getActivity(), null,
+				"repairForwardActivity", null, 1, 1, UmlPackage2JavaPackage_r2.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getUmlPackage2JavaPackage_r2_RepairBackwardActivity(), theMlsdmPackage.getActivity(), null,
+				"repairBackwardActivity", null, 1, 1, UmlPackage2JavaPackage_r2.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		op = initEOperation(getUmlPackage2JavaPackage_r2__AddElement__EMap(), theMote2Package.getTGGNode(),
+				"addElement", 1, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(theHelpersPackage.getMapEntry());
 		g2 = createEGenericType(ecorePackage.getEString());
 		g1.getETypeArguments().add(g2);
@@ -850,8 +870,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 		addEParameter(op, g1, "parameters", 0, -1, IS_UNIQUE, IS_ORDERED);
 		addEException(op, theHelpersPackage.getTransformationException());
 
-		op = initEOperation(getrg2_r2__ChangeAttributeValues__TGGNode_EMap(), ecorePackage.getEBoolean(),
-				"changeAttributeValues", 1, 1, IS_UNIQUE, IS_ORDERED);
+		op = initEOperation(getUmlPackage2JavaPackage_r2__ChangeAttributeValues__TGGNode_EMap(),
+				ecorePackage.getEBoolean(), "changeAttributeValues", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theMote2Package.getTGGNode(), "correspondenceNode", 1, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(theHelpersPackage.getMapEntry());
 		g2 = createEGenericType(ecorePackage.getEString());
@@ -861,69 +881,69 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 		addEParameter(op, g1, "ruleParameters", 0, -1, IS_UNIQUE, IS_ORDERED);
 		addEException(op, theHelpersPackage.getTransformationException());
 
-		op = initEOperation(getrg2_r2__MoveElement__TGGNode_TGGNode_TGGNode(), ecorePackage.getEBoolean(),
-				"moveElement", 1, 1, IS_UNIQUE, IS_ORDERED);
+		op = initEOperation(getUmlPackage2JavaPackage_r2__MoveElement__TGGNode_TGGNode_TGGNode(),
+				ecorePackage.getEBoolean(), "moveElement", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theMote2Package.getTGGNode(), "correspondenceNode", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theMote2Package.getTGGNode(), "oldPreviousCorrespondenceNode", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theMote2Package.getTGGNode(), "newPreviousCorrespondenceNode", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEException(op, theHelpersPackage.getTransformationException());
 
-		op = initEOperation(getrg2_r2__TransformForward__TGGNode_boolean_boolean(),
+		op = initEOperation(getUmlPackage2JavaPackage_r2__TransformForward__TGGNode_boolean_boolean(),
 				theOperationalTGGPackage.getErrorCodeEnum(), "transformForward", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEBoolean(), "considerAllLhsCorrNodes", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEException(op, theHelpersPackage.getTransformationException());
 
-		op = initEOperation(getrg2_r2__TransformMapping__TGGNode_boolean_boolean(),
+		op = initEOperation(getUmlPackage2JavaPackage_r2__TransformMapping__TGGNode_boolean_boolean(),
 				theOperationalTGGPackage.getErrorCodeEnum(), "transformMapping", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEBoolean(), "considerAllLhsCorrNodes", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEException(op, theHelpersPackage.getTransformationException());
 
-		op = initEOperation(getrg2_r2__TransformBackward__TGGNode_boolean_boolean(),
+		op = initEOperation(getUmlPackage2JavaPackage_r2__TransformBackward__TGGNode_boolean_boolean(),
 				theOperationalTGGPackage.getErrorCodeEnum(), "transformBackward", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEBoolean(), "considerAllLhsCorrNodes", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEException(op, theHelpersPackage.getTransformationException());
 
-		op = initEOperation(getrg2_r2__ConflictCheckForward__TGGNode(), ecorePackage.getEObject(),
+		op = initEOperation(getUmlPackage2JavaPackage_r2__ConflictCheckForward__TGGNode(), ecorePackage.getEObject(),
 				"conflictCheckForward", 0, -1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEException(op, theHelpersPackage.getTransformationException());
 
-		op = initEOperation(getrg2_r2__ConflictCheckMapping__TGGNode(), ecorePackage.getEObject(),
+		op = initEOperation(getUmlPackage2JavaPackage_r2__ConflictCheckMapping__TGGNode(), ecorePackage.getEObject(),
 				"conflictCheckMapping", 0, -1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEException(op, theHelpersPackage.getTransformationException());
 
-		op = initEOperation(getrg2_r2__ConflictCheckBackward__TGGNode(), ecorePackage.getEObject(),
+		op = initEOperation(getUmlPackage2JavaPackage_r2__ConflictCheckBackward__TGGNode(), ecorePackage.getEObject(),
 				"conflictCheckBackward", 0, -1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEException(op, theHelpersPackage.getTransformationException());
 
-		op = initEOperation(getrg2_r2__SynchronizeForward__TGGNode_boolean(),
+		op = initEOperation(getUmlPackage2JavaPackage_r2__SynchronizeForward__TGGNode_boolean(),
 				theOperationalTGGPackage.getErrorCodeEnum(), "synchronizeForward", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEException(op, theHelpersPackage.getTransformationException());
 
-		op = initEOperation(getrg2_r2__SynchronizeBackward__TGGNode_boolean(),
+		op = initEOperation(getUmlPackage2JavaPackage_r2__SynchronizeBackward__TGGNode_boolean(),
 				theOperationalTGGPackage.getErrorCodeEnum(), "synchronizeBackward", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEException(op, theHelpersPackage.getTransformationException());
 
-		op = initEOperation(getrg2_r2__RepairForward__TGGNode_boolean(), theOperationalTGGPackage.getErrorCodeEnum(),
-				"repairForward", 1, 1, IS_UNIQUE, IS_ORDERED);
+		op = initEOperation(getUmlPackage2JavaPackage_r2__RepairForward__TGGNode_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "repairForward", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEException(op, theHelpersPackage.getTransformationException());
 
-		op = initEOperation(getrg2_r2__RepairBackward__TGGNode_boolean(), theOperationalTGGPackage.getErrorCodeEnum(),
-				"repairBackward", 1, 1, IS_UNIQUE, IS_ORDERED);
+		op = initEOperation(getUmlPackage2JavaPackage_r2__RepairBackward__TGGNode_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "repairBackward", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEException(op, theHelpersPackage.getTransformationException());

@@ -87,8 +87,8 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caserg2(rg2 object) {
-			return createrg2Adapter();
+		public Adapter caseUmlPackage2JavaPackage(UmlPackage2JavaPackage object) {
+			return createUmlPackage2JavaPackageAdapter();
 		}
 
 		@Override
@@ -97,8 +97,8 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caserg2_r2(rg2_r2 object) {
-			return createrg2_r2Adapter();
+		public Adapter caseUmlPackage2JavaPackage_r2(UmlPackage2JavaPackage_r2 object) {
+			return createUmlPackage2JavaPackage_r2Adapter();
 		}
 
 		@Override
@@ -189,16 +189,16 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link de.mdelab.mltgg.UmlClassDiagram2Java.generated.rg2 <em>rg2</em>}'.
+	 * Creates a new adapter for an object of class '{@link de.mdelab.mltgg.UmlClassDiagram2Java.generated.UmlPackage2JavaPackage <em>Uml Package2 Java Package</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see de.mdelab.mltgg.UmlClassDiagram2Java.generated.rg2
+	 * @see de.mdelab.mltgg.UmlClassDiagram2Java.generated.UmlPackage2JavaPackage
 	 * @generated
 	 */
-	public Adapter createrg2Adapter() {
+	public Adapter createUmlPackage2JavaPackageAdapter() {
 		return null;
 	}
 
@@ -217,16 +217,16 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link de.mdelab.mltgg.UmlClassDiagram2Java.generated.rg2_r2 <em>rg2 r2</em>}'.
+	 * Creates a new adapter for an object of class '{@link de.mdelab.mltgg.UmlClassDiagram2Java.generated.UmlPackage2JavaPackage_r2 <em>Uml Package2 Java Package r2</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see de.mdelab.mltgg.UmlClassDiagram2Java.generated.rg2_r2
+	 * @see de.mdelab.mltgg.UmlClassDiagram2Java.generated.UmlPackage2JavaPackage_r2
 	 * @generated
 	 */
-	public Adapter createrg2_r2Adapter() {
+	public Adapter createUmlPackage2JavaPackage_r2Adapter() {
 		return null;
 	}
 

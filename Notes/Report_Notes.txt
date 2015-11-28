@@ -1,10 +1,3 @@
-Java.ecore from JaMopp (https://github.com/DevBoost/JaMoPP/tree/master/Core/org.emftext.language.java/metamodel. 13.Nov2015)
-UML from OMG website (http://www.omg.org/spec/MOF/2.4.1/, 13.Nov.2015)
-Ecore metamodel from Eclipse EMF plugin (https://github.com/cloudsmith/org.eclipse.emf, 13 Nov. 2015)
-
-Java.ecore: replace :....layout.ecore to primitiveTypes.ecore
-Rename the ecore metamodel to primitiveTypes.ecore
-
 -Enhancements/Future Work
 These metamodels should be available online with easy access
 Polynomial time execution?
@@ -17,19 +10,16 @@ Translate TGG to ATL
 -Install EMF Compare?
 -Install Ecore Tools
 -Install Mote Plugin (http://download.eclipse.org/ecoretools/updates/releases/3.0.1/mars) (With errors?)
--New Mote Project without any source or target meta model
--In .ecore file created by default load resource (choose your source and target ecore metamodels)
--These metamodels can be visualized by right-clicking, Initialize Ecore Diagram, then adding models in the graphical editor and arranging them
--Ctrl+o to search
+-Install JaMoPP Plugin (http://jamopp.org/update/)
+
+=======Creating a transformation========
+-New Mote Project without any source or target meta model (choose your models here, in order for the transformation to work properly)
+-All the fields in the creation have to be concise (inclusive URI, name, etc)
+-In .ecore file created by default load resource (choose your source and target ecore metamodels ?)
+-Change TGG ID according to the project name
 -Now on the mltgg file initialize the mltgg_diagram file (One diagram file for each rule group; and one rule for each rule group)
--Load resources (Source and target metamodels)
+-Load resources in this file too (Source and target metamodels)
 -Create Rule
-
-
-=======Reopen .aird files=========
--Open Sirius model explore view
--open .aird file (unfold it)
--double click on the desired category file
 
 =======Executing Transformation=========
 -Execute the create operational rules workflow
@@ -43,4 +33,41 @@ Translate TGG to ATL
 -create a right side example model
 -execute the workflow
 
-=======Create Example Model=========
+=======Create Any Example Model=========
+-New... Ecore Modeling Project
+-Paste or create .ecore file describing the model
+-New... EMF Generator model regarded to the model just created
+-Open the .genmodel model, set the base package name according to the name of your project
+-Right-click on the first element (root?): Generate Model Code (?)
+-Right-click on the first element (root?): Generate Edit Code
+-Right-click on the first element (root?): Generate Editor Code
+-Right-click on editor project: Run as... Eclipse Application (This will run the wizard plugin just created)
+-In the new window: New... XXX Model
+-Later implement these plugins as common plugins? (like when executing Transformation)
+-These metamodels can be visualized by right-clicking, Initialize Ecore Diagram, then adding models in the graphical editor and arranging them
+-Ctrl+o to search
+-Images can be saved
+
+=======Create UML Example Model=========
+-Use UML Meta-model from eclipse (org.eclipse.uml2.uml_5.1.0.v20150906-1225 //Cool models here!!)
+-There is already a default plugin wizard for creation
+-New... UML Model
+
+=======Create Java Example Model=========
+-First possibility:
+    Like any common model, except that we use the java model from eclipse (org.eclipse.emf.java, acquired after creating a "java model example" on eclipse) (But this models is quite too simple)
+-Second possibility
+    Use the JaMoPP Java model (Howw???)
+
+=======Reopen .aird files=========
+-Open Sirius model explore view
+-open .aird file (unfold it)
+-double click on the desired category file
+
+
+=======Used Models for initial tests========
+Java.ecore from JaMopp (https://github.com/DevBoost/JaMoPP/tree/master/Core/org.emftext.language.java/metamodel. 13.Nov2015)
+UML from OMG website (http://www.omg.org/spec/MOF/2.4.1/, 13.Nov.2015)
+Ecore metamodel from Eclipse EMF plugin (https://github.com/cloudsmith/org.eclipse.emf, 13 Nov. 2015)
+Java.ecore: replace :....layout.ecore to primitiveTypes.ecore (Or remove the element?)
+Rename the ecore metamodel to primitiveTypes.ecore (or reference to the actual ecore plugin)

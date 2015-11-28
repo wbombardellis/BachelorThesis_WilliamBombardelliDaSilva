@@ -501,7 +501,7 @@ public class UmlClassDiagram2JavaAxiom_r1Impl extends OperationalAxiomImpl imple
 		de.mdelab.mltgg.mote2.TGGNode tggNode = (de.mdelab.mltgg.mote2.TGGNode) parametersCopy.get("corrAxiom");
 
 		if (tggNode != null) {
-			leftInputElements.add((org.eclipse.emf.ecore.EObject) parametersCopy.get("Uml Class Diagram"));
+			leftInputElements.add((org.eclipse.emf.ecore.EObject) parametersCopy.get("UmlClassDiagram"));
 			rightInputElements.add((org.eclipse.emf.ecore.EObject) parametersCopy.get("Java System"));
 		}
 
@@ -540,7 +540,7 @@ public class UmlClassDiagram2JavaAxiom_r1Impl extends OperationalAxiomImpl imple
 
 		parameters.put("__thisRule", this);
 		parameters.put("__checkAttributeFormulae", checkAttributeFormulae);
-		parameters.put("Uml Class Diagram", leftInputElements.get(0));
+		parameters.put("UmlClassDiagram", leftInputElements.get(0));
 
 		((de.mdelab.mltgg.UmlClassDiagram2Java.generated.UmlClassDiagram2JavaOperationalTGG) this
 				.getOperationalAxiomGroup().getOperationalTGG()).executeActivity(this.getTransformForwardActivity(),
@@ -568,7 +568,7 @@ public class UmlClassDiagram2JavaAxiom_r1Impl extends OperationalAxiomImpl imple
 
 		parameters.put("__thisRule", this);
 		parameters.put("__checkAttributeFormulae", checkAttributeFormulae);
-		parameters.put("Uml Class Diagram", leftInputElements.get(0));
+		parameters.put("UmlClassDiagram", leftInputElements.get(0));
 		parameters.put("Java System", rightInputElements.get(0));
 
 		((de.mdelab.mltgg.UmlClassDiagram2Java.generated.UmlClassDiagram2JavaOperationalTGG) this
@@ -579,7 +579,7 @@ public class UmlClassDiagram2JavaAxiom_r1Impl extends OperationalAxiomImpl imple
 
 		if (errorCode == ErrorCodeEnum.OK) {
 			rightInputElements.add((org.eclipse.emf.ecore.EObject) parameters.get("Java System"));
-			leftInputElements.add((org.eclipse.emf.ecore.EObject) parameters.get("Uml Class Diagram"));
+			leftInputElements.add((org.eclipse.emf.ecore.EObject) parameters.get("UmlClassDiagram"));
 		}
 
 		return errorCode;
@@ -607,7 +607,7 @@ public class UmlClassDiagram2JavaAxiom_r1Impl extends OperationalAxiomImpl imple
 		final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get("__errorCode");
 
 		if (errorCode == ErrorCodeEnum.OK) {
-			leftInputElements.add((org.eclipse.emf.ecore.EObject) parameters.get("Uml Class Diagram"));
+			leftInputElements.add((org.eclipse.emf.ecore.EObject) parameters.get("UmlClassDiagram"));
 		}
 
 		return errorCode;
@@ -627,7 +627,7 @@ public class UmlClassDiagram2JavaAxiom_r1Impl extends OperationalAxiomImpl imple
 		parameters.put("__thisRule", this);
 		parameters.put("__checkAttributeFormulae", checkAttributeFormulae);
 		parameters.put("__inputTggNode", inputTggNode);
-		parameters.put("Uml Class Diagram", leftInputElements.get(0));
+		parameters.put("UmlClassDiagram", leftInputElements.get(0));
 		parameters.put("Java System", rightInputElements.get(0));
 
 		((de.mdelab.mltgg.UmlClassDiagram2Java.generated.UmlClassDiagram2JavaOperationalTGG) this
@@ -657,7 +657,7 @@ public class UmlClassDiagram2JavaAxiom_r1Impl extends OperationalAxiomImpl imple
 		parameters.put("__thisRule", this);
 		parameters.put("__checkAttributeFormulae", checkAttributeFormulae);
 		parameters.put("__inputTggNode", inputTggNode);
-		parameters.put("Uml Class Diagram", leftInputElements.get(0));
+		parameters.put("UmlClassDiagram", leftInputElements.get(0));
 		parameters.put("Java System", rightInputElements.get(0));
 
 		((de.mdelab.mltgg.UmlClassDiagram2Java.generated.UmlClassDiagram2JavaOperationalTGG) this
@@ -667,7 +667,7 @@ public class UmlClassDiagram2JavaAxiom_r1Impl extends OperationalAxiomImpl imple
 		final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get("__errorCode");
 
 		if (errorCode == ErrorCodeEnum.OK) {
-			leftInputElements.add((org.eclipse.emf.ecore.EObject) parameters.get("Uml Class Diagram"));
+			leftInputElements.add((org.eclipse.emf.ecore.EObject) parameters.get("UmlClassDiagram"));
 		}
 
 		return errorCode;

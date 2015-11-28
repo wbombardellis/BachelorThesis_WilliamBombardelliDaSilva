@@ -40,13 +40,13 @@ public interface GeneratedFactory extends EFactory {
 	UmlClassDiagram2JavaAxiom createUmlClassDiagram2JavaAxiom();
 
 	/**
-	 * Returns a new object of class '<em>rg2</em>'.
+	 * Returns a new object of class '<em>Uml Package2 Java Package</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>rg2</em>'.
+	 * @return a new object of class '<em>Uml Package2 Java Package</em>'.
 	 * @generated
 	 */
-	rg2 createrg2();
+	UmlPackage2JavaPackage createUmlPackage2JavaPackage();
 
 	/**
 	 * Returns a new object of class '<em>Uml Class Diagram2 Java Axiom r1</em>'.
@@ -58,13 +58,13 @@ public interface GeneratedFactory extends EFactory {
 	UmlClassDiagram2JavaAxiom_r1 createUmlClassDiagram2JavaAxiom_r1();
 
 	/**
-	 * Returns a new object of class '<em>rg2 r2</em>'.
+	 * Returns a new object of class '<em>Uml Package2 Java Package r2</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>rg2 r2</em>'.
+	 * @return a new object of class '<em>Uml Package2 Java Package r2</em>'.
 	 * @generated
 	 */
-	rg2_r2 createrg2_r2();
+	UmlPackage2JavaPackage_r2 createUmlPackage2JavaPackage_r2();
 
 	/**
 	 * Returns the package supported by this factory.

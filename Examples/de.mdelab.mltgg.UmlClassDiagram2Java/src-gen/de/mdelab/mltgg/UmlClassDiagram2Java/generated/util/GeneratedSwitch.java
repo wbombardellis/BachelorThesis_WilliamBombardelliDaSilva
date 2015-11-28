@@ -98,13 +98,13 @@ public class GeneratedSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case GeneratedPackage.RG2: {
-			rg2 rg2 = (rg2) theEObject;
-			T result = caserg2(rg2);
+		case GeneratedPackage.UML_PACKAGE2_JAVA_PACKAGE: {
+			UmlPackage2JavaPackage umlPackage2JavaPackage = (UmlPackage2JavaPackage) theEObject;
+			T result = caseUmlPackage2JavaPackage(umlPackage2JavaPackage);
 			if (result == null)
-				result = caseOperationalRuleGroup(rg2);
+				result = caseOperationalRuleGroup(umlPackage2JavaPackage);
 			if (result == null)
-				result = caseOperationalMappingGroup(rg2);
+				result = caseOperationalMappingGroup(umlPackage2JavaPackage);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -120,13 +120,13 @@ public class GeneratedSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case GeneratedPackage.RG2_R2: {
-			rg2_r2 rg2_r2 = (rg2_r2) theEObject;
-			T result = caserg2_r2(rg2_r2);
+		case GeneratedPackage.UML_PACKAGE2_JAVA_PACKAGE_R2: {
+			UmlPackage2JavaPackage_r2 umlPackage2JavaPackage_r2 = (UmlPackage2JavaPackage_r2) theEObject;
+			T result = caseUmlPackage2JavaPackage_r2(umlPackage2JavaPackage_r2);
 			if (result == null)
-				result = caseOperationalRule(rg2_r2);
+				result = caseOperationalRule(umlPackage2JavaPackage_r2);
 			if (result == null)
-				result = caseOperationalMapping(rg2_r2);
+				result = caseOperationalMapping(umlPackage2JavaPackage_r2);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -167,17 +167,17 @@ public class GeneratedSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>rg2</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Uml Package2 Java Package</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>rg2</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Uml Package2 Java Package</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caserg2(rg2 object) {
+	public T caseUmlPackage2JavaPackage(UmlPackage2JavaPackage object) {
 		return null;
 	}
 
@@ -197,17 +197,17 @@ public class GeneratedSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>rg2 r2</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Uml Package2 Java Package r2</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>rg2 r2</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Uml Package2 Java Package r2</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caserg2_r2(rg2_r2 object) {
+	public T caseUmlPackage2JavaPackage_r2(UmlPackage2JavaPackage_r2 object) {
 		return null;
 	}
 

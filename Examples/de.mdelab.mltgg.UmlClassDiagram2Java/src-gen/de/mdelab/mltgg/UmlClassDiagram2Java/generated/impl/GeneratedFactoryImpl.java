@@ -60,12 +60,12 @@ public class GeneratedFactoryImpl extends EFactoryImpl implements GeneratedFacto
 			return createUmlClassDiagram2JavaOperationalTGG();
 		case GeneratedPackage.UML_CLASS_DIAGRAM2_JAVA_AXIOM:
 			return createUmlClassDiagram2JavaAxiom();
-		case GeneratedPackage.RG2:
-			return createrg2();
+		case GeneratedPackage.UML_PACKAGE2_JAVA_PACKAGE:
+			return createUmlPackage2JavaPackage();
 		case GeneratedPackage.UML_CLASS_DIAGRAM2_JAVA_AXIOM_R1:
 			return createUmlClassDiagram2JavaAxiom_r1();
-		case GeneratedPackage.RG2_R2:
-			return createrg2_r2();
+		case GeneratedPackage.UML_PACKAGE2_JAVA_PACKAGE_R2:
+			return createUmlPackage2JavaPackage_r2();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -96,9 +96,9 @@ public class GeneratedFactoryImpl extends EFactoryImpl implements GeneratedFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public rg2 createrg2() {
-		rg2Impl rg2 = new rg2Impl();
-		return rg2;
+	public UmlPackage2JavaPackage createUmlPackage2JavaPackage() {
+		UmlPackage2JavaPackageImpl umlPackage2JavaPackage = new UmlPackage2JavaPackageImpl();
+		return umlPackage2JavaPackage;
 	}
 
 	/**
@@ -116,9 +116,9 @@ public class GeneratedFactoryImpl extends EFactoryImpl implements GeneratedFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public rg2_r2 createrg2_r2() {
-		rg2_r2Impl rg2_r2 = new rg2_r2Impl();
-		return rg2_r2;
+	public UmlPackage2JavaPackage_r2 createUmlPackage2JavaPackage_r2() {
+		UmlPackage2JavaPackage_r2Impl umlPackage2JavaPackage_r2 = new UmlPackage2JavaPackage_r2Impl();
+		return umlPackage2JavaPackage_r2;
 	}
 
 	/**
