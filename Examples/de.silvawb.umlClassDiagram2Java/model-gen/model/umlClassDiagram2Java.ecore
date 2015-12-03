@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="umlClassDiagram2Java" nsURI="http://tu-berlin.de/silvawb/umlClassDiagram2Java/1.0"
+    nsPrefix="umlClassDiagram2Java">
+  <eClassifiers xsi:type="ecore:EClass" name="CorrAxiom" eSuperTypes="../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//TGGNode"/>
+  <eClassifiers xsi:type="ecore:EClass" name="CorrRule" eSuperTypes="../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//TGGNode"/>
+  <eSubpackages name="generated" nsURI="http://tu-berlin.de/silvawb/umlClassDiagram2Java/1.0/generated"
+      nsPrefix="umlClassDiagram2Java.generated">
+    <eClassifiers xsi:type="ecore:EClass" name="umlClassDiagram2JavaOperationalTGG"
+        eSuperTypes="../../../de.mdelab.mltgg.mote2.sdm/model/sdm.ecore#//SdmOperationalTGG"/>
+    <eClassifiers xsi:type="ecore:EClass" name="umlClassDiagram2JavaAxiom" eSuperTypes="../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//operationalTGG/OperationalAxiomGroup"/>
+    <eClassifiers xsi:type="ecore:EClass" name="umlPackage2JavaPackage" eSuperTypes="../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//operationalTGG/OperationalRuleGroup"/>
+    <eClassifiers xsi:type="ecore:EClass" name="umlClassDiagram2JavaAxiom_r1" eSuperTypes="../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//operationalTGG/OperationalAxiom">
+      <eOperations name="addElement" lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//TGGNode"
+          eExceptions="ecore:EDataType ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//helpers/TransformationException">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="body" value="final EMap&lt;String, Object> parametersCopy = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>(parameters.map());&#xA;&#xA;((de.silvawb.umlClassDiagram2Java.generated.umlClassDiagram2JavaOperationalTGG) this.getOperationalAxiomGroup().getOperationalTGG()).executeActivity(this.getAddElementActivity(), parametersCopy);&#xA;&#xA;de.mdelab.mltgg.mote2.TGGNode tggNode = (de.mdelab.mltgg.mote2.TGGNode) parametersCopy.get(&quot;corrAxiom&quot;);&#xA;&#xA;if (tggNode != null)&#xA;{&#xA;leftInputElements.add((org.eclipse.emf.ecore.EObject) parametersCopy.get(&quot;model&quot;));&#xA;rightInputElements.add((org.eclipse.emf.ecore.EObject) parametersCopy.get(&quot;target&quot;));&#x9;&#xA;}&#xA;&#xA;return tggNode;"/>
+        </eAnnotations>
+        <eParameters name="parameters" upperBound="-1">
+          <eGenericType eClassifier="ecore:EClass ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//helpers/MapEntry">
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          </eGenericType>
+        </eParameters>
+        <eParameters name="leftInputElements" upperBound="-1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+        <eParameters name="rightInputElements" upperBound="-1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+      </eOperations>
+      <eOperations name="changeAttributeValues" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+          eExceptions="ecore:EDataType ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//helpers/TransformationException">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="body" value="org.eclipse.emf.common.util.EMap&lt;String, Object> params = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>(ruleParameters.map());&#xA;&#x9;&#x9;&#xA;params.put(&quot;corrAxiom&quot;, correspondenceNode);&#xA;&#x9;&#x9;&#xA;((de.silvawb.umlClassDiagram2Java.generated.umlClassDiagram2JavaOperationalTGG) this&#xA;&#x9;&#x9;&#x9;&#x9;.getOperationalAxiomGroup().getOperationalTGG())&#xA;&#x9;&#x9;&#x9;&#x9;.executeActivity(this.getChangeAttributeActivity(), params);&#xA;&#x9;&#x9;&#xA;return (Boolean) params.get(&quot;__returnValue&quot;);"/>
+        </eAnnotations>
+        <eParameters name="correspondenceNode" lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//TGGNode"/>
+        <eParameters name="ruleParameters" upperBound="-1">
+          <eGenericType eClassifier="ecore:EClass ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//helpers/MapEntry">
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          </eGenericType>
+        </eParameters>
+      </eOperations>
+      <eOperations name="transformForward" lowerBound="1" eType="ecore:EEnum ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//operationalTGG/ErrorCodeEnum"
+          eExceptions="ecore:EDataType ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//helpers/TransformationException">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="body" value="&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xA;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xA;&#x9;&#x9;&#x9;&#x9;parameters.put(&quot;model&quot;, leftInputElements.get(0));&#xA;&#xA;&#x9;&#x9;((de.silvawb.umlClassDiagram2Java.generated.umlClassDiagram2JavaOperationalTGG) this.getOperationalAxiomGroup().getOperationalTGG()).executeActivity(this.getTransformForwardActivity(), parameters);&#x9;&#x9;&#xA;&#xA;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xA;&#xA;&#x9;&#x9;if (errorCode == ErrorCodeEnum.OK)&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;rightInputElements.add((org.eclipse.emf.ecore.EObject) parameters.get(&quot;target&quot;));&#xA;&#x9;&#x9;}&#xA;&#xA;&#x9;&#x9;return errorCode;"/>
+        </eAnnotations>
+        <eParameters name="leftInputElements" lowerBound="1" upperBound="-1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+        <eParameters name="rightInputElements" lowerBound="1" upperBound="-1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+        <eParameters name="checkAttributeFormulae" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eOperations>
+      <eOperations name="transformMapping" lowerBound="1" eType="ecore:EEnum ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//operationalTGG/ErrorCodeEnum"
+          eExceptions="ecore:EDataType ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//helpers/TransformationException">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="body" value="&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xA;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xA;&#x9;&#x9;&#x9;&#x9;parameters.put(&quot;model&quot;, leftInputElements.get(0));&#xA;&#x9;&#x9;&#x9;&#x9;parameters.put(&quot;target&quot;, rightInputElements.get(0));&#xA;&#xA;&#x9;&#x9;((de.silvawb.umlClassDiagram2Java.generated.umlClassDiagram2JavaOperationalTGG) this.getOperationalAxiomGroup().getOperationalTGG()).executeActivity(this.getTransformMappingActivity(), parameters);&#x9;&#x9;&#xA;&#xA;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xA;&#xA;&#x9;&#x9;if (errorCode == ErrorCodeEnum.OK)&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;rightInputElements.add((org.eclipse.emf.ecore.EObject) parameters.get(&quot;target&quot;));&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;leftInputElements.add((org.eclipse.emf.ecore.EObject) parameters.get(&quot;model&quot;));&#xA;&#x9;&#x9;}&#xA;&#xA;&#x9;&#x9;return errorCode;"/>
+        </eAnnotations>
+        <eParameters name="leftInputElements" lowerBound="1" upperBound="-1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+        <eParameters name="rightInputElements" lowerBound="1" upperBound="-1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+        <eParameters name="checkAttributeFormulae" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eOperations>
+      <eOperations name="transformBackward" lowerBound="1" eType="ecore:EEnum ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//operationalTGG/ErrorCodeEnum"
+          eExceptions="ecore:EDataType ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//helpers/TransformationException">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="body" value="&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xA;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xA;&#x9;&#x9;&#x9;&#x9;parameters.put(&quot;target&quot;, rightInputElements.get(0));&#xA;&#xA;&#x9;&#x9;((de.silvawb.umlClassDiagram2Java.generated.umlClassDiagram2JavaOperationalTGG) this.getOperationalAxiomGroup().getOperationalTGG()).executeActivity(this.getTransformBackwardActivity(), parameters);&#x9;&#x9;&#xA;&#xA;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xA;&#xA;&#x9;&#x9;if (errorCode == ErrorCodeEnum.OK)&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;leftInputElements.add((org.eclipse.emf.ecore.EObject) parameters.get(&quot;model&quot;));&#xA;&#x9;&#x9;}&#xA;&#xA;&#x9;&#x9;return errorCode;"/>
+        </eAnnotations>
+        <eParameters name="leftInputElements" lowerBound="1" upperBound="-1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+        <eParameters name="rightInputElements" lowerBound="1" upperBound="-1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+        <eParameters name="checkAttributeFormulae" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eOperations>
+      <eOperations name="synchronizeForward" lowerBound="1" eType="ecore:EEnum ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//operationalTGG/ErrorCodeEnum"
+          eExceptions="ecore:EDataType ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//helpers/TransformationException">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="body" value="&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xA;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xA;&#x9;&#x9;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xA;&#x9;&#x9;&#x9;parameters.put(&quot;model&quot;, leftInputElements.get(0));&#xA;&#x9;&#x9;&#x9;parameters.put(&quot;target&quot;, rightInputElements.get(0));&#xA;&#xA;&#x9;&#x9;((de.silvawb.umlClassDiagram2Java.generated.umlClassDiagram2JavaOperationalTGG) this.getOperationalAxiomGroup().getOperationalTGG()).executeActivity(this.getSynchronizeForwardActivity(), parameters);&#x9;&#x9;&#xA;&#xA;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xA;&#xA;&#x9;&#x9;if (errorCode == ErrorCodeEnum.OK)&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;rightInputElements.add((org.eclipse.emf.ecore.EObject) parameters.get(&quot;target&quot;));&#xA;&#x9;&#x9;}&#xA;&#xA;&#x9;&#x9;return errorCode;"/>
+        </eAnnotations>
+        <eParameters name="leftInputElements" lowerBound="1" upperBound="-1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+        <eParameters name="rightInputElements" lowerBound="1" upperBound="-1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+        <eParameters name="inputTggNode" lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//TGGNode"/>
+        <eParameters name="checkAttributeFormulae" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eOperations>
+      <eOperations name="synchronizeBackward" lowerBound="1" eType="ecore:EEnum ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//operationalTGG/ErrorCodeEnum"
+          eExceptions="ecore:EDataType ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//helpers/TransformationException">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="body" value="&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xA;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xA;&#x9;&#x9;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xA;&#x9;&#x9;&#x9;parameters.put(&quot;model&quot;, leftInputElements.get(0));&#xA;&#x9;&#x9;&#x9;parameters.put(&quot;target&quot;, rightInputElements.get(0));&#xA;&#xA;&#x9;&#x9;((de.silvawb.umlClassDiagram2Java.generated.umlClassDiagram2JavaOperationalTGG) this.getOperationalAxiomGroup().getOperationalTGG()).executeActivity(this.getSynchronizeBackwardActivity(), parameters);&#x9;&#x9;&#xA;&#xA;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xA;&#xA;&#x9;&#x9;if (errorCode == ErrorCodeEnum.OK)&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;leftInputElements.add((org.eclipse.emf.ecore.EObject) parameters.get(&quot;model&quot;));&#xA;&#x9;&#x9;}&#xA;&#xA;&#x9;&#x9;return errorCode;"/>
+        </eAnnotations>
+        <eParameters name="leftInputElements" lowerBound="1" upperBound="-1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+        <eParameters name="rightInputElements" lowerBound="1" upperBound="-1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+        <eParameters name="inputTggNode" lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//TGGNode"/>
+        <eParameters name="checkAttributeFormulae" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="addElementActivity" lowerBound="1"
+          eType="ecore:EClass ../../../de.mdelab.mlsdm/model/mlsdm.ecore#//Activity"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="moveElementActivity"
+          lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mlsdm/model/mlsdm.ecore#//Activity"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="changeAttributeActivity"
+          lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mlsdm/model/mlsdm.ecore#//Activity"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="transformForwardActivity"
+          lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mlsdm/model/mlsdm.ecore#//Activity"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="transformMappingActivity"
+          lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mlsdm/model/mlsdm.ecore#//Activity"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="transformBackwardActivity"
+          lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mlsdm/model/mlsdm.ecore#//Activity"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="synchronizeForwardActivity"
+          lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mlsdm/model/mlsdm.ecore#//Activity"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="synchronizeBackwardActivity"
+          lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mlsdm/model/mlsdm.ecore#//Activity"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="umlPackage2JavaPackage_r2" eSuperTypes="../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//operationalTGG/OperationalRule">
+      <eOperations name="addElement" lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//TGGNode"
+          eExceptions="ecore:EDataType ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//helpers/TransformationException">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="body" value="final EMap&lt;String, Object> parametersCopy = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>(parameters.map());&#xA;&#xA;((de.silvawb.umlClassDiagram2Java.generated.umlClassDiagram2JavaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getAddElementActivity(),&#x9;parametersCopy);&#xA;&#xA;return (TGGNode) parametersCopy.get(&quot;uPackage2JPackage&quot;);"/>
+        </eAnnotations>
+        <eParameters name="parameters" upperBound="-1">
+          <eGenericType eClassifier="ecore:EClass ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//helpers/MapEntry">
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          </eGenericType>
+        </eParameters>
+      </eOperations>
+      <eOperations name="changeAttributeValues" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+          eExceptions="ecore:EDataType ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//helpers/TransformationException">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="body" value="org.eclipse.emf.common.util.EMap&lt;String, Object> params = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>(ruleParameters.map());&#xA;&#x9;&#x9;&#xA;params.put(&quot;uPackage2JPackage&quot;, correspondenceNode);&#xA;&#x9;&#x9;&#xA;((de.silvawb.umlClassDiagram2Java.generated.umlClassDiagram2JavaOperationalTGG) this&#xA;&#x9;&#x9;&#x9;&#x9;.getOperationalRuleGroup().getOperationalTGG())&#xA;&#x9;&#x9;&#x9;&#x9;.executeActivity(this.getChangeAttributeActivity(), params);&#xA;&#x9;&#x9;&#xA;return (Boolean) params.get(&quot;__returnValue&quot;);"/>
+        </eAnnotations>
+        <eParameters name="correspondenceNode" lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//TGGNode"/>
+        <eParameters name="ruleParameters" upperBound="-1">
+          <eGenericType eClassifier="ecore:EClass ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//helpers/MapEntry">
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          </eGenericType>
+        </eParameters>
+      </eOperations>
+      <eOperations name="moveElement" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+          eExceptions="ecore:EDataType ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//helpers/TransformationException">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="body" value="org.eclipse.emf.common.util.EMap&lt;String, Object> params = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xA;&#x9;&#x9;&#xA;params.put(&quot;uPackage2JPackage&quot;, correspondenceNode);&#xA;params.put(&quot;__oldPreviousCorrespondenceNode&quot;, oldPreviousCorrespondenceNode);&#xA;params.put(&quot;__newPreviousCorrespondenceNode&quot;, newPreviousCorrespondenceNode);&#xA;&#x9;&#x9;&#xA;((de.silvawb.umlClassDiagram2Java.generated.umlClassDiagram2JavaOperationalTGG) this&#xA;&#x9;&#x9;&#x9;&#x9;.getOperationalRuleGroup().getOperationalTGG())&#xA;&#x9;&#x9;&#x9;&#x9;.executeActivity(this.getMoveElementActivity(), params);&#xA;&#x9;&#x9;&#xA;return (Boolean) params.get(&quot;__returnValue&quot;);"/>
+        </eAnnotations>
+        <eParameters name="correspondenceNode" lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//TGGNode"/>
+        <eParameters name="oldPreviousCorrespondenceNode" lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//TGGNode"/>
+        <eParameters name="newPreviousCorrespondenceNode" lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//TGGNode"/>
+      </eOperations>
+      <eOperations name="transformForward" lowerBound="1" eType="ecore:EEnum ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//operationalTGG/ErrorCodeEnum"
+          eExceptions="ecore:EDataType ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//helpers/TransformationException">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="body" value="&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xA;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xA;&#x9;&#x9;parameters.put(&quot;__considerAllLhsCorrNodes&quot;, considerAllLhsCorrNodes); &#xA;&#x9;&#x9;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;((de.silvawb.umlClassDiagram2Java.generated.umlClassDiagram2JavaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getTransformForwardActivity(), parameters);&#xA;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xA;&#xA;&#x9;&#x9;return errorCode;"/>
+        </eAnnotations>
+        <eParameters name="inputTggNode" lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//TGGNode"/>
+        <eParameters name="checkAttributeFormulae" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        <eParameters name="considerAllLhsCorrNodes" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eOperations>
+      <eOperations name="transformMapping" lowerBound="1" eType="ecore:EEnum ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//operationalTGG/ErrorCodeEnum"
+          eExceptions="ecore:EDataType ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//helpers/TransformationException">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="body" value="&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xA;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xA;&#x9;&#x9;parameters.put(&quot;__considerAllLhsCorrNodes&quot;, considerAllLhsCorrNodes); &#xA;&#x9;&#x9;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;((de.silvawb.umlClassDiagram2Java.generated.umlClassDiagram2JavaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getTransformMappingActivity(), parameters);&#xA;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xA;&#xA;&#x9;&#x9;return errorCode;"/>
+        </eAnnotations>
+        <eParameters name="inputTggNode" lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//TGGNode"/>
+        <eParameters name="checkAttributeFormulae" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        <eParameters name="considerAllLhsCorrNodes" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eOperations>
+      <eOperations name="transformBackward" lowerBound="1" eType="ecore:EEnum ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//operationalTGG/ErrorCodeEnum"
+          eExceptions="ecore:EDataType ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//helpers/TransformationException">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="body" value="&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xA;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xA;&#x9;&#x9;parameters.put(&quot;__considerAllLhsCorrNodes&quot;, considerAllLhsCorrNodes); &#xA;&#x9;&#x9;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;((de.silvawb.umlClassDiagram2Java.generated.umlClassDiagram2JavaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getTransformBackwardActivity(), parameters);&#xA;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xA;&#xA;&#x9;&#x9;return errorCode;"/>
+        </eAnnotations>
+        <eParameters name="inputTggNode" lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//TGGNode"/>
+        <eParameters name="checkAttributeFormulae" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        <eParameters name="considerAllLhsCorrNodes" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eOperations>
+      <eOperations name="conflictCheckForward" upperBound="-1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+          eExceptions="ecore:EDataType ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//helpers/TransformationException">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="body" value="&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xA;&#xA;parameters.put(&quot;__thisRule&quot;, this);&#xA;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xA;&#xA;&#x9;&#x9;((de.silvawb.umlClassDiagram2Java.generated.umlClassDiagram2JavaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getConflictCheckForwardActivity(), parameters);&#xA;&#xA;@SuppressWarnings(&quot;unchecked&quot;)&#xA;final java.util.Collection&lt;? extends EObject> returnValue = (java.util.Collection&lt;? extends EObject>) parameters.get(&quot;__returnValue&quot;);&#xA;&#xA;if (returnValue == null)&#xA;{&#xA;&#x9;return null;&#xA;}&#xA;else&#xA;{&#xA;&#x9;return new org.eclipse.emf.common.util.BasicEList&lt;EObject>(returnValue);&#xA;}&#xA;"/>
+        </eAnnotations>
+        <eParameters name="inputTggNode" lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//TGGNode"/>
+      </eOperations>
+      <eOperations name="conflictCheckMapping" upperBound="-1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+          eExceptions="ecore:EDataType ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//helpers/TransformationException">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="body" value="&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xA;&#xA;parameters.put(&quot;__thisRule&quot;, this);&#xA;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xA;&#xA;&#x9;&#x9;((de.silvawb.umlClassDiagram2Java.generated.umlClassDiagram2JavaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getConflictCheckMappingActivity(), parameters);&#xA;&#xA;@SuppressWarnings(&quot;unchecked&quot;)&#xA;final java.util.Collection&lt;? extends EObject> returnValue = (java.util.Collection&lt;? extends EObject>) parameters.get(&quot;__returnValue&quot;);&#xA;&#xA;if (returnValue == null)&#xA;{&#xA;&#x9;return null;&#xA;}&#xA;else&#xA;{&#xA;&#x9;return new org.eclipse.emf.common.util.BasicEList&lt;EObject>(returnValue);&#xA;}&#xA;"/>
+        </eAnnotations>
+        <eParameters name="inputTggNode" lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//TGGNode"/>
+      </eOperations>
+      <eOperations name="conflictCheckBackward" upperBound="-1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+          eExceptions="ecore:EDataType ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//helpers/TransformationException">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="body" value="&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xA;&#xA;parameters.put(&quot;__thisRule&quot;, this);&#xA;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xA;&#xA;&#x9;&#x9;((de.silvawb.umlClassDiagram2Java.generated.umlClassDiagram2JavaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getConflictCheckBackwardActivity(), parameters);&#xA;&#xA;@SuppressWarnings(&quot;unchecked&quot;)&#xA;final java.util.Collection&lt;? extends EObject> returnValue = (java.util.Collection&lt;? extends EObject>) parameters.get(&quot;__returnValue&quot;);&#xA;&#xA;if (returnValue == null)&#xA;{&#xA;&#x9;return null;&#xA;}&#xA;else&#xA;{&#xA;&#x9;return new org.eclipse.emf.common.util.BasicEList&lt;EObject>(returnValue);&#xA;}&#xA;"/>
+        </eAnnotations>
+        <eParameters name="inputTggNode" lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//TGGNode"/>
+      </eOperations>
+      <eOperations name="synchronizeForward" lowerBound="1" eType="ecore:EEnum ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//operationalTGG/ErrorCodeEnum"
+          eExceptions="ecore:EDataType ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//helpers/TransformationException">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="body" value="&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xA;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xA;&#x9;&#x9;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;((de.silvawb.umlClassDiagram2Java.generated.umlClassDiagram2JavaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getSynchronizeForwardActivity(), parameters);&#xA;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xA;&#xA;&#x9;&#x9;return errorCode;"/>
+        </eAnnotations>
+        <eParameters name="inputTggNode" lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//TGGNode"/>
+        <eParameters name="checkAttributeFormulae" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eOperations>
+      <eOperations name="synchronizeBackward" lowerBound="1" eType="ecore:EEnum ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//operationalTGG/ErrorCodeEnum"
+          eExceptions="ecore:EDataType ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//helpers/TransformationException">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="body" value="&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xA;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xA;&#x9;&#x9;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;((de.silvawb.umlClassDiagram2Java.generated.umlClassDiagram2JavaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getSynchronizeBackwardActivity(), parameters);&#xA;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xA;&#xA;&#x9;&#x9;return errorCode;"/>
+        </eAnnotations>
+        <eParameters name="inputTggNode" lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//TGGNode"/>
+        <eParameters name="checkAttributeFormulae" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eOperations>
+      <eOperations name="repairForward" lowerBound="1" eType="ecore:EEnum ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//operationalTGG/ErrorCodeEnum"
+          eExceptions="ecore:EDataType ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//helpers/TransformationException">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="body" value="&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xA;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xA;&#x9;&#x9;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;((de.silvawb.umlClassDiagram2Java.generated.umlClassDiagram2JavaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getRepairForwardActivity(), parameters);&#xA;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xA;&#xA;&#x9;&#x9;return errorCode;"/>
+        </eAnnotations>
+        <eParameters name="inputTggNode" lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//TGGNode"/>
+        <eParameters name="checkAttributeFormulae" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eOperations>
+      <eOperations name="repairBackward" lowerBound="1" eType="ecore:EEnum ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//operationalTGG/ErrorCodeEnum"
+          eExceptions="ecore:EDataType ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//helpers/TransformationException">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="body" value="&#xA;final org.eclipse.emf.common.util.EMap&lt;String, Object> parameters = new org.eclipse.emf.common.util.BasicEMap&lt;String, Object>();&#xA;&#xA;&#x9;&#x9;parameters.put(&quot;__thisRule&quot;, this);&#xA;&#x9;&#x9;parameters.put(&quot;__checkAttributeFormulae&quot;, checkAttributeFormulae);&#xA;&#x9;&#x9;parameters.put(&quot;__inputTggNode&quot;, inputTggNode);&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;((de.silvawb.umlClassDiagram2Java.generated.umlClassDiagram2JavaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getRepairBackwardActivity(), parameters);&#xA;&#xA;&#x9;&#x9;final ErrorCodeEnum errorCode = (ErrorCodeEnum) parameters.get(&quot;__errorCode&quot;);&#xA;&#xA;&#x9;&#x9;return errorCode;"/>
+        </eAnnotations>
+        <eParameters name="inputTggNode" lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mltgg.mote2/model/mote2.ecore#//TGGNode"/>
+        <eParameters name="checkAttributeFormulae" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="addElementActivity" lowerBound="1"
+          eType="ecore:EClass ../../../de.mdelab.mlsdm/model/mlsdm.ecore#//Activity"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="moveElementActivity"
+          lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mlsdm/model/mlsdm.ecore#//Activity"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="changeAttributeActivity"
+          lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mlsdm/model/mlsdm.ecore#//Activity"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="transformForwardActivity"
+          lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mlsdm/model/mlsdm.ecore#//Activity"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="transformMappingActivity"
+          lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mlsdm/model/mlsdm.ecore#//Activity"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="transformBackwardActivity"
+          lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mlsdm/model/mlsdm.ecore#//Activity"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="conflictCheckForwardActivity"
+          lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mlsdm/model/mlsdm.ecore#//Activity"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="conflictCheckMappingActivity"
+          lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mlsdm/model/mlsdm.ecore#//Activity"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="conflictCheckBackwardActivity"
+          lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mlsdm/model/mlsdm.ecore#//Activity"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="synchronizeForwardActivity"
+          lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mlsdm/model/mlsdm.ecore#//Activity"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="synchronizeBackwardActivity"
+          lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mlsdm/model/mlsdm.ecore#//Activity"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="repairForwardActivity"
+          lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mlsdm/model/mlsdm.ecore#//Activity"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="repairBackwardActivity"
+          lowerBound="1" eType="ecore:EClass ../../../de.mdelab.mlsdm/model/mlsdm.ecore#//Activity"/>
+    </eClassifiers>
+  </eSubpackages>
+</ecore:EPackage>

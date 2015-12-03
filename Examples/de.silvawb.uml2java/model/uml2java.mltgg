@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mltgg:TGG xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mlexpressions="http://www.mdelab.de/mlexpressions/1.0" xmlns:mltgg="http://www.mdelab.de/mltgg/1.0" uuid="_An6LwD8fEeKTTbcgLXf6Gw" name="uml2java" tggID="de.silvawb.uml2java">
+  <ruleGroups uuid="_BBH9AD8fEeKTTbcgLXf6Gw" name="uml2javaAxiom" ruleGroupID="uml2javaAxiom" isAxiom="true">
+    <rules uuid="_EWn5MT8fEeKTTbcgLXf6Gw" name="r1" leftInputElements="_HmOBsT8fEeKTTbcgLXf6Gw" rightInputElements="_WyPf8T8fEeKTTbcgLXf6Gw" ruleID="r1">
+      <leftModelDomain uuid="_F4J9YT8fEeKTTbcgLXf6Gw">
+        <modelObjects uuid="_HmOBsT8fEeKTTbcgLXf6Gw" modifier="CREATE" incomingCorrespondenceLink="_Z6WgYj8fEeKTTbcgLXf6Gw" name="uModel">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Model"/>
+          <attributeAssignments uuid="_dIc2YpkGEeWKzYE7FDdOrA">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_f8uU0ZkGEeWKzYE7FDdOrA" expressionString="nameVar" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+      </leftModelDomain>
+      <rightModelDomain uuid="_GUAy8j8fEeKTTbcgLXf6Gw">
+        <modelObjects uuid="_WyPf8T8fEeKTTbcgLXf6Gw" modifier="CREATE" incomingCorrespondenceLink="_bI1Fsj8fEeKTTbcgLXf6Gw" name="jSystem">
+          <type xsi:type="ecore:EClass" href="http://tu-berlin.de/silvawb/java#//System"/>
+          <attributeAssignments uuid="_mCARApkGEeWKzYE7FDdOrA">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_oUvvsZkGEeWKzYE7FDdOrA" expressionString="nameVar" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://tu-berlin.de/silvawb/java#//System/name"/>
+          </attributeAssignments>
+        </modelObjects>
+      </rightModelDomain>
+      <correspondenceDomain uuid="_GqCGQz8fEeKTTbcgLXf6Gw">
+        <correspondenceNodes uuid="_YbWLwT8fEeKTTbcgLXf6Gw" modifier="CREATE" name="corrAxiom" outgoingLinks="_Z6WgYj8fEeKTTbcgLXf6Gw _bI1Fsj8fEeKTTbcgLXf6Gw">
+          <type xsi:type="ecore:EClass" href="uml2java.ecore#//CorrAxiom"/>
+        </correspondenceNodes>
+        <correspondenceLinks uuid="_Z6WgYj8fEeKTTbcgLXf6Gw" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_HmOBsT8fEeKTTbcgLXf6Gw"/>
+        <correspondenceLinks uuid="_bI1Fsj8fEeKTTbcgLXf6Gw" modifier="CREATE" source="_YbWLwT8fEeKTTbcgLXf6Gw" target="_WyPf8T8fEeKTTbcgLXf6Gw"/>
+      </correspondenceDomain>
+      <ruleParameters uuid="_4mrGFZkGEeWKzYE7FDdOrA" name="nameVar">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="__RFIkZkGEeWKzYE7FDdOrA" expressionString="uModel.name" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_KWWM0pkHEeWKzYE7FDdOrA" expressionString="jSystem.name" expressionLanguageID="OCL"/>
+      </ruleParameters>
+    </rules>
+  </ruleGroups>
+  <ruleGroups uuid="_fZEn0ZlLEeW3qcq9byHw8g" name="uPackage2jPackage_Rule" ruleGroupID="uPackage2jPackage_Rule">
+    <rules uuid="_jt8WUZlLEeW3qcq9byHw8g" name="r2" ruleID="r2">
+      <leftModelDomain uuid="_lkyjMZlLEeW3qcq9byHw8g">
+        <modelObjects uuid="_nL0ycZlLEeW3qcq9byHw8g" incomingCorrespondenceLink="__6PM8JlLEeW3qcq9byHw8g" name="uModel" outgoingLinks="_mQQQIJlNEeW3qcq9byHw8g">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Model"/>
+        </modelObjects>
+        <modelObjects uuid="_AnRSEJlMEeW3qcq9byHw8g" modifier="CREATE" incomingCorrespondenceLink="_LuooEJlMEeW3qcq9byHw8g" name="uPackage" incomingLinks="_mQQQIJlNEeW3qcq9byHw8g">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+          <attributeAssignments uuid="_t7w4YJlPEeW3qcq9byHw8g">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_xjNgMZlPEeW3qcq9byHw8g" expressionString="packName" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelLinks uuid="_mQQQIJlNEeW3qcq9byHw8g" modifier="CREATE" incomingCorrespondenceLink="_Ohb08plOEeW3qcq9byHw8g" source="_nL0ycZlLEeW3qcq9byHw8g" target="_AnRSEJlMEeW3qcq9byHw8g">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package/packagedElement"/>
+        </modelLinks>
+      </leftModelDomain>
+      <rightModelDomain uuid="_mG7m8plLEeW3qcq9byHw8g">
+        <modelObjects uuid="_qLg2sZlLEeW3qcq9byHw8g" incomingCorrespondenceLink="__jAYsJlLEeW3qcq9byHw8g" name="jSystem" outgoingLinks="_rIgYgJlNEeW3qcq9byHw8g">
+          <type xsi:type="ecore:EClass" href="http://tu-berlin.de/silvawb/java#//System"/>
+        </modelObjects>
+        <modelObjects uuid="_WJIRAJlMEeW3qcq9byHw8g" modifier="CREATE" incomingCorrespondenceLink="_bYKhsJlMEeW3qcq9byHw8g" name="jPackage" incomingLinks="_rIgYgJlNEeW3qcq9byHw8g">
+          <type xsi:type="ecore:EClass" href="http://tu-berlin.de/silvawb/java#//Package"/>
+          <attributeAssignments uuid="_4adr4plPEeW3qcq9byHw8g">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_5AqJMZlPEeW3qcq9byHw8g" expressionString="packName" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://tu-berlin.de/silvawb/java#//Package/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelLinks uuid="_rIgYgJlNEeW3qcq9byHw8g" modifier="CREATE" incomingCorrespondenceLink="_S6L94plOEeW3qcq9byHw8g" source="_qLg2sZlLEeW3qcq9byHw8g" target="_WJIRAJlMEeW3qcq9byHw8g">
+          <feature xsi:type="ecore:EReference" href="http://tu-berlin.de/silvawb/java#//System/packages"/>
+        </modelLinks>
+      </rightModelDomain>
+      <correspondenceDomain uuid="_mjUoA5lLEeW3qcq9byHw8g">
+        <correspondenceNodes uuid="_53V2YJlLEeW3qcq9byHw8g" name="corrAxiom" outgoingLinks="__jAYsJlLEeW3qcq9byHw8g __6PM8JlLEeW3qcq9byHw8g">
+          <type xsi:type="ecore:EClass" href="uml2java.ecore#//CorrAxiom"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_GXN3cJlMEeW3qcq9byHw8g" modifier="CREATE" name="uP2jP" outgoingLinks="_LuooEJlMEeW3qcq9byHw8g _bYKhsJlMEeW3qcq9byHw8g _Ohb08plOEeW3qcq9byHw8g _S6L94plOEeW3qcq9byHw8g">
+          <type xsi:type="ecore:EClass" href="uml2java.ecore#//CorrRule"/>
+        </correspondenceNodes>
+        <correspondenceLinks uuid="__jAYsJlLEeW3qcq9byHw8g" source="_53V2YJlLEeW3qcq9byHw8g" target="_qLg2sZlLEeW3qcq9byHw8g"/>
+        <correspondenceLinks uuid="__6PM8JlLEeW3qcq9byHw8g" source="_53V2YJlLEeW3qcq9byHw8g" target="_nL0ycZlLEeW3qcq9byHw8g"/>
+        <correspondenceLinks uuid="_LuooEJlMEeW3qcq9byHw8g" modifier="CREATE" source="_GXN3cJlMEeW3qcq9byHw8g" target="_AnRSEJlMEeW3qcq9byHw8g"/>
+        <correspondenceLinks uuid="_bYKhsJlMEeW3qcq9byHw8g" modifier="CREATE" source="_GXN3cJlMEeW3qcq9byHw8g" target="_WJIRAJlMEeW3qcq9byHw8g"/>
+        <correspondenceLinks uuid="_Ohb08plOEeW3qcq9byHw8g" modifier="CREATE" source="_GXN3cJlMEeW3qcq9byHw8g" target="_mQQQIJlNEeW3qcq9byHw8g"/>
+        <correspondenceLinks uuid="_S6L94plOEeW3qcq9byHw8g" modifier="CREATE" source="_GXN3cJlMEeW3qcq9byHw8g" target="_rIgYgJlNEeW3qcq9byHw8g"/>
+      </correspondenceDomain>
+      <ruleParameters uuid="_kTZ3AJlPEeW3qcq9byHw8g" name="packName">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_oyFBwJlPEeW3qcq9byHw8g" expressionString="uPackage.name" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_ojH_wJlPEeW3qcq9byHw8g" expressionString="jPackage.name" expressionLanguageID="OCL"/>
+      </ruleParameters>
+    </rules>
+  </ruleGroups>
+</mltgg:TGG>

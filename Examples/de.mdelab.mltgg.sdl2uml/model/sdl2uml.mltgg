@@ -1,0 +1,1056 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mltgg:TGG xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mlexpressions="http://www.mdelab.de/mlexpressions/1.0" xmlns:mltgg="http://www.mdelab.de/mltgg/1.0" uuid="_klPuwCqEEeKPBKWczpE9Mg" name="SDL2UML" tggID="de.mdelab.mltgg.sdl2uml.ruleSetID">
+  <ruleGroups uuid="_klPuwSqEEeKPBKWczpE9Mg" name="SDL2UMLAxiom" ruleGroupID="SDL2UMLAxiom" isAxiom="true">
+    <rules uuid="_klPuwiqEEeKPBKWczpE9Mg" name="SDL2UMLAxiom_R1" leftInputElements="_klPuxCqEEeKPBKWczpE9Mg" rightInputElements="_klPuyCqEEeKPBKWczpE9Mg" ruleID="SDL2UMLAxiom_R1">
+      <leftModelDomain uuid="_klPuwyqEEeKPBKWczpE9Mg">
+        <modelObjects uuid="_klPuxCqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPuzSqEEeKPBKWczpE9Mg" name="blockDiagram">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/blockDiagram.ecore#//BlockDiagram"/>
+          <attributeAssignments uuid="_klPuxSqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPuxiqEEeKPBKWczpE9Mg" expressionString="nameVar" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/blockDiagram.ecore#//Element/name"/>
+          </attributeAssignments>
+        </modelObjects>
+      </leftModelDomain>
+      <rightModelDomain uuid="_klPuxyqEEeKPBKWczpE9Mg">
+        <modelObjects uuid="_klPuyCqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPuziqEEeKPBKWczpE9Mg" name="classDiagram">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram"/>
+          <attributeAssignments uuid="_klPuySqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPuyiqEEeKPBKWczpE9Mg" expressionString="nameVar" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+      </rightModelDomain>
+      <correspondenceDomain uuid="_klPuyyqEEeKPBKWczpE9Mg">
+        <correspondenceNodes uuid="_klPuzCqEEeKPBKWczpE9Mg" modifier="CREATE" name="corrAxiom" outgoingLinks="_klPuzSqEEeKPBKWczpE9Mg _klPuziqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="sdl2uml.ecore#//CorrAxiom"/>
+        </correspondenceNodes>
+        <correspondenceLinks uuid="_klPuzSqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPuzCqEEeKPBKWczpE9Mg" target="_klPuxCqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPuziqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPuzCqEEeKPBKWczpE9Mg" target="_klPuyCqEEeKPBKWczpE9Mg"/>
+      </correspondenceDomain>
+      <attributeFormulas xsi:type="mlexpressions:MLStringExpression" uuid="_klPuzyqEEeKPBKWczpE9Mg" expressionString="blockDiagram.name = classDiagram.name" expressionLanguageID="OCL"/>
+      <ruleParameters uuid="_klPu0CqEEeKPBKWczpE9Mg" name="nameVar">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPu0SqEEeKPBKWczpE9Mg" expressionString="blockDiagram.name" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPu0iqEEeKPBKWczpE9Mg" expressionString="classDiagram.name" expressionLanguageID="OCL"/>
+      </ruleParameters>
+    </rules>
+  </ruleGroups>
+  <ruleGroups uuid="_klPu0yqEEeKPBKWczpE9Mg" name="SDL2UMLSystemBlock" ruleGroupID="SDL2UMLSystemBlock">
+    <rules uuid="_klPu1CqEEeKPBKWczpE9Mg" name="SDL2UMLSystemBlock_R1" ruleID="SDL2UMLSystemBlock_R1">
+      <leftModelDomain uuid="_klPu1SqEEeKPBKWczpE9Mg">
+        <modelObjects uuid="_klPu1iqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klPu8CqEEeKPBKWczpE9Mg" name="blockDiagram" outgoingLinks="_klPu2iqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/blockDiagram.ecore#//BlockDiagram"/>
+        </modelObjects>
+        <modelObjects uuid="_klPu1yqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPu7iqEEeKPBKWczpE9Mg" name="systemBlock" incomingLinks="_klPu2iqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/blockDiagram.ecore#//SystemBlock"/>
+          <attributeAssignments uuid="_klPu2CqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPu2SqEEeKPBKWczpE9Mg" expressionString="nameVar" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/blockDiagram.ecore#//Element/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelLinks uuid="_klPu2iqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPu7CqEEeKPBKWczpE9Mg" source="_klPu1iqEEeKPBKWczpE9Mg" target="_klPu1yqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/blockDiagram.ecore#//BlockDiagram/modelElements"/>
+        </modelLinks>
+      </leftModelDomain>
+      <rightModelDomain uuid="_klPu2yqEEeKPBKWczpE9Mg">
+        <modelObjects uuid="_klPu3CqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klPu7SqEEeKPBKWczpE9Mg" name="classDiagram" outgoingLinks="_klPu5iqEEeKPBKWczpE9Mg _klPu5yqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram"/>
+        </modelObjects>
+        <modelObjects uuid="_klPu3SqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPu7yqEEeKPBKWczpE9Mg" name="umlClass" outgoingLinks="_klPu6CqEEeKPBKWczpE9Mg" incomingLinks="_klPu5iqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClass"/>
+          <attributeAssignments uuid="_klPu3iqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPu3yqEEeKPBKWczpE9Mg" expressionString="nameVar" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_klPu4CqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPu8SqEEeKPBKWczpE9Mg" name="umlStereotype" incomingLinks="_klPu5yqEEeKPBKWczpE9Mg _klPu6CqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLStereotype"/>
+          <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_klPu4SqEEeKPBKWczpE9Mg" expressionString="self.text = 'system'" expressionLanguageID="OCL"/>
+          <attributeAssignments uuid="_klPu4iqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPu4yqEEeKPBKWczpE9Mg" expressionString="'system'" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLStereotype/text"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_klPu5CqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPu5SqEEeKPBKWczpE9Mg" expressionString="nameVar.concat('_stereotype')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelLinks uuid="_klPu5iqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPu8iqEEeKPBKWczpE9Mg" source="_klPu3CqEEeKPBKWczpE9Mg" target="_klPu3SqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klPu5yqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPu8yqEEeKPBKWczpE9Mg" source="_klPu3CqEEeKPBKWczpE9Mg" target="_klPu4CqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klPu6CqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPu9CqEEeKPBKWczpE9Mg" source="_klPu3SqEEeKPBKWczpE9Mg" target="_klPu4CqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLIncrement/stereotypes"/>
+        </modelLinks>
+      </rightModelDomain>
+      <correspondenceDomain uuid="_klPu6SqEEeKPBKWczpE9Mg">
+        <correspondenceNodes uuid="_klPu6iqEEeKPBKWczpE9Mg" name="corrAxiom" outgoingLinks="_klPu8CqEEeKPBKWczpE9Mg _klPu7SqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="sdl2uml.ecore#//CorrAxiom"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_klPu6yqEEeKPBKWczpE9Mg" modifier="CREATE" name="corrSystem" outgoingLinks="_klPu7iqEEeKPBKWczpE9Mg _klPu7yqEEeKPBKWczpE9Mg _klPu8SqEEeKPBKWczpE9Mg _klPu7CqEEeKPBKWczpE9Mg _klPu8iqEEeKPBKWczpE9Mg _klPu8yqEEeKPBKWczpE9Mg _klPu9CqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="sdl2uml.ecore#//CorrSystem"/>
+        </correspondenceNodes>
+        <correspondenceLinks uuid="_klPu7CqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPu6yqEEeKPBKWczpE9Mg" target="_klPu2iqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPu7SqEEeKPBKWczpE9Mg" source="_klPu6iqEEeKPBKWczpE9Mg" target="_klPu3CqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPu7iqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPu6yqEEeKPBKWczpE9Mg" target="_klPu1yqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPu7yqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPu6yqEEeKPBKWczpE9Mg" target="_klPu3SqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPu8CqEEeKPBKWczpE9Mg" source="_klPu6iqEEeKPBKWczpE9Mg" target="_klPu1iqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPu8SqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPu6yqEEeKPBKWczpE9Mg" target="_klPu4CqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPu8iqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPu6yqEEeKPBKWczpE9Mg" target="_klPu5iqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPu8yqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPu6yqEEeKPBKWczpE9Mg" target="_klPu5yqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPu9CqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPu6yqEEeKPBKWczpE9Mg" target="_klPu6CqEEeKPBKWczpE9Mg"/>
+      </correspondenceDomain>
+      <attributeFormulas xsi:type="mlexpressions:MLStringExpression" uuid="_klPu9SqEEeKPBKWczpE9Mg" expressionString="systemBlock.name = umlClass.name" expressionLanguageID="OCL"/>
+      <ruleParameters uuid="_klPu9iqEEeKPBKWczpE9Mg" name="nameVar">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPu9yqEEeKPBKWczpE9Mg" expressionString="systemBlock.name" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPu-CqEEeKPBKWczpE9Mg" expressionString="umlClass.name" expressionLanguageID="OCL"/>
+      </ruleParameters>
+    </rules>
+  </ruleGroups>
+  <ruleGroups uuid="_klPu-SqEEeKPBKWczpE9Mg" name="SDL2UMLBlock" ruleGroupID="SDL2UMLBlock">
+    <rules uuid="_klPu-iqEEeKPBKWczpE9Mg" name="SDL2UMLBlock_R1" ruleID="SDL2UMLBlock_R1">
+      <leftModelDomain uuid="_klPu-yqEEeKPBKWczpE9Mg">
+        <modelObjects uuid="_klPu_CqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klPvPCqEEeKPBKWczpE9Mg" name="parentBlock" outgoingLinks="_klPvACqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/blockDiagram.ecore#//Block"/>
+        </modelObjects>
+        <modelObjects uuid="_klPu_SqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvOyqEEeKPBKWczpE9Mg" name="block" incomingLinks="_klPvACqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/blockDiagram.ecore#//Block"/>
+          <attributeAssignments uuid="_klPu_iqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPu_yqEEeKPBKWczpE9Mg" expressionString="nameVar" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/blockDiagram.ecore#//Element/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelLinks uuid="_klPvACqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvQCqEEeKPBKWczpE9Mg" source="_klPu_CqEEeKPBKWczpE9Mg" target="_klPu_SqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/blockDiagram.ecore#//BlockDiagram/modelElements"/>
+        </modelLinks>
+      </leftModelDomain>
+      <rightModelDomain uuid="_klPvASqEEeKPBKWczpE9Mg">
+        <modelObjects uuid="_klPvAiqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klPvPyqEEeKPBKWczpE9Mg" name="classDiagram" outgoingLinks="_klPvKCqEEeKPBKWczpE9Mg _klPvKSqEEeKPBKWczpE9Mg _klPvKiqEEeKPBKWczpE9Mg _klPvKyqEEeKPBKWczpE9Mg _klPvLCqEEeKPBKWczpE9Mg _klPvLSqEEeKPBKWczpE9Mg _klPvLiqEEeKPBKWczpE9Mg _klPvLyqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram"/>
+        </modelObjects>
+        <modelObjects uuid="_klPvAyqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klPvPiqEEeKPBKWczpE9Mg" name="parentClass" incomingLinks="_klPvKCqEEeKPBKWczpE9Mg _klPvMCqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClass"/>
+        </modelObjects>
+        <modelObjects uuid="_klPvBCqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvQyqEEeKPBKWczpE9Mg" name="sourceRole" outgoingLinks="_klPvMCqEEeKPBKWczpE9Mg _klPvMSqEEeKPBKWczpE9Mg" incomingLinks="_klPvKSqEEeKPBKWczpE9Mg _klPvMiqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole"/>
+          <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_klPvBSqEEeKPBKWczpE9Mg" expressionString="self.adornment = 'UMLRole.COMPOSITION'" expressionLanguageID="OCL"/>
+          <attributeAssignments uuid="_klPvBiqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPvByqEEeKPBKWczpE9Mg" expressionString="nameVar.concat('_sourceRole')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_klPvCCqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPvCSqEEeKPBKWczpE9Mg" expressionString="'UMLRole.COMPOSITION'" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/adornment"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_klPvCiqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvQSqEEeKPBKWczpE9Mg" name="sourceCard" incomingLinks="_klPvKiqEEeKPBKWczpE9Mg _klPvMSqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLCardinality"/>
+          <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_klPvCyqEEeKPBKWczpE9Mg" expressionString="self.cardString = '0..1'" expressionLanguageID="OCL"/>
+          <attributeAssignments uuid="_klPvDCqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPvDSqEEeKPBKWczpE9Mg" expressionString="nameVar.concat('_sourceCard')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_klPvDiqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPvDyqEEeKPBKWczpE9Mg" expressionString="'0..1'" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLCardinality/cardString"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_klPvECqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvPSqEEeKPBKWczpE9Mg" name="composition" outgoingLinks="_klPvMiqEEeKPBKWczpE9Mg _klPvMyqEEeKPBKWczpE9Mg" incomingLinks="_klPvKyqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLAssoc"/>
+          <attributeAssignments uuid="_klPvESqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPvEiqEEeKPBKWczpE9Mg" expressionString="nameVar.concat('_composition')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_klPvEyqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvRCqEEeKPBKWczpE9Mg" name="targetRole" outgoingLinks="_klPvNCqEEeKPBKWczpE9Mg _klPvNSqEEeKPBKWczpE9Mg" incomingLinks="_klPvLCqEEeKPBKWczpE9Mg _klPvMyqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole"/>
+          <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_klPvFCqEEeKPBKWczpE9Mg" expressionString="self.adornment = 'UMLRole.NONE'" expressionLanguageID="OCL"/>
+          <attributeAssignments uuid="_klPvFSqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPvFiqEEeKPBKWczpE9Mg" expressionString="nameVar.concat('_targetRole')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_klPvFyqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPvGCqEEeKPBKWczpE9Mg" expressionString="'UMLRole.NONE'" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/adornment"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_klPvGSqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvRSqEEeKPBKWczpE9Mg" name="targetCard" incomingLinks="_klPvLSqEEeKPBKWczpE9Mg _klPvNSqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLCardinality"/>
+          <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_klPvGiqEEeKPBKWczpE9Mg" expressionString="self.cardString = '0..1'" expressionLanguageID="OCL"/>
+          <attributeAssignments uuid="_klPvGyqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPvHCqEEeKPBKWczpE9Mg" expressionString="nameVar.concat('_targetCard')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_klPvHSqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPvHiqEEeKPBKWczpE9Mg" expressionString="'0..1'" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLCardinality/cardString"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_klPvHyqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvRiqEEeKPBKWczpE9Mg" name="class" outgoingLinks="_klPvNiqEEeKPBKWczpE9Mg" incomingLinks="_klPvLiqEEeKPBKWczpE9Mg _klPvNCqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClass"/>
+          <attributeAssignments uuid="_klPvICqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPvISqEEeKPBKWczpE9Mg" expressionString="nameVar" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_klPvIiqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvQiqEEeKPBKWczpE9Mg" name="stereotype" incomingLinks="_klPvLyqEEeKPBKWczpE9Mg _klPvNiqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLStereotype"/>
+          <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_klPvIyqEEeKPBKWczpE9Mg" expressionString="self.text = 'block'" expressionLanguageID="OCL"/>
+          <attributeAssignments uuid="_klPvJCqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPvJSqEEeKPBKWczpE9Mg" expressionString="nameVar.concat('_stereotype')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_klPvJiqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPvJyqEEeKPBKWczpE9Mg" expressionString="'block'" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLStereotype/text"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelLinks uuid="_klPvKCqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klPvVSqEEeKPBKWczpE9Mg" source="_klPvAiqEEeKPBKWczpE9Mg" target="_klPvAyqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvKSqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvRyqEEeKPBKWczpE9Mg" source="_klPvAiqEEeKPBKWczpE9Mg" target="_klPvBCqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvKiqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvSCqEEeKPBKWczpE9Mg" source="_klPvAiqEEeKPBKWczpE9Mg" target="_klPvCiqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvKyqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvSSqEEeKPBKWczpE9Mg" source="_klPvAiqEEeKPBKWczpE9Mg" target="_klPvECqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvLCqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvSiqEEeKPBKWczpE9Mg" source="_klPvAiqEEeKPBKWczpE9Mg" target="_klPvEyqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvLSqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvSyqEEeKPBKWczpE9Mg" source="_klPvAiqEEeKPBKWczpE9Mg" target="_klPvGSqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvLiqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvTCqEEeKPBKWczpE9Mg" source="_klPvAiqEEeKPBKWczpE9Mg" target="_klPvHyqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvLyqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvTSqEEeKPBKWczpE9Mg" source="_klPvAiqEEeKPBKWczpE9Mg" target="_klPvIiqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvMCqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvTiqEEeKPBKWczpE9Mg" source="_klPvBCqEEeKPBKWczpE9Mg" target="_klPvAyqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/target"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvMSqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvTyqEEeKPBKWczpE9Mg" source="_klPvBCqEEeKPBKWczpE9Mg" target="_klPvCiqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/card"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvMiqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvUCqEEeKPBKWczpE9Mg" source="_klPvECqEEeKPBKWczpE9Mg" target="_klPvBCqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLAssoc/leftRole"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvMyqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvUSqEEeKPBKWczpE9Mg" source="_klPvECqEEeKPBKWczpE9Mg" target="_klPvEyqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLAssoc/rightRole"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvNCqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvUiqEEeKPBKWczpE9Mg" source="_klPvEyqEEeKPBKWczpE9Mg" target="_klPvHyqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/target"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvNSqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvUyqEEeKPBKWczpE9Mg" source="_klPvEyqEEeKPBKWczpE9Mg" target="_klPvGSqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/card"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvNiqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvVCqEEeKPBKWczpE9Mg" source="_klPvHyqEEeKPBKWczpE9Mg" target="_klPvIiqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLIncrement/stereotypes"/>
+        </modelLinks>
+      </rightModelDomain>
+      <correspondenceDomain uuid="_klPvNyqEEeKPBKWczpE9Mg">
+        <correspondenceNodes uuid="_klPvOCqEEeKPBKWczpE9Mg" name="corrParent" outgoingLinks="_klPvPCqEEeKPBKWczpE9Mg _klPvPiqEEeKPBKWczpE9Mg _klPvVSqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="sdl2uml.ecore#//CorrBlock"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_klPvOSqEEeKPBKWczpE9Mg" modifier="CREATE" name="corrBlock" outgoingLinks="_klPvOyqEEeKPBKWczpE9Mg _klPvRiqEEeKPBKWczpE9Mg _klPvPSqEEeKPBKWczpE9Mg _klPvQSqEEeKPBKWczpE9Mg _klPvQyqEEeKPBKWczpE9Mg _klPvQiqEEeKPBKWczpE9Mg _klPvRSqEEeKPBKWczpE9Mg _klPvRCqEEeKPBKWczpE9Mg _klPvQCqEEeKPBKWczpE9Mg _klPvRyqEEeKPBKWczpE9Mg _klPvSCqEEeKPBKWczpE9Mg _klPvSSqEEeKPBKWczpE9Mg _klPvSiqEEeKPBKWczpE9Mg _klPvSyqEEeKPBKWczpE9Mg _klPvTCqEEeKPBKWczpE9Mg _klPvTSqEEeKPBKWczpE9Mg _klPvTiqEEeKPBKWczpE9Mg _klPvTyqEEeKPBKWczpE9Mg _klPvUCqEEeKPBKWczpE9Mg _klPvUSqEEeKPBKWczpE9Mg _klPvUiqEEeKPBKWczpE9Mg _klPvUyqEEeKPBKWczpE9Mg _klPvVCqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="sdl2uml.ecore#//CorrBlock"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_klPvOiqEEeKPBKWczpE9Mg" name="corrAxiom" outgoingLinks="_klPvPyqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="sdl2uml.ecore#//CorrAxiom"/>
+        </correspondenceNodes>
+        <correspondenceLinks uuid="_klPvOyqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvOSqEEeKPBKWczpE9Mg" target="_klPu_SqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvPCqEEeKPBKWczpE9Mg" source="_klPvOCqEEeKPBKWczpE9Mg" target="_klPu_CqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvPSqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvOSqEEeKPBKWczpE9Mg" target="_klPvECqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvPiqEEeKPBKWczpE9Mg" source="_klPvOCqEEeKPBKWczpE9Mg" target="_klPvAyqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvPyqEEeKPBKWczpE9Mg" source="_klPvOiqEEeKPBKWczpE9Mg" target="_klPvAiqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvQCqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvOSqEEeKPBKWczpE9Mg" target="_klPvACqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvQSqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvOSqEEeKPBKWczpE9Mg" target="_klPvCiqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvQiqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvOSqEEeKPBKWczpE9Mg" target="_klPvIiqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvQyqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvOSqEEeKPBKWczpE9Mg" target="_klPvBCqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvRCqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvOSqEEeKPBKWczpE9Mg" target="_klPvEyqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvRSqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvOSqEEeKPBKWczpE9Mg" target="_klPvGSqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvRiqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvOSqEEeKPBKWczpE9Mg" target="_klPvHyqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvRyqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvOSqEEeKPBKWczpE9Mg" target="_klPvKSqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvSCqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvOSqEEeKPBKWczpE9Mg" target="_klPvKiqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvSSqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvOSqEEeKPBKWczpE9Mg" target="_klPvKyqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvSiqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvOSqEEeKPBKWczpE9Mg" target="_klPvLCqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvSyqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvOSqEEeKPBKWczpE9Mg" target="_klPvLSqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvTCqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvOSqEEeKPBKWczpE9Mg" target="_klPvLiqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvTSqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvOSqEEeKPBKWczpE9Mg" target="_klPvLyqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvTiqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvOSqEEeKPBKWczpE9Mg" target="_klPvMCqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvTyqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvOSqEEeKPBKWczpE9Mg" target="_klPvMSqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvUCqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvOSqEEeKPBKWczpE9Mg" target="_klPvMiqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvUSqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvOSqEEeKPBKWczpE9Mg" target="_klPvMyqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvUiqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvOSqEEeKPBKWczpE9Mg" target="_klPvNCqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvUyqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvOSqEEeKPBKWczpE9Mg" target="_klPvNSqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvVCqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvOSqEEeKPBKWczpE9Mg" target="_klPvNiqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvVSqEEeKPBKWczpE9Mg" source="_klPvOCqEEeKPBKWczpE9Mg" target="_klPvKCqEEeKPBKWczpE9Mg"/>
+      </correspondenceDomain>
+      <attributeFormulas xsi:type="mlexpressions:MLStringExpression" uuid="_klPvViqEEeKPBKWczpE9Mg" expressionString="block.name = class.name" expressionLanguageID="OCL"/>
+      <ruleParameters uuid="_klPvVyqEEeKPBKWczpE9Mg" name="nameVar">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPvWCqEEeKPBKWczpE9Mg" expressionString="block.name" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPvWSqEEeKPBKWczpE9Mg" expressionString="class.name" expressionLanguageID="OCL"/>
+      </ruleParameters>
+    </rules>
+  </ruleGroups>
+  <ruleGroups uuid="_klPvWiqEEeKPBKWczpE9Mg" name="SDL2UMLProcess" ruleGroupID="SDL2UMLProcess">
+    <rules uuid="_klPvWyqEEeKPBKWczpE9Mg" name="SDL2UMLProcess_R1" ruleID="SDL2UMLProcess_R1">
+      <leftModelDomain uuid="_klPvXCqEEeKPBKWczpE9Mg">
+        <modelObjects uuid="_klPvXSqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klPvoSqEEeKPBKWczpE9Mg" name="parentBlock" outgoingLinks="_klPvYSqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/blockDiagram.ecore#//Block"/>
+        </modelObjects>
+        <modelObjects uuid="_klPvXiqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvoCqEEeKPBKWczpE9Mg" name="process" incomingLinks="_klPvYSqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/blockDiagram.ecore#//SDLProcess"/>
+          <attributeAssignments uuid="_klPvXyqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPvYCqEEeKPBKWczpE9Mg" expressionString="nameVar" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/blockDiagram.ecore#//Element/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelLinks uuid="_klPvYSqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvpiqEEeKPBKWczpE9Mg" source="_klPvXSqEEeKPBKWczpE9Mg" target="_klPvXiqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/blockDiagram.ecore#//BlockDiagram/modelElements"/>
+        </modelLinks>
+      </leftModelDomain>
+      <rightModelDomain uuid="_klPvYiqEEeKPBKWczpE9Mg">
+        <modelObjects uuid="_klPvYyqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klPvoyqEEeKPBKWczpE9Mg" name="classDiagram" outgoingLinks="_klPviSqEEeKPBKWczpE9Mg _klPviiqEEeKPBKWczpE9Mg _klPviyqEEeKPBKWczpE9Mg _klPvjCqEEeKPBKWczpE9Mg _klPvjSqEEeKPBKWczpE9Mg _klPvjiqEEeKPBKWczpE9Mg _klPvjyqEEeKPBKWczpE9Mg _klPvkCqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram"/>
+        </modelObjects>
+        <modelObjects uuid="_klPvZCqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klPvnyqEEeKPBKWczpE9Mg" name="parentClass" incomingLinks="_klPviSqEEeKPBKWczpE9Mg _klPvkSqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClass"/>
+        </modelObjects>
+        <modelObjects uuid="_klPvZSqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvpyqEEeKPBKWczpE9Mg" name="sourceRole" outgoingLinks="_klPvkSqEEeKPBKWczpE9Mg _klPvkiqEEeKPBKWczpE9Mg" incomingLinks="_klPviiqEEeKPBKWczpE9Mg _klPvkyqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole"/>
+          <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_klPvZiqEEeKPBKWczpE9Mg" expressionString="self.adornment = 'UMLRole.COMPOSITION'" expressionLanguageID="OCL"/>
+          <attributeAssignments uuid="_klPvZyqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPvaCqEEeKPBKWczpE9Mg" expressionString="nameVar.concat('_sourceRole')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_klPvaSqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPvaiqEEeKPBKWczpE9Mg" expressionString="'UMLRole.COMPOSITION'" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/adornment"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_klPvayqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvnCqEEeKPBKWczpE9Mg" name="sourceCard" incomingLinks="_klPviyqEEeKPBKWczpE9Mg _klPvkiqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLCardinality"/>
+          <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_klPvbCqEEeKPBKWczpE9Mg" expressionString="self.cardString = '0..1'" expressionLanguageID="OCL"/>
+          <attributeAssignments uuid="_klPvbSqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPvbiqEEeKPBKWczpE9Mg" expressionString="nameVar.concat('_sourceCard')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_klPvbyqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPvcCqEEeKPBKWczpE9Mg" expressionString="'0..1'" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLCardinality/cardString"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_klPvcSqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvpCqEEeKPBKWczpE9Mg" name="composition" outgoingLinks="_klPvkyqEEeKPBKWczpE9Mg _klPvlCqEEeKPBKWczpE9Mg" incomingLinks="_klPvjCqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLAssoc"/>
+          <attributeAssignments uuid="_klPvciqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPvcyqEEeKPBKWczpE9Mg" expressionString="nameVar.concat('_composition')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_klPvdCqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvniqEEeKPBKWczpE9Mg" name="targetRole" outgoingLinks="_klPvlSqEEeKPBKWczpE9Mg _klPvliqEEeKPBKWczpE9Mg" incomingLinks="_klPvjSqEEeKPBKWczpE9Mg _klPvlCqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole"/>
+          <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_klPvdSqEEeKPBKWczpE9Mg" expressionString="self.adornment = 'UMLRole.NONE'" expressionLanguageID="OCL"/>
+          <attributeAssignments uuid="_klPvdiqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPvdyqEEeKPBKWczpE9Mg" expressionString="nameVar.concat('_targetRole')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_klPveCqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPveSqEEeKPBKWczpE9Mg" expressionString="'UMLRole.NONE'" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/adornment"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_klPveiqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvpSqEEeKPBKWczpE9Mg" name="targetCard" incomingLinks="_klPvjiqEEeKPBKWczpE9Mg _klPvliqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLCardinality"/>
+          <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_klPveyqEEeKPBKWczpE9Mg" expressionString="self.cardString = '0..1'" expressionLanguageID="OCL"/>
+          <attributeAssignments uuid="_klPvfCqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPvfSqEEeKPBKWczpE9Mg" expressionString="nameVar.concat('_targetCard')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_klPvfiqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPvfyqEEeKPBKWczpE9Mg" expressionString="'0..1'" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLCardinality/cardString"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_klPvgCqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvoiqEEeKPBKWczpE9Mg" name="class" outgoingLinks="_klPvlyqEEeKPBKWczpE9Mg" incomingLinks="_klPvjyqEEeKPBKWczpE9Mg _klPvlSqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClass"/>
+          <attributeAssignments uuid="_klPvgSqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPvgiqEEeKPBKWczpE9Mg" expressionString="nameVar" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_klPvgyqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvnSqEEeKPBKWczpE9Mg" name="stereotype" incomingLinks="_klPvkCqEEeKPBKWczpE9Mg _klPvlyqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLStereotype"/>
+          <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_klPvhCqEEeKPBKWczpE9Mg" expressionString="self.text = 'process'" expressionLanguageID="OCL"/>
+          <attributeAssignments uuid="_klPvhSqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPvhiqEEeKPBKWczpE9Mg" expressionString="nameVar.concat('_stereotype')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_klPvhyqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPviCqEEeKPBKWczpE9Mg" expressionString="'process'" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLStereotype/text"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelLinks uuid="_klPviSqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klPvtiqEEeKPBKWczpE9Mg" source="_klPvYyqEEeKPBKWczpE9Mg" target="_klPvZCqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klPviiqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvqCqEEeKPBKWczpE9Mg" source="_klPvYyqEEeKPBKWczpE9Mg" target="_klPvZSqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klPviyqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvqSqEEeKPBKWczpE9Mg" source="_klPvYyqEEeKPBKWczpE9Mg" target="_klPvayqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvjCqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvqiqEEeKPBKWczpE9Mg" source="_klPvYyqEEeKPBKWczpE9Mg" target="_klPvcSqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvjSqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvqyqEEeKPBKWczpE9Mg" source="_klPvYyqEEeKPBKWczpE9Mg" target="_klPvdCqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvjiqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvrCqEEeKPBKWczpE9Mg" source="_klPvYyqEEeKPBKWczpE9Mg" target="_klPveiqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvjyqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvrSqEEeKPBKWczpE9Mg" source="_klPvYyqEEeKPBKWczpE9Mg" target="_klPvgCqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvkCqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvriqEEeKPBKWczpE9Mg" source="_klPvYyqEEeKPBKWczpE9Mg" target="_klPvgyqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvkSqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvryqEEeKPBKWczpE9Mg" source="_klPvZSqEEeKPBKWczpE9Mg" target="_klPvZCqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/target"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvkiqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvsCqEEeKPBKWczpE9Mg" source="_klPvZSqEEeKPBKWczpE9Mg" target="_klPvayqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/card"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvkyqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvsSqEEeKPBKWczpE9Mg" source="_klPvcSqEEeKPBKWczpE9Mg" target="_klPvZSqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLAssoc/leftRole"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvlCqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvsiqEEeKPBKWczpE9Mg" source="_klPvcSqEEeKPBKWczpE9Mg" target="_klPvdCqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLAssoc/rightRole"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvlSqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvsyqEEeKPBKWczpE9Mg" source="_klPvdCqEEeKPBKWczpE9Mg" target="_klPvgCqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/target"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvliqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvtCqEEeKPBKWczpE9Mg" source="_klPvdCqEEeKPBKWczpE9Mg" target="_klPveiqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/card"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvlyqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klPvtSqEEeKPBKWczpE9Mg" source="_klPvgCqEEeKPBKWczpE9Mg" target="_klPvgyqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLIncrement/stereotypes"/>
+        </modelLinks>
+      </rightModelDomain>
+      <correspondenceDomain uuid="_klPvmCqEEeKPBKWczpE9Mg">
+        <correspondenceNodes uuid="_klPvmSqEEeKPBKWczpE9Mg" name="corrParent" outgoingLinks="_klPvoSqEEeKPBKWczpE9Mg _klPvnyqEEeKPBKWczpE9Mg _klPvtiqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="sdl2uml.ecore#//CorrBlock"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_klPvmiqEEeKPBKWczpE9Mg" modifier="CREATE" name="corrProcess" outgoingLinks="_klPvoCqEEeKPBKWczpE9Mg _klPvoiqEEeKPBKWczpE9Mg _klPvpCqEEeKPBKWczpE9Mg _klPvnCqEEeKPBKWczpE9Mg _klPvpyqEEeKPBKWczpE9Mg _klPvnSqEEeKPBKWczpE9Mg _klPvpSqEEeKPBKWczpE9Mg _klPvniqEEeKPBKWczpE9Mg _klPvpiqEEeKPBKWczpE9Mg _klPvqCqEEeKPBKWczpE9Mg _klPvqSqEEeKPBKWczpE9Mg _klPvqiqEEeKPBKWczpE9Mg _klPvqyqEEeKPBKWczpE9Mg _klPvrCqEEeKPBKWczpE9Mg _klPvrSqEEeKPBKWczpE9Mg _klPvriqEEeKPBKWczpE9Mg _klPvryqEEeKPBKWczpE9Mg _klPvsCqEEeKPBKWczpE9Mg _klPvsSqEEeKPBKWczpE9Mg _klPvsiqEEeKPBKWczpE9Mg _klPvsyqEEeKPBKWczpE9Mg _klPvtCqEEeKPBKWczpE9Mg _klPvtSqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="sdl2uml.ecore#//CorrProcess"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_klPvmyqEEeKPBKWczpE9Mg" name="corrAxiom" outgoingLinks="_klPvoyqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="sdl2uml.ecore#//CorrAxiom"/>
+        </correspondenceNodes>
+        <correspondenceLinks uuid="_klPvnCqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvmiqEEeKPBKWczpE9Mg" target="_klPvayqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvnSqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvmiqEEeKPBKWczpE9Mg" target="_klPvgyqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvniqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvmiqEEeKPBKWczpE9Mg" target="_klPvdCqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvnyqEEeKPBKWczpE9Mg" source="_klPvmSqEEeKPBKWczpE9Mg" target="_klPvZCqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvoCqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvmiqEEeKPBKWczpE9Mg" target="_klPvXiqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvoSqEEeKPBKWczpE9Mg" source="_klPvmSqEEeKPBKWczpE9Mg" target="_klPvXSqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvoiqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvmiqEEeKPBKWczpE9Mg" target="_klPvgCqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvoyqEEeKPBKWczpE9Mg" source="_klPvmyqEEeKPBKWczpE9Mg" target="_klPvYyqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvpCqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvmiqEEeKPBKWczpE9Mg" target="_klPvcSqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvpSqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvmiqEEeKPBKWczpE9Mg" target="_klPveiqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvpiqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvmiqEEeKPBKWczpE9Mg" target="_klPvYSqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvpyqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvmiqEEeKPBKWczpE9Mg" target="_klPvZSqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvqCqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvmiqEEeKPBKWczpE9Mg" target="_klPviiqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvqSqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvmiqEEeKPBKWczpE9Mg" target="_klPviyqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvqiqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvmiqEEeKPBKWczpE9Mg" target="_klPvjCqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvqyqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvmiqEEeKPBKWczpE9Mg" target="_klPvjSqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvrCqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvmiqEEeKPBKWczpE9Mg" target="_klPvjiqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvrSqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvmiqEEeKPBKWczpE9Mg" target="_klPvjyqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvriqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvmiqEEeKPBKWczpE9Mg" target="_klPvkCqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvryqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvmiqEEeKPBKWczpE9Mg" target="_klPvkSqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvsCqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvmiqEEeKPBKWczpE9Mg" target="_klPvkiqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvsSqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvmiqEEeKPBKWczpE9Mg" target="_klPvkyqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvsiqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvmiqEEeKPBKWczpE9Mg" target="_klPvlCqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvsyqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvmiqEEeKPBKWczpE9Mg" target="_klPvlSqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvtCqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvmiqEEeKPBKWczpE9Mg" target="_klPvliqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvtSqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klPvmiqEEeKPBKWczpE9Mg" target="_klPvlyqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klPvtiqEEeKPBKWczpE9Mg" source="_klPvmSqEEeKPBKWczpE9Mg" target="_klPviSqEEeKPBKWczpE9Mg"/>
+      </correspondenceDomain>
+      <attributeFormulas xsi:type="mlexpressions:MLStringExpression" uuid="_klPvtyqEEeKPBKWczpE9Mg" expressionString="process.name = class.name" expressionLanguageID="OCL"/>
+      <ruleParameters uuid="_klPvuCqEEeKPBKWczpE9Mg" name="nameVar">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPvuSqEEeKPBKWczpE9Mg" expressionString="process.name" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPvuiqEEeKPBKWczpE9Mg" expressionString="class.name" expressionLanguageID="OCL"/>
+      </ruleParameters>
+    </rules>
+  </ruleGroups>
+  <ruleGroups uuid="_klPvuyqEEeKPBKWczpE9Mg" name="SDL2UMLConnectionVar1" ruleGroupID="SDL2UMLConnectionVar1">
+    <rules uuid="_klPvvCqEEeKPBKWczpE9Mg" name="SDL2UMLConnectionVar1_R1" ruleID="SDL2UMLConnectionVar1_R1">
+      <leftModelDomain uuid="_klPvvSqEEeKPBKWczpE9Mg">
+        <modelObjects uuid="_klPvviqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klQV9CqEEeKPBKWczpE9Mg" name="sourceConnectable" incomingLinks="_klPvxCqEEeKPBKWczpE9Mg _klPvxyqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/blockDiagram.ecore#//Connectable"/>
+        </modelObjects>
+        <modelObjects uuid="_klPvvyqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klQV8yqEEeKPBKWczpE9Mg" name="targetConnectable" incomingLinks="_klPvxSqEEeKPBKWczpE9Mg _klPvyCqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/blockDiagram.ecore#//Connectable"/>
+        </modelObjects>
+        <modelObjects uuid="_klPvwCqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klQV6iqEEeKPBKWczpE9Mg" name="parentBlock" outgoingLinks="_klPvxCqEEeKPBKWczpE9Mg _klPvxSqEEeKPBKWczpE9Mg _klPvxiqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/blockDiagram.ecore#//Block"/>
+        </modelObjects>
+        <modelObjects uuid="_klPvwSqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQV8iqEEeKPBKWczpE9Mg" name="connection" outgoingLinks="_klPvxyqEEeKPBKWczpE9Mg _klPvyCqEEeKPBKWczpE9Mg" incomingLinks="_klPvxiqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/blockDiagram.ecore#//Connection"/>
+          <attributeAssignments uuid="_klPvwiqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPvwyqEEeKPBKWczpE9Mg" expressionString="nameVar" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/blockDiagram.ecore#//Element/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelLinks uuid="_klPvxCqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klQWACqEEeKPBKWczpE9Mg" source="_klPvwCqEEeKPBKWczpE9Mg" target="_klPvviqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/blockDiagram.ecore#//BlockDiagram/modelElements"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvxSqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klQWASqEEeKPBKWczpE9Mg" source="_klPvwCqEEeKPBKWczpE9Mg" target="_klPvvyqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/blockDiagram.ecore#//BlockDiagram/modelElements"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvxiqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQV7iqEEeKPBKWczpE9Mg" source="_klPvwCqEEeKPBKWczpE9Mg" target="_klPvwSqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/blockDiagram.ecore#//BlockDiagram/modelElements"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvxyqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQV6yqEEeKPBKWczpE9Mg" source="_klPvwSqEEeKPBKWczpE9Mg" target="_klPvviqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/blockDiagram.ecore#//Connection/source"/>
+        </modelLinks>
+        <modelLinks uuid="_klPvyCqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQV7SqEEeKPBKWczpE9Mg" source="_klPvwSqEEeKPBKWczpE9Mg" target="_klPvvyqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/blockDiagram.ecore#//Connection/target"/>
+        </modelLinks>
+      </leftModelDomain>
+      <rightModelDomain uuid="_klPvySqEEeKPBKWczpE9Mg">
+        <modelObjects uuid="_klPvyiqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klQV8SqEEeKPBKWczpE9Mg" name="sourceClass" incomingLinks="_klQV0yqEEeKPBKWczpE9Mg _klQV2iqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClass"/>
+        </modelObjects>
+        <modelObjects uuid="_klPvyyqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klQV6CqEEeKPBKWczpE9Mg" name="targetClass" incomingLinks="_klQV1CqEEeKPBKWczpE9Mg _klQV3CqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClass"/>
+        </modelObjects>
+        <modelObjects uuid="_klPvzCqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klQV7CqEEeKPBKWczpE9Mg" name="classDiagram" outgoingLinks="_klQV0yqEEeKPBKWczpE9Mg _klQV1CqEEeKPBKWczpE9Mg _klQV1SqEEeKPBKWczpE9Mg _klQV1iqEEeKPBKWczpE9Mg _klQV1yqEEeKPBKWczpE9Mg _klQV2CqEEeKPBKWczpE9Mg _klQV2SqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram"/>
+        </modelObjects>
+        <modelObjects uuid="_klPvzSqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQV7yqEEeKPBKWczpE9Mg" name="sourceRole" outgoingLinks="_klQV2iqEEeKPBKWczpE9Mg _klQV2yqEEeKPBKWczpE9Mg" incomingLinks="_klQV1yqEEeKPBKWczpE9Mg _klQV3iqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole"/>
+          <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_klPvziqEEeKPBKWczpE9Mg" expressionString="self.adornment = 'UMLRole.NONE'" expressionLanguageID="OCL"/>
+          <attributeAssignments uuid="_klPvzyqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPv0CqEEeKPBKWczpE9Mg" expressionString="nameVar.concat('_sourceRole')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_klPv0SqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPv0iqEEeKPBKWczpE9Mg" expressionString="'UMLRole.NONE'" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/adornment"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_klPv0yqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQV6SqEEeKPBKWczpE9Mg" name="sourceCard" incomingLinks="_klQV1iqEEeKPBKWczpE9Mg _klQV2yqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLCardinality"/>
+          <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_klPv1CqEEeKPBKWczpE9Mg" expressionString="self.cardString = '0..1'" expressionLanguageID="OCL"/>
+          <attributeAssignments uuid="_klPv1SqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPv1iqEEeKPBKWczpE9Mg" expressionString="nameVar.concat('_sourceCard')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_klPv1yqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPv2CqEEeKPBKWczpE9Mg" expressionString="'0..1'" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLCardinality/cardString"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_klPv2SqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQV5iqEEeKPBKWczpE9Mg" name="association" outgoingLinks="_klQV3iqEEeKPBKWczpE9Mg _klQV3yqEEeKPBKWczpE9Mg" incomingLinks="_klQV1SqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLAssoc"/>
+          <attributeAssignments uuid="_klPv2iqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPv2yqEEeKPBKWczpE9Mg" expressionString="nameVar" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_klPv3CqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQV5yqEEeKPBKWczpE9Mg" name="targetRole" outgoingLinks="_klQV3CqEEeKPBKWczpE9Mg _klQV3SqEEeKPBKWczpE9Mg" incomingLinks="_klQV2SqEEeKPBKWczpE9Mg _klQV3yqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole"/>
+          <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_klPv3SqEEeKPBKWczpE9Mg" expressionString="self.adornment = 'UMLRole.NONE'" expressionLanguageID="OCL"/>
+          <attributeAssignments uuid="_klPv3iqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPv3yqEEeKPBKWczpE9Mg" expressionString="nameVar.concat('_targetRole')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_klPv4CqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klPv4SqEEeKPBKWczpE9Mg" expressionString="'UMLRole.NONE'" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/adornment"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_klPv4iqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQV8CqEEeKPBKWczpE9Mg" name="targetCard" incomingLinks="_klQV2CqEEeKPBKWczpE9Mg _klQV3SqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLCardinality"/>
+          <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_klPv4yqEEeKPBKWczpE9Mg" expressionString="self.cardString = '0..1'" expressionLanguageID="OCL"/>
+          <attributeAssignments uuid="_klPv5CqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klQV0CqEEeKPBKWczpE9Mg" expressionString="nameVar.concat('_targetCard')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_klQV0SqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klQV0iqEEeKPBKWczpE9Mg" expressionString="'0..1'" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLCardinality/cardString"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelLinks uuid="_klQV0yqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klQWAiqEEeKPBKWczpE9Mg" source="_klPvzCqEEeKPBKWczpE9Mg" target="_klPvyiqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klQV1CqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klQWAyqEEeKPBKWczpE9Mg" source="_klPvzCqEEeKPBKWczpE9Mg" target="_klPvyyqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klQV1SqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQV9SqEEeKPBKWczpE9Mg" source="_klPvzCqEEeKPBKWczpE9Mg" target="_klPv2SqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klQV1iqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQV9iqEEeKPBKWczpE9Mg" source="_klPvzCqEEeKPBKWczpE9Mg" target="_klPv0yqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klQV1yqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQV9yqEEeKPBKWczpE9Mg" source="_klPvzCqEEeKPBKWczpE9Mg" target="_klPvzSqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klQV2CqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQV-CqEEeKPBKWczpE9Mg" source="_klPvzCqEEeKPBKWczpE9Mg" target="_klPv4iqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klQV2SqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQV-SqEEeKPBKWczpE9Mg" source="_klPvzCqEEeKPBKWczpE9Mg" target="_klPv3CqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klQV2iqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQV-iqEEeKPBKWczpE9Mg" source="_klPvzSqEEeKPBKWczpE9Mg" target="_klPvyiqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/target"/>
+        </modelLinks>
+        <modelLinks uuid="_klQV2yqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQV-yqEEeKPBKWczpE9Mg" source="_klPvzSqEEeKPBKWczpE9Mg" target="_klPv0yqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/card"/>
+        </modelLinks>
+        <modelLinks uuid="_klQV3CqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQV_CqEEeKPBKWczpE9Mg" source="_klPv3CqEEeKPBKWczpE9Mg" target="_klPvyyqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/target"/>
+        </modelLinks>
+        <modelLinks uuid="_klQV3SqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQV_SqEEeKPBKWczpE9Mg" source="_klPv3CqEEeKPBKWczpE9Mg" target="_klPv4iqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/card"/>
+        </modelLinks>
+        <modelLinks uuid="_klQV3iqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQV_iqEEeKPBKWczpE9Mg" source="_klPv2SqEEeKPBKWczpE9Mg" target="_klPvzSqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLAssoc/leftRole"/>
+        </modelLinks>
+        <modelLinks uuid="_klQV3yqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQV_yqEEeKPBKWczpE9Mg" source="_klPv2SqEEeKPBKWczpE9Mg" target="_klPv3CqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLAssoc/rightRole"/>
+        </modelLinks>
+      </rightModelDomain>
+      <correspondenceDomain uuid="_klQV4CqEEeKPBKWczpE9Mg">
+        <correspondenceNodes uuid="_klQV4SqEEeKPBKWczpE9Mg" name="corrSource" outgoingLinks="_klQV9CqEEeKPBKWczpE9Mg _klQV8SqEEeKPBKWczpE9Mg _klQWACqEEeKPBKWczpE9Mg _klQWAiqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="sdl2uml.ecore#//CorrConnectable"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_klQV4iqEEeKPBKWczpE9Mg" name="corrTarget" outgoingLinks="_klQV8yqEEeKPBKWczpE9Mg _klQV6CqEEeKPBKWczpE9Mg _klQWASqEEeKPBKWczpE9Mg _klQWAyqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="sdl2uml.ecore#//CorrConnectable"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_klQV4yqEEeKPBKWczpE9Mg" modifier="CREATE" name="corrConnection" outgoingLinks="_klQV8iqEEeKPBKWczpE9Mg _klQV5iqEEeKPBKWczpE9Mg _klQV6SqEEeKPBKWczpE9Mg _klQV7yqEEeKPBKWczpE9Mg _klQV8CqEEeKPBKWczpE9Mg _klQV5yqEEeKPBKWczpE9Mg _klQV7iqEEeKPBKWczpE9Mg _klQV6yqEEeKPBKWczpE9Mg _klQV7SqEEeKPBKWczpE9Mg _klQV9SqEEeKPBKWczpE9Mg _klQV9iqEEeKPBKWczpE9Mg _klQV9yqEEeKPBKWczpE9Mg _klQV-CqEEeKPBKWczpE9Mg _klQV-SqEEeKPBKWczpE9Mg _klQV-iqEEeKPBKWczpE9Mg _klQV-yqEEeKPBKWczpE9Mg _klQV_CqEEeKPBKWczpE9Mg _klQV_SqEEeKPBKWczpE9Mg _klQV_iqEEeKPBKWczpE9Mg _klQV_yqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="sdl2uml.ecore#//CorrConnection"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_klQV5CqEEeKPBKWczpE9Mg" name="corrParent" outgoingLinks="_klQV6iqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="sdl2uml.ecore#//CorrBlock"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_klQV5SqEEeKPBKWczpE9Mg" name="corrAxiom" outgoingLinks="_klQV7CqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="sdl2uml.ecore#//CorrAxiom"/>
+        </correspondenceNodes>
+        <correspondenceLinks uuid="_klQV5iqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQV4yqEEeKPBKWczpE9Mg" target="_klPv2SqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQV5yqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQV4yqEEeKPBKWczpE9Mg" target="_klPv3CqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQV6CqEEeKPBKWczpE9Mg" source="_klQV4iqEEeKPBKWczpE9Mg" target="_klPvyyqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQV6SqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQV4yqEEeKPBKWczpE9Mg" target="_klPv0yqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQV6iqEEeKPBKWczpE9Mg" source="_klQV5CqEEeKPBKWczpE9Mg" target="_klPvwCqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQV6yqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQV4yqEEeKPBKWczpE9Mg" target="_klPvxyqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQV7CqEEeKPBKWczpE9Mg" source="_klQV5SqEEeKPBKWczpE9Mg" target="_klPvzCqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQV7SqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQV4yqEEeKPBKWczpE9Mg" target="_klPvyCqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQV7iqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQV4yqEEeKPBKWczpE9Mg" target="_klPvxiqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQV7yqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQV4yqEEeKPBKWczpE9Mg" target="_klPvzSqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQV8CqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQV4yqEEeKPBKWczpE9Mg" target="_klPv4iqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQV8SqEEeKPBKWczpE9Mg" source="_klQV4SqEEeKPBKWczpE9Mg" target="_klPvyiqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQV8iqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQV4yqEEeKPBKWczpE9Mg" target="_klPvwSqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQV8yqEEeKPBKWczpE9Mg" source="_klQV4iqEEeKPBKWczpE9Mg" target="_klPvvyqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQV9CqEEeKPBKWczpE9Mg" source="_klQV4SqEEeKPBKWczpE9Mg" target="_klPvviqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQV9SqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQV4yqEEeKPBKWczpE9Mg" target="_klQV1SqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQV9iqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQV4yqEEeKPBKWczpE9Mg" target="_klQV1iqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQV9yqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQV4yqEEeKPBKWczpE9Mg" target="_klQV1yqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQV-CqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQV4yqEEeKPBKWczpE9Mg" target="_klQV2CqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQV-SqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQV4yqEEeKPBKWczpE9Mg" target="_klQV2SqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQV-iqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQV4yqEEeKPBKWczpE9Mg" target="_klQV2iqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQV-yqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQV4yqEEeKPBKWczpE9Mg" target="_klQV2yqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQV_CqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQV4yqEEeKPBKWczpE9Mg" target="_klQV3CqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQV_SqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQV4yqEEeKPBKWczpE9Mg" target="_klQV3SqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQV_iqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQV4yqEEeKPBKWczpE9Mg" target="_klQV3iqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQV_yqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQV4yqEEeKPBKWczpE9Mg" target="_klQV3yqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWACqEEeKPBKWczpE9Mg" source="_klQV4SqEEeKPBKWczpE9Mg" target="_klPvxCqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWASqEEeKPBKWczpE9Mg" source="_klQV4iqEEeKPBKWczpE9Mg" target="_klPvxSqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWAiqEEeKPBKWczpE9Mg" source="_klQV4SqEEeKPBKWczpE9Mg" target="_klQV0yqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWAyqEEeKPBKWczpE9Mg" source="_klQV4iqEEeKPBKWczpE9Mg" target="_klQV1CqEEeKPBKWczpE9Mg"/>
+      </correspondenceDomain>
+      <attributeFormulas xsi:type="mlexpressions:MLStringExpression" uuid="_klQWBCqEEeKPBKWczpE9Mg" expressionString="connection.name = association.name" expressionLanguageID="OCL"/>
+      <ruleParameters uuid="_klQWBSqEEeKPBKWczpE9Mg" name="nameVar">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klQWBiqEEeKPBKWczpE9Mg" expressionString="connection.name" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klQWByqEEeKPBKWczpE9Mg" expressionString="association.name" expressionLanguageID="OCL"/>
+      </ruleParameters>
+    </rules>
+  </ruleGroups>
+  <ruleGroups uuid="_klQWCCqEEeKPBKWczpE9Mg" name="SDL2UMLConnectionVar2" ruleGroupID="SDL2UMLConnectionVar2">
+    <rules uuid="_klQWCSqEEeKPBKWczpE9Mg" name="SDL2UMLConnectionVar2_R1" ruleID="SDL2UMLConnectionVar2_R1">
+      <leftModelDomain uuid="_klQWCiqEEeKPBKWczpE9Mg">
+        <modelObjects uuid="_klQWCyqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klQWSSqEEeKPBKWczpE9Mg" name="sourceConnectable" outgoingLinks="_klQWECqEEeKPBKWczpE9Mg _klQWEyqEEeKPBKWczpE9Mg" incomingLinks="_klQWESqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/blockDiagram.ecore#//Block"/>
+        </modelObjects>
+        <modelObjects uuid="_klQWDCqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klQWSCqEEeKPBKWczpE9Mg" name="targetConnectable" incomingLinks="_klQWEiqEEeKPBKWczpE9Mg _klQWEyqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/blockDiagram.ecore#//Connectable"/>
+        </modelObjects>
+        <modelObjects uuid="_klQWDSqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWSiqEEeKPBKWczpE9Mg" name="connection" outgoingLinks="_klQWESqEEeKPBKWczpE9Mg _klQWEiqEEeKPBKWczpE9Mg" incomingLinks="_klQWECqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/blockDiagram.ecore#//Connection"/>
+          <attributeAssignments uuid="_klQWDiqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klQWDyqEEeKPBKWczpE9Mg" expressionString="nameVar" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/blockDiagram.ecore#//Element/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelLinks uuid="_klQWECqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWTyqEEeKPBKWczpE9Mg" source="_klQWCyqEEeKPBKWczpE9Mg" target="_klQWDSqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/blockDiagram.ecore#//BlockDiagram/modelElements"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWESqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWUiqEEeKPBKWczpE9Mg" source="_klQWDSqEEeKPBKWczpE9Mg" target="_klQWCyqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/blockDiagram.ecore#//Connection/source"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWEiqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWTiqEEeKPBKWczpE9Mg" source="_klQWDSqEEeKPBKWczpE9Mg" target="_klQWDCqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/blockDiagram.ecore#//Connection/target"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWEyqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klQWXiqEEeKPBKWczpE9Mg" source="_klQWCyqEEeKPBKWczpE9Mg" target="_klQWDCqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/blockDiagram.ecore#//BlockDiagram/modelElements"/>
+        </modelLinks>
+      </leftModelDomain>
+      <rightModelDomain uuid="_klQWFCqEEeKPBKWczpE9Mg">
+        <modelObjects uuid="_klQWFSqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klQWUSqEEeKPBKWczpE9Mg" name="sourceClass" incomingLinks="_klQWMyqEEeKPBKWczpE9Mg _klQWOiqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClass"/>
+        </modelObjects>
+        <modelObjects uuid="_klQWFiqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klQWTCqEEeKPBKWczpE9Mg" name="targetClass" incomingLinks="_klQWNCqEEeKPBKWczpE9Mg _klQWPCqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClass"/>
+        </modelObjects>
+        <modelObjects uuid="_klQWFyqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klQWUCqEEeKPBKWczpE9Mg" name="classDiagram" outgoingLinks="_klQWMyqEEeKPBKWczpE9Mg _klQWNCqEEeKPBKWczpE9Mg _klQWNSqEEeKPBKWczpE9Mg _klQWNiqEEeKPBKWczpE9Mg _klQWNyqEEeKPBKWczpE9Mg _klQWOCqEEeKPBKWczpE9Mg _klQWOSqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram"/>
+        </modelObjects>
+        <modelObjects uuid="_klQWGCqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWRiqEEeKPBKWczpE9Mg" name="sourceRole" outgoingLinks="_klQWOiqEEeKPBKWczpE9Mg _klQWOyqEEeKPBKWczpE9Mg" incomingLinks="_klQWNyqEEeKPBKWczpE9Mg _klQWPiqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole"/>
+          <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_klQWGSqEEeKPBKWczpE9Mg" expressionString="self.adornment = 'UMLRole.NONE'" expressionLanguageID="OCL"/>
+          <attributeAssignments uuid="_klQWGiqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klQWGyqEEeKPBKWczpE9Mg" expressionString="nameVar.concat('_sourceRole')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_klQWHCqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klQWHSqEEeKPBKWczpE9Mg" expressionString="'UMLRole.NONE'" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/adornment"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_klQWHiqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWRSqEEeKPBKWczpE9Mg" name="sourceCard" incomingLinks="_klQWNiqEEeKPBKWczpE9Mg _klQWOyqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLCardinality"/>
+          <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_klQWHyqEEeKPBKWczpE9Mg" expressionString="self.cardString = '0..1'" expressionLanguageID="OCL"/>
+          <attributeAssignments uuid="_klQWICqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klQWISqEEeKPBKWczpE9Mg" expressionString="nameVar.concat('_sourceCard')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_klQWIiqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klQWIyqEEeKPBKWczpE9Mg" expressionString="'0..1'" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLCardinality/cardString"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_klQWJCqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWSyqEEeKPBKWczpE9Mg" name="association" outgoingLinks="_klQWPiqEEeKPBKWczpE9Mg _klQWPyqEEeKPBKWczpE9Mg" incomingLinks="_klQWNSqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLAssoc"/>
+          <attributeAssignments uuid="_klQWJSqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klQWJiqEEeKPBKWczpE9Mg" expressionString="nameVar" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_klQWJyqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWRyqEEeKPBKWczpE9Mg" name="targetRole" outgoingLinks="_klQWPCqEEeKPBKWczpE9Mg _klQWPSqEEeKPBKWczpE9Mg" incomingLinks="_klQWOSqEEeKPBKWczpE9Mg _klQWPyqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole"/>
+          <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_klQWKCqEEeKPBKWczpE9Mg" expressionString="self.adornment = 'UMLRole.NONE'" expressionLanguageID="OCL"/>
+          <attributeAssignments uuid="_klQWKSqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klQWKiqEEeKPBKWczpE9Mg" expressionString="nameVar.concat('_targetRole')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_klQWKyqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klQWLCqEEeKPBKWczpE9Mg" expressionString="'UMLRole.NONE'" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/adornment"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_klQWLSqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWTSqEEeKPBKWczpE9Mg" name="targetCard" incomingLinks="_klQWOCqEEeKPBKWczpE9Mg _klQWPSqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLCardinality"/>
+          <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_klQWLiqEEeKPBKWczpE9Mg" expressionString="self.cardString = '0..1'" expressionLanguageID="OCL"/>
+          <attributeAssignments uuid="_klQWLyqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klQWMCqEEeKPBKWczpE9Mg" expressionString="nameVar.concat('_targetCard')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_klQWMSqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klQWMiqEEeKPBKWczpE9Mg" expressionString="'0..1'" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLCardinality/cardString"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelLinks uuid="_klQWMyqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klQWXyqEEeKPBKWczpE9Mg" source="_klQWFyqEEeKPBKWczpE9Mg" target="_klQWFSqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWNCqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klQWYCqEEeKPBKWczpE9Mg" source="_klQWFyqEEeKPBKWczpE9Mg" target="_klQWFiqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWNSqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWUyqEEeKPBKWczpE9Mg" source="_klQWFyqEEeKPBKWczpE9Mg" target="_klQWJCqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWNiqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWVCqEEeKPBKWczpE9Mg" source="_klQWFyqEEeKPBKWczpE9Mg" target="_klQWHiqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWNyqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWVSqEEeKPBKWczpE9Mg" source="_klQWFyqEEeKPBKWczpE9Mg" target="_klQWGCqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWOCqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWViqEEeKPBKWczpE9Mg" source="_klQWFyqEEeKPBKWczpE9Mg" target="_klQWLSqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWOSqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWVyqEEeKPBKWczpE9Mg" source="_klQWFyqEEeKPBKWczpE9Mg" target="_klQWJyqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWOiqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWWCqEEeKPBKWczpE9Mg" source="_klQWGCqEEeKPBKWczpE9Mg" target="_klQWFSqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/target"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWOyqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWWSqEEeKPBKWczpE9Mg" source="_klQWGCqEEeKPBKWczpE9Mg" target="_klQWHiqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/card"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWPCqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWWiqEEeKPBKWczpE9Mg" source="_klQWJyqEEeKPBKWczpE9Mg" target="_klQWFiqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/target"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWPSqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWWyqEEeKPBKWczpE9Mg" source="_klQWJyqEEeKPBKWczpE9Mg" target="_klQWLSqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/card"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWPiqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWXCqEEeKPBKWczpE9Mg" source="_klQWJCqEEeKPBKWczpE9Mg" target="_klQWGCqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLAssoc/leftRole"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWPyqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWXSqEEeKPBKWczpE9Mg" source="_klQWJCqEEeKPBKWczpE9Mg" target="_klQWJyqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLAssoc/rightRole"/>
+        </modelLinks>
+      </rightModelDomain>
+      <correspondenceDomain uuid="_klQWQCqEEeKPBKWczpE9Mg">
+        <correspondenceNodes uuid="_klQWQSqEEeKPBKWczpE9Mg" name="corrSource" outgoingLinks="_klQWSSqEEeKPBKWczpE9Mg _klQWUSqEEeKPBKWczpE9Mg _klQWXyqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="sdl2uml.ecore#//CorrBlock"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_klQWQiqEEeKPBKWczpE9Mg" name="corrTarget" outgoingLinks="_klQWSCqEEeKPBKWczpE9Mg _klQWTCqEEeKPBKWczpE9Mg _klQWXiqEEeKPBKWczpE9Mg _klQWYCqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="sdl2uml.ecore#//CorrConnectable"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_klQWQyqEEeKPBKWczpE9Mg" modifier="CREATE" name="corrConnection" outgoingLinks="_klQWSiqEEeKPBKWczpE9Mg _klQWSyqEEeKPBKWczpE9Mg _klQWRSqEEeKPBKWczpE9Mg _klQWRiqEEeKPBKWczpE9Mg _klQWTSqEEeKPBKWczpE9Mg _klQWRyqEEeKPBKWczpE9Mg _klQWTyqEEeKPBKWczpE9Mg _klQWUiqEEeKPBKWczpE9Mg _klQWTiqEEeKPBKWczpE9Mg _klQWUyqEEeKPBKWczpE9Mg _klQWVCqEEeKPBKWczpE9Mg _klQWVSqEEeKPBKWczpE9Mg _klQWViqEEeKPBKWczpE9Mg _klQWVyqEEeKPBKWczpE9Mg _klQWWCqEEeKPBKWczpE9Mg _klQWWSqEEeKPBKWczpE9Mg _klQWWiqEEeKPBKWczpE9Mg _klQWWyqEEeKPBKWczpE9Mg _klQWXCqEEeKPBKWczpE9Mg _klQWXSqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="sdl2uml.ecore#//CorrConnection"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_klQWRCqEEeKPBKWczpE9Mg" name="corrAxiom" outgoingLinks="_klQWUCqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="sdl2uml.ecore#//CorrAxiom"/>
+        </correspondenceNodes>
+        <correspondenceLinks uuid="_klQWRSqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWQyqEEeKPBKWczpE9Mg" target="_klQWHiqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWRiqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWQyqEEeKPBKWczpE9Mg" target="_klQWGCqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWRyqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWQyqEEeKPBKWczpE9Mg" target="_klQWJyqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWSCqEEeKPBKWczpE9Mg" source="_klQWQiqEEeKPBKWczpE9Mg" target="_klQWDCqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWSSqEEeKPBKWczpE9Mg" source="_klQWQSqEEeKPBKWczpE9Mg" target="_klQWCyqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWSiqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWQyqEEeKPBKWczpE9Mg" target="_klQWDSqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWSyqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWQyqEEeKPBKWczpE9Mg" target="_klQWJCqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWTCqEEeKPBKWczpE9Mg" source="_klQWQiqEEeKPBKWczpE9Mg" target="_klQWFiqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWTSqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWQyqEEeKPBKWczpE9Mg" target="_klQWLSqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWTiqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWQyqEEeKPBKWczpE9Mg" target="_klQWEiqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWTyqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWQyqEEeKPBKWczpE9Mg" target="_klQWECqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWUCqEEeKPBKWczpE9Mg" source="_klQWRCqEEeKPBKWczpE9Mg" target="_klQWFyqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWUSqEEeKPBKWczpE9Mg" source="_klQWQSqEEeKPBKWczpE9Mg" target="_klQWFSqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWUiqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWQyqEEeKPBKWczpE9Mg" target="_klQWESqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWUyqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWQyqEEeKPBKWczpE9Mg" target="_klQWNSqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWVCqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWQyqEEeKPBKWczpE9Mg" target="_klQWNiqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWVSqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWQyqEEeKPBKWczpE9Mg" target="_klQWNyqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWViqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWQyqEEeKPBKWczpE9Mg" target="_klQWOCqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWVyqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWQyqEEeKPBKWczpE9Mg" target="_klQWOSqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWWCqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWQyqEEeKPBKWczpE9Mg" target="_klQWOiqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWWSqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWQyqEEeKPBKWczpE9Mg" target="_klQWOyqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWWiqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWQyqEEeKPBKWczpE9Mg" target="_klQWPCqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWWyqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWQyqEEeKPBKWczpE9Mg" target="_klQWPSqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWXCqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWQyqEEeKPBKWczpE9Mg" target="_klQWPiqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWXSqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWQyqEEeKPBKWczpE9Mg" target="_klQWPyqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWXiqEEeKPBKWczpE9Mg" source="_klQWQiqEEeKPBKWczpE9Mg" target="_klQWEyqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWXyqEEeKPBKWczpE9Mg" source="_klQWQSqEEeKPBKWczpE9Mg" target="_klQWMyqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWYCqEEeKPBKWczpE9Mg" source="_klQWQiqEEeKPBKWczpE9Mg" target="_klQWNCqEEeKPBKWczpE9Mg"/>
+      </correspondenceDomain>
+      <attributeFormulas xsi:type="mlexpressions:MLStringExpression" uuid="_klQWYSqEEeKPBKWczpE9Mg" expressionString="connection.name = association.name" expressionLanguageID="OCL"/>
+      <ruleParameters uuid="_klQWYiqEEeKPBKWczpE9Mg" name="nameVar">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klQWYyqEEeKPBKWczpE9Mg" expressionString="connection.name" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klQWZCqEEeKPBKWczpE9Mg" expressionString="association.name" expressionLanguageID="OCL"/>
+      </ruleParameters>
+    </rules>
+  </ruleGroups>
+  <ruleGroups uuid="_klQWZSqEEeKPBKWczpE9Mg" name="SDL2UMLConnectionVar3" ruleGroupID="SDL2UMLConnectionVar3">
+    <rules uuid="_klQWZiqEEeKPBKWczpE9Mg" name="SDL2UMLConnectionVar3_R1" ruleID="SDL2UMLConnectionVar3_R1">
+      <leftModelDomain uuid="_klQWZyqEEeKPBKWczpE9Mg">
+        <modelObjects uuid="_klQWaCqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klQWrCqEEeKPBKWczpE9Mg" name="sourceConnectable" incomingLinks="_klQWbiqEEeKPBKWczpE9Mg _klQWcCqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/blockDiagram.ecore#//Connectable"/>
+        </modelObjects>
+        <modelObjects uuid="_klQWaSqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klQWqCqEEeKPBKWczpE9Mg" name="targetConnectable" outgoingLinks="_klQWbSqEEeKPBKWczpE9Mg _klQWcCqEEeKPBKWczpE9Mg" incomingLinks="_klQWbyqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/blockDiagram.ecore#//Block"/>
+        </modelObjects>
+        <modelObjects uuid="_klQWaiqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWqSqEEeKPBKWczpE9Mg" name="connection" outgoingLinks="_klQWbiqEEeKPBKWczpE9Mg _klQWbyqEEeKPBKWczpE9Mg" incomingLinks="_klQWbSqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/blockDiagram.ecore#//Connection"/>
+          <attributeAssignments uuid="_klQWayqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klQWbCqEEeKPBKWczpE9Mg" expressionString="nameVar" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/blockDiagram.ecore#//Element/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelLinks uuid="_klQWbSqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWpyqEEeKPBKWczpE9Mg" source="_klQWaSqEEeKPBKWczpE9Mg" target="_klQWaiqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/blockDiagram.ecore#//BlockDiagram/modelElements"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWbiqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWpCqEEeKPBKWczpE9Mg" source="_klQWaiqEEeKPBKWczpE9Mg" target="_klQWaCqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/blockDiagram.ecore#//Connection/source"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWbyqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWpSqEEeKPBKWczpE9Mg" source="_klQWaiqEEeKPBKWczpE9Mg" target="_klQWaSqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/blockDiagram.ecore#//Connection/target"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWcCqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klQWuyqEEeKPBKWczpE9Mg" source="_klQWaSqEEeKPBKWczpE9Mg" target="_klQWaCqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/blockDiagram.ecore#//BlockDiagram/modelElements"/>
+        </modelLinks>
+      </leftModelDomain>
+      <rightModelDomain uuid="_klQWcSqEEeKPBKWczpE9Mg">
+        <modelObjects uuid="_klQWciqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klQWqiqEEeKPBKWczpE9Mg" name="sourceClass" incomingLinks="_klQWkCqEEeKPBKWczpE9Mg _klQWlyqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClass"/>
+        </modelObjects>
+        <modelObjects uuid="_klQWcyqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klQWoiqEEeKPBKWczpE9Mg" name="targetClass" incomingLinks="_klQWkSqEEeKPBKWczpE9Mg _klQWmSqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClass"/>
+        </modelObjects>
+        <modelObjects uuid="_klQWdCqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klQWriqEEeKPBKWczpE9Mg" name="classDiagram" outgoingLinks="_klQWkCqEEeKPBKWczpE9Mg _klQWkSqEEeKPBKWczpE9Mg _klQWkiqEEeKPBKWczpE9Mg _klQWkyqEEeKPBKWczpE9Mg _klQWlCqEEeKPBKWczpE9Mg _klQWlSqEEeKPBKWczpE9Mg _klQWliqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram"/>
+        </modelObjects>
+        <modelObjects uuid="_klQWdSqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWqyqEEeKPBKWczpE9Mg" name="sourceRole" outgoingLinks="_klQWlyqEEeKPBKWczpE9Mg _klQWmCqEEeKPBKWczpE9Mg" incomingLinks="_klQWlCqEEeKPBKWczpE9Mg _klQWmyqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole"/>
+          <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_klQWdiqEEeKPBKWczpE9Mg" expressionString="self.adornment = 'UMLRole.NONE'" expressionLanguageID="OCL"/>
+          <attributeAssignments uuid="_klQWdyqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klQWeCqEEeKPBKWczpE9Mg" expressionString="nameVar.concat('_sourceRole')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_klQWeSqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klQWeiqEEeKPBKWczpE9Mg" expressionString="'UMLRole.NONE'" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/adornment"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_klQWeyqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWpiqEEeKPBKWczpE9Mg" name="sourceCard" incomingLinks="_klQWkyqEEeKPBKWczpE9Mg _klQWmCqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLCardinality"/>
+          <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_klQWfCqEEeKPBKWczpE9Mg" expressionString="self.cardString = '0..1'" expressionLanguageID="OCL"/>
+          <attributeAssignments uuid="_klQWfSqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klQWfiqEEeKPBKWczpE9Mg" expressionString="nameVar.concat('_sourceCard')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_klQWfyqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klQWgCqEEeKPBKWczpE9Mg" expressionString="'0..1'" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLCardinality/cardString"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_klQWgSqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWryqEEeKPBKWczpE9Mg" name="association" outgoingLinks="_klQWmyqEEeKPBKWczpE9Mg _klQWnCqEEeKPBKWczpE9Mg" incomingLinks="_klQWkiqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLAssoc"/>
+          <attributeAssignments uuid="_klQWgiqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klQWgyqEEeKPBKWczpE9Mg" expressionString="nameVar" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_klQWhCqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWrSqEEeKPBKWczpE9Mg" name="targetRole" outgoingLinks="_klQWmSqEEeKPBKWczpE9Mg _klQWmiqEEeKPBKWczpE9Mg" incomingLinks="_klQWliqEEeKPBKWczpE9Mg _klQWnCqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole"/>
+          <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_klQWhSqEEeKPBKWczpE9Mg" expressionString="self.adornment = 'UMLRole.NONE'" expressionLanguageID="OCL"/>
+          <attributeAssignments uuid="_klQWhiqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klQWhyqEEeKPBKWczpE9Mg" expressionString="nameVar.concat('_targetRole')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_klQWiCqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klQWiSqEEeKPBKWczpE9Mg" expressionString="'UMLRole.NONE'" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/adornment"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelObjects uuid="_klQWiiqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWoyqEEeKPBKWczpE9Mg" name="targetCard" incomingLinks="_klQWlSqEEeKPBKWczpE9Mg _klQWmiqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="http:///de/hpi/sam/classDiagram.ecore#//UMLCardinality"/>
+          <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_klQWiyqEEeKPBKWczpE9Mg" expressionString="self.cardString = '0..1'" expressionLanguageID="OCL"/>
+          <attributeAssignments uuid="_klQWjCqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klQWjSqEEeKPBKWczpE9Mg" expressionString="nameVar.concat('_targetCard')" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLElement/name"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_klQWjiqEEeKPBKWczpE9Mg">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klQWjyqEEeKPBKWczpE9Mg" expressionString="'0..1'" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http:///de/hpi/sam/classDiagram.ecore#//UMLCardinality/cardString"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelLinks uuid="_klQWkCqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klQWvCqEEeKPBKWczpE9Mg" source="_klQWdCqEEeKPBKWczpE9Mg" target="_klQWciqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWkSqEEeKPBKWczpE9Mg" incomingCorrespondenceLink="_klQWvSqEEeKPBKWczpE9Mg" source="_klQWdCqEEeKPBKWczpE9Mg" target="_klQWcyqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWkiqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWsCqEEeKPBKWczpE9Mg" source="_klQWdCqEEeKPBKWczpE9Mg" target="_klQWgSqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWkyqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWsSqEEeKPBKWczpE9Mg" source="_klQWdCqEEeKPBKWczpE9Mg" target="_klQWeyqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWlCqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWsiqEEeKPBKWczpE9Mg" source="_klQWdCqEEeKPBKWczpE9Mg" target="_klQWdSqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWlSqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWsyqEEeKPBKWczpE9Mg" source="_klQWdCqEEeKPBKWczpE9Mg" target="_klQWiiqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWliqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWtCqEEeKPBKWczpE9Mg" source="_klQWdCqEEeKPBKWczpE9Mg" target="_klQWhCqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLClassDiagram/elements"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWlyqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWtSqEEeKPBKWczpE9Mg" source="_klQWdSqEEeKPBKWczpE9Mg" target="_klQWciqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/target"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWmCqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWtiqEEeKPBKWczpE9Mg" source="_klQWdSqEEeKPBKWczpE9Mg" target="_klQWeyqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/card"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWmSqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWtyqEEeKPBKWczpE9Mg" source="_klQWhCqEEeKPBKWczpE9Mg" target="_klQWcyqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/target"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWmiqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWuCqEEeKPBKWczpE9Mg" source="_klQWhCqEEeKPBKWczpE9Mg" target="_klQWiiqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLRole/card"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWmyqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWuSqEEeKPBKWczpE9Mg" source="_klQWgSqEEeKPBKWczpE9Mg" target="_klQWdSqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLAssoc/leftRole"/>
+        </modelLinks>
+        <modelLinks uuid="_klQWnCqEEeKPBKWczpE9Mg" modifier="CREATE" incomingCorrespondenceLink="_klQWuiqEEeKPBKWczpE9Mg" source="_klQWgSqEEeKPBKWczpE9Mg" target="_klQWhCqEEeKPBKWczpE9Mg">
+          <feature xsi:type="ecore:EReference" href="http:///de/hpi/sam/classDiagram.ecore#//UMLAssoc/rightRole"/>
+        </modelLinks>
+      </rightModelDomain>
+      <correspondenceDomain uuid="_klQWnSqEEeKPBKWczpE9Mg">
+        <correspondenceNodes uuid="_klQWniqEEeKPBKWczpE9Mg" name="corrSource" outgoingLinks="_klQWrCqEEeKPBKWczpE9Mg _klQWqiqEEeKPBKWczpE9Mg _klQWuyqEEeKPBKWczpE9Mg _klQWvCqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="sdl2uml.ecore#//CorrConnectable"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_klQWnyqEEeKPBKWczpE9Mg" name="corrTarget" outgoingLinks="_klQWqCqEEeKPBKWczpE9Mg _klQWoiqEEeKPBKWczpE9Mg _klQWvSqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="sdl2uml.ecore#//CorrBlock"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_klQWoCqEEeKPBKWczpE9Mg" modifier="CREATE" name="corrConnection" outgoingLinks="_klQWqSqEEeKPBKWczpE9Mg _klQWryqEEeKPBKWczpE9Mg _klQWpiqEEeKPBKWczpE9Mg _klQWqyqEEeKPBKWczpE9Mg _klQWoyqEEeKPBKWczpE9Mg _klQWrSqEEeKPBKWczpE9Mg _klQWpyqEEeKPBKWczpE9Mg _klQWpCqEEeKPBKWczpE9Mg _klQWpSqEEeKPBKWczpE9Mg _klQWsCqEEeKPBKWczpE9Mg _klQWsSqEEeKPBKWczpE9Mg _klQWsiqEEeKPBKWczpE9Mg _klQWsyqEEeKPBKWczpE9Mg _klQWtCqEEeKPBKWczpE9Mg _klQWtSqEEeKPBKWczpE9Mg _klQWtiqEEeKPBKWczpE9Mg _klQWtyqEEeKPBKWczpE9Mg _klQWuCqEEeKPBKWczpE9Mg _klQWuSqEEeKPBKWczpE9Mg _klQWuiqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="sdl2uml.ecore#//CorrConnection"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_klQWoSqEEeKPBKWczpE9Mg" name="corrAxiom" outgoingLinks="_klQWriqEEeKPBKWczpE9Mg">
+          <type xsi:type="ecore:EClass" href="sdl2uml.ecore#//CorrAxiom"/>
+        </correspondenceNodes>
+        <correspondenceLinks uuid="_klQWoiqEEeKPBKWczpE9Mg" source="_klQWnyqEEeKPBKWczpE9Mg" target="_klQWcyqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWoyqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWoCqEEeKPBKWczpE9Mg" target="_klQWiiqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWpCqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWoCqEEeKPBKWczpE9Mg" target="_klQWbiqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWpSqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWoCqEEeKPBKWczpE9Mg" target="_klQWbyqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWpiqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWoCqEEeKPBKWczpE9Mg" target="_klQWeyqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWpyqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWoCqEEeKPBKWczpE9Mg" target="_klQWbSqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWqCqEEeKPBKWczpE9Mg" source="_klQWnyqEEeKPBKWczpE9Mg" target="_klQWaSqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWqSqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWoCqEEeKPBKWczpE9Mg" target="_klQWaiqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWqiqEEeKPBKWczpE9Mg" source="_klQWniqEEeKPBKWczpE9Mg" target="_klQWciqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWqyqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWoCqEEeKPBKWczpE9Mg" target="_klQWdSqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWrCqEEeKPBKWczpE9Mg" source="_klQWniqEEeKPBKWczpE9Mg" target="_klQWaCqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWrSqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWoCqEEeKPBKWczpE9Mg" target="_klQWhCqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWriqEEeKPBKWczpE9Mg" source="_klQWoSqEEeKPBKWczpE9Mg" target="_klQWdCqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWryqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWoCqEEeKPBKWczpE9Mg" target="_klQWgSqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWsCqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWoCqEEeKPBKWczpE9Mg" target="_klQWkiqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWsSqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWoCqEEeKPBKWczpE9Mg" target="_klQWkyqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWsiqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWoCqEEeKPBKWczpE9Mg" target="_klQWlCqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWsyqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWoCqEEeKPBKWczpE9Mg" target="_klQWlSqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWtCqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWoCqEEeKPBKWczpE9Mg" target="_klQWliqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWtSqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWoCqEEeKPBKWczpE9Mg" target="_klQWlyqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWtiqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWoCqEEeKPBKWczpE9Mg" target="_klQWmCqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWtyqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWoCqEEeKPBKWczpE9Mg" target="_klQWmSqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWuCqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWoCqEEeKPBKWczpE9Mg" target="_klQWmiqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWuSqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWoCqEEeKPBKWczpE9Mg" target="_klQWmyqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWuiqEEeKPBKWczpE9Mg" modifier="CREATE" source="_klQWoCqEEeKPBKWczpE9Mg" target="_klQWnCqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWuyqEEeKPBKWczpE9Mg" source="_klQWniqEEeKPBKWczpE9Mg" target="_klQWcCqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWvCqEEeKPBKWczpE9Mg" source="_klQWniqEEeKPBKWczpE9Mg" target="_klQWkCqEEeKPBKWczpE9Mg"/>
+        <correspondenceLinks uuid="_klQWvSqEEeKPBKWczpE9Mg" source="_klQWnyqEEeKPBKWczpE9Mg" target="_klQWkSqEEeKPBKWczpE9Mg"/>
+      </correspondenceDomain>
+      <attributeFormulas xsi:type="mlexpressions:MLStringExpression" uuid="_klQWviqEEeKPBKWczpE9Mg" expressionString="connection.name = association.name" expressionLanguageID="OCL"/>
+      <ruleParameters uuid="_klQWvyqEEeKPBKWczpE9Mg" name="nameVar">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klQWwCqEEeKPBKWczpE9Mg" expressionString="connection.name" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_klQWwSqEEeKPBKWczpE9Mg" expressionString="association.name" expressionLanguageID="OCL"/>
+      </ruleParameters>
+    </rules>
+  </ruleGroups>
+</mltgg:TGG>

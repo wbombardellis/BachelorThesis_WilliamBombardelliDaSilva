@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ASCII"?>
+<mlsdm:Activity xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mlexpressions="http://www.mdelab.de/mlexpressions/1.0" xmlns:mlsdm="http://www.mdelab.de/mlsdm/1.0" xmlns:mlstorypatterns="http://www.mdelab.de/mlstorypatterns/1.0" uuid="_OLgSMJiTEeWSsvUyU8yapg" name="uml2blockyAxiom_r1_addElement">
+  <edges uuid="_OLgSMZiTEeWSsvUyU8yapg" source="_OLgSQ5iTEeWSsvUyU8yapg" target="_OLgSN5iTEeWSsvUyU8yapg" guardType="FAILURE"/>
+  <edges uuid="_OLgSMpiTEeWSsvUyU8yapg" source="_OLgSVZiTEeWSsvUyU8yapg" target="_OLgSPJiTEeWSsvUyU8yapg"/>
+  <edges uuid="_OLgSM5iTEeWSsvUyU8yapg" source="_OLgSPJiTEeWSsvUyU8yapg" target="_OLgSQ5iTEeWSsvUyU8yapg" guardType="SUCCESS"/>
+  <edges uuid="_OLgSNJiTEeWSsvUyU8yapg" source="_OLgSN5iTEeWSsvUyU8yapg" target="_OLgSTpiTEeWSsvUyU8yapg"/>
+  <edges uuid="_OLgSNZiTEeWSsvUyU8yapg" source="_OLgSQ5iTEeWSsvUyU8yapg" target="_OLgSR5iTEeWSsvUyU8yapg" guardType="SUCCESS"/>
+  <edges uuid="_OLgSNpiTEeWSsvUyU8yapg" source="_OLgSPJiTEeWSsvUyU8yapg" target="_OLgSTpiTEeWSsvUyU8yapg" guardType="FAILURE"/>
+  <nodes xsi:type="mlsdm:StoryNode" uuid="_OLgSN5iTEeWSsvUyU8yapg" outgoingEdges="_OLgSNJiTEeWSsvUyU8yapg" incomingEdges="_OLgSMZiTEeWSsvUyU8yapg" name="delete elements">
+    <storyPattern uuid="_OLgSOJiTEeWSsvUyU8yapg" name="delete elements">
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_OLgSOZiTEeWSsvUyU8yapg" modifier="DESTROY" name="model" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Model"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_OLgSOpiTEeWSsvUyU8yapg" modifier="DESTROY" name="target" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://tu-berlin.de/silvawb/blocky#//BlockDiagram"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_OLgSO5iTEeWSsvUyU8yapg" modifier="DESTROY" name="corrAxiom" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://tu-berlin.de/uml2blocky#//CorrAxiom"/>
+      </storyPatternObjects>
+    </storyPattern>
+  </nodes>
+  <nodes xsi:type="mlsdm:StoryNode" uuid="_OLgSPJiTEeWSsvUyU8yapg" outgoingEdges="_OLgSM5iTEeWSsvUyU8yapg _OLgSNpiTEeWSsvUyU8yapg" incomingEdges="_OLgSMpiTEeWSsvUyU8yapg" name="create elements">
+    <storyPattern uuid="_OLgSPZiTEeWSsvUyU8yapg" name="create elements">
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_OLgSPpiTEeWSsvUyU8yapg" modifier="CREATE" source="_OLgSQpiTEeWSsvUyU8yapg" target="_OLgSQJiTEeWSsvUyU8yapg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGNode/leftNodes"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_OLgSP5iTEeWSsvUyU8yapg" modifier="CREATE" source="_OLgSQpiTEeWSsvUyU8yapg" target="_OLgSQZiTEeWSsvUyU8yapg">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGNode/rightNodes"/>
+      </storyPatternLinks>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_OLgSQJiTEeWSsvUyU8yapg" modifier="CREATE" name="model" incomingLinks="_OLgSPpiTEeWSsvUyU8yapg">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Model"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_OLgSQZiTEeWSsvUyU8yapg" modifier="CREATE" name="target" incomingLinks="_OLgSP5iTEeWSsvUyU8yapg">
+        <type xsi:type="ecore:EClass" href="http://tu-berlin.de/silvawb/blocky#//BlockDiagram"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_OLgSQpiTEeWSsvUyU8yapg" modifier="CREATE" name="corrAxiom" outgoingLinks="_OLgSP5iTEeWSsvUyU8yapg _OLgSPpiTEeWSsvUyU8yapg">
+        <type xsi:type="ecore:EClass" href="http://tu-berlin.de/uml2blocky#//CorrAxiom"/>
+      </storyPatternObjects>
+    </storyPattern>
+  </nodes>
+  <nodes xsi:type="mlsdm:StoryNode" uuid="_OLgSQ5iTEeWSsvUyU8yapg" outgoingEdges="_OLgSNZiTEeWSsvUyU8yapg _OLgSMZiTEeWSsvUyU8yapg" incomingEdges="_OLgSM5iTEeWSsvUyU8yapg" name="check attribute formulae">
+    <storyPattern uuid="_OLgSRJiTEeWSsvUyU8yapg" name="check attribute formulae">
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_OLgSRZiTEeWSsvUyU8yapg" name="model" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Model"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_OLgSRpiTEeWSsvUyU8yapg" name="target" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://tu-berlin.de/silvawb/blocky#//BlockDiagram"/>
+      </storyPatternObjects>
+    </storyPattern>
+  </nodes>
+  <nodes xsi:type="mlsdm:ActivityFinalNode" uuid="_OLgSR5iTEeWSsvUyU8yapg" incomingEdges="_OLgSNZiTEeWSsvUyU8yapg">
+    <outputParameterValues uuid="_OLgSSJiTEeWSsvUyU8yapg" parameter="_OLgSVpiTEeWSsvUyU8yapg">
+      <expression xsi:type="mlexpressions:MLStringExpression" uuid="_OLgSSZiTEeWSsvUyU8yapg" expressionString="corrAxiom" expressionLanguageID="OCL"/>
+    </outputParameterValues>
+    <outputParameterValues uuid="_OLgSSpiTEeWSsvUyU8yapg" parameter="_OLgSV5iTEeWSsvUyU8yapg">
+      <expression xsi:type="mlexpressions:MLStringExpression" uuid="_OLgSS5iTEeWSsvUyU8yapg" expressionString="model" expressionLanguageID="OCL"/>
+    </outputParameterValues>
+    <outputParameterValues uuid="_OLgSTJiTEeWSsvUyU8yapg" parameter="_OLgSWJiTEeWSsvUyU8yapg">
+      <expression xsi:type="mlexpressions:MLStringExpression" uuid="_OLgSTZiTEeWSsvUyU8yapg" expressionString="target" expressionLanguageID="OCL"/>
+    </outputParameterValues>
+  </nodes>
+  <nodes xsi:type="mlsdm:ActivityFinalNode" uuid="_OLgSTpiTEeWSsvUyU8yapg" incomingEdges="_OLgSNpiTEeWSsvUyU8yapg _OLgSNJiTEeWSsvUyU8yapg">
+    <outputParameterValues uuid="_OLgST5iTEeWSsvUyU8yapg" parameter="_OLgSVpiTEeWSsvUyU8yapg">
+      <expression xsi:type="mlexpressions:MLStringExpression" uuid="_OLgSUJiTEeWSsvUyU8yapg" expressionString="null" expressionLanguageID="OCL"/>
+    </outputParameterValues>
+    <outputParameterValues uuid="_OLgSUZiTEeWSsvUyU8yapg" parameter="_OLgSV5iTEeWSsvUyU8yapg">
+      <expression xsi:type="mlexpressions:MLStringExpression" uuid="_OLgSUpiTEeWSsvUyU8yapg" expressionString="null" expressionLanguageID="OCL"/>
+    </outputParameterValues>
+    <outputParameterValues uuid="_OLgSU5iTEeWSsvUyU8yapg" parameter="_OLgSWJiTEeWSsvUyU8yapg">
+      <expression xsi:type="mlexpressions:MLStringExpression" uuid="_OLgSVJiTEeWSsvUyU8yapg" expressionString="null" expressionLanguageID="OCL"/>
+    </outputParameterValues>
+  </nodes>
+  <nodes xsi:type="mlsdm:InitialNode" uuid="_OLgSVZiTEeWSsvUyU8yapg" outgoingEdges="_OLgSMpiTEeWSsvUyU8yapg"/>
+  <parameters uuid="_OLgSVpiTEeWSsvUyU8yapg" name="corrAxiom" direction="OUT">
+    <type xsi:type="ecore:EClass" href="http://tu-berlin.de/uml2blocky#//CorrAxiom"/>
+  </parameters>
+  <parameters uuid="_OLgSV5iTEeWSsvUyU8yapg" name="model" direction="OUT">
+    <type xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Model"/>
+  </parameters>
+  <parameters uuid="_OLgSWJiTEeWSsvUyU8yapg" name="target" direction="OUT">
+    <type xsi:type="ecore:EClass" href="http://tu-berlin.de/silvawb/blocky#//BlockDiagram"/>
+  </parameters>
+</mlsdm:Activity>

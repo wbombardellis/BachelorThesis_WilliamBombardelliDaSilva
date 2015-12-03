@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated java -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="de.silvawb.java.presentation.JavaModelWizardID"
+            name="%_UI_JavaModelWizard_label"
+            class="de.silvawb.java.presentation.JavaModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/JavaModelFile.gif">
+         <description>%_UI_JavaModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated java -->
+      <editor
+            id="de.silvawb.java.presentation.JavaEditorID"
+            name="%_UI_JavaEditor_label"
+            icon="icons/full/obj16/JavaModelFile.gif"
+            extensions="java"
+            class="de.silvawb.java.presentation.JavaEditor"
+            contributorClass="de.silvawb.java.presentation.JavaActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

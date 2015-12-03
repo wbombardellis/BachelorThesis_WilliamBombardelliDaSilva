@@ -1,0 +1,392 @@
+
+INFO: test x2y Transformation:Workflow : Executing workflow test x2y Transformation...
+INFO: test x2y Transformation:Workflow : Expanding configuration of components...
+INFO: test x2y Transformation:Workflow : Executing components...
+INFO: test x2y Transformation:Workflow : Executing modelReader:ModelReader...
+
+INFO: modelReader:ModelReader : Loading file 'platform:/resource/de.silvawb.uml2java.launch/My.uml' to model slot 'input'...
+
+INFO: test x2y Transformation:Workflow : Executing mote2Transformer:Mote2Transformer...
+
+INFO: mote2Transformer:Mote2Transformer : Executing forward transformation...
+INFO: mote2Transformer:Mote2Transformer : Initializing TGG engine with rules 'de.silvawb.uml2java'...
+INFO: mote2Transformer:Mote2Transformer : Initializing input models...
+INFO: mote2Transformer:Mote2Transformer : Executing transformation...
+Unknown kind of notification: de.mdelab.mltgg.mote2.notifications.TransformationStartedNotification@6eba4259
+Unknown kind of notification: de.mdelab.mltgg.mote2.notifications.ExecutingAxiomNotification@65a19da
+
+
+Executing activity 'uml2javaAxiom_r1_transform_forward'...
+Variable created: __thisRule:org.eclipse.emf.ecore.impl.EClassImpl@42c7e47e (name: OperationalAxiom) (instanceClassName: null) (abstract: false, interface: false) = de.silvawb.uml2java.generated.impl.uml2javaAxiom_r1Impl@584c09 (ruleID: r1)
+Variable created: __checkAttributeFormulae:org.eclipse.emf.ecore.impl.EDataTypeImpl@6dd421cb (name: EBoolean) (instanceClassName: boolean) (serializable: true) = false
+Variable created: uModel:org.eclipse.emf.ecore.impl.EClassImpl@4d6004c7 (name: Model) (instanceClassName: null) (abstract: false, interface: false) = org.eclipse.uml2.uml.internal.impl.ModelImpl@329bba5b (name: uml01, visibility: <unset>) (URI: ) (viewpoint: )
+
+
+Executing activity node 'null'...
+Finished execution of activity node 'null'.
+Traversing activity edge from 'null' to 'match LHS'.
+
+
+Executing activity node 'match LHS'...
+Initializing story pattern 'match LHS'...
+Initialization finished of story pattern 'match LHS'.
+Matching story pattern 'match LHS'...
+Bound story pattern object '__thisRule' to 'de.silvawb.uml2java.generated.impl.uml2javaAxiom_r1Impl@584c09 (ruleID: r1).
+Bound story pattern object 'uModel' to 'org.eclipse.uml2.uml.internal.impl.ModelImpl@329bba5b (name: uml01, visibility: <unset>) (URI: ) (viewpoint: ).
+Traversing link 'axioms' from '__thisRule' to '__ruleGroup' (__thisRule: de.silvawb.uml2java.generated.impl.uml2javaAxiom_r1Impl@584c09 (ruleID: r1))...
+Variable created: __ruleGroup:org.eclipse.emf.ecore.impl.EClassImpl@6df6b069 (name: OperationalAxiomGroup) (instanceClassName: null) (abstract: false, interface: false) = de.silvawb.uml2java.generated.impl.uml2javaAxiomImpl@75ad37e4 (ruleGroupID: uml2javaAxiom)
+Bound story pattern object '__ruleGroup' to 'de.silvawb.uml2java.generated.impl.uml2javaAxiomImpl@75ad37e4 (ruleGroupID: uml2javaAxiom).
+Traversing link 'operationalAxiomGroup' from '__ruleGroup' to '__opTgg' (__ruleGroup: de.silvawb.uml2java.generated.impl.uml2javaAxiomImpl@75ad37e4 (ruleGroupID: uml2javaAxiom))...
+Variable created: __opTgg:org.eclipse.emf.ecore.impl.EClassImpl@2e0b57dd (name: OperationalTGG) (instanceClassName: null) (abstract: false, interface: false) = de.silvawb.uml2java.generated.impl.uml2javaOperationalTGGImpl@3f309617 (tggID: de.silvawb.uml2java) (interpreter: de.mdelab.mlsdm.interpreter.eclipse.MLSDMEclipseInterpreter@ecde06a)
+Bound story pattern object '__opTgg' to 'de.silvawb.uml2java.generated.impl.uml2javaOperationalTGGImpl@3f309617 (tggID: de.silvawb.uml2java) (interpreter: de.mdelab.mlsdm.interpreter.eclipse.MLSDMEclipseInterpreter@ecde06a).
+Traversing link 'operationalTGG' from '__opTgg' to '__tggEngine' (__opTgg: de.silvawb.uml2java.generated.impl.uml2javaOperationalTGGImpl@3f309617 (tggID: de.silvawb.uml2java) (interpreter: de.mdelab.mlsdm.interpreter.eclipse.MLSDMEclipseInterpreter@ecde06a))...
+Variable created: __tggEngine:org.eclipse.emf.ecore.impl.EClassImpl@78f283b0 (name: TGGEngine) (instanceClassName: null) (abstract: true, interface: false) = de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd
+Link check successful: 'uncoveredLeftElements' from '__tggEngine' to 'uModel' (source: 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd', target: 'org.eclipse.uml2.uml.internal.impl.ModelImpl@329bba5b (name: uml01, visibility: <unset>) (URI: ) (viewpoint: )').
+Bound story pattern object '__tggEngine' to 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd.
+Matching successful of story pattern 'match LHS.
+Applying story pattern 'match LHS...
+Applied story pattern 'match LHS...
+Finished execution of activity node 'match LHS'.
+Traversing activity edge from 'match LHS' to 'evaluate rule variables'.
+
+
+Executing activity node 'evaluate rule variables'...
+Evaluating expression 'de.mdelab.mlcallactions.impl.CallActionExpressionImpl@1640187e (uuid: _SamXnplREeW3qcq9byHw8g) (ast: null)'...
+Evaluating expression 'uModel.name'...
+Evaluated expression 'uModel.name' to 'uml01'.
+Variable created: nameVar:org.eclipse.emf.ecore.impl.EDataTypeImpl@52ac7621 (name: EString) (instanceClassName: java.lang.String) (serializable: true) = uml01
+Evaluated expression 'de.mdelab.mlcallactions.impl.CallActionExpressionImpl@1640187e (uuid: _SamXnplREeW3qcq9byHw8g) (ast: null)' to 'uml01'.
+Finished execution of activity node 'evaluate rule variables'.
+Traversing activity edge from 'evaluate rule variables' to 'transform elements'.
+
+
+Executing activity node 'transform elements'...
+Initializing story pattern 'transform elements'...
+Initialization finished of story pattern 'transform elements'.
+Matching story pattern 'transform elements'...
+Bound story pattern object '__thisRule' to 'de.silvawb.uml2java.generated.impl.uml2javaAxiom_r1Impl@584c09 (ruleID: r1).
+Bound story pattern object 'uModel' to 'org.eclipse.uml2.uml.internal.impl.ModelImpl@329bba5b (name: uml01, visibility: <unset>) (URI: ) (viewpoint: ).
+Bound story pattern object '__tggEngine' to 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd.
+Link check successful: 'uncoveredLeftElements' from '__tggEngine' to 'uModel' (source: 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd', target: 'org.eclipse.uml2.uml.internal.impl.ModelImpl@329bba5b (name: uml01, visibility: <unset>) (URI: ) (viewpoint: )').
+Matching successful of story pattern 'transform elements.
+Applying story pattern 'transform elements...
+Evaluating expression 'nameVar'...
+Evaluated expression 'nameVar' to 'uml01'.
+Instance link 'uncoveredLeftElements' destroyed from '__tggEngine' to 'uModel' (__tggEngine: 'de.mdelab.mlstorypatterns.impl.StoryPatternObjectImpl@5cad77dd (uuid: _SamXrJlREeW3qcq9byHw8g) (modifier: NONE, matchType: DEFAULT) (name: __tggEngine) (bindingType: BOUND)', uModel: 'org.eclipse.uml2.uml.internal.impl.ModelImpl@329bba5b (name: uml01, visibility: <unset>) (URI: ) (viewpoint: )')
+Variable created: corrAxiom:org.eclipse.emf.ecore.impl.EClassImpl@2a7835d (name: CorrAxiom) (instanceClassName: null) (abstract: false, interface: false) = de.silvawb.uml2java.impl.CorrAxiomImpl@7486e049
+Instance object created for 'corrAxiom': de.silvawb.uml2java.impl.CorrAxiomImpl@7486e049
+Instance link 'createdTGGNodes' created from '__thisRule' to 'corrAxiom' (__thisRule: 'de.silvawb.uml2java.generated.impl.uml2javaAxiom_r1Impl@584c09 (ruleID: r1)', corrAxiom: 'de.silvawb.uml2java.impl.CorrAxiomImpl@7486e049')
+Variable created: jSystem:org.eclipse.emf.ecore.impl.EClassImpl@32f030ff (name: System) (instanceClassName: null) (abstract: false, interface: false) = de.silvawb.java.impl.SystemImpl@42ef1463 (name: null)
+Instance object created for 'jSystem': de.silvawb.java.impl.SystemImpl@42ef1463 (name: null)
+Instance link 'coveredRightElements' created from '__tggEngine' to 'jSystem' (__tggEngine: 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd', jSystem: 'de.silvawb.java.impl.SystemImpl@42ef1463 (name: null)')
+Instance link 'coveredRightElements' created from '__tggEngine' to 'corrAxiom' (__tggEngine: 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd', corrAxiom: 'de.silvawb.uml2java.impl.CorrAxiomImpl@7486e049')
+Instance link 'tggNodes' created from '__tggEngine' to 'corrAxiom' (__tggEngine: 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd', corrAxiom: 'de.silvawb.uml2java.impl.CorrAxiomImpl@7486e049')
+Instance link 'rightNodes' created from 'corrAxiom' to 'jSystem' (corrAxiom: 'de.silvawb.uml2java.impl.CorrAxiomImpl@7486e049', jSystem: 'de.silvawb.java.impl.SystemImpl@42ef1463 (name: null)')
+Instance link 'createdBy' created from 'corrAxiom' to '__thisRule' (corrAxiom: 'de.silvawb.uml2java.impl.CorrAxiomImpl@7486e049', __thisRule: 'de.silvawb.uml2java.generated.impl.uml2javaAxiom_r1Impl@584c09 (ruleID: r1)')
+Instance link 'coveredLeftElements' created from '__tggEngine' to 'uModel' (__tggEngine: 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd', uModel: 'org.eclipse.uml2.uml.internal.impl.ModelImpl@329bba5b (name: uml01, visibility: <unset>) (URI: ) (viewpoint: )')
+Instance link 'coveredLeftElements' created from '__tggEngine' to 'corrAxiom' (__tggEngine: 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd', corrAxiom: 'de.silvawb.uml2java.impl.CorrAxiomImpl@7486e049')
+Instance link 'leftNodes' created from 'corrAxiom' to 'uModel' (corrAxiom: 'de.silvawb.uml2java.impl.CorrAxiomImpl@7486e049', uModel: 'org.eclipse.uml2.uml.internal.impl.ModelImpl@329bba5b (name: uml01, visibility: <unset>) (URI: ) (viewpoint: )')
+Attribute 'jSystem.name' set to 'uml01 (jSystem: 'de.silvawb.java.impl.SystemImpl@42ef1463 (name: uml01)')
+Applied story pattern 'transform elements...
+Finished execution of activity node 'transform elements'.
+Traversing activity edge from 'transform elements' to 'register covered links and inverse links'.
+
+
+Executing activity node 'register covered links and inverse links'...
+Evaluating expression 'de.mdelab.mlcallactions.impl.CallActionExpressionImpl@71408847 (uuid: _SamXs5lREeW3qcq9byHw8g) (ast: null)'...
+Evaluated expression 'de.mdelab.mlcallactions.impl.CallActionExpressionImpl@71408847 (uuid: _SamXs5lREeW3qcq9byHw8g) (ast: null)' to 'true'.
+Finished execution of activity node 'register covered links and inverse links'.
+Traversing activity edge from 'register covered links and inverse links' to 'null'.
+
+
+Executing activity node 'null'...
+Evaluating expression 'de.mdelab.mlcallactions.impl.CallActionExpressionImpl@26dffdea (uuid: _SamXiZlREeW3qcq9byHw8g) (ast: null)'...
+Evaluated expression 'de.mdelab.mlcallactions.impl.CallActionExpressionImpl@26dffdea (uuid: _SamXiZlREeW3qcq9byHw8g) (ast: null)' to 'false'.
+Finished execution of activity node 'null'.
+Traversing activity edge from 'null' to 'null'.
+
+
+Executing activity node 'null'...
+Finished execution of activity node 'null'.
+Traversing activity edge from 'null' to 'add TGGNode to transformation queue'.
+
+
+Executing activity node 'add TGGNode to transformation queue'...
+Evaluating expression '__tggEngine.forwardTransformationQueue.add(corrAxiom, false)'...
+Evaluated expression '__tggEngine.forwardTransformationQueue.add(corrAxiom, false)' to 'null'.
+Finished execution of activity node 'add TGGNode to transformation queue'.
+Traversing activity edge from 'add TGGNode to transformation queue' to 'null'.
+
+
+Executing activity node 'null'...
+Finished execution of activity node 'null'.
+Evaluating expression 'mote2::operationalTGG::ErrorCodeEnum::OK'...
+Evaluated expression 'mote2::operationalTGG::ErrorCodeEnum::OK' to 'OK'.
+Evaluating expression 'de.mdelab.mlcallactions.impl.CallActionExpressionImpl@66fce348 (uuid: _SamXzZlREeW3qcq9byHw8g) (ast: null)'...
+Evaluated expression 'de.mdelab.mlcallactions.impl.CallActionExpressionImpl@66fce348 (uuid: _SamXzZlREeW3qcq9byHw8g) (ast: null)' to 'de.silvawb.java.impl.SystemImpl@42ef1463 (name: uml01)'.
+Finished execution of activity 'uml2javaAxiom_r1_transform_forward'.
+Unknown kind of notification: de.mdelab.mltgg.mote2.notifications.AxiomExecutedNotification@64adc0ca
+Executing rule 'uPackage2jPackage_Rule_r2' with input TGG node 'de.silvawb.uml2java.impl.CorrAxiomImpl@7486e049'...
+
+
+Executing activity 'uPackage2jPackage_Rule_r2_transform_forward'...
+Variable created: __thisRule:org.eclipse.emf.ecore.impl.EClassImpl@30caca40 (name: OperationalRule) (instanceClassName: null) (abstract: false, interface: false) = de.silvawb.uml2java.generated.impl.uPackage2jPackage_Rule_r2Impl@1959b5da (ruleID: r2)
+Variable created: __checkAttributeFormulae:org.eclipse.emf.ecore.impl.EDataTypeImpl@6dd421cb (name: EBoolean) (instanceClassName: boolean) (serializable: true) = false
+Variable created: __inputTggNode:org.eclipse.emf.ecore.impl.EClassImpl@3ec98472 (name: TGGNode) (instanceClassName: null) (abstract: false, interface: false) = de.silvawb.uml2java.impl.CorrAxiomImpl@7486e049
+Variable created: __considerAllLhsCorrNodes:org.eclipse.emf.ecore.impl.EDataTypeImpl@6dd421cb (name: EBoolean) (instanceClassName: boolean) (serializable: true) = false
+
+
+Executing activity node 'null'...
+Finished execution of activity node 'null'.
+Traversing activity edge from 'null' to 'match TGG engine'.
+
+
+Executing activity node 'match TGG engine'...
+Initializing story pattern 'match TGG engine'...
+Initialization finished of story pattern 'match TGG engine'.
+Matching story pattern 'match TGG engine'...
+Bound story pattern object '__thisRule' to 'de.silvawb.uml2java.generated.impl.uPackage2jPackage_Rule_r2Impl@1959b5da (ruleID: r2).
+Traversing link 'rules' from '__thisRule' to '__ruleGroup' (__thisRule: de.silvawb.uml2java.generated.impl.uPackage2jPackage_Rule_r2Impl@1959b5da (ruleID: r2))...
+Variable created: __ruleGroup:org.eclipse.emf.ecore.impl.EClassImpl@2f68ef5e (name: OperationalRuleGroup) (instanceClassName: null) (abstract: false, interface: false) = de.silvawb.uml2java.generated.impl.uPackage2jPackage_RuleImpl@742cfd6d (ruleGroupID: uPackage2jPackage_Rule)
+Bound story pattern object '__ruleGroup' to 'de.silvawb.uml2java.generated.impl.uPackage2jPackage_RuleImpl@742cfd6d (ruleGroupID: uPackage2jPackage_Rule).
+Traversing link 'operationalRuleGroups' from '__ruleGroup' to '__opTgg' (__ruleGroup: de.silvawb.uml2java.generated.impl.uPackage2jPackage_RuleImpl@742cfd6d (ruleGroupID: uPackage2jPackage_Rule))...
+Variable created: __opTgg:org.eclipse.emf.ecore.impl.EClassImpl@2e0b57dd (name: OperationalTGG) (instanceClassName: null) (abstract: false, interface: false) = de.silvawb.uml2java.generated.impl.uml2javaOperationalTGGImpl@3f309617 (tggID: de.silvawb.uml2java) (interpreter: de.mdelab.mlsdm.interpreter.eclipse.MLSDMEclipseInterpreter@ecde06a)
+Bound story pattern object '__opTgg' to 'de.silvawb.uml2java.generated.impl.uml2javaOperationalTGGImpl@3f309617 (tggID: de.silvawb.uml2java) (interpreter: de.mdelab.mlsdm.interpreter.eclipse.MLSDMEclipseInterpreter@ecde06a).
+Traversing link 'operationalTGG' from '__opTgg' to '__tggEngine' (__opTgg: de.silvawb.uml2java.generated.impl.uml2javaOperationalTGGImpl@3f309617 (tggID: de.silvawb.uml2java) (interpreter: de.mdelab.mlsdm.interpreter.eclipse.MLSDMEclipseInterpreter@ecde06a))...
+Variable created: __tggEngine:org.eclipse.emf.ecore.impl.EClassImpl@78f283b0 (name: TGGEngine) (instanceClassName: null) (abstract: true, interface: false) = de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd
+Bound story pattern object '__tggEngine' to 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd.
+Matching successful of story pattern 'match TGG engine.
+Applying story pattern 'match TGG engine...
+Applied story pattern 'match TGG engine...
+Finished execution of activity node 'match TGG engine'.
+Traversing activity edge from 'match TGG engine' to 'match LHS starting from 'corrAxiom''.
+
+
+Executing activity node 'match LHS starting from 'corrAxiom''...
+Initializing story pattern 'match LHS starting from 'corrAxiom''...
+Initialization finished of story pattern 'match LHS starting from 'corrAxiom''.
+Matching story pattern 'match LHS starting from 'corrAxiom''...
+Bound story pattern object '__tggEngine' to 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd.
+Evaluating expression 'de.mdelab.mlcallactions.impl.CallActionExpressionImpl@2e842ead (uuid: _Sa9kAplREeW3qcq9byHw8g) (ast: null)'...
+Evaluated expression 'de.mdelab.mlcallactions.impl.CallActionExpressionImpl@2e842ead (uuid: _Sa9kAplREeW3qcq9byHw8g) (ast: null)' to 'de.silvawb.uml2java.impl.CorrAxiomImpl@7486e049'.
+Variable created: corrAxiom:org.eclipse.emf.ecore.impl.EClassImpl@2a7835d (name: CorrAxiom) (instanceClassName: null) (abstract: false, interface: false) = de.silvawb.uml2java.impl.CorrAxiomImpl@7486e049
+Bound story pattern object 'corrAxiom' to 'de.silvawb.uml2java.impl.CorrAxiomImpl@7486e049.
+Traversing link 'uncoveredLeftElements' from '__tggEngine' to 'uPackage' (__tggEngine: de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd)...
+Variable created: uPackage:org.eclipse.emf.ecore.impl.EClassImpl@2f600b90 (name: Package) (instanceClassName: null) (abstract: false, interface: false) = org.eclipse.uml2.uml.internal.impl.PackageImpl@de7c652 (name: p01, visibility: <unset>) (URI: null)
+Bound story pattern object 'uPackage' to 'org.eclipse.uml2.uml.internal.impl.PackageImpl@de7c652 (name: p01, visibility: <unset>) (URI: null).
+Traversing link 'rightNodes' from 'corrAxiom' to 'jSystem' (corrAxiom: de.silvawb.uml2java.impl.CorrAxiomImpl@7486e049)...
+Variable created: jSystem:org.eclipse.emf.ecore.impl.EClassImpl@32f030ff (name: System) (instanceClassName: null) (abstract: false, interface: false) = de.silvawb.java.impl.SystemImpl@42ef1463 (name: uml01)
+Link check successful: 'coveredRightElements' from '__tggEngine' to 'jSystem' (source: 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd', target: 'de.silvawb.java.impl.SystemImpl@42ef1463 (name: uml01)').
+Link check successful: 'coveredRightElements' from '__tggEngine' to 'corrAxiom' (source: 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd', target: 'de.silvawb.uml2java.impl.CorrAxiomImpl@7486e049').
+Bound story pattern object 'jSystem' to 'de.silvawb.java.impl.SystemImpl@42ef1463 (name: uml01).
+Traversing link 'leftNodes' from 'corrAxiom' to 'uModel' (corrAxiom: de.silvawb.uml2java.impl.CorrAxiomImpl@7486e049)...
+Variable created: uModel:org.eclipse.emf.ecore.impl.EClassImpl@4d6004c7 (name: Model) (instanceClassName: null) (abstract: false, interface: false) = org.eclipse.uml2.uml.internal.impl.ModelImpl@329bba5b (name: uml01, visibility: <unset>) (URI: ) (viewpoint: )
+Link check successful: 'packagedElement' from 'uModel' to 'uPackage' (source: 'org.eclipse.uml2.uml.internal.impl.ModelImpl@329bba5b (name: uml01, visibility: <unset>) (URI: ) (viewpoint: )', target: 'org.eclipse.uml2.uml.internal.impl.PackageImpl@de7c652 (name: p01, visibility: <unset>) (URI: null)').
+Link check successful: 'coveredLeftElements' from '__tggEngine' to 'uModel' (source: 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd', target: 'org.eclipse.uml2.uml.internal.impl.ModelImpl@329bba5b (name: uml01, visibility: <unset>) (URI: ) (viewpoint: )').
+Link check successful: 'coveredLeftElements' from '__tggEngine' to 'corrAxiom' (source: 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd', target: 'de.silvawb.uml2java.impl.CorrAxiomImpl@7486e049').
+Bound story pattern object 'uModel' to 'org.eclipse.uml2.uml.internal.impl.ModelImpl@329bba5b (name: uml01, visibility: <unset>) (URI: ) (viewpoint: ).
+Matching successful of story pattern 'match LHS starting from 'corrAxiom'.
+Applying story pattern 'match LHS starting from 'corrAxiom'...
+Applied story pattern 'match LHS starting from 'corrAxiom'...
+Finished execution of activity node 'match LHS starting from 'corrAxiom''.
+Traversing activity edge from 'match LHS starting from 'corrAxiom'' to 'null'.
+
+
+Executing activity node 'null'...
+Finished execution of activity node 'null'.
+Traversing activity edge from 'null' to 'evaluate rule variables'.
+
+
+Executing activity node 'evaluate rule variables'...
+Evaluating expression 'de.mdelab.mlcallactions.impl.CallActionExpressionImpl@1e38af72 (uuid: _Sa9kGJlREeW3qcq9byHw8g) (ast: null)'...
+Evaluating expression 'uPackage.name'...
+Evaluated expression 'uPackage.name' to 'p01'.
+Variable created: packName:org.eclipse.emf.ecore.impl.EDataTypeImpl@52ac7621 (name: EString) (instanceClassName: java.lang.String) (serializable: true) = p01
+Evaluated expression 'de.mdelab.mlcallactions.impl.CallActionExpressionImpl@1e38af72 (uuid: _Sa9kGJlREeW3qcq9byHw8g) (ast: null)' to 'p01'.
+Finished execution of activity node 'evaluate rule variables'.
+Traversing activity edge from 'evaluate rule variables' to 'check LHS attribute values'.
+
+
+Executing activity node 'check LHS attribute values'...
+Initializing story pattern 'check LHS attribute values'...
+Initialization finished of story pattern 'check LHS attribute values'.
+Matching story pattern 'check LHS attribute values'...
+Evaluating expression 'de.mdelab.mlcallactions.impl.CallActionExpressionImpl@7911fa0a (uuid: _Sa9kHplREeW3qcq9byHw8g) (ast: null)'...
+Evaluating expression 'self.name'...
+Evaluated expression 'self.name' to 'p01'.
+Evaluating expression 'packName'...
+Evaluated expression 'packName' to 'p01'.
+Evaluated expression 'de.mdelab.mlcallactions.impl.CallActionExpressionImpl@7911fa0a (uuid: _Sa9kHplREeW3qcq9byHw8g) (ast: null)' to 'true'.
+Constraint 'de.mdelab.mlcallactions.impl.CallActionExpressionImpl@7911fa0a (uuid: _Sa9kHplREeW3qcq9byHw8g) (ast: null)' holds on story pattern object 'uPackage'.
+Bound story pattern object 'uPackage' to 'org.eclipse.uml2.uml.internal.impl.PackageImpl@de7c652 (name: p01, visibility: <unset>) (URI: null).
+Matching successful of story pattern 'check LHS attribute values.
+Applying story pattern 'check LHS attribute values...
+Applied story pattern 'check LHS attribute values...
+Finished execution of activity node 'check LHS attribute values'.
+Traversing activity edge from 'check LHS attribute values' to 'transform elements'.
+
+
+Executing activity node 'transform elements'...
+Initializing story pattern 'transform elements'...
+Initialization finished of story pattern 'transform elements'.
+Matching story pattern 'transform elements'...
+Bound story pattern object '__thisRule' to 'de.silvawb.uml2java.generated.impl.uPackage2jPackage_Rule_r2Impl@1959b5da (ruleID: r2).
+Bound story pattern object 'jSystem' to 'de.silvawb.java.impl.SystemImpl@42ef1463 (name: uml01).
+Bound story pattern object 'uPackage' to 'org.eclipse.uml2.uml.internal.impl.PackageImpl@de7c652 (name: p01, visibility: <unset>) (URI: null).
+Bound story pattern object '__tggEngine' to 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd.
+Bound story pattern object 'uModel' to 'org.eclipse.uml2.uml.internal.impl.ModelImpl@329bba5b (name: uml01, visibility: <unset>) (URI: ) (viewpoint: ).
+Bound story pattern object 'corrAxiom' to 'de.silvawb.uml2java.impl.CorrAxiomImpl@7486e049.
+Link check successful: 'uncoveredLeftElements' from '__tggEngine' to 'uPackage' (source: 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd', target: 'org.eclipse.uml2.uml.internal.impl.PackageImpl@de7c652 (name: p01, visibility: <unset>) (URI: null)').
+Matching successful of story pattern 'transform elements.
+Applying story pattern 'transform elements...
+Evaluating expression 'packName'...
+Evaluated expression 'packName' to 'p01'.
+Instance link 'uncoveredLeftElements' destroyed from '__tggEngine' to 'uPackage' (__tggEngine: 'de.mdelab.mlstorypatterns.impl.StoryPatternObjectImpl@37d78a37 (uuid: _Sa9kMJlREeW3qcq9byHw8g) (modifier: NONE, matchType: DEFAULT) (name: __tggEngine) (bindingType: BOUND)', uPackage: 'org.eclipse.uml2.uml.internal.impl.PackageImpl@de7c652 (name: p01, visibility: <unset>) (URI: null)')
+Variable created: uP2jP:org.eclipse.emf.ecore.impl.EClassImpl@138d1e41 (name: CorrRule) (instanceClassName: null) (abstract: false, interface: false) = de.silvawb.uml2java.impl.CorrRuleImpl@1f2f172f
+Instance object created for 'uP2jP': de.silvawb.uml2java.impl.CorrRuleImpl@1f2f172f
+Instance link 'coveredLeftElements' created from '__tggEngine' to 'uPackage' (__tggEngine: 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd', uPackage: 'org.eclipse.uml2.uml.internal.impl.PackageImpl@de7c652 (name: p01, visibility: <unset>) (URI: null)')
+Instance link 'coveredLeftElements' created from '__tggEngine' to 'uP2jP' (__tggEngine: 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd', uP2jP: 'de.silvawb.uml2java.impl.CorrRuleImpl@1f2f172f')
+Instance link 'createdBy' created from 'uP2jP' to '__thisRule' (uP2jP: 'de.silvawb.uml2java.impl.CorrRuleImpl@1f2f172f', __thisRule: 'de.silvawb.uml2java.generated.impl.uPackage2jPackage_Rule_r2Impl@1959b5da (ruleID: r2)')
+Instance link 'leftNodes' created from 'uP2jP' to 'uPackage' (uP2jP: 'de.silvawb.uml2java.impl.CorrRuleImpl@1f2f172f', uPackage: 'org.eclipse.uml2.uml.internal.impl.PackageImpl@de7c652 (name: p01, visibility: <unset>) (URI: null)')
+Instance link 'packagedElement' created from 'uModel' to 'uPackage' (uModel: 'org.eclipse.uml2.uml.internal.impl.ModelImpl@329bba5b (name: uml01, visibility: <unset>) (URI: ) (viewpoint: )', uPackage: 'org.eclipse.uml2.uml.internal.impl.PackageImpl@de7c652 (name: p01, visibility: <unset>) (URI: null)')
+Instance link 'tggNodes' created from '__tggEngine' to 'uP2jP' (__tggEngine: 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd', uP2jP: 'de.silvawb.uml2java.impl.CorrRuleImpl@1f2f172f')
+Variable created: jPackage:org.eclipse.emf.ecore.impl.EClassImpl@5b4b1915 (name: Package) (instanceClassName: null) (abstract: false, interface: false) = de.silvawb.java.impl.PackageImpl@4c9b1ea7 (name: null)
+Instance object created for 'jPackage': de.silvawb.java.impl.PackageImpl@4c9b1ea7 (name: null)
+Instance link 'packages' created from 'jSystem' to 'jPackage' (jSystem: 'de.silvawb.java.impl.SystemImpl@42ef1463 (name: uml01)', jPackage: 'de.silvawb.java.impl.PackageImpl@4c9b1ea7 (name: null)')
+Instance link 'coveredRightElements' created from '__tggEngine' to 'jPackage' (__tggEngine: 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd', jPackage: 'de.silvawb.java.impl.PackageImpl@4c9b1ea7 (name: null)')
+Instance link 'coveredRightElements' created from '__tggEngine' to 'uP2jP' (__tggEngine: 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd', uP2jP: 'de.silvawb.uml2java.impl.CorrRuleImpl@1f2f172f')
+Instance link 'rightNodes' created from 'uP2jP' to 'jPackage' (uP2jP: 'de.silvawb.uml2java.impl.CorrRuleImpl@1f2f172f', jPackage: 'de.silvawb.java.impl.PackageImpl@4c9b1ea7 (name: null)')
+Instance link 'next' created from 'corrAxiom' to 'uP2jP' (corrAxiom: 'de.silvawb.uml2java.impl.CorrAxiomImpl@7486e049', uP2jP: 'de.silvawb.uml2java.impl.CorrRuleImpl@1f2f172f')
+Instance link 'createdTGGNodes' created from '__thisRule' to 'uP2jP' (__thisRule: 'de.silvawb.uml2java.generated.impl.uPackage2jPackage_Rule_r2Impl@1959b5da (ruleID: r2)', uP2jP: 'de.silvawb.uml2java.impl.CorrRuleImpl@1f2f172f')
+Attribute 'jPackage.name' set to 'p01 (jPackage: 'de.silvawb.java.impl.PackageImpl@4c9b1ea7 (name: p01)')
+Applied story pattern 'transform elements...
+Finished execution of activity node 'transform elements'.
+Traversing activity edge from 'transform elements' to 'register covered links and inverse links'.
+
+
+Executing activity node 'register covered links and inverse links'...
+Evaluating expression 'de.mdelab.mlcallactions.impl.CallActionExpressionImpl@5ca74ba9 (uuid: _Sa9kOplREeW3qcq9byHw8g) (ast: null)'...
+Evaluated expression 'de.mdelab.mlcallactions.impl.CallActionExpressionImpl@5ca74ba9 (uuid: _Sa9kOplREeW3qcq9byHw8g) (ast: null)' to 'null'.
+Finished execution of activity node 'register covered links and inverse links'.
+Traversing activity edge from 'register covered links and inverse links' to 'null'.
+
+
+Executing activity node 'null'...
+Evaluating expression 'de.mdelab.mlcallactions.impl.CallActionExpressionImpl@7c187fea (uuid: _Sa9kDplREeW3qcq9byHw8g) (ast: null)'...
+Evaluated expression 'de.mdelab.mlcallactions.impl.CallActionExpressionImpl@7c187fea (uuid: _Sa9kDplREeW3qcq9byHw8g) (ast: null)' to 'false'.
+Finished execution of activity node 'null'.
+Traversing activity edge from 'null' to 'null'.
+
+
+Executing activity node 'null'...
+Finished execution of activity node 'null'.
+Traversing activity edge from 'null' to 'add TGGNode to transformation queue'.
+
+
+Executing activity node 'add TGGNode to transformation queue'...
+Evaluating expression '__tggEngine.forwardTransformationQueue.add(uP2jP, false)'...
+Evaluated expression '__tggEngine.forwardTransformationQueue.add(uP2jP, false)' to 'null'.
+Finished execution of activity node 'add TGGNode to transformation queue'.
+Traversing activity edge from 'add TGGNode to transformation queue' to 'match LHS starting from 'corrAxiom''.
+
+
+Executing activity node 'match LHS starting from 'corrAxiom''...
+Matching story pattern 'match LHS starting from 'corrAxiom''...
+Binding revoked for story pattern object 'uModel', was bound to 'org.eclipse.uml2.uml.internal.impl.ModelImpl@329bba5b (name: uml01, visibility: <unset>) (URI: ) (viewpoint: ).
+Link check failed: 'uncoveredLeftElements' from '__tggEngine' to 'uPackage' (source: 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd', target: 'org.eclipse.uml2.uml.internal.impl.PackageImpl@de7c652 (name: p01, visibility: <unset>) (URI: null)').
+Binding revoked for story pattern object 'jSystem', was bound to 'de.silvawb.java.impl.SystemImpl@42ef1463 (name: uml01).
+Binding revoked for story pattern object 'uPackage', was bound to 'org.eclipse.uml2.uml.internal.impl.PackageImpl@de7c652 (name: p01, visibility: <unset>) (URI: null).
+Traversing link 'uncoveredLeftElements' from '__tggEngine' to 'uPackage' (__tggEngine: de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd)...
+Could not bind story pattern object 'uPackage'.
+Binding revoked for story pattern object 'corrAxiom', was bound to 'de.silvawb.uml2java.impl.CorrAxiomImpl@7486e049.
+Binding revoked for story pattern object '__tggEngine', was bound to 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd.
+Matching failed of story pattern 'match LHS starting from 'corrAxiom'.
+Finished execution of activity node 'match LHS starting from 'corrAxiom''.
+Traversing activity edge from 'match LHS starting from 'corrAxiom'' to 'null'.
+
+
+Executing activity node 'null'...
+Evaluating expression '__considerAllLhsCorrNodes'...
+Evaluated expression '__considerAllLhsCorrNodes' to 'false'.
+Finished execution of activity node 'null'.
+Traversing activity edge from 'null' to 'null'.
+
+
+Executing activity node 'null'...
+Finished execution of activity node 'null'.
+Evaluating expression 'mote2::operationalTGG::ErrorCodeEnum::OK'...
+Evaluated expression 'mote2::operationalTGG::ErrorCodeEnum::OK' to 'OK'.
+Finished execution of activity 'uPackage2jPackage_Rule_r2_transform_forward'.
+Executed rule 'uPackage2jPackage_Rule_r2' with input TGG node 'de.silvawb.uml2java.impl.CorrAxiomImpl@7486e049'.
+Executing rule 'uPackage2jPackage_Rule_r2' with input TGG node 'de.silvawb.uml2java.impl.CorrRuleImpl@1f2f172f'...
+
+
+Executing activity 'uPackage2jPackage_Rule_r2_transform_forward'...
+Variable created: __thisRule:org.eclipse.emf.ecore.impl.EClassImpl@30caca40 (name: OperationalRule) (instanceClassName: null) (abstract: false, interface: false) = de.silvawb.uml2java.generated.impl.uPackage2jPackage_Rule_r2Impl@1959b5da (ruleID: r2)
+Variable created: __checkAttributeFormulae:org.eclipse.emf.ecore.impl.EDataTypeImpl@6dd421cb (name: EBoolean) (instanceClassName: boolean) (serializable: true) = false
+Variable created: __inputTggNode:org.eclipse.emf.ecore.impl.EClassImpl@3ec98472 (name: TGGNode) (instanceClassName: null) (abstract: false, interface: false) = de.silvawb.uml2java.impl.CorrRuleImpl@1f2f172f
+Variable created: __considerAllLhsCorrNodes:org.eclipse.emf.ecore.impl.EDataTypeImpl@6dd421cb (name: EBoolean) (instanceClassName: boolean) (serializable: true) = false
+
+
+Executing activity node 'null'...
+Finished execution of activity node 'null'.
+Traversing activity edge from 'null' to 'match TGG engine'.
+
+
+Executing activity node 'match TGG engine'...
+Initializing story pattern 'match TGG engine'...
+Initialization finished of story pattern 'match TGG engine'.
+Matching story pattern 'match TGG engine'...
+Bound story pattern object '__thisRule' to 'de.silvawb.uml2java.generated.impl.uPackage2jPackage_Rule_r2Impl@1959b5da (ruleID: r2).
+Traversing link 'rules' from '__thisRule' to '__ruleGroup' (__thisRule: de.silvawb.uml2java.generated.impl.uPackage2jPackage_Rule_r2Impl@1959b5da (ruleID: r2))...
+Variable created: __ruleGroup:org.eclipse.emf.ecore.impl.EClassImpl@2f68ef5e (name: OperationalRuleGroup) (instanceClassName: null) (abstract: false, interface: false) = de.silvawb.uml2java.generated.impl.uPackage2jPackage_RuleImpl@742cfd6d (ruleGroupID: uPackage2jPackage_Rule)
+Bound story pattern object '__ruleGroup' to 'de.silvawb.uml2java.generated.impl.uPackage2jPackage_RuleImpl@742cfd6d (ruleGroupID: uPackage2jPackage_Rule).
+Traversing link 'operationalRuleGroups' from '__ruleGroup' to '__opTgg' (__ruleGroup: de.silvawb.uml2java.generated.impl.uPackage2jPackage_RuleImpl@742cfd6d (ruleGroupID: uPackage2jPackage_Rule))...
+Variable created: __opTgg:org.eclipse.emf.ecore.impl.EClassImpl@2e0b57dd (name: OperationalTGG) (instanceClassName: null) (abstract: false, interface: false) = de.silvawb.uml2java.generated.impl.uml2javaOperationalTGGImpl@3f309617 (tggID: de.silvawb.uml2java) (interpreter: de.mdelab.mlsdm.interpreter.eclipse.MLSDMEclipseInterpreter@ecde06a)
+Bound story pattern object '__opTgg' to 'de.silvawb.uml2java.generated.impl.uml2javaOperationalTGGImpl@3f309617 (tggID: de.silvawb.uml2java) (interpreter: de.mdelab.mlsdm.interpreter.eclipse.MLSDMEclipseInterpreter@ecde06a).
+Traversing link 'operationalTGG' from '__opTgg' to '__tggEngine' (__opTgg: de.silvawb.uml2java.generated.impl.uml2javaOperationalTGGImpl@3f309617 (tggID: de.silvawb.uml2java) (interpreter: de.mdelab.mlsdm.interpreter.eclipse.MLSDMEclipseInterpreter@ecde06a))...
+Variable created: __tggEngine:org.eclipse.emf.ecore.impl.EClassImpl@78f283b0 (name: TGGEngine) (instanceClassName: null) (abstract: true, interface: false) = de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd
+Bound story pattern object '__tggEngine' to 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd.
+Matching successful of story pattern 'match TGG engine.
+Applying story pattern 'match TGG engine...
+Applied story pattern 'match TGG engine...
+Finished execution of activity node 'match TGG engine'.
+Traversing activity edge from 'match TGG engine' to 'match LHS starting from 'corrAxiom''.
+
+
+Executing activity node 'match LHS starting from 'corrAxiom''...
+Initializing story pattern 'match LHS starting from 'corrAxiom''...
+Initialization finished of story pattern 'match LHS starting from 'corrAxiom''.
+Matching story pattern 'match LHS starting from 'corrAxiom''...
+Bound story pattern object '__tggEngine' to 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@6e4856bd.
+Evaluating expression 'de.mdelab.mlcallactions.impl.CallActionExpressionImpl@2e842ead (uuid: _Sa9kAplREeW3qcq9byHw8g) (ast: null)'...
+Evaluated expression 'de.mdelab.mlcallactions.impl.CallActionExpressionImpl@2e842ead (uuid: _Sa9kAplREeW3qcq9byHw8g) (ast: null)' to 'de.silvawb.uml2java.impl.CorrRuleImpl@1f2f172f'.
+Variable created: corrAxiom:org.eclipse.emf.ecore.impl.EClassImpl@2a7835d (name: CorrAxiom) (instanceClassName: null) (abstract: false, interface: false) = de.silvawb.uml2java.impl.CorrRuleImpl@1f2f172f
+Could not bind story pattern object 'corrAxiom'.
+Matching failed of story pattern 'match LHS starting from 'corrAxiom'.
+Finished execution of activity node 'match LHS starting from 'corrAxiom''.
+Traversing activity edge from 'match LHS starting from 'corrAxiom'' to 'null'.
+
+
+Executing activity node 'null'...
+Evaluating expression '__considerAllLhsCorrNodes'...
+Evaluated expression '__considerAllLhsCorrNodes' to 'false'.
+Finished execution of activity node 'null'.
+Traversing activity edge from 'null' to 'null'.
+
+
+Executing activity node 'null'...
+Finished execution of activity node 'null'.
+Evaluating expression 'mote2::operationalTGG::ErrorCodeEnum::OK'...
+Evaluated expression 'mote2::operationalTGG::ErrorCodeEnum::OK' to 'OK'.
+Finished execution of activity 'uPackage2jPackage_Rule_r2_transform_forward'.
+Executed rule 'uPackage2jPackage_Rule_r2' with input TGG node 'de.silvawb.uml2java.impl.CorrRuleImpl@1f2f172f'.
+Unknown kind of notification: de.mdelab.mltgg.mote2.notifications.TransformationFinishedNotification@13e46cb3
+INFO: mote2Transformer:Mote2Transformer : Transformation successful.
+
+INFO: test x2y Transformation:Workflow : Executing modelWriter:ModelWriter...
+
+INFO: modelWriter:ModelWriter : Saving model slot 'output' to 'platform:/resource/de.silvawb.uml2java.launch/My.emfjava'...
+
+INFO: test x2y Transformation:Workflow : Execution finished in 142 ms.
+

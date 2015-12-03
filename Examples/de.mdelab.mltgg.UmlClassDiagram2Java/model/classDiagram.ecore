@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="classDiagram"
+    nsURI="http:///de/hpi/sam/classDiagram.ecore" nsPrefix="de.hpi.sam.classDiagram">
+  <eClassifiers xsi:type="ecore:EClass" name="UMLAssoc" eSuperTypes="#//UMLDiagramItem">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="leftRole" ordered="false"
+        eType="#//UMLRole" resolveProxies="false" eOpposite="#//UMLRole/revLeftRole"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rightRole" ordered="false"
+        eType="#//UMLRole" resolveProxies="false" eOpposite="#//UMLRole/revRightRole"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="UMLCardinality" eSuperTypes="#//UMLIncrement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cardString" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="revCard" ordered="false"
+        eType="#//UMLRole" resolveProxies="false" eOpposite="#//UMLRole/card"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="UMLClassDiagram" eSuperTypes="#//UMLElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="elements" ordered="false"
+        upperBound="-1" eType="#//UMLElement" containment="true" resolveProxies="false"
+        eOpposite="#//UMLElement/diagram"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="UMLClass" eSuperTypes="#//UMLDiagramItem">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="roles" ordered="false"
+        upperBound="-1" eType="#//UMLRole" resolveProxies="false" eOpposite="#//UMLRole/target"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="UMLDiagramItem" abstract="true" eSuperTypes="#//UMLIncrement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="UMLElement" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="diagram" ordered="false"
+        eType="#//UMLClassDiagram" resolveProxies="false" eOpposite="#//UMLClassDiagram/elements"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="UMLIncrement" abstract="true" eSuperTypes="#//UMLElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="stereotypes" ordered="false"
+        upperBound="-1" eType="#//UMLStereotype" resolveProxies="false" eOpposite="#//UMLStereotype/increment"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="UMLRole" eSuperTypes="#//UMLIncrement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="adornment" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="card" ordered="false" eType="#//UMLCardinality"
+        resolveProxies="false" eOpposite="#//UMLCardinality/revCard"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="revLeftRole" ordered="false"
+        eType="#//UMLAssoc" resolveProxies="false" eOpposite="#//UMLAssoc/leftRole"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="revRightRole" ordered="false"
+        eType="#//UMLAssoc" resolveProxies="false" eOpposite="#//UMLAssoc/rightRole"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" ordered="false"
+        eType="#//UMLClass" resolveProxies="false" eOpposite="#//UMLClass/roles"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="UMLStereotype" eSuperTypes="#//UMLIncrement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="increment" ordered="false"
+        eType="#//UMLIncrement" resolveProxies="false" eOpposite="#//UMLIncrement/stereotypes"/>
+  </eClassifiers>
+</ecore:EPackage>

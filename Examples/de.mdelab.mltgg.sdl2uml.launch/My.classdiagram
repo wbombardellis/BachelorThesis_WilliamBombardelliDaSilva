@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<de.hpi.sam.classDiagram:UMLClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:de.hpi.sam.classDiagram="http:///de/hpi/sam/classDiagram.ecore" name="test">
+  <elements xsi:type="de.hpi.sam.classDiagram:UMLStereotype" name="sysBlock1_stereotype" text="system" increment="sysBlock1"/>
+  <elements xsi:type="de.hpi.sam.classDiagram:UMLClass" name="sysBlock1" stereotypes="sysBlock1_stereotype" roles="process100_sourceRole"/>
+  <elements xsi:type="de.hpi.sam.classDiagram:UMLCardinality" name="process100_sourceCard" cardString="0..1" revCard="process100_sourceRole"/>
+  <elements xsi:type="de.hpi.sam.classDiagram:UMLRole" name="process100_targetRole" adornment="UMLRole.NONE" card="process100_targetCard" revRightRole="process100_composition" target="process100"/>
+  <elements xsi:type="de.hpi.sam.classDiagram:UMLClass" name="process100" stereotypes="process100_stereotype" roles="process100_targetRole"/>
+  <elements xsi:type="de.hpi.sam.classDiagram:UMLAssoc" name="process100_composition" leftRole="process100_sourceRole" rightRole="process100_targetRole"/>
+  <elements xsi:type="de.hpi.sam.classDiagram:UMLStereotype" name="process100_stereotype" text="process" increment="process100"/>
+  <elements xsi:type="de.hpi.sam.classDiagram:UMLRole" name="process100_sourceRole" adornment="UMLRole.COMPOSITION" card="process100_sourceCard" revLeftRole="process100_composition" target="sysBlock1"/>
+  <elements xsi:type="de.hpi.sam.classDiagram:UMLCardinality" name="process100_targetCard" cardString="0..1" revCard="process100_targetRole"/>
+</de.hpi.sam.classDiagram:UMLClassDiagram>

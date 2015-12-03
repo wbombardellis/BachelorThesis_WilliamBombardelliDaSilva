@@ -1,0 +1,137 @@
+
+INFO: test x2y Transformation:Workflow : Executing workflow test x2y Transformation...
+INFO: test x2y Transformation:Workflow : Expanding configuration of components...
+INFO: test x2y Transformation:Workflow : Executing components...
+INFO: test x2y Transformation:Workflow : Executing modelReader:ModelReader...
+
+INFO: modelReader:ModelReader : Loading file 'platform:/resource/de.mdelab.mltgg.x2y.launch/block01.blockdiagram' to model slot 'input'...
+
+INFO: test x2y Transformation:Workflow : Executing mote2Transformer:Mote2Transformer...
+
+INFO: mote2Transformer:Mote2Transformer : Executing forward transformation...
+INFO: mote2Transformer:Mote2Transformer : Initializing TGG engine with rules 'de.mdelab.mltgg.x2y.ruleSetID'...
+INFO: mote2Transformer:Mote2Transformer : Initializing input models...
+INFO: mote2Transformer:Mote2Transformer : Executing transformation...
+Unknown kind of notification: de.mdelab.mltgg.mote2.notifications.TransformationStartedNotification@409f3454
+Unknown kind of notification: de.mdelab.mltgg.mote2.notifications.ExecutingAxiomNotification@142497f1
+
+
+Executing activity 'x2yAxiom_r1_transform_forward'...
+Variable created: __thisRule:org.eclipse.emf.ecore.impl.EClassImpl@1443448d (name: OperationalAxiom) (instanceClassName: null) (abstract: false, interface: false) = de.mdelab.mltgg.x2y.generated.impl.x2yAxiom_r1Impl@252b2c79 (ruleID: r1)
+Variable created: __checkAttributeFormulae:org.eclipse.emf.ecore.impl.EDataTypeImpl@36078dfa (name: EBoolean) (instanceClassName: boolean) (serializable: true) = false
+Variable created: blockDiagram:org.eclipse.emf.ecore.impl.EClassImpl@182f890d (name: BlockDiagram) (instanceClassName: null) (abstract: false, interface: false) = de.hpi.sam.blockDiagram.impl.BlockDiagramImpl@303c3491 (name: c1)
+
+
+Executing activity node 'null'...
+Finished execution of activity node 'null'.
+Traversing activity edge from 'null' to 'match LHS'.
+
+
+Executing activity node 'match LHS'...
+Initializing story pattern 'match LHS'...
+Initialization finished of story pattern 'match LHS'.
+Matching story pattern 'match LHS'...
+Bound story pattern object 'blockDiagram' to 'de.hpi.sam.blockDiagram.impl.BlockDiagramImpl@303c3491 (name: c1).
+Bound story pattern object '__thisRule' to 'de.mdelab.mltgg.x2y.generated.impl.x2yAxiom_r1Impl@252b2c79 (ruleID: r1).
+Traversing link 'axioms' from '__thisRule' to '__ruleGroup' (__thisRule: de.mdelab.mltgg.x2y.generated.impl.x2yAxiom_r1Impl@252b2c79 (ruleID: r1))...
+Variable created: __ruleGroup:org.eclipse.emf.ecore.impl.EClassImpl@3cce7ec4 (name: OperationalAxiomGroup) (instanceClassName: null) (abstract: false, interface: false) = de.mdelab.mltgg.x2y.generated.impl.x2yAxiomImpl@5281976d (ruleGroupID: x2yAxiom)
+Bound story pattern object '__ruleGroup' to 'de.mdelab.mltgg.x2y.generated.impl.x2yAxiomImpl@5281976d (ruleGroupID: x2yAxiom).
+Traversing link 'operationalAxiomGroup' from '__ruleGroup' to '__opTgg' (__ruleGroup: de.mdelab.mltgg.x2y.generated.impl.x2yAxiomImpl@5281976d (ruleGroupID: x2yAxiom))...
+Variable created: __opTgg:org.eclipse.emf.ecore.impl.EClassImpl@4487ead8 (name: OperationalTGG) (instanceClassName: null) (abstract: false, interface: false) = de.mdelab.mltgg.x2y.generated.impl.x2yOperationalTGGImpl@39fc9f6c (tggID: de.mdelab.mltgg.x2y.ruleSetID) (interpreter: de.mdelab.mlsdm.interpreter.eclipse.MLSDMEclipseInterpreter@78468931)
+Bound story pattern object '__opTgg' to 'de.mdelab.mltgg.x2y.generated.impl.x2yOperationalTGGImpl@39fc9f6c (tggID: de.mdelab.mltgg.x2y.ruleSetID) (interpreter: de.mdelab.mlsdm.interpreter.eclipse.MLSDMEclipseInterpreter@78468931).
+Traversing link 'operationalTGG' from '__opTgg' to '__tggEngine' (__opTgg: de.mdelab.mltgg.x2y.generated.impl.x2yOperationalTGGImpl@39fc9f6c (tggID: de.mdelab.mltgg.x2y.ruleSetID) (interpreter: de.mdelab.mlsdm.interpreter.eclipse.MLSDMEclipseInterpreter@78468931))...
+Variable created: __tggEngine:org.eclipse.emf.ecore.impl.EClassImpl@9f8f4a1 (name: TGGEngine) (instanceClassName: null) (abstract: true, interface: false) = de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@5ed92da7
+Link check successful: 'uncoveredLeftElements' from '__tggEngine' to 'blockDiagram' (source: 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@5ed92da7', target: 'de.hpi.sam.blockDiagram.impl.BlockDiagramImpl@303c3491 (name: c1)').
+Bound story pattern object '__tggEngine' to 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@5ed92da7.
+Matching successful of story pattern 'match LHS.
+Applying story pattern 'match LHS...
+Applied story pattern 'match LHS...
+Finished execution of activity node 'match LHS'.
+Traversing activity edge from 'match LHS' to 'evaluate rule variables'.
+
+
+Executing activity node 'evaluate rule variables'...
+Evaluating expression 'de.mdelab.mlcallactions.impl.CallActionExpressionImpl@40f75716 (uuid: _bO47TpS9EeWo5OE2pQdgBg) (ast: null)'...
+Evaluating expression 'blockDiagram.name'...
+Evaluated expression 'blockDiagram.name' to 'c1'.
+Variable created: nameVar:org.eclipse.emf.ecore.impl.EDataTypeImpl@735e729e (name: EString) (instanceClassName: java.lang.String) (serializable: true) = c1
+Evaluated expression 'de.mdelab.mlcallactions.impl.CallActionExpressionImpl@40f75716 (uuid: _bO47TpS9EeWo5OE2pQdgBg) (ast: null)' to 'c1'.
+Finished execution of activity node 'evaluate rule variables'.
+Traversing activity edge from 'evaluate rule variables' to 'transform elements'.
+
+
+Executing activity node 'transform elements'...
+Initializing story pattern 'transform elements'...
+Initialization finished of story pattern 'transform elements'.
+Matching story pattern 'transform elements'...
+Bound story pattern object '__tggEngine' to 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@5ed92da7.
+Bound story pattern object '__thisRule' to 'de.mdelab.mltgg.x2y.generated.impl.x2yAxiom_r1Impl@252b2c79 (ruleID: r1).
+Bound story pattern object 'blockDiagram' to 'de.hpi.sam.blockDiagram.impl.BlockDiagramImpl@303c3491 (name: c1).
+Link check successful: 'uncoveredLeftElements' from '__tggEngine' to 'blockDiagram' (source: 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@5ed92da7', target: 'de.hpi.sam.blockDiagram.impl.BlockDiagramImpl@303c3491 (name: c1)').
+Matching successful of story pattern 'transform elements.
+Applying story pattern 'transform elements...
+Evaluating expression 'nameVar'...
+Evaluated expression 'nameVar' to 'c1'.
+Instance link 'uncoveredLeftElements' destroyed from '__tggEngine' to 'blockDiagram' (__tggEngine: 'de.mdelab.mlstorypatterns.impl.StoryPatternObjectImpl@3ffa8c54 (uuid: _bO47XJS9EeWo5OE2pQdgBg) (modifier: NONE, matchType: DEFAULT) (name: __tggEngine) (bindingType: BOUND)', blockDiagram: 'de.hpi.sam.blockDiagram.impl.BlockDiagramImpl@303c3491 (name: c1)')
+Variable created: corrAxiom:org.eclipse.emf.ecore.impl.EClassImpl@4d8dfff (name: CorrAxiom) (instanceClassName: null) (abstract: false, interface: false) = de.mdelab.mltgg.x2y.impl.CorrAxiomImpl@cdb2b9b
+Instance object created for 'corrAxiom': de.mdelab.mltgg.x2y.impl.CorrAxiomImpl@cdb2b9b
+Variable created: classDiagram:org.eclipse.emf.ecore.impl.EClassImpl@e56189a (name: UMLClassDiagram) (instanceClassName: null) (abstract: false, interface: false) = de.hpi.sam.classDiagram.impl.UMLClassDiagramImpl@3ebf4b54 (name: null)
+Instance object created for 'classDiagram': de.hpi.sam.classDiagram.impl.UMLClassDiagramImpl@3ebf4b54 (name: null)
+Instance link 'rightNodes' created from 'corrAxiom' to 'classDiagram' (corrAxiom: 'de.mdelab.mltgg.x2y.impl.CorrAxiomImpl@cdb2b9b', classDiagram: 'de.hpi.sam.classDiagram.impl.UMLClassDiagramImpl@3ebf4b54 (name: null)')
+Instance link 'leftNodes' created from 'corrAxiom' to 'blockDiagram' (corrAxiom: 'de.mdelab.mltgg.x2y.impl.CorrAxiomImpl@cdb2b9b', blockDiagram: 'de.hpi.sam.blockDiagram.impl.BlockDiagramImpl@303c3491 (name: c1)')
+Instance link 'tggNodes' created from '__tggEngine' to 'corrAxiom' (__tggEngine: 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@5ed92da7', corrAxiom: 'de.mdelab.mltgg.x2y.impl.CorrAxiomImpl@cdb2b9b')
+Instance link 'coveredRightElements' created from '__tggEngine' to 'classDiagram' (__tggEngine: 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@5ed92da7', classDiagram: 'de.hpi.sam.classDiagram.impl.UMLClassDiagramImpl@3ebf4b54 (name: null)')
+Instance link 'coveredRightElements' created from '__tggEngine' to 'corrAxiom' (__tggEngine: 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@5ed92da7', corrAxiom: 'de.mdelab.mltgg.x2y.impl.CorrAxiomImpl@cdb2b9b')
+Instance link 'coveredLeftElements' created from '__tggEngine' to 'blockDiagram' (__tggEngine: 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@5ed92da7', blockDiagram: 'de.hpi.sam.blockDiagram.impl.BlockDiagramImpl@303c3491 (name: c1)')
+Instance link 'coveredLeftElements' created from '__tggEngine' to 'corrAxiom' (__tggEngine: 'de.mdelab.mltgg.mote.eclipse.MoTE2Eclipse@5ed92da7', corrAxiom: 'de.mdelab.mltgg.x2y.impl.CorrAxiomImpl@cdb2b9b')
+Instance link 'createdTGGNodes' created from '__thisRule' to 'corrAxiom' (__thisRule: 'de.mdelab.mltgg.x2y.generated.impl.x2yAxiom_r1Impl@252b2c79 (ruleID: r1)', corrAxiom: 'de.mdelab.mltgg.x2y.impl.CorrAxiomImpl@cdb2b9b')
+Instance link 'createdBy' created from 'corrAxiom' to '__thisRule' (corrAxiom: 'de.mdelab.mltgg.x2y.impl.CorrAxiomImpl@cdb2b9b', __thisRule: 'de.mdelab.mltgg.x2y.generated.impl.x2yAxiom_r1Impl@252b2c79 (ruleID: r1)')
+Attribute 'classDiagram.name' set to 'c1 (classDiagram: 'de.hpi.sam.classDiagram.impl.UMLClassDiagramImpl@3ebf4b54 (name: c1)')
+Applied story pattern 'transform elements...
+Finished execution of activity node 'transform elements'.
+Traversing activity edge from 'transform elements' to 'register covered links and inverse links'.
+
+
+Executing activity node 'register covered links and inverse links'...
+Evaluating expression 'de.mdelab.mlcallactions.impl.CallActionExpressionImpl@299fe035 (uuid: _bO47Y5S9EeWo5OE2pQdgBg) (ast: null)'...
+Evaluated expression 'de.mdelab.mlcallactions.impl.CallActionExpressionImpl@299fe035 (uuid: _bO47Y5S9EeWo5OE2pQdgBg) (ast: null)' to 'true'.
+Finished execution of activity node 'register covered links and inverse links'.
+Traversing activity edge from 'register covered links and inverse links' to 'null'.
+
+
+Executing activity node 'null'...
+Evaluating expression 'de.mdelab.mlcallactions.impl.CallActionExpressionImpl@70733c9f (uuid: _bO47OZS9EeWo5OE2pQdgBg) (ast: null)'...
+Evaluated expression 'de.mdelab.mlcallactions.impl.CallActionExpressionImpl@70733c9f (uuid: _bO47OZS9EeWo5OE2pQdgBg) (ast: null)' to 'false'.
+Finished execution of activity node 'null'.
+Traversing activity edge from 'null' to 'null'.
+
+
+Executing activity node 'null'...
+Finished execution of activity node 'null'.
+Traversing activity edge from 'null' to 'add TGGNode to transformation queue'.
+
+
+Executing activity node 'add TGGNode to transformation queue'...
+Evaluating expression '__tggEngine.forwardTransformationQueue.add(corrAxiom, false)'...
+Evaluated expression '__tggEngine.forwardTransformationQueue.add(corrAxiom, false)' to 'null'.
+Finished execution of activity node 'add TGGNode to transformation queue'.
+Traversing activity edge from 'add TGGNode to transformation queue' to 'null'.
+
+
+Executing activity node 'null'...
+Finished execution of activity node 'null'.
+Evaluating expression 'mote2::operationalTGG::ErrorCodeEnum::OK'...
+Evaluated expression 'mote2::operationalTGG::ErrorCodeEnum::OK' to 'OK'.
+Evaluating expression 'de.mdelab.mlcallactions.impl.CallActionExpressionImpl@15247bae (uuid: _bO47fZS9EeWo5OE2pQdgBg) (ast: null)'...
+Evaluated expression 'de.mdelab.mlcallactions.impl.CallActionExpressionImpl@15247bae (uuid: _bO47fZS9EeWo5OE2pQdgBg) (ast: null)' to 'de.hpi.sam.classDiagram.impl.UMLClassDiagramImpl@3ebf4b54 (name: c1)'.
+Finished execution of activity 'x2yAxiom_r1_transform_forward'.
+Unknown kind of notification: de.mdelab.mltgg.mote2.notifications.AxiomExecutedNotification@286171f6
+Unknown kind of notification: de.mdelab.mltgg.mote2.notifications.TransformationFinishedNotification@4081c857
+INFO: mote2Transformer:Mote2Transformer : Transformation successful.
+
+INFO: test x2y Transformation:Workflow : Executing modelWriter:ModelWriter...
+
+INFO: modelWriter:ModelWriter : Saving model slot 'output' to 'platform:/resource/de.mdelab.mltgg.x2y.launch/block01.classdiagram'...
+
+INFO: test x2y Transformation:Workflow : Execution finished in 212 ms.
+

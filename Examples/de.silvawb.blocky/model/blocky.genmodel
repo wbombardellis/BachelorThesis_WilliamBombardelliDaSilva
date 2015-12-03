@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.silvawb.blocky/src" modelPluginID="de.silvawb.blocky"
+    modelName="Blocky" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>blocky.ecore</foreignModel>
+  <genPackages prefix="Blocky" basePackage="de.silvawb" disposableProviderFactory="true"
+      ecorePackage="blocky.ecore#/">
+    <genClasses ecoreClass="blocky.ecore#//BlockDiagram">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blocky.ecore#//BlockDiagram/modelElements"/>
+    </genClasses>
+    <genClasses ecoreClass="blocky.ecore#//Block"/>
+    <genClasses image="false" ecoreClass="blocky.ecore#//Connectable">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference blocky.ecore#//Connectable/revSource"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference blocky.ecore#//Connectable/revTarget"/>
+    </genClasses>
+    <genClasses ecoreClass="blocky.ecore#//Connection">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference blocky.ecore#//Connection/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference blocky.ecore#//Connection/target"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="blocky.ecore#//Element">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute blocky.ecore#//Element/name"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference blocky.ecore#//Element/diagram"/>
+    </genClasses>
+    <genClasses ecoreClass="blocky.ecore#//SystemBlock"/>
+  </genPackages>
+</genmodel:GenModel>
