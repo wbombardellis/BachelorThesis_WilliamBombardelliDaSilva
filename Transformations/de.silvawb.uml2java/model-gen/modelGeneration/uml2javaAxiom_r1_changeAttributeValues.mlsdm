@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ASCII"?>
+<mlsdm:Activity xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mlexpressions="http://www.mdelab.de/mlexpressions/1.0" xmlns:mlsdm="http://www.mdelab.de/mlsdm/1.0" xmlns:mlstorypatterns="http://www.mdelab.de/mlstorypatterns/1.0" uuid="_1asmwJldEeWv9sMrqnVI9A" name="uml2javaAxiom_r1_changeAttributeValues">
+  <edges uuid="_1asmwZldEeWv9sMrqnVI9A" source="_1asmxJldEeWv9sMrqnVI9A" target="_1asmxZldEeWv9sMrqnVI9A"/>
+  <edges uuid="_1asmwpldEeWv9sMrqnVI9A" source="_1asmxZldEeWv9sMrqnVI9A" target="_1asm0JldEeWv9sMrqnVI9A" guardType="SUCCESS"/>
+  <edges uuid="_1asmw5ldEeWv9sMrqnVI9A" source="_1asmxZldEeWv9sMrqnVI9A" target="_1asm05ldEeWv9sMrqnVI9A" guardType="FAILURE"/>
+  <nodes xsi:type="mlsdm:InitialNode" uuid="_1asmxJldEeWv9sMrqnVI9A" outgoingEdges="_1asmwZldEeWv9sMrqnVI9A"/>
+  <nodes xsi:type="mlsdm:StoryNode" uuid="_1asmxZldEeWv9sMrqnVI9A" outgoingEdges="_1asmwpldEeWv9sMrqnVI9A _1asmw5ldEeWv9sMrqnVI9A" incomingEdges="_1asmwZldEeWv9sMrqnVI9A" name="change attribute values">
+    <storyPattern uuid="_1asmxpldEeWv9sMrqnVI9A" name="change attribute values">
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_1asmx5ldEeWv9sMrqnVI9A" source="_1asmz5ldEeWv9sMrqnVI9A" target="_1asmzJldEeWv9sMrqnVI9A">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGNode/rightNodes"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_1asmyJldEeWv9sMrqnVI9A" source="_1asmz5ldEeWv9sMrqnVI9A" target="_1asmyZldEeWv9sMrqnVI9A">
+        <feature xsi:type="ecore:EReference" href="http://www.mdelab.de/mltgg/mote2/1.0#//TGGNode/leftNodes"/>
+      </storyPatternLinks>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_1asmyZldEeWv9sMrqnVI9A" name="uModel" incomingLinks="_1asmyJldEeWv9sMrqnVI9A">
+        <type xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Model"/>
+        <attributeAssignments uuid="_1asmypldEeWv9sMrqnVI9A">
+          <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_1asmy5ldEeWv9sMrqnVI9A" expressionString="nameVar" expressionLanguageID="OCL"/>
+          <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+        </attributeAssignments>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_1asmzJldEeWv9sMrqnVI9A" name="jSystem" incomingLinks="_1asmx5ldEeWv9sMrqnVI9A">
+        <type xsi:type="ecore:EClass" href="http://tu-berlin.de/silvawb/java#//System"/>
+        <attributeAssignments uuid="_1asmzZldEeWv9sMrqnVI9A">
+          <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_1asmzpldEeWv9sMrqnVI9A" expressionString="nameVar" expressionLanguageID="OCL"/>
+          <feature xsi:type="ecore:EAttribute" href="http://tu-berlin.de/silvawb/java#//System/name"/>
+        </attributeAssignments>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_1asmz5ldEeWv9sMrqnVI9A" name="corrAxiom" outgoingLinks="_1asmx5ldEeWv9sMrqnVI9A _1asmyJldEeWv9sMrqnVI9A" bindingType="BOUND">
+        <type xsi:type="ecore:EClass" href="http://tu-berlin.de/silvawb/uml2java#//CorrAxiom"/>
+      </storyPatternObjects>
+    </storyPattern>
+  </nodes>
+  <nodes xsi:type="mlsdm:ActivityFinalNode" uuid="_1asm0JldEeWv9sMrqnVI9A" incomingEdges="_1asmwpldEeWv9sMrqnVI9A">
+    <outputParameterValues uuid="_1asm0ZldEeWv9sMrqnVI9A" parameter="_1asm2JldEeWv9sMrqnVI9A">
+      <expression xsi:type="mlexpressions:MLStringExpression" uuid="_1asm0pldEeWv9sMrqnVI9A" expressionString="true" expressionLanguageID="OCL"/>
+    </outputParameterValues>
+  </nodes>
+  <nodes xsi:type="mlsdm:ActivityFinalNode" uuid="_1asm05ldEeWv9sMrqnVI9A" incomingEdges="_1asmw5ldEeWv9sMrqnVI9A">
+    <outputParameterValues uuid="_1asm1JldEeWv9sMrqnVI9A" parameter="_1asm2JldEeWv9sMrqnVI9A">
+      <expression xsi:type="mlexpressions:MLStringExpression" uuid="_1asm1ZldEeWv9sMrqnVI9A" expressionString="false" expressionLanguageID="OCL"/>
+    </outputParameterValues>
+  </nodes>
+  <parameters uuid="_1asm1pldEeWv9sMrqnVI9A" name="corrAxiom">
+    <type xsi:type="ecore:EClass" href="http://tu-berlin.de/silvawb/uml2java#//CorrAxiom"/>
+  </parameters>
+  <parameters uuid="_1asm15ldEeWv9sMrqnVI9A" name="nameVar">
+    <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </parameters>
+  <parameters uuid="_1asm2JldEeWv9sMrqnVI9A" name="__returnValue" direction="OUT">
+    <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </parameters>
+</mlsdm:Activity>
