@@ -48,6 +48,11 @@ public class MethodItemProvider extends ContainedItemProvider {
 			addNamePropertyDescriptor(object);
 			addReturnTypePropertyDescriptor(object);
 			addArgumentsPropertyDescriptor(object);
+			addIsFinalPropertyDescriptor(object);
+			addIsStaticPropertyDescriptor(object);
+			addBodyPropertyDescriptor(object);
+			addConcurrencyPropertyDescriptor(object);
+			addRaisedExceptionsPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -119,6 +124,116 @@ public class MethodItemProvider extends ContainedItemProvider {
 	}
 
 	/**
+	 * This adds a property descriptor for the Is Final feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addIsFinalPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Method_isFinal_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Method_isFinal_feature", "_UI_Method_type"),
+				 JavaPackage.Literals.METHOD__IS_FINAL,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Is Static feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addIsStaticPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Method_isStatic_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Method_isStatic_feature", "_UI_Method_type"),
+				 JavaPackage.Literals.METHOD__IS_STATIC,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Body feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addBodyPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Method_body_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Method_body_feature", "_UI_Method_type"),
+				 JavaPackage.Literals.METHOD__BODY,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Concurrency feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addConcurrencyPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Method_concurrency_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Method_concurrency_feature", "_UI_Method_type"),
+				 JavaPackage.Literals.METHOD__CONCURRENCY,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Raised Exceptions feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addRaisedExceptionsPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Method_raisedExceptions_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Method_raisedExceptions_feature", "_UI_Method_type"),
+				 JavaPackage.Literals.METHOD__RAISED_EXCEPTIONS,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
+	}
+
+	/**
 	 * This returns Method.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -157,6 +272,10 @@ public class MethodItemProvider extends ContainedItemProvider {
 
 		switch (notification.getFeatureID(Method.class)) {
 			case JavaPackage.METHOD__NAME:
+			case JavaPackage.METHOD__IS_FINAL:
+			case JavaPackage.METHOD__IS_STATIC:
+			case JavaPackage.METHOD__BODY:
+			case JavaPackage.METHOD__CONCURRENCY:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

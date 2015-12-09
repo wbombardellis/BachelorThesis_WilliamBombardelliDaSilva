@@ -5,10 +5,13 @@ package de.silvawb.java.util;
 import de.silvawb.java.Argument;
 import de.silvawb.java.Classifier;
 import de.silvawb.java.Contained;
+import de.silvawb.java.Container;
 import de.silvawb.java.Field;
+import de.silvawb.java.Interface;
 import de.silvawb.java.JavaPackage;
 
 import de.silvawb.java.Method;
+import de.silvawb.java.TemplateBinding;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 
@@ -80,6 +83,7 @@ public class JavaSwitch<T> extends Switch<T> {
 			case JavaPackage.PACKAGE: {
 				de.silvawb.java.Package package_ = (de.silvawb.java.Package)theEObject;
 				T result = casePackage(package_);
+				if (result == null) result = caseContainer(package_);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -88,6 +92,7 @@ public class JavaSwitch<T> extends Switch<T> {
 				T result = caseClass(class_);
 				if (result == null) result = caseClassifier(class_);
 				if (result == null) result = caseContained(class_);
+				if (result == null) result = caseContainer(class_);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -120,6 +125,27 @@ public class JavaSwitch<T> extends Switch<T> {
 			case JavaPackage.ARGUMENT: {
 				Argument argument = (Argument)theEObject;
 				T result = caseArgument(argument);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case JavaPackage.CONTAINER: {
+				Container container = (Container)theEObject;
+				T result = caseContainer(container);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case JavaPackage.INTERFACE: {
+				Interface interface_ = (Interface)theEObject;
+				T result = caseInterface(interface_);
+				if (result == null) result = caseClassifier(interface_);
+				if (result == null) result = caseContained(interface_);
+				if (result == null) result = caseContainer(interface_);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case JavaPackage.TEMPLATE_BINDING: {
+				TemplateBinding templateBinding = (TemplateBinding)theEObject;
+				T result = caseTemplateBinding(templateBinding);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -244,6 +270,51 @@ public class JavaSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseArgument(Argument object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Container</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Container</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseContainer(Container object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Interface</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Interface</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInterface(Interface object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Template Binding</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Template Binding</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTemplateBinding(TemplateBinding object) {
 		return null;
 	}
 

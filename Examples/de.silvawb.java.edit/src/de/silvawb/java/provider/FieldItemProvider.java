@@ -47,6 +47,9 @@ public class FieldItemProvider extends ContainedItemProvider {
 
 			addNamePropertyDescriptor(object);
 			addTypePropertyDescriptor(object);
+			addDefaultPropertyDescriptor(object);
+			addIsStaticPropertyDescriptor(object);
+			addIsFinalPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -96,6 +99,72 @@ public class FieldItemProvider extends ContainedItemProvider {
 	}
 
 	/**
+	 * This adds a property descriptor for the Default feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addDefaultPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Field_default_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Field_default_feature", "_UI_Field_type"),
+				 JavaPackage.Literals.FIELD__DEFAULT,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Is Static feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addIsStaticPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Field_isStatic_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Field_isStatic_feature", "_UI_Field_type"),
+				 JavaPackage.Literals.FIELD__IS_STATIC,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Is Final feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addIsFinalPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Field_isFinal_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Field_isFinal_feature", "_UI_Field_type"),
+				 JavaPackage.Literals.FIELD__IS_FINAL,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
 	 * This returns Field.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -134,6 +203,9 @@ public class FieldItemProvider extends ContainedItemProvider {
 
 		switch (notification.getFeatureID(Field.class)) {
 			case JavaPackage.FIELD__NAME:
+			case JavaPackage.FIELD__DEFAULT:
+			case JavaPackage.FIELD__IS_STATIC:
+			case JavaPackage.FIELD__IS_FINAL:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

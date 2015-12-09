@@ -233,6 +233,75 @@ public class JavaItemProviderAdapterFactory extends JavaAdapterFactory implement
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link de.silvawb.java.Container} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ContainerItemProvider containerItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link de.silvawb.java.Container}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createContainerAdapter() {
+		if (containerItemProvider == null) {
+			containerItemProvider = new ContainerItemProvider(this);
+		}
+
+		return containerItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link de.silvawb.java.Interface} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected InterfaceItemProvider interfaceItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link de.silvawb.java.Interface}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createInterfaceAdapter() {
+		if (interfaceItemProvider == null) {
+			interfaceItemProvider = new InterfaceItemProvider(this);
+		}
+
+		return interfaceItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link de.silvawb.java.TemplateBinding} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected TemplateBindingItemProvider templateBindingItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link de.silvawb.java.TemplateBinding}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createTemplateBindingAdapter() {
+		if (templateBindingItemProvider == null) {
+			templateBindingItemProvider = new TemplateBindingItemProvider(this);
+		}
+
+		return templateBindingItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -338,6 +407,9 @@ public class JavaItemProviderAdapterFactory extends JavaAdapterFactory implement
 		if (containedItemProvider != null) containedItemProvider.dispose();
 		if (methodItemProvider != null) methodItemProvider.dispose();
 		if (argumentItemProvider != null) argumentItemProvider.dispose();
+		if (containerItemProvider != null) containerItemProvider.dispose();
+		if (interfaceItemProvider != null) interfaceItemProvider.dispose();
+		if (templateBindingItemProvider != null) templateBindingItemProvider.dispose();
 	}
 
 }

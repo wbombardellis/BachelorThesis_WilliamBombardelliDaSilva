@@ -16,6 +16,14 @@ import de.silvawb.uml2java.Uml2javaPackage;
 
 import de.silvawb.uml2java.generated.GeneratedFactory;
 import de.silvawb.uml2java.generated.GeneratedPackage;
+import de.silvawb.uml2java.generated.uCAttribute2jCAttribute_Rule;
+import de.silvawb.uml2java.generated.uCAttribute2jCAttribute_Rule_r4;
+import de.silvawb.uml2java.generated.uCOperation2jCMethod_Rule;
+import de.silvawb.uml2java.generated.uCOperation2jCMethod_Rule_r5;
+import de.silvawb.uml2java.generated.uClass2jClass_Rule;
+import de.silvawb.uml2java.generated.uClass2jClass_Rule_r3;
+import de.silvawb.uml2java.generated.uInterface2jInterface_Rule;
+import de.silvawb.uml2java.generated.uInterface2jInterface_Rule_r6;
 import de.silvawb.uml2java.generated.uPackage2jPackage_Rule;
 import de.silvawb.uml2java.generated.uPackage2jPackage_Rule_r2;
 import de.silvawb.uml2java.generated.uml2javaAxiom;
@@ -65,6 +73,34 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass uCAttribute2jCAttribute_RuleEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass uInterface2jInterface_RuleEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass uClass2jClass_RuleEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass uCOperation2jCMethod_RuleEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass uml2javaAxiom_r1EClass = null;
 
 	/**
@@ -73,6 +109,34 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * @generated
 	 */
 	private EClass uPackage2jPackage_Rule_r2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass uCOperation2jCMethod_Rule_r5EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass uInterface2jInterface_Rule_r6EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass uClass2jClass_Rule_r3EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass uCAttribute2jCAttribute_Rule_r4EClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -172,6 +236,42 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 */
 	public EClass getuPackage2jPackage_Rule() {
 		return uPackage2jPackage_RuleEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getuCAttribute2jCAttribute_Rule() {
+		return uCAttribute2jCAttribute_RuleEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getuInterface2jInterface_Rule() {
+		return uInterface2jInterface_RuleEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getuClass2jClass_Rule() {
+		return uClass2jClass_RuleEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getuCOperation2jCMethod_Rule() {
+		return uCOperation2jCMethod_RuleEClass;
 	}
 
 	/**
@@ -566,6 +666,978 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getuCOperation2jCMethod_Rule_r5() {
+		return uCOperation2jCMethod_Rule_r5EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCOperation2jCMethod_Rule_r5_AddElementActivity() {
+		return (EReference) uCOperation2jCMethod_Rule_r5EClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCOperation2jCMethod_Rule_r5_MoveElementActivity() {
+		return (EReference) uCOperation2jCMethod_Rule_r5EClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCOperation2jCMethod_Rule_r5_ChangeAttributeActivity() {
+		return (EReference) uCOperation2jCMethod_Rule_r5EClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCOperation2jCMethod_Rule_r5_TransformForwardActivity() {
+		return (EReference) uCOperation2jCMethod_Rule_r5EClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCOperation2jCMethod_Rule_r5_TransformMappingActivity() {
+		return (EReference) uCOperation2jCMethod_Rule_r5EClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCOperation2jCMethod_Rule_r5_TransformBackwardActivity() {
+		return (EReference) uCOperation2jCMethod_Rule_r5EClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCOperation2jCMethod_Rule_r5_ConflictCheckForwardActivity() {
+		return (EReference) uCOperation2jCMethod_Rule_r5EClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCOperation2jCMethod_Rule_r5_ConflictCheckMappingActivity() {
+		return (EReference) uCOperation2jCMethod_Rule_r5EClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCOperation2jCMethod_Rule_r5_ConflictCheckBackwardActivity() {
+		return (EReference) uCOperation2jCMethod_Rule_r5EClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCOperation2jCMethod_Rule_r5_SynchronizeForwardActivity() {
+		return (EReference) uCOperation2jCMethod_Rule_r5EClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCOperation2jCMethod_Rule_r5_SynchronizeBackwardActivity() {
+		return (EReference) uCOperation2jCMethod_Rule_r5EClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCOperation2jCMethod_Rule_r5_RepairForwardActivity() {
+		return (EReference) uCOperation2jCMethod_Rule_r5EClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCOperation2jCMethod_Rule_r5_RepairBackwardActivity() {
+		return (EReference) uCOperation2jCMethod_Rule_r5EClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCOperation2jCMethod_Rule_r5__AddElement__EMap() {
+		return uCOperation2jCMethod_Rule_r5EClass.getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCOperation2jCMethod_Rule_r5__ChangeAttributeValues__TGGNode_EMap() {
+		return uCOperation2jCMethod_Rule_r5EClass.getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCOperation2jCMethod_Rule_r5__MoveElement__TGGNode_TGGNode_TGGNode() {
+		return uCOperation2jCMethod_Rule_r5EClass.getEOperations().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCOperation2jCMethod_Rule_r5__TransformForward__TGGNode_boolean_boolean() {
+		return uCOperation2jCMethod_Rule_r5EClass.getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCOperation2jCMethod_Rule_r5__TransformMapping__TGGNode_boolean_boolean() {
+		return uCOperation2jCMethod_Rule_r5EClass.getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCOperation2jCMethod_Rule_r5__TransformBackward__TGGNode_boolean_boolean() {
+		return uCOperation2jCMethod_Rule_r5EClass.getEOperations().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCOperation2jCMethod_Rule_r5__ConflictCheckForward__TGGNode() {
+		return uCOperation2jCMethod_Rule_r5EClass.getEOperations().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCOperation2jCMethod_Rule_r5__ConflictCheckMapping__TGGNode() {
+		return uCOperation2jCMethod_Rule_r5EClass.getEOperations().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCOperation2jCMethod_Rule_r5__ConflictCheckBackward__TGGNode() {
+		return uCOperation2jCMethod_Rule_r5EClass.getEOperations().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCOperation2jCMethod_Rule_r5__SynchronizeForward__TGGNode_boolean() {
+		return uCOperation2jCMethod_Rule_r5EClass.getEOperations().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCOperation2jCMethod_Rule_r5__SynchronizeBackward__TGGNode_boolean() {
+		return uCOperation2jCMethod_Rule_r5EClass.getEOperations().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCOperation2jCMethod_Rule_r5__RepairForward__TGGNode_boolean() {
+		return uCOperation2jCMethod_Rule_r5EClass.getEOperations().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCOperation2jCMethod_Rule_r5__RepairBackward__TGGNode_boolean() {
+		return uCOperation2jCMethod_Rule_r5EClass.getEOperations().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getuInterface2jInterface_Rule_r6() {
+		return uInterface2jInterface_Rule_r6EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuInterface2jInterface_Rule_r6_AddElementActivity() {
+		return (EReference) uInterface2jInterface_Rule_r6EClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuInterface2jInterface_Rule_r6_MoveElementActivity() {
+		return (EReference) uInterface2jInterface_Rule_r6EClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuInterface2jInterface_Rule_r6_ChangeAttributeActivity() {
+		return (EReference) uInterface2jInterface_Rule_r6EClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuInterface2jInterface_Rule_r6_TransformForwardActivity() {
+		return (EReference) uInterface2jInterface_Rule_r6EClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuInterface2jInterface_Rule_r6_TransformMappingActivity() {
+		return (EReference) uInterface2jInterface_Rule_r6EClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuInterface2jInterface_Rule_r6_TransformBackwardActivity() {
+		return (EReference) uInterface2jInterface_Rule_r6EClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuInterface2jInterface_Rule_r6_ConflictCheckForwardActivity() {
+		return (EReference) uInterface2jInterface_Rule_r6EClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuInterface2jInterface_Rule_r6_ConflictCheckMappingActivity() {
+		return (EReference) uInterface2jInterface_Rule_r6EClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuInterface2jInterface_Rule_r6_ConflictCheckBackwardActivity() {
+		return (EReference) uInterface2jInterface_Rule_r6EClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuInterface2jInterface_Rule_r6_SynchronizeForwardActivity() {
+		return (EReference) uInterface2jInterface_Rule_r6EClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuInterface2jInterface_Rule_r6_SynchronizeBackwardActivity() {
+		return (EReference) uInterface2jInterface_Rule_r6EClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuInterface2jInterface_Rule_r6_RepairForwardActivity() {
+		return (EReference) uInterface2jInterface_Rule_r6EClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuInterface2jInterface_Rule_r6_RepairBackwardActivity() {
+		return (EReference) uInterface2jInterface_Rule_r6EClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuInterface2jInterface_Rule_r6__AddElement__EMap() {
+		return uInterface2jInterface_Rule_r6EClass.getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuInterface2jInterface_Rule_r6__ChangeAttributeValues__TGGNode_EMap() {
+		return uInterface2jInterface_Rule_r6EClass.getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuInterface2jInterface_Rule_r6__MoveElement__TGGNode_TGGNode_TGGNode() {
+		return uInterface2jInterface_Rule_r6EClass.getEOperations().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuInterface2jInterface_Rule_r6__TransformForward__TGGNode_boolean_boolean() {
+		return uInterface2jInterface_Rule_r6EClass.getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuInterface2jInterface_Rule_r6__TransformMapping__TGGNode_boolean_boolean() {
+		return uInterface2jInterface_Rule_r6EClass.getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuInterface2jInterface_Rule_r6__TransformBackward__TGGNode_boolean_boolean() {
+		return uInterface2jInterface_Rule_r6EClass.getEOperations().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuInterface2jInterface_Rule_r6__ConflictCheckForward__TGGNode() {
+		return uInterface2jInterface_Rule_r6EClass.getEOperations().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuInterface2jInterface_Rule_r6__ConflictCheckMapping__TGGNode() {
+		return uInterface2jInterface_Rule_r6EClass.getEOperations().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuInterface2jInterface_Rule_r6__ConflictCheckBackward__TGGNode() {
+		return uInterface2jInterface_Rule_r6EClass.getEOperations().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuInterface2jInterface_Rule_r6__SynchronizeForward__TGGNode_boolean() {
+		return uInterface2jInterface_Rule_r6EClass.getEOperations().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuInterface2jInterface_Rule_r6__SynchronizeBackward__TGGNode_boolean() {
+		return uInterface2jInterface_Rule_r6EClass.getEOperations().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuInterface2jInterface_Rule_r6__RepairForward__TGGNode_boolean() {
+		return uInterface2jInterface_Rule_r6EClass.getEOperations().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuInterface2jInterface_Rule_r6__RepairBackward__TGGNode_boolean() {
+		return uInterface2jInterface_Rule_r6EClass.getEOperations().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getuClass2jClass_Rule_r3() {
+		return uClass2jClass_Rule_r3EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Rule_r3_AddElementActivity() {
+		return (EReference) uClass2jClass_Rule_r3EClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Rule_r3_MoveElementActivity() {
+		return (EReference) uClass2jClass_Rule_r3EClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Rule_r3_ChangeAttributeActivity() {
+		return (EReference) uClass2jClass_Rule_r3EClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Rule_r3_TransformForwardActivity() {
+		return (EReference) uClass2jClass_Rule_r3EClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Rule_r3_TransformMappingActivity() {
+		return (EReference) uClass2jClass_Rule_r3EClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Rule_r3_TransformBackwardActivity() {
+		return (EReference) uClass2jClass_Rule_r3EClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Rule_r3_ConflictCheckForwardActivity() {
+		return (EReference) uClass2jClass_Rule_r3EClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Rule_r3_ConflictCheckMappingActivity() {
+		return (EReference) uClass2jClass_Rule_r3EClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Rule_r3_ConflictCheckBackwardActivity() {
+		return (EReference) uClass2jClass_Rule_r3EClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Rule_r3_SynchronizeForwardActivity() {
+		return (EReference) uClass2jClass_Rule_r3EClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Rule_r3_SynchronizeBackwardActivity() {
+		return (EReference) uClass2jClass_Rule_r3EClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Rule_r3_RepairForwardActivity() {
+		return (EReference) uClass2jClass_Rule_r3EClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Rule_r3_RepairBackwardActivity() {
+		return (EReference) uClass2jClass_Rule_r3EClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Rule_r3__AddElement__EMap() {
+		return uClass2jClass_Rule_r3EClass.getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Rule_r3__ChangeAttributeValues__TGGNode_EMap() {
+		return uClass2jClass_Rule_r3EClass.getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Rule_r3__MoveElement__TGGNode_TGGNode_TGGNode() {
+		return uClass2jClass_Rule_r3EClass.getEOperations().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Rule_r3__TransformForward__TGGNode_boolean_boolean() {
+		return uClass2jClass_Rule_r3EClass.getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Rule_r3__TransformMapping__TGGNode_boolean_boolean() {
+		return uClass2jClass_Rule_r3EClass.getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Rule_r3__TransformBackward__TGGNode_boolean_boolean() {
+		return uClass2jClass_Rule_r3EClass.getEOperations().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Rule_r3__ConflictCheckForward__TGGNode() {
+		return uClass2jClass_Rule_r3EClass.getEOperations().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Rule_r3__ConflictCheckMapping__TGGNode() {
+		return uClass2jClass_Rule_r3EClass.getEOperations().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Rule_r3__ConflictCheckBackward__TGGNode() {
+		return uClass2jClass_Rule_r3EClass.getEOperations().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Rule_r3__SynchronizeForward__TGGNode_boolean() {
+		return uClass2jClass_Rule_r3EClass.getEOperations().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Rule_r3__SynchronizeBackward__TGGNode_boolean() {
+		return uClass2jClass_Rule_r3EClass.getEOperations().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Rule_r3__RepairForward__TGGNode_boolean() {
+		return uClass2jClass_Rule_r3EClass.getEOperations().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Rule_r3__RepairBackward__TGGNode_boolean() {
+		return uClass2jClass_Rule_r3EClass.getEOperations().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getuCAttribute2jCAttribute_Rule_r4() {
+		return uCAttribute2jCAttribute_Rule_r4EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCAttribute2jCAttribute_Rule_r4_AddElementActivity() {
+		return (EReference) uCAttribute2jCAttribute_Rule_r4EClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCAttribute2jCAttribute_Rule_r4_MoveElementActivity() {
+		return (EReference) uCAttribute2jCAttribute_Rule_r4EClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCAttribute2jCAttribute_Rule_r4_ChangeAttributeActivity() {
+		return (EReference) uCAttribute2jCAttribute_Rule_r4EClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCAttribute2jCAttribute_Rule_r4_TransformForwardActivity() {
+		return (EReference) uCAttribute2jCAttribute_Rule_r4EClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCAttribute2jCAttribute_Rule_r4_TransformMappingActivity() {
+		return (EReference) uCAttribute2jCAttribute_Rule_r4EClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCAttribute2jCAttribute_Rule_r4_TransformBackwardActivity() {
+		return (EReference) uCAttribute2jCAttribute_Rule_r4EClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCAttribute2jCAttribute_Rule_r4_ConflictCheckForwardActivity() {
+		return (EReference) uCAttribute2jCAttribute_Rule_r4EClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCAttribute2jCAttribute_Rule_r4_ConflictCheckMappingActivity() {
+		return (EReference) uCAttribute2jCAttribute_Rule_r4EClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCAttribute2jCAttribute_Rule_r4_ConflictCheckBackwardActivity() {
+		return (EReference) uCAttribute2jCAttribute_Rule_r4EClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCAttribute2jCAttribute_Rule_r4_SynchronizeForwardActivity() {
+		return (EReference) uCAttribute2jCAttribute_Rule_r4EClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCAttribute2jCAttribute_Rule_r4_SynchronizeBackwardActivity() {
+		return (EReference) uCAttribute2jCAttribute_Rule_r4EClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCAttribute2jCAttribute_Rule_r4_RepairForwardActivity() {
+		return (EReference) uCAttribute2jCAttribute_Rule_r4EClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCAttribute2jCAttribute_Rule_r4_RepairBackwardActivity() {
+		return (EReference) uCAttribute2jCAttribute_Rule_r4EClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCAttribute2jCAttribute_Rule_r4__AddElement__EMap() {
+		return uCAttribute2jCAttribute_Rule_r4EClass.getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCAttribute2jCAttribute_Rule_r4__ChangeAttributeValues__TGGNode_EMap() {
+		return uCAttribute2jCAttribute_Rule_r4EClass.getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCAttribute2jCAttribute_Rule_r4__MoveElement__TGGNode_TGGNode_TGGNode() {
+		return uCAttribute2jCAttribute_Rule_r4EClass.getEOperations().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCAttribute2jCAttribute_Rule_r4__TransformForward__TGGNode_boolean_boolean() {
+		return uCAttribute2jCAttribute_Rule_r4EClass.getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCAttribute2jCAttribute_Rule_r4__TransformMapping__TGGNode_boolean_boolean() {
+		return uCAttribute2jCAttribute_Rule_r4EClass.getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCAttribute2jCAttribute_Rule_r4__TransformBackward__TGGNode_boolean_boolean() {
+		return uCAttribute2jCAttribute_Rule_r4EClass.getEOperations().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCAttribute2jCAttribute_Rule_r4__ConflictCheckForward__TGGNode() {
+		return uCAttribute2jCAttribute_Rule_r4EClass.getEOperations().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCAttribute2jCAttribute_Rule_r4__ConflictCheckMapping__TGGNode() {
+		return uCAttribute2jCAttribute_Rule_r4EClass.getEOperations().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCAttribute2jCAttribute_Rule_r4__ConflictCheckBackward__TGGNode() {
+		return uCAttribute2jCAttribute_Rule_r4EClass.getEOperations().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCAttribute2jCAttribute_Rule_r4__SynchronizeForward__TGGNode_boolean() {
+		return uCAttribute2jCAttribute_Rule_r4EClass.getEOperations().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCAttribute2jCAttribute_Rule_r4__SynchronizeBackward__TGGNode_boolean() {
+		return uCAttribute2jCAttribute_Rule_r4EClass.getEOperations().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCAttribute2jCAttribute_Rule_r4__RepairForward__TGGNode_boolean() {
+		return uCAttribute2jCAttribute_Rule_r4EClass.getEOperations().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCAttribute2jCAttribute_Rule_r4__RepairBackward__TGGNode_boolean() {
+		return uCAttribute2jCAttribute_Rule_r4EClass.getEOperations().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public GeneratedFactory getGeneratedFactory() {
 		return (GeneratedFactory) getEFactoryInstance();
 	}
@@ -595,6 +1667,14 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 		uml2javaAxiomEClass = createEClass(UML2JAVA_AXIOM);
 
 		uPackage2jPackage_RuleEClass = createEClass(UPACKAGE2J_PACKAGE_RULE);
+
+		uCAttribute2jCAttribute_RuleEClass = createEClass(UC_ATTRIBUTE2J_CATTRIBUTE_RULE);
+
+		uInterface2jInterface_RuleEClass = createEClass(UINTERFACE2J_INTERFACE_RULE);
+
+		uClass2jClass_RuleEClass = createEClass(UCLASS2J_CLASS_RULE);
+
+		uCOperation2jCMethod_RuleEClass = createEClass(UC_OPERATION2J_CMETHOD_RULE);
 
 		uml2javaAxiom_r1EClass = createEClass(UML2JAVA_AXIOM_R1);
 		createEReference(uml2javaAxiom_r1EClass, UML2JAVA_AXIOM_R1__ADD_ELEMENT_ACTIVITY);
@@ -649,6 +1729,187 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 		createEOperation(uPackage2jPackage_Rule_r2EClass, UPACKAGE2J_PACKAGE_RULE_R2___REPAIR_FORWARD__TGGNODE_BOOLEAN);
 		createEOperation(uPackage2jPackage_Rule_r2EClass,
 				UPACKAGE2J_PACKAGE_RULE_R2___REPAIR_BACKWARD__TGGNODE_BOOLEAN);
+
+		uCOperation2jCMethod_Rule_r5EClass = createEClass(UC_OPERATION2J_CMETHOD_RULE_R5);
+		createEReference(uCOperation2jCMethod_Rule_r5EClass, UC_OPERATION2J_CMETHOD_RULE_R5__ADD_ELEMENT_ACTIVITY);
+		createEReference(uCOperation2jCMethod_Rule_r5EClass, UC_OPERATION2J_CMETHOD_RULE_R5__MOVE_ELEMENT_ACTIVITY);
+		createEReference(uCOperation2jCMethod_Rule_r5EClass, UC_OPERATION2J_CMETHOD_RULE_R5__CHANGE_ATTRIBUTE_ACTIVITY);
+		createEReference(uCOperation2jCMethod_Rule_r5EClass,
+				UC_OPERATION2J_CMETHOD_RULE_R5__TRANSFORM_FORWARD_ACTIVITY);
+		createEReference(uCOperation2jCMethod_Rule_r5EClass,
+				UC_OPERATION2J_CMETHOD_RULE_R5__TRANSFORM_MAPPING_ACTIVITY);
+		createEReference(uCOperation2jCMethod_Rule_r5EClass,
+				UC_OPERATION2J_CMETHOD_RULE_R5__TRANSFORM_BACKWARD_ACTIVITY);
+		createEReference(uCOperation2jCMethod_Rule_r5EClass,
+				UC_OPERATION2J_CMETHOD_RULE_R5__CONFLICT_CHECK_FORWARD_ACTIVITY);
+		createEReference(uCOperation2jCMethod_Rule_r5EClass,
+				UC_OPERATION2J_CMETHOD_RULE_R5__CONFLICT_CHECK_MAPPING_ACTIVITY);
+		createEReference(uCOperation2jCMethod_Rule_r5EClass,
+				UC_OPERATION2J_CMETHOD_RULE_R5__CONFLICT_CHECK_BACKWARD_ACTIVITY);
+		createEReference(uCOperation2jCMethod_Rule_r5EClass,
+				UC_OPERATION2J_CMETHOD_RULE_R5__SYNCHRONIZE_FORWARD_ACTIVITY);
+		createEReference(uCOperation2jCMethod_Rule_r5EClass,
+				UC_OPERATION2J_CMETHOD_RULE_R5__SYNCHRONIZE_BACKWARD_ACTIVITY);
+		createEReference(uCOperation2jCMethod_Rule_r5EClass, UC_OPERATION2J_CMETHOD_RULE_R5__REPAIR_FORWARD_ACTIVITY);
+		createEReference(uCOperation2jCMethod_Rule_r5EClass, UC_OPERATION2J_CMETHOD_RULE_R5__REPAIR_BACKWARD_ACTIVITY);
+		createEOperation(uCOperation2jCMethod_Rule_r5EClass, UC_OPERATION2J_CMETHOD_RULE_R5___ADD_ELEMENT__EMAP);
+		createEOperation(uCOperation2jCMethod_Rule_r5EClass,
+				UC_OPERATION2J_CMETHOD_RULE_R5___CHANGE_ATTRIBUTE_VALUES__TGGNODE_EMAP);
+		createEOperation(uCOperation2jCMethod_Rule_r5EClass,
+				UC_OPERATION2J_CMETHOD_RULE_R5___MOVE_ELEMENT__TGGNODE_TGGNODE_TGGNODE);
+		createEOperation(uCOperation2jCMethod_Rule_r5EClass,
+				UC_OPERATION2J_CMETHOD_RULE_R5___TRANSFORM_FORWARD__TGGNODE_BOOLEAN_BOOLEAN);
+		createEOperation(uCOperation2jCMethod_Rule_r5EClass,
+				UC_OPERATION2J_CMETHOD_RULE_R5___TRANSFORM_MAPPING__TGGNODE_BOOLEAN_BOOLEAN);
+		createEOperation(uCOperation2jCMethod_Rule_r5EClass,
+				UC_OPERATION2J_CMETHOD_RULE_R5___TRANSFORM_BACKWARD__TGGNODE_BOOLEAN_BOOLEAN);
+		createEOperation(uCOperation2jCMethod_Rule_r5EClass,
+				UC_OPERATION2J_CMETHOD_RULE_R5___CONFLICT_CHECK_FORWARD__TGGNODE);
+		createEOperation(uCOperation2jCMethod_Rule_r5EClass,
+				UC_OPERATION2J_CMETHOD_RULE_R5___CONFLICT_CHECK_MAPPING__TGGNODE);
+		createEOperation(uCOperation2jCMethod_Rule_r5EClass,
+				UC_OPERATION2J_CMETHOD_RULE_R5___CONFLICT_CHECK_BACKWARD__TGGNODE);
+		createEOperation(uCOperation2jCMethod_Rule_r5EClass,
+				UC_OPERATION2J_CMETHOD_RULE_R5___SYNCHRONIZE_FORWARD__TGGNODE_BOOLEAN);
+		createEOperation(uCOperation2jCMethod_Rule_r5EClass,
+				UC_OPERATION2J_CMETHOD_RULE_R5___SYNCHRONIZE_BACKWARD__TGGNODE_BOOLEAN);
+		createEOperation(uCOperation2jCMethod_Rule_r5EClass,
+				UC_OPERATION2J_CMETHOD_RULE_R5___REPAIR_FORWARD__TGGNODE_BOOLEAN);
+		createEOperation(uCOperation2jCMethod_Rule_r5EClass,
+				UC_OPERATION2J_CMETHOD_RULE_R5___REPAIR_BACKWARD__TGGNODE_BOOLEAN);
+
+		uInterface2jInterface_Rule_r6EClass = createEClass(UINTERFACE2J_INTERFACE_RULE_R6);
+		createEReference(uInterface2jInterface_Rule_r6EClass, UINTERFACE2J_INTERFACE_RULE_R6__ADD_ELEMENT_ACTIVITY);
+		createEReference(uInterface2jInterface_Rule_r6EClass, UINTERFACE2J_INTERFACE_RULE_R6__MOVE_ELEMENT_ACTIVITY);
+		createEReference(uInterface2jInterface_Rule_r6EClass,
+				UINTERFACE2J_INTERFACE_RULE_R6__CHANGE_ATTRIBUTE_ACTIVITY);
+		createEReference(uInterface2jInterface_Rule_r6EClass,
+				UINTERFACE2J_INTERFACE_RULE_R6__TRANSFORM_FORWARD_ACTIVITY);
+		createEReference(uInterface2jInterface_Rule_r6EClass,
+				UINTERFACE2J_INTERFACE_RULE_R6__TRANSFORM_MAPPING_ACTIVITY);
+		createEReference(uInterface2jInterface_Rule_r6EClass,
+				UINTERFACE2J_INTERFACE_RULE_R6__TRANSFORM_BACKWARD_ACTIVITY);
+		createEReference(uInterface2jInterface_Rule_r6EClass,
+				UINTERFACE2J_INTERFACE_RULE_R6__CONFLICT_CHECK_FORWARD_ACTIVITY);
+		createEReference(uInterface2jInterface_Rule_r6EClass,
+				UINTERFACE2J_INTERFACE_RULE_R6__CONFLICT_CHECK_MAPPING_ACTIVITY);
+		createEReference(uInterface2jInterface_Rule_r6EClass,
+				UINTERFACE2J_INTERFACE_RULE_R6__CONFLICT_CHECK_BACKWARD_ACTIVITY);
+		createEReference(uInterface2jInterface_Rule_r6EClass,
+				UINTERFACE2J_INTERFACE_RULE_R6__SYNCHRONIZE_FORWARD_ACTIVITY);
+		createEReference(uInterface2jInterface_Rule_r6EClass,
+				UINTERFACE2J_INTERFACE_RULE_R6__SYNCHRONIZE_BACKWARD_ACTIVITY);
+		createEReference(uInterface2jInterface_Rule_r6EClass, UINTERFACE2J_INTERFACE_RULE_R6__REPAIR_FORWARD_ACTIVITY);
+		createEReference(uInterface2jInterface_Rule_r6EClass, UINTERFACE2J_INTERFACE_RULE_R6__REPAIR_BACKWARD_ACTIVITY);
+		createEOperation(uInterface2jInterface_Rule_r6EClass, UINTERFACE2J_INTERFACE_RULE_R6___ADD_ELEMENT__EMAP);
+		createEOperation(uInterface2jInterface_Rule_r6EClass,
+				UINTERFACE2J_INTERFACE_RULE_R6___CHANGE_ATTRIBUTE_VALUES__TGGNODE_EMAP);
+		createEOperation(uInterface2jInterface_Rule_r6EClass,
+				UINTERFACE2J_INTERFACE_RULE_R6___MOVE_ELEMENT__TGGNODE_TGGNODE_TGGNODE);
+		createEOperation(uInterface2jInterface_Rule_r6EClass,
+				UINTERFACE2J_INTERFACE_RULE_R6___TRANSFORM_FORWARD__TGGNODE_BOOLEAN_BOOLEAN);
+		createEOperation(uInterface2jInterface_Rule_r6EClass,
+				UINTERFACE2J_INTERFACE_RULE_R6___TRANSFORM_MAPPING__TGGNODE_BOOLEAN_BOOLEAN);
+		createEOperation(uInterface2jInterface_Rule_r6EClass,
+				UINTERFACE2J_INTERFACE_RULE_R6___TRANSFORM_BACKWARD__TGGNODE_BOOLEAN_BOOLEAN);
+		createEOperation(uInterface2jInterface_Rule_r6EClass,
+				UINTERFACE2J_INTERFACE_RULE_R6___CONFLICT_CHECK_FORWARD__TGGNODE);
+		createEOperation(uInterface2jInterface_Rule_r6EClass,
+				UINTERFACE2J_INTERFACE_RULE_R6___CONFLICT_CHECK_MAPPING__TGGNODE);
+		createEOperation(uInterface2jInterface_Rule_r6EClass,
+				UINTERFACE2J_INTERFACE_RULE_R6___CONFLICT_CHECK_BACKWARD__TGGNODE);
+		createEOperation(uInterface2jInterface_Rule_r6EClass,
+				UINTERFACE2J_INTERFACE_RULE_R6___SYNCHRONIZE_FORWARD__TGGNODE_BOOLEAN);
+		createEOperation(uInterface2jInterface_Rule_r6EClass,
+				UINTERFACE2J_INTERFACE_RULE_R6___SYNCHRONIZE_BACKWARD__TGGNODE_BOOLEAN);
+		createEOperation(uInterface2jInterface_Rule_r6EClass,
+				UINTERFACE2J_INTERFACE_RULE_R6___REPAIR_FORWARD__TGGNODE_BOOLEAN);
+		createEOperation(uInterface2jInterface_Rule_r6EClass,
+				UINTERFACE2J_INTERFACE_RULE_R6___REPAIR_BACKWARD__TGGNODE_BOOLEAN);
+
+		uClass2jClass_Rule_r3EClass = createEClass(UCLASS2J_CLASS_RULE_R3);
+		createEReference(uClass2jClass_Rule_r3EClass, UCLASS2J_CLASS_RULE_R3__ADD_ELEMENT_ACTIVITY);
+		createEReference(uClass2jClass_Rule_r3EClass, UCLASS2J_CLASS_RULE_R3__MOVE_ELEMENT_ACTIVITY);
+		createEReference(uClass2jClass_Rule_r3EClass, UCLASS2J_CLASS_RULE_R3__CHANGE_ATTRIBUTE_ACTIVITY);
+		createEReference(uClass2jClass_Rule_r3EClass, UCLASS2J_CLASS_RULE_R3__TRANSFORM_FORWARD_ACTIVITY);
+		createEReference(uClass2jClass_Rule_r3EClass, UCLASS2J_CLASS_RULE_R3__TRANSFORM_MAPPING_ACTIVITY);
+		createEReference(uClass2jClass_Rule_r3EClass, UCLASS2J_CLASS_RULE_R3__TRANSFORM_BACKWARD_ACTIVITY);
+		createEReference(uClass2jClass_Rule_r3EClass, UCLASS2J_CLASS_RULE_R3__CONFLICT_CHECK_FORWARD_ACTIVITY);
+		createEReference(uClass2jClass_Rule_r3EClass, UCLASS2J_CLASS_RULE_R3__CONFLICT_CHECK_MAPPING_ACTIVITY);
+		createEReference(uClass2jClass_Rule_r3EClass, UCLASS2J_CLASS_RULE_R3__CONFLICT_CHECK_BACKWARD_ACTIVITY);
+		createEReference(uClass2jClass_Rule_r3EClass, UCLASS2J_CLASS_RULE_R3__SYNCHRONIZE_FORWARD_ACTIVITY);
+		createEReference(uClass2jClass_Rule_r3EClass, UCLASS2J_CLASS_RULE_R3__SYNCHRONIZE_BACKWARD_ACTIVITY);
+		createEReference(uClass2jClass_Rule_r3EClass, UCLASS2J_CLASS_RULE_R3__REPAIR_FORWARD_ACTIVITY);
+		createEReference(uClass2jClass_Rule_r3EClass, UCLASS2J_CLASS_RULE_R3__REPAIR_BACKWARD_ACTIVITY);
+		createEOperation(uClass2jClass_Rule_r3EClass, UCLASS2J_CLASS_RULE_R3___ADD_ELEMENT__EMAP);
+		createEOperation(uClass2jClass_Rule_r3EClass, UCLASS2J_CLASS_RULE_R3___CHANGE_ATTRIBUTE_VALUES__TGGNODE_EMAP);
+		createEOperation(uClass2jClass_Rule_r3EClass, UCLASS2J_CLASS_RULE_R3___MOVE_ELEMENT__TGGNODE_TGGNODE_TGGNODE);
+		createEOperation(uClass2jClass_Rule_r3EClass,
+				UCLASS2J_CLASS_RULE_R3___TRANSFORM_FORWARD__TGGNODE_BOOLEAN_BOOLEAN);
+		createEOperation(uClass2jClass_Rule_r3EClass,
+				UCLASS2J_CLASS_RULE_R3___TRANSFORM_MAPPING__TGGNODE_BOOLEAN_BOOLEAN);
+		createEOperation(uClass2jClass_Rule_r3EClass,
+				UCLASS2J_CLASS_RULE_R3___TRANSFORM_BACKWARD__TGGNODE_BOOLEAN_BOOLEAN);
+		createEOperation(uClass2jClass_Rule_r3EClass, UCLASS2J_CLASS_RULE_R3___CONFLICT_CHECK_FORWARD__TGGNODE);
+		createEOperation(uClass2jClass_Rule_r3EClass, UCLASS2J_CLASS_RULE_R3___CONFLICT_CHECK_MAPPING__TGGNODE);
+		createEOperation(uClass2jClass_Rule_r3EClass, UCLASS2J_CLASS_RULE_R3___CONFLICT_CHECK_BACKWARD__TGGNODE);
+		createEOperation(uClass2jClass_Rule_r3EClass, UCLASS2J_CLASS_RULE_R3___SYNCHRONIZE_FORWARD__TGGNODE_BOOLEAN);
+		createEOperation(uClass2jClass_Rule_r3EClass, UCLASS2J_CLASS_RULE_R3___SYNCHRONIZE_BACKWARD__TGGNODE_BOOLEAN);
+		createEOperation(uClass2jClass_Rule_r3EClass, UCLASS2J_CLASS_RULE_R3___REPAIR_FORWARD__TGGNODE_BOOLEAN);
+		createEOperation(uClass2jClass_Rule_r3EClass, UCLASS2J_CLASS_RULE_R3___REPAIR_BACKWARD__TGGNODE_BOOLEAN);
+
+		uCAttribute2jCAttribute_Rule_r4EClass = createEClass(UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4);
+		createEReference(uCAttribute2jCAttribute_Rule_r4EClass,
+				UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4__ADD_ELEMENT_ACTIVITY);
+		createEReference(uCAttribute2jCAttribute_Rule_r4EClass,
+				UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4__MOVE_ELEMENT_ACTIVITY);
+		createEReference(uCAttribute2jCAttribute_Rule_r4EClass,
+				UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4__CHANGE_ATTRIBUTE_ACTIVITY);
+		createEReference(uCAttribute2jCAttribute_Rule_r4EClass,
+				UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4__TRANSFORM_FORWARD_ACTIVITY);
+		createEReference(uCAttribute2jCAttribute_Rule_r4EClass,
+				UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4__TRANSFORM_MAPPING_ACTIVITY);
+		createEReference(uCAttribute2jCAttribute_Rule_r4EClass,
+				UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4__TRANSFORM_BACKWARD_ACTIVITY);
+		createEReference(uCAttribute2jCAttribute_Rule_r4EClass,
+				UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4__CONFLICT_CHECK_FORWARD_ACTIVITY);
+		createEReference(uCAttribute2jCAttribute_Rule_r4EClass,
+				UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4__CONFLICT_CHECK_MAPPING_ACTIVITY);
+		createEReference(uCAttribute2jCAttribute_Rule_r4EClass,
+				UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4__CONFLICT_CHECK_BACKWARD_ACTIVITY);
+		createEReference(uCAttribute2jCAttribute_Rule_r4EClass,
+				UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4__SYNCHRONIZE_FORWARD_ACTIVITY);
+		createEReference(uCAttribute2jCAttribute_Rule_r4EClass,
+				UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4__SYNCHRONIZE_BACKWARD_ACTIVITY);
+		createEReference(uCAttribute2jCAttribute_Rule_r4EClass,
+				UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4__REPAIR_FORWARD_ACTIVITY);
+		createEReference(uCAttribute2jCAttribute_Rule_r4EClass,
+				UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4__REPAIR_BACKWARD_ACTIVITY);
+		createEOperation(uCAttribute2jCAttribute_Rule_r4EClass, UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4___ADD_ELEMENT__EMAP);
+		createEOperation(uCAttribute2jCAttribute_Rule_r4EClass,
+				UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4___CHANGE_ATTRIBUTE_VALUES__TGGNODE_EMAP);
+		createEOperation(uCAttribute2jCAttribute_Rule_r4EClass,
+				UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4___MOVE_ELEMENT__TGGNODE_TGGNODE_TGGNODE);
+		createEOperation(uCAttribute2jCAttribute_Rule_r4EClass,
+				UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4___TRANSFORM_FORWARD__TGGNODE_BOOLEAN_BOOLEAN);
+		createEOperation(uCAttribute2jCAttribute_Rule_r4EClass,
+				UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4___TRANSFORM_MAPPING__TGGNODE_BOOLEAN_BOOLEAN);
+		createEOperation(uCAttribute2jCAttribute_Rule_r4EClass,
+				UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4___TRANSFORM_BACKWARD__TGGNODE_BOOLEAN_BOOLEAN);
+		createEOperation(uCAttribute2jCAttribute_Rule_r4EClass,
+				UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4___CONFLICT_CHECK_FORWARD__TGGNODE);
+		createEOperation(uCAttribute2jCAttribute_Rule_r4EClass,
+				UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4___CONFLICT_CHECK_MAPPING__TGGNODE);
+		createEOperation(uCAttribute2jCAttribute_Rule_r4EClass,
+				UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4___CONFLICT_CHECK_BACKWARD__TGGNODE);
+		createEOperation(uCAttribute2jCAttribute_Rule_r4EClass,
+				UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4___SYNCHRONIZE_FORWARD__TGGNODE_BOOLEAN);
+		createEOperation(uCAttribute2jCAttribute_Rule_r4EClass,
+				UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4___SYNCHRONIZE_BACKWARD__TGGNODE_BOOLEAN);
+		createEOperation(uCAttribute2jCAttribute_Rule_r4EClass,
+				UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4___REPAIR_FORWARD__TGGNODE_BOOLEAN);
+		createEOperation(uCAttribute2jCAttribute_Rule_r4EClass,
+				UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4___REPAIR_BACKWARD__TGGNODE_BOOLEAN);
 	}
 
 	/**
@@ -692,8 +1953,16 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 		uml2javaOperationalTGGEClass.getESuperTypes().add(theSdmPackage.getSdmOperationalTGG());
 		uml2javaAxiomEClass.getESuperTypes().add(theOperationalTGGPackage.getOperationalAxiomGroup());
 		uPackage2jPackage_RuleEClass.getESuperTypes().add(theOperationalTGGPackage.getOperationalRuleGroup());
+		uCAttribute2jCAttribute_RuleEClass.getESuperTypes().add(theOperationalTGGPackage.getOperationalRuleGroup());
+		uInterface2jInterface_RuleEClass.getESuperTypes().add(theOperationalTGGPackage.getOperationalRuleGroup());
+		uClass2jClass_RuleEClass.getESuperTypes().add(theOperationalTGGPackage.getOperationalRuleGroup());
+		uCOperation2jCMethod_RuleEClass.getESuperTypes().add(theOperationalTGGPackage.getOperationalRuleGroup());
 		uml2javaAxiom_r1EClass.getESuperTypes().add(theOperationalTGGPackage.getOperationalAxiom());
 		uPackage2jPackage_Rule_r2EClass.getESuperTypes().add(theOperationalTGGPackage.getOperationalRule());
+		uCOperation2jCMethod_Rule_r5EClass.getESuperTypes().add(theOperationalTGGPackage.getOperationalRule());
+		uInterface2jInterface_Rule_r6EClass.getESuperTypes().add(theOperationalTGGPackage.getOperationalRule());
+		uClass2jClass_Rule_r3EClass.getESuperTypes().add(theOperationalTGGPackage.getOperationalRule());
+		uCAttribute2jCAttribute_Rule_r4EClass.getESuperTypes().add(theOperationalTGGPackage.getOperationalRule());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(uml2javaOperationalTGGEClass, uml2javaOperationalTGG.class, "uml2javaOperationalTGG", !IS_ABSTRACT,
@@ -704,6 +1973,18 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 
 		initEClass(uPackage2jPackage_RuleEClass, uPackage2jPackage_Rule.class, "uPackage2jPackage_Rule", !IS_ABSTRACT,
 				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(uCAttribute2jCAttribute_RuleEClass, uCAttribute2jCAttribute_Rule.class,
+				"uCAttribute2jCAttribute_Rule", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(uInterface2jInterface_RuleEClass, uInterface2jInterface_Rule.class, "uInterface2jInterface_Rule",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(uClass2jClass_RuleEClass, uClass2jClass_Rule.class, "uClass2jClass_Rule", !IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(uCOperation2jCMethod_RuleEClass, uCOperation2jCMethod_Rule.class, "uCOperation2jCMethod_Rule",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(uml2javaAxiom_r1EClass, uml2javaAxiom_r1.class, "uml2javaAxiom_r1", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -920,6 +2201,550 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 		addEException(op, theHelpersPackage.getTransformationException());
 
 		op = initEOperation(getuPackage2jPackage_Rule_r2__RepairBackward__TGGNode_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "repairBackward", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		initEClass(uCOperation2jCMethod_Rule_r5EClass, uCOperation2jCMethod_Rule_r5.class,
+				"uCOperation2jCMethod_Rule_r5", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getuCOperation2jCMethod_Rule_r5_AddElementActivity(), theMlsdmPackage.getActivity(), null,
+				"addElementActivity", null, 1, 1, uCOperation2jCMethod_Rule_r5.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getuCOperation2jCMethod_Rule_r5_MoveElementActivity(), theMlsdmPackage.getActivity(), null,
+				"moveElementActivity", null, 1, 1, uCOperation2jCMethod_Rule_r5.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getuCOperation2jCMethod_Rule_r5_ChangeAttributeActivity(), theMlsdmPackage.getActivity(), null,
+				"changeAttributeActivity", null, 1, 1, uCOperation2jCMethod_Rule_r5.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getuCOperation2jCMethod_Rule_r5_TransformForwardActivity(), theMlsdmPackage.getActivity(), null,
+				"transformForwardActivity", null, 1, 1, uCOperation2jCMethod_Rule_r5.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getuCOperation2jCMethod_Rule_r5_TransformMappingActivity(), theMlsdmPackage.getActivity(), null,
+				"transformMappingActivity", null, 1, 1, uCOperation2jCMethod_Rule_r5.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getuCOperation2jCMethod_Rule_r5_TransformBackwardActivity(), theMlsdmPackage.getActivity(), null,
+				"transformBackwardActivity", null, 1, 1, uCOperation2jCMethod_Rule_r5.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getuCOperation2jCMethod_Rule_r5_ConflictCheckForwardActivity(), theMlsdmPackage.getActivity(),
+				null, "conflictCheckForwardActivity", null, 1, 1, uCOperation2jCMethod_Rule_r5.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getuCOperation2jCMethod_Rule_r5_ConflictCheckMappingActivity(), theMlsdmPackage.getActivity(),
+				null, "conflictCheckMappingActivity", null, 1, 1, uCOperation2jCMethod_Rule_r5.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getuCOperation2jCMethod_Rule_r5_ConflictCheckBackwardActivity(), theMlsdmPackage.getActivity(),
+				null, "conflictCheckBackwardActivity", null, 1, 1, uCOperation2jCMethod_Rule_r5.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getuCOperation2jCMethod_Rule_r5_SynchronizeForwardActivity(), theMlsdmPackage.getActivity(),
+				null, "synchronizeForwardActivity", null, 1, 1, uCOperation2jCMethod_Rule_r5.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getuCOperation2jCMethod_Rule_r5_SynchronizeBackwardActivity(), theMlsdmPackage.getActivity(),
+				null, "synchronizeBackwardActivity", null, 1, 1, uCOperation2jCMethod_Rule_r5.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getuCOperation2jCMethod_Rule_r5_RepairForwardActivity(), theMlsdmPackage.getActivity(), null,
+				"repairForwardActivity", null, 1, 1, uCOperation2jCMethod_Rule_r5.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getuCOperation2jCMethod_Rule_r5_RepairBackwardActivity(), theMlsdmPackage.getActivity(), null,
+				"repairBackwardActivity", null, 1, 1, uCOperation2jCMethod_Rule_r5.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		op = initEOperation(getuCOperation2jCMethod_Rule_r5__AddElement__EMap(), theMote2Package.getTGGNode(),
+				"addElement", 1, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(theHelpersPackage.getMapEntry());
+		g2 = createEGenericType(ecorePackage.getEString());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "parameters", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuCOperation2jCMethod_Rule_r5__ChangeAttributeValues__TGGNode_EMap(),
+				ecorePackage.getEBoolean(), "changeAttributeValues", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "correspondenceNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(theHelpersPackage.getMapEntry());
+		g2 = createEGenericType(ecorePackage.getEString());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "ruleParameters", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuCOperation2jCMethod_Rule_r5__MoveElement__TGGNode_TGGNode_TGGNode(),
+				ecorePackage.getEBoolean(), "moveElement", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "correspondenceNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "oldPreviousCorrespondenceNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "newPreviousCorrespondenceNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuCOperation2jCMethod_Rule_r5__TransformForward__TGGNode_boolean_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "transformForward", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "considerAllLhsCorrNodes", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuCOperation2jCMethod_Rule_r5__TransformMapping__TGGNode_boolean_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "transformMapping", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "considerAllLhsCorrNodes", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuCOperation2jCMethod_Rule_r5__TransformBackward__TGGNode_boolean_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "transformBackward", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "considerAllLhsCorrNodes", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuCOperation2jCMethod_Rule_r5__ConflictCheckForward__TGGNode(), ecorePackage.getEObject(),
+				"conflictCheckForward", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuCOperation2jCMethod_Rule_r5__ConflictCheckMapping__TGGNode(), ecorePackage.getEObject(),
+				"conflictCheckMapping", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuCOperation2jCMethod_Rule_r5__ConflictCheckBackward__TGGNode(),
+				ecorePackage.getEObject(), "conflictCheckBackward", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuCOperation2jCMethod_Rule_r5__SynchronizeForward__TGGNode_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "synchronizeForward", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuCOperation2jCMethod_Rule_r5__SynchronizeBackward__TGGNode_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "synchronizeBackward", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuCOperation2jCMethod_Rule_r5__RepairForward__TGGNode_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "repairForward", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuCOperation2jCMethod_Rule_r5__RepairBackward__TGGNode_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "repairBackward", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		initEClass(uInterface2jInterface_Rule_r6EClass, uInterface2jInterface_Rule_r6.class,
+				"uInterface2jInterface_Rule_r6", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getuInterface2jInterface_Rule_r6_AddElementActivity(), theMlsdmPackage.getActivity(), null,
+				"addElementActivity", null, 1, 1, uInterface2jInterface_Rule_r6.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getuInterface2jInterface_Rule_r6_MoveElementActivity(), theMlsdmPackage.getActivity(), null,
+				"moveElementActivity", null, 1, 1, uInterface2jInterface_Rule_r6.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getuInterface2jInterface_Rule_r6_ChangeAttributeActivity(), theMlsdmPackage.getActivity(), null,
+				"changeAttributeActivity", null, 1, 1, uInterface2jInterface_Rule_r6.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getuInterface2jInterface_Rule_r6_TransformForwardActivity(), theMlsdmPackage.getActivity(), null,
+				"transformForwardActivity", null, 1, 1, uInterface2jInterface_Rule_r6.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getuInterface2jInterface_Rule_r6_TransformMappingActivity(), theMlsdmPackage.getActivity(), null,
+				"transformMappingActivity", null, 1, 1, uInterface2jInterface_Rule_r6.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getuInterface2jInterface_Rule_r6_TransformBackwardActivity(), theMlsdmPackage.getActivity(),
+				null, "transformBackwardActivity", null, 1, 1, uInterface2jInterface_Rule_r6.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getuInterface2jInterface_Rule_r6_ConflictCheckForwardActivity(), theMlsdmPackage.getActivity(),
+				null, "conflictCheckForwardActivity", null, 1, 1, uInterface2jInterface_Rule_r6.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getuInterface2jInterface_Rule_r6_ConflictCheckMappingActivity(), theMlsdmPackage.getActivity(),
+				null, "conflictCheckMappingActivity", null, 1, 1, uInterface2jInterface_Rule_r6.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getuInterface2jInterface_Rule_r6_ConflictCheckBackwardActivity(), theMlsdmPackage.getActivity(),
+				null, "conflictCheckBackwardActivity", null, 1, 1, uInterface2jInterface_Rule_r6.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getuInterface2jInterface_Rule_r6_SynchronizeForwardActivity(), theMlsdmPackage.getActivity(),
+				null, "synchronizeForwardActivity", null, 1, 1, uInterface2jInterface_Rule_r6.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getuInterface2jInterface_Rule_r6_SynchronizeBackwardActivity(), theMlsdmPackage.getActivity(),
+				null, "synchronizeBackwardActivity", null, 1, 1, uInterface2jInterface_Rule_r6.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getuInterface2jInterface_Rule_r6_RepairForwardActivity(), theMlsdmPackage.getActivity(), null,
+				"repairForwardActivity", null, 1, 1, uInterface2jInterface_Rule_r6.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getuInterface2jInterface_Rule_r6_RepairBackwardActivity(), theMlsdmPackage.getActivity(), null,
+				"repairBackwardActivity", null, 1, 1, uInterface2jInterface_Rule_r6.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		op = initEOperation(getuInterface2jInterface_Rule_r6__AddElement__EMap(), theMote2Package.getTGGNode(),
+				"addElement", 1, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(theHelpersPackage.getMapEntry());
+		g2 = createEGenericType(ecorePackage.getEString());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "parameters", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuInterface2jInterface_Rule_r6__ChangeAttributeValues__TGGNode_EMap(),
+				ecorePackage.getEBoolean(), "changeAttributeValues", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "correspondenceNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(theHelpersPackage.getMapEntry());
+		g2 = createEGenericType(ecorePackage.getEString());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "ruleParameters", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuInterface2jInterface_Rule_r6__MoveElement__TGGNode_TGGNode_TGGNode(),
+				ecorePackage.getEBoolean(), "moveElement", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "correspondenceNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "oldPreviousCorrespondenceNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "newPreviousCorrespondenceNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuInterface2jInterface_Rule_r6__TransformForward__TGGNode_boolean_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "transformForward", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "considerAllLhsCorrNodes", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuInterface2jInterface_Rule_r6__TransformMapping__TGGNode_boolean_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "transformMapping", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "considerAllLhsCorrNodes", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuInterface2jInterface_Rule_r6__TransformBackward__TGGNode_boolean_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "transformBackward", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "considerAllLhsCorrNodes", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuInterface2jInterface_Rule_r6__ConflictCheckForward__TGGNode(),
+				ecorePackage.getEObject(), "conflictCheckForward", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuInterface2jInterface_Rule_r6__ConflictCheckMapping__TGGNode(),
+				ecorePackage.getEObject(), "conflictCheckMapping", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuInterface2jInterface_Rule_r6__ConflictCheckBackward__TGGNode(),
+				ecorePackage.getEObject(), "conflictCheckBackward", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuInterface2jInterface_Rule_r6__SynchronizeForward__TGGNode_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "synchronizeForward", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuInterface2jInterface_Rule_r6__SynchronizeBackward__TGGNode_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "synchronizeBackward", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuInterface2jInterface_Rule_r6__RepairForward__TGGNode_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "repairForward", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuInterface2jInterface_Rule_r6__RepairBackward__TGGNode_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "repairBackward", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		initEClass(uClass2jClass_Rule_r3EClass, uClass2jClass_Rule_r3.class, "uClass2jClass_Rule_r3", !IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getuClass2jClass_Rule_r3_AddElementActivity(), theMlsdmPackage.getActivity(), null,
+				"addElementActivity", null, 1, 1, uClass2jClass_Rule_r3.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getuClass2jClass_Rule_r3_MoveElementActivity(), theMlsdmPackage.getActivity(), null,
+				"moveElementActivity", null, 1, 1, uClass2jClass_Rule_r3.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getuClass2jClass_Rule_r3_ChangeAttributeActivity(), theMlsdmPackage.getActivity(), null,
+				"changeAttributeActivity", null, 1, 1, uClass2jClass_Rule_r3.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getuClass2jClass_Rule_r3_TransformForwardActivity(), theMlsdmPackage.getActivity(), null,
+				"transformForwardActivity", null, 1, 1, uClass2jClass_Rule_r3.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getuClass2jClass_Rule_r3_TransformMappingActivity(), theMlsdmPackage.getActivity(), null,
+				"transformMappingActivity", null, 1, 1, uClass2jClass_Rule_r3.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getuClass2jClass_Rule_r3_TransformBackwardActivity(), theMlsdmPackage.getActivity(), null,
+				"transformBackwardActivity", null, 1, 1, uClass2jClass_Rule_r3.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getuClass2jClass_Rule_r3_ConflictCheckForwardActivity(), theMlsdmPackage.getActivity(), null,
+				"conflictCheckForwardActivity", null, 1, 1, uClass2jClass_Rule_r3.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getuClass2jClass_Rule_r3_ConflictCheckMappingActivity(), theMlsdmPackage.getActivity(), null,
+				"conflictCheckMappingActivity", null, 1, 1, uClass2jClass_Rule_r3.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getuClass2jClass_Rule_r3_ConflictCheckBackwardActivity(), theMlsdmPackage.getActivity(), null,
+				"conflictCheckBackwardActivity", null, 1, 1, uClass2jClass_Rule_r3.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getuClass2jClass_Rule_r3_SynchronizeForwardActivity(), theMlsdmPackage.getActivity(), null,
+				"synchronizeForwardActivity", null, 1, 1, uClass2jClass_Rule_r3.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getuClass2jClass_Rule_r3_SynchronizeBackwardActivity(), theMlsdmPackage.getActivity(), null,
+				"synchronizeBackwardActivity", null, 1, 1, uClass2jClass_Rule_r3.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getuClass2jClass_Rule_r3_RepairForwardActivity(), theMlsdmPackage.getActivity(), null,
+				"repairForwardActivity", null, 1, 1, uClass2jClass_Rule_r3.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getuClass2jClass_Rule_r3_RepairBackwardActivity(), theMlsdmPackage.getActivity(), null,
+				"repairBackwardActivity", null, 1, 1, uClass2jClass_Rule_r3.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		op = initEOperation(getuClass2jClass_Rule_r3__AddElement__EMap(), theMote2Package.getTGGNode(), "addElement", 1,
+				1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(theHelpersPackage.getMapEntry());
+		g2 = createEGenericType(ecorePackage.getEString());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "parameters", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuClass2jClass_Rule_r3__ChangeAttributeValues__TGGNode_EMap(), ecorePackage.getEBoolean(),
+				"changeAttributeValues", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "correspondenceNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(theHelpersPackage.getMapEntry());
+		g2 = createEGenericType(ecorePackage.getEString());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "ruleParameters", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuClass2jClass_Rule_r3__MoveElement__TGGNode_TGGNode_TGGNode(),
+				ecorePackage.getEBoolean(), "moveElement", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "correspondenceNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "oldPreviousCorrespondenceNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "newPreviousCorrespondenceNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuClass2jClass_Rule_r3__TransformForward__TGGNode_boolean_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "transformForward", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "considerAllLhsCorrNodes", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuClass2jClass_Rule_r3__TransformMapping__TGGNode_boolean_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "transformMapping", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "considerAllLhsCorrNodes", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuClass2jClass_Rule_r3__TransformBackward__TGGNode_boolean_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "transformBackward", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "considerAllLhsCorrNodes", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuClass2jClass_Rule_r3__ConflictCheckForward__TGGNode(), ecorePackage.getEObject(),
+				"conflictCheckForward", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuClass2jClass_Rule_r3__ConflictCheckMapping__TGGNode(), ecorePackage.getEObject(),
+				"conflictCheckMapping", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuClass2jClass_Rule_r3__ConflictCheckBackward__TGGNode(), ecorePackage.getEObject(),
+				"conflictCheckBackward", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuClass2jClass_Rule_r3__SynchronizeForward__TGGNode_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "synchronizeForward", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuClass2jClass_Rule_r3__SynchronizeBackward__TGGNode_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "synchronizeBackward", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuClass2jClass_Rule_r3__RepairForward__TGGNode_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "repairForward", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuClass2jClass_Rule_r3__RepairBackward__TGGNode_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "repairBackward", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		initEClass(uCAttribute2jCAttribute_Rule_r4EClass, uCAttribute2jCAttribute_Rule_r4.class,
+				"uCAttribute2jCAttribute_Rule_r4", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getuCAttribute2jCAttribute_Rule_r4_AddElementActivity(), theMlsdmPackage.getActivity(), null,
+				"addElementActivity", null, 1, 1, uCAttribute2jCAttribute_Rule_r4.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getuCAttribute2jCAttribute_Rule_r4_MoveElementActivity(), theMlsdmPackage.getActivity(), null,
+				"moveElementActivity", null, 1, 1, uCAttribute2jCAttribute_Rule_r4.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getuCAttribute2jCAttribute_Rule_r4_ChangeAttributeActivity(), theMlsdmPackage.getActivity(),
+				null, "changeAttributeActivity", null, 1, 1, uCAttribute2jCAttribute_Rule_r4.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getuCAttribute2jCAttribute_Rule_r4_TransformForwardActivity(), theMlsdmPackage.getActivity(),
+				null, "transformForwardActivity", null, 1, 1, uCAttribute2jCAttribute_Rule_r4.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getuCAttribute2jCAttribute_Rule_r4_TransformMappingActivity(), theMlsdmPackage.getActivity(),
+				null, "transformMappingActivity", null, 1, 1, uCAttribute2jCAttribute_Rule_r4.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getuCAttribute2jCAttribute_Rule_r4_TransformBackwardActivity(), theMlsdmPackage.getActivity(),
+				null, "transformBackwardActivity", null, 1, 1, uCAttribute2jCAttribute_Rule_r4.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getuCAttribute2jCAttribute_Rule_r4_ConflictCheckForwardActivity(), theMlsdmPackage.getActivity(),
+				null, "conflictCheckForwardActivity", null, 1, 1, uCAttribute2jCAttribute_Rule_r4.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getuCAttribute2jCAttribute_Rule_r4_ConflictCheckMappingActivity(), theMlsdmPackage.getActivity(),
+				null, "conflictCheckMappingActivity", null, 1, 1, uCAttribute2jCAttribute_Rule_r4.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getuCAttribute2jCAttribute_Rule_r4_ConflictCheckBackwardActivity(),
+				theMlsdmPackage.getActivity(), null, "conflictCheckBackwardActivity", null, 1, 1,
+				uCAttribute2jCAttribute_Rule_r4.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
+				IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getuCAttribute2jCAttribute_Rule_r4_SynchronizeForwardActivity(), theMlsdmPackage.getActivity(),
+				null, "synchronizeForwardActivity", null, 1, 1, uCAttribute2jCAttribute_Rule_r4.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getuCAttribute2jCAttribute_Rule_r4_SynchronizeBackwardActivity(), theMlsdmPackage.getActivity(),
+				null, "synchronizeBackwardActivity", null, 1, 1, uCAttribute2jCAttribute_Rule_r4.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getuCAttribute2jCAttribute_Rule_r4_RepairForwardActivity(), theMlsdmPackage.getActivity(), null,
+				"repairForwardActivity", null, 1, 1, uCAttribute2jCAttribute_Rule_r4.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getuCAttribute2jCAttribute_Rule_r4_RepairBackwardActivity(), theMlsdmPackage.getActivity(), null,
+				"repairBackwardActivity", null, 1, 1, uCAttribute2jCAttribute_Rule_r4.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+
+		op = initEOperation(getuCAttribute2jCAttribute_Rule_r4__AddElement__EMap(), theMote2Package.getTGGNode(),
+				"addElement", 1, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(theHelpersPackage.getMapEntry());
+		g2 = createEGenericType(ecorePackage.getEString());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "parameters", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuCAttribute2jCAttribute_Rule_r4__ChangeAttributeValues__TGGNode_EMap(),
+				ecorePackage.getEBoolean(), "changeAttributeValues", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "correspondenceNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(theHelpersPackage.getMapEntry());
+		g2 = createEGenericType(ecorePackage.getEString());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "ruleParameters", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuCAttribute2jCAttribute_Rule_r4__MoveElement__TGGNode_TGGNode_TGGNode(),
+				ecorePackage.getEBoolean(), "moveElement", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "correspondenceNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "oldPreviousCorrespondenceNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "newPreviousCorrespondenceNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuCAttribute2jCAttribute_Rule_r4__TransformForward__TGGNode_boolean_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "transformForward", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "considerAllLhsCorrNodes", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuCAttribute2jCAttribute_Rule_r4__TransformMapping__TGGNode_boolean_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "transformMapping", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "considerAllLhsCorrNodes", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuCAttribute2jCAttribute_Rule_r4__TransformBackward__TGGNode_boolean_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "transformBackward", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "considerAllLhsCorrNodes", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuCAttribute2jCAttribute_Rule_r4__ConflictCheckForward__TGGNode(),
+				ecorePackage.getEObject(), "conflictCheckForward", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuCAttribute2jCAttribute_Rule_r4__ConflictCheckMapping__TGGNode(),
+				ecorePackage.getEObject(), "conflictCheckMapping", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuCAttribute2jCAttribute_Rule_r4__ConflictCheckBackward__TGGNode(),
+				ecorePackage.getEObject(), "conflictCheckBackward", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuCAttribute2jCAttribute_Rule_r4__SynchronizeForward__TGGNode_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "synchronizeForward", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuCAttribute2jCAttribute_Rule_r4__SynchronizeBackward__TGGNode_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "synchronizeBackward", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuCAttribute2jCAttribute_Rule_r4__RepairForward__TGGNode_boolean(),
+				theOperationalTGGPackage.getErrorCodeEnum(), "repairForward", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theHelpersPackage.getTransformationException());
+
+		op = initEOperation(getuCAttribute2jCAttribute_Rule_r4__RepairBackward__TGGNode_boolean(),
 				theOperationalTGGPackage.getErrorCodeEnum(), "repairBackward", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theMote2Package.getTGGNode(), "inputTggNode", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEBoolean(), "checkAttributeFormulae", 1, 1, IS_UNIQUE, IS_ORDERED);

@@ -109,6 +109,50 @@ public class GeneratedSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case GeneratedPackage.UC_ATTRIBUTE2J_CATTRIBUTE_RULE: {
+			uCAttribute2jCAttribute_Rule uCAttribute2jCAttribute_Rule = (uCAttribute2jCAttribute_Rule) theEObject;
+			T result = caseuCAttribute2jCAttribute_Rule(uCAttribute2jCAttribute_Rule);
+			if (result == null)
+				result = caseOperationalRuleGroup(uCAttribute2jCAttribute_Rule);
+			if (result == null)
+				result = caseOperationalMappingGroup(uCAttribute2jCAttribute_Rule);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case GeneratedPackage.UINTERFACE2J_INTERFACE_RULE: {
+			uInterface2jInterface_Rule uInterface2jInterface_Rule = (uInterface2jInterface_Rule) theEObject;
+			T result = caseuInterface2jInterface_Rule(uInterface2jInterface_Rule);
+			if (result == null)
+				result = caseOperationalRuleGroup(uInterface2jInterface_Rule);
+			if (result == null)
+				result = caseOperationalMappingGroup(uInterface2jInterface_Rule);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case GeneratedPackage.UCLASS2J_CLASS_RULE: {
+			uClass2jClass_Rule uClass2jClass_Rule = (uClass2jClass_Rule) theEObject;
+			T result = caseuClass2jClass_Rule(uClass2jClass_Rule);
+			if (result == null)
+				result = caseOperationalRuleGroup(uClass2jClass_Rule);
+			if (result == null)
+				result = caseOperationalMappingGroup(uClass2jClass_Rule);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case GeneratedPackage.UC_OPERATION2J_CMETHOD_RULE: {
+			uCOperation2jCMethod_Rule uCOperation2jCMethod_Rule = (uCOperation2jCMethod_Rule) theEObject;
+			T result = caseuCOperation2jCMethod_Rule(uCOperation2jCMethod_Rule);
+			if (result == null)
+				result = caseOperationalRuleGroup(uCOperation2jCMethod_Rule);
+			if (result == null)
+				result = caseOperationalMappingGroup(uCOperation2jCMethod_Rule);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case GeneratedPackage.UML2JAVA_AXIOM_R1: {
 			uml2javaAxiom_r1 uml2javaAxiom_r1 = (uml2javaAxiom_r1) theEObject;
 			T result = caseuml2javaAxiom_r1(uml2javaAxiom_r1);
@@ -127,6 +171,50 @@ public class GeneratedSwitch<T> extends Switch<T> {
 				result = caseOperationalRule(uPackage2jPackage_Rule_r2);
 			if (result == null)
 				result = caseOperationalMapping(uPackage2jPackage_Rule_r2);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case GeneratedPackage.UC_OPERATION2J_CMETHOD_RULE_R5: {
+			uCOperation2jCMethod_Rule_r5 uCOperation2jCMethod_Rule_r5 = (uCOperation2jCMethod_Rule_r5) theEObject;
+			T result = caseuCOperation2jCMethod_Rule_r5(uCOperation2jCMethod_Rule_r5);
+			if (result == null)
+				result = caseOperationalRule(uCOperation2jCMethod_Rule_r5);
+			if (result == null)
+				result = caseOperationalMapping(uCOperation2jCMethod_Rule_r5);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case GeneratedPackage.UINTERFACE2J_INTERFACE_RULE_R6: {
+			uInterface2jInterface_Rule_r6 uInterface2jInterface_Rule_r6 = (uInterface2jInterface_Rule_r6) theEObject;
+			T result = caseuInterface2jInterface_Rule_r6(uInterface2jInterface_Rule_r6);
+			if (result == null)
+				result = caseOperationalRule(uInterface2jInterface_Rule_r6);
+			if (result == null)
+				result = caseOperationalMapping(uInterface2jInterface_Rule_r6);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case GeneratedPackage.UCLASS2J_CLASS_RULE_R3: {
+			uClass2jClass_Rule_r3 uClass2jClass_Rule_r3 = (uClass2jClass_Rule_r3) theEObject;
+			T result = caseuClass2jClass_Rule_r3(uClass2jClass_Rule_r3);
+			if (result == null)
+				result = caseOperationalRule(uClass2jClass_Rule_r3);
+			if (result == null)
+				result = caseOperationalMapping(uClass2jClass_Rule_r3);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case GeneratedPackage.UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4: {
+			uCAttribute2jCAttribute_Rule_r4 uCAttribute2jCAttribute_Rule_r4 = (uCAttribute2jCAttribute_Rule_r4) theEObject;
+			T result = caseuCAttribute2jCAttribute_Rule_r4(uCAttribute2jCAttribute_Rule_r4);
+			if (result == null)
+				result = caseOperationalRule(uCAttribute2jCAttribute_Rule_r4);
+			if (result == null)
+				result = caseOperationalMapping(uCAttribute2jCAttribute_Rule_r4);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -182,6 +270,66 @@ public class GeneratedSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>uC Attribute2j CAttribute Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>uC Attribute2j CAttribute Rule</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseuCAttribute2jCAttribute_Rule(uCAttribute2jCAttribute_Rule object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>uInterface2j Interface Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>uInterface2j Interface Rule</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseuInterface2jInterface_Rule(uInterface2jInterface_Rule object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>uClass2j Class Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>uClass2j Class Rule</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseuClass2jClass_Rule(uClass2jClass_Rule object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>uC Operation2j CMethod Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>uC Operation2j CMethod Rule</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseuCOperation2jCMethod_Rule(uCOperation2jCMethod_Rule object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>uml2java Axiom r1</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -208,6 +356,66 @@ public class GeneratedSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseuPackage2jPackage_Rule_r2(uPackage2jPackage_Rule_r2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>uC Operation2j CMethod Rule r5</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>uC Operation2j CMethod Rule r5</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseuCOperation2jCMethod_Rule_r5(uCOperation2jCMethod_Rule_r5 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>uInterface2j Interface Rule r6</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>uInterface2j Interface Rule r6</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseuInterface2jInterface_Rule_r6(uInterface2jInterface_Rule_r6 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>uClass2j Class Rule r3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>uClass2j Class Rule r3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseuClass2jClass_Rule_r3(uClass2jClass_Rule_r3 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>uC Attribute2j CAttribute Rule r4</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>uC Attribute2j CAttribute Rule r4</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseuCAttribute2jCAttribute_Rule_r4(uCAttribute2jCAttribute_Rule_r4 object) {
 		return null;
 	}
 

@@ -92,6 +92,26 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseuCAttribute2jCAttribute_Rule(uCAttribute2jCAttribute_Rule object) {
+			return createuCAttribute2jCAttribute_RuleAdapter();
+		}
+
+		@Override
+		public Adapter caseuInterface2jInterface_Rule(uInterface2jInterface_Rule object) {
+			return createuInterface2jInterface_RuleAdapter();
+		}
+
+		@Override
+		public Adapter caseuClass2jClass_Rule(uClass2jClass_Rule object) {
+			return createuClass2jClass_RuleAdapter();
+		}
+
+		@Override
+		public Adapter caseuCOperation2jCMethod_Rule(uCOperation2jCMethod_Rule object) {
+			return createuCOperation2jCMethod_RuleAdapter();
+		}
+
+		@Override
 		public Adapter caseuml2javaAxiom_r1(uml2javaAxiom_r1 object) {
 			return createuml2javaAxiom_r1Adapter();
 		}
@@ -99,6 +119,26 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseuPackage2jPackage_Rule_r2(uPackage2jPackage_Rule_r2 object) {
 			return createuPackage2jPackage_Rule_r2Adapter();
+		}
+
+		@Override
+		public Adapter caseuCOperation2jCMethod_Rule_r5(uCOperation2jCMethod_Rule_r5 object) {
+			return createuCOperation2jCMethod_Rule_r5Adapter();
+		}
+
+		@Override
+		public Adapter caseuInterface2jInterface_Rule_r6(uInterface2jInterface_Rule_r6 object) {
+			return createuInterface2jInterface_Rule_r6Adapter();
+		}
+
+		@Override
+		public Adapter caseuClass2jClass_Rule_r3(uClass2jClass_Rule_r3 object) {
+			return createuClass2jClass_Rule_r3Adapter();
+		}
+
+		@Override
+		public Adapter caseuCAttribute2jCAttribute_Rule_r4(uCAttribute2jCAttribute_Rule_r4 object) {
+			return createuCAttribute2jCAttribute_Rule_r4Adapter();
 		}
 
 		@Override
@@ -203,6 +243,62 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.uml2java.generated.uCAttribute2jCAttribute_Rule <em>uC Attribute2j CAttribute Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.uml2java.generated.uCAttribute2jCAttribute_Rule
+	 * @generated
+	 */
+	public Adapter createuCAttribute2jCAttribute_RuleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.uml2java.generated.uInterface2jInterface_Rule <em>uInterface2j Interface Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.uml2java.generated.uInterface2jInterface_Rule
+	 * @generated
+	 */
+	public Adapter createuInterface2jInterface_RuleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.uml2java.generated.uClass2jClass_Rule <em>uClass2j Class Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.uml2java.generated.uClass2jClass_Rule
+	 * @generated
+	 */
+	public Adapter createuClass2jClass_RuleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.uml2java.generated.uCOperation2jCMethod_Rule <em>uC Operation2j CMethod Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.uml2java.generated.uCOperation2jCMethod_Rule
+	 * @generated
+	 */
+	public Adapter createuCOperation2jCMethod_RuleAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link de.silvawb.uml2java.generated.uml2javaAxiom_r1 <em>uml2java Axiom r1</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -227,6 +323,62 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createuPackage2jPackage_Rule_r2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.uml2java.generated.uCOperation2jCMethod_Rule_r5 <em>uC Operation2j CMethod Rule r5</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.uml2java.generated.uCOperation2jCMethod_Rule_r5
+	 * @generated
+	 */
+	public Adapter createuCOperation2jCMethod_Rule_r5Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.uml2java.generated.uInterface2jInterface_Rule_r6 <em>uInterface2j Interface Rule r6</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.uml2java.generated.uInterface2jInterface_Rule_r6
+	 * @generated
+	 */
+	public Adapter createuInterface2jInterface_Rule_r6Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.uml2java.generated.uClass2jClass_Rule_r3 <em>uClass2j Class Rule r3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.uml2java.generated.uClass2jClass_Rule_r3
+	 * @generated
+	 */
+	public Adapter createuClass2jClass_Rule_r3Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.uml2java.generated.uCAttribute2jCAttribute_Rule_r4 <em>uC Attribute2j CAttribute Rule r4</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.uml2java.generated.uCAttribute2jCAttribute_Rule_r4
+	 * @generated
+	 */
+	public Adapter createuCAttribute2jCAttribute_Rule_r4Adapter() {
 		return null;
 	}
 

@@ -62,10 +62,26 @@ public class GeneratedFactoryImpl extends EFactoryImpl implements GeneratedFacto
 			return createuml2javaAxiom();
 		case GeneratedPackage.UPACKAGE2J_PACKAGE_RULE:
 			return createuPackage2jPackage_Rule();
+		case GeneratedPackage.UC_ATTRIBUTE2J_CATTRIBUTE_RULE:
+			return createuCAttribute2jCAttribute_Rule();
+		case GeneratedPackage.UINTERFACE2J_INTERFACE_RULE:
+			return createuInterface2jInterface_Rule();
+		case GeneratedPackage.UCLASS2J_CLASS_RULE:
+			return createuClass2jClass_Rule();
+		case GeneratedPackage.UC_OPERATION2J_CMETHOD_RULE:
+			return createuCOperation2jCMethod_Rule();
 		case GeneratedPackage.UML2JAVA_AXIOM_R1:
 			return createuml2javaAxiom_r1();
 		case GeneratedPackage.UPACKAGE2J_PACKAGE_RULE_R2:
 			return createuPackage2jPackage_Rule_r2();
+		case GeneratedPackage.UC_OPERATION2J_CMETHOD_RULE_R5:
+			return createuCOperation2jCMethod_Rule_r5();
+		case GeneratedPackage.UINTERFACE2J_INTERFACE_RULE_R6:
+			return createuInterface2jInterface_Rule_r6();
+		case GeneratedPackage.UCLASS2J_CLASS_RULE_R3:
+			return createuClass2jClass_Rule_r3();
+		case GeneratedPackage.UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4:
+			return createuCAttribute2jCAttribute_Rule_r4();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -106,6 +122,46 @@ public class GeneratedFactoryImpl extends EFactoryImpl implements GeneratedFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public uCAttribute2jCAttribute_Rule createuCAttribute2jCAttribute_Rule() {
+		uCAttribute2jCAttribute_RuleImpl uCAttribute2jCAttribute_Rule = new uCAttribute2jCAttribute_RuleImpl();
+		return uCAttribute2jCAttribute_Rule;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public uInterface2jInterface_Rule createuInterface2jInterface_Rule() {
+		uInterface2jInterface_RuleImpl uInterface2jInterface_Rule = new uInterface2jInterface_RuleImpl();
+		return uInterface2jInterface_Rule;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public uClass2jClass_Rule createuClass2jClass_Rule() {
+		uClass2jClass_RuleImpl uClass2jClass_Rule = new uClass2jClass_RuleImpl();
+		return uClass2jClass_Rule;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public uCOperation2jCMethod_Rule createuCOperation2jCMethod_Rule() {
+		uCOperation2jCMethod_RuleImpl uCOperation2jCMethod_Rule = new uCOperation2jCMethod_RuleImpl();
+		return uCOperation2jCMethod_Rule;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public uml2javaAxiom_r1 createuml2javaAxiom_r1() {
 		uml2javaAxiom_r1Impl uml2javaAxiom_r1 = new uml2javaAxiom_r1Impl();
 		return uml2javaAxiom_r1;
@@ -119,6 +175,46 @@ public class GeneratedFactoryImpl extends EFactoryImpl implements GeneratedFacto
 	public uPackage2jPackage_Rule_r2 createuPackage2jPackage_Rule_r2() {
 		uPackage2jPackage_Rule_r2Impl uPackage2jPackage_Rule_r2 = new uPackage2jPackage_Rule_r2Impl();
 		return uPackage2jPackage_Rule_r2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public uCOperation2jCMethod_Rule_r5 createuCOperation2jCMethod_Rule_r5() {
+		uCOperation2jCMethod_Rule_r5Impl uCOperation2jCMethod_Rule_r5 = new uCOperation2jCMethod_Rule_r5Impl();
+		return uCOperation2jCMethod_Rule_r5;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public uInterface2jInterface_Rule_r6 createuInterface2jInterface_Rule_r6() {
+		uInterface2jInterface_Rule_r6Impl uInterface2jInterface_Rule_r6 = new uInterface2jInterface_Rule_r6Impl();
+		return uInterface2jInterface_Rule_r6;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public uClass2jClass_Rule_r3 createuClass2jClass_Rule_r3() {
+		uClass2jClass_Rule_r3Impl uClass2jClass_Rule_r3 = new uClass2jClass_Rule_r3Impl();
+		return uClass2jClass_Rule_r3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public uCAttribute2jCAttribute_Rule_r4 createuCAttribute2jCAttribute_Rule_r4() {
+		uCAttribute2jCAttribute_Rule_r4Impl uCAttribute2jCAttribute_Rule_r4 = new uCAttribute2jCAttribute_Rule_r4Impl();
+		return uCAttribute2jCAttribute_Rule_r4;
 	}
 
 	/**

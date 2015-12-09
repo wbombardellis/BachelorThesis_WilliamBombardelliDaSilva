@@ -5,10 +5,12 @@ package de.silvawb.java.impl;
 import de.silvawb.java.Argument;
 import de.silvawb.java.Contained;
 import de.silvawb.java.Field;
+import de.silvawb.java.Interface;
 import de.silvawb.java.JavaFactory;
 import de.silvawb.java.JavaPackage;
 
 import de.silvawb.java.Method;
+import de.silvawb.java.TemplateBinding;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
@@ -68,6 +70,9 @@ public class JavaFactoryImpl extends EFactoryImpl implements JavaFactory {
 			case JavaPackage.CONTAINED: return createContained();
 			case JavaPackage.METHOD: return createMethod();
 			case JavaPackage.ARGUMENT: return createArgument();
+			case JavaPackage.CONTAINER: return createContainer();
+			case JavaPackage.INTERFACE: return createInterface();
+			case JavaPackage.TEMPLATE_BINDING: return createTemplateBinding();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -141,6 +146,36 @@ public class JavaFactoryImpl extends EFactoryImpl implements JavaFactory {
 	public Argument createArgument() {
 		ArgumentImpl argument = new ArgumentImpl();
 		return argument;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public de.silvawb.java.Container createContainer() {
+		ContainerImpl container = new ContainerImpl();
+		return container;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Interface createInterface() {
+		InterfaceImpl interface_ = new InterfaceImpl();
+		return interface_;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TemplateBinding createTemplateBinding() {
+		TemplateBindingImpl templateBinding = new TemplateBindingImpl();
+		return templateBinding;
 	}
 
 	/**

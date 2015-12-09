@@ -3,6 +3,7 @@
 package de.silvawb.java.provider;
 
 
+import de.silvawb.java.JavaFactory;
 import de.silvawb.java.JavaPackage;
 
 import java.util.Collection;
@@ -10,7 +11,7 @@ import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
+import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
@@ -45,6 +46,14 @@ public class ClassItemProvider extends ClassifierItemProvider {
 			super.getPropertyDescriptors(object);
 
 			addVisibilityPropertyDescriptor(object);
+			addImportingClassesPropertyDescriptor(object);
+			addImplementedInterfacesPropertyDescriptor(object);
+			addExtendedClassPropertyDescriptor(object);
+			addExtendingClassesPropertyDescriptor(object);
+			addIsAbstractPropertyDescriptor(object);
+			addIsFinalPropertyDescriptor(object);
+			addIsStaticPropertyDescriptor(object);
+			addImportsPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -69,6 +78,212 @@ public class ClassItemProvider extends ClassifierItemProvider {
 				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
 				 null,
 				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Importing Classes feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addImportingClassesPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Contained_importingClasses_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Contained_importingClasses_feature", "_UI_Contained_type"),
+				 JavaPackage.Literals.CONTAINED__IMPORTING_CLASSES,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Implemented Interfaces feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addImplementedInterfacesPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Class_implementedInterfaces_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Class_implementedInterfaces_feature", "_UI_Class_type"),
+				 JavaPackage.Literals.CLASS__IMPLEMENTED_INTERFACES,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Extended Class feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addExtendedClassPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Class_extendedClass_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Class_extendedClass_feature", "_UI_Class_type"),
+				 JavaPackage.Literals.CLASS__EXTENDED_CLASS,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Extending Classes feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addExtendingClassesPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Class_extendingClasses_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Class_extendingClasses_feature", "_UI_Class_type"),
+				 JavaPackage.Literals.CLASS__EXTENDING_CLASSES,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Is Abstract feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addIsAbstractPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Class_isAbstract_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Class_isAbstract_feature", "_UI_Class_type"),
+				 JavaPackage.Literals.CLASS__IS_ABSTRACT,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Is Final feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addIsFinalPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Class_isFinal_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Class_isFinal_feature", "_UI_Class_type"),
+				 JavaPackage.Literals.CLASS__IS_FINAL,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Is Static feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addIsStaticPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Class_isStatic_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Class_isStatic_feature", "_UI_Class_type"),
+				 JavaPackage.Literals.CLASS__IS_STATIC,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Imports feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addImportsPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Class_imports_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Class_imports_feature", "_UI_Class_type"),
+				 JavaPackage.Literals.CLASS__IMPORTS,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
+	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
+	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+		if (childrenFeatures == null) {
+			super.getChildrenFeatures(object);
+			childrenFeatures.add(JavaPackage.Literals.CONTAINER__CONTAINED_ELEMENTS);
+		}
+		return childrenFeatures;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EStructuralFeature getChildFeature(Object object, Object child) {
+		// Check the type of the specified child object and return the proper feature to use for
+		// adding (see {@link AddCommand}) it as a child.
+
+		return super.getChildFeature(object, child);
 	}
 
 	/**
@@ -110,7 +325,13 @@ public class ClassItemProvider extends ClassifierItemProvider {
 
 		switch (notification.getFeatureID(de.silvawb.java.Class.class)) {
 			case JavaPackage.CLASS__VISIBILITY:
+			case JavaPackage.CLASS__IS_ABSTRACT:
+			case JavaPackage.CLASS__IS_FINAL:
+			case JavaPackage.CLASS__IS_STATIC:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+				return;
+			case JavaPackage.CLASS__CONTAINED_ELEMENTS:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
 		super.notifyChanged(notification);
@@ -126,6 +347,55 @@ public class ClassItemProvider extends ClassifierItemProvider {
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+
+		newChildDescriptors.add
+			(createChildParameter
+				(JavaPackage.Literals.CONTAINER__CONTAINED_ELEMENTS,
+				 JavaFactory.eINSTANCE.createClass()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(JavaPackage.Literals.CONTAINER__CONTAINED_ELEMENTS,
+				 JavaFactory.eINSTANCE.createContained()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(JavaPackage.Literals.CONTAINER__CONTAINED_ELEMENTS,
+				 JavaFactory.eINSTANCE.createField()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(JavaPackage.Literals.CONTAINER__CONTAINED_ELEMENTS,
+				 JavaFactory.eINSTANCE.createMethod()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(JavaPackage.Literals.CONTAINER__CONTAINED_ELEMENTS,
+				 JavaFactory.eINSTANCE.createInterface()));
+	}
+
+	/**
+	 * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getCreateChildText(Object owner, Object feature, Object child, Collection<?> selection) {
+		Object childFeature = feature;
+		Object childObject = child;
+
+		boolean qualify =
+			childFeature == JavaPackage.Literals.CLASSIFIER__FIELDS ||
+			childFeature == JavaPackage.Literals.CONTAINER__CONTAINED_ELEMENTS ||
+			childFeature == JavaPackage.Literals.CLASSIFIER__METHODS;
+
+		if (qualify) {
+			return getString
+				("_UI_CreateChild_text2",
+				 new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
+		}
+		return super.getCreateChildText(owner, feature, child, selection);
 	}
 
 }

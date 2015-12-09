@@ -49,6 +49,42 @@ public interface GeneratedFactory extends EFactory {
 	uPackage2jPackage_Rule createuPackage2jPackage_Rule();
 
 	/**
+	 * Returns a new object of class '<em>uC Attribute2j CAttribute Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>uC Attribute2j CAttribute Rule</em>'.
+	 * @generated
+	 */
+	uCAttribute2jCAttribute_Rule createuCAttribute2jCAttribute_Rule();
+
+	/**
+	 * Returns a new object of class '<em>uInterface2j Interface Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>uInterface2j Interface Rule</em>'.
+	 * @generated
+	 */
+	uInterface2jInterface_Rule createuInterface2jInterface_Rule();
+
+	/**
+	 * Returns a new object of class '<em>uClass2j Class Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>uClass2j Class Rule</em>'.
+	 * @generated
+	 */
+	uClass2jClass_Rule createuClass2jClass_Rule();
+
+	/**
+	 * Returns a new object of class '<em>uC Operation2j CMethod Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>uC Operation2j CMethod Rule</em>'.
+	 * @generated
+	 */
+	uCOperation2jCMethod_Rule createuCOperation2jCMethod_Rule();
+
+	/**
 	 * Returns a new object of class '<em>uml2java Axiom r1</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -65,6 +101,42 @@ public interface GeneratedFactory extends EFactory {
 	 * @generated
 	 */
 	uPackage2jPackage_Rule_r2 createuPackage2jPackage_Rule_r2();
+
+	/**
+	 * Returns a new object of class '<em>uC Operation2j CMethod Rule r5</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>uC Operation2j CMethod Rule r5</em>'.
+	 * @generated
+	 */
+	uCOperation2jCMethod_Rule_r5 createuCOperation2jCMethod_Rule_r5();
+
+	/**
+	 * Returns a new object of class '<em>uInterface2j Interface Rule r6</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>uInterface2j Interface Rule r6</em>'.
+	 * @generated
+	 */
+	uInterface2jInterface_Rule_r6 createuInterface2jInterface_Rule_r6();
+
+	/**
+	 * Returns a new object of class '<em>uClass2j Class Rule r3</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>uClass2j Class Rule r3</em>'.
+	 * @generated
+	 */
+	uClass2jClass_Rule_r3 createuClass2jClass_Rule_r3();
+
+	/**
+	 * Returns a new object of class '<em>uC Attribute2j CAttribute Rule r4</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>uC Attribute2j CAttribute Rule r4</em>'.
+	 * @generated
+	 */
+	uCAttribute2jCAttribute_Rule_r4 createuCAttribute2jCAttribute_Rule_r4();
 
 	/**
 	 * Returns the package supported by this factory.
