@@ -200,7 +200,7 @@ public class uCOperation2jCMethod_Rule_r5Impl extends OperationalRuleImpl implem
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return GeneratedPackage.Literals.UC_OPERATION2J_CMETHOD_RULE_R5;
+		return GeneratedPackage.eINSTANCE.getuCOperation2jCMethod_Rule_r5();
 	}
 
 	/**

@@ -33,7 +33,7 @@ public class uPackage2jPackage_RuleImpl extends OperationalRuleGroupImpl impleme
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return GeneratedPackage.Literals.UPACKAGE2J_PACKAGE_RULE;
+		return GeneratedPackage.eINSTANCE.getuPackage2jPackage_Rule();
 	}
 
 } //uPackage2jPackage_RuleImpl

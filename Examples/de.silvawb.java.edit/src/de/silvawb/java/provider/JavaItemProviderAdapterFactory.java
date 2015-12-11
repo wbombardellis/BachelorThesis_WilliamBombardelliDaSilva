@@ -141,6 +141,29 @@ public class JavaItemProviderAdapterFactory extends JavaAdapterFactory implement
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link de.silvawb.java.InterfaceImplementation} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected InterfaceImplementationItemProvider interfaceImplementationItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link de.silvawb.java.InterfaceImplementation}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createInterfaceImplementationAdapter() {
+		if (interfaceImplementationItemProvider == null) {
+			interfaceImplementationItemProvider = new InterfaceImplementationItemProvider(this);
+		}
+
+		return interfaceImplementationItemProvider;
+	}
+
+	/**
 	 * This keeps track of the one adapter used for all {@link de.silvawb.java.Field} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -403,6 +426,7 @@ public class JavaItemProviderAdapterFactory extends JavaAdapterFactory implement
 		if (systemItemProvider != null) systemItemProvider.dispose();
 		if (packageItemProvider != null) packageItemProvider.dispose();
 		if (classItemProvider != null) classItemProvider.dispose();
+		if (interfaceImplementationItemProvider != null) interfaceImplementationItemProvider.dispose();
 		if (fieldItemProvider != null) fieldItemProvider.dispose();
 		if (containedItemProvider != null) containedItemProvider.dispose();
 		if (methodItemProvider != null) methodItemProvider.dispose();

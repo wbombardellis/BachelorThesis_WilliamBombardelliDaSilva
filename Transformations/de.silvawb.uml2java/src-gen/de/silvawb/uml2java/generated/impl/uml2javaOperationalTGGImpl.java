@@ -33,7 +33,7 @@ public class uml2javaOperationalTGGImpl extends SdmOperationalTGGImpl implements
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return GeneratedPackage.Literals.UML2JAVA_OPERATIONAL_TGG;
+		return GeneratedPackage.eINSTANCE.getuml2javaOperationalTGG();
 	}
 
 } //uml2javaOperationalTGGImpl

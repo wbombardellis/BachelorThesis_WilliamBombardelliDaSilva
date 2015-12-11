@@ -3,7 +3,6 @@
 package de.silvawb.java;
 
 import org.eclipse.emf.common.util.EList;
-import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -22,13 +21,14 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link de.silvawb.java.Classifier#getTypingMethods <em>Typing Methods</em>}</li>
  *   <li>{@link de.silvawb.java.Classifier#getMethods <em>Methods</em>}</li>
  *   <li>{@link de.silvawb.java.Classifier#getTypingArguments <em>Typing Arguments</em>}</li>
+ *   <li>{@link de.silvawb.java.Classifier#getInterfaceImplementations <em>Interface Implementations</em>}</li>
  * </ul>
  *
  * @see de.silvawb.java.JavaPackage#getClassifier()
  * @model abstract="true"
  * @generated
  */
-public interface Classifier extends EObject {
+public interface Classifier extends Contained, Container {
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -178,5 +178,23 @@ public interface Classifier extends EObject {
 	 * @generated
 	 */
 	EList<Argument> getTypingArguments();
+
+	/**
+	 * Returns the value of the '<em><b>Interface Implementations</b></em>' containment reference list.
+	 * The list contents are of type {@link de.silvawb.java.InterfaceImplementation}.
+	 * It is bidirectional and its opposite is '{@link de.silvawb.java.InterfaceImplementation#getImplementer <em>Implementer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Interface Implementations</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Interface Implementations</em>' containment reference list.
+	 * @see de.silvawb.java.JavaPackage#getClassifier_InterfaceImplementations()
+	 * @see de.silvawb.java.InterfaceImplementation#getImplementer
+	 * @model opposite="implementer" containment="true" ordered="false"
+	 * @generated
+	 */
+	EList<InterfaceImplementation> getInterfaceImplementations();
 
 } // Classifier

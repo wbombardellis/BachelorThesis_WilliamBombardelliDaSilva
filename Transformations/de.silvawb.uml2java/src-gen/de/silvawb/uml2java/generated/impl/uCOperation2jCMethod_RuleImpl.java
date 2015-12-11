@@ -33,7 +33,7 @@ public class uCOperation2jCMethod_RuleImpl extends OperationalRuleGroupImpl impl
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return GeneratedPackage.Literals.UC_OPERATION2J_CMETHOD_RULE;
+		return GeneratedPackage.eINSTANCE.getuCOperation2jCMethod_Rule();
 	}
 
 } //uCOperation2jCMethod_RuleImpl

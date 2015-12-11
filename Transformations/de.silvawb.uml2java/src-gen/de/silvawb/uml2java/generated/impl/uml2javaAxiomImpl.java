@@ -33,7 +33,7 @@ public class uml2javaAxiomImpl extends OperationalAxiomGroupImpl implements uml2
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return GeneratedPackage.Literals.UML2JAVA_AXIOM;
+		return GeneratedPackage.eINSTANCE.getuml2javaAxiom();
 	}
 
 } //uml2javaAxiomImpl

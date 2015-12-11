@@ -110,6 +110,10 @@
             <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_19UvQZxpEeWrpIGeHNv6rw" expressionString="classIsFinal" expressionLanguageID="OCL"/>
             <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//RedefinableElement/isLeaf"/>
           </attributeAssignments>
+          <attributeAssignments uuid="_d9nIAp9BEeWvJstqCkjROQ">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_fSQmwZ9BEeWvJstqCkjROQ" expressionString="classVisibility" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/visibility"/>
+          </attributeAssignments>
         </modelObjects>
         <modelLinks uuid="_mQQQIJlNEeW3qcq9byHw8h" incomingCorrespondenceLink="_Ohb08plOEeW3qcq9byHw8h" source="_nL0ycZlLEeW3qcq9byHw8h" target="_AnRSEJlMEeW3qcq9byHw8h">
           <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package/packagedElement"/>
@@ -139,6 +143,10 @@
             <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_579IAZxpEeWrpIGeHNv6rw" expressionString="classIsFinal" expressionLanguageID="OCL"/>
             <feature xsi:type="ecore:EAttribute" href="http://tu-berlin.de/silvawb/java#//Class/isFinal"/>
           </attributeAssignments>
+          <attributeAssignments uuid="_jX5mcp9BEeWvJstqCkjROQ">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_kt8zYZ9BEeWvJstqCkjROQ" expressionString="classVisibilityStr" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://tu-berlin.de/silvawb/java#//Contained/visibility"/>
+          </attributeAssignments>
         </modelObjects>
         <modelLinks uuid="_rIgYgJlNEeW3qcq9byHw8h" incomingCorrespondenceLink="_S6L94plOEeW3qcq9byHw8h" source="_qLg2sZlLEeW3qcq9byHw8h" target="_WJIRAJlMEeW3qcq9byHw8h">
           <feature xsi:type="ecore:EReference" href="http://tu-berlin.de/silvawb/java#//System/packages"/>
@@ -155,7 +163,7 @@
           <type xsi:type="ecore:EClass" href="uml2java.ecore#//CorrRule"/>
         </correspondenceNodes>
         <correspondenceNodes uuid="_1AVOQJw3EeWL3duOMpjodw" modifier="CREATE" name="uC2jC" outgoingLinks="_4oqm4Jw3EeWL3duOMpjodw _SKXDAJw5EeWL3duOMpjodw _qDe0QJw5EeWL3duOMpjodw __v8ZU5w8EeW9qscDUPnhHg">
-          <type xsi:type="ecore:EClass" href="uml2java.ecore#//CorrAxiom"/>
+          <type xsi:type="ecore:EClass" href="uml2java.ecore#//CorrRule"/>
         </correspondenceNodes>
         <correspondenceLinks uuid="__v8ZU5w8EeW9qscDUPnhHg" source="_1AVOQJw3EeWL3duOMpjodw" target="_rmiicJw5EeWL3duOMpjodw"/>
         <correspondenceLinks uuid="__jAYsJlLEeW3qcq9byHw8h" source="_53V2YJlLEeW3qcq9byHw8h" target="_qLg2sZlLEeW3qcq9byHw8h"/>
@@ -182,6 +190,16 @@
         <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
         <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_d2e1oZxqEeWrpIGeHNv6rw" expressionString="uClass.isLeaf" expressionLanguageID="OCL"/>
         <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_oiOmopxqEeWrpIGeHNv6rw" expressionString="jClass.isFinal" expressionLanguageID="OCL"/>
+      </ruleParameters>
+      <ruleParameters uuid="_oVW--p9BEeWvJstqCkjROQ" name="classVisibility">
+        <type xsi:type="ecore:EEnum" href="http://www.eclipse.org/uml2/5.0.0/UML#//VisibilityKind"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_ugJtQZ9BEeWvJstqCkjROQ" expressionString="uClass.visibility" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_xVbRQp9BEeWvJstqCkjROQ" expressionString="if jClass.visibility = 'private' then uml::VisibilityKind::private&#xA;else if  jClass.visibility = 'public' then uml::VisibilityKind::public&#xA;&#x9;else if jClass.visibility = 'protected' then uml::VisibilityKind::protected&#xA;&#x9;&#x9;else  uml::VisibilityKind::protected&#xA;&#x9;&#x9;endif&#xA;&#x9;endif&#xA;endif" expressionLanguageID="OCL"/>
+      </ruleParameters>
+      <ruleParameters uuid="_o1bmKp9BEeWvJstqCkjROQ" name="classVisibilityStr">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_9v1jgZ9BEeWvJstqCkjROQ" expressionString="if uClass.visibility = uml::VisibilityKind::private then 'private' &#xA;else if  uClass.visibility = uml::VisibilityKind::public then 'public'&#xA;&#x9;else if uClass.visibility = uml::VisibilityKind::protected then 'protected'&#xA;&#x9;&#x9;else 'package'&#xA;&#x9;&#x9;endif&#xA;&#x9;endif&#xA;endif" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_51U1wp9BEeWvJstqCkjROQ" expressionString="jClass.visibility" expressionLanguageID="OCL"/>
       </ruleParameters>
     </rules>
   </ruleGroups>
@@ -238,7 +256,7 @@
           <type xsi:type="ecore:EClass" href="http://tu-berlin.de/silvawb/java#//Package"/>
         </modelObjects>
         <modelObjects uuid="_mHkYUJw5EeWL3duOMpjody" incomingCorrespondenceLink="_qDe0QJw5EeWL3duOMpjody" name="jClass" outgoingLinks="_5Ubw0JxwEeWrpIGeHNv6rw" incomingLinks="_rmiicJw5EeWL3duOMpjodz">
-          <type xsi:type="ecore:EClass" href="http://tu-berlin.de/silvawb/java#//Class"/>
+          <type xsi:type="ecore:EClass" href="http://tu-berlin.de/silvawb/java#//Classifier"/>
         </modelObjects>
         <modelObjects uuid="_zAREEJxwEeWrpIGeHNv6rw" modifier="CREATE" incomingCorrespondenceLink="_3mclAJxwEeWrpIGeHNv6rw" name="jAttribute" incomingLinks="_5Ubw0JxwEeWrpIGeHNv6rw">
           <type xsi:type="ecore:EClass" href="http://tu-berlin.de/silvawb/java#//Field"/>
@@ -467,7 +485,7 @@
       <ruleParameters uuid="_O3H2pZ5oEeWRmI_Jt5gFeA" name="methodVisibilityStr">
         <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
         <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_aV4uEZ5qEeWRmI_Jt5gFeA" expressionString="if uOperation.visibility = uml::VisibilityKind::private then 'private' &#xA;else if  uOperation.visibility = uml::VisibilityKind::public then 'public'&#xA;&#x9;else if uOperation.visibility = uml::VisibilityKind::protected then 'protected'&#xA;&#x9;&#x9;else 'package'&#xA;&#x9;&#x9;endif&#xA;&#x9;endif&#xA;endif" expressionLanguageID="OCL"/>
-        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_bUkj4p5qEeWRmI_Jt5gFeA" expressionString="JMethod.visibility" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_bUkj4p5qEeWRmI_Jt5gFeA" expressionString="jMethod.visibility" expressionLanguageID="OCL"/>
       </ruleParameters>
       <ruleParameters uuid="_M1AN5Z5oEeWRmI_Jt5gFeA" name="operationVisibility">
         <type xsi:type="ecore:EEnum" href="http://www.eclipse.org/uml2/5.0.0/UML#//VisibilityKind"/>
@@ -501,12 +519,16 @@
             <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_oghfcZ54EeWRmI_Jt5gFeA" expressionString="interfaceName" expressionLanguageID="OCL"/>
             <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
           </attributeAssignments>
+          <attributeAssignments uuid="_mxLr4p9AEeWvJstqCkjROQ">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_oV7cIZ9AEeWvJstqCkjROQ" expressionString="interfaceVisibility" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/visibility"/>
+          </attributeAssignments>
         </modelObjects>
         <modelLinks uuid="_mQQQIJlNEeW3qcq9byHw8k" incomingCorrespondenceLink="_Ohb08plOEeW3qcq9byHw8k" source="_nL0ycZlLEeW3qcq9byHw8k" target="_AnRSEJlMEeW3qcq9byHw8k">
           <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package/packagedElement"/>
         </modelLinks>
         <modelLinks uuid="_TlapYJ52EeWRmI_Jt5gFeA" modifier="CREATE" incomingCorrespondenceLink="_uNsIg552EeWRmI_Jt5gFeA" source="_AnRSEJlMEeW3qcq9byHw8k" target="_LdI6sJ52EeWRmI_Jt5gFeA">
-          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package/packagedElement"/>
         </modelLinks>
       </leftModelDomain>
       <rightModelDomain uuid="_mG7m8plLEeW3qcq9byHw8k">
@@ -521,6 +543,10 @@
           <attributeAssignments uuid="_srMJEp54EeWRmI_Jt5gFeA">
             <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_uE5G8Z54EeWRmI_Jt5gFeA" expressionString="interfaceName" expressionLanguageID="OCL"/>
             <feature xsi:type="ecore:EAttribute" href="http://tu-berlin.de/silvawb/java#//Classifier/name"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_r5aJ8p9AEeWvJstqCkjROQ">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_uA9sUZ9AEeWvJstqCkjROQ" expressionString="interfaceVisibilityStr" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://tu-berlin.de/silvawb/java#//Contained/visibility"/>
           </attributeAssignments>
         </modelObjects>
         <modelLinks uuid="_rIgYgJlNEeW3qcq9byHw8k" incomingCorrespondenceLink="_S6L94plOEeW3qcq9byHw8k" source="_qLg2sZlLEeW3qcq9byHw8k" target="_WJIRAJlMEeW3qcq9byHw8k">
@@ -556,6 +582,414 @@
         <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_PcOa4Z6AEeWRmI_Jt5gFeA" expressionString="uInterface.name" expressionLanguageID="OCL"/>
         <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_UZ6c4p6AEeWRmI_Jt5gFeA" expressionString="jInterface.name" expressionLanguageID="OCL"/>
       </ruleParameters>
+      <ruleParameters uuid="_yiLNup9AEeWvJstqCkjROQ" name="interfaceVisibility">
+        <type xsi:type="ecore:EEnum" href="http://www.eclipse.org/uml2/5.0.0/UML#//VisibilityKind"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_1LQIwZ9AEeWvJstqCkjROQ" expressionString="uInterface.visibility" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_A6mEwp9BEeWvJstqCkjROQ" expressionString="if jInterface.visibility = 'private' then uml::VisibilityKind::private&#xA;else if  jInterface.visibility = 'public' then uml::VisibilityKind::public&#xA;&#x9;else if jInterface.visibility = 'protected' then uml::VisibilityKind::protected&#xA;&#x9;&#x9;else  uml::VisibilityKind::protected&#xA;&#x9;&#x9;endif&#xA;&#x9;endif&#xA;endif" expressionLanguageID="OCL"/>
+      </ruleParameters>
+      <ruleParameters uuid="_4e3Ol59AEeWvJstqCkjROQ" name="interfaceVisibilityStr">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_6zRhMZ9AEeWvJstqCkjROQ" expressionString="if uInterface.visibility = uml::VisibilityKind::private then 'private' &#xA;else if  uInterface.visibility = uml::VisibilityKind::public then 'public'&#xA;&#x9;else if uInterface.visibility = uml::VisibilityKind::protected then 'protected'&#xA;&#x9;&#x9;else 'package'&#xA;&#x9;&#x9;endif&#xA;&#x9;endif&#xA;endif" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_9bTTYp9AEeWvJstqCkjROQ" expressionString="jInterface.visibility" expressionLanguageID="OCL"/>
+      </ruleParameters>
+    </rules>
+  </ruleGroups>
+  <ruleGroups uuid="_OoX3059LEeWvJstqCkjROQ" name="uIAttribute2jIAttribute" ruleGroupID="uIAttribute2jIAttribute">
+    <rules uuid="_cLkXEZ9LEeWvJstqCkjROQ" name="r7" ruleID="r7">
+      <leftModelDomain uuid="_lkyjMZlLEeW3qcq9byHw8l">
+        <modelObjects uuid="_nL0ycZlLEeW3qcq9byHw8l" incomingCorrespondenceLink="__6PM8JlLEeW3qcq9byHw8l" name="uModel" outgoingLinks="_mQQQIJlNEeW3qcq9byHw8l">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Model"/>
+        </modelObjects>
+        <modelObjects uuid="_AnRSEJlMEeW3qcq9byHw8l" incomingCorrespondenceLink="_LuooEJlMEeW3qcq9byHw8l" name="uPackage" outgoingLinks="_FCAssJw5EeWL3duOMpjodA" incomingLinks="_mQQQIJlNEeW3qcq9byHw8l">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+        </modelObjects>
+        <modelObjects uuid="_nc6FgJw3EeWL3duOMpjodA" incomingCorrespondenceLink="_4oqm4Jw3EeWL3duOMpjodA" name="uInterface" outgoingLinks="_hSYGAJxwEeWrpIGeHNv6ry" incomingLinks="_FCAssJw5EeWL3duOMpjodA">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Interface"/>
+        </modelObjects>
+        <modelObjects uuid="_6IhVoJxvEeWrpIGeHNv6ry" modifier="CREATE" incomingCorrespondenceLink="_wLDxgJxwEeWrpIGeHNv6ry" name="uAttribute" incomingLinks="_hSYGAJxwEeWrpIGeHNv6ry">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+          <attributeAssignments uuid="_lX-6Ypx5EeWeVMQ_Tv5Eey">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_oqjeYZx5EeWeVMQ_Tv5Eey" expressionString="attributeName" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_mXt5Epx5EeWeVMQ_Tv5Eey">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_vqWiEZx5EeWeVMQ_Tv5Eey" expressionString="attributeDefault" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property/default"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_3UoGIpx5EeWeVMQ_Tv5Eey">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_5tCvAZx5EeWeVMQ_Tv5Eey" expressionString="attributeIsStatic" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//Feature/isStatic"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_4LbLQpx5EeWeVMQ_Tv5Eey">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_8EvmMZx5EeWeVMQ_Tv5Eey" expressionString="attributeIsFinal" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//RedefinableElement/isLeaf"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_ciKswp3YEeWQu7MY-P2VFy">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_eqrRYZ3YEeWQu7MY-P2VFB" expressionString="attributeVisibility" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/visibility"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelLinks uuid="_mQQQIJlNEeW3qcq9byHw8l" incomingCorrespondenceLink="_Ohb08plOEeW3qcq9byHw8l" source="_nL0ycZlLEeW3qcq9byHw8l" target="_AnRSEJlMEeW3qcq9byHw8l">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package/packagedElement"/>
+        </modelLinks>
+        <modelLinks uuid="_FCAssJw5EeWL3duOMpjodA" incomingCorrespondenceLink="_SKXDAJw5EeWL3duOMpjodA" source="_AnRSEJlMEeW3qcq9byHw8l" target="_nc6FgJw3EeWL3duOMpjodA">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package/packagedElement"/>
+        </modelLinks>
+        <modelLinks uuid="_hSYGAJxwEeWrpIGeHNv6ry" modifier="CREATE" incomingCorrespondenceLink="_B-IKgpxxEeWrpIGeHNv6ry" source="_nc6FgJw3EeWL3duOMpjodA" target="_6IhVoJxvEeWrpIGeHNv6ry">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Interface/ownedAttribute"/>
+        </modelLinks>
+      </leftModelDomain>
+      <rightModelDomain uuid="_mG7m8plLEeW3qcq9byHw8l">
+        <modelObjects uuid="_qLg2sZlLEeW3qcq9byHw8l" incomingCorrespondenceLink="__jAYsJlLEeW3qcq9byHw8l" name="jSystem" outgoingLinks="_rIgYgJlNEeW3qcq9byHw8l">
+          <type xsi:type="ecore:EClass" href="http://tu-berlin.de/silvawb/java#//System"/>
+        </modelObjects>
+        <modelObjects uuid="_WJIRAJlMEeW3qcq9byHw8l" incomingCorrespondenceLink="_bYKhsJlMEeW3qcq9byHw8l" name="jPackage" outgoingLinks="_rmiicJw5EeWL3duOMpjodA" incomingLinks="_rIgYgJlNEeW3qcq9byHw8l">
+          <type xsi:type="ecore:EClass" href="http://tu-berlin.de/silvawb/java#//Package"/>
+        </modelObjects>
+        <modelObjects uuid="_mHkYUJw5EeWL3duOMpjodl" incomingCorrespondenceLink="_qDe0QJw5EeWL3duOMpjodA" name="jInterface" outgoingLinks="_5Ubw0JxwEeWrpIGeHNv6ry" incomingLinks="_rmiicJw5EeWL3duOMpjodA">
+          <type xsi:type="ecore:EClass" href="http://tu-berlin.de/silvawb/java#//Interface"/>
+        </modelObjects>
+        <modelObjects uuid="_zAREEJxwEeWrpIGeHNv6ry" modifier="CREATE" incomingCorrespondenceLink="_3mclAJxwEeWrpIGeHNv6ry" name="jAttribute" incomingLinks="_5Ubw0JxwEeWrpIGeHNv6ry">
+          <type xsi:type="ecore:EClass" href="http://tu-berlin.de/silvawb/java#//Field"/>
+          <attributeAssignments uuid="__QZNYpx6EeWeVMQ_Tv5Eey">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_Cm0WoZx7EeWeVMQ_Tv5Eey" expressionString="attributeVisibilityStr" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://tu-berlin.de/silvawb/java#//Contained/visibility"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_VszJApx7EeWeVMQ_Tv5Eey">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_ToQo8Zx8EeWeVMQ_Tv5Eey" expressionString="attributeName" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://tu-berlin.de/silvawb/java#//Field/name"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_WK6BUpx7EeWeVMQ_Tv5Eey">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_HTC_wZx8EeWeVMQ_Tv5Eey" expressionString="attributeDefault" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://tu-berlin.de/silvawb/java#//Field/default"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_Wq8MQpx7EeWeVMQ_Tv5Eey">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_KlscQZx8EeWeVMQ_Tv5Eey" expressionString="attributeIsFinal" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://tu-berlin.de/silvawb/java#//Field/isFinal"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_XOFVkpx7EeWeVMQ_Tv5Eey">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_QKVJgZx8EeWeVMQ_Tv5Eey" expressionString="attributeIsStatic" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://tu-berlin.de/silvawb/java#//Field/isStatic"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelLinks uuid="_rIgYgJlNEeW3qcq9byHw8l" incomingCorrespondenceLink="_S6L94plOEeW3qcq9byHw8l" source="_qLg2sZlLEeW3qcq9byHw8l" target="_WJIRAJlMEeW3qcq9byHw8l">
+          <feature xsi:type="ecore:EReference" href="http://tu-berlin.de/silvawb/java#//System/packages"/>
+        </modelLinks>
+        <modelLinks uuid="_rmiicJw5EeWL3duOMpjodA" incomingCorrespondenceLink="__v8ZU5w8EeW9qscDUPnhHl" source="_WJIRAJlMEeW3qcq9byHw8l" target="_mHkYUJw5EeWL3duOMpjodl">
+          <feature xsi:type="ecore:EReference" href="http://tu-berlin.de/silvawb/java#//Container/containedElements"/>
+        </modelLinks>
+        <modelLinks uuid="_5Ubw0JxwEeWrpIGeHNv6ry" modifier="CREATE" incomingCorrespondenceLink="_Fuzm0pxxEeWrpIGeHNv6ry" source="_mHkYUJw5EeWL3duOMpjodl" target="_zAREEJxwEeWrpIGeHNv6ry">
+          <feature xsi:type="ecore:EReference" href="http://tu-berlin.de/silvawb/java#//Classifier/fields"/>
+        </modelLinks>
+      </rightModelDomain>
+      <correspondenceDomain uuid="_mjUoA5lLEeW3qcq9byHw8l">
+        <correspondenceNodes uuid="_53V2YJlLEeW3qcq9byHw8l" name="corrAxiom" outgoingLinks="__jAYsJlLEeW3qcq9byHw8l __6PM8JlLEeW3qcq9byHw8l">
+          <type xsi:type="ecore:EClass" href="uml2java.ecore#//CorrAxiom"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_GXN3cJlMEeW3qcq9byHw8l" name="uP2jP" outgoingLinks="_LuooEJlMEeW3qcq9byHw8l _bYKhsJlMEeW3qcq9byHw8l _Ohb08plOEeW3qcq9byHw8l _S6L94plOEeW3qcq9byHw8l">
+          <type xsi:type="ecore:EClass" href="uml2java.ecore#//CorrRule"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_1AVOQJw3EeWL3duOMpjodl" name="uI2jI" outgoingLinks="_4oqm4Jw3EeWL3duOMpjodA _SKXDAJw5EeWL3duOMpjodA _qDe0QJw5EeWL3duOMpjodA __v8ZU5w8EeW9qscDUPnhHl">
+          <type xsi:type="ecore:EClass" href="uml2java.ecore#//CorrRule"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_sMPLgJxwEeWrpIGeHNv6ry" modifier="CREATE" name="uIA2jIA" outgoingLinks="_wLDxgJxwEeWrpIGeHNv6ry _3mclAJxwEeWrpIGeHNv6ry _B-IKgpxxEeWrpIGeHNv6ry _Fuzm0pxxEeWrpIGeHNv6ry">
+          <type xsi:type="ecore:EClass" href="uml2java.ecore#//CorrRule"/>
+        </correspondenceNodes>
+        <correspondenceLinks uuid="__v8ZU5w8EeW9qscDUPnhHl" source="_1AVOQJw3EeWL3duOMpjodl" target="_rmiicJw5EeWL3duOMpjodA"/>
+        <correspondenceLinks uuid="__jAYsJlLEeW3qcq9byHw8l" source="_53V2YJlLEeW3qcq9byHw8l" target="_qLg2sZlLEeW3qcq9byHw8l"/>
+        <correspondenceLinks uuid="__6PM8JlLEeW3qcq9byHw8l" source="_53V2YJlLEeW3qcq9byHw8l" target="_nL0ycZlLEeW3qcq9byHw8l"/>
+        <correspondenceLinks uuid="_LuooEJlMEeW3qcq9byHw8l" source="_GXN3cJlMEeW3qcq9byHw8l" target="_AnRSEJlMEeW3qcq9byHw8l"/>
+        <correspondenceLinks uuid="_bYKhsJlMEeW3qcq9byHw8l" source="_GXN3cJlMEeW3qcq9byHw8l" target="_WJIRAJlMEeW3qcq9byHw8l"/>
+        <correspondenceLinks uuid="_Ohb08plOEeW3qcq9byHw8l" source="_GXN3cJlMEeW3qcq9byHw8l" target="_mQQQIJlNEeW3qcq9byHw8l"/>
+        <correspondenceLinks uuid="_S6L94plOEeW3qcq9byHw8l" source="_GXN3cJlMEeW3qcq9byHw8l" target="_rIgYgJlNEeW3qcq9byHw8l"/>
+        <correspondenceLinks uuid="_4oqm4Jw3EeWL3duOMpjodA" source="_1AVOQJw3EeWL3duOMpjodl" target="_nc6FgJw3EeWL3duOMpjodA"/>
+        <correspondenceLinks uuid="_SKXDAJw5EeWL3duOMpjodA" source="_1AVOQJw3EeWL3duOMpjodl" target="_FCAssJw5EeWL3duOMpjodA"/>
+        <correspondenceLinks uuid="_qDe0QJw5EeWL3duOMpjodA" source="_1AVOQJw3EeWL3duOMpjodl" target="_mHkYUJw5EeWL3duOMpjodl"/>
+        <correspondenceLinks uuid="_wLDxgJxwEeWrpIGeHNv6ry" modifier="CREATE" source="_sMPLgJxwEeWrpIGeHNv6ry" target="_6IhVoJxvEeWrpIGeHNv6ry"/>
+        <correspondenceLinks uuid="_3mclAJxwEeWrpIGeHNv6ry" modifier="CREATE" source="_sMPLgJxwEeWrpIGeHNv6ry" target="_zAREEJxwEeWrpIGeHNv6ry"/>
+        <correspondenceLinks uuid="_B-IKgpxxEeWrpIGeHNv6ry" modifier="CREATE" source="_sMPLgJxwEeWrpIGeHNv6ry" target="_hSYGAJxwEeWrpIGeHNv6ry"/>
+        <correspondenceLinks uuid="_Fuzm0pxxEeWrpIGeHNv6ry" modifier="CREATE" source="_sMPLgJxwEeWrpIGeHNv6ry" target="_5Ubw0JxwEeWrpIGeHNv6ry"/>
+      </correspondenceDomain>
+      <ruleParameters uuid="_v3VYtZx6EeWeVMQ_Tv5Eey" name="attributeVisibilityStr">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_0ukNYZx6EeWeVMQ_Tv5Eey" expressionString="if uAttribute.visibility = uml::VisibilityKind::private then 'private' &#xA;else if  uAttribute.visibility = uml::VisibilityKind::public then 'public'&#xA;&#x9;else if uAttribute.visibility = uml::VisibilityKind::protected then 'protected'&#xA;&#x9;&#x9;else 'package'&#xA;&#x9;&#x9;endif&#xA;&#x9;endif&#xA;endif" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_bSxsAp3ZEeWQu7MY-P2VFB" expressionString="jAttribute.visibility" expressionLanguageID="OCL"/>
+      </ruleParameters>
+      <ruleParameters uuid="_p-0edZyAEeWjeIusamtcEy" name="attributeName">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_UIyw4ZyBEeWjeIusamtcEy" expressionString="uAttribute.name" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_b-I8gpyBEeWjeIusamtcEy" expressionString="jAttribute.name" expressionLanguageID="OCL"/>
+      </ruleParameters>
+      <ruleParameters uuid="_somkJZyAEeWjeIusamtcEy" name="attributeDefault">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_fP2k4ZyBEeWjeIusamtcEy" expressionString="uAttribute.default" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_jH3YQpyBEeWjeIusamtcEy" expressionString="jAttribute.default" expressionLanguageID="OCL"/>
+      </ruleParameters>
+      <ruleParameters uuid="_tY5_tZyAEeWjeIusamtcEy" name="attributeIsStatic">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_sHHyQZyBEeWjeIusamtcEy" expressionString="uAttribute.isStatic" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_wvN-wpyBEeWjeIusamtcEy" expressionString="jAttribute.isStatic" expressionLanguageID="OCL"/>
+      </ruleParameters>
+      <ruleParameters uuid="_BPo5lZyBEeWjeIusamtcEy" name="attributeIsFinal">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_1izCgZyBEeWjeIusamtcEy" expressionString="uAttribute.isLeaf" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_4cfMcpyBEeWjeIusamtcEy" expressionString="jAttribute.isFinal" expressionLanguageID="OCL"/>
+      </ruleParameters>
+      <ruleParameters uuid="_qw9GtZ3YEeWQu7MY-P2VFB" name="attributeVisibility">
+        <type xsi:type="ecore:EEnum" href="http://www.eclipse.org/uml2/5.0.0/UML#//VisibilityKind"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_h1wQ0Z3ZEeWQu7MY-P2VFB" expressionString="uAttribute.visibility" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_t4Nykp3YEeWQu7MY-P2VFB" expressionString="if jAttribute.visibility = 'private' then uml::VisibilityKind::private&#xA;else if  jAttribute.visibility = 'public' then uml::VisibilityKind::public&#xA;&#x9;else if jAttribute.visibility = 'protected' then uml::VisibilityKind::protected&#xA;&#x9;&#x9;else  uml::VisibilityKind::protected&#xA;&#x9;&#x9;endif&#xA;&#x9;endif&#xA;endif" expressionLanguageID="OCL"/>
+      </ruleParameters>
+    </rules>
+  </ruleGroups>
+  <ruleGroups uuid="_hmyhAZ_4EeWiP7AbsrnH0w" name="uIOperation2jIMethod_Rule" ruleGroupID="uIOperation2jIMethod_Rule">
+    <rules uuid="_mvPokZ_4EeWiP7AbsrnH0w" name="r8" ruleID="r8">
+      <leftModelDomain uuid="_lkyjMZlLEeW3qcq9byHw8m">
+        <modelObjects uuid="_nL0ycZlLEeW3qcq9byHw8m" incomingCorrespondenceLink="__jAYsJlLEeW3qcq9byHw8m" name="uModel" outgoingLinks="_mQQQIJlNEeW3qcq9byHw8m">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Model"/>
+        </modelObjects>
+        <modelObjects uuid="_AnRSEJlMEeW3qcq9byHw8m" incomingCorrespondenceLink="_LuooEJlMEeW3qcq9byHw8m" name="uPackage" outgoingLinks="_FCAssJw5EeWL3duOMpjodB" incomingLinks="_mQQQIJlNEeW3qcq9byHw8m">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+        </modelObjects>
+        <modelObjects uuid="_nc6FgJw3EeWL3duOMpjodB" incomingCorrespondenceLink="_4oqm4Jw3EeWL3duOMpjodB" name="uInterface" outgoingLinks="_G65B8J__EeWiP7AbsrnH0w" incomingLinks="_FCAssJw5EeWL3duOMpjodB">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Interface"/>
+        </modelObjects>
+        <modelObjects uuid="_ccaTgJ5bEeWwIMGHHSapYB" modifier="CREATE" incomingCorrespondenceLink="_QdeygJ__EeWiP7AbsrnH0w" name="uOperation" incomingLinks="_G65B8J__EeWiP7AbsrnH0w">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+          <attributeAssignments uuid="_bzexop5jEeWHVs1omczuSy">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_eMkv8Z5jEeWHVs1omczuSy" expressionString="methodName" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_YGlIcp5rEeWRmI_Jt5gFeB">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_d4k8QZ5rEeWRmI_Jt5gFeB" expressionString="methodIsStatic" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//Feature/isStatic"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_Yn2pgp5rEeWRmI_Jt5gFeB">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_hMcgwZ5rEeWRmI_Jt5gFeB" expressionString="methodIsFinal" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//RedefinableElement/isLeaf"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_ZHw4op5rEeWRmI_Jt5gFeB">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_m03h0Z5rEeWRmI_Jt5gFeB" expressionString="operationVisibility" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/visibility"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_ZoiDYp5rEeWRmI_Jt5gFeB">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_p87e8Z5rEeWRmI_Jt5gFeB" expressionString="operationConcurrency" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//BehavioralFeature/concurrency"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelLinks uuid="_mQQQIJlNEeW3qcq9byHw8m" incomingCorrespondenceLink="_Ohb08plOEeW3qcq9byHw8m" source="_nL0ycZlLEeW3qcq9byHw8m" target="_AnRSEJlMEeW3qcq9byHw8m">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package/packagedElement"/>
+        </modelLinks>
+        <modelLinks uuid="_FCAssJw5EeWL3duOMpjodB" incomingCorrespondenceLink="_SKXDAJw5EeWL3duOMpjodB" source="_AnRSEJlMEeW3qcq9byHw8m" target="_nc6FgJw3EeWL3duOMpjodB">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package/packagedElement"/>
+        </modelLinks>
+        <modelLinks uuid="_G65B8J__EeWiP7AbsrnH0w" modifier="CREATE" incomingCorrespondenceLink="_iES4M5__EeWiP7AbsrnH0w" source="_nc6FgJw3EeWL3duOMpjodB" target="_ccaTgJ5bEeWwIMGHHSapYB">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Interface/ownedOperation"/>
+        </modelLinks>
+      </leftModelDomain>
+      <rightModelDomain uuid="_mG7m8plLEeW3qcq9byHw8m">
+        <modelObjects uuid="_qLg2sZlLEeW3qcq9byHw8m" incomingCorrespondenceLink="__6PM8JlLEeW3qcq9byHw8m" name="jSystem" outgoingLinks="_rIgYgJlNEeW3qcq9byHw8m">
+          <type xsi:type="ecore:EClass" href="http://tu-berlin.de/silvawb/java#//System"/>
+        </modelObjects>
+        <modelObjects uuid="_WJIRAJlMEeW3qcq9byHw8m" incomingCorrespondenceLink="_bYKhsJlMEeW3qcq9byHw8m" name="jPackage" outgoingLinks="_rmiicJw5EeWL3duOMpjodB" incomingLinks="_rIgYgJlNEeW3qcq9byHw8m">
+          <type xsi:type="ecore:EClass" href="http://tu-berlin.de/silvawb/java#//Package"/>
+        </modelObjects>
+        <modelObjects uuid="_mHkYUJw5EeWL3duOMpjodm" incomingCorrespondenceLink="_qDe0QJw5EeWL3duOMpjodB" name="jInterface" outgoingLinks="_c54BwJ__EeWiP7AbsrnH0w" incomingLinks="_rmiicJw5EeWL3duOMpjodB">
+          <type xsi:type="ecore:EClass" href="http://tu-berlin.de/silvawb/java#//Interface"/>
+        </modelObjects>
+        <modelObjects uuid="_3VXS8J5bEeWwIMGHHSapYB" modifier="CREATE" incomingCorrespondenceLink="_bfnDMJ__EeWiP7AbsrnH0w" name="jMethod" incomingLinks="_c54BwJ__EeWiP7AbsrnH0w">
+          <type xsi:type="ecore:EClass" href="http://tu-berlin.de/silvawb/java#//Method"/>
+          <attributeAssignments uuid="_rLYIsZ5jEeWHVs1omczuSy">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_sifFkZ5jEeWHVs1omczuSy" expressionString="methodName" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://tu-berlin.de/silvawb/java#//Method/name"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_Cdlmwp5rEeWRmI_Jt5gFeB">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_G25wYZ5rEeWRmI_Jt5gFeB" expressionString="methodIsStatic" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://tu-berlin.de/silvawb/java#//Method/isStatic"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_DBvcsp5rEeWRmI_Jt5gFeB">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_JwpksZ5rEeWRmI_Jt5gFeB" expressionString="methodIsFinal" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://tu-berlin.de/silvawb/java#//Method/isFinal"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_DjYxMp5rEeWRmI_Jt5gFeB">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_OEL2cZ5rEeWRmI_Jt5gFeB" expressionString="methodVisibilityStr" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://tu-berlin.de/silvawb/java#//Contained/visibility"/>
+          </attributeAssignments>
+          <attributeAssignments uuid="_EIJEEp5rEeWRmI_Jt5gFeB">
+            <assignmentExpression xsi:type="mlexpressions:MLStringExpression" uuid="_TpocAZ5rEeWRmI_Jt5gFeB" expressionString="methodConcurrencyStr" expressionLanguageID="OCL"/>
+            <feature xsi:type="ecore:EAttribute" href="http://tu-berlin.de/silvawb/java#//Method/concurrency"/>
+          </attributeAssignments>
+        </modelObjects>
+        <modelLinks uuid="_rIgYgJlNEeW3qcq9byHw8m" incomingCorrespondenceLink="_S6L94plOEeW3qcq9byHw8m" source="_qLg2sZlLEeW3qcq9byHw8m" target="_WJIRAJlMEeW3qcq9byHw8m">
+          <feature xsi:type="ecore:EReference" href="http://tu-berlin.de/silvawb/java#//System/packages"/>
+        </modelLinks>
+        <modelLinks uuid="_rmiicJw5EeWL3duOMpjodB" incomingCorrespondenceLink="__v8ZU5w8EeW9qscDUPnhHm" source="_WJIRAJlMEeW3qcq9byHw8m" target="_mHkYUJw5EeWL3duOMpjodm">
+          <feature xsi:type="ecore:EReference" href="http://tu-berlin.de/silvawb/java#//Container/containedElements"/>
+        </modelLinks>
+        <modelLinks uuid="_c54BwJ__EeWiP7AbsrnH0w" modifier="CREATE" incomingCorrespondenceLink="_hDVKc5__EeWiP7AbsrnH0w" source="_mHkYUJw5EeWL3duOMpjodm" target="_3VXS8J5bEeWwIMGHHSapYB">
+          <feature xsi:type="ecore:EReference" href="http://tu-berlin.de/silvawb/java#//Classifier/methods"/>
+        </modelLinks>
+      </rightModelDomain>
+      <correspondenceDomain uuid="_mjUoA5lLEeW3qcq9byHw8m">
+        <correspondenceNodes uuid="_53V2YJlLEeW3qcq9byHw8m" name="corrAxiom" outgoingLinks="__jAYsJlLEeW3qcq9byHw8m __6PM8JlLEeW3qcq9byHw8m">
+          <type xsi:type="ecore:EClass" href="uml2java.ecore#//CorrAxiom"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_GXN3cJlMEeW3qcq9byHw8m" name="uP2jP" outgoingLinks="_LuooEJlMEeW3qcq9byHw8m _bYKhsJlMEeW3qcq9byHw8m _Ohb08plOEeW3qcq9byHw8m _S6L94plOEeW3qcq9byHw8m">
+          <type xsi:type="ecore:EClass" href="uml2java.ecore#//CorrRule"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_1AVOQJw3EeWL3duOMpjodm" name="uI2jI" outgoingLinks="_4oqm4Jw3EeWL3duOMpjodB _SKXDAJw5EeWL3duOMpjodB _qDe0QJw5EeWL3duOMpjodB __v8ZU5w8EeW9qscDUPnhHm">
+          <type xsi:type="ecore:EClass" href="uml2java.ecore#//CorrRule"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_qICWAJ5bEeWwIMGHHSapYB" modifier="CREATE" name="uIO2jIM" outgoingLinks="_QdeygJ__EeWiP7AbsrnH0w _bfnDMJ__EeWiP7AbsrnH0w _iES4M5__EeWiP7AbsrnH0w _hDVKc5__EeWiP7AbsrnH0w">
+          <type xsi:type="ecore:EClass" href="uml2java.ecore#//CorrRule"/>
+        </correspondenceNodes>
+        <correspondenceLinks uuid="__jAYsJlLEeW3qcq9byHw8m" source="_53V2YJlLEeW3qcq9byHw8m" target="_nL0ycZlLEeW3qcq9byHw8m"/>
+        <correspondenceLinks uuid="__6PM8JlLEeW3qcq9byHw8m" source="_53V2YJlLEeW3qcq9byHw8m" target="_qLg2sZlLEeW3qcq9byHw8m"/>
+        <correspondenceLinks uuid="_LuooEJlMEeW3qcq9byHw8m" source="_GXN3cJlMEeW3qcq9byHw8m" target="_AnRSEJlMEeW3qcq9byHw8m"/>
+        <correspondenceLinks uuid="_bYKhsJlMEeW3qcq9byHw8m" source="_GXN3cJlMEeW3qcq9byHw8m" target="_WJIRAJlMEeW3qcq9byHw8m"/>
+        <correspondenceLinks uuid="_Ohb08plOEeW3qcq9byHw8m" source="_GXN3cJlMEeW3qcq9byHw8m" target="_mQQQIJlNEeW3qcq9byHw8m"/>
+        <correspondenceLinks uuid="_S6L94plOEeW3qcq9byHw8m" source="_GXN3cJlMEeW3qcq9byHw8m" target="_rIgYgJlNEeW3qcq9byHw8m"/>
+        <correspondenceLinks uuid="_4oqm4Jw3EeWL3duOMpjodB" source="_1AVOQJw3EeWL3duOMpjodm" target="_nc6FgJw3EeWL3duOMpjodB"/>
+        <correspondenceLinks uuid="_SKXDAJw5EeWL3duOMpjodB" source="_1AVOQJw3EeWL3duOMpjodm" target="_FCAssJw5EeWL3duOMpjodB"/>
+        <correspondenceLinks uuid="__v8ZU5w8EeW9qscDUPnhHm" source="_1AVOQJw3EeWL3duOMpjodm" target="_rmiicJw5EeWL3duOMpjodB"/>
+        <correspondenceLinks uuid="_qDe0QJw5EeWL3duOMpjodB" source="_1AVOQJw3EeWL3duOMpjodm" target="_mHkYUJw5EeWL3duOMpjodm"/>
+        <correspondenceLinks uuid="_QdeygJ__EeWiP7AbsrnH0w" modifier="CREATE" source="_qICWAJ5bEeWwIMGHHSapYB" target="_ccaTgJ5bEeWwIMGHHSapYB"/>
+        <correspondenceLinks uuid="_bfnDMJ__EeWiP7AbsrnH0w" modifier="CREATE" source="_qICWAJ5bEeWwIMGHHSapYB" target="_3VXS8J5bEeWwIMGHHSapYB"/>
+        <correspondenceLinks uuid="_iES4M5__EeWiP7AbsrnH0w" source="_qICWAJ5bEeWwIMGHHSapYB" target="_G65B8J__EeWiP7AbsrnH0w"/>
+        <correspondenceLinks uuid="_hDVKc5__EeWiP7AbsrnH0w" modifier="CREATE" source="_qICWAJ5bEeWwIMGHHSapYB" target="_c54BwJ__EeWiP7AbsrnH0w"/>
+      </correspondenceDomain>
+      <ruleParameters uuid="_iBXQNZ5jEeWHVs1omczuSy" name="methodName">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_krDPQZ5jEeWHVs1omczuSy" expressionString="uOperation.name" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_n6UAkp5jEeWHVs1omczuSy" expressionString="jMethod.name" expressionLanguageID="OCL"/>
+      </ruleParameters>
+      <ruleParameters uuid="_KppwpZ5oEeWRmI_Jt5gFeB" name="methodIsStatic">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_zoP_oZ5pEeWRmI_Jt5gFeB" expressionString="uOperation.isStatic" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_4bDAQp5pEeWRmI_Jt5gFeB" expressionString="jMethod.isStatic" expressionLanguageID="OCL"/>
+      </ruleParameters>
+      <ruleParameters uuid="_L6qFhZ5oEeWRmI_Jt5gFeB" name="methodIsFinal">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_7ULwkZ5pEeWRmI_Jt5gFeB" expressionString="uOperation.isLeaf" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_-6tLUp5pEeWRmI_Jt5gFeB" expressionString="jMethod.isFinal" expressionLanguageID="OCL"/>
+      </ruleParameters>
+      <ruleParameters uuid="_O3H2pZ5oEeWRmI_Jt5gFeB" name="methodVisibilityStr">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_aV4uEZ5qEeWRmI_Jt5gFeB" expressionString="if uOperation.visibility = uml::VisibilityKind::private then 'private' &#xA;else if  uOperation.visibility = uml::VisibilityKind::public then 'public'&#xA;&#x9;else if uOperation.visibility = uml::VisibilityKind::protected then 'protected'&#xA;&#x9;&#x9;else 'package'&#xA;&#x9;&#x9;endif&#xA;&#x9;endif&#xA;endif" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_bUkj4p5qEeWRmI_Jt5gFeB" expressionString="jMethod.visibility" expressionLanguageID="OCL"/>
+      </ruleParameters>
+      <ruleParameters uuid="_M1AN5Z5oEeWRmI_Jt5gFeB" name="operationVisibility">
+        <type xsi:type="ecore:EEnum" href="http://www.eclipse.org/uml2/5.0.0/UML#//VisibilityKind"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_G5sbIZ5qEeWRmI_Jt5gFeB" expressionString="uOperation.visibility" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_Kth5Ip5qEeWRmI_Jt5gFeB" expressionString="if jMethod.visibility = 'private' then uml::VisibilityKind::private&#xA;else if  jMethod.visibility = 'public' then uml::VisibilityKind::public&#xA;&#x9;else if jMethod.visibility = 'protected' then uml::VisibilityKind::protected&#xA;&#x9;&#x9;else  uml::VisibilityKind::protected&#xA;&#x9;&#x9;endif&#xA;&#x9;endif&#xA;endif" expressionLanguageID="OCL"/>
+      </ruleParameters>
+      <ruleParameters uuid="_PoPKhZ5oEeWRmI_Jt5gFeB" name="methodConcurrencyStr">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_5IuwMZ5qEeWRmI_Jt5gFeB" expressionString="if uOperation.concurrency = uml::CallConcurrencyKind::sequential then 'sequential'&#xA;else if  uOperation.concurrency = uml::CallConcurrencyKind::guarded then 'guarded'&#xA;&#x9;&#x9;else  'concurrent'&#xA;&#x9;&#x9;endif&#xA;endif" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_9Xeokp5qEeWRmI_Jt5gFeB" expressionString="jMethod.concurrency" expressionLanguageID="OCL"/>
+      </ruleParameters>
+      <ruleParameters uuid="_z-56Op5rEeWRmI_Jt5gFeB" name="operationConcurrency">
+        <type xsi:type="ecore:EEnum" href="http://www.eclipse.org/uml2/5.0.0/UML#//CallConcurrencyKind"/>
+        <forwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_3LoU4Z5rEeWRmI_Jt5gFeB" expressionString="uOperation.concurrency" expressionLanguageID="OCL"/>
+        <backwardCalculationExpression xsi:type="mlexpressions:MLStringExpression" uuid="_WpjUUp5sEeWRmI_Jt5gFeB" expressionString="if jMethod.concurrency = 'sequential' then uml::CallConcurrencyKind::sequential&#xA;else if  jMethod.concurrency = 'guarded' then uml::CallConcurrencyKind::guarded&#xA;&#x9;&#x9;else  uml::CallConcurrencyKind::concurrent&#xA;&#x9;&#x9;endif&#xA;endif" expressionLanguageID="OCL"/>
+      </ruleParameters>
+    </rules>
+  </ruleGroups>
+  <ruleGroups uuid="_hq9uAaAGEeWiP7AbsrnH0w" name="uIRealization2jIImplementation_Rule" ruleGroupID="uIRealization2jIImplementation_Rule">
+    <rules uuid="_neYeIaAGEeWiP7AbsrnH0w" name="r9" ruleID="r9">
+      <leftModelDomain uuid="_lkyjMZlLEeW3qcq9byHw8n">
+        <modelObjects uuid="_nL0ycZlLEeW3qcq9byHw8n" incomingCorrespondenceLink="__6PM8JlLEeW3qcq9byHw8n" name="uModel" outgoingLinks="_mQQQIJlNEeW3qcq9byHw8n">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Model"/>
+        </modelObjects>
+        <modelObjects uuid="_AnRSEJlMEeW3qcq9byHw8n" incomingCorrespondenceLink="_LuooEJlMEeW3qcq9byHw8n" name="uPackage" outgoingLinks="_q8-vIKAKEeWiP7AbsrnH0w" incomingLinks="_mQQQIJlNEeW3qcq9byHw8n">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+        </modelObjects>
+        <modelObjects uuid="_nIjbQKAKEeWiP7AbsrnH0w" incomingCorrespondenceLink="_4iBBcKAKEeWiP7AbsrnH0w" name="uClass" outgoingLinks="_Gns6AKAcEeWPg7Ze5cKudg" incomingLinks="_q8-vIKAKEeWiP7AbsrnH0w">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </modelObjects>
+        <modelObjects uuid="_-rYjsKAbEeWPg7Ze5cKudg" modifier="CREATE" incomingCorrespondenceLink="_Zhk4IKAeEeWPg7Ze5cKudg" name="uInterfaceRealization" outgoingLinks="_qVoboKBUEeWIUcHWosPAtQ" incomingLinks="_Gns6AKAcEeWPg7Ze5cKudg">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//InterfaceRealization"/>
+        </modelObjects>
+        <modelObjects uuid="_2qz7gKBHEeWIUcHWosPAtQ" incomingCorrespondenceLink="_3wQGUKBXEeWIUcHWosPAtQ" name="uInterface" incomingLinks="_qVoboKBUEeWIUcHWosPAtQ">
+          <type xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Interface"/>
+        </modelObjects>
+        <modelLinks uuid="_mQQQIJlNEeW3qcq9byHw8n" incomingCorrespondenceLink="_Ohb08plOEeW3qcq9byHw8n" source="_nL0ycZlLEeW3qcq9byHw8n" target="_AnRSEJlMEeW3qcq9byHw8n">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package/packagedElement"/>
+        </modelLinks>
+        <modelLinks uuid="_q8-vIKAKEeWiP7AbsrnH0w" incomingCorrespondenceLink="_unw1c6AjEeWPg7Ze5cKudg" source="_AnRSEJlMEeW3qcq9byHw8n" target="_nIjbQKAKEeWiP7AbsrnH0w">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package/packagedElement"/>
+        </modelLinks>
+        <modelLinks uuid="_Gns6AKAcEeWPg7Ze5cKudg" modifier="CREATE" incomingCorrespondenceLink="_xWiiI6AeEeWPg7Ze5cKudg" source="_nIjbQKAKEeWiP7AbsrnH0w" target="_-rYjsKAbEeWPg7Ze5cKudg">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//BehavioredClassifier/interfaceRealization"/>
+        </modelLinks>
+        <modelLinks uuid="_qVoboKBUEeWIUcHWosPAtQ" modifier="CREATE" incomingCorrespondenceLink="_76rmw6BUEeWIUcHWosPAtQ" source="_-rYjsKAbEeWPg7Ze5cKudg" target="_2qz7gKBHEeWIUcHWosPAtQ">
+          <feature xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//InterfaceRealization/contract"/>
+        </modelLinks>
+      </leftModelDomain>
+      <rightModelDomain uuid="_mG7m8plLEeW3qcq9byHw8n">
+        <modelObjects uuid="_qLg2sZlLEeW3qcq9byHw8n" incomingCorrespondenceLink="__jAYsJlLEeW3qcq9byHw8n" name="jSystem" outgoingLinks="_rIgYgJlNEeW3qcq9byHw8n">
+          <type xsi:type="ecore:EClass" href="http://tu-berlin.de/silvawb/java#//System"/>
+        </modelObjects>
+        <modelObjects uuid="_WJIRAJlMEeW3qcq9byHw8n" incomingCorrespondenceLink="_bYKhsJlMEeW3qcq9byHw8n" name="jPackage" outgoingLinks="__ZtSAKAKEeWiP7AbsrnH0w" incomingLinks="_rIgYgJlNEeW3qcq9byHw8n">
+          <type xsi:type="ecore:EClass" href="http://tu-berlin.de/silvawb/java#//Package"/>
+        </modelObjects>
+        <modelObjects uuid="_48_GMKAKEeWiP7AbsrnH0w" incomingCorrespondenceLink="_SanXIKALEeWiP7AbsrnH0w" name="jClass" outgoingLinks="_O76hAKAeEeWPg7Ze5cKudg" incomingLinks="__ZtSAKAKEeWiP7AbsrnH0w">
+          <type xsi:type="ecore:EClass" href="http://tu-berlin.de/silvawb/java#//Class"/>
+        </modelObjects>
+        <modelObjects uuid="_JDiYYKAeEeWPg7Ze5cKudg" modifier="CREATE" incomingCorrespondenceLink="_YOPA8KAeEeWPg7Ze5cKudg" name="jInterfaceImplementation" outgoingLinks="_m83eIKBWEeWIUcHWosPAtQ" incomingLinks="_O76hAKAeEeWPg7Ze5cKudg">
+          <type xsi:type="ecore:EClass" href="http://tu-berlin.de/silvawb/java#//InterfaceImplementation"/>
+        </modelObjects>
+        <modelObjects uuid="_kQR8EKBWEeWIUcHWosPAtQ" incomingCorrespondenceLink="_3Ea7EKBXEeWIUcHWosPAtQ" name="jInterface" incomingLinks="_m83eIKBWEeWIUcHWosPAtQ">
+          <type xsi:type="ecore:EClass" href="http://tu-berlin.de/silvawb/java#//Interface"/>
+        </modelObjects>
+        <modelLinks uuid="_rIgYgJlNEeW3qcq9byHw8n" incomingCorrespondenceLink="_S6L94plOEeW3qcq9byHw8n" source="_qLg2sZlLEeW3qcq9byHw8n" target="_WJIRAJlMEeW3qcq9byHw8n">
+          <feature xsi:type="ecore:EReference" href="http://tu-berlin.de/silvawb/java#//System/packages"/>
+        </modelLinks>
+        <modelLinks uuid="__ZtSAKAKEeWiP7AbsrnH0w" incomingCorrespondenceLink="_uCZek6AjEeWPg7Ze5cKudg" source="_WJIRAJlMEeW3qcq9byHw8n" target="_48_GMKAKEeWiP7AbsrnH0w">
+          <feature xsi:type="ecore:EReference" href="http://tu-berlin.de/silvawb/java#//Container/containedElements"/>
+        </modelLinks>
+        <modelLinks uuid="_O76hAKAeEeWPg7Ze5cKudg" modifier="CREATE" incomingCorrespondenceLink="_v-g_Q6AeEeWPg7Ze5cKudg" source="_48_GMKAKEeWiP7AbsrnH0w" target="_JDiYYKAeEeWPg7Ze5cKudg">
+          <feature xsi:type="ecore:EReference" href="http://tu-berlin.de/silvawb/java#//Classifier/interfaceImplementations"/>
+        </modelLinks>
+        <modelLinks uuid="_m83eIKBWEeWIUcHWosPAtQ" modifier="CREATE" incomingCorrespondenceLink="_VvCqw6BXEeWIUcHWosPAtQ" source="_JDiYYKAeEeWPg7Ze5cKudg" target="_kQR8EKBWEeWIUcHWosPAtQ">
+          <feature xsi:type="ecore:EReference" href="http://tu-berlin.de/silvawb/java#//InterfaceImplementation/interface"/>
+        </modelLinks>
+      </rightModelDomain>
+      <correspondenceDomain uuid="_mjUoA5lLEeW3qcq9byHw8n">
+        <correspondenceNodes uuid="_53V2YJlLEeW3qcq9byHw8n" name="corrAxiom" outgoingLinks="__jAYsJlLEeW3qcq9byHw8n __6PM8JlLEeW3qcq9byHw8n">
+          <type xsi:type="ecore:EClass" href="uml2java.ecore#//CorrAxiom"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_GXN3cJlMEeW3qcq9byHw8n" name="uP2jP" outgoingLinks="_LuooEJlMEeW3qcq9byHw8n _bYKhsJlMEeW3qcq9byHw8n _Ohb08plOEeW3qcq9byHw8n _S6L94plOEeW3qcq9byHw8n">
+          <type xsi:type="ecore:EClass" href="uml2java.ecore#//CorrRule"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_y5cPYKAKEeWiP7AbsrnH0w" name="uC2jC" outgoingLinks="_4iBBcKAKEeWiP7AbsrnH0w _SanXIKALEeWiP7AbsrnH0w _unw1c6AjEeWPg7Ze5cKudg _uCZek6AjEeWPg7Ze5cKudg">
+          <type xsi:type="ecore:EClass" href="uml2java.ecore#//CorrRule"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_RSOREKAeEeWPg7Ze5cKudg" modifier="CREATE" name="uIR2jII" outgoingLinks="_YOPA8KAeEeWPg7Ze5cKudg _Zhk4IKAeEeWPg7Ze5cKudg _xWiiI6AeEeWPg7Ze5cKudg _v-g_Q6AeEeWPg7Ze5cKudg _76rmw6BUEeWIUcHWosPAtQ _VvCqw6BXEeWIUcHWosPAtQ">
+          <type xsi:type="ecore:EClass" href="uml2java.ecore#//CorrRule"/>
+        </correspondenceNodes>
+        <correspondenceNodes uuid="_z8e5wKBXEeWIUcHWosPAtQ" name="uI2jI" outgoingLinks="_3Ea7EKBXEeWIUcHWosPAtQ _3wQGUKBXEeWIUcHWosPAtQ">
+          <type xsi:type="ecore:EClass" href="uml2java.ecore#//CorrRule"/>
+        </correspondenceNodes>
+        <correspondenceLinks uuid="__jAYsJlLEeW3qcq9byHw8n" source="_53V2YJlLEeW3qcq9byHw8n" target="_qLg2sZlLEeW3qcq9byHw8n"/>
+        <correspondenceLinks uuid="__6PM8JlLEeW3qcq9byHw8n" source="_53V2YJlLEeW3qcq9byHw8n" target="_nL0ycZlLEeW3qcq9byHw8n"/>
+        <correspondenceLinks uuid="_LuooEJlMEeW3qcq9byHw8n" source="_GXN3cJlMEeW3qcq9byHw8n" target="_AnRSEJlMEeW3qcq9byHw8n"/>
+        <correspondenceLinks uuid="_bYKhsJlMEeW3qcq9byHw8n" source="_GXN3cJlMEeW3qcq9byHw8n" target="_WJIRAJlMEeW3qcq9byHw8n"/>
+        <correspondenceLinks uuid="_Ohb08plOEeW3qcq9byHw8n" source="_GXN3cJlMEeW3qcq9byHw8n" target="_mQQQIJlNEeW3qcq9byHw8n"/>
+        <correspondenceLinks uuid="_S6L94plOEeW3qcq9byHw8n" source="_GXN3cJlMEeW3qcq9byHw8n" target="_rIgYgJlNEeW3qcq9byHw8n"/>
+        <correspondenceLinks uuid="_4iBBcKAKEeWiP7AbsrnH0w" source="_y5cPYKAKEeWiP7AbsrnH0w" target="_nIjbQKAKEeWiP7AbsrnH0w"/>
+        <correspondenceLinks uuid="_SanXIKALEeWiP7AbsrnH0w" source="_y5cPYKAKEeWiP7AbsrnH0w" target="_48_GMKAKEeWiP7AbsrnH0w"/>
+        <correspondenceLinks uuid="_unw1c6AjEeWPg7Ze5cKudg" source="_y5cPYKAKEeWiP7AbsrnH0w" target="_q8-vIKAKEeWiP7AbsrnH0w"/>
+        <correspondenceLinks uuid="_uCZek6AjEeWPg7Ze5cKudg" source="_y5cPYKAKEeWiP7AbsrnH0w" target="__ZtSAKAKEeWiP7AbsrnH0w"/>
+        <correspondenceLinks uuid="_YOPA8KAeEeWPg7Ze5cKudg" modifier="CREATE" source="_RSOREKAeEeWPg7Ze5cKudg" target="_JDiYYKAeEeWPg7Ze5cKudg"/>
+        <correspondenceLinks uuid="_Zhk4IKAeEeWPg7Ze5cKudg" modifier="CREATE" source="_RSOREKAeEeWPg7Ze5cKudg" target="_-rYjsKAbEeWPg7Ze5cKudg"/>
+        <correspondenceLinks uuid="_xWiiI6AeEeWPg7Ze5cKudg" modifier="CREATE" source="_RSOREKAeEeWPg7Ze5cKudg" target="_Gns6AKAcEeWPg7Ze5cKudg"/>
+        <correspondenceLinks uuid="_v-g_Q6AeEeWPg7Ze5cKudg" modifier="CREATE" source="_RSOREKAeEeWPg7Ze5cKudg" target="_O76hAKAeEeWPg7Ze5cKudg"/>
+        <correspondenceLinks uuid="_76rmw6BUEeWIUcHWosPAtQ" modifier="CREATE" source="_RSOREKAeEeWPg7Ze5cKudg" target="_qVoboKBUEeWIUcHWosPAtQ"/>
+        <correspondenceLinks uuid="_VvCqw6BXEeWIUcHWosPAtQ" modifier="CREATE" source="_RSOREKAeEeWPg7Ze5cKudg" target="_m83eIKBWEeWIUcHWosPAtQ"/>
+        <correspondenceLinks uuid="_3Ea7EKBXEeWIUcHWosPAtQ" source="_z8e5wKBXEeWIUcHWosPAtQ" target="_kQR8EKBWEeWIUcHWosPAtQ"/>
+        <correspondenceLinks uuid="_3wQGUKBXEeWIUcHWosPAtQ" source="_z8e5wKBXEeWIUcHWosPAtQ" target="_2qz7gKBHEeWIUcHWosPAtQ"/>
+      </correspondenceDomain>
     </rules>
   </ruleGroups>
 </mltgg:TGG>

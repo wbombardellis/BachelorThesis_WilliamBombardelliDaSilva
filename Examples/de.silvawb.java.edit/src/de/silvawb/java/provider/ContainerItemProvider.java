@@ -149,12 +149,12 @@ public class ContainerItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(JavaPackage.Literals.CONTAINER__CONTAINED_ELEMENTS,
-				 JavaFactory.eINSTANCE.createClass()));
+				 JavaFactory.eINSTANCE.createContained()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(JavaPackage.Literals.CONTAINER__CONTAINED_ELEMENTS,
-				 JavaFactory.eINSTANCE.createContained()));
+				 JavaFactory.eINSTANCE.createClass()));
 
 		newChildDescriptors.add
 			(createChildParameter

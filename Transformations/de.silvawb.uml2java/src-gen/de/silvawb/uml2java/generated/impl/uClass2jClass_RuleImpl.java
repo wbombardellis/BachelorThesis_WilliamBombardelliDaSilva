@@ -33,7 +33,7 @@ public class uClass2jClass_RuleImpl extends OperationalRuleGroupImpl implements 
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return GeneratedPackage.Literals.UCLASS2J_CLASS_RULE;
+		return GeneratedPackage.eINSTANCE.getuClass2jClass_Rule();
 	}
 
 } //uClass2jClass_RuleImpl

@@ -11,9 +11,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="system" ordered="false"
         eType="#//System" resolveProxies="false" eOpposite="#//System/packages"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Class" eSuperTypes="#//Classifier #//Contained #//Container">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="implementedInterfaces"
-        ordered="false" upperBound="-1" eType="#//Interface" eOpposite="#//Interface/implementingClasses"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Class" eSuperTypes="#//Classifier">
     <eStructuralFeatures xsi:type="ecore:EReference" name="extendedClass" ordered="false"
         eType="#//Class" eOpposite="#//Class/extendingClasses"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="extendingClasses" ordered="false"
@@ -24,7 +22,13 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="imports" ordered="false"
         upperBound="-1" eType="#//Contained" eOpposite="#//Contained/importingClasses"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Classifier" abstract="true">
+  <eClassifiers xsi:type="ecore:EClass" name="InterfaceImplementation">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interface" ordered="false"
+        eType="#//Interface"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="implementer" ordered="false"
+        eType="#//Classifier" eOpposite="#//Classifier/interfaceImplementations"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Classifier" abstract="true" eSuperTypes="#//Contained #//Container">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="templateBindings" upperBound="-1"
         eType="#//TemplateBinding"/>
@@ -40,6 +44,9 @@
         upperBound="-1" eType="#//Method" containment="true" eOpposite="#//Method/containingClassifier"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="typingArguments" ordered="false"
         upperBound="-1" eType="#//Argument" eOpposite="#//Argument/type"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interfaceImplementations"
+        ordered="false" upperBound="-1" eType="#//InterfaceImplementation" containment="true"
+        eOpposite="#//InterfaceImplementation/implementer"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Field" eSuperTypes="#//Contained">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -91,8 +98,6 @@
         upperBound="-1" eType="#//Contained" containment="true" eOpposite="#//Contained/container"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Interface" eSuperTypes="#//Classifier #//Contained #//Container">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="implementingClasses" ordered="false"
-        upperBound="-1" eType="#//Class" eOpposite="#//Class/implementedInterfaces"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="extendedInterfaces" ordered="false"
         upperBound="-1" eType="#//Interface" eOpposite="#//Interface/extendingInterfaces"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="extendingInterfaces" ordered="false"

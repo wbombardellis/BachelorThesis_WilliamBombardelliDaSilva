@@ -14,7 +14,6 @@ import org.eclipse.emf.common.util.EList;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link de.silvawb.java.Class#getImplementedInterfaces <em>Implemented Interfaces</em>}</li>
  *   <li>{@link de.silvawb.java.Class#getExtendedClass <em>Extended Class</em>}</li>
  *   <li>{@link de.silvawb.java.Class#getExtendingClasses <em>Extending Classes</em>}</li>
  *   <li>{@link de.silvawb.java.Class#isIsAbstract <em>Is Abstract</em>}</li>
@@ -27,25 +26,7 @@ import org.eclipse.emf.common.util.EList;
  * @model
  * @generated
  */
-public interface Class extends Classifier, Contained, Container {
-
-	/**
-	 * Returns the value of the '<em><b>Implemented Interfaces</b></em>' reference list.
-	 * The list contents are of type {@link de.silvawb.java.Interface}.
-	 * It is bidirectional and its opposite is '{@link de.silvawb.java.Interface#getImplementingClasses <em>Implementing Classes</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Implemented Interfaces</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Implemented Interfaces</em>' reference list.
-	 * @see de.silvawb.java.JavaPackage#getClass_ImplementedInterfaces()
-	 * @see de.silvawb.java.Interface#getImplementingClasses
-	 * @model opposite="implementingClasses" ordered="false"
-	 * @generated
-	 */
-	EList<Interface> getImplementedInterfaces();
+public interface Class extends Classifier {
 
 	/**
 	 * Returns the value of the '<em><b>Extended Class</b></em>' reference.

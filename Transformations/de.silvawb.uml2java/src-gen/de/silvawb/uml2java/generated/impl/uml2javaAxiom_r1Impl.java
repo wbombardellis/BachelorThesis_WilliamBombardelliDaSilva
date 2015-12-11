@@ -145,7 +145,7 @@ public class uml2javaAxiom_r1Impl extends OperationalAxiomImpl implements uml2ja
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return GeneratedPackage.Literals.UML2JAVA_AXIOM_R1;
+		return GeneratedPackage.eINSTANCE.getuml2javaAxiom_r1();
 	}
 
 	/**

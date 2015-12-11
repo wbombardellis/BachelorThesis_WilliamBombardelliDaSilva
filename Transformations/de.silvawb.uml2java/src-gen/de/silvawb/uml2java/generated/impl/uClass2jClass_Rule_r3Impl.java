@@ -200,7 +200,7 @@ public class uClass2jClass_Rule_r3Impl extends OperationalRuleImpl implements uC
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return GeneratedPackage.Literals.UCLASS2J_CLASS_RULE_R3;
+		return GeneratedPackage.eINSTANCE.getuClass2jClass_Rule_r3();
 	}
 
 	/**

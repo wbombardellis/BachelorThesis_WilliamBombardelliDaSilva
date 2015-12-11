@@ -8,6 +8,7 @@ import de.silvawb.java.Contained;
 import de.silvawb.java.Container;
 import de.silvawb.java.Field;
 import de.silvawb.java.Interface;
+import de.silvawb.java.InterfaceImplementation;
 import de.silvawb.java.JavaPackage;
 
 import de.silvawb.java.Method;
@@ -96,9 +97,17 @@ public class JavaSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case JavaPackage.INTERFACE_IMPLEMENTATION: {
+				InterfaceImplementation interfaceImplementation = (InterfaceImplementation)theEObject;
+				T result = caseInterfaceImplementation(interfaceImplementation);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case JavaPackage.CLASSIFIER: {
 				Classifier classifier = (Classifier)theEObject;
 				T result = caseClassifier(classifier);
+				if (result == null) result = caseContained(classifier);
+				if (result == null) result = caseContainer(classifier);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -195,6 +204,21 @@ public class JavaSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseClass(de.silvawb.java.Class object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Interface Implementation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Interface Implementation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInterfaceImplementation(InterfaceImplementation object) {
 		return null;
 	}
 

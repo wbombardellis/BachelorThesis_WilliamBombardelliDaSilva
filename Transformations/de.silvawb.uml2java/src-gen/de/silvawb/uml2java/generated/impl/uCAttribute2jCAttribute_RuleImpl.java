@@ -33,7 +33,7 @@ public class uCAttribute2jCAttribute_RuleImpl extends OperationalRuleGroupImpl i
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return GeneratedPackage.Literals.UC_ATTRIBUTE2J_CATTRIBUTE_RULE;
+		return GeneratedPackage.eINSTANCE.getuCAttribute2jCAttribute_Rule();
 	}
 
 } //uCAttribute2jCAttribute_RuleImpl

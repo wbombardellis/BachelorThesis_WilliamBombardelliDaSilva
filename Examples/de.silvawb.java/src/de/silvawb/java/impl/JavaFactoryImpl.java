@@ -6,6 +6,7 @@ import de.silvawb.java.Argument;
 import de.silvawb.java.Contained;
 import de.silvawb.java.Field;
 import de.silvawb.java.Interface;
+import de.silvawb.java.InterfaceImplementation;
 import de.silvawb.java.JavaFactory;
 import de.silvawb.java.JavaPackage;
 
@@ -66,6 +67,7 @@ public class JavaFactoryImpl extends EFactoryImpl implements JavaFactory {
 			case JavaPackage.SYSTEM: return createSystem();
 			case JavaPackage.PACKAGE: return createPackage();
 			case JavaPackage.CLASS: return createClass();
+			case JavaPackage.INTERFACE_IMPLEMENTATION: return createInterfaceImplementation();
 			case JavaPackage.FIELD: return createField();
 			case JavaPackage.CONTAINED: return createContained();
 			case JavaPackage.METHOD: return createMethod();
@@ -106,6 +108,16 @@ public class JavaFactoryImpl extends EFactoryImpl implements JavaFactory {
 	public de.silvawb.java.Class createClass() {
 		ClassImpl class_ = new ClassImpl();
 		return class_;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InterfaceImplementation createInterfaceImplementation() {
+		InterfaceImplementationImpl interfaceImplementation = new InterfaceImplementationImpl();
+		return interfaceImplementation;
 	}
 
 	/**

@@ -33,7 +33,7 @@ public class uInterface2jInterface_RuleImpl extends OperationalRuleGroupImpl imp
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return GeneratedPackage.Literals.UINTERFACE2J_INTERFACE_RULE;
+		return GeneratedPackage.eINSTANCE.getuInterface2jInterface_Rule();
 	}
 
 } //uInterface2jInterface_RuleImpl

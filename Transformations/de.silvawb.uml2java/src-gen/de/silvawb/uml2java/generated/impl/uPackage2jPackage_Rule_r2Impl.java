@@ -200,7 +200,7 @@ public class uPackage2jPackage_Rule_r2Impl extends OperationalRuleImpl implement
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return GeneratedPackage.Literals.UPACKAGE2J_PACKAGE_RULE_R2;
+		return GeneratedPackage.eINSTANCE.getuPackage2jPackage_Rule_r2();
 	}
 
 	/**

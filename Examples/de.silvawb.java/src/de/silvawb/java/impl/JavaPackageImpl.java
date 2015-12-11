@@ -7,6 +7,7 @@ import de.silvawb.java.Classifier;
 import de.silvawb.java.Contained;
 import de.silvawb.java.Field;
 import de.silvawb.java.Interface;
+import de.silvawb.java.InterfaceImplementation;
 import de.silvawb.java.JavaFactory;
 import de.silvawb.java.JavaPackage;
 
@@ -45,6 +46,13 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * @generated
 	 */
 	private EClass classEClass = null;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass interfaceImplementationEClass = null;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -226,7 +234,7 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClass_ImplementedInterfaces() {
+	public EReference getClass_ExtendedClass() {
 		return (EReference)classEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -235,7 +243,7 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClass_ExtendedClass() {
+	public EReference getClass_ExtendingClasses() {
 		return (EReference)classEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -244,17 +252,8 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClass_ExtendingClasses() {
-		return (EReference)classEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getClass_IsAbstract() {
-		return (EAttribute)classEClass.getEStructuralFeatures().get(3);
+		return (EAttribute)classEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -263,7 +262,7 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * @generated
 	 */
 	public EAttribute getClass_IsFinal() {
-		return (EAttribute)classEClass.getEStructuralFeatures().get(4);
+		return (EAttribute)classEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -272,7 +271,7 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * @generated
 	 */
 	public EAttribute getClass_IsStatic() {
-		return (EAttribute)classEClass.getEStructuralFeatures().get(5);
+		return (EAttribute)classEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -281,7 +280,34 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * @generated
 	 */
 	public EReference getClass_Imports() {
-		return (EReference)classEClass.getEStructuralFeatures().get(6);
+		return (EReference)classEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getInterfaceImplementation() {
+		return interfaceImplementationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getInterfaceImplementation_Interface() {
+		return (EReference)interfaceImplementationEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getInterfaceImplementation_Implementer() {
+		return (EReference)interfaceImplementationEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -363,6 +389,15 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 */
 	public EReference getClassifier_TypingArguments() {
 		return (EReference)classifierEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getClassifier_InterfaceImplementations() {
+		return (EReference)classifierEClass.getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -622,7 +657,7 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getInterface_ImplementingClasses() {
+	public EReference getInterface_ExtendedInterfaces() {
 		return (EReference)interfaceEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -631,17 +666,8 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getInterface_ExtendedInterfaces() {
-		return (EReference)interfaceEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EReference getInterface_ExtendingInterfaces() {
-		return (EReference)interfaceEClass.getEStructuralFeatures().get(2);
+		return (EReference)interfaceEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -717,13 +743,16 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 		createEReference(packageEClass, PACKAGE__SYSTEM);
 
 		classEClass = createEClass(CLASS);
-		createEReference(classEClass, CLASS__IMPLEMENTED_INTERFACES);
 		createEReference(classEClass, CLASS__EXTENDED_CLASS);
 		createEReference(classEClass, CLASS__EXTENDING_CLASSES);
 		createEAttribute(classEClass, CLASS__IS_ABSTRACT);
 		createEAttribute(classEClass, CLASS__IS_FINAL);
 		createEAttribute(classEClass, CLASS__IS_STATIC);
 		createEReference(classEClass, CLASS__IMPORTS);
+
+		interfaceImplementationEClass = createEClass(INTERFACE_IMPLEMENTATION);
+		createEReference(interfaceImplementationEClass, INTERFACE_IMPLEMENTATION__INTERFACE);
+		createEReference(interfaceImplementationEClass, INTERFACE_IMPLEMENTATION__IMPLEMENTER);
 
 		classifierEClass = createEClass(CLASSIFIER);
 		createEAttribute(classifierEClass, CLASSIFIER__NAME);
@@ -734,6 +763,7 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 		createEReference(classifierEClass, CLASSIFIER__TYPING_METHODS);
 		createEReference(classifierEClass, CLASSIFIER__METHODS);
 		createEReference(classifierEClass, CLASSIFIER__TYPING_ARGUMENTS);
+		createEReference(classifierEClass, CLASSIFIER__INTERFACE_IMPLEMENTATIONS);
 
 		fieldEClass = createEClass(FIELD);
 		createEAttribute(fieldEClass, FIELD__NAME);
@@ -768,7 +798,6 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 		createEReference(containerEClass, CONTAINER__CONTAINED_ELEMENTS);
 
 		interfaceEClass = createEClass(INTERFACE);
-		createEReference(interfaceEClass, INTERFACE__IMPLEMENTING_CLASSES);
 		createEReference(interfaceEClass, INTERFACE__EXTENDED_INTERFACES);
 		createEReference(interfaceEClass, INTERFACE__EXTENDING_INTERFACES);
 
@@ -808,8 +837,8 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 		// Add supertypes to classes
 		packageEClass.getESuperTypes().add(this.getContainer());
 		classEClass.getESuperTypes().add(this.getClassifier());
-		classEClass.getESuperTypes().add(this.getContained());
-		classEClass.getESuperTypes().add(this.getContainer());
+		classifierEClass.getESuperTypes().add(this.getContained());
+		classifierEClass.getESuperTypes().add(this.getContainer());
 		fieldEClass.getESuperTypes().add(this.getContained());
 		methodEClass.getESuperTypes().add(this.getContained());
 		interfaceEClass.getESuperTypes().add(this.getClassifier());
@@ -826,13 +855,16 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 		initEReference(getPackage_System(), this.getSystem(), this.getSystem_Packages(), "system", null, 0, 1, de.silvawb.java.Package.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(classEClass, de.silvawb.java.Class.class, "Class", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getClass_ImplementedInterfaces(), this.getInterface(), this.getInterface_ImplementingClasses(), "implementedInterfaces", null, 0, -1, de.silvawb.java.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getClass_ExtendedClass(), this.getClass_(), this.getClass_ExtendingClasses(), "extendedClass", null, 0, 1, de.silvawb.java.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getClass_ExtendingClasses(), this.getClass_(), this.getClass_ExtendedClass(), "extendingClasses", null, 0, 1, de.silvawb.java.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getClass_IsAbstract(), ecorePackage.getEBoolean(), "isAbstract", null, 0, 1, de.silvawb.java.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getClass_IsFinal(), ecorePackage.getEBoolean(), "isFinal", null, 0, 1, de.silvawb.java.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getClass_IsStatic(), ecorePackage.getEBoolean(), "isStatic", null, 0, 1, de.silvawb.java.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getClass_Imports(), this.getContained(), this.getContained_ImportingClasses(), "imports", null, 0, -1, de.silvawb.java.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(interfaceImplementationEClass, InterfaceImplementation.class, "InterfaceImplementation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getInterfaceImplementation_Interface(), this.getInterface(), null, "interface", null, 0, 1, InterfaceImplementation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getInterfaceImplementation_Implementer(), this.getClassifier(), this.getClassifier_InterfaceImplementations(), "implementer", null, 0, 1, InterfaceImplementation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(classifierEClass, Classifier.class, "Classifier", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getClassifier_Name(), ecorePackage.getEString(), "name", null, 0, 1, Classifier.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -843,6 +875,7 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 		initEReference(getClassifier_TypingMethods(), this.getMethod(), this.getMethod_ReturnType(), "typingMethods", null, 0, -1, Classifier.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getClassifier_Methods(), this.getMethod(), this.getMethod_ContainingClassifier(), "methods", null, 0, -1, Classifier.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getClassifier_TypingArguments(), this.getArgument(), this.getArgument_Type(), "typingArguments", null, 0, -1, Classifier.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getClassifier_InterfaceImplementations(), this.getInterfaceImplementation(), this.getInterfaceImplementation_Implementer(), "interfaceImplementations", null, 0, -1, Classifier.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(fieldEClass, Field.class, "Field", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getField_Name(), ecorePackage.getEString(), "name", null, 0, 1, Field.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -877,7 +910,6 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 		initEReference(getContainer_ContainedElements(), this.getContained(), this.getContained_Container(), "containedElements", null, 0, -1, de.silvawb.java.Container.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(interfaceEClass, Interface.class, "Interface", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getInterface_ImplementingClasses(), this.getClass_(), this.getClass_ImplementedInterfaces(), "implementingClasses", null, 0, -1, Interface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getInterface_ExtendedInterfaces(), this.getInterface(), this.getInterface_ExtendingInterfaces(), "extendedInterfaces", null, 0, -1, Interface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getInterface_ExtendingInterfaces(), this.getInterface(), this.getInterface_ExtendedInterfaces(), "extendingInterfaces", null, 0, -1, Interface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 

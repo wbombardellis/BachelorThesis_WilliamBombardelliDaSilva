@@ -4,7 +4,9 @@ package de.silvawb.java.impl;
 
 import de.silvawb.java.Argument;
 import de.silvawb.java.Classifier;
+import de.silvawb.java.Contained;
 import de.silvawb.java.Field;
+import de.silvawb.java.InterfaceImplementation;
 import de.silvawb.java.JavaPackage;
 
 import de.silvawb.java.Method;
@@ -18,7 +20,6 @@ import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
 import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
@@ -32,6 +33,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link de.silvawb.java.impl.ClassifierImpl#getContainedElements <em>Contained Elements</em>}</li>
  *   <li>{@link de.silvawb.java.impl.ClassifierImpl#getName <em>Name</em>}</li>
  *   <li>{@link de.silvawb.java.impl.ClassifierImpl#getTemplateBindings <em>Template Bindings</em>}</li>
  *   <li>{@link de.silvawb.java.impl.ClassifierImpl#getUnderTemplateBindings <em>Under Template Bindings</em>}</li>
@@ -40,11 +42,22 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link de.silvawb.java.impl.ClassifierImpl#getTypingMethods <em>Typing Methods</em>}</li>
  *   <li>{@link de.silvawb.java.impl.ClassifierImpl#getMethods <em>Methods</em>}</li>
  *   <li>{@link de.silvawb.java.impl.ClassifierImpl#getTypingArguments <em>Typing Arguments</em>}</li>
+ *   <li>{@link de.silvawb.java.impl.ClassifierImpl#getInterfaceImplementations <em>Interface Implementations</em>}</li>
  * </ul>
  *
  * @generated
  */
-public abstract class ClassifierImpl extends MinimalEObjectImpl.Container implements Classifier {
+public abstract class ClassifierImpl extends ContainedImpl implements Classifier {
+	/**
+	 * The cached value of the '{@link #getContainedElements() <em>Contained Elements</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getContainedElements()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Contained> containedElements;
+
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -136,6 +149,16 @@ public abstract class ClassifierImpl extends MinimalEObjectImpl.Container implem
 	protected EList<Argument> typingArguments;
 
 	/**
+	 * The cached value of the '{@link #getInterfaceImplementations() <em>Interface Implementations</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getInterfaceImplementations()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<InterfaceImplementation> interfaceImplementations;
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -152,6 +175,18 @@ public abstract class ClassifierImpl extends MinimalEObjectImpl.Container implem
 	@Override
 	protected EClass eStaticClass() {
 		return JavaPackage.Literals.CLASSIFIER;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Contained> getContainedElements() {
+		if (containedElements == null) {
+			containedElements = new EObjectContainmentWithInverseEList<Contained>(Contained.class, this, JavaPackage.CLASSIFIER__CONTAINED_ELEMENTS, JavaPackage.CONTAINED__CONTAINER);
+		}
+		return containedElements;
 	}
 
 	/**
@@ -264,10 +299,24 @@ public abstract class ClassifierImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<InterfaceImplementation> getInterfaceImplementations() {
+		if (interfaceImplementations == null) {
+			interfaceImplementations = new EObjectContainmentWithInverseEList<InterfaceImplementation>(InterfaceImplementation.class, this, JavaPackage.CLASSIFIER__INTERFACE_IMPLEMENTATIONS, JavaPackage.INTERFACE_IMPLEMENTATION__IMPLEMENTER);
+		}
+		return interfaceImplementations;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
+			case JavaPackage.CLASSIFIER__CONTAINED_ELEMENTS:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getContainedElements()).basicAdd(otherEnd, msgs);
 			case JavaPackage.CLASSIFIER__UNDER_TEMPLATE_BINDINGS:
 				return ((InternalEList<InternalEObject>)(InternalEList<?>)getUnderTemplateBindings()).basicAdd(otherEnd, msgs);
 			case JavaPackage.CLASSIFIER__FIELDS:
@@ -280,6 +329,8 @@ public abstract class ClassifierImpl extends MinimalEObjectImpl.Container implem
 				return ((InternalEList<InternalEObject>)(InternalEList<?>)getMethods()).basicAdd(otherEnd, msgs);
 			case JavaPackage.CLASSIFIER__TYPING_ARGUMENTS:
 				return ((InternalEList<InternalEObject>)(InternalEList<?>)getTypingArguments()).basicAdd(otherEnd, msgs);
+			case JavaPackage.CLASSIFIER__INTERFACE_IMPLEMENTATIONS:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getInterfaceImplementations()).basicAdd(otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
@@ -292,6 +343,8 @@ public abstract class ClassifierImpl extends MinimalEObjectImpl.Container implem
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
+			case JavaPackage.CLASSIFIER__CONTAINED_ELEMENTS:
+				return ((InternalEList<?>)getContainedElements()).basicRemove(otherEnd, msgs);
 			case JavaPackage.CLASSIFIER__UNDER_TEMPLATE_BINDINGS:
 				return ((InternalEList<?>)getUnderTemplateBindings()).basicRemove(otherEnd, msgs);
 			case JavaPackage.CLASSIFIER__FIELDS:
@@ -304,6 +357,8 @@ public abstract class ClassifierImpl extends MinimalEObjectImpl.Container implem
 				return ((InternalEList<?>)getMethods()).basicRemove(otherEnd, msgs);
 			case JavaPackage.CLASSIFIER__TYPING_ARGUMENTS:
 				return ((InternalEList<?>)getTypingArguments()).basicRemove(otherEnd, msgs);
+			case JavaPackage.CLASSIFIER__INTERFACE_IMPLEMENTATIONS:
+				return ((InternalEList<?>)getInterfaceImplementations()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -316,6 +371,8 @@ public abstract class ClassifierImpl extends MinimalEObjectImpl.Container implem
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
+			case JavaPackage.CLASSIFIER__CONTAINED_ELEMENTS:
+				return getContainedElements();
 			case JavaPackage.CLASSIFIER__NAME:
 				return getName();
 			case JavaPackage.CLASSIFIER__TEMPLATE_BINDINGS:
@@ -332,6 +389,8 @@ public abstract class ClassifierImpl extends MinimalEObjectImpl.Container implem
 				return getMethods();
 			case JavaPackage.CLASSIFIER__TYPING_ARGUMENTS:
 				return getTypingArguments();
+			case JavaPackage.CLASSIFIER__INTERFACE_IMPLEMENTATIONS:
+				return getInterfaceImplementations();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -345,6 +404,10 @@ public abstract class ClassifierImpl extends MinimalEObjectImpl.Container implem
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
+			case JavaPackage.CLASSIFIER__CONTAINED_ELEMENTS:
+				getContainedElements().clear();
+				getContainedElements().addAll((Collection<? extends Contained>)newValue);
+				return;
 			case JavaPackage.CLASSIFIER__NAME:
 				setName((String)newValue);
 				return;
@@ -376,6 +439,10 @@ public abstract class ClassifierImpl extends MinimalEObjectImpl.Container implem
 				getTypingArguments().clear();
 				getTypingArguments().addAll((Collection<? extends Argument>)newValue);
 				return;
+			case JavaPackage.CLASSIFIER__INTERFACE_IMPLEMENTATIONS:
+				getInterfaceImplementations().clear();
+				getInterfaceImplementations().addAll((Collection<? extends InterfaceImplementation>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -388,6 +455,9 @@ public abstract class ClassifierImpl extends MinimalEObjectImpl.Container implem
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
+			case JavaPackage.CLASSIFIER__CONTAINED_ELEMENTS:
+				getContainedElements().clear();
+				return;
 			case JavaPackage.CLASSIFIER__NAME:
 				setName(NAME_EDEFAULT);
 				return;
@@ -412,6 +482,9 @@ public abstract class ClassifierImpl extends MinimalEObjectImpl.Container implem
 			case JavaPackage.CLASSIFIER__TYPING_ARGUMENTS:
 				getTypingArguments().clear();
 				return;
+			case JavaPackage.CLASSIFIER__INTERFACE_IMPLEMENTATIONS:
+				getInterfaceImplementations().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -424,6 +497,8 @@ public abstract class ClassifierImpl extends MinimalEObjectImpl.Container implem
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
+			case JavaPackage.CLASSIFIER__CONTAINED_ELEMENTS:
+				return containedElements != null && !containedElements.isEmpty();
 			case JavaPackage.CLASSIFIER__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case JavaPackage.CLASSIFIER__TEMPLATE_BINDINGS:
@@ -440,8 +515,42 @@ public abstract class ClassifierImpl extends MinimalEObjectImpl.Container implem
 				return methods != null && !methods.isEmpty();
 			case JavaPackage.CLASSIFIER__TYPING_ARGUMENTS:
 				return typingArguments != null && !typingArguments.isEmpty();
+			case JavaPackage.CLASSIFIER__INTERFACE_IMPLEMENTATIONS:
+				return interfaceImplementations != null && !interfaceImplementations.isEmpty();
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
+		if (baseClass == de.silvawb.java.Container.class) {
+			switch (derivedFeatureID) {
+				case JavaPackage.CLASSIFIER__CONTAINED_ELEMENTS: return JavaPackage.CONTAINER__CONTAINED_ELEMENTS;
+				default: return -1;
+			}
+		}
+		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
+		if (baseClass == de.silvawb.java.Container.class) {
+			switch (baseFeatureID) {
+				case JavaPackage.CONTAINER__CONTAINED_ELEMENTS: return JavaPackage.CLASSIFIER__CONTAINED_ELEMENTS;
+				default: return -1;
+			}
+		}
+		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
 	}
 
 	/**

@@ -201,7 +201,7 @@ public class uCAttribute2jCAttribute_Rule_r4Impl extends OperationalRuleImpl
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return GeneratedPackage.Literals.UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4;
+		return GeneratedPackage.eINSTANCE.getuCAttribute2jCAttribute_Rule_r4();
 	}
 
 	/**

@@ -111,7 +111,7 @@ public interface JavaPackage extends EPackage {
 	 * @see de.silvawb.java.impl.JavaPackageImpl#getContainer()
 	 * @generated
 	 */
-	int CONTAINER = 8;
+	int CONTAINER = 9;
 
 	/**
 	 * The feature id for the '<em><b>Contained Elements</b></em>' containment reference list.
@@ -203,97 +203,7 @@ public interface JavaPackage extends EPackage {
 	 * @see de.silvawb.java.impl.JavaPackageImpl#getClassifier()
 	 * @generated
 	 */
-	int CLASSIFIER = 3;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASSIFIER__NAME = 0;
-
-	/**
-	 * The feature id for the '<em><b>Template Bindings</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASSIFIER__TEMPLATE_BINDINGS = 1;
-
-	/**
-	 * The feature id for the '<em><b>Under Template Bindings</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASSIFIER__UNDER_TEMPLATE_BINDINGS = 2;
-
-	/**
-	 * The feature id for the '<em><b>Fields</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASSIFIER__FIELDS = 3;
-
-	/**
-	 * The feature id for the '<em><b>Typing Fields</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASSIFIER__TYPING_FIELDS = 4;
-
-	/**
-	 * The feature id for the '<em><b>Typing Methods</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASSIFIER__TYPING_METHODS = 5;
-
-	/**
-	 * The feature id for the '<em><b>Methods</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASSIFIER__METHODS = 6;
-
-	/**
-	 * The feature id for the '<em><b>Typing Arguments</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASSIFIER__TYPING_ARGUMENTS = 7;
-
-	/**
-	 * The number of structural features of the '<em>Classifier</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASSIFIER_FEATURE_COUNT = 8;
-
-	/**
-	 * The number of operations of the '<em>Classifier</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASSIFIER_OPERATION_COUNT = 0;
+	int CLASSIFIER = 4;
 
 	/**
 	 * The meta object id for the '{@link de.silvawb.java.impl.ClassImpl <em>Class</em>}' class.
@@ -304,6 +214,242 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 */
 	int CLASS = 2;
+
+	/**
+	 * The meta object id for the '{@link de.silvawb.java.impl.InterfaceImplementationImpl <em>Interface Implementation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.silvawb.java.impl.InterfaceImplementationImpl
+	 * @see de.silvawb.java.impl.JavaPackageImpl#getInterfaceImplementation()
+	 * @generated
+	 */
+	int INTERFACE_IMPLEMENTATION = 3;
+
+	/**
+	 * The meta object id for the '{@link de.silvawb.java.impl.ContainedImpl <em>Contained</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.silvawb.java.impl.ContainedImpl
+	 * @see de.silvawb.java.impl.JavaPackageImpl#getContained()
+	 * @generated
+	 */
+	int CONTAINED = 6;
+
+	/**
+	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINED__VISIBILITY = 0;
+
+	/**
+	 * The feature id for the '<em><b>Container</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINED__CONTAINER = 1;
+
+	/**
+	 * The feature id for the '<em><b>Importing Classes</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINED__IMPORTING_CLASSES = 2;
+
+	/**
+	 * The number of structural features of the '<em>Contained</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINED_FEATURE_COUNT = 3;
+
+	/**
+	 * The number of operations of the '<em>Contained</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINED_OPERATION_COUNT = 0;
+
+	/**
+	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASSIFIER__VISIBILITY = CONTAINED__VISIBILITY;
+
+	/**
+	 * The feature id for the '<em><b>Container</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASSIFIER__CONTAINER = CONTAINED__CONTAINER;
+
+	/**
+	 * The feature id for the '<em><b>Importing Classes</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASSIFIER__IMPORTING_CLASSES = CONTAINED__IMPORTING_CLASSES;
+
+	/**
+	 * The feature id for the '<em><b>Contained Elements</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASSIFIER__CONTAINED_ELEMENTS = CONTAINED_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASSIFIER__NAME = CONTAINED_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Template Bindings</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASSIFIER__TEMPLATE_BINDINGS = CONTAINED_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Under Template Bindings</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASSIFIER__UNDER_TEMPLATE_BINDINGS = CONTAINED_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Fields</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASSIFIER__FIELDS = CONTAINED_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Typing Fields</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASSIFIER__TYPING_FIELDS = CONTAINED_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Typing Methods</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASSIFIER__TYPING_METHODS = CONTAINED_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Methods</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASSIFIER__METHODS = CONTAINED_FEATURE_COUNT + 7;
+
+	/**
+	 * The feature id for the '<em><b>Typing Arguments</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASSIFIER__TYPING_ARGUMENTS = CONTAINED_FEATURE_COUNT + 8;
+
+	/**
+	 * The feature id for the '<em><b>Interface Implementations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASSIFIER__INTERFACE_IMPLEMENTATIONS = CONTAINED_FEATURE_COUNT + 9;
+
+	/**
+	 * The number of structural features of the '<em>Classifier</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASSIFIER_FEATURE_COUNT = CONTAINED_FEATURE_COUNT + 10;
+
+	/**
+	 * The number of operations of the '<em>Classifier</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASSIFIER_OPERATION_COUNT = CONTAINED_OPERATION_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS__VISIBILITY = CLASSIFIER__VISIBILITY;
+
+	/**
+	 * The feature id for the '<em><b>Container</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS__CONTAINER = CLASSIFIER__CONTAINER;
+
+	/**
+	 * The feature id for the '<em><b>Importing Classes</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS__IMPORTING_CLASSES = CLASSIFIER__IMPORTING_CLASSES;
+
+	/**
+	 * The feature id for the '<em><b>Contained Elements</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS__CONTAINED_ELEMENTS = CLASSIFIER__CONTAINED_ELEMENTS;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -378,49 +524,13 @@ public interface JavaPackage extends EPackage {
 	int CLASS__TYPING_ARGUMENTS = CLASSIFIER__TYPING_ARGUMENTS;
 
 	/**
-	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
+	 * The feature id for the '<em><b>Interface Implementations</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS__VISIBILITY = CLASSIFIER_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Container</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASS__CONTAINER = CLASSIFIER_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Importing Classes</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASS__IMPORTING_CLASSES = CLASSIFIER_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Contained Elements</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASS__CONTAINED_ELEMENTS = CLASSIFIER_FEATURE_COUNT + 3;
-
-	/**
-	 * The feature id for the '<em><b>Implemented Interfaces</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASS__IMPLEMENTED_INTERFACES = CLASSIFIER_FEATURE_COUNT + 4;
+	int CLASS__INTERFACE_IMPLEMENTATIONS = CLASSIFIER__INTERFACE_IMPLEMENTATIONS;
 
 	/**
 	 * The feature id for the '<em><b>Extended Class</b></em>' reference.
@@ -429,7 +539,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS__EXTENDED_CLASS = CLASSIFIER_FEATURE_COUNT + 5;
+	int CLASS__EXTENDED_CLASS = CLASSIFIER_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Extending Classes</b></em>' reference.
@@ -438,7 +548,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS__EXTENDING_CLASSES = CLASSIFIER_FEATURE_COUNT + 6;
+	int CLASS__EXTENDING_CLASSES = CLASSIFIER_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Is Abstract</b></em>' attribute.
@@ -447,7 +557,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS__IS_ABSTRACT = CLASSIFIER_FEATURE_COUNT + 7;
+	int CLASS__IS_ABSTRACT = CLASSIFIER_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Is Final</b></em>' attribute.
@@ -456,7 +566,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS__IS_FINAL = CLASSIFIER_FEATURE_COUNT + 8;
+	int CLASS__IS_FINAL = CLASSIFIER_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Is Static</b></em>' attribute.
@@ -465,7 +575,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS__IS_STATIC = CLASSIFIER_FEATURE_COUNT + 9;
+	int CLASS__IS_STATIC = CLASSIFIER_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Imports</b></em>' reference list.
@@ -474,7 +584,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS__IMPORTS = CLASSIFIER_FEATURE_COUNT + 10;
+	int CLASS__IMPORTS = CLASSIFIER_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Class</em>' class.
@@ -483,7 +593,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_FEATURE_COUNT = CLASSIFIER_FEATURE_COUNT + 11;
+	int CLASS_FEATURE_COUNT = CLASSIFIER_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of operations of the '<em>Class</em>' class.
@@ -495,59 +605,40 @@ public interface JavaPackage extends EPackage {
 	int CLASS_OPERATION_COUNT = CLASSIFIER_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link de.silvawb.java.impl.ContainedImpl <em>Contained</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see de.silvawb.java.impl.ContainedImpl
-	 * @see de.silvawb.java.impl.JavaPackageImpl#getContained()
-	 * @generated
-	 */
-	int CONTAINED = 5;
-
-	/**
-	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
+	 * The feature id for the '<em><b>Interface</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONTAINED__VISIBILITY = 0;
+	int INTERFACE_IMPLEMENTATION__INTERFACE = 0;
 
 	/**
-	 * The feature id for the '<em><b>Container</b></em>' container reference.
+	 * The feature id for the '<em><b>Implementer</b></em>' container reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONTAINED__CONTAINER = 1;
+	int INTERFACE_IMPLEMENTATION__IMPLEMENTER = 1;
 
 	/**
-	 * The feature id for the '<em><b>Importing Classes</b></em>' reference list.
+	 * The number of structural features of the '<em>Interface Implementation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONTAINED__IMPORTING_CLASSES = 2;
+	int INTERFACE_IMPLEMENTATION_FEATURE_COUNT = 2;
 
 	/**
-	 * The number of structural features of the '<em>Contained</em>' class.
+	 * The number of operations of the '<em>Interface Implementation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONTAINED_FEATURE_COUNT = 3;
-
-	/**
-	 * The number of operations of the '<em>Contained</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONTAINED_OPERATION_COUNT = 0;
+	int INTERFACE_IMPLEMENTATION_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link de.silvawb.java.impl.FieldImpl <em>Field</em>}' class.
@@ -557,7 +648,7 @@ public interface JavaPackage extends EPackage {
 	 * @see de.silvawb.java.impl.JavaPackageImpl#getField()
 	 * @generated
 	 */
-	int FIELD = 4;
+	int FIELD = 5;
 
 	/**
 	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
@@ -666,7 +757,7 @@ public interface JavaPackage extends EPackage {
 	 * @see de.silvawb.java.impl.JavaPackageImpl#getMethod()
 	 * @generated
 	 */
-	int METHOD = 6;
+	int METHOD = 7;
 
 	/**
 	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
@@ -802,7 +893,7 @@ public interface JavaPackage extends EPackage {
 	 * @see de.silvawb.java.impl.JavaPackageImpl#getArgument()
 	 * @generated
 	 */
-	int ARGUMENT = 7;
+	int ARGUMENT = 8;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -858,7 +949,43 @@ public interface JavaPackage extends EPackage {
 	 * @see de.silvawb.java.impl.JavaPackageImpl#getInterface()
 	 * @generated
 	 */
-	int INTERFACE = 9;
+	int INTERFACE = 10;
+
+	/**
+	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERFACE__VISIBILITY = CLASSIFIER__VISIBILITY;
+
+	/**
+	 * The feature id for the '<em><b>Container</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERFACE__CONTAINER = CLASSIFIER__CONTAINER;
+
+	/**
+	 * The feature id for the '<em><b>Importing Classes</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERFACE__IMPORTING_CLASSES = CLASSIFIER__IMPORTING_CLASSES;
+
+	/**
+	 * The feature id for the '<em><b>Contained Elements</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERFACE__CONTAINED_ELEMENTS = CLASSIFIER__CONTAINED_ELEMENTS;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -933,49 +1060,13 @@ public interface JavaPackage extends EPackage {
 	int INTERFACE__TYPING_ARGUMENTS = CLASSIFIER__TYPING_ARGUMENTS;
 
 	/**
-	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
+	 * The feature id for the '<em><b>Interface Implementations</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERFACE__VISIBILITY = CLASSIFIER_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Container</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERFACE__CONTAINER = CLASSIFIER_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Importing Classes</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERFACE__IMPORTING_CLASSES = CLASSIFIER_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Contained Elements</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERFACE__CONTAINED_ELEMENTS = CLASSIFIER_FEATURE_COUNT + 3;
-
-	/**
-	 * The feature id for the '<em><b>Implementing Classes</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERFACE__IMPLEMENTING_CLASSES = CLASSIFIER_FEATURE_COUNT + 4;
+	int INTERFACE__INTERFACE_IMPLEMENTATIONS = CLASSIFIER__INTERFACE_IMPLEMENTATIONS;
 
 	/**
 	 * The feature id for the '<em><b>Extended Interfaces</b></em>' reference list.
@@ -984,7 +1075,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERFACE__EXTENDED_INTERFACES = CLASSIFIER_FEATURE_COUNT + 5;
+	int INTERFACE__EXTENDED_INTERFACES = CLASSIFIER_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Extending Interfaces</b></em>' reference list.
@@ -993,7 +1084,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERFACE__EXTENDING_INTERFACES = CLASSIFIER_FEATURE_COUNT + 6;
+	int INTERFACE__EXTENDING_INTERFACES = CLASSIFIER_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Interface</em>' class.
@@ -1002,7 +1093,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERFACE_FEATURE_COUNT = CLASSIFIER_FEATURE_COUNT + 7;
+	int INTERFACE_FEATURE_COUNT = CLASSIFIER_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Interface</em>' class.
@@ -1021,7 +1112,7 @@ public interface JavaPackage extends EPackage {
 	 * @see de.silvawb.java.impl.JavaPackageImpl#getTemplateBinding()
 	 * @generated
 	 */
-	int TEMPLATE_BINDING = 10;
+	int TEMPLATE_BINDING = 11;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1144,17 +1235,6 @@ public interface JavaPackage extends EPackage {
 	EClass getClass_();
 
 	/**
-	 * Returns the meta object for the reference list '{@link de.silvawb.java.Class#getImplementedInterfaces <em>Implemented Interfaces</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Implemented Interfaces</em>'.
-	 * @see de.silvawb.java.Class#getImplementedInterfaces()
-	 * @see #getClass_()
-	 * @generated
-	 */
-	EReference getClass_ImplementedInterfaces();
-
-	/**
 	 * Returns the meta object for the reference '{@link de.silvawb.java.Class#getExtendedClass <em>Extended Class</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1219,6 +1299,38 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getClass_Imports();
+
+	/**
+	 * Returns the meta object for class '{@link de.silvawb.java.InterfaceImplementation <em>Interface Implementation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Interface Implementation</em>'.
+	 * @see de.silvawb.java.InterfaceImplementation
+	 * @generated
+	 */
+	EClass getInterfaceImplementation();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.java.InterfaceImplementation#getInterface <em>Interface</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Interface</em>'.
+	 * @see de.silvawb.java.InterfaceImplementation#getInterface()
+	 * @see #getInterfaceImplementation()
+	 * @generated
+	 */
+	EReference getInterfaceImplementation_Interface();
+
+	/**
+	 * Returns the meta object for the container reference '{@link de.silvawb.java.InterfaceImplementation#getImplementer <em>Implementer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the container reference '<em>Implementer</em>'.
+	 * @see de.silvawb.java.InterfaceImplementation#getImplementer()
+	 * @see #getInterfaceImplementation()
+	 * @generated
+	 */
+	EReference getInterfaceImplementation_Implementer();
 
 	/**
 	 * Returns the meta object for class '{@link de.silvawb.java.Classifier <em>Classifier</em>}'.
@@ -1317,6 +1429,17 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getClassifier_TypingArguments();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link de.silvawb.java.Classifier#getInterfaceImplementations <em>Interface Implementations</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Interface Implementations</em>'.
+	 * @see de.silvawb.java.Classifier#getInterfaceImplementations()
+	 * @see #getClassifier()
+	 * @generated
+	 */
+	EReference getClassifier_InterfaceImplementations();
 
 	/**
 	 * Returns the meta object for class '{@link de.silvawb.java.Field <em>Field</em>}'.
@@ -1621,17 +1744,6 @@ public interface JavaPackage extends EPackage {
 	EClass getInterface();
 
 	/**
-	 * Returns the meta object for the reference list '{@link de.silvawb.java.Interface#getImplementingClasses <em>Implementing Classes</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Implementing Classes</em>'.
-	 * @see de.silvawb.java.Interface#getImplementingClasses()
-	 * @see #getInterface()
-	 * @generated
-	 */
-	EReference getInterface_ImplementingClasses();
-
-	/**
 	 * Returns the meta object for the reference list '{@link de.silvawb.java.Interface#getExtendedInterfaces <em>Extended Interfaces</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1782,14 +1894,6 @@ public interface JavaPackage extends EPackage {
 		EClass CLASS = eINSTANCE.getClass_();
 
 		/**
-		 * The meta object literal for the '<em><b>Implemented Interfaces</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CLASS__IMPLEMENTED_INTERFACES = eINSTANCE.getClass_ImplementedInterfaces();
-
-		/**
 		 * The meta object literal for the '<em><b>Extended Class</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1836,6 +1940,32 @@ public interface JavaPackage extends EPackage {
 		 * @generated
 		 */
 		EReference CLASS__IMPORTS = eINSTANCE.getClass_Imports();
+
+		/**
+		 * The meta object literal for the '{@link de.silvawb.java.impl.InterfaceImplementationImpl <em>Interface Implementation</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.silvawb.java.impl.InterfaceImplementationImpl
+		 * @see de.silvawb.java.impl.JavaPackageImpl#getInterfaceImplementation()
+		 * @generated
+		 */
+		EClass INTERFACE_IMPLEMENTATION = eINSTANCE.getInterfaceImplementation();
+
+		/**
+		 * The meta object literal for the '<em><b>Interface</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference INTERFACE_IMPLEMENTATION__INTERFACE = eINSTANCE.getInterfaceImplementation_Interface();
+
+		/**
+		 * The meta object literal for the '<em><b>Implementer</b></em>' container reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference INTERFACE_IMPLEMENTATION__IMPLEMENTER = eINSTANCE.getInterfaceImplementation_Implementer();
 
 		/**
 		 * The meta object literal for the '{@link de.silvawb.java.impl.ClassifierImpl <em>Classifier</em>}' class.
@@ -1910,6 +2040,14 @@ public interface JavaPackage extends EPackage {
 		 * @generated
 		 */
 		EReference CLASSIFIER__TYPING_ARGUMENTS = eINSTANCE.getClassifier_TypingArguments();
+
+		/**
+		 * The meta object literal for the '<em><b>Interface Implementations</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CLASSIFIER__INTERFACE_IMPLEMENTATIONS = eINSTANCE.getClassifier_InterfaceImplementations();
 
 		/**
 		 * The meta object literal for the '{@link de.silvawb.java.impl.FieldImpl <em>Field</em>}' class.
@@ -2146,14 +2284,6 @@ public interface JavaPackage extends EPackage {
 		 * @generated
 		 */
 		EClass INTERFACE = eINSTANCE.getInterface();
-
-		/**
-		 * The meta object literal for the '<em><b>Implementing Classes</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference INTERFACE__IMPLEMENTING_CLASSES = eINSTANCE.getInterface_ImplementingClasses();
 
 		/**
 		 * The meta object literal for the '<em><b>Extended Interfaces</b></em>' reference list feature.

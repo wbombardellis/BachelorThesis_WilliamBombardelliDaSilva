@@ -12,19 +12,10 @@ import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
-import org.eclipse.emf.common.util.ResourceLocator;
-
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
-import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
-import org.eclipse.emf.edit.provider.IItemLabelProvider;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
-import org.eclipse.emf.edit.provider.IItemPropertySource;
-import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
-import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
-import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
 /**
@@ -34,13 +25,7 @@ import org.eclipse.emf.edit.provider.ViewerNotification;
  * @generated
  */
 public class ClassifierItemProvider 
-	extends ItemProviderAdapter
-	implements
-		IEditingDomainItemProvider,
-		IStructuredItemContentProvider,
-		ITreeItemContentProvider,
-		IItemLabelProvider,
-		IItemPropertySource {
+	extends ContainedItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
@@ -216,8 +201,10 @@ public class ClassifierItemProvider
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
+			childrenFeatures.add(JavaPackage.Literals.CONTAINER__CONTAINED_ELEMENTS);
 			childrenFeatures.add(JavaPackage.Literals.CLASSIFIER__FIELDS);
 			childrenFeatures.add(JavaPackage.Literals.CLASSIFIER__METHODS);
+			childrenFeatures.add(JavaPackage.Literals.CLASSIFIER__INTERFACE_IMPLEMENTATIONS);
 		}
 		return childrenFeatures;
 	}
@@ -265,8 +252,10 @@ public class ClassifierItemProvider
 			case JavaPackage.CLASSIFIER__NAME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
+			case JavaPackage.CLASSIFIER__CONTAINED_ELEMENTS:
 			case JavaPackage.CLASSIFIER__FIELDS:
 			case JavaPackage.CLASSIFIER__METHODS:
+			case JavaPackage.CLASSIFIER__INTERFACE_IMPLEMENTATIONS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -286,6 +275,31 @@ public class ClassifierItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
+				(JavaPackage.Literals.CONTAINER__CONTAINED_ELEMENTS,
+				 JavaFactory.eINSTANCE.createContained()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(JavaPackage.Literals.CONTAINER__CONTAINED_ELEMENTS,
+				 JavaFactory.eINSTANCE.createClass()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(JavaPackage.Literals.CONTAINER__CONTAINED_ELEMENTS,
+				 JavaFactory.eINSTANCE.createField()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(JavaPackage.Literals.CONTAINER__CONTAINED_ELEMENTS,
+				 JavaFactory.eINSTANCE.createMethod()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(JavaPackage.Literals.CONTAINER__CONTAINED_ELEMENTS,
+				 JavaFactory.eINSTANCE.createInterface()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(JavaPackage.Literals.CLASSIFIER__FIELDS,
 				 JavaFactory.eINSTANCE.createField()));
 
@@ -293,17 +307,35 @@ public class ClassifierItemProvider
 			(createChildParameter
 				(JavaPackage.Literals.CLASSIFIER__METHODS,
 				 JavaFactory.eINSTANCE.createMethod()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(JavaPackage.Literals.CLASSIFIER__INTERFACE_IMPLEMENTATIONS,
+				 JavaFactory.eINSTANCE.createInterfaceImplementation()));
 	}
 
 	/**
-	 * Return the resource locator for this item provider's resources.
+	 * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public ResourceLocator getResourceLocator() {
-		return JavaEditPlugin.INSTANCE;
+	public String getCreateChildText(Object owner, Object feature, Object child, Collection<?> selection) {
+		Object childFeature = feature;
+		Object childObject = child;
+
+		boolean qualify =
+			childFeature == JavaPackage.Literals.CONTAINER__CONTAINED_ELEMENTS ||
+			childFeature == JavaPackage.Literals.CLASSIFIER__FIELDS ||
+			childFeature == JavaPackage.Literals.CLASSIFIER__METHODS;
+
+		if (qualify) {
+			return getString
+				("_UI_CreateChild_text2",
+				 new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
+		}
+		return super.getCreateChildText(owner, feature, child, selection);
 	}
 
 }

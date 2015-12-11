@@ -49,6 +49,15 @@ public interface JavaFactory extends EFactory {
 	Class createClass();
 
 	/**
+	 * Returns a new object of class '<em>Interface Implementation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Interface Implementation</em>'.
+	 * @generated
+	 */
+	InterfaceImplementation createInterfaceImplementation();
+
+	/**
 	 * Returns a new object of class '<em>Field</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

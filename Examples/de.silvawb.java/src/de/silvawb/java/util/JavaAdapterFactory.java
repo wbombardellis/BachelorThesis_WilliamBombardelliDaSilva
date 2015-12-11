@@ -8,6 +8,7 @@ import de.silvawb.java.Contained;
 import de.silvawb.java.Container;
 import de.silvawb.java.Field;
 import de.silvawb.java.Interface;
+import de.silvawb.java.InterfaceImplementation;
 import de.silvawb.java.JavaPackage;
 
 import de.silvawb.java.Method;
@@ -86,6 +87,10 @@ public class JavaAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseClass(de.silvawb.java.Class object) {
 				return createClassAdapter();
+			}
+			@Override
+			public Adapter caseInterfaceImplementation(InterfaceImplementation object) {
+				return createInterfaceImplementationAdapter();
 			}
 			@Override
 			public Adapter caseClassifier(Classifier object) {
@@ -178,6 +183,20 @@ public class JavaAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createClassAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.java.InterfaceImplementation <em>Interface Implementation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.java.InterfaceImplementation
+	 * @generated
+	 */
+	public Adapter createInterfaceImplementationAdapter() {
 		return null;
 	}
 

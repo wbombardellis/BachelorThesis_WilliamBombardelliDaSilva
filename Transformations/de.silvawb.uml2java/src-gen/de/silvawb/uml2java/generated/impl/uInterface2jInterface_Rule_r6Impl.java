@@ -200,7 +200,7 @@ public class uInterface2jInterface_Rule_r6Impl extends OperationalRuleImpl imple
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return GeneratedPackage.Literals.UINTERFACE2J_INTERFACE_RULE_R6;
+		return GeneratedPackage.eINSTANCE.getuInterface2jInterface_Rule_r6();
 	}
 
 	/**
