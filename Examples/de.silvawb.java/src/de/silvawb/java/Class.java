@@ -2,9 +2,6 @@
  */
 package de.silvawb.java;
 
-import org.eclipse.emf.common.util.EList;
-
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Class</b></em>'.
@@ -19,7 +16,6 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link de.silvawb.java.Class#isIsAbstract <em>Is Abstract</em>}</li>
  *   <li>{@link de.silvawb.java.Class#isIsFinal <em>Is Final</em>}</li>
  *   <li>{@link de.silvawb.java.Class#isIsStatic <em>Is Static</em>}</li>
- *   <li>{@link de.silvawb.java.Class#getImports <em>Imports</em>}</li>
  * </ul>
  *
  * @see de.silvawb.java.JavaPackage#getClass_()
@@ -161,22 +157,4 @@ public interface Class extends Classifier {
 	 * @generated
 	 */
 	void setIsStatic(boolean value);
-
-	/**
-	 * Returns the value of the '<em><b>Imports</b></em>' reference list.
-	 * The list contents are of type {@link de.silvawb.java.Contained}.
-	 * It is bidirectional and its opposite is '{@link de.silvawb.java.Contained#getImportingClasses <em>Importing Classes</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Imports</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Imports</em>' reference list.
-	 * @see de.silvawb.java.JavaPackage#getClass_Imports()
-	 * @see de.silvawb.java.Contained#getImportingClasses
-	 * @model opposite="importingClasses" ordered="false"
-	 * @generated
-	 */
-	EList<Contained> getImports();
 } // Class

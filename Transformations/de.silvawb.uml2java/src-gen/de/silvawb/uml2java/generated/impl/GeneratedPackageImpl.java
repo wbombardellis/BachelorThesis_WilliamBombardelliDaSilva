@@ -52,21 +52,7 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass uCOperation2jCMethod_RuleEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass uInterface2jInterface_RuleEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass uIOperation2jIMethod_RuleEClass = null;
+	private EClass uClass2jClass_RuleEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -80,13 +66,6 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass uCAttribute2jCAttribute_RuleEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass uPackage2jPackage_RuleEClass = null;
 
 	/**
@@ -94,7 +73,35 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass uClass2jClass_RuleEClass = null;
+	private EClass uCAttribute2jCAttribute_RuleEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass uIOperation2jIMethod_RuleEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass uCOperation2jCMethod_RuleEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass uCGeneralization2jCGeneralization_RuleEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass uInterface2jInterface_RuleEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -108,42 +115,7 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass uIAttribute2jIAttribute_r7EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass uCAttribute2jCAttribute_Rule_r4EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass uIRealization2jIImplementation_Rule_r9EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass uClass2jClass_Rule_r3EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass uIOperation2jIMethod_Rule_r8EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass uInterface2jInterface_Rule_r6EClass = null;
+	private EClass uPackage2jPackage_Rule_r2EClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -157,7 +129,49 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass uPackage2jPackage_Rule_r2EClass = null;
+	private EClass uCGeneralization2jCGeneralization_Rule_r10EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass uIRealization2jIImplementation_Rule_r9EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass uIAttribute2jIAttribute_r7EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass uIOperation2jIMethod_Rule_r8EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass uCAttribute2jCAttribute_Rule_r4EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass uClass2jClass_Rule_r3EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass uInterface2jInterface_Rule_r6EClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -273,38 +287,12 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getuCOperation2jCMethod_Rule() {
-		if (uCOperation2jCMethod_RuleEClass == null) {
-			uCOperation2jCMethod_RuleEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
+	public EClass getuClass2jClass_Rule() {
+		if (uClass2jClass_RuleEClass == null) {
+			uClass2jClass_RuleEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
 					.getEClassifiers().get(3);
 		}
-		return uCOperation2jCMethod_RuleEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getuInterface2jInterface_Rule() {
-		if (uInterface2jInterface_RuleEClass == null) {
-			uInterface2jInterface_RuleEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
-					.getEClassifiers().get(4);
-		}
-		return uInterface2jInterface_RuleEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getuIOperation2jIMethod_Rule() {
-		if (uIOperation2jIMethod_RuleEClass == null) {
-			uIOperation2jIMethod_RuleEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
-					.getEClassifiers().get(5);
-		}
-		return uIOperation2jIMethod_RuleEClass;
+		return uClass2jClass_RuleEClass;
 	}
 
 	/**
@@ -315,22 +303,9 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	public EClass getuIRealization2jIImplementation_Rule() {
 		if (uIRealization2jIImplementation_RuleEClass == null) {
 			uIRealization2jIImplementation_RuleEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(6);
+					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(4);
 		}
 		return uIRealization2jIImplementation_RuleEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getuCAttribute2jCAttribute_Rule() {
-		if (uCAttribute2jCAttribute_RuleEClass == null) {
-			uCAttribute2jCAttribute_RuleEClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(7);
-		}
-		return uCAttribute2jCAttribute_RuleEClass;
 	}
 
 	/**
@@ -341,7 +316,7 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	public EClass getuPackage2jPackage_Rule() {
 		if (uPackage2jPackage_RuleEClass == null) {
 			uPackage2jPackage_RuleEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
-					.getEClassifiers().get(8);
+					.getEClassifiers().get(5);
 		}
 		return uPackage2jPackage_RuleEClass;
 	}
@@ -351,12 +326,64 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getuClass2jClass_Rule() {
-		if (uClass2jClass_RuleEClass == null) {
-			uClass2jClass_RuleEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
-					.getEClassifiers().get(9);
+	public EClass getuCAttribute2jCAttribute_Rule() {
+		if (uCAttribute2jCAttribute_RuleEClass == null) {
+			uCAttribute2jCAttribute_RuleEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(6);
 		}
-		return uClass2jClass_RuleEClass;
+		return uCAttribute2jCAttribute_RuleEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getuIOperation2jIMethod_Rule() {
+		if (uIOperation2jIMethod_RuleEClass == null) {
+			uIOperation2jIMethod_RuleEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
+					.getEClassifiers().get(7);
+		}
+		return uIOperation2jIMethod_RuleEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getuCOperation2jCMethod_Rule() {
+		if (uCOperation2jCMethod_RuleEClass == null) {
+			uCOperation2jCMethod_RuleEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
+					.getEClassifiers().get(8);
+		}
+		return uCOperation2jCMethod_RuleEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getuCGeneralization2jCGeneralization_Rule() {
+		if (uCGeneralization2jCGeneralization_RuleEClass == null) {
+			uCGeneralization2jCGeneralization_RuleEClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(9);
+		}
+		return uCGeneralization2jCGeneralization_RuleEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getuInterface2jInterface_Rule() {
+		if (uInterface2jInterface_RuleEClass == null) {
+			uInterface2jInterface_RuleEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
+					.getEClassifiers().get(10);
+		}
+		return uInterface2jInterface_RuleEClass;
 	}
 
 	/**
@@ -367,7 +394,7 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	public EClass getuml2javaAxiom_r1() {
 		if (uml2javaAxiom_r1EClass == null) {
 			uml2javaAxiom_r1EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
-					.getEClassifiers().get(10);
+					.getEClassifiers().get(11);
 		}
 		return uml2javaAxiom_r1EClass;
 	}
@@ -512,12 +539,12 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getuIAttribute2jIAttribute_r7() {
-		if (uIAttribute2jIAttribute_r7EClass == null) {
-			uIAttribute2jIAttribute_r7EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
-					.getEClassifiers().get(11);
+	public EClass getuPackage2jPackage_Rule_r2() {
+		if (uPackage2jPackage_Rule_r2EClass == null) {
+			uPackage2jPackage_Rule_r2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
+					.getEClassifiers().get(12);
 		}
-		return uIAttribute2jIAttribute_r7EClass;
+		return uPackage2jPackage_Rule_r2EClass;
 	}
 
 	/**
@@ -525,8 +552,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuIAttribute2jIAttribute_r7_AddElementActivity() {
-		return (EReference) getuIAttribute2jIAttribute_r7().getEStructuralFeatures().get(0);
+	public EReference getuPackage2jPackage_Rule_r2_AddElementActivity() {
+		return (EReference) getuPackage2jPackage_Rule_r2().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -534,8 +561,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuIAttribute2jIAttribute_r7_MoveElementActivity() {
-		return (EReference) getuIAttribute2jIAttribute_r7().getEStructuralFeatures().get(1);
+	public EReference getuPackage2jPackage_Rule_r2_MoveElementActivity() {
+		return (EReference) getuPackage2jPackage_Rule_r2().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -543,8 +570,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuIAttribute2jIAttribute_r7_ChangeAttributeActivity() {
-		return (EReference) getuIAttribute2jIAttribute_r7().getEStructuralFeatures().get(2);
+	public EReference getuPackage2jPackage_Rule_r2_ChangeAttributeActivity() {
+		return (EReference) getuPackage2jPackage_Rule_r2().getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -552,8 +579,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuIAttribute2jIAttribute_r7_TransformForwardActivity() {
-		return (EReference) getuIAttribute2jIAttribute_r7().getEStructuralFeatures().get(3);
+	public EReference getuPackage2jPackage_Rule_r2_TransformForwardActivity() {
+		return (EReference) getuPackage2jPackage_Rule_r2().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -561,8 +588,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuIAttribute2jIAttribute_r7_TransformMappingActivity() {
-		return (EReference) getuIAttribute2jIAttribute_r7().getEStructuralFeatures().get(4);
+	public EReference getuPackage2jPackage_Rule_r2_TransformMappingActivity() {
+		return (EReference) getuPackage2jPackage_Rule_r2().getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -570,8 +597,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuIAttribute2jIAttribute_r7_TransformBackwardActivity() {
-		return (EReference) getuIAttribute2jIAttribute_r7().getEStructuralFeatures().get(5);
+	public EReference getuPackage2jPackage_Rule_r2_TransformBackwardActivity() {
+		return (EReference) getuPackage2jPackage_Rule_r2().getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -579,8 +606,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuIAttribute2jIAttribute_r7_ConflictCheckForwardActivity() {
-		return (EReference) getuIAttribute2jIAttribute_r7().getEStructuralFeatures().get(6);
+	public EReference getuPackage2jPackage_Rule_r2_ConflictCheckForwardActivity() {
+		return (EReference) getuPackage2jPackage_Rule_r2().getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -588,8 +615,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuIAttribute2jIAttribute_r7_ConflictCheckMappingActivity() {
-		return (EReference) getuIAttribute2jIAttribute_r7().getEStructuralFeatures().get(7);
+	public EReference getuPackage2jPackage_Rule_r2_ConflictCheckMappingActivity() {
+		return (EReference) getuPackage2jPackage_Rule_r2().getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -597,8 +624,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuIAttribute2jIAttribute_r7_ConflictCheckBackwardActivity() {
-		return (EReference) getuIAttribute2jIAttribute_r7().getEStructuralFeatures().get(8);
+	public EReference getuPackage2jPackage_Rule_r2_ConflictCheckBackwardActivity() {
+		return (EReference) getuPackage2jPackage_Rule_r2().getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -606,8 +633,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuIAttribute2jIAttribute_r7_SynchronizeForwardActivity() {
-		return (EReference) getuIAttribute2jIAttribute_r7().getEStructuralFeatures().get(9);
+	public EReference getuPackage2jPackage_Rule_r2_SynchronizeForwardActivity() {
+		return (EReference) getuPackage2jPackage_Rule_r2().getEStructuralFeatures().get(9);
 	}
 
 	/**
@@ -615,8 +642,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuIAttribute2jIAttribute_r7_SynchronizeBackwardActivity() {
-		return (EReference) getuIAttribute2jIAttribute_r7().getEStructuralFeatures().get(10);
+	public EReference getuPackage2jPackage_Rule_r2_SynchronizeBackwardActivity() {
+		return (EReference) getuPackage2jPackage_Rule_r2().getEStructuralFeatures().get(10);
 	}
 
 	/**
@@ -624,8 +651,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuIAttribute2jIAttribute_r7_RepairForwardActivity() {
-		return (EReference) getuIAttribute2jIAttribute_r7().getEStructuralFeatures().get(11);
+	public EReference getuPackage2jPackage_Rule_r2_RepairForwardActivity() {
+		return (EReference) getuPackage2jPackage_Rule_r2().getEStructuralFeatures().get(11);
 	}
 
 	/**
@@ -633,8 +660,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuIAttribute2jIAttribute_r7_RepairBackwardActivity() {
-		return (EReference) getuIAttribute2jIAttribute_r7().getEStructuralFeatures().get(12);
+	public EReference getuPackage2jPackage_Rule_r2_RepairBackwardActivity() {
+		return (EReference) getuPackage2jPackage_Rule_r2().getEStructuralFeatures().get(12);
 	}
 
 	/**
@@ -642,8 +669,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuIAttribute2jIAttribute_r7__AddElement__EMap() {
-		return getuIAttribute2jIAttribute_r7().getEOperations().get(0);
+	public EOperation getuPackage2jPackage_Rule_r2__AddElement__EMap() {
+		return getuPackage2jPackage_Rule_r2().getEOperations().get(0);
 	}
 
 	/**
@@ -651,8 +678,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuIAttribute2jIAttribute_r7__ChangeAttributeValues__TGGNode_EMap() {
-		return getuIAttribute2jIAttribute_r7().getEOperations().get(1);
+	public EOperation getuPackage2jPackage_Rule_r2__ChangeAttributeValues__TGGNode_EMap() {
+		return getuPackage2jPackage_Rule_r2().getEOperations().get(1);
 	}
 
 	/**
@@ -660,8 +687,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuIAttribute2jIAttribute_r7__MoveElement__TGGNode_TGGNode_TGGNode() {
-		return getuIAttribute2jIAttribute_r7().getEOperations().get(2);
+	public EOperation getuPackage2jPackage_Rule_r2__MoveElement__TGGNode_TGGNode_TGGNode() {
+		return getuPackage2jPackage_Rule_r2().getEOperations().get(2);
 	}
 
 	/**
@@ -669,8 +696,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuIAttribute2jIAttribute_r7__TransformForward__TGGNode_boolean_boolean() {
-		return getuIAttribute2jIAttribute_r7().getEOperations().get(3);
+	public EOperation getuPackage2jPackage_Rule_r2__TransformForward__TGGNode_boolean_boolean() {
+		return getuPackage2jPackage_Rule_r2().getEOperations().get(3);
 	}
 
 	/**
@@ -678,8 +705,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuIAttribute2jIAttribute_r7__TransformMapping__TGGNode_boolean_boolean() {
-		return getuIAttribute2jIAttribute_r7().getEOperations().get(4);
+	public EOperation getuPackage2jPackage_Rule_r2__TransformMapping__TGGNode_boolean_boolean() {
+		return getuPackage2jPackage_Rule_r2().getEOperations().get(4);
 	}
 
 	/**
@@ -687,8 +714,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuIAttribute2jIAttribute_r7__TransformBackward__TGGNode_boolean_boolean() {
-		return getuIAttribute2jIAttribute_r7().getEOperations().get(5);
+	public EOperation getuPackage2jPackage_Rule_r2__TransformBackward__TGGNode_boolean_boolean() {
+		return getuPackage2jPackage_Rule_r2().getEOperations().get(5);
 	}
 
 	/**
@@ -696,8 +723,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuIAttribute2jIAttribute_r7__ConflictCheckForward__TGGNode() {
-		return getuIAttribute2jIAttribute_r7().getEOperations().get(6);
+	public EOperation getuPackage2jPackage_Rule_r2__ConflictCheckForward__TGGNode() {
+		return getuPackage2jPackage_Rule_r2().getEOperations().get(6);
 	}
 
 	/**
@@ -705,8 +732,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuIAttribute2jIAttribute_r7__ConflictCheckMapping__TGGNode() {
-		return getuIAttribute2jIAttribute_r7().getEOperations().get(7);
+	public EOperation getuPackage2jPackage_Rule_r2__ConflictCheckMapping__TGGNode() {
+		return getuPackage2jPackage_Rule_r2().getEOperations().get(7);
 	}
 
 	/**
@@ -714,8 +741,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuIAttribute2jIAttribute_r7__ConflictCheckBackward__TGGNode() {
-		return getuIAttribute2jIAttribute_r7().getEOperations().get(8);
+	public EOperation getuPackage2jPackage_Rule_r2__ConflictCheckBackward__TGGNode() {
+		return getuPackage2jPackage_Rule_r2().getEOperations().get(8);
 	}
 
 	/**
@@ -723,8 +750,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuIAttribute2jIAttribute_r7__SynchronizeForward__TGGNode_boolean() {
-		return getuIAttribute2jIAttribute_r7().getEOperations().get(9);
+	public EOperation getuPackage2jPackage_Rule_r2__SynchronizeForward__TGGNode_boolean() {
+		return getuPackage2jPackage_Rule_r2().getEOperations().get(9);
 	}
 
 	/**
@@ -732,8 +759,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuIAttribute2jIAttribute_r7__SynchronizeBackward__TGGNode_boolean() {
-		return getuIAttribute2jIAttribute_r7().getEOperations().get(10);
+	public EOperation getuPackage2jPackage_Rule_r2__SynchronizeBackward__TGGNode_boolean() {
+		return getuPackage2jPackage_Rule_r2().getEOperations().get(10);
 	}
 
 	/**
@@ -741,8 +768,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuIAttribute2jIAttribute_r7__RepairForward__TGGNode_boolean() {
-		return getuIAttribute2jIAttribute_r7().getEOperations().get(11);
+	public EOperation getuPackage2jPackage_Rule_r2__RepairForward__TGGNode_boolean() {
+		return getuPackage2jPackage_Rule_r2().getEOperations().get(11);
 	}
 
 	/**
@@ -750,1243 +777,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuIAttribute2jIAttribute_r7__RepairBackward__TGGNode_boolean() {
-		return getuIAttribute2jIAttribute_r7().getEOperations().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getuCAttribute2jCAttribute_Rule_r4() {
-		if (uCAttribute2jCAttribute_Rule_r4EClass == null) {
-			uCAttribute2jCAttribute_Rule_r4EClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(12);
-		}
-		return uCAttribute2jCAttribute_Rule_r4EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuCAttribute2jCAttribute_Rule_r4_AddElementActivity() {
-		return (EReference) getuCAttribute2jCAttribute_Rule_r4().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuCAttribute2jCAttribute_Rule_r4_MoveElementActivity() {
-		return (EReference) getuCAttribute2jCAttribute_Rule_r4().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuCAttribute2jCAttribute_Rule_r4_ChangeAttributeActivity() {
-		return (EReference) getuCAttribute2jCAttribute_Rule_r4().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuCAttribute2jCAttribute_Rule_r4_TransformForwardActivity() {
-		return (EReference) getuCAttribute2jCAttribute_Rule_r4().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuCAttribute2jCAttribute_Rule_r4_TransformMappingActivity() {
-		return (EReference) getuCAttribute2jCAttribute_Rule_r4().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuCAttribute2jCAttribute_Rule_r4_TransformBackwardActivity() {
-		return (EReference) getuCAttribute2jCAttribute_Rule_r4().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuCAttribute2jCAttribute_Rule_r4_ConflictCheckForwardActivity() {
-		return (EReference) getuCAttribute2jCAttribute_Rule_r4().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuCAttribute2jCAttribute_Rule_r4_ConflictCheckMappingActivity() {
-		return (EReference) getuCAttribute2jCAttribute_Rule_r4().getEStructuralFeatures().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuCAttribute2jCAttribute_Rule_r4_ConflictCheckBackwardActivity() {
-		return (EReference) getuCAttribute2jCAttribute_Rule_r4().getEStructuralFeatures().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuCAttribute2jCAttribute_Rule_r4_SynchronizeForwardActivity() {
-		return (EReference) getuCAttribute2jCAttribute_Rule_r4().getEStructuralFeatures().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuCAttribute2jCAttribute_Rule_r4_SynchronizeBackwardActivity() {
-		return (EReference) getuCAttribute2jCAttribute_Rule_r4().getEStructuralFeatures().get(10);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuCAttribute2jCAttribute_Rule_r4_RepairForwardActivity() {
-		return (EReference) getuCAttribute2jCAttribute_Rule_r4().getEStructuralFeatures().get(11);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuCAttribute2jCAttribute_Rule_r4_RepairBackwardActivity() {
-		return (EReference) getuCAttribute2jCAttribute_Rule_r4().getEStructuralFeatures().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuCAttribute2jCAttribute_Rule_r4__AddElement__EMap() {
-		return getuCAttribute2jCAttribute_Rule_r4().getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuCAttribute2jCAttribute_Rule_r4__ChangeAttributeValues__TGGNode_EMap() {
-		return getuCAttribute2jCAttribute_Rule_r4().getEOperations().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuCAttribute2jCAttribute_Rule_r4__MoveElement__TGGNode_TGGNode_TGGNode() {
-		return getuCAttribute2jCAttribute_Rule_r4().getEOperations().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuCAttribute2jCAttribute_Rule_r4__TransformForward__TGGNode_boolean_boolean() {
-		return getuCAttribute2jCAttribute_Rule_r4().getEOperations().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuCAttribute2jCAttribute_Rule_r4__TransformMapping__TGGNode_boolean_boolean() {
-		return getuCAttribute2jCAttribute_Rule_r4().getEOperations().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuCAttribute2jCAttribute_Rule_r4__TransformBackward__TGGNode_boolean_boolean() {
-		return getuCAttribute2jCAttribute_Rule_r4().getEOperations().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuCAttribute2jCAttribute_Rule_r4__ConflictCheckForward__TGGNode() {
-		return getuCAttribute2jCAttribute_Rule_r4().getEOperations().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuCAttribute2jCAttribute_Rule_r4__ConflictCheckMapping__TGGNode() {
-		return getuCAttribute2jCAttribute_Rule_r4().getEOperations().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuCAttribute2jCAttribute_Rule_r4__ConflictCheckBackward__TGGNode() {
-		return getuCAttribute2jCAttribute_Rule_r4().getEOperations().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuCAttribute2jCAttribute_Rule_r4__SynchronizeForward__TGGNode_boolean() {
-		return getuCAttribute2jCAttribute_Rule_r4().getEOperations().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuCAttribute2jCAttribute_Rule_r4__SynchronizeBackward__TGGNode_boolean() {
-		return getuCAttribute2jCAttribute_Rule_r4().getEOperations().get(10);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuCAttribute2jCAttribute_Rule_r4__RepairForward__TGGNode_boolean() {
-		return getuCAttribute2jCAttribute_Rule_r4().getEOperations().get(11);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuCAttribute2jCAttribute_Rule_r4__RepairBackward__TGGNode_boolean() {
-		return getuCAttribute2jCAttribute_Rule_r4().getEOperations().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getuIRealization2jIImplementation_Rule_r9() {
-		if (uIRealization2jIImplementation_Rule_r9EClass == null) {
-			uIRealization2jIImplementation_Rule_r9EClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(13);
-		}
-		return uIRealization2jIImplementation_Rule_r9EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuIRealization2jIImplementation_Rule_r9_AddElementActivity() {
-		return (EReference) getuIRealization2jIImplementation_Rule_r9().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuIRealization2jIImplementation_Rule_r9_MoveElementActivity() {
-		return (EReference) getuIRealization2jIImplementation_Rule_r9().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuIRealization2jIImplementation_Rule_r9_ChangeAttributeActivity() {
-		return (EReference) getuIRealization2jIImplementation_Rule_r9().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuIRealization2jIImplementation_Rule_r9_TransformForwardActivity() {
-		return (EReference) getuIRealization2jIImplementation_Rule_r9().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuIRealization2jIImplementation_Rule_r9_TransformMappingActivity() {
-		return (EReference) getuIRealization2jIImplementation_Rule_r9().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuIRealization2jIImplementation_Rule_r9_TransformBackwardActivity() {
-		return (EReference) getuIRealization2jIImplementation_Rule_r9().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuIRealization2jIImplementation_Rule_r9_ConflictCheckForwardActivity() {
-		return (EReference) getuIRealization2jIImplementation_Rule_r9().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuIRealization2jIImplementation_Rule_r9_ConflictCheckMappingActivity() {
-		return (EReference) getuIRealization2jIImplementation_Rule_r9().getEStructuralFeatures().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuIRealization2jIImplementation_Rule_r9_ConflictCheckBackwardActivity() {
-		return (EReference) getuIRealization2jIImplementation_Rule_r9().getEStructuralFeatures().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuIRealization2jIImplementation_Rule_r9_SynchronizeForwardActivity() {
-		return (EReference) getuIRealization2jIImplementation_Rule_r9().getEStructuralFeatures().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuIRealization2jIImplementation_Rule_r9_SynchronizeBackwardActivity() {
-		return (EReference) getuIRealization2jIImplementation_Rule_r9().getEStructuralFeatures().get(10);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuIRealization2jIImplementation_Rule_r9_RepairForwardActivity() {
-		return (EReference) getuIRealization2jIImplementation_Rule_r9().getEStructuralFeatures().get(11);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuIRealization2jIImplementation_Rule_r9_RepairBackwardActivity() {
-		return (EReference) getuIRealization2jIImplementation_Rule_r9().getEStructuralFeatures().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuIRealization2jIImplementation_Rule_r9__AddElement__EMap() {
-		return getuIRealization2jIImplementation_Rule_r9().getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuIRealization2jIImplementation_Rule_r9__ChangeAttributeValues__TGGNode_EMap() {
-		return getuIRealization2jIImplementation_Rule_r9().getEOperations().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuIRealization2jIImplementation_Rule_r9__MoveElement__TGGNode_TGGNode_TGGNode() {
-		return getuIRealization2jIImplementation_Rule_r9().getEOperations().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuIRealization2jIImplementation_Rule_r9__TransformForward__TGGNode_boolean_boolean() {
-		return getuIRealization2jIImplementation_Rule_r9().getEOperations().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuIRealization2jIImplementation_Rule_r9__TransformMapping__TGGNode_boolean_boolean() {
-		return getuIRealization2jIImplementation_Rule_r9().getEOperations().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuIRealization2jIImplementation_Rule_r9__TransformBackward__TGGNode_boolean_boolean() {
-		return getuIRealization2jIImplementation_Rule_r9().getEOperations().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuIRealization2jIImplementation_Rule_r9__ConflictCheckForward__TGGNode() {
-		return getuIRealization2jIImplementation_Rule_r9().getEOperations().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuIRealization2jIImplementation_Rule_r9__ConflictCheckMapping__TGGNode() {
-		return getuIRealization2jIImplementation_Rule_r9().getEOperations().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuIRealization2jIImplementation_Rule_r9__ConflictCheckBackward__TGGNode() {
-		return getuIRealization2jIImplementation_Rule_r9().getEOperations().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuIRealization2jIImplementation_Rule_r9__SynchronizeForward__TGGNode_boolean() {
-		return getuIRealization2jIImplementation_Rule_r9().getEOperations().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuIRealization2jIImplementation_Rule_r9__SynchronizeBackward__TGGNode_boolean() {
-		return getuIRealization2jIImplementation_Rule_r9().getEOperations().get(10);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuIRealization2jIImplementation_Rule_r9__RepairForward__TGGNode_boolean() {
-		return getuIRealization2jIImplementation_Rule_r9().getEOperations().get(11);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuIRealization2jIImplementation_Rule_r9__RepairBackward__TGGNode_boolean() {
-		return getuIRealization2jIImplementation_Rule_r9().getEOperations().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getuClass2jClass_Rule_r3() {
-		if (uClass2jClass_Rule_r3EClass == null) {
-			uClass2jClass_Rule_r3EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
-					.getEClassifiers().get(14);
-		}
-		return uClass2jClass_Rule_r3EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuClass2jClass_Rule_r3_AddElementActivity() {
-		return (EReference) getuClass2jClass_Rule_r3().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuClass2jClass_Rule_r3_MoveElementActivity() {
-		return (EReference) getuClass2jClass_Rule_r3().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuClass2jClass_Rule_r3_ChangeAttributeActivity() {
-		return (EReference) getuClass2jClass_Rule_r3().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuClass2jClass_Rule_r3_TransformForwardActivity() {
-		return (EReference) getuClass2jClass_Rule_r3().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuClass2jClass_Rule_r3_TransformMappingActivity() {
-		return (EReference) getuClass2jClass_Rule_r3().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuClass2jClass_Rule_r3_TransformBackwardActivity() {
-		return (EReference) getuClass2jClass_Rule_r3().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuClass2jClass_Rule_r3_ConflictCheckForwardActivity() {
-		return (EReference) getuClass2jClass_Rule_r3().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuClass2jClass_Rule_r3_ConflictCheckMappingActivity() {
-		return (EReference) getuClass2jClass_Rule_r3().getEStructuralFeatures().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuClass2jClass_Rule_r3_ConflictCheckBackwardActivity() {
-		return (EReference) getuClass2jClass_Rule_r3().getEStructuralFeatures().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuClass2jClass_Rule_r3_SynchronizeForwardActivity() {
-		return (EReference) getuClass2jClass_Rule_r3().getEStructuralFeatures().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuClass2jClass_Rule_r3_SynchronizeBackwardActivity() {
-		return (EReference) getuClass2jClass_Rule_r3().getEStructuralFeatures().get(10);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuClass2jClass_Rule_r3_RepairForwardActivity() {
-		return (EReference) getuClass2jClass_Rule_r3().getEStructuralFeatures().get(11);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuClass2jClass_Rule_r3_RepairBackwardActivity() {
-		return (EReference) getuClass2jClass_Rule_r3().getEStructuralFeatures().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuClass2jClass_Rule_r3__AddElement__EMap() {
-		return getuClass2jClass_Rule_r3().getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuClass2jClass_Rule_r3__ChangeAttributeValues__TGGNode_EMap() {
-		return getuClass2jClass_Rule_r3().getEOperations().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuClass2jClass_Rule_r3__MoveElement__TGGNode_TGGNode_TGGNode() {
-		return getuClass2jClass_Rule_r3().getEOperations().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuClass2jClass_Rule_r3__TransformForward__TGGNode_boolean_boolean() {
-		return getuClass2jClass_Rule_r3().getEOperations().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuClass2jClass_Rule_r3__TransformMapping__TGGNode_boolean_boolean() {
-		return getuClass2jClass_Rule_r3().getEOperations().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuClass2jClass_Rule_r3__TransformBackward__TGGNode_boolean_boolean() {
-		return getuClass2jClass_Rule_r3().getEOperations().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuClass2jClass_Rule_r3__ConflictCheckForward__TGGNode() {
-		return getuClass2jClass_Rule_r3().getEOperations().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuClass2jClass_Rule_r3__ConflictCheckMapping__TGGNode() {
-		return getuClass2jClass_Rule_r3().getEOperations().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuClass2jClass_Rule_r3__ConflictCheckBackward__TGGNode() {
-		return getuClass2jClass_Rule_r3().getEOperations().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuClass2jClass_Rule_r3__SynchronizeForward__TGGNode_boolean() {
-		return getuClass2jClass_Rule_r3().getEOperations().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuClass2jClass_Rule_r3__SynchronizeBackward__TGGNode_boolean() {
-		return getuClass2jClass_Rule_r3().getEOperations().get(10);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuClass2jClass_Rule_r3__RepairForward__TGGNode_boolean() {
-		return getuClass2jClass_Rule_r3().getEOperations().get(11);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuClass2jClass_Rule_r3__RepairBackward__TGGNode_boolean() {
-		return getuClass2jClass_Rule_r3().getEOperations().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getuIOperation2jIMethod_Rule_r8() {
-		if (uIOperation2jIMethod_Rule_r8EClass == null) {
-			uIOperation2jIMethod_Rule_r8EClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(15);
-		}
-		return uIOperation2jIMethod_Rule_r8EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuIOperation2jIMethod_Rule_r8_AddElementActivity() {
-		return (EReference) getuIOperation2jIMethod_Rule_r8().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuIOperation2jIMethod_Rule_r8_MoveElementActivity() {
-		return (EReference) getuIOperation2jIMethod_Rule_r8().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuIOperation2jIMethod_Rule_r8_ChangeAttributeActivity() {
-		return (EReference) getuIOperation2jIMethod_Rule_r8().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuIOperation2jIMethod_Rule_r8_TransformForwardActivity() {
-		return (EReference) getuIOperation2jIMethod_Rule_r8().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuIOperation2jIMethod_Rule_r8_TransformMappingActivity() {
-		return (EReference) getuIOperation2jIMethod_Rule_r8().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuIOperation2jIMethod_Rule_r8_TransformBackwardActivity() {
-		return (EReference) getuIOperation2jIMethod_Rule_r8().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuIOperation2jIMethod_Rule_r8_ConflictCheckForwardActivity() {
-		return (EReference) getuIOperation2jIMethod_Rule_r8().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuIOperation2jIMethod_Rule_r8_ConflictCheckMappingActivity() {
-		return (EReference) getuIOperation2jIMethod_Rule_r8().getEStructuralFeatures().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuIOperation2jIMethod_Rule_r8_ConflictCheckBackwardActivity() {
-		return (EReference) getuIOperation2jIMethod_Rule_r8().getEStructuralFeatures().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuIOperation2jIMethod_Rule_r8_SynchronizeForwardActivity() {
-		return (EReference) getuIOperation2jIMethod_Rule_r8().getEStructuralFeatures().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuIOperation2jIMethod_Rule_r8_SynchronizeBackwardActivity() {
-		return (EReference) getuIOperation2jIMethod_Rule_r8().getEStructuralFeatures().get(10);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuIOperation2jIMethod_Rule_r8_RepairForwardActivity() {
-		return (EReference) getuIOperation2jIMethod_Rule_r8().getEStructuralFeatures().get(11);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuIOperation2jIMethod_Rule_r8_RepairBackwardActivity() {
-		return (EReference) getuIOperation2jIMethod_Rule_r8().getEStructuralFeatures().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuIOperation2jIMethod_Rule_r8__AddElement__EMap() {
-		return getuIOperation2jIMethod_Rule_r8().getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuIOperation2jIMethod_Rule_r8__ChangeAttributeValues__TGGNode_EMap() {
-		return getuIOperation2jIMethod_Rule_r8().getEOperations().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuIOperation2jIMethod_Rule_r8__MoveElement__TGGNode_TGGNode_TGGNode() {
-		return getuIOperation2jIMethod_Rule_r8().getEOperations().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuIOperation2jIMethod_Rule_r8__TransformForward__TGGNode_boolean_boolean() {
-		return getuIOperation2jIMethod_Rule_r8().getEOperations().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuIOperation2jIMethod_Rule_r8__TransformMapping__TGGNode_boolean_boolean() {
-		return getuIOperation2jIMethod_Rule_r8().getEOperations().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuIOperation2jIMethod_Rule_r8__TransformBackward__TGGNode_boolean_boolean() {
-		return getuIOperation2jIMethod_Rule_r8().getEOperations().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuIOperation2jIMethod_Rule_r8__ConflictCheckForward__TGGNode() {
-		return getuIOperation2jIMethod_Rule_r8().getEOperations().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuIOperation2jIMethod_Rule_r8__ConflictCheckMapping__TGGNode() {
-		return getuIOperation2jIMethod_Rule_r8().getEOperations().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuIOperation2jIMethod_Rule_r8__ConflictCheckBackward__TGGNode() {
-		return getuIOperation2jIMethod_Rule_r8().getEOperations().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuIOperation2jIMethod_Rule_r8__SynchronizeForward__TGGNode_boolean() {
-		return getuIOperation2jIMethod_Rule_r8().getEOperations().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuIOperation2jIMethod_Rule_r8__SynchronizeBackward__TGGNode_boolean() {
-		return getuIOperation2jIMethod_Rule_r8().getEOperations().get(10);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuIOperation2jIMethod_Rule_r8__RepairForward__TGGNode_boolean() {
-		return getuIOperation2jIMethod_Rule_r8().getEOperations().get(11);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuIOperation2jIMethod_Rule_r8__RepairBackward__TGGNode_boolean() {
-		return getuIOperation2jIMethod_Rule_r8().getEOperations().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getuInterface2jInterface_Rule_r6() {
-		if (uInterface2jInterface_Rule_r6EClass == null) {
-			uInterface2jInterface_Rule_r6EClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(16);
-		}
-		return uInterface2jInterface_Rule_r6EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuInterface2jInterface_Rule_r6_AddElementActivity() {
-		return (EReference) getuInterface2jInterface_Rule_r6().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuInterface2jInterface_Rule_r6_MoveElementActivity() {
-		return (EReference) getuInterface2jInterface_Rule_r6().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuInterface2jInterface_Rule_r6_ChangeAttributeActivity() {
-		return (EReference) getuInterface2jInterface_Rule_r6().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuInterface2jInterface_Rule_r6_TransformForwardActivity() {
-		return (EReference) getuInterface2jInterface_Rule_r6().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuInterface2jInterface_Rule_r6_TransformMappingActivity() {
-		return (EReference) getuInterface2jInterface_Rule_r6().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuInterface2jInterface_Rule_r6_TransformBackwardActivity() {
-		return (EReference) getuInterface2jInterface_Rule_r6().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuInterface2jInterface_Rule_r6_ConflictCheckForwardActivity() {
-		return (EReference) getuInterface2jInterface_Rule_r6().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuInterface2jInterface_Rule_r6_ConflictCheckMappingActivity() {
-		return (EReference) getuInterface2jInterface_Rule_r6().getEStructuralFeatures().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuInterface2jInterface_Rule_r6_ConflictCheckBackwardActivity() {
-		return (EReference) getuInterface2jInterface_Rule_r6().getEStructuralFeatures().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuInterface2jInterface_Rule_r6_SynchronizeForwardActivity() {
-		return (EReference) getuInterface2jInterface_Rule_r6().getEStructuralFeatures().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuInterface2jInterface_Rule_r6_SynchronizeBackwardActivity() {
-		return (EReference) getuInterface2jInterface_Rule_r6().getEStructuralFeatures().get(10);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuInterface2jInterface_Rule_r6_RepairForwardActivity() {
-		return (EReference) getuInterface2jInterface_Rule_r6().getEStructuralFeatures().get(11);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuInterface2jInterface_Rule_r6_RepairBackwardActivity() {
-		return (EReference) getuInterface2jInterface_Rule_r6().getEStructuralFeatures().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuInterface2jInterface_Rule_r6__AddElement__EMap() {
-		return getuInterface2jInterface_Rule_r6().getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuInterface2jInterface_Rule_r6__ChangeAttributeValues__TGGNode_EMap() {
-		return getuInterface2jInterface_Rule_r6().getEOperations().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuInterface2jInterface_Rule_r6__MoveElement__TGGNode_TGGNode_TGGNode() {
-		return getuInterface2jInterface_Rule_r6().getEOperations().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuInterface2jInterface_Rule_r6__TransformForward__TGGNode_boolean_boolean() {
-		return getuInterface2jInterface_Rule_r6().getEOperations().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuInterface2jInterface_Rule_r6__TransformMapping__TGGNode_boolean_boolean() {
-		return getuInterface2jInterface_Rule_r6().getEOperations().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuInterface2jInterface_Rule_r6__TransformBackward__TGGNode_boolean_boolean() {
-		return getuInterface2jInterface_Rule_r6().getEOperations().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuInterface2jInterface_Rule_r6__ConflictCheckForward__TGGNode() {
-		return getuInterface2jInterface_Rule_r6().getEOperations().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuInterface2jInterface_Rule_r6__ConflictCheckMapping__TGGNode() {
-		return getuInterface2jInterface_Rule_r6().getEOperations().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuInterface2jInterface_Rule_r6__ConflictCheckBackward__TGGNode() {
-		return getuInterface2jInterface_Rule_r6().getEOperations().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuInterface2jInterface_Rule_r6__SynchronizeForward__TGGNode_boolean() {
-		return getuInterface2jInterface_Rule_r6().getEOperations().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuInterface2jInterface_Rule_r6__SynchronizeBackward__TGGNode_boolean() {
-		return getuInterface2jInterface_Rule_r6().getEOperations().get(10);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuInterface2jInterface_Rule_r6__RepairForward__TGGNode_boolean() {
-		return getuInterface2jInterface_Rule_r6().getEOperations().get(11);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuInterface2jInterface_Rule_r6__RepairBackward__TGGNode_boolean() {
-		return getuInterface2jInterface_Rule_r6().getEOperations().get(12);
+	public EOperation getuPackage2jPackage_Rule_r2__RepairBackward__TGGNode_boolean() {
+		return getuPackage2jPackage_Rule_r2().getEOperations().get(12);
 	}
 
 	/**
@@ -1997,7 +789,7 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	public EClass getuCOperation2jCMethod_Rule_r5() {
 		if (uCOperation2jCMethod_Rule_r5EClass == null) {
 			uCOperation2jCMethod_Rule_r5EClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(17);
+					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(13);
 		}
 		return uCOperation2jCMethod_Rule_r5EClass;
 	}
@@ -2241,12 +1033,12 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getuPackage2jPackage_Rule_r2() {
-		if (uPackage2jPackage_Rule_r2EClass == null) {
-			uPackage2jPackage_Rule_r2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
-					.getEClassifiers().get(18);
+	public EClass getuCGeneralization2jCGeneralization_Rule_r10() {
+		if (uCGeneralization2jCGeneralization_Rule_r10EClass == null) {
+			uCGeneralization2jCGeneralization_Rule_r10EClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(14);
 		}
-		return uPackage2jPackage_Rule_r2EClass;
+		return uCGeneralization2jCGeneralization_Rule_r10EClass;
 	}
 
 	/**
@@ -2254,8 +1046,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuPackage2jPackage_Rule_r2_AddElementActivity() {
-		return (EReference) getuPackage2jPackage_Rule_r2().getEStructuralFeatures().get(0);
+	public EReference getuCGeneralization2jCGeneralization_Rule_r10_AddElementActivity() {
+		return (EReference) getuCGeneralization2jCGeneralization_Rule_r10().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -2263,8 +1055,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuPackage2jPackage_Rule_r2_MoveElementActivity() {
-		return (EReference) getuPackage2jPackage_Rule_r2().getEStructuralFeatures().get(1);
+	public EReference getuCGeneralization2jCGeneralization_Rule_r10_MoveElementActivity() {
+		return (EReference) getuCGeneralization2jCGeneralization_Rule_r10().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -2272,8 +1064,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuPackage2jPackage_Rule_r2_ChangeAttributeActivity() {
-		return (EReference) getuPackage2jPackage_Rule_r2().getEStructuralFeatures().get(2);
+	public EReference getuCGeneralization2jCGeneralization_Rule_r10_ChangeAttributeActivity() {
+		return (EReference) getuCGeneralization2jCGeneralization_Rule_r10().getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -2281,8 +1073,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuPackage2jPackage_Rule_r2_TransformForwardActivity() {
-		return (EReference) getuPackage2jPackage_Rule_r2().getEStructuralFeatures().get(3);
+	public EReference getuCGeneralization2jCGeneralization_Rule_r10_TransformForwardActivity() {
+		return (EReference) getuCGeneralization2jCGeneralization_Rule_r10().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -2290,8 +1082,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuPackage2jPackage_Rule_r2_TransformMappingActivity() {
-		return (EReference) getuPackage2jPackage_Rule_r2().getEStructuralFeatures().get(4);
+	public EReference getuCGeneralization2jCGeneralization_Rule_r10_TransformMappingActivity() {
+		return (EReference) getuCGeneralization2jCGeneralization_Rule_r10().getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -2299,8 +1091,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuPackage2jPackage_Rule_r2_TransformBackwardActivity() {
-		return (EReference) getuPackage2jPackage_Rule_r2().getEStructuralFeatures().get(5);
+	public EReference getuCGeneralization2jCGeneralization_Rule_r10_TransformBackwardActivity() {
+		return (EReference) getuCGeneralization2jCGeneralization_Rule_r10().getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -2308,8 +1100,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuPackage2jPackage_Rule_r2_ConflictCheckForwardActivity() {
-		return (EReference) getuPackage2jPackage_Rule_r2().getEStructuralFeatures().get(6);
+	public EReference getuCGeneralization2jCGeneralization_Rule_r10_ConflictCheckForwardActivity() {
+		return (EReference) getuCGeneralization2jCGeneralization_Rule_r10().getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -2317,8 +1109,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuPackage2jPackage_Rule_r2_ConflictCheckMappingActivity() {
-		return (EReference) getuPackage2jPackage_Rule_r2().getEStructuralFeatures().get(7);
+	public EReference getuCGeneralization2jCGeneralization_Rule_r10_ConflictCheckMappingActivity() {
+		return (EReference) getuCGeneralization2jCGeneralization_Rule_r10().getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -2326,8 +1118,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuPackage2jPackage_Rule_r2_ConflictCheckBackwardActivity() {
-		return (EReference) getuPackage2jPackage_Rule_r2().getEStructuralFeatures().get(8);
+	public EReference getuCGeneralization2jCGeneralization_Rule_r10_ConflictCheckBackwardActivity() {
+		return (EReference) getuCGeneralization2jCGeneralization_Rule_r10().getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -2335,8 +1127,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuPackage2jPackage_Rule_r2_SynchronizeForwardActivity() {
-		return (EReference) getuPackage2jPackage_Rule_r2().getEStructuralFeatures().get(9);
+	public EReference getuCGeneralization2jCGeneralization_Rule_r10_SynchronizeForwardActivity() {
+		return (EReference) getuCGeneralization2jCGeneralization_Rule_r10().getEStructuralFeatures().get(9);
 	}
 
 	/**
@@ -2344,8 +1136,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuPackage2jPackage_Rule_r2_SynchronizeBackwardActivity() {
-		return (EReference) getuPackage2jPackage_Rule_r2().getEStructuralFeatures().get(10);
+	public EReference getuCGeneralization2jCGeneralization_Rule_r10_SynchronizeBackwardActivity() {
+		return (EReference) getuCGeneralization2jCGeneralization_Rule_r10().getEStructuralFeatures().get(10);
 	}
 
 	/**
@@ -2353,8 +1145,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuPackage2jPackage_Rule_r2_RepairForwardActivity() {
-		return (EReference) getuPackage2jPackage_Rule_r2().getEStructuralFeatures().get(11);
+	public EReference getuCGeneralization2jCGeneralization_Rule_r10_RepairForwardActivity() {
+		return (EReference) getuCGeneralization2jCGeneralization_Rule_r10().getEStructuralFeatures().get(11);
 	}
 
 	/**
@@ -2362,8 +1154,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuPackage2jPackage_Rule_r2_RepairBackwardActivity() {
-		return (EReference) getuPackage2jPackage_Rule_r2().getEStructuralFeatures().get(12);
+	public EReference getuCGeneralization2jCGeneralization_Rule_r10_RepairBackwardActivity() {
+		return (EReference) getuCGeneralization2jCGeneralization_Rule_r10().getEStructuralFeatures().get(12);
 	}
 
 	/**
@@ -2371,8 +1163,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuPackage2jPackage_Rule_r2__AddElement__EMap() {
-		return getuPackage2jPackage_Rule_r2().getEOperations().get(0);
+	public EOperation getuCGeneralization2jCGeneralization_Rule_r10__AddElement__EMap() {
+		return getuCGeneralization2jCGeneralization_Rule_r10().getEOperations().get(0);
 	}
 
 	/**
@@ -2380,8 +1172,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuPackage2jPackage_Rule_r2__ChangeAttributeValues__TGGNode_EMap() {
-		return getuPackage2jPackage_Rule_r2().getEOperations().get(1);
+	public EOperation getuCGeneralization2jCGeneralization_Rule_r10__ChangeAttributeValues__TGGNode_EMap() {
+		return getuCGeneralization2jCGeneralization_Rule_r10().getEOperations().get(1);
 	}
 
 	/**
@@ -2389,8 +1181,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuPackage2jPackage_Rule_r2__MoveElement__TGGNode_TGGNode_TGGNode() {
-		return getuPackage2jPackage_Rule_r2().getEOperations().get(2);
+	public EOperation getuCGeneralization2jCGeneralization_Rule_r10__MoveElement__TGGNode_TGGNode_TGGNode() {
+		return getuCGeneralization2jCGeneralization_Rule_r10().getEOperations().get(2);
 	}
 
 	/**
@@ -2398,8 +1190,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuPackage2jPackage_Rule_r2__TransformForward__TGGNode_boolean_boolean() {
-		return getuPackage2jPackage_Rule_r2().getEOperations().get(3);
+	public EOperation getuCGeneralization2jCGeneralization_Rule_r10__TransformForward__TGGNode_boolean_boolean() {
+		return getuCGeneralization2jCGeneralization_Rule_r10().getEOperations().get(3);
 	}
 
 	/**
@@ -2407,8 +1199,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuPackage2jPackage_Rule_r2__TransformMapping__TGGNode_boolean_boolean() {
-		return getuPackage2jPackage_Rule_r2().getEOperations().get(4);
+	public EOperation getuCGeneralization2jCGeneralization_Rule_r10__TransformMapping__TGGNode_boolean_boolean() {
+		return getuCGeneralization2jCGeneralization_Rule_r10().getEOperations().get(4);
 	}
 
 	/**
@@ -2416,8 +1208,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuPackage2jPackage_Rule_r2__TransformBackward__TGGNode_boolean_boolean() {
-		return getuPackage2jPackage_Rule_r2().getEOperations().get(5);
+	public EOperation getuCGeneralization2jCGeneralization_Rule_r10__TransformBackward__TGGNode_boolean_boolean() {
+		return getuCGeneralization2jCGeneralization_Rule_r10().getEOperations().get(5);
 	}
 
 	/**
@@ -2425,8 +1217,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuPackage2jPackage_Rule_r2__ConflictCheckForward__TGGNode() {
-		return getuPackage2jPackage_Rule_r2().getEOperations().get(6);
+	public EOperation getuCGeneralization2jCGeneralization_Rule_r10__ConflictCheckForward__TGGNode() {
+		return getuCGeneralization2jCGeneralization_Rule_r10().getEOperations().get(6);
 	}
 
 	/**
@@ -2434,8 +1226,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuPackage2jPackage_Rule_r2__ConflictCheckMapping__TGGNode() {
-		return getuPackage2jPackage_Rule_r2().getEOperations().get(7);
+	public EOperation getuCGeneralization2jCGeneralization_Rule_r10__ConflictCheckMapping__TGGNode() {
+		return getuCGeneralization2jCGeneralization_Rule_r10().getEOperations().get(7);
 	}
 
 	/**
@@ -2443,8 +1235,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuPackage2jPackage_Rule_r2__ConflictCheckBackward__TGGNode() {
-		return getuPackage2jPackage_Rule_r2().getEOperations().get(8);
+	public EOperation getuCGeneralization2jCGeneralization_Rule_r10__ConflictCheckBackward__TGGNode() {
+		return getuCGeneralization2jCGeneralization_Rule_r10().getEOperations().get(8);
 	}
 
 	/**
@@ -2452,8 +1244,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuPackage2jPackage_Rule_r2__SynchronizeForward__TGGNode_boolean() {
-		return getuPackage2jPackage_Rule_r2().getEOperations().get(9);
+	public EOperation getuCGeneralization2jCGeneralization_Rule_r10__SynchronizeForward__TGGNode_boolean() {
+		return getuCGeneralization2jCGeneralization_Rule_r10().getEOperations().get(9);
 	}
 
 	/**
@@ -2461,8 +1253,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuPackage2jPackage_Rule_r2__SynchronizeBackward__TGGNode_boolean() {
-		return getuPackage2jPackage_Rule_r2().getEOperations().get(10);
+	public EOperation getuCGeneralization2jCGeneralization_Rule_r10__SynchronizeBackward__TGGNode_boolean() {
+		return getuCGeneralization2jCGeneralization_Rule_r10().getEOperations().get(10);
 	}
 
 	/**
@@ -2470,8 +1262,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuPackage2jPackage_Rule_r2__RepairForward__TGGNode_boolean() {
-		return getuPackage2jPackage_Rule_r2().getEOperations().get(11);
+	public EOperation getuCGeneralization2jCGeneralization_Rule_r10__RepairForward__TGGNode_boolean() {
+		return getuCGeneralization2jCGeneralization_Rule_r10().getEOperations().get(11);
 	}
 
 	/**
@@ -2479,8 +1271,1490 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuPackage2jPackage_Rule_r2__RepairBackward__TGGNode_boolean() {
-		return getuPackage2jPackage_Rule_r2().getEOperations().get(12);
+	public EOperation getuCGeneralization2jCGeneralization_Rule_r10__RepairBackward__TGGNode_boolean() {
+		return getuCGeneralization2jCGeneralization_Rule_r10().getEOperations().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getuIRealization2jIImplementation_Rule_r9() {
+		if (uIRealization2jIImplementation_Rule_r9EClass == null) {
+			uIRealization2jIImplementation_Rule_r9EClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(15);
+		}
+		return uIRealization2jIImplementation_Rule_r9EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIRealization2jIImplementation_Rule_r9_AddElementActivity() {
+		return (EReference) getuIRealization2jIImplementation_Rule_r9().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIRealization2jIImplementation_Rule_r9_MoveElementActivity() {
+		return (EReference) getuIRealization2jIImplementation_Rule_r9().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIRealization2jIImplementation_Rule_r9_ChangeAttributeActivity() {
+		return (EReference) getuIRealization2jIImplementation_Rule_r9().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIRealization2jIImplementation_Rule_r9_TransformForwardActivity() {
+		return (EReference) getuIRealization2jIImplementation_Rule_r9().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIRealization2jIImplementation_Rule_r9_TransformMappingActivity() {
+		return (EReference) getuIRealization2jIImplementation_Rule_r9().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIRealization2jIImplementation_Rule_r9_TransformBackwardActivity() {
+		return (EReference) getuIRealization2jIImplementation_Rule_r9().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIRealization2jIImplementation_Rule_r9_ConflictCheckForwardActivity() {
+		return (EReference) getuIRealization2jIImplementation_Rule_r9().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIRealization2jIImplementation_Rule_r9_ConflictCheckMappingActivity() {
+		return (EReference) getuIRealization2jIImplementation_Rule_r9().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIRealization2jIImplementation_Rule_r9_ConflictCheckBackwardActivity() {
+		return (EReference) getuIRealization2jIImplementation_Rule_r9().getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIRealization2jIImplementation_Rule_r9_SynchronizeForwardActivity() {
+		return (EReference) getuIRealization2jIImplementation_Rule_r9().getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIRealization2jIImplementation_Rule_r9_SynchronizeBackwardActivity() {
+		return (EReference) getuIRealization2jIImplementation_Rule_r9().getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIRealization2jIImplementation_Rule_r9_RepairForwardActivity() {
+		return (EReference) getuIRealization2jIImplementation_Rule_r9().getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIRealization2jIImplementation_Rule_r9_RepairBackwardActivity() {
+		return (EReference) getuIRealization2jIImplementation_Rule_r9().getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIRealization2jIImplementation_Rule_r9__AddElement__EMap() {
+		return getuIRealization2jIImplementation_Rule_r9().getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIRealization2jIImplementation_Rule_r9__ChangeAttributeValues__TGGNode_EMap() {
+		return getuIRealization2jIImplementation_Rule_r9().getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIRealization2jIImplementation_Rule_r9__MoveElement__TGGNode_TGGNode_TGGNode() {
+		return getuIRealization2jIImplementation_Rule_r9().getEOperations().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIRealization2jIImplementation_Rule_r9__TransformForward__TGGNode_boolean_boolean() {
+		return getuIRealization2jIImplementation_Rule_r9().getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIRealization2jIImplementation_Rule_r9__TransformMapping__TGGNode_boolean_boolean() {
+		return getuIRealization2jIImplementation_Rule_r9().getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIRealization2jIImplementation_Rule_r9__TransformBackward__TGGNode_boolean_boolean() {
+		return getuIRealization2jIImplementation_Rule_r9().getEOperations().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIRealization2jIImplementation_Rule_r9__ConflictCheckForward__TGGNode() {
+		return getuIRealization2jIImplementation_Rule_r9().getEOperations().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIRealization2jIImplementation_Rule_r9__ConflictCheckMapping__TGGNode() {
+		return getuIRealization2jIImplementation_Rule_r9().getEOperations().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIRealization2jIImplementation_Rule_r9__ConflictCheckBackward__TGGNode() {
+		return getuIRealization2jIImplementation_Rule_r9().getEOperations().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIRealization2jIImplementation_Rule_r9__SynchronizeForward__TGGNode_boolean() {
+		return getuIRealization2jIImplementation_Rule_r9().getEOperations().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIRealization2jIImplementation_Rule_r9__SynchronizeBackward__TGGNode_boolean() {
+		return getuIRealization2jIImplementation_Rule_r9().getEOperations().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIRealization2jIImplementation_Rule_r9__RepairForward__TGGNode_boolean() {
+		return getuIRealization2jIImplementation_Rule_r9().getEOperations().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIRealization2jIImplementation_Rule_r9__RepairBackward__TGGNode_boolean() {
+		return getuIRealization2jIImplementation_Rule_r9().getEOperations().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getuIAttribute2jIAttribute_r7() {
+		if (uIAttribute2jIAttribute_r7EClass == null) {
+			uIAttribute2jIAttribute_r7EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
+					.getEClassifiers().get(16);
+		}
+		return uIAttribute2jIAttribute_r7EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIAttribute2jIAttribute_r7_AddElementActivity() {
+		return (EReference) getuIAttribute2jIAttribute_r7().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIAttribute2jIAttribute_r7_MoveElementActivity() {
+		return (EReference) getuIAttribute2jIAttribute_r7().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIAttribute2jIAttribute_r7_ChangeAttributeActivity() {
+		return (EReference) getuIAttribute2jIAttribute_r7().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIAttribute2jIAttribute_r7_TransformForwardActivity() {
+		return (EReference) getuIAttribute2jIAttribute_r7().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIAttribute2jIAttribute_r7_TransformMappingActivity() {
+		return (EReference) getuIAttribute2jIAttribute_r7().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIAttribute2jIAttribute_r7_TransformBackwardActivity() {
+		return (EReference) getuIAttribute2jIAttribute_r7().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIAttribute2jIAttribute_r7_ConflictCheckForwardActivity() {
+		return (EReference) getuIAttribute2jIAttribute_r7().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIAttribute2jIAttribute_r7_ConflictCheckMappingActivity() {
+		return (EReference) getuIAttribute2jIAttribute_r7().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIAttribute2jIAttribute_r7_ConflictCheckBackwardActivity() {
+		return (EReference) getuIAttribute2jIAttribute_r7().getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIAttribute2jIAttribute_r7_SynchronizeForwardActivity() {
+		return (EReference) getuIAttribute2jIAttribute_r7().getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIAttribute2jIAttribute_r7_SynchronizeBackwardActivity() {
+		return (EReference) getuIAttribute2jIAttribute_r7().getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIAttribute2jIAttribute_r7_RepairForwardActivity() {
+		return (EReference) getuIAttribute2jIAttribute_r7().getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIAttribute2jIAttribute_r7_RepairBackwardActivity() {
+		return (EReference) getuIAttribute2jIAttribute_r7().getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIAttribute2jIAttribute_r7__AddElement__EMap() {
+		return getuIAttribute2jIAttribute_r7().getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIAttribute2jIAttribute_r7__ChangeAttributeValues__TGGNode_EMap() {
+		return getuIAttribute2jIAttribute_r7().getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIAttribute2jIAttribute_r7__MoveElement__TGGNode_TGGNode_TGGNode() {
+		return getuIAttribute2jIAttribute_r7().getEOperations().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIAttribute2jIAttribute_r7__TransformForward__TGGNode_boolean_boolean() {
+		return getuIAttribute2jIAttribute_r7().getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIAttribute2jIAttribute_r7__TransformMapping__TGGNode_boolean_boolean() {
+		return getuIAttribute2jIAttribute_r7().getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIAttribute2jIAttribute_r7__TransformBackward__TGGNode_boolean_boolean() {
+		return getuIAttribute2jIAttribute_r7().getEOperations().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIAttribute2jIAttribute_r7__ConflictCheckForward__TGGNode() {
+		return getuIAttribute2jIAttribute_r7().getEOperations().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIAttribute2jIAttribute_r7__ConflictCheckMapping__TGGNode() {
+		return getuIAttribute2jIAttribute_r7().getEOperations().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIAttribute2jIAttribute_r7__ConflictCheckBackward__TGGNode() {
+		return getuIAttribute2jIAttribute_r7().getEOperations().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIAttribute2jIAttribute_r7__SynchronizeForward__TGGNode_boolean() {
+		return getuIAttribute2jIAttribute_r7().getEOperations().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIAttribute2jIAttribute_r7__SynchronizeBackward__TGGNode_boolean() {
+		return getuIAttribute2jIAttribute_r7().getEOperations().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIAttribute2jIAttribute_r7__RepairForward__TGGNode_boolean() {
+		return getuIAttribute2jIAttribute_r7().getEOperations().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIAttribute2jIAttribute_r7__RepairBackward__TGGNode_boolean() {
+		return getuIAttribute2jIAttribute_r7().getEOperations().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getuIOperation2jIMethod_Rule_r8() {
+		if (uIOperation2jIMethod_Rule_r8EClass == null) {
+			uIOperation2jIMethod_Rule_r8EClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(17);
+		}
+		return uIOperation2jIMethod_Rule_r8EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIOperation2jIMethod_Rule_r8_AddElementActivity() {
+		return (EReference) getuIOperation2jIMethod_Rule_r8().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIOperation2jIMethod_Rule_r8_MoveElementActivity() {
+		return (EReference) getuIOperation2jIMethod_Rule_r8().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIOperation2jIMethod_Rule_r8_ChangeAttributeActivity() {
+		return (EReference) getuIOperation2jIMethod_Rule_r8().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIOperation2jIMethod_Rule_r8_TransformForwardActivity() {
+		return (EReference) getuIOperation2jIMethod_Rule_r8().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIOperation2jIMethod_Rule_r8_TransformMappingActivity() {
+		return (EReference) getuIOperation2jIMethod_Rule_r8().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIOperation2jIMethod_Rule_r8_TransformBackwardActivity() {
+		return (EReference) getuIOperation2jIMethod_Rule_r8().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIOperation2jIMethod_Rule_r8_ConflictCheckForwardActivity() {
+		return (EReference) getuIOperation2jIMethod_Rule_r8().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIOperation2jIMethod_Rule_r8_ConflictCheckMappingActivity() {
+		return (EReference) getuIOperation2jIMethod_Rule_r8().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIOperation2jIMethod_Rule_r8_ConflictCheckBackwardActivity() {
+		return (EReference) getuIOperation2jIMethod_Rule_r8().getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIOperation2jIMethod_Rule_r8_SynchronizeForwardActivity() {
+		return (EReference) getuIOperation2jIMethod_Rule_r8().getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIOperation2jIMethod_Rule_r8_SynchronizeBackwardActivity() {
+		return (EReference) getuIOperation2jIMethod_Rule_r8().getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIOperation2jIMethod_Rule_r8_RepairForwardActivity() {
+		return (EReference) getuIOperation2jIMethod_Rule_r8().getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuIOperation2jIMethod_Rule_r8_RepairBackwardActivity() {
+		return (EReference) getuIOperation2jIMethod_Rule_r8().getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIOperation2jIMethod_Rule_r8__AddElement__EMap() {
+		return getuIOperation2jIMethod_Rule_r8().getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIOperation2jIMethod_Rule_r8__ChangeAttributeValues__TGGNode_EMap() {
+		return getuIOperation2jIMethod_Rule_r8().getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIOperation2jIMethod_Rule_r8__MoveElement__TGGNode_TGGNode_TGGNode() {
+		return getuIOperation2jIMethod_Rule_r8().getEOperations().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIOperation2jIMethod_Rule_r8__TransformForward__TGGNode_boolean_boolean() {
+		return getuIOperation2jIMethod_Rule_r8().getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIOperation2jIMethod_Rule_r8__TransformMapping__TGGNode_boolean_boolean() {
+		return getuIOperation2jIMethod_Rule_r8().getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIOperation2jIMethod_Rule_r8__TransformBackward__TGGNode_boolean_boolean() {
+		return getuIOperation2jIMethod_Rule_r8().getEOperations().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIOperation2jIMethod_Rule_r8__ConflictCheckForward__TGGNode() {
+		return getuIOperation2jIMethod_Rule_r8().getEOperations().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIOperation2jIMethod_Rule_r8__ConflictCheckMapping__TGGNode() {
+		return getuIOperation2jIMethod_Rule_r8().getEOperations().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIOperation2jIMethod_Rule_r8__ConflictCheckBackward__TGGNode() {
+		return getuIOperation2jIMethod_Rule_r8().getEOperations().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIOperation2jIMethod_Rule_r8__SynchronizeForward__TGGNode_boolean() {
+		return getuIOperation2jIMethod_Rule_r8().getEOperations().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIOperation2jIMethod_Rule_r8__SynchronizeBackward__TGGNode_boolean() {
+		return getuIOperation2jIMethod_Rule_r8().getEOperations().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIOperation2jIMethod_Rule_r8__RepairForward__TGGNode_boolean() {
+		return getuIOperation2jIMethod_Rule_r8().getEOperations().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuIOperation2jIMethod_Rule_r8__RepairBackward__TGGNode_boolean() {
+		return getuIOperation2jIMethod_Rule_r8().getEOperations().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getuCAttribute2jCAttribute_Rule_r4() {
+		if (uCAttribute2jCAttribute_Rule_r4EClass == null) {
+			uCAttribute2jCAttribute_Rule_r4EClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(18);
+		}
+		return uCAttribute2jCAttribute_Rule_r4EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCAttribute2jCAttribute_Rule_r4_AddElementActivity() {
+		return (EReference) getuCAttribute2jCAttribute_Rule_r4().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCAttribute2jCAttribute_Rule_r4_MoveElementActivity() {
+		return (EReference) getuCAttribute2jCAttribute_Rule_r4().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCAttribute2jCAttribute_Rule_r4_ChangeAttributeActivity() {
+		return (EReference) getuCAttribute2jCAttribute_Rule_r4().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCAttribute2jCAttribute_Rule_r4_TransformForwardActivity() {
+		return (EReference) getuCAttribute2jCAttribute_Rule_r4().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCAttribute2jCAttribute_Rule_r4_TransformMappingActivity() {
+		return (EReference) getuCAttribute2jCAttribute_Rule_r4().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCAttribute2jCAttribute_Rule_r4_TransformBackwardActivity() {
+		return (EReference) getuCAttribute2jCAttribute_Rule_r4().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCAttribute2jCAttribute_Rule_r4_ConflictCheckForwardActivity() {
+		return (EReference) getuCAttribute2jCAttribute_Rule_r4().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCAttribute2jCAttribute_Rule_r4_ConflictCheckMappingActivity() {
+		return (EReference) getuCAttribute2jCAttribute_Rule_r4().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCAttribute2jCAttribute_Rule_r4_ConflictCheckBackwardActivity() {
+		return (EReference) getuCAttribute2jCAttribute_Rule_r4().getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCAttribute2jCAttribute_Rule_r4_SynchronizeForwardActivity() {
+		return (EReference) getuCAttribute2jCAttribute_Rule_r4().getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCAttribute2jCAttribute_Rule_r4_SynchronizeBackwardActivity() {
+		return (EReference) getuCAttribute2jCAttribute_Rule_r4().getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCAttribute2jCAttribute_Rule_r4_RepairForwardActivity() {
+		return (EReference) getuCAttribute2jCAttribute_Rule_r4().getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCAttribute2jCAttribute_Rule_r4_RepairBackwardActivity() {
+		return (EReference) getuCAttribute2jCAttribute_Rule_r4().getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCAttribute2jCAttribute_Rule_r4__AddElement__EMap() {
+		return getuCAttribute2jCAttribute_Rule_r4().getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCAttribute2jCAttribute_Rule_r4__ChangeAttributeValues__TGGNode_EMap() {
+		return getuCAttribute2jCAttribute_Rule_r4().getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCAttribute2jCAttribute_Rule_r4__MoveElement__TGGNode_TGGNode_TGGNode() {
+		return getuCAttribute2jCAttribute_Rule_r4().getEOperations().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCAttribute2jCAttribute_Rule_r4__TransformForward__TGGNode_boolean_boolean() {
+		return getuCAttribute2jCAttribute_Rule_r4().getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCAttribute2jCAttribute_Rule_r4__TransformMapping__TGGNode_boolean_boolean() {
+		return getuCAttribute2jCAttribute_Rule_r4().getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCAttribute2jCAttribute_Rule_r4__TransformBackward__TGGNode_boolean_boolean() {
+		return getuCAttribute2jCAttribute_Rule_r4().getEOperations().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCAttribute2jCAttribute_Rule_r4__ConflictCheckForward__TGGNode() {
+		return getuCAttribute2jCAttribute_Rule_r4().getEOperations().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCAttribute2jCAttribute_Rule_r4__ConflictCheckMapping__TGGNode() {
+		return getuCAttribute2jCAttribute_Rule_r4().getEOperations().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCAttribute2jCAttribute_Rule_r4__ConflictCheckBackward__TGGNode() {
+		return getuCAttribute2jCAttribute_Rule_r4().getEOperations().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCAttribute2jCAttribute_Rule_r4__SynchronizeForward__TGGNode_boolean() {
+		return getuCAttribute2jCAttribute_Rule_r4().getEOperations().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCAttribute2jCAttribute_Rule_r4__SynchronizeBackward__TGGNode_boolean() {
+		return getuCAttribute2jCAttribute_Rule_r4().getEOperations().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCAttribute2jCAttribute_Rule_r4__RepairForward__TGGNode_boolean() {
+		return getuCAttribute2jCAttribute_Rule_r4().getEOperations().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCAttribute2jCAttribute_Rule_r4__RepairBackward__TGGNode_boolean() {
+		return getuCAttribute2jCAttribute_Rule_r4().getEOperations().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getuClass2jClass_Rule_r3() {
+		if (uClass2jClass_Rule_r3EClass == null) {
+			uClass2jClass_Rule_r3EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
+					.getEClassifiers().get(19);
+		}
+		return uClass2jClass_Rule_r3EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Rule_r3_AddElementActivity() {
+		return (EReference) getuClass2jClass_Rule_r3().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Rule_r3_MoveElementActivity() {
+		return (EReference) getuClass2jClass_Rule_r3().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Rule_r3_ChangeAttributeActivity() {
+		return (EReference) getuClass2jClass_Rule_r3().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Rule_r3_TransformForwardActivity() {
+		return (EReference) getuClass2jClass_Rule_r3().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Rule_r3_TransformMappingActivity() {
+		return (EReference) getuClass2jClass_Rule_r3().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Rule_r3_TransformBackwardActivity() {
+		return (EReference) getuClass2jClass_Rule_r3().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Rule_r3_ConflictCheckForwardActivity() {
+		return (EReference) getuClass2jClass_Rule_r3().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Rule_r3_ConflictCheckMappingActivity() {
+		return (EReference) getuClass2jClass_Rule_r3().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Rule_r3_ConflictCheckBackwardActivity() {
+		return (EReference) getuClass2jClass_Rule_r3().getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Rule_r3_SynchronizeForwardActivity() {
+		return (EReference) getuClass2jClass_Rule_r3().getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Rule_r3_SynchronizeBackwardActivity() {
+		return (EReference) getuClass2jClass_Rule_r3().getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Rule_r3_RepairForwardActivity() {
+		return (EReference) getuClass2jClass_Rule_r3().getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Rule_r3_RepairBackwardActivity() {
+		return (EReference) getuClass2jClass_Rule_r3().getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Rule_r3__AddElement__EMap() {
+		return getuClass2jClass_Rule_r3().getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Rule_r3__ChangeAttributeValues__TGGNode_EMap() {
+		return getuClass2jClass_Rule_r3().getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Rule_r3__MoveElement__TGGNode_TGGNode_TGGNode() {
+		return getuClass2jClass_Rule_r3().getEOperations().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Rule_r3__TransformForward__TGGNode_boolean_boolean() {
+		return getuClass2jClass_Rule_r3().getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Rule_r3__TransformMapping__TGGNode_boolean_boolean() {
+		return getuClass2jClass_Rule_r3().getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Rule_r3__TransformBackward__TGGNode_boolean_boolean() {
+		return getuClass2jClass_Rule_r3().getEOperations().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Rule_r3__ConflictCheckForward__TGGNode() {
+		return getuClass2jClass_Rule_r3().getEOperations().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Rule_r3__ConflictCheckMapping__TGGNode() {
+		return getuClass2jClass_Rule_r3().getEOperations().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Rule_r3__ConflictCheckBackward__TGGNode() {
+		return getuClass2jClass_Rule_r3().getEOperations().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Rule_r3__SynchronizeForward__TGGNode_boolean() {
+		return getuClass2jClass_Rule_r3().getEOperations().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Rule_r3__SynchronizeBackward__TGGNode_boolean() {
+		return getuClass2jClass_Rule_r3().getEOperations().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Rule_r3__RepairForward__TGGNode_boolean() {
+		return getuClass2jClass_Rule_r3().getEOperations().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Rule_r3__RepairBackward__TGGNode_boolean() {
+		return getuClass2jClass_Rule_r3().getEOperations().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getuInterface2jInterface_Rule_r6() {
+		if (uInterface2jInterface_Rule_r6EClass == null) {
+			uInterface2jInterface_Rule_r6EClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(20);
+		}
+		return uInterface2jInterface_Rule_r6EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuInterface2jInterface_Rule_r6_AddElementActivity() {
+		return (EReference) getuInterface2jInterface_Rule_r6().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuInterface2jInterface_Rule_r6_MoveElementActivity() {
+		return (EReference) getuInterface2jInterface_Rule_r6().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuInterface2jInterface_Rule_r6_ChangeAttributeActivity() {
+		return (EReference) getuInterface2jInterface_Rule_r6().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuInterface2jInterface_Rule_r6_TransformForwardActivity() {
+		return (EReference) getuInterface2jInterface_Rule_r6().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuInterface2jInterface_Rule_r6_TransformMappingActivity() {
+		return (EReference) getuInterface2jInterface_Rule_r6().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuInterface2jInterface_Rule_r6_TransformBackwardActivity() {
+		return (EReference) getuInterface2jInterface_Rule_r6().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuInterface2jInterface_Rule_r6_ConflictCheckForwardActivity() {
+		return (EReference) getuInterface2jInterface_Rule_r6().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuInterface2jInterface_Rule_r6_ConflictCheckMappingActivity() {
+		return (EReference) getuInterface2jInterface_Rule_r6().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuInterface2jInterface_Rule_r6_ConflictCheckBackwardActivity() {
+		return (EReference) getuInterface2jInterface_Rule_r6().getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuInterface2jInterface_Rule_r6_SynchronizeForwardActivity() {
+		return (EReference) getuInterface2jInterface_Rule_r6().getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuInterface2jInterface_Rule_r6_SynchronizeBackwardActivity() {
+		return (EReference) getuInterface2jInterface_Rule_r6().getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuInterface2jInterface_Rule_r6_RepairForwardActivity() {
+		return (EReference) getuInterface2jInterface_Rule_r6().getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuInterface2jInterface_Rule_r6_RepairBackwardActivity() {
+		return (EReference) getuInterface2jInterface_Rule_r6().getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuInterface2jInterface_Rule_r6__AddElement__EMap() {
+		return getuInterface2jInterface_Rule_r6().getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuInterface2jInterface_Rule_r6__ChangeAttributeValues__TGGNode_EMap() {
+		return getuInterface2jInterface_Rule_r6().getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuInterface2jInterface_Rule_r6__MoveElement__TGGNode_TGGNode_TGGNode() {
+		return getuInterface2jInterface_Rule_r6().getEOperations().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuInterface2jInterface_Rule_r6__TransformForward__TGGNode_boolean_boolean() {
+		return getuInterface2jInterface_Rule_r6().getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuInterface2jInterface_Rule_r6__TransformMapping__TGGNode_boolean_boolean() {
+		return getuInterface2jInterface_Rule_r6().getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuInterface2jInterface_Rule_r6__TransformBackward__TGGNode_boolean_boolean() {
+		return getuInterface2jInterface_Rule_r6().getEOperations().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuInterface2jInterface_Rule_r6__ConflictCheckForward__TGGNode() {
+		return getuInterface2jInterface_Rule_r6().getEOperations().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuInterface2jInterface_Rule_r6__ConflictCheckMapping__TGGNode() {
+		return getuInterface2jInterface_Rule_r6().getEOperations().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuInterface2jInterface_Rule_r6__ConflictCheckBackward__TGGNode() {
+		return getuInterface2jInterface_Rule_r6().getEOperations().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuInterface2jInterface_Rule_r6__SynchronizeForward__TGGNode_boolean() {
+		return getuInterface2jInterface_Rule_r6().getEOperations().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuInterface2jInterface_Rule_r6__SynchronizeBackward__TGGNode_boolean() {
+		return getuInterface2jInterface_Rule_r6().getEOperations().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuInterface2jInterface_Rule_r6__RepairForward__TGGNode_boolean() {
+		return getuInterface2jInterface_Rule_r6().getEOperations().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuInterface2jInterface_Rule_r6__RepairBackward__TGGNode_boolean() {
+		return getuInterface2jInterface_Rule_r6().getEOperations().get(12);
 	}
 
 	/**

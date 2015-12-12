@@ -15,9 +15,8 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 import org.eclipse.emf.ecore.util.EcoreUtil;
-import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -153,7 +152,7 @@ public class ContainedImpl extends MinimalEObjectImpl.Container implements Conta
 	 */
 	public EList<de.silvawb.java.Class> getImportingClasses() {
 		if (importingClasses == null) {
-			importingClasses = new EObjectWithInverseResolvingEList.ManyInverse<de.silvawb.java.Class>(de.silvawb.java.Class.class, this, JavaPackage.CONTAINED__IMPORTING_CLASSES, JavaPackage.CLASS__IMPORTS);
+			importingClasses = new EObjectResolvingEList<de.silvawb.java.Class>(de.silvawb.java.Class.class, this, JavaPackage.CONTAINED__IMPORTING_CLASSES);
 		}
 		return importingClasses;
 	}
@@ -171,8 +170,6 @@ public class ContainedImpl extends MinimalEObjectImpl.Container implements Conta
 				if (eInternalContainer() != null)
 					msgs = eBasicRemoveFromContainer(msgs);
 				return basicSetContainer((de.silvawb.java.Container)otherEnd, msgs);
-			case JavaPackage.CONTAINED__IMPORTING_CLASSES:
-				return ((InternalEList<InternalEObject>)(InternalEList<?>)getImportingClasses()).basicAdd(otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
@@ -187,8 +184,6 @@ public class ContainedImpl extends MinimalEObjectImpl.Container implements Conta
 		switch (featureID) {
 			case JavaPackage.CONTAINED__CONTAINER:
 				return basicSetContainer(null, msgs);
-			case JavaPackage.CONTAINED__IMPORTING_CLASSES:
-				return ((InternalEList<?>)getImportingClasses()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}

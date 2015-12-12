@@ -6,6 +6,8 @@ import de.silvawb.java.Argument;
 import de.silvawb.java.Classifier;
 import de.silvawb.java.Contained;
 import de.silvawb.java.Field;
+import de.silvawb.java.Generalization;
+import de.silvawb.java.Import;
 import de.silvawb.java.InterfaceImplementation;
 import de.silvawb.java.JavaPackage;
 
@@ -43,6 +45,8 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link de.silvawb.java.impl.ClassifierImpl#getMethods <em>Methods</em>}</li>
  *   <li>{@link de.silvawb.java.impl.ClassifierImpl#getTypingArguments <em>Typing Arguments</em>}</li>
  *   <li>{@link de.silvawb.java.impl.ClassifierImpl#getInterfaceImplementations <em>Interface Implementations</em>}</li>
+ *   <li>{@link de.silvawb.java.impl.ClassifierImpl#getGeneralizations <em>Generalizations</em>}</li>
+ *   <li>{@link de.silvawb.java.impl.ClassifierImpl#getImports <em>Imports</em>}</li>
  * </ul>
  *
  * @generated
@@ -157,6 +161,26 @@ public abstract class ClassifierImpl extends ContainedImpl implements Classifier
 	 * @ordered
 	 */
 	protected EList<InterfaceImplementation> interfaceImplementations;
+
+	/**
+	 * The cached value of the '{@link #getGeneralizations() <em>Generalizations</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getGeneralizations()
+	 * @generated
+	 * @ordered
+	 */
+	protected Generalization generalizations;
+
+	/**
+	 * The cached value of the '{@link #getImports() <em>Imports</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getImports()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Import> imports;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -311,6 +335,61 @@ public abstract class ClassifierImpl extends ContainedImpl implements Classifier
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Generalization getGeneralizations() {
+		return generalizations;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetGeneralizations(Generalization newGeneralizations, NotificationChain msgs) {
+		Generalization oldGeneralizations = generalizations;
+		generalizations = newGeneralizations;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, JavaPackage.CLASSIFIER__GENERALIZATIONS, oldGeneralizations, newGeneralizations);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setGeneralizations(Generalization newGeneralizations) {
+		if (newGeneralizations != generalizations) {
+			NotificationChain msgs = null;
+			if (generalizations != null)
+				msgs = ((InternalEObject)generalizations).eInverseRemove(this, JavaPackage.GENERALIZATION__GENERALIZATOR, Generalization.class, msgs);
+			if (newGeneralizations != null)
+				msgs = ((InternalEObject)newGeneralizations).eInverseAdd(this, JavaPackage.GENERALIZATION__GENERALIZATOR, Generalization.class, msgs);
+			msgs = basicSetGeneralizations(newGeneralizations, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, JavaPackage.CLASSIFIER__GENERALIZATIONS, newGeneralizations, newGeneralizations));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Import> getImports() {
+		if (imports == null) {
+			imports = new EObjectContainmentWithInverseEList<Import>(Import.class, this, JavaPackage.CLASSIFIER__IMPORTS, JavaPackage.IMPORT__IMPORTING);
+		}
+		return imports;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
@@ -331,6 +410,12 @@ public abstract class ClassifierImpl extends ContainedImpl implements Classifier
 				return ((InternalEList<InternalEObject>)(InternalEList<?>)getTypingArguments()).basicAdd(otherEnd, msgs);
 			case JavaPackage.CLASSIFIER__INTERFACE_IMPLEMENTATIONS:
 				return ((InternalEList<InternalEObject>)(InternalEList<?>)getInterfaceImplementations()).basicAdd(otherEnd, msgs);
+			case JavaPackage.CLASSIFIER__GENERALIZATIONS:
+				if (generalizations != null)
+					msgs = ((InternalEObject)generalizations).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - JavaPackage.CLASSIFIER__GENERALIZATIONS, null, msgs);
+				return basicSetGeneralizations((Generalization)otherEnd, msgs);
+			case JavaPackage.CLASSIFIER__IMPORTS:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getImports()).basicAdd(otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
@@ -359,6 +444,10 @@ public abstract class ClassifierImpl extends ContainedImpl implements Classifier
 				return ((InternalEList<?>)getTypingArguments()).basicRemove(otherEnd, msgs);
 			case JavaPackage.CLASSIFIER__INTERFACE_IMPLEMENTATIONS:
 				return ((InternalEList<?>)getInterfaceImplementations()).basicRemove(otherEnd, msgs);
+			case JavaPackage.CLASSIFIER__GENERALIZATIONS:
+				return basicSetGeneralizations(null, msgs);
+			case JavaPackage.CLASSIFIER__IMPORTS:
+				return ((InternalEList<?>)getImports()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -391,6 +480,10 @@ public abstract class ClassifierImpl extends ContainedImpl implements Classifier
 				return getTypingArguments();
 			case JavaPackage.CLASSIFIER__INTERFACE_IMPLEMENTATIONS:
 				return getInterfaceImplementations();
+			case JavaPackage.CLASSIFIER__GENERALIZATIONS:
+				return getGeneralizations();
+			case JavaPackage.CLASSIFIER__IMPORTS:
+				return getImports();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -443,6 +536,13 @@ public abstract class ClassifierImpl extends ContainedImpl implements Classifier
 				getInterfaceImplementations().clear();
 				getInterfaceImplementations().addAll((Collection<? extends InterfaceImplementation>)newValue);
 				return;
+			case JavaPackage.CLASSIFIER__GENERALIZATIONS:
+				setGeneralizations((Generalization)newValue);
+				return;
+			case JavaPackage.CLASSIFIER__IMPORTS:
+				getImports().clear();
+				getImports().addAll((Collection<? extends Import>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -485,6 +585,12 @@ public abstract class ClassifierImpl extends ContainedImpl implements Classifier
 			case JavaPackage.CLASSIFIER__INTERFACE_IMPLEMENTATIONS:
 				getInterfaceImplementations().clear();
 				return;
+			case JavaPackage.CLASSIFIER__GENERALIZATIONS:
+				setGeneralizations((Generalization)null);
+				return;
+			case JavaPackage.CLASSIFIER__IMPORTS:
+				getImports().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -517,6 +623,10 @@ public abstract class ClassifierImpl extends ContainedImpl implements Classifier
 				return typingArguments != null && !typingArguments.isEmpty();
 			case JavaPackage.CLASSIFIER__INTERFACE_IMPLEMENTATIONS:
 				return interfaceImplementations != null && !interfaceImplementations.isEmpty();
+			case JavaPackage.CLASSIFIER__GENERALIZATIONS:
+				return generalizations != null;
+			case JavaPackage.CLASSIFIER__IMPORTS:
+				return imports != null && !imports.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

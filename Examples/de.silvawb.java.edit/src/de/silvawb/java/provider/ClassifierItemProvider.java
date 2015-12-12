@@ -205,6 +205,8 @@ public class ClassifierItemProvider
 			childrenFeatures.add(JavaPackage.Literals.CLASSIFIER__FIELDS);
 			childrenFeatures.add(JavaPackage.Literals.CLASSIFIER__METHODS);
 			childrenFeatures.add(JavaPackage.Literals.CLASSIFIER__INTERFACE_IMPLEMENTATIONS);
+			childrenFeatures.add(JavaPackage.Literals.CLASSIFIER__GENERALIZATIONS);
+			childrenFeatures.add(JavaPackage.Literals.CLASSIFIER__IMPORTS);
 		}
 		return childrenFeatures;
 	}
@@ -256,6 +258,8 @@ public class ClassifierItemProvider
 			case JavaPackage.CLASSIFIER__FIELDS:
 			case JavaPackage.CLASSIFIER__METHODS:
 			case JavaPackage.CLASSIFIER__INTERFACE_IMPLEMENTATIONS:
+			case JavaPackage.CLASSIFIER__GENERALIZATIONS:
+			case JavaPackage.CLASSIFIER__IMPORTS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -312,6 +316,16 @@ public class ClassifierItemProvider
 			(createChildParameter
 				(JavaPackage.Literals.CLASSIFIER__INTERFACE_IMPLEMENTATIONS,
 				 JavaFactory.eINSTANCE.createInterfaceImplementation()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(JavaPackage.Literals.CLASSIFIER__GENERALIZATIONS,
+				 JavaFactory.eINSTANCE.createGeneralization()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(JavaPackage.Literals.CLASSIFIER__IMPORTS,
+				 JavaFactory.eINSTANCE.createImport()));
 	}
 
 	/**

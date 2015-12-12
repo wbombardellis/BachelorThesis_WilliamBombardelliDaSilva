@@ -22,6 +22,8 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link de.silvawb.java.Classifier#getMethods <em>Methods</em>}</li>
  *   <li>{@link de.silvawb.java.Classifier#getTypingArguments <em>Typing Arguments</em>}</li>
  *   <li>{@link de.silvawb.java.Classifier#getInterfaceImplementations <em>Interface Implementations</em>}</li>
+ *   <li>{@link de.silvawb.java.Classifier#getGeneralizations <em>Generalizations</em>}</li>
+ *   <li>{@link de.silvawb.java.Classifier#getImports <em>Imports</em>}</li>
  * </ul>
  *
  * @see de.silvawb.java.JavaPackage#getClassifier()
@@ -196,5 +198,51 @@ public interface Classifier extends Contained, Container {
 	 * @generated
 	 */
 	EList<InterfaceImplementation> getInterfaceImplementations();
+
+	/**
+	 * Returns the value of the '<em><b>Generalizations</b></em>' containment reference.
+	 * It is bidirectional and its opposite is '{@link de.silvawb.java.Generalization#getGeneralizator <em>Generalizator</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Generalizations</em>' containment reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Generalizations</em>' containment reference.
+	 * @see #setGeneralizations(Generalization)
+	 * @see de.silvawb.java.JavaPackage#getClassifier_Generalizations()
+	 * @see de.silvawb.java.Generalization#getGeneralizator
+	 * @model opposite="generalizator" containment="true" ordered="false"
+	 * @generated
+	 */
+	Generalization getGeneralizations();
+
+	/**
+	 * Sets the value of the '{@link de.silvawb.java.Classifier#getGeneralizations <em>Generalizations</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Generalizations</em>' containment reference.
+	 * @see #getGeneralizations()
+	 * @generated
+	 */
+	void setGeneralizations(Generalization value);
+
+	/**
+	 * Returns the value of the '<em><b>Imports</b></em>' containment reference list.
+	 * The list contents are of type {@link de.silvawb.java.Import}.
+	 * It is bidirectional and its opposite is '{@link de.silvawb.java.Import#getImporting <em>Importing</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Imports</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Imports</em>' containment reference list.
+	 * @see de.silvawb.java.JavaPackage#getClassifier_Imports()
+	 * @see de.silvawb.java.Import#getImporting
+	 * @model opposite="importing" containment="true" ordered="false"
+	 * @generated
+	 */
+	EList<Import> getImports();
 
 } // Classifier

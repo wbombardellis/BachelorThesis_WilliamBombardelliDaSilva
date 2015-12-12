@@ -2,20 +2,14 @@
  */
 package de.silvawb.java.impl;
 
-import de.silvawb.java.Contained;
 import de.silvawb.java.JavaPackage;
-
-import java.util.Collection;
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.common.notify.NotificationChain;
-import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
-import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +24,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link de.silvawb.java.impl.ClassImpl#isIsAbstract <em>Is Abstract</em>}</li>
  *   <li>{@link de.silvawb.java.impl.ClassImpl#isIsFinal <em>Is Final</em>}</li>
  *   <li>{@link de.silvawb.java.impl.ClassImpl#isIsStatic <em>Is Static</em>}</li>
- *   <li>{@link de.silvawb.java.impl.ClassImpl#getImports <em>Imports</em>}</li>
  * </ul>
  *
  * @generated
@@ -115,16 +108,6 @@ public class ClassImpl extends ClassifierImpl implements de.silvawb.java.Class {
 	 * @ordered
 	 */
 	protected boolean isStatic = IS_STATIC_EDEFAULT;
-
-	/**
-	 * The cached value of the '{@link #getImports() <em>Imports</em>}' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getImports()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<Contained> imports;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -333,18 +316,6 @@ public class ClassImpl extends ClassifierImpl implements de.silvawb.java.Class {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Contained> getImports() {
-		if (imports == null) {
-			imports = new EObjectWithInverseResolvingEList.ManyInverse<Contained>(Contained.class, this, JavaPackage.CLASS__IMPORTS, JavaPackage.CONTAINED__IMPORTING_CLASSES);
-		}
-		return imports;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
@@ -357,8 +328,6 @@ public class ClassImpl extends ClassifierImpl implements de.silvawb.java.Class {
 				if (extendingClasses != null)
 					msgs = ((InternalEObject)extendingClasses).eInverseRemove(this, JavaPackage.CLASS__EXTENDED_CLASS, de.silvawb.java.Class.class, msgs);
 				return basicSetExtendingClasses((de.silvawb.java.Class)otherEnd, msgs);
-			case JavaPackage.CLASS__IMPORTS:
-				return ((InternalEList<InternalEObject>)(InternalEList<?>)getImports()).basicAdd(otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
@@ -375,8 +344,6 @@ public class ClassImpl extends ClassifierImpl implements de.silvawb.java.Class {
 				return basicSetExtendedClass(null, msgs);
 			case JavaPackage.CLASS__EXTENDING_CLASSES:
 				return basicSetExtendingClasses(null, msgs);
-			case JavaPackage.CLASS__IMPORTS:
-				return ((InternalEList<?>)getImports()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -401,8 +368,6 @@ public class ClassImpl extends ClassifierImpl implements de.silvawb.java.Class {
 				return isIsFinal();
 			case JavaPackage.CLASS__IS_STATIC:
 				return isIsStatic();
-			case JavaPackage.CLASS__IMPORTS:
-				return getImports();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -431,10 +396,6 @@ public class ClassImpl extends ClassifierImpl implements de.silvawb.java.Class {
 			case JavaPackage.CLASS__IS_STATIC:
 				setIsStatic((Boolean)newValue);
 				return;
-			case JavaPackage.CLASS__IMPORTS:
-				getImports().clear();
-				getImports().addAll((Collection<? extends Contained>)newValue);
-				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -462,9 +423,6 @@ public class ClassImpl extends ClassifierImpl implements de.silvawb.java.Class {
 			case JavaPackage.CLASS__IS_STATIC:
 				setIsStatic(IS_STATIC_EDEFAULT);
 				return;
-			case JavaPackage.CLASS__IMPORTS:
-				getImports().clear();
-				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -487,8 +445,6 @@ public class ClassImpl extends ClassifierImpl implements de.silvawb.java.Class {
 				return isFinal != IS_FINAL_EDEFAULT;
 			case JavaPackage.CLASS__IS_STATIC:
 				return isStatic != IS_STATIC_EDEFAULT;
-			case JavaPackage.CLASS__IMPORTS:
-				return imports != null && !imports.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

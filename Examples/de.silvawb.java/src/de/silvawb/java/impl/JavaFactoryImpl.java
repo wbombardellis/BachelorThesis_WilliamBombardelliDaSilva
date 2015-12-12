@@ -5,6 +5,8 @@ package de.silvawb.java.impl;
 import de.silvawb.java.Argument;
 import de.silvawb.java.Contained;
 import de.silvawb.java.Field;
+import de.silvawb.java.Generalization;
+import de.silvawb.java.Import;
 import de.silvawb.java.Interface;
 import de.silvawb.java.InterfaceImplementation;
 import de.silvawb.java.JavaFactory;
@@ -68,7 +70,9 @@ public class JavaFactoryImpl extends EFactoryImpl implements JavaFactory {
 			case JavaPackage.PACKAGE: return createPackage();
 			case JavaPackage.CLASS: return createClass();
 			case JavaPackage.INTERFACE_IMPLEMENTATION: return createInterfaceImplementation();
+			case JavaPackage.GENERALIZATION: return createGeneralization();
 			case JavaPackage.FIELD: return createField();
+			case JavaPackage.IMPORT: return createImport();
 			case JavaPackage.CONTAINED: return createContained();
 			case JavaPackage.METHOD: return createMethod();
 			case JavaPackage.ARGUMENT: return createArgument();
@@ -125,9 +129,29 @@ public class JavaFactoryImpl extends EFactoryImpl implements JavaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Generalization createGeneralization() {
+		GeneralizationImpl generalization = new GeneralizationImpl();
+		return generalization;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public Field createField() {
 		FieldImpl field = new FieldImpl();
 		return field;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Import createImport() {
+		ImportImpl import_ = new ImportImpl();
+		return import_;
 	}
 
 	/**

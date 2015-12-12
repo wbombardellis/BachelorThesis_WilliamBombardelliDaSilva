@@ -7,6 +7,8 @@ import de.silvawb.java.Classifier;
 import de.silvawb.java.Contained;
 import de.silvawb.java.Container;
 import de.silvawb.java.Field;
+import de.silvawb.java.Generalization;
+import de.silvawb.java.Import;
 import de.silvawb.java.Interface;
 import de.silvawb.java.InterfaceImplementation;
 import de.silvawb.java.JavaPackage;
@@ -93,12 +95,20 @@ public class JavaAdapterFactory extends AdapterFactoryImpl {
 				return createInterfaceImplementationAdapter();
 			}
 			@Override
+			public Adapter caseGeneralization(Generalization object) {
+				return createGeneralizationAdapter();
+			}
+			@Override
 			public Adapter caseClassifier(Classifier object) {
 				return createClassifierAdapter();
 			}
 			@Override
 			public Adapter caseField(Field object) {
 				return createFieldAdapter();
+			}
+			@Override
+			public Adapter caseImport(Import object) {
+				return createImportAdapter();
 			}
 			@Override
 			public Adapter caseContained(Contained object) {
@@ -201,6 +211,20 @@ public class JavaAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.java.Generalization <em>Generalization</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.java.Generalization
+	 * @generated
+	 */
+	public Adapter createGeneralizationAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link de.silvawb.java.Classifier <em>Classifier</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -225,6 +249,20 @@ public class JavaAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createFieldAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.java.Import <em>Import</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.java.Import
+	 * @generated
+	 */
+	public Adapter createImportAdapter() {
 		return null;
 	}
 

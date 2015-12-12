@@ -81,7 +81,6 @@ public interface Contained extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Importing Classes</b></em>' reference list.
 	 * The list contents are of type {@link de.silvawb.java.Class}.
-	 * It is bidirectional and its opposite is '{@link de.silvawb.java.Class#getImports <em>Imports</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Importing Classes</em>' reference list isn't clear,
@@ -90,8 +89,7 @@ public interface Contained extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Importing Classes</em>' reference list.
 	 * @see de.silvawb.java.JavaPackage#getContained_ImportingClasses()
-	 * @see de.silvawb.java.Class#getImports
-	 * @model opposite="imports" ordered="false"
+	 * @model ordered="false"
 	 * @generated
 	 */
 	EList<de.silvawb.java.Class> getImportingClasses();

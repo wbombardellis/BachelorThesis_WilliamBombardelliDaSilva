@@ -58,6 +58,15 @@ public interface JavaFactory extends EFactory {
 	InterfaceImplementation createInterfaceImplementation();
 
 	/**
+	 * Returns a new object of class '<em>Generalization</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Generalization</em>'.
+	 * @generated
+	 */
+	Generalization createGeneralization();
+
+	/**
 	 * Returns a new object of class '<em>Field</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -65,6 +74,15 @@ public interface JavaFactory extends EFactory {
 	 * @generated
 	 */
 	Field createField();
+
+	/**
+	 * Returns a new object of class '<em>Import</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Import</em>'.
+	 * @generated
+	 */
+	Import createImport();
 
 	/**
 	 * Returns a new object of class '<em>Contained</em>'.

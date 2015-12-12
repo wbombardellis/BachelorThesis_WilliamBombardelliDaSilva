@@ -48,7 +48,6 @@ public class ClassItemProvider extends ClassifierItemProvider {
 			addIsAbstractPropertyDescriptor(object);
 			addIsFinalPropertyDescriptor(object);
 			addIsStaticPropertyDescriptor(object);
-			addImportsPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -159,28 +158,6 @@ public class ClassItemProvider extends ClassifierItemProvider {
 				 false,
 				 false,
 				 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Imports feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addImportsPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Class_imports_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Class_imports_feature", "_UI_Class_type"),
-				 JavaPackage.Literals.CLASS__IMPORTS,
-				 true,
-				 false,
-				 true,
-				 null,
 				 null,
 				 null));
 	}

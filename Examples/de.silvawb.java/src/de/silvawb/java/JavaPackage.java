@@ -111,7 +111,7 @@ public interface JavaPackage extends EPackage {
 	 * @see de.silvawb.java.impl.JavaPackageImpl#getContainer()
 	 * @generated
 	 */
-	int CONTAINER = 9;
+	int CONTAINER = 11;
 
 	/**
 	 * The feature id for the '<em><b>Contained Elements</b></em>' containment reference list.
@@ -203,7 +203,7 @@ public interface JavaPackage extends EPackage {
 	 * @see de.silvawb.java.impl.JavaPackageImpl#getClassifier()
 	 * @generated
 	 */
-	int CLASSIFIER = 4;
+	int CLASSIFIER = 5;
 
 	/**
 	 * The meta object id for the '{@link de.silvawb.java.impl.ClassImpl <em>Class</em>}' class.
@@ -233,7 +233,7 @@ public interface JavaPackage extends EPackage {
 	 * @see de.silvawb.java.impl.JavaPackageImpl#getContained()
 	 * @generated
 	 */
-	int CONTAINED = 6;
+	int CONTAINED = 8;
 
 	/**
 	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
@@ -398,13 +398,31 @@ public interface JavaPackage extends EPackage {
 	int CLASSIFIER__INTERFACE_IMPLEMENTATIONS = CONTAINED_FEATURE_COUNT + 9;
 
 	/**
+	 * The feature id for the '<em><b>Generalizations</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASSIFIER__GENERALIZATIONS = CONTAINED_FEATURE_COUNT + 10;
+
+	/**
+	 * The feature id for the '<em><b>Imports</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASSIFIER__IMPORTS = CONTAINED_FEATURE_COUNT + 11;
+
+	/**
 	 * The number of structural features of the '<em>Classifier</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLASSIFIER_FEATURE_COUNT = CONTAINED_FEATURE_COUNT + 10;
+	int CLASSIFIER_FEATURE_COUNT = CONTAINED_FEATURE_COUNT + 12;
 
 	/**
 	 * The number of operations of the '<em>Classifier</em>' class.
@@ -533,6 +551,24 @@ public interface JavaPackage extends EPackage {
 	int CLASS__INTERFACE_IMPLEMENTATIONS = CLASSIFIER__INTERFACE_IMPLEMENTATIONS;
 
 	/**
+	 * The feature id for the '<em><b>Generalizations</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS__GENERALIZATIONS = CLASSIFIER__GENERALIZATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Imports</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS__IMPORTS = CLASSIFIER__IMPORTS;
+
+	/**
 	 * The feature id for the '<em><b>Extended Class</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -578,22 +614,13 @@ public interface JavaPackage extends EPackage {
 	int CLASS__IS_STATIC = CLASSIFIER_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Imports</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASS__IMPORTS = CLASSIFIER_FEATURE_COUNT + 5;
-
-	/**
 	 * The number of structural features of the '<em>Class</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_FEATURE_COUNT = CLASSIFIER_FEATURE_COUNT + 6;
+	int CLASS_FEATURE_COUNT = CLASSIFIER_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of operations of the '<em>Class</em>' class.
@@ -641,6 +668,52 @@ public interface JavaPackage extends EPackage {
 	int INTERFACE_IMPLEMENTATION_OPERATION_COUNT = 0;
 
 	/**
+	 * The meta object id for the '{@link de.silvawb.java.impl.GeneralizationImpl <em>Generalization</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.silvawb.java.impl.GeneralizationImpl
+	 * @see de.silvawb.java.impl.JavaPackageImpl#getGeneralization()
+	 * @generated
+	 */
+	int GENERALIZATION = 4;
+
+	/**
+	 * The feature id for the '<em><b>General</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERALIZATION__GENERAL = 0;
+
+	/**
+	 * The feature id for the '<em><b>Generalizator</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERALIZATION__GENERALIZATOR = 1;
+
+	/**
+	 * The number of structural features of the '<em>Generalization</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERALIZATION_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Generalization</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERALIZATION_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link de.silvawb.java.impl.FieldImpl <em>Field</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -648,7 +721,7 @@ public interface JavaPackage extends EPackage {
 	 * @see de.silvawb.java.impl.JavaPackageImpl#getField()
 	 * @generated
 	 */
-	int FIELD = 5;
+	int FIELD = 6;
 
 	/**
 	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
@@ -750,6 +823,52 @@ public interface JavaPackage extends EPackage {
 	int FIELD_OPERATION_COUNT = CONTAINED_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link de.silvawb.java.impl.ImportImpl <em>Import</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.silvawb.java.impl.ImportImpl
+	 * @see de.silvawb.java.impl.JavaPackageImpl#getImport()
+	 * @generated
+	 */
+	int IMPORT = 7;
+
+	/**
+	 * The feature id for the '<em><b>Imported</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMPORT__IMPORTED = 0;
+
+	/**
+	 * The feature id for the '<em><b>Importing</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMPORT__IMPORTING = 1;
+
+	/**
+	 * The number of structural features of the '<em>Import</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMPORT_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Import</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMPORT_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link de.silvawb.java.impl.MethodImpl <em>Method</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -757,7 +876,7 @@ public interface JavaPackage extends EPackage {
 	 * @see de.silvawb.java.impl.JavaPackageImpl#getMethod()
 	 * @generated
 	 */
-	int METHOD = 7;
+	int METHOD = 9;
 
 	/**
 	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
@@ -893,7 +1012,7 @@ public interface JavaPackage extends EPackage {
 	 * @see de.silvawb.java.impl.JavaPackageImpl#getArgument()
 	 * @generated
 	 */
-	int ARGUMENT = 8;
+	int ARGUMENT = 10;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -949,7 +1068,7 @@ public interface JavaPackage extends EPackage {
 	 * @see de.silvawb.java.impl.JavaPackageImpl#getInterface()
 	 * @generated
 	 */
-	int INTERFACE = 10;
+	int INTERFACE = 12;
 
 	/**
 	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
@@ -1069,6 +1188,24 @@ public interface JavaPackage extends EPackage {
 	int INTERFACE__INTERFACE_IMPLEMENTATIONS = CLASSIFIER__INTERFACE_IMPLEMENTATIONS;
 
 	/**
+	 * The feature id for the '<em><b>Generalizations</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERFACE__GENERALIZATIONS = CLASSIFIER__GENERALIZATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Imports</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERFACE__IMPORTS = CLASSIFIER__IMPORTS;
+
+	/**
 	 * The feature id for the '<em><b>Extended Interfaces</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1112,7 +1249,7 @@ public interface JavaPackage extends EPackage {
 	 * @see de.silvawb.java.impl.JavaPackageImpl#getTemplateBinding()
 	 * @generated
 	 */
-	int TEMPLATE_BINDING = 11;
+	int TEMPLATE_BINDING = 13;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1290,17 +1427,6 @@ public interface JavaPackage extends EPackage {
 	EAttribute getClass_IsStatic();
 
 	/**
-	 * Returns the meta object for the reference list '{@link de.silvawb.java.Class#getImports <em>Imports</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Imports</em>'.
-	 * @see de.silvawb.java.Class#getImports()
-	 * @see #getClass_()
-	 * @generated
-	 */
-	EReference getClass_Imports();
-
-	/**
 	 * Returns the meta object for class '{@link de.silvawb.java.InterfaceImplementation <em>Interface Implementation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1331,6 +1457,38 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getInterfaceImplementation_Implementer();
+
+	/**
+	 * Returns the meta object for class '{@link de.silvawb.java.Generalization <em>Generalization</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Generalization</em>'.
+	 * @see de.silvawb.java.Generalization
+	 * @generated
+	 */
+	EClass getGeneralization();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.java.Generalization#getGeneral <em>General</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>General</em>'.
+	 * @see de.silvawb.java.Generalization#getGeneral()
+	 * @see #getGeneralization()
+	 * @generated
+	 */
+	EReference getGeneralization_General();
+
+	/**
+	 * Returns the meta object for the container reference '{@link de.silvawb.java.Generalization#getGeneralizator <em>Generalizator</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the container reference '<em>Generalizator</em>'.
+	 * @see de.silvawb.java.Generalization#getGeneralizator()
+	 * @see #getGeneralization()
+	 * @generated
+	 */
+	EReference getGeneralization_Generalizator();
 
 	/**
 	 * Returns the meta object for class '{@link de.silvawb.java.Classifier <em>Classifier</em>}'.
@@ -1442,6 +1600,28 @@ public interface JavaPackage extends EPackage {
 	EReference getClassifier_InterfaceImplementations();
 
 	/**
+	 * Returns the meta object for the containment reference '{@link de.silvawb.java.Classifier#getGeneralizations <em>Generalizations</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Generalizations</em>'.
+	 * @see de.silvawb.java.Classifier#getGeneralizations()
+	 * @see #getClassifier()
+	 * @generated
+	 */
+	EReference getClassifier_Generalizations();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link de.silvawb.java.Classifier#getImports <em>Imports</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Imports</em>'.
+	 * @see de.silvawb.java.Classifier#getImports()
+	 * @see #getClassifier()
+	 * @generated
+	 */
+	EReference getClassifier_Imports();
+
+	/**
 	 * Returns the meta object for class '{@link de.silvawb.java.Field <em>Field</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1516,6 +1696,38 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getField_IsFinal();
+
+	/**
+	 * Returns the meta object for class '{@link de.silvawb.java.Import <em>Import</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Import</em>'.
+	 * @see de.silvawb.java.Import
+	 * @generated
+	 */
+	EClass getImport();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.java.Import#getImported <em>Imported</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Imported</em>'.
+	 * @see de.silvawb.java.Import#getImported()
+	 * @see #getImport()
+	 * @generated
+	 */
+	EReference getImport_Imported();
+
+	/**
+	 * Returns the meta object for the container reference '{@link de.silvawb.java.Import#getImporting <em>Importing</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the container reference '<em>Importing</em>'.
+	 * @see de.silvawb.java.Import#getImporting()
+	 * @see #getImport()
+	 * @generated
+	 */
+	EReference getImport_Importing();
 
 	/**
 	 * Returns the meta object for class '{@link de.silvawb.java.Contained <em>Contained</em>}'.
@@ -1934,14 +2146,6 @@ public interface JavaPackage extends EPackage {
 		EAttribute CLASS__IS_STATIC = eINSTANCE.getClass_IsStatic();
 
 		/**
-		 * The meta object literal for the '<em><b>Imports</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CLASS__IMPORTS = eINSTANCE.getClass_Imports();
-
-		/**
 		 * The meta object literal for the '{@link de.silvawb.java.impl.InterfaceImplementationImpl <em>Interface Implementation</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1966,6 +2170,32 @@ public interface JavaPackage extends EPackage {
 		 * @generated
 		 */
 		EReference INTERFACE_IMPLEMENTATION__IMPLEMENTER = eINSTANCE.getInterfaceImplementation_Implementer();
+
+		/**
+		 * The meta object literal for the '{@link de.silvawb.java.impl.GeneralizationImpl <em>Generalization</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.silvawb.java.impl.GeneralizationImpl
+		 * @see de.silvawb.java.impl.JavaPackageImpl#getGeneralization()
+		 * @generated
+		 */
+		EClass GENERALIZATION = eINSTANCE.getGeneralization();
+
+		/**
+		 * The meta object literal for the '<em><b>General</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GENERALIZATION__GENERAL = eINSTANCE.getGeneralization_General();
+
+		/**
+		 * The meta object literal for the '<em><b>Generalizator</b></em>' container reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GENERALIZATION__GENERALIZATOR = eINSTANCE.getGeneralization_Generalizator();
 
 		/**
 		 * The meta object literal for the '{@link de.silvawb.java.impl.ClassifierImpl <em>Classifier</em>}' class.
@@ -2050,6 +2280,22 @@ public interface JavaPackage extends EPackage {
 		EReference CLASSIFIER__INTERFACE_IMPLEMENTATIONS = eINSTANCE.getClassifier_InterfaceImplementations();
 
 		/**
+		 * The meta object literal for the '<em><b>Generalizations</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CLASSIFIER__GENERALIZATIONS = eINSTANCE.getClassifier_Generalizations();
+
+		/**
+		 * The meta object literal for the '<em><b>Imports</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CLASSIFIER__IMPORTS = eINSTANCE.getClassifier_Imports();
+
+		/**
 		 * The meta object literal for the '{@link de.silvawb.java.impl.FieldImpl <em>Field</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2106,6 +2352,32 @@ public interface JavaPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute FIELD__IS_FINAL = eINSTANCE.getField_IsFinal();
+
+		/**
+		 * The meta object literal for the '{@link de.silvawb.java.impl.ImportImpl <em>Import</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.silvawb.java.impl.ImportImpl
+		 * @see de.silvawb.java.impl.JavaPackageImpl#getImport()
+		 * @generated
+		 */
+		EClass IMPORT = eINSTANCE.getImport();
+
+		/**
+		 * The meta object literal for the '<em><b>Imported</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference IMPORT__IMPORTED = eINSTANCE.getImport_Imported();
+
+		/**
+		 * The meta object literal for the '<em><b>Importing</b></em>' container reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference IMPORT__IMPORTING = eINSTANCE.getImport_Importing();
 
 		/**
 		 * The meta object literal for the '{@link de.silvawb.java.impl.ContainedImpl <em>Contained</em>}' class.

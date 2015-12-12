@@ -7,6 +7,8 @@ import de.silvawb.java.Classifier;
 import de.silvawb.java.Contained;
 import de.silvawb.java.Container;
 import de.silvawb.java.Field;
+import de.silvawb.java.Generalization;
+import de.silvawb.java.Import;
 import de.silvawb.java.Interface;
 import de.silvawb.java.InterfaceImplementation;
 import de.silvawb.java.JavaPackage;
@@ -103,6 +105,12 @@ public class JavaSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case JavaPackage.GENERALIZATION: {
+				Generalization generalization = (Generalization)theEObject;
+				T result = caseGeneralization(generalization);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case JavaPackage.CLASSIFIER: {
 				Classifier classifier = (Classifier)theEObject;
 				T result = caseClassifier(classifier);
@@ -115,6 +123,12 @@ public class JavaSwitch<T> extends Switch<T> {
 				Field field = (Field)theEObject;
 				T result = caseField(field);
 				if (result == null) result = caseContained(field);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case JavaPackage.IMPORT: {
+				Import import_ = (Import)theEObject;
+				T result = caseImport(import_);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -223,6 +237,21 @@ public class JavaSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Generalization</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Generalization</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGeneralization(Generalization object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Classifier</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -249,6 +278,21 @@ public class JavaSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseField(Field object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Import</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Import</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseImport(Import object) {
 		return null;
 	}
 

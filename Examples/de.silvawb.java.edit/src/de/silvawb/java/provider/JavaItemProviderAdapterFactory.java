@@ -164,6 +164,29 @@ public class JavaItemProviderAdapterFactory extends JavaAdapterFactory implement
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link de.silvawb.java.Generalization} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected GeneralizationItemProvider generalizationItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link de.silvawb.java.Generalization}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createGeneralizationAdapter() {
+		if (generalizationItemProvider == null) {
+			generalizationItemProvider = new GeneralizationItemProvider(this);
+		}
+
+		return generalizationItemProvider;
+	}
+
+	/**
 	 * This keeps track of the one adapter used for all {@link de.silvawb.java.Field} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -184,6 +207,29 @@ public class JavaItemProviderAdapterFactory extends JavaAdapterFactory implement
 		}
 
 		return fieldItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link de.silvawb.java.Import} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ImportItemProvider importItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link de.silvawb.java.Import}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createImportAdapter() {
+		if (importItemProvider == null) {
+			importItemProvider = new ImportItemProvider(this);
+		}
+
+		return importItemProvider;
 	}
 
 	/**
@@ -427,7 +473,9 @@ public class JavaItemProviderAdapterFactory extends JavaAdapterFactory implement
 		if (packageItemProvider != null) packageItemProvider.dispose();
 		if (classItemProvider != null) classItemProvider.dispose();
 		if (interfaceImplementationItemProvider != null) interfaceImplementationItemProvider.dispose();
+		if (generalizationItemProvider != null) generalizationItemProvider.dispose();
 		if (fieldItemProvider != null) fieldItemProvider.dispose();
+		if (importItemProvider != null) importItemProvider.dispose();
 		if (containedItemProvider != null) containedItemProvider.dispose();
 		if (methodItemProvider != null) methodItemProvider.dispose();
 		if (argumentItemProvider != null) argumentItemProvider.dispose();
