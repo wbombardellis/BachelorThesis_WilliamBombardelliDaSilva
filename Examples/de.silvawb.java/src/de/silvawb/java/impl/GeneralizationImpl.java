@@ -132,7 +132,7 @@ public class GeneralizationImpl extends MinimalEObjectImpl.Container implements 
 			if (eInternalContainer() != null)
 				msgs = eBasicRemoveFromContainer(msgs);
 			if (newGeneralizator != null)
-				msgs = ((InternalEObject)newGeneralizator).eInverseAdd(this, JavaPackage.CLASSIFIER__GENERALIZATIONS, Classifier.class, msgs);
+				msgs = ((InternalEObject)newGeneralizator).eInverseAdd(this, JavaPackage.CLASSIFIER__GENERALIZATION, Classifier.class, msgs);
 			msgs = basicSetGeneralizator(newGeneralizator, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
@@ -179,7 +179,7 @@ public class GeneralizationImpl extends MinimalEObjectImpl.Container implements 
 	public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
 		switch (eContainerFeatureID()) {
 			case JavaPackage.GENERALIZATION__GENERALIZATOR:
-				return eInternalContainer().eInverseRemove(this, JavaPackage.CLASSIFIER__GENERALIZATIONS, Classifier.class, msgs);
+				return eInternalContainer().eInverseRemove(this, JavaPackage.CLASSIFIER__GENERALIZATION, Classifier.class, msgs);
 		}
 		return super.eBasicRemoveFromContainerFeature(msgs);
 	}

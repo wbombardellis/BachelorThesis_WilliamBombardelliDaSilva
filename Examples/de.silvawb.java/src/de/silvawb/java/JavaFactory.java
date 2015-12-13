@@ -130,13 +130,13 @@ public interface JavaFactory extends EFactory {
 	Interface createInterface();
 
 	/**
-	 * Returns a new object of class '<em>Template Binding</em>'.
+	 * Returns a new object of class '<em>Generic Binding</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Template Binding</em>'.
+	 * @return a new object of class '<em>Generic Binding</em>'.
 	 * @generated
 	 */
-	TemplateBinding createTemplateBinding();
+	GenericBinding createGenericBinding();
 
 	/**
 	 * Returns the package supported by this factory.

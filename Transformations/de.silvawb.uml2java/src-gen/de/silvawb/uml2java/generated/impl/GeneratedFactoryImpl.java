@@ -60,44 +60,44 @@ public class GeneratedFactoryImpl extends EFactoryImpl implements GeneratedFacto
 			return createuml2javaOperationalTGG();
 		case GeneratedPackage.UML2JAVA_AXIOM:
 			return createuml2javaAxiom();
-		case GeneratedPackage.UI_ATTRIBUTE2J_IATTRIBUTE:
-			return createuIAttribute2jIAttribute();
-		case GeneratedPackage.UCLASS2J_CLASS_RULE:
-			return createuClass2jClass_Rule();
-		case GeneratedPackage.UI_REALIZATION2J_IIMPLEMENTATION_RULE:
-			return createuIRealization2jIImplementation_Rule();
-		case GeneratedPackage.UPACKAGE2J_PACKAGE_RULE:
-			return createuPackage2jPackage_Rule();
-		case GeneratedPackage.UC_ATTRIBUTE2J_CATTRIBUTE_RULE:
-			return createuCAttribute2jCAttribute_Rule();
 		case GeneratedPackage.UI_OPERATION2J_IMETHOD_RULE:
 			return createuIOperation2jIMethod_Rule();
+		case GeneratedPackage.UPACKAGE2J_PACKAGE_RULE:
+			return createuPackage2jPackage_Rule();
 		case GeneratedPackage.UC_OPERATION2J_CMETHOD_RULE:
 			return createuCOperation2jCMethod_Rule();
+		case GeneratedPackage.UI_ATTRIBUTE2J_IATTRIBUTE:
+			return createuIAttribute2jIAttribute();
 		case GeneratedPackage.UC_GENERALIZATION2J_CGENERALIZATION_RULE:
 			return createuCGeneralization2jCGeneralization_Rule();
+		case GeneratedPackage.UC_ATTRIBUTE2J_CATTRIBUTE_RULE:
+			return createuCAttribute2jCAttribute_Rule();
+		case GeneratedPackage.UI_REALIZATION2J_IIMPLEMENTATION_RULE:
+			return createuIRealization2jIImplementation_Rule();
+		case GeneratedPackage.UCLASS2J_CLASS_RULE:
+			return createuClass2jClass_Rule();
 		case GeneratedPackage.UINTERFACE2J_INTERFACE_RULE:
 			return createuInterface2jInterface_Rule();
 		case GeneratedPackage.UML2JAVA_AXIOM_R1:
 			return createuml2javaAxiom_r1();
-		case GeneratedPackage.UPACKAGE2J_PACKAGE_RULE_R2:
-			return createuPackage2jPackage_Rule_r2();
-		case GeneratedPackage.UC_OPERATION2J_CMETHOD_RULE_R5:
-			return createuCOperation2jCMethod_Rule_r5();
-		case GeneratedPackage.UC_GENERALIZATION2J_CGENERALIZATION_RULE_R10:
-			return createuCGeneralization2jCGeneralization_Rule_r10();
 		case GeneratedPackage.UI_REALIZATION2J_IIMPLEMENTATION_RULE_R9:
 			return createuIRealization2jIImplementation_Rule_r9();
-		case GeneratedPackage.UI_ATTRIBUTE2J_IATTRIBUTE_R7:
-			return createuIAttribute2jIAttribute_r7();
-		case GeneratedPackage.UI_OPERATION2J_IMETHOD_RULE_R8:
-			return createuIOperation2jIMethod_Rule_r8();
+		case GeneratedPackage.UC_OPERATION2J_CMETHOD_RULE_R5:
+			return createuCOperation2jCMethod_Rule_r5();
 		case GeneratedPackage.UC_ATTRIBUTE2J_CATTRIBUTE_RULE_R4:
 			return createuCAttribute2jCAttribute_Rule_r4();
+		case GeneratedPackage.UC_GENERALIZATION2J_CGENERALIZATION_RULE_R10:
+			return createuCGeneralization2jCGeneralization_Rule_r10();
 		case GeneratedPackage.UCLASS2J_CLASS_RULE_R3:
 			return createuClass2jClass_Rule_r3();
 		case GeneratedPackage.UINTERFACE2J_INTERFACE_RULE_R6:
 			return createuInterface2jInterface_Rule_r6();
+		case GeneratedPackage.UPACKAGE2J_PACKAGE_RULE_R2:
+			return createuPackage2jPackage_Rule_r2();
+		case GeneratedPackage.UI_ATTRIBUTE2J_IATTRIBUTE_R7:
+			return createuIAttribute2jIAttribute_r7();
+		case GeneratedPackage.UI_OPERATION2J_IMETHOD_RULE_R8:
+			return createuIOperation2jIMethod_Rule_r8();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -128,29 +128,9 @@ public class GeneratedFactoryImpl extends EFactoryImpl implements GeneratedFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public uIAttribute2jIAttribute createuIAttribute2jIAttribute() {
-		uIAttribute2jIAttributeImpl uIAttribute2jIAttribute = new uIAttribute2jIAttributeImpl();
-		return uIAttribute2jIAttribute;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public uClass2jClass_Rule createuClass2jClass_Rule() {
-		uClass2jClass_RuleImpl uClass2jClass_Rule = new uClass2jClass_RuleImpl();
-		return uClass2jClass_Rule;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public uIRealization2jIImplementation_Rule createuIRealization2jIImplementation_Rule() {
-		uIRealization2jIImplementation_RuleImpl uIRealization2jIImplementation_Rule = new uIRealization2jIImplementation_RuleImpl();
-		return uIRealization2jIImplementation_Rule;
+	public uIOperation2jIMethod_Rule createuIOperation2jIMethod_Rule() {
+		uIOperation2jIMethod_RuleImpl uIOperation2jIMethod_Rule = new uIOperation2jIMethod_RuleImpl();
+		return uIOperation2jIMethod_Rule;
 	}
 
 	/**
@@ -168,26 +148,6 @@ public class GeneratedFactoryImpl extends EFactoryImpl implements GeneratedFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public uCAttribute2jCAttribute_Rule createuCAttribute2jCAttribute_Rule() {
-		uCAttribute2jCAttribute_RuleImpl uCAttribute2jCAttribute_Rule = new uCAttribute2jCAttribute_RuleImpl();
-		return uCAttribute2jCAttribute_Rule;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public uIOperation2jIMethod_Rule createuIOperation2jIMethod_Rule() {
-		uIOperation2jIMethod_RuleImpl uIOperation2jIMethod_Rule = new uIOperation2jIMethod_RuleImpl();
-		return uIOperation2jIMethod_Rule;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public uCOperation2jCMethod_Rule createuCOperation2jCMethod_Rule() {
 		uCOperation2jCMethod_RuleImpl uCOperation2jCMethod_Rule = new uCOperation2jCMethod_RuleImpl();
 		return uCOperation2jCMethod_Rule;
@@ -198,9 +158,49 @@ public class GeneratedFactoryImpl extends EFactoryImpl implements GeneratedFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public uIAttribute2jIAttribute createuIAttribute2jIAttribute() {
+		uIAttribute2jIAttributeImpl uIAttribute2jIAttribute = new uIAttribute2jIAttributeImpl();
+		return uIAttribute2jIAttribute;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public uCGeneralization2jCGeneralization_Rule createuCGeneralization2jCGeneralization_Rule() {
 		uCGeneralization2jCGeneralization_RuleImpl uCGeneralization2jCGeneralization_Rule = new uCGeneralization2jCGeneralization_RuleImpl();
 		return uCGeneralization2jCGeneralization_Rule;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public uCAttribute2jCAttribute_Rule createuCAttribute2jCAttribute_Rule() {
+		uCAttribute2jCAttribute_RuleImpl uCAttribute2jCAttribute_Rule = new uCAttribute2jCAttribute_RuleImpl();
+		return uCAttribute2jCAttribute_Rule;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public uIRealization2jIImplementation_Rule createuIRealization2jIImplementation_Rule() {
+		uIRealization2jIImplementation_RuleImpl uIRealization2jIImplementation_Rule = new uIRealization2jIImplementation_RuleImpl();
+		return uIRealization2jIImplementation_Rule;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public uClass2jClass_Rule createuClass2jClass_Rule() {
+		uClass2jClass_RuleImpl uClass2jClass_Rule = new uClass2jClass_RuleImpl();
+		return uClass2jClass_Rule;
 	}
 
 	/**
@@ -228,9 +228,9 @@ public class GeneratedFactoryImpl extends EFactoryImpl implements GeneratedFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public uPackage2jPackage_Rule_r2 createuPackage2jPackage_Rule_r2() {
-		uPackage2jPackage_Rule_r2Impl uPackage2jPackage_Rule_r2 = new uPackage2jPackage_Rule_r2Impl();
-		return uPackage2jPackage_Rule_r2;
+	public uIRealization2jIImplementation_Rule_r9 createuIRealization2jIImplementation_Rule_r9() {
+		uIRealization2jIImplementation_Rule_r9Impl uIRealization2jIImplementation_Rule_r9 = new uIRealization2jIImplementation_Rule_r9Impl();
+		return uIRealization2jIImplementation_Rule_r9;
 	}
 
 	/**
@@ -248,49 +248,19 @@ public class GeneratedFactoryImpl extends EFactoryImpl implements GeneratedFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public uCGeneralization2jCGeneralization_Rule_r10 createuCGeneralization2jCGeneralization_Rule_r10() {
-		uCGeneralization2jCGeneralization_Rule_r10Impl uCGeneralization2jCGeneralization_Rule_r10 = new uCGeneralization2jCGeneralization_Rule_r10Impl();
-		return uCGeneralization2jCGeneralization_Rule_r10;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public uIRealization2jIImplementation_Rule_r9 createuIRealization2jIImplementation_Rule_r9() {
-		uIRealization2jIImplementation_Rule_r9Impl uIRealization2jIImplementation_Rule_r9 = new uIRealization2jIImplementation_Rule_r9Impl();
-		return uIRealization2jIImplementation_Rule_r9;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public uIAttribute2jIAttribute_r7 createuIAttribute2jIAttribute_r7() {
-		uIAttribute2jIAttribute_r7Impl uIAttribute2jIAttribute_r7 = new uIAttribute2jIAttribute_r7Impl();
-		return uIAttribute2jIAttribute_r7;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public uIOperation2jIMethod_Rule_r8 createuIOperation2jIMethod_Rule_r8() {
-		uIOperation2jIMethod_Rule_r8Impl uIOperation2jIMethod_Rule_r8 = new uIOperation2jIMethod_Rule_r8Impl();
-		return uIOperation2jIMethod_Rule_r8;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public uCAttribute2jCAttribute_Rule_r4 createuCAttribute2jCAttribute_Rule_r4() {
 		uCAttribute2jCAttribute_Rule_r4Impl uCAttribute2jCAttribute_Rule_r4 = new uCAttribute2jCAttribute_Rule_r4Impl();
 		return uCAttribute2jCAttribute_Rule_r4;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public uCGeneralization2jCGeneralization_Rule_r10 createuCGeneralization2jCGeneralization_Rule_r10() {
+		uCGeneralization2jCGeneralization_Rule_r10Impl uCGeneralization2jCGeneralization_Rule_r10 = new uCGeneralization2jCGeneralization_Rule_r10Impl();
+		return uCGeneralization2jCGeneralization_Rule_r10;
 	}
 
 	/**
@@ -311,6 +281,36 @@ public class GeneratedFactoryImpl extends EFactoryImpl implements GeneratedFacto
 	public uInterface2jInterface_Rule_r6 createuInterface2jInterface_Rule_r6() {
 		uInterface2jInterface_Rule_r6Impl uInterface2jInterface_Rule_r6 = new uInterface2jInterface_Rule_r6Impl();
 		return uInterface2jInterface_Rule_r6;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public uPackage2jPackage_Rule_r2 createuPackage2jPackage_Rule_r2() {
+		uPackage2jPackage_Rule_r2Impl uPackage2jPackage_Rule_r2 = new uPackage2jPackage_Rule_r2Impl();
+		return uPackage2jPackage_Rule_r2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public uIAttribute2jIAttribute_r7 createuIAttribute2jIAttribute_r7() {
+		uIAttribute2jIAttribute_r7Impl uIAttribute2jIAttribute_r7 = new uIAttribute2jIAttribute_r7Impl();
+		return uIAttribute2jIAttribute_r7;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public uIOperation2jIMethod_Rule_r8 createuIOperation2jIMethod_Rule_r8() {
+		uIOperation2jIMethod_Rule_r8Impl uIOperation2jIMethod_Rule_r8 = new uIOperation2jIMethod_Rule_r8Impl();
+		return uIOperation2jIMethod_Rule_r8;
 	}
 
 	/**

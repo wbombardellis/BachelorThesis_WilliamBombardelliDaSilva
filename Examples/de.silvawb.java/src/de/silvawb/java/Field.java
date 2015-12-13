@@ -52,7 +52,6 @@ public interface Field extends Contained {
 
 	/**
 	 * Returns the value of the '<em><b>Type</b></em>' reference.
-	 * It is bidirectional and its opposite is '{@link de.silvawb.java.Classifier#getTypingFields <em>Typing Fields</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Type</em>' reference isn't clear,
@@ -62,8 +61,7 @@ public interface Field extends Contained {
 	 * @return the value of the '<em>Type</em>' reference.
 	 * @see #setType(Classifier)
 	 * @see de.silvawb.java.JavaPackage#getField_Type()
-	 * @see de.silvawb.java.Classifier#getTypingFields
-	 * @model opposite="typingFields"
+	 * @model
 	 * @generated
 	 */
 	Classifier getType();

@@ -348,26 +348,26 @@ public class JavaItemProviderAdapterFactory extends JavaAdapterFactory implement
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link de.silvawb.java.TemplateBinding} instances.
+	 * This keeps track of the one adapter used for all {@link de.silvawb.java.GenericBinding} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TemplateBindingItemProvider templateBindingItemProvider;
+	protected GenericBindingItemProvider genericBindingItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link de.silvawb.java.TemplateBinding}.
+	 * This creates an adapter for a {@link de.silvawb.java.GenericBinding}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createTemplateBindingAdapter() {
-		if (templateBindingItemProvider == null) {
-			templateBindingItemProvider = new TemplateBindingItemProvider(this);
+	public Adapter createGenericBindingAdapter() {
+		if (genericBindingItemProvider == null) {
+			genericBindingItemProvider = new GenericBindingItemProvider(this);
 		}
 
-		return templateBindingItemProvider;
+		return genericBindingItemProvider;
 	}
 
 	/**
@@ -481,7 +481,7 @@ public class JavaItemProviderAdapterFactory extends JavaAdapterFactory implement
 		if (argumentItemProvider != null) argumentItemProvider.dispose();
 		if (containerItemProvider != null) containerItemProvider.dispose();
 		if (interfaceItemProvider != null) interfaceItemProvider.dispose();
-		if (templateBindingItemProvider != null) templateBindingItemProvider.dispose();
+		if (genericBindingItemProvider != null) genericBindingItemProvider.dispose();
 	}
 
 }

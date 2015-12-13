@@ -62,7 +62,6 @@ public class ArgumentItemProvider
 
 			addNamePropertyDescriptor(object);
 			addTypePropertyDescriptor(object);
-			addUsingMethodsPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -103,28 +102,6 @@ public class ArgumentItemProvider
 				 getString("_UI_Argument_type_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_Argument_type_feature", "_UI_Argument_type"),
 				 JavaPackage.Literals.ARGUMENT__TYPE,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Using Methods feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addUsingMethodsPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Argument_usingMethods_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Argument_usingMethods_feature", "_UI_Argument_type"),
-				 JavaPackage.Literals.ARGUMENT__USING_METHODS,
 				 true,
 				 false,
 				 true,

@@ -30,36 +30,27 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="general" ordered="false"
         eType="#//Classifier"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="generalizator" ordered="false"
-        eType="#//Classifier" eOpposite="#//Classifier/generalizations"/>
+        eType="#//Classifier" eOpposite="#//Classifier/generalization"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Classifier" abstract="true" eSuperTypes="#//Contained #//Container">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="templateBindings" upperBound="-1"
-        eType="#//TemplateBinding"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="underTemplateBindings"
-        ordered="false" upperBound="-1" eType="#//TemplateBinding" eOpposite="#//TemplateBinding/overClassifier"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="genericBindings" upperBound="-1"
+        eType="#//GenericBinding" containment="true" eOpposite="#//GenericBinding/usingClassifier"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="fields" ordered="false"
         upperBound="-1" eType="#//Field" containment="true" eOpposite="#//Field/containingClassifier"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="typingFields" ordered="false"
-        upperBound="-1" eType="#//Field" eOpposite="#//Field/type"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="typingMethods" ordered="false"
-        upperBound="-1" eType="#//Method" eOpposite="#//Method/returnType"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="methods" ordered="false"
         upperBound="-1" eType="#//Method" containment="true" eOpposite="#//Method/containingClassifier"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="typingArguments" ordered="false"
-        upperBound="-1" eType="#//Argument" eOpposite="#//Argument/type"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="interfaceImplementations"
         ordered="false" upperBound="-1" eType="#//InterfaceImplementation" containment="true"
         eOpposite="#//InterfaceImplementation/implementer"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="generalizations" ordered="false"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="generalization" ordered="false"
         eType="#//Generalization" containment="true" eOpposite="#//Generalization/generalizator"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="imports" ordered="false"
         upperBound="-1" eType="#//Import" containment="true" eOpposite="#//Import/importing"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Field" eSuperTypes="#//Contained">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="#//Classifier"
-        eOpposite="#//Classifier/typingFields"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="#//Classifier"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="containingClassifier" ordered="false"
         eType="#//Classifier" eOpposite="#//Classifier/fields"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="default" ordered="false"
@@ -84,10 +75,9 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Method" eSuperTypes="#//Contained">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="returnType" eType="#//Classifier"
-        eOpposite="#//Classifier/typingMethods"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="returnType" eType="#//Classifier"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="arguments" upperBound="-1"
-        eType="#//Argument" eOpposite="#//Argument/usingMethods"/>
+        eType="#//Argument" containment="true" eOpposite="#//Argument/usingMethod"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="containingClassifier" ordered="false"
         eType="#//Classifier" eOpposite="#//Classifier/methods"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="isFinal" ordered="false"
@@ -102,26 +92,22 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Argument">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="#//Classifier"
-        eOpposite="#//Classifier/typingArguments"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="usingMethods" ordered="false"
-        upperBound="-1" eType="#//Method" eOpposite="#//Method/arguments"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="#//Classifier"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="usingMethod" ordered="false"
+        eType="#//Method" eOpposite="#//Method/arguments"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Container">
     <eStructuralFeatures xsi:type="ecore:EReference" name="containedElements" ordered="false"
         upperBound="-1" eType="#//Contained" containment="true" eOpposite="#//Contained/container"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Interface" eSuperTypes="#//Classifier #//Contained #//Container">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="extendedInterfaces" ordered="false"
-        upperBound="-1" eType="#//Interface" eOpposite="#//Interface/extendingInterfaces"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="extendingInterfaces" ordered="false"
-        upperBound="-1" eType="#//Interface" eOpposite="#//Interface/extendedInterfaces"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="TemplateBinding">
+  <eClassifiers xsi:type="ecore:EClass" name="Interface" eSuperTypes="#//Classifier #//Contained #//Container"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GenericBinding">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="typeOverClassifier" ordered="false"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="overClassifier" ordered="false"
-        eType="#//Classifier" eOpposite="#//Classifier/underTemplateBindings"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="upperBoundings" ordered="false"
+        upperBound="-1" eType="#//Classifier"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lowerBounding" ordered="false"
+        eType="#//Classifier"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="usingClassifier" ordered="false"
+        eType="#//Classifier" eOpposite="#//Classifier/genericBindings"/>
   </eClassifiers>
 </ecore:EPackage>

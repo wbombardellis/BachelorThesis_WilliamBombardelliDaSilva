@@ -3,8 +3,8 @@
 package de.silvawb.java.provider;
 
 
+import de.silvawb.java.GenericBinding;
 import de.silvawb.java.JavaPackage;
-import de.silvawb.java.TemplateBinding;
 
 import java.util.Collection;
 import java.util.List;
@@ -26,12 +26,12 @@ import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
 /**
- * This is the item provider adapter for a {@link de.silvawb.java.TemplateBinding} object.
+ * This is the item provider adapter for a {@link de.silvawb.java.GenericBinding} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class TemplateBindingItemProvider 
+public class GenericBindingItemProvider 
 	extends ItemProviderAdapter
 	implements
 		IEditingDomainItemProvider,
@@ -45,7 +45,7 @@ public class TemplateBindingItemProvider
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TemplateBindingItemProvider(AdapterFactory adapterFactory) {
+	public GenericBindingItemProvider(AdapterFactory adapterFactory) {
 		super(adapterFactory);
 	}
 
@@ -61,8 +61,8 @@ public class TemplateBindingItemProvider
 			super.getPropertyDescriptors(object);
 
 			addNamePropertyDescriptor(object);
-			addTypeOverClassifierPropertyDescriptor(object);
-			addOverClassifierPropertyDescriptor(object);
+			addUpperBoundingsPropertyDescriptor(object);
+			addLowerBoundingPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -78,9 +78,9 @@ public class TemplateBindingItemProvider
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_TemplateBinding_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_TemplateBinding_name_feature", "_UI_TemplateBinding_type"),
-				 JavaPackage.Literals.TEMPLATE_BINDING__NAME,
+				 getString("_UI_GenericBinding_name_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_GenericBinding_name_feature", "_UI_GenericBinding_type"),
+				 JavaPackage.Literals.GENERIC_BINDING__NAME,
 				 true,
 				 false,
 				 false,
@@ -90,41 +90,19 @@ public class TemplateBindingItemProvider
 	}
 
 	/**
-	 * This adds a property descriptor for the Type Over Classifier feature.
+	 * This adds a property descriptor for the Upper Boundings feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addTypeOverClassifierPropertyDescriptor(Object object) {
+	protected void addUpperBoundingsPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_TemplateBinding_typeOverClassifier_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_TemplateBinding_typeOverClassifier_feature", "_UI_TemplateBinding_type"),
-				 JavaPackage.Literals.TEMPLATE_BINDING__TYPE_OVER_CLASSIFIER,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Over Classifier feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addOverClassifierPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_TemplateBinding_overClassifier_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_TemplateBinding_overClassifier_feature", "_UI_TemplateBinding_type"),
-				 JavaPackage.Literals.TEMPLATE_BINDING__OVER_CLASSIFIER,
+				 getString("_UI_GenericBinding_upperBoundings_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_GenericBinding_upperBoundings_feature", "_UI_GenericBinding_type"),
+				 JavaPackage.Literals.GENERIC_BINDING__UPPER_BOUNDINGS,
 				 true,
 				 false,
 				 true,
@@ -134,14 +112,36 @@ public class TemplateBindingItemProvider
 	}
 
 	/**
-	 * This returns TemplateBinding.gif.
+	 * This adds a property descriptor for the Lower Bounding feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addLowerBoundingPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_GenericBinding_lowerBounding_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_GenericBinding_lowerBounding_feature", "_UI_GenericBinding_type"),
+				 JavaPackage.Literals.GENERIC_BINDING__LOWER_BOUNDING,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This returns GenericBinding.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/TemplateBinding"));
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/GenericBinding"));
 	}
 
 	/**
@@ -152,10 +152,10 @@ public class TemplateBindingItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((TemplateBinding)object).getName();
+		String label = ((GenericBinding)object).getName();
 		return label == null || label.length() == 0 ?
-			getString("_UI_TemplateBinding_type") :
-			getString("_UI_TemplateBinding_type") + " " + label;
+			getString("_UI_GenericBinding_type") :
+			getString("_UI_GenericBinding_type") + " " + label;
 	}
 	
 
@@ -170,9 +170,8 @@ public class TemplateBindingItemProvider
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
 
-		switch (notification.getFeatureID(TemplateBinding.class)) {
-			case JavaPackage.TEMPLATE_BINDING__NAME:
-			case JavaPackage.TEMPLATE_BINDING__TYPE_OVER_CLASSIFIER:
+		switch (notification.getFeatureID(GenericBinding.class)) {
+			case JavaPackage.GENERIC_BINDING__NAME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

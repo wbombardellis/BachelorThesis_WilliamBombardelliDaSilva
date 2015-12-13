@@ -57,7 +57,6 @@ public interface Method extends Contained {
 
 	/**
 	 * Returns the value of the '<em><b>Return Type</b></em>' reference.
-	 * It is bidirectional and its opposite is '{@link de.silvawb.java.Classifier#getTypingMethods <em>Typing Methods</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Return Type</em>' reference isn't clear,
@@ -67,8 +66,7 @@ public interface Method extends Contained {
 	 * @return the value of the '<em>Return Type</em>' reference.
 	 * @see #setReturnType(Classifier)
 	 * @see de.silvawb.java.JavaPackage#getMethod_ReturnType()
-	 * @see de.silvawb.java.Classifier#getTypingMethods
-	 * @model opposite="typingMethods"
+	 * @model
 	 * @generated
 	 */
 	Classifier getReturnType();
@@ -84,19 +82,19 @@ public interface Method extends Contained {
 	void setReturnType(Classifier value);
 
 	/**
-	 * Returns the value of the '<em><b>Arguments</b></em>' reference list.
+	 * Returns the value of the '<em><b>Arguments</b></em>' containment reference list.
 	 * The list contents are of type {@link de.silvawb.java.Argument}.
-	 * It is bidirectional and its opposite is '{@link de.silvawb.java.Argument#getUsingMethods <em>Using Methods</em>}'.
+	 * It is bidirectional and its opposite is '{@link de.silvawb.java.Argument#getUsingMethod <em>Using Method</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Arguments</em>' reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Arguments</em>' reference list.
+	 * @return the value of the '<em>Arguments</em>' containment reference list.
 	 * @see de.silvawb.java.JavaPackage#getMethod_Arguments()
-	 * @see de.silvawb.java.Argument#getUsingMethods
-	 * @model opposite="usingMethods"
+	 * @see de.silvawb.java.Argument#getUsingMethod
+	 * @model opposite="usingMethod" containment="true"
 	 * @generated
 	 */
 	EList<Argument> getArguments();

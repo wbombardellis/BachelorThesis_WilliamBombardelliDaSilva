@@ -7,6 +7,7 @@ import de.silvawb.java.Classifier;
 import de.silvawb.java.Contained;
 import de.silvawb.java.Field;
 import de.silvawb.java.Generalization;
+import de.silvawb.java.GenericBinding;
 import de.silvawb.java.Import;
 import de.silvawb.java.Interface;
 import de.silvawb.java.InterfaceImplementation;
@@ -14,7 +15,6 @@ import de.silvawb.java.JavaFactory;
 import de.silvawb.java.JavaPackage;
 
 import de.silvawb.java.Method;
-import de.silvawb.java.TemplateBinding;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -119,7 +119,7 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass templateBindingEClass = null;
+	private EClass genericBindingEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -367,7 +367,7 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClassifier_TemplateBindings() {
+	public EReference getClassifier_GenericBindings() {
 		return (EReference)classifierEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -376,7 +376,7 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClassifier_UnderTemplateBindings() {
+	public EReference getClassifier_Fields() {
 		return (EReference)classifierEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -385,7 +385,7 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClassifier_Fields() {
+	public EReference getClassifier_Methods() {
 		return (EReference)classifierEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -394,7 +394,7 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClassifier_TypingFields() {
+	public EReference getClassifier_InterfaceImplementations() {
 		return (EReference)classifierEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -403,7 +403,7 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClassifier_TypingMethods() {
+	public EReference getClassifier_Generalization() {
 		return (EReference)classifierEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -412,44 +412,8 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClassifier_Methods() {
-		return (EReference)classifierEClass.getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getClassifier_TypingArguments() {
-		return (EReference)classifierEClass.getEStructuralFeatures().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getClassifier_InterfaceImplementations() {
-		return (EReference)classifierEClass.getEStructuralFeatures().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getClassifier_Generalizations() {
-		return (EReference)classifierEClass.getEStructuralFeatures().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EReference getClassifier_Imports() {
-		return (EReference)classifierEClass.getEStructuralFeatures().get(10);
+		return (EReference)classifierEClass.getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -700,7 +664,7 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getArgument_UsingMethods() {
+	public EReference getArgument_UsingMethod() {
 		return (EReference)argumentEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -736,8 +700,8 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getInterface_ExtendedInterfaces() {
-		return (EReference)interfaceEClass.getEStructuralFeatures().get(0);
+	public EClass getGenericBinding() {
+		return genericBindingEClass;
 	}
 
 	/**
@@ -745,8 +709,8 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getInterface_ExtendingInterfaces() {
-		return (EReference)interfaceEClass.getEStructuralFeatures().get(1);
+	public EAttribute getGenericBinding_Name() {
+		return (EAttribute)genericBindingEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -754,8 +718,8 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getTemplateBinding() {
-		return templateBindingEClass;
+	public EReference getGenericBinding_UpperBoundings() {
+		return (EReference)genericBindingEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -763,8 +727,8 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTemplateBinding_Name() {
-		return (EAttribute)templateBindingEClass.getEStructuralFeatures().get(0);
+	public EReference getGenericBinding_LowerBounding() {
+		return (EReference)genericBindingEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -772,17 +736,8 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTemplateBinding_TypeOverClassifier() {
-		return (EAttribute)templateBindingEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getTemplateBinding_OverClassifier() {
-		return (EReference)templateBindingEClass.getEStructuralFeatures().get(2);
+	public EReference getGenericBinding_UsingClassifier() {
+		return (EReference)genericBindingEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -838,15 +793,11 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 
 		classifierEClass = createEClass(CLASSIFIER);
 		createEAttribute(classifierEClass, CLASSIFIER__NAME);
-		createEReference(classifierEClass, CLASSIFIER__TEMPLATE_BINDINGS);
-		createEReference(classifierEClass, CLASSIFIER__UNDER_TEMPLATE_BINDINGS);
+		createEReference(classifierEClass, CLASSIFIER__GENERIC_BINDINGS);
 		createEReference(classifierEClass, CLASSIFIER__FIELDS);
-		createEReference(classifierEClass, CLASSIFIER__TYPING_FIELDS);
-		createEReference(classifierEClass, CLASSIFIER__TYPING_METHODS);
 		createEReference(classifierEClass, CLASSIFIER__METHODS);
-		createEReference(classifierEClass, CLASSIFIER__TYPING_ARGUMENTS);
 		createEReference(classifierEClass, CLASSIFIER__INTERFACE_IMPLEMENTATIONS);
-		createEReference(classifierEClass, CLASSIFIER__GENERALIZATIONS);
+		createEReference(classifierEClass, CLASSIFIER__GENERALIZATION);
 		createEReference(classifierEClass, CLASSIFIER__IMPORTS);
 
 		fieldEClass = createEClass(FIELD);
@@ -880,19 +831,18 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 		argumentEClass = createEClass(ARGUMENT);
 		createEAttribute(argumentEClass, ARGUMENT__NAME);
 		createEReference(argumentEClass, ARGUMENT__TYPE);
-		createEReference(argumentEClass, ARGUMENT__USING_METHODS);
+		createEReference(argumentEClass, ARGUMENT__USING_METHOD);
 
 		containerEClass = createEClass(CONTAINER);
 		createEReference(containerEClass, CONTAINER__CONTAINED_ELEMENTS);
 
 		interfaceEClass = createEClass(INTERFACE);
-		createEReference(interfaceEClass, INTERFACE__EXTENDED_INTERFACES);
-		createEReference(interfaceEClass, INTERFACE__EXTENDING_INTERFACES);
 
-		templateBindingEClass = createEClass(TEMPLATE_BINDING);
-		createEAttribute(templateBindingEClass, TEMPLATE_BINDING__NAME);
-		createEAttribute(templateBindingEClass, TEMPLATE_BINDING__TYPE_OVER_CLASSIFIER);
-		createEReference(templateBindingEClass, TEMPLATE_BINDING__OVER_CLASSIFIER);
+		genericBindingEClass = createEClass(GENERIC_BINDING);
+		createEAttribute(genericBindingEClass, GENERIC_BINDING__NAME);
+		createEReference(genericBindingEClass, GENERIC_BINDING__UPPER_BOUNDINGS);
+		createEReference(genericBindingEClass, GENERIC_BINDING__LOWER_BOUNDING);
+		createEReference(genericBindingEClass, GENERIC_BINDING__USING_CLASSIFIER);
 	}
 
 	/**
@@ -955,24 +905,20 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 
 		initEClass(generalizationEClass, Generalization.class, "Generalization", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getGeneralization_General(), this.getClassifier(), null, "general", null, 0, 1, Generalization.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getGeneralization_Generalizator(), this.getClassifier(), this.getClassifier_Generalizations(), "generalizator", null, 0, 1, Generalization.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getGeneralization_Generalizator(), this.getClassifier(), this.getClassifier_Generalization(), "generalizator", null, 0, 1, Generalization.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(classifierEClass, Classifier.class, "Classifier", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getClassifier_Name(), ecorePackage.getEString(), "name", null, 0, 1, Classifier.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getClassifier_TemplateBindings(), this.getTemplateBinding(), null, "templateBindings", null, 0, -1, Classifier.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getClassifier_UnderTemplateBindings(), this.getTemplateBinding(), this.getTemplateBinding_OverClassifier(), "underTemplateBindings", null, 0, -1, Classifier.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getClassifier_GenericBindings(), this.getGenericBinding(), this.getGenericBinding_UsingClassifier(), "genericBindings", null, 0, -1, Classifier.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getClassifier_Fields(), this.getField(), this.getField_ContainingClassifier(), "fields", null, 0, -1, Classifier.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getClassifier_TypingFields(), this.getField(), this.getField_Type(), "typingFields", null, 0, -1, Classifier.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getClassifier_TypingMethods(), this.getMethod(), this.getMethod_ReturnType(), "typingMethods", null, 0, -1, Classifier.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getClassifier_Methods(), this.getMethod(), this.getMethod_ContainingClassifier(), "methods", null, 0, -1, Classifier.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getClassifier_TypingArguments(), this.getArgument(), this.getArgument_Type(), "typingArguments", null, 0, -1, Classifier.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getClassifier_InterfaceImplementations(), this.getInterfaceImplementation(), this.getInterfaceImplementation_Implementer(), "interfaceImplementations", null, 0, -1, Classifier.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getClassifier_Generalizations(), this.getGeneralization(), this.getGeneralization_Generalizator(), "generalizations", null, 0, 1, Classifier.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getClassifier_Generalization(), this.getGeneralization(), this.getGeneralization_Generalizator(), "generalization", null, 0, 1, Classifier.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getClassifier_Imports(), this.getImport(), this.getImport_Importing(), "imports", null, 0, -1, Classifier.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(fieldEClass, Field.class, "Field", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getField_Name(), ecorePackage.getEString(), "name", null, 0, 1, Field.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getField_Type(), this.getClassifier(), this.getClassifier_TypingFields(), "type", null, 0, 1, Field.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getField_Type(), this.getClassifier(), null, "type", null, 0, 1, Field.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getField_ContainingClassifier(), this.getClassifier(), this.getClassifier_Fields(), "containingClassifier", null, 0, 1, Field.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getField_Default(), ecorePackage.getEString(), "default", null, 0, 1, Field.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getField_IsStatic(), ecorePackage.getEBoolean(), "isStatic", null, 0, 1, Field.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -989,8 +935,8 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 
 		initEClass(methodEClass, Method.class, "Method", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getMethod_Name(), ecorePackage.getEString(), "name", null, 0, 1, Method.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getMethod_ReturnType(), this.getClassifier(), this.getClassifier_TypingMethods(), "returnType", null, 0, 1, Method.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getMethod_Arguments(), this.getArgument(), this.getArgument_UsingMethods(), "arguments", null, 0, -1, Method.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getMethod_ReturnType(), this.getClassifier(), null, "returnType", null, 0, 1, Method.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getMethod_Arguments(), this.getArgument(), this.getArgument_UsingMethod(), "arguments", null, 0, -1, Method.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMethod_ContainingClassifier(), this.getClassifier(), this.getClassifier_Methods(), "containingClassifier", null, 0, 1, Method.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getMethod_IsFinal(), ecorePackage.getEBoolean(), "isFinal", null, 0, 1, Method.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getMethod_IsStatic(), ecorePackage.getEBoolean(), "isStatic", null, 0, 1, Method.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -1000,20 +946,19 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 
 		initEClass(argumentEClass, Argument.class, "Argument", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getArgument_Name(), ecorePackage.getEString(), "name", null, 0, 1, Argument.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getArgument_Type(), this.getClassifier(), this.getClassifier_TypingArguments(), "type", null, 0, 1, Argument.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getArgument_UsingMethods(), this.getMethod(), this.getMethod_Arguments(), "usingMethods", null, 0, -1, Argument.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getArgument_Type(), this.getClassifier(), null, "type", null, 0, 1, Argument.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getArgument_UsingMethod(), this.getMethod(), this.getMethod_Arguments(), "usingMethod", null, 0, 1, Argument.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(containerEClass, de.silvawb.java.Container.class, "Container", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getContainer_ContainedElements(), this.getContained(), this.getContained_Container(), "containedElements", null, 0, -1, de.silvawb.java.Container.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(interfaceEClass, Interface.class, "Interface", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getInterface_ExtendedInterfaces(), this.getInterface(), this.getInterface_ExtendingInterfaces(), "extendedInterfaces", null, 0, -1, Interface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getInterface_ExtendingInterfaces(), this.getInterface(), this.getInterface_ExtendedInterfaces(), "extendingInterfaces", null, 0, -1, Interface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(templateBindingEClass, TemplateBinding.class, "TemplateBinding", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getTemplateBinding_Name(), ecorePackage.getEString(), "name", null, 0, 1, TemplateBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getTemplateBinding_TypeOverClassifier(), ecorePackage.getEString(), "typeOverClassifier", null, 0, 1, TemplateBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getTemplateBinding_OverClassifier(), this.getClassifier(), this.getClassifier_UnderTemplateBindings(), "overClassifier", null, 0, 1, TemplateBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEClass(genericBindingEClass, GenericBinding.class, "GenericBinding", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getGenericBinding_Name(), ecorePackage.getEString(), "name", null, 0, 1, GenericBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getGenericBinding_UpperBoundings(), this.getClassifier(), null, "upperBoundings", null, 0, -1, GenericBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getGenericBinding_LowerBounding(), this.getClassifier(), null, "lowerBounding", null, 0, 1, GenericBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getGenericBinding_UsingClassifier(), this.getClassifier(), this.getClassifier_GenericBindings(), "usingClassifier", null, 0, 1, GenericBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

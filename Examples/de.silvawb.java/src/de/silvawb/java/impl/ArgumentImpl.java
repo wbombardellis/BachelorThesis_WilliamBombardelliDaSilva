@@ -7,18 +7,15 @@ import de.silvawb.java.Classifier;
 import de.silvawb.java.JavaPackage;
 
 import de.silvawb.java.Method;
-import java.util.Collection;
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.common.notify.NotificationChain;
-import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
-import org.eclipse.emf.ecore.util.InternalEList;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +27,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link de.silvawb.java.impl.ArgumentImpl#getName <em>Name</em>}</li>
  *   <li>{@link de.silvawb.java.impl.ArgumentImpl#getType <em>Type</em>}</li>
- *   <li>{@link de.silvawb.java.impl.ArgumentImpl#getUsingMethods <em>Using Methods</em>}</li>
+ *   <li>{@link de.silvawb.java.impl.ArgumentImpl#getUsingMethod <em>Using Method</em>}</li>
  * </ul>
  *
  * @generated
@@ -65,16 +62,6 @@ public class ArgumentImpl extends MinimalEObjectImpl.Container implements Argume
 	 * @ordered
 	 */
 	protected Classifier type;
-
-	/**
-	 * The cached value of the '{@link #getUsingMethods() <em>Using Methods</em>}' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getUsingMethods()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<Method> usingMethods;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,13 +134,30 @@ public class ArgumentImpl extends MinimalEObjectImpl.Container implements Argume
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetType(Classifier newType, NotificationChain msgs) {
+	public void setType(Classifier newType) {
 		Classifier oldType = type;
 		type = newType;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, JavaPackage.ARGUMENT__TYPE, oldType, newType);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, JavaPackage.ARGUMENT__TYPE, oldType, type));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Method getUsingMethod() {
+		if (eContainerFeatureID() != JavaPackage.ARGUMENT__USING_METHOD) return null;
+		return (Method)eInternalContainer();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetUsingMethod(Method newUsingMethod, NotificationChain msgs) {
+		msgs = eBasicSetContainer((InternalEObject)newUsingMethod, JavaPackage.ARGUMENT__USING_METHOD, msgs);
 		return msgs;
 	}
 
@@ -162,30 +166,20 @@ public class ArgumentImpl extends MinimalEObjectImpl.Container implements Argume
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setType(Classifier newType) {
-		if (newType != type) {
+	public void setUsingMethod(Method newUsingMethod) {
+		if (newUsingMethod != eInternalContainer() || (eContainerFeatureID() != JavaPackage.ARGUMENT__USING_METHOD && newUsingMethod != null)) {
+			if (EcoreUtil.isAncestor(this, newUsingMethod))
+				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
-			if (type != null)
-				msgs = ((InternalEObject)type).eInverseRemove(this, JavaPackage.CLASSIFIER__TYPING_ARGUMENTS, Classifier.class, msgs);
-			if (newType != null)
-				msgs = ((InternalEObject)newType).eInverseAdd(this, JavaPackage.CLASSIFIER__TYPING_ARGUMENTS, Classifier.class, msgs);
-			msgs = basicSetType(newType, msgs);
+			if (eInternalContainer() != null)
+				msgs = eBasicRemoveFromContainer(msgs);
+			if (newUsingMethod != null)
+				msgs = ((InternalEObject)newUsingMethod).eInverseAdd(this, JavaPackage.METHOD__ARGUMENTS, Method.class, msgs);
+			msgs = basicSetUsingMethod(newUsingMethod, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, JavaPackage.ARGUMENT__TYPE, newType, newType));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<Method> getUsingMethods() {
-		if (usingMethods == null) {
-			usingMethods = new EObjectWithInverseResolvingEList.ManyInverse<Method>(Method.class, this, JavaPackage.ARGUMENT__USING_METHODS, JavaPackage.METHOD__ARGUMENTS);
-		}
-		return usingMethods;
+			eNotify(new ENotificationImpl(this, Notification.SET, JavaPackage.ARGUMENT__USING_METHOD, newUsingMethod, newUsingMethod));
 	}
 
 	/**
@@ -197,12 +191,10 @@ public class ArgumentImpl extends MinimalEObjectImpl.Container implements Argume
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case JavaPackage.ARGUMENT__TYPE:
-				if (type != null)
-					msgs = ((InternalEObject)type).eInverseRemove(this, JavaPackage.CLASSIFIER__TYPING_ARGUMENTS, Classifier.class, msgs);
-				return basicSetType((Classifier)otherEnd, msgs);
-			case JavaPackage.ARGUMENT__USING_METHODS:
-				return ((InternalEList<InternalEObject>)(InternalEList<?>)getUsingMethods()).basicAdd(otherEnd, msgs);
+			case JavaPackage.ARGUMENT__USING_METHOD:
+				if (eInternalContainer() != null)
+					msgs = eBasicRemoveFromContainer(msgs);
+				return basicSetUsingMethod((Method)otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
@@ -215,12 +207,24 @@ public class ArgumentImpl extends MinimalEObjectImpl.Container implements Argume
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case JavaPackage.ARGUMENT__TYPE:
-				return basicSetType(null, msgs);
-			case JavaPackage.ARGUMENT__USING_METHODS:
-				return ((InternalEList<?>)getUsingMethods()).basicRemove(otherEnd, msgs);
+			case JavaPackage.ARGUMENT__USING_METHOD:
+				return basicSetUsingMethod(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
+		switch (eContainerFeatureID()) {
+			case JavaPackage.ARGUMENT__USING_METHOD:
+				return eInternalContainer().eInverseRemove(this, JavaPackage.METHOD__ARGUMENTS, Method.class, msgs);
+		}
+		return super.eBasicRemoveFromContainerFeature(msgs);
 	}
 
 	/**
@@ -236,8 +240,8 @@ public class ArgumentImpl extends MinimalEObjectImpl.Container implements Argume
 			case JavaPackage.ARGUMENT__TYPE:
 				if (resolve) return getType();
 				return basicGetType();
-			case JavaPackage.ARGUMENT__USING_METHODS:
-				return getUsingMethods();
+			case JavaPackage.ARGUMENT__USING_METHOD:
+				return getUsingMethod();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -257,9 +261,8 @@ public class ArgumentImpl extends MinimalEObjectImpl.Container implements Argume
 			case JavaPackage.ARGUMENT__TYPE:
 				setType((Classifier)newValue);
 				return;
-			case JavaPackage.ARGUMENT__USING_METHODS:
-				getUsingMethods().clear();
-				getUsingMethods().addAll((Collection<? extends Method>)newValue);
+			case JavaPackage.ARGUMENT__USING_METHOD:
+				setUsingMethod((Method)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -279,8 +282,8 @@ public class ArgumentImpl extends MinimalEObjectImpl.Container implements Argume
 			case JavaPackage.ARGUMENT__TYPE:
 				setType((Classifier)null);
 				return;
-			case JavaPackage.ARGUMENT__USING_METHODS:
-				getUsingMethods().clear();
+			case JavaPackage.ARGUMENT__USING_METHOD:
+				setUsingMethod((Method)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -298,8 +301,8 @@ public class ArgumentImpl extends MinimalEObjectImpl.Container implements Argume
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case JavaPackage.ARGUMENT__TYPE:
 				return type != null;
-			case JavaPackage.ARGUMENT__USING_METHODS:
-				return usingMethods != null && !usingMethods.isEmpty();
+			case JavaPackage.ARGUMENT__USING_METHOD:
+				return getUsingMethod() != null;
 		}
 		return super.eIsSet(featureID);
 	}

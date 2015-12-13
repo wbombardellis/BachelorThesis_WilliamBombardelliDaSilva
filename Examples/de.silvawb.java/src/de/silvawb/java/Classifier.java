@@ -14,15 +14,11 @@ import org.eclipse.emf.common.util.EList;
  * </p>
  * <ul>
  *   <li>{@link de.silvawb.java.Classifier#getName <em>Name</em>}</li>
- *   <li>{@link de.silvawb.java.Classifier#getTemplateBindings <em>Template Bindings</em>}</li>
- *   <li>{@link de.silvawb.java.Classifier#getUnderTemplateBindings <em>Under Template Bindings</em>}</li>
+ *   <li>{@link de.silvawb.java.Classifier#getGenericBindings <em>Generic Bindings</em>}</li>
  *   <li>{@link de.silvawb.java.Classifier#getFields <em>Fields</em>}</li>
- *   <li>{@link de.silvawb.java.Classifier#getTypingFields <em>Typing Fields</em>}</li>
- *   <li>{@link de.silvawb.java.Classifier#getTypingMethods <em>Typing Methods</em>}</li>
  *   <li>{@link de.silvawb.java.Classifier#getMethods <em>Methods</em>}</li>
- *   <li>{@link de.silvawb.java.Classifier#getTypingArguments <em>Typing Arguments</em>}</li>
  *   <li>{@link de.silvawb.java.Classifier#getInterfaceImplementations <em>Interface Implementations</em>}</li>
- *   <li>{@link de.silvawb.java.Classifier#getGeneralizations <em>Generalizations</em>}</li>
+ *   <li>{@link de.silvawb.java.Classifier#getGeneralization <em>Generalization</em>}</li>
  *   <li>{@link de.silvawb.java.Classifier#getImports <em>Imports</em>}</li>
  * </ul>
  *
@@ -58,38 +54,22 @@ public interface Classifier extends Contained, Container {
 	void setName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Template Bindings</b></em>' reference list.
-	 * The list contents are of type {@link de.silvawb.java.TemplateBinding}.
+	 * Returns the value of the '<em><b>Generic Bindings</b></em>' containment reference list.
+	 * The list contents are of type {@link de.silvawb.java.GenericBinding}.
+	 * It is bidirectional and its opposite is '{@link de.silvawb.java.GenericBinding#getUsingClassifier <em>Using Classifier</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Template Bindings</em>' reference list isn't clear,
+	 * If the meaning of the '<em>Generic Bindings</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Template Bindings</em>' reference list.
-	 * @see de.silvawb.java.JavaPackage#getClassifier_TemplateBindings()
-	 * @model
+	 * @return the value of the '<em>Generic Bindings</em>' containment reference list.
+	 * @see de.silvawb.java.JavaPackage#getClassifier_GenericBindings()
+	 * @see de.silvawb.java.GenericBinding#getUsingClassifier
+	 * @model opposite="usingClassifier" containment="true"
 	 * @generated
 	 */
-	EList<TemplateBinding> getTemplateBindings();
-
-	/**
-	 * Returns the value of the '<em><b>Under Template Bindings</b></em>' reference list.
-	 * The list contents are of type {@link de.silvawb.java.TemplateBinding}.
-	 * It is bidirectional and its opposite is '{@link de.silvawb.java.TemplateBinding#getOverClassifier <em>Over Classifier</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Under Template Bindings</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Under Template Bindings</em>' reference list.
-	 * @see de.silvawb.java.JavaPackage#getClassifier_UnderTemplateBindings()
-	 * @see de.silvawb.java.TemplateBinding#getOverClassifier
-	 * @model opposite="overClassifier" ordered="false"
-	 * @generated
-	 */
-	EList<TemplateBinding> getUnderTemplateBindings();
+	EList<GenericBinding> getGenericBindings();
 
 	/**
 	 * Returns the value of the '<em><b>Fields</b></em>' containment reference list.
@@ -110,42 +90,6 @@ public interface Classifier extends Contained, Container {
 	EList<Field> getFields();
 
 	/**
-	 * Returns the value of the '<em><b>Typing Fields</b></em>' reference list.
-	 * The list contents are of type {@link de.silvawb.java.Field}.
-	 * It is bidirectional and its opposite is '{@link de.silvawb.java.Field#getType <em>Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Typing Fields</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Typing Fields</em>' reference list.
-	 * @see de.silvawb.java.JavaPackage#getClassifier_TypingFields()
-	 * @see de.silvawb.java.Field#getType
-	 * @model opposite="type" ordered="false"
-	 * @generated
-	 */
-	EList<Field> getTypingFields();
-
-	/**
-	 * Returns the value of the '<em><b>Typing Methods</b></em>' reference list.
-	 * The list contents are of type {@link de.silvawb.java.Method}.
-	 * It is bidirectional and its opposite is '{@link de.silvawb.java.Method#getReturnType <em>Return Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Typing Methods</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Typing Methods</em>' reference list.
-	 * @see de.silvawb.java.JavaPackage#getClassifier_TypingMethods()
-	 * @see de.silvawb.java.Method#getReturnType
-	 * @model opposite="returnType" ordered="false"
-	 * @generated
-	 */
-	EList<Method> getTypingMethods();
-
-	/**
 	 * Returns the value of the '<em><b>Methods</b></em>' containment reference list.
 	 * The list contents are of type {@link de.silvawb.java.Method}.
 	 * It is bidirectional and its opposite is '{@link de.silvawb.java.Method#getContainingClassifier <em>Containing Classifier</em>}'.
@@ -162,24 +106,6 @@ public interface Classifier extends Contained, Container {
 	 * @generated
 	 */
 	EList<Method> getMethods();
-
-	/**
-	 * Returns the value of the '<em><b>Typing Arguments</b></em>' reference list.
-	 * The list contents are of type {@link de.silvawb.java.Argument}.
-	 * It is bidirectional and its opposite is '{@link de.silvawb.java.Argument#getType <em>Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Typing Arguments</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Typing Arguments</em>' reference list.
-	 * @see de.silvawb.java.JavaPackage#getClassifier_TypingArguments()
-	 * @see de.silvawb.java.Argument#getType
-	 * @model opposite="type" ordered="false"
-	 * @generated
-	 */
-	EList<Argument> getTypingArguments();
 
 	/**
 	 * Returns the value of the '<em><b>Interface Implementations</b></em>' containment reference list.
@@ -200,32 +126,32 @@ public interface Classifier extends Contained, Container {
 	EList<InterfaceImplementation> getInterfaceImplementations();
 
 	/**
-	 * Returns the value of the '<em><b>Generalizations</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Generalization</b></em>' containment reference.
 	 * It is bidirectional and its opposite is '{@link de.silvawb.java.Generalization#getGeneralizator <em>Generalizator</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Generalizations</em>' containment reference isn't clear,
+	 * If the meaning of the '<em>Generalization</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Generalizations</em>' containment reference.
-	 * @see #setGeneralizations(Generalization)
-	 * @see de.silvawb.java.JavaPackage#getClassifier_Generalizations()
+	 * @return the value of the '<em>Generalization</em>' containment reference.
+	 * @see #setGeneralization(Generalization)
+	 * @see de.silvawb.java.JavaPackage#getClassifier_Generalization()
 	 * @see de.silvawb.java.Generalization#getGeneralizator
 	 * @model opposite="generalizator" containment="true" ordered="false"
 	 * @generated
 	 */
-	Generalization getGeneralizations();
+	Generalization getGeneralization();
 
 	/**
-	 * Sets the value of the '{@link de.silvawb.java.Classifier#getGeneralizations <em>Generalizations</em>}' containment reference.
+	 * Sets the value of the '{@link de.silvawb.java.Classifier#getGeneralization <em>Generalization</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Generalizations</em>' containment reference.
-	 * @see #getGeneralizations()
+	 * @param value the new value of the '<em>Generalization</em>' containment reference.
+	 * @see #getGeneralization()
 	 * @generated
 	 */
-	void setGeneralizations(Generalization value);
+	void setGeneralization(Generalization value);
 
 	/**
 	 * Returns the value of the '<em><b>Imports</b></em>' containment reference list.

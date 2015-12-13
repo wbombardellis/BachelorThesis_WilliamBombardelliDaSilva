@@ -2,7 +2,6 @@
  */
 package de.silvawb.java;
 
-import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -16,7 +15,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link de.silvawb.java.Argument#getName <em>Name</em>}</li>
  *   <li>{@link de.silvawb.java.Argument#getType <em>Type</em>}</li>
- *   <li>{@link de.silvawb.java.Argument#getUsingMethods <em>Using Methods</em>}</li>
+ *   <li>{@link de.silvawb.java.Argument#getUsingMethod <em>Using Method</em>}</li>
  * </ul>
  *
  * @see de.silvawb.java.JavaPackage#getArgument()
@@ -52,7 +51,6 @@ public interface Argument extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Type</b></em>' reference.
-	 * It is bidirectional and its opposite is '{@link de.silvawb.java.Classifier#getTypingArguments <em>Typing Arguments</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Type</em>' reference isn't clear,
@@ -62,8 +60,7 @@ public interface Argument extends EObject {
 	 * @return the value of the '<em>Type</em>' reference.
 	 * @see #setType(Classifier)
 	 * @see de.silvawb.java.JavaPackage#getArgument_Type()
-	 * @see de.silvawb.java.Classifier#getTypingArguments
-	 * @model opposite="typingArguments"
+	 * @model
 	 * @generated
 	 */
 	Classifier getType();
@@ -79,21 +76,31 @@ public interface Argument extends EObject {
 	void setType(Classifier value);
 
 	/**
-	 * Returns the value of the '<em><b>Using Methods</b></em>' reference list.
-	 * The list contents are of type {@link de.silvawb.java.Method}.
+	 * Returns the value of the '<em><b>Using Method</b></em>' container reference.
 	 * It is bidirectional and its opposite is '{@link de.silvawb.java.Method#getArguments <em>Arguments</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Using Methods</em>' reference list isn't clear,
+	 * If the meaning of the '<em>Using Method</em>' container reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Using Methods</em>' reference list.
-	 * @see de.silvawb.java.JavaPackage#getArgument_UsingMethods()
+	 * @return the value of the '<em>Using Method</em>' container reference.
+	 * @see #setUsingMethod(Method)
+	 * @see de.silvawb.java.JavaPackage#getArgument_UsingMethod()
 	 * @see de.silvawb.java.Method#getArguments
-	 * @model opposite="arguments" ordered="false"
+	 * @model opposite="arguments" transient="false" ordered="false"
 	 * @generated
 	 */
-	EList<Method> getUsingMethods();
+	Method getUsingMethod();
+
+	/**
+	 * Sets the value of the '{@link de.silvawb.java.Argument#getUsingMethod <em>Using Method</em>}' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Using Method</em>' container reference.
+	 * @see #getUsingMethod()
+	 * @generated
+	 */
+	void setUsingMethod(Method value);
 
 } // Argument

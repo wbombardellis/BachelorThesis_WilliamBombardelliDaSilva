@@ -18,8 +18,8 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
 import org.eclipse.emf.ecore.util.EObjectResolvingEList;
-import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -76,7 +76,7 @@ public class MethodImpl extends ContainedImpl implements Method {
 	protected Classifier returnType;
 
 	/**
-	 * The cached value of the '{@link #getArguments() <em>Arguments</em>}' reference list.
+	 * The cached value of the '{@link #getArguments() <em>Arguments</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getArguments()
@@ -246,33 +246,11 @@ public class MethodImpl extends ContainedImpl implements Method {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetReturnType(Classifier newReturnType, NotificationChain msgs) {
+	public void setReturnType(Classifier newReturnType) {
 		Classifier oldReturnType = returnType;
 		returnType = newReturnType;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, JavaPackage.METHOD__RETURN_TYPE, oldReturnType, newReturnType);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setReturnType(Classifier newReturnType) {
-		if (newReturnType != returnType) {
-			NotificationChain msgs = null;
-			if (returnType != null)
-				msgs = ((InternalEObject)returnType).eInverseRemove(this, JavaPackage.CLASSIFIER__TYPING_METHODS, Classifier.class, msgs);
-			if (newReturnType != null)
-				msgs = ((InternalEObject)newReturnType).eInverseAdd(this, JavaPackage.CLASSIFIER__TYPING_METHODS, Classifier.class, msgs);
-			msgs = basicSetReturnType(newReturnType, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, JavaPackage.METHOD__RETURN_TYPE, newReturnType, newReturnType));
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, JavaPackage.METHOD__RETURN_TYPE, oldReturnType, returnType));
 	}
 
 	/**
@@ -282,7 +260,7 @@ public class MethodImpl extends ContainedImpl implements Method {
 	 */
 	public EList<Argument> getArguments() {
 		if (arguments == null) {
-			arguments = new EObjectWithInverseResolvingEList.ManyInverse<Argument>(Argument.class, this, JavaPackage.METHOD__ARGUMENTS, JavaPackage.ARGUMENT__USING_METHODS);
+			arguments = new EObjectContainmentWithInverseEList<Argument>(Argument.class, this, JavaPackage.METHOD__ARGUMENTS, JavaPackage.ARGUMENT__USING_METHOD);
 		}
 		return arguments;
 	}
@@ -433,10 +411,6 @@ public class MethodImpl extends ContainedImpl implements Method {
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case JavaPackage.METHOD__RETURN_TYPE:
-				if (returnType != null)
-					msgs = ((InternalEObject)returnType).eInverseRemove(this, JavaPackage.CLASSIFIER__TYPING_METHODS, Classifier.class, msgs);
-				return basicSetReturnType((Classifier)otherEnd, msgs);
 			case JavaPackage.METHOD__ARGUMENTS:
 				return ((InternalEList<InternalEObject>)(InternalEList<?>)getArguments()).basicAdd(otherEnd, msgs);
 			case JavaPackage.METHOD__CONTAINING_CLASSIFIER:
@@ -455,8 +429,6 @@ public class MethodImpl extends ContainedImpl implements Method {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case JavaPackage.METHOD__RETURN_TYPE:
-				return basicSetReturnType(null, msgs);
 			case JavaPackage.METHOD__ARGUMENTS:
 				return ((InternalEList<?>)getArguments()).basicRemove(otherEnd, msgs);
 			case JavaPackage.METHOD__CONTAINING_CLASSIFIER:

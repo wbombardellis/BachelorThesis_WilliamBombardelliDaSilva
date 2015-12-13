@@ -6,6 +6,7 @@ import de.silvawb.java.Argument;
 import de.silvawb.java.Contained;
 import de.silvawb.java.Field;
 import de.silvawb.java.Generalization;
+import de.silvawb.java.GenericBinding;
 import de.silvawb.java.Import;
 import de.silvawb.java.Interface;
 import de.silvawb.java.InterfaceImplementation;
@@ -13,7 +14,6 @@ import de.silvawb.java.JavaFactory;
 import de.silvawb.java.JavaPackage;
 
 import de.silvawb.java.Method;
-import de.silvawb.java.TemplateBinding;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public class JavaFactoryImpl extends EFactoryImpl implements JavaFactory {
 			case JavaPackage.ARGUMENT: return createArgument();
 			case JavaPackage.CONTAINER: return createContainer();
 			case JavaPackage.INTERFACE: return createInterface();
-			case JavaPackage.TEMPLATE_BINDING: return createTemplateBinding();
+			case JavaPackage.GENERIC_BINDING: return createGenericBinding();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -209,9 +209,9 @@ public class JavaFactoryImpl extends EFactoryImpl implements JavaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TemplateBinding createTemplateBinding() {
-		TemplateBindingImpl templateBinding = new TemplateBindingImpl();
-		return templateBinding;
+	public GenericBinding createGenericBinding() {
+		GenericBindingImpl genericBinding = new GenericBindingImpl();
+		return genericBinding;
 	}
 
 	/**

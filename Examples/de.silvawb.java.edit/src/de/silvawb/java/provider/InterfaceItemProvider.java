@@ -11,7 +11,6 @@ import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 
 /**
@@ -42,54 +41,8 @@ public class InterfaceItemProvider extends ClassifierItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addExtendedInterfacesPropertyDescriptor(object);
-			addExtendingInterfacesPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Extended Interfaces feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addExtendedInterfacesPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Interface_extendedInterfaces_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Interface_extendedInterfaces_feature", "_UI_Interface_type"),
-				 JavaPackage.Literals.INTERFACE__EXTENDED_INTERFACES,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Extending Interfaces feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addExtendingInterfacesPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Interface_extendingInterfaces_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Interface_extendingInterfaces_feature", "_UI_Interface_type"),
-				 JavaPackage.Literals.INTERFACE__EXTENDING_INTERFACES,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
 	}
 
 	/**

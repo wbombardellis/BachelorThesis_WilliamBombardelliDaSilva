@@ -8,13 +8,13 @@ import de.silvawb.java.Contained;
 import de.silvawb.java.Container;
 import de.silvawb.java.Field;
 import de.silvawb.java.Generalization;
+import de.silvawb.java.GenericBinding;
 import de.silvawb.java.Import;
 import de.silvawb.java.Interface;
 import de.silvawb.java.InterfaceImplementation;
 import de.silvawb.java.JavaPackage;
 
 import de.silvawb.java.Method;
-import de.silvawb.java.TemplateBinding;
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
 
@@ -131,8 +131,8 @@ public class JavaAdapterFactory extends AdapterFactoryImpl {
 				return createInterfaceAdapter();
 			}
 			@Override
-			public Adapter caseTemplateBinding(TemplateBinding object) {
-				return createTemplateBindingAdapter();
+			public Adapter caseGenericBinding(GenericBinding object) {
+				return createGenericBindingAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -337,16 +337,16 @@ public class JavaAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link de.silvawb.java.TemplateBinding <em>Template Binding</em>}'.
+	 * Creates a new adapter for an object of class '{@link de.silvawb.java.GenericBinding <em>Generic Binding</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see de.silvawb.java.TemplateBinding
+	 * @see de.silvawb.java.GenericBinding
 	 * @generated
 	 */
-	public Adapter createTemplateBindingAdapter() {
+	public Adapter createGenericBindingAdapter() {
 		return null;
 	}
 

@@ -8,13 +8,13 @@ import de.silvawb.java.Contained;
 import de.silvawb.java.Container;
 import de.silvawb.java.Field;
 import de.silvawb.java.Generalization;
+import de.silvawb.java.GenericBinding;
 import de.silvawb.java.Import;
 import de.silvawb.java.Interface;
 import de.silvawb.java.InterfaceImplementation;
 import de.silvawb.java.JavaPackage;
 
 import de.silvawb.java.Method;
-import de.silvawb.java.TemplateBinding;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 
@@ -166,9 +166,9 @@ public class JavaSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case JavaPackage.TEMPLATE_BINDING: {
-				TemplateBinding templateBinding = (TemplateBinding)theEObject;
-				T result = caseTemplateBinding(templateBinding);
+			case JavaPackage.GENERIC_BINDING: {
+				GenericBinding genericBinding = (GenericBinding)theEObject;
+				T result = caseGenericBinding(genericBinding);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -372,17 +372,17 @@ public class JavaSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Template Binding</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Generic Binding</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Template Binding</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Generic Binding</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTemplateBinding(TemplateBinding object) {
+	public T caseGenericBinding(GenericBinding object) {
 		return null;
 	}
 

@@ -326,22 +326,13 @@ public interface JavaPackage extends EPackage {
 	int CLASSIFIER__NAME = CONTAINED_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>Template Bindings</b></em>' reference list.
+	 * The feature id for the '<em><b>Generic Bindings</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLASSIFIER__TEMPLATE_BINDINGS = CONTAINED_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Under Template Bindings</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASSIFIER__UNDER_TEMPLATE_BINDINGS = CONTAINED_FEATURE_COUNT + 3;
+	int CLASSIFIER__GENERIC_BINDINGS = CONTAINED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Fields</b></em>' containment reference list.
@@ -350,25 +341,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASSIFIER__FIELDS = CONTAINED_FEATURE_COUNT + 4;
-
-	/**
-	 * The feature id for the '<em><b>Typing Fields</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASSIFIER__TYPING_FIELDS = CONTAINED_FEATURE_COUNT + 5;
-
-	/**
-	 * The feature id for the '<em><b>Typing Methods</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASSIFIER__TYPING_METHODS = CONTAINED_FEATURE_COUNT + 6;
+	int CLASSIFIER__FIELDS = CONTAINED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Methods</b></em>' containment reference list.
@@ -377,16 +350,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASSIFIER__METHODS = CONTAINED_FEATURE_COUNT + 7;
-
-	/**
-	 * The feature id for the '<em><b>Typing Arguments</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASSIFIER__TYPING_ARGUMENTS = CONTAINED_FEATURE_COUNT + 8;
+	int CLASSIFIER__METHODS = CONTAINED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Interface Implementations</b></em>' containment reference list.
@@ -395,16 +359,16 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASSIFIER__INTERFACE_IMPLEMENTATIONS = CONTAINED_FEATURE_COUNT + 9;
+	int CLASSIFIER__INTERFACE_IMPLEMENTATIONS = CONTAINED_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Generalizations</b></em>' containment reference.
+	 * The feature id for the '<em><b>Generalization</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLASSIFIER__GENERALIZATIONS = CONTAINED_FEATURE_COUNT + 10;
+	int CLASSIFIER__GENERALIZATION = CONTAINED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Imports</b></em>' containment reference list.
@@ -413,7 +377,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASSIFIER__IMPORTS = CONTAINED_FEATURE_COUNT + 11;
+	int CLASSIFIER__IMPORTS = CONTAINED_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Classifier</em>' class.
@@ -422,7 +386,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASSIFIER_FEATURE_COUNT = CONTAINED_FEATURE_COUNT + 12;
+	int CLASSIFIER_FEATURE_COUNT = CONTAINED_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of operations of the '<em>Classifier</em>' class.
@@ -479,22 +443,13 @@ public interface JavaPackage extends EPackage {
 	int CLASS__NAME = CLASSIFIER__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Template Bindings</b></em>' reference list.
+	 * The feature id for the '<em><b>Generic Bindings</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS__TEMPLATE_BINDINGS = CLASSIFIER__TEMPLATE_BINDINGS;
-
-	/**
-	 * The feature id for the '<em><b>Under Template Bindings</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASS__UNDER_TEMPLATE_BINDINGS = CLASSIFIER__UNDER_TEMPLATE_BINDINGS;
+	int CLASS__GENERIC_BINDINGS = CLASSIFIER__GENERIC_BINDINGS;
 
 	/**
 	 * The feature id for the '<em><b>Fields</b></em>' containment reference list.
@@ -506,24 +461,6 @@ public interface JavaPackage extends EPackage {
 	int CLASS__FIELDS = CLASSIFIER__FIELDS;
 
 	/**
-	 * The feature id for the '<em><b>Typing Fields</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASS__TYPING_FIELDS = CLASSIFIER__TYPING_FIELDS;
-
-	/**
-	 * The feature id for the '<em><b>Typing Methods</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASS__TYPING_METHODS = CLASSIFIER__TYPING_METHODS;
-
-	/**
 	 * The feature id for the '<em><b>Methods</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -531,15 +468,6 @@ public interface JavaPackage extends EPackage {
 	 * @ordered
 	 */
 	int CLASS__METHODS = CLASSIFIER__METHODS;
-
-	/**
-	 * The feature id for the '<em><b>Typing Arguments</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASS__TYPING_ARGUMENTS = CLASSIFIER__TYPING_ARGUMENTS;
 
 	/**
 	 * The feature id for the '<em><b>Interface Implementations</b></em>' containment reference list.
@@ -551,13 +479,13 @@ public interface JavaPackage extends EPackage {
 	int CLASS__INTERFACE_IMPLEMENTATIONS = CLASSIFIER__INTERFACE_IMPLEMENTATIONS;
 
 	/**
-	 * The feature id for the '<em><b>Generalizations</b></em>' containment reference.
+	 * The feature id for the '<em><b>Generalization</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS__GENERALIZATIONS = CLASSIFIER__GENERALIZATIONS;
+	int CLASS__GENERALIZATION = CLASSIFIER__GENERALIZATION;
 
 	/**
 	 * The feature id for the '<em><b>Imports</b></em>' containment reference list.
@@ -924,7 +852,7 @@ public interface JavaPackage extends EPackage {
 	int METHOD__RETURN_TYPE = CONTAINED_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>Arguments</b></em>' reference list.
+	 * The feature id for the '<em><b>Arguments</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1033,13 +961,13 @@ public interface JavaPackage extends EPackage {
 	int ARGUMENT__TYPE = 1;
 
 	/**
-	 * The feature id for the '<em><b>Using Methods</b></em>' reference list.
+	 * The feature id for the '<em><b>Using Method</b></em>' container reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ARGUMENT__USING_METHODS = 2;
+	int ARGUMENT__USING_METHOD = 2;
 
 	/**
 	 * The number of structural features of the '<em>Argument</em>' class.
@@ -1116,22 +1044,13 @@ public interface JavaPackage extends EPackage {
 	int INTERFACE__NAME = CLASSIFIER__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Template Bindings</b></em>' reference list.
+	 * The feature id for the '<em><b>Generic Bindings</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERFACE__TEMPLATE_BINDINGS = CLASSIFIER__TEMPLATE_BINDINGS;
-
-	/**
-	 * The feature id for the '<em><b>Under Template Bindings</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERFACE__UNDER_TEMPLATE_BINDINGS = CLASSIFIER__UNDER_TEMPLATE_BINDINGS;
+	int INTERFACE__GENERIC_BINDINGS = CLASSIFIER__GENERIC_BINDINGS;
 
 	/**
 	 * The feature id for the '<em><b>Fields</b></em>' containment reference list.
@@ -1143,24 +1062,6 @@ public interface JavaPackage extends EPackage {
 	int INTERFACE__FIELDS = CLASSIFIER__FIELDS;
 
 	/**
-	 * The feature id for the '<em><b>Typing Fields</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERFACE__TYPING_FIELDS = CLASSIFIER__TYPING_FIELDS;
-
-	/**
-	 * The feature id for the '<em><b>Typing Methods</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERFACE__TYPING_METHODS = CLASSIFIER__TYPING_METHODS;
-
-	/**
 	 * The feature id for the '<em><b>Methods</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1168,15 +1069,6 @@ public interface JavaPackage extends EPackage {
 	 * @ordered
 	 */
 	int INTERFACE__METHODS = CLASSIFIER__METHODS;
-
-	/**
-	 * The feature id for the '<em><b>Typing Arguments</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERFACE__TYPING_ARGUMENTS = CLASSIFIER__TYPING_ARGUMENTS;
 
 	/**
 	 * The feature id for the '<em><b>Interface Implementations</b></em>' containment reference list.
@@ -1188,13 +1080,13 @@ public interface JavaPackage extends EPackage {
 	int INTERFACE__INTERFACE_IMPLEMENTATIONS = CLASSIFIER__INTERFACE_IMPLEMENTATIONS;
 
 	/**
-	 * The feature id for the '<em><b>Generalizations</b></em>' containment reference.
+	 * The feature id for the '<em><b>Generalization</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERFACE__GENERALIZATIONS = CLASSIFIER__GENERALIZATIONS;
+	int INTERFACE__GENERALIZATION = CLASSIFIER__GENERALIZATION;
 
 	/**
 	 * The feature id for the '<em><b>Imports</b></em>' containment reference list.
@@ -1206,31 +1098,13 @@ public interface JavaPackage extends EPackage {
 	int INTERFACE__IMPORTS = CLASSIFIER__IMPORTS;
 
 	/**
-	 * The feature id for the '<em><b>Extended Interfaces</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERFACE__EXTENDED_INTERFACES = CLASSIFIER_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Extending Interfaces</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERFACE__EXTENDING_INTERFACES = CLASSIFIER_FEATURE_COUNT + 1;
-
-	/**
 	 * The number of structural features of the '<em>Interface</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERFACE_FEATURE_COUNT = CLASSIFIER_FEATURE_COUNT + 2;
+	int INTERFACE_FEATURE_COUNT = CLASSIFIER_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of operations of the '<em>Interface</em>' class.
@@ -1242,14 +1116,14 @@ public interface JavaPackage extends EPackage {
 	int INTERFACE_OPERATION_COUNT = CLASSIFIER_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link de.silvawb.java.impl.TemplateBindingImpl <em>Template Binding</em>}' class.
+	 * The meta object id for the '{@link de.silvawb.java.impl.GenericBindingImpl <em>Generic Binding</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see de.silvawb.java.impl.TemplateBindingImpl
-	 * @see de.silvawb.java.impl.JavaPackageImpl#getTemplateBinding()
+	 * @see de.silvawb.java.impl.GenericBindingImpl
+	 * @see de.silvawb.java.impl.JavaPackageImpl#getGenericBinding()
 	 * @generated
 	 */
-	int TEMPLATE_BINDING = 13;
+	int GENERIC_BINDING = 13;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1258,44 +1132,52 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEMPLATE_BINDING__NAME = 0;
+	int GENERIC_BINDING__NAME = 0;
 
 	/**
-	 * The feature id for the '<em><b>Type Over Classifier</b></em>' attribute.
+	 * The feature id for the '<em><b>Upper Boundings</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TEMPLATE_BINDING__TYPE_OVER_CLASSIFIER = 1;
+	int GENERIC_BINDING__UPPER_BOUNDINGS = 1;
 
 	/**
-	 * The feature id for the '<em><b>Over Classifier</b></em>' reference.
+	 * The feature id for the '<em><b>Lower Bounding</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TEMPLATE_BINDING__OVER_CLASSIFIER = 2;
+	int GENERIC_BINDING__LOWER_BOUNDING = 2;
 
 	/**
-	 * The number of structural features of the '<em>Template Binding</em>' class.
+	 * The feature id for the '<em><b>Using Classifier</b></em>' container reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TEMPLATE_BINDING_FEATURE_COUNT = 3;
+	int GENERIC_BINDING__USING_CLASSIFIER = 3;
 
 	/**
-	 * The number of operations of the '<em>Template Binding</em>' class.
+	 * The number of structural features of the '<em>Generic Binding</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TEMPLATE_BINDING_OPERATION_COUNT = 0;
+	int GENERIC_BINDING_FEATURE_COUNT = 4;
 
+	/**
+	 * The number of operations of the '<em>Generic Binding</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERIC_BINDING_OPERATION_COUNT = 0;
 
 	/**
 	 * Returns the meta object for class '{@link de.silvawb.java.System <em>System</em>}'.
@@ -1512,26 +1394,15 @@ public interface JavaPackage extends EPackage {
 	EAttribute getClassifier_Name();
 
 	/**
-	 * Returns the meta object for the reference list '{@link de.silvawb.java.Classifier#getTemplateBindings <em>Template Bindings</em>}'.
+	 * Returns the meta object for the containment reference list '{@link de.silvawb.java.Classifier#getGenericBindings <em>Generic Bindings</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Template Bindings</em>'.
-	 * @see de.silvawb.java.Classifier#getTemplateBindings()
+	 * @return the meta object for the containment reference list '<em>Generic Bindings</em>'.
+	 * @see de.silvawb.java.Classifier#getGenericBindings()
 	 * @see #getClassifier()
 	 * @generated
 	 */
-	EReference getClassifier_TemplateBindings();
-
-	/**
-	 * Returns the meta object for the reference list '{@link de.silvawb.java.Classifier#getUnderTemplateBindings <em>Under Template Bindings</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Under Template Bindings</em>'.
-	 * @see de.silvawb.java.Classifier#getUnderTemplateBindings()
-	 * @see #getClassifier()
-	 * @generated
-	 */
-	EReference getClassifier_UnderTemplateBindings();
+	EReference getClassifier_GenericBindings();
 
 	/**
 	 * Returns the meta object for the containment reference list '{@link de.silvawb.java.Classifier#getFields <em>Fields</em>}'.
@@ -1545,28 +1416,6 @@ public interface JavaPackage extends EPackage {
 	EReference getClassifier_Fields();
 
 	/**
-	 * Returns the meta object for the reference list '{@link de.silvawb.java.Classifier#getTypingFields <em>Typing Fields</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Typing Fields</em>'.
-	 * @see de.silvawb.java.Classifier#getTypingFields()
-	 * @see #getClassifier()
-	 * @generated
-	 */
-	EReference getClassifier_TypingFields();
-
-	/**
-	 * Returns the meta object for the reference list '{@link de.silvawb.java.Classifier#getTypingMethods <em>Typing Methods</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Typing Methods</em>'.
-	 * @see de.silvawb.java.Classifier#getTypingMethods()
-	 * @see #getClassifier()
-	 * @generated
-	 */
-	EReference getClassifier_TypingMethods();
-
-	/**
 	 * Returns the meta object for the containment reference list '{@link de.silvawb.java.Classifier#getMethods <em>Methods</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1576,17 +1425,6 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getClassifier_Methods();
-
-	/**
-	 * Returns the meta object for the reference list '{@link de.silvawb.java.Classifier#getTypingArguments <em>Typing Arguments</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Typing Arguments</em>'.
-	 * @see de.silvawb.java.Classifier#getTypingArguments()
-	 * @see #getClassifier()
-	 * @generated
-	 */
-	EReference getClassifier_TypingArguments();
 
 	/**
 	 * Returns the meta object for the containment reference list '{@link de.silvawb.java.Classifier#getInterfaceImplementations <em>Interface Implementations</em>}'.
@@ -1600,15 +1438,15 @@ public interface JavaPackage extends EPackage {
 	EReference getClassifier_InterfaceImplementations();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link de.silvawb.java.Classifier#getGeneralizations <em>Generalizations</em>}'.
+	 * Returns the meta object for the containment reference '{@link de.silvawb.java.Classifier#getGeneralization <em>Generalization</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Generalizations</em>'.
-	 * @see de.silvawb.java.Classifier#getGeneralizations()
+	 * @return the meta object for the containment reference '<em>Generalization</em>'.
+	 * @see de.silvawb.java.Classifier#getGeneralization()
 	 * @see #getClassifier()
 	 * @generated
 	 */
-	EReference getClassifier_Generalizations();
+	EReference getClassifier_Generalization();
 
 	/**
 	 * Returns the meta object for the containment reference list '{@link de.silvawb.java.Classifier#getImports <em>Imports</em>}'.
@@ -1805,10 +1643,10 @@ public interface JavaPackage extends EPackage {
 	EReference getMethod_ReturnType();
 
 	/**
-	 * Returns the meta object for the reference list '{@link de.silvawb.java.Method#getArguments <em>Arguments</em>}'.
+	 * Returns the meta object for the containment reference list '{@link de.silvawb.java.Method#getArguments <em>Arguments</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Arguments</em>'.
+	 * @return the meta object for the containment reference list '<em>Arguments</em>'.
 	 * @see de.silvawb.java.Method#getArguments()
 	 * @see #getMethod()
 	 * @generated
@@ -1914,15 +1752,15 @@ public interface JavaPackage extends EPackage {
 	EReference getArgument_Type();
 
 	/**
-	 * Returns the meta object for the reference list '{@link de.silvawb.java.Argument#getUsingMethods <em>Using Methods</em>}'.
+	 * Returns the meta object for the container reference '{@link de.silvawb.java.Argument#getUsingMethod <em>Using Method</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Using Methods</em>'.
-	 * @see de.silvawb.java.Argument#getUsingMethods()
+	 * @return the meta object for the container reference '<em>Using Method</em>'.
+	 * @see de.silvawb.java.Argument#getUsingMethod()
 	 * @see #getArgument()
 	 * @generated
 	 */
-	EReference getArgument_UsingMethods();
+	EReference getArgument_UsingMethod();
 
 	/**
 	 * Returns the meta object for class '{@link de.silvawb.java.Container <em>Container</em>}'.
@@ -1956,69 +1794,58 @@ public interface JavaPackage extends EPackage {
 	EClass getInterface();
 
 	/**
-	 * Returns the meta object for the reference list '{@link de.silvawb.java.Interface#getExtendedInterfaces <em>Extended Interfaces</em>}'.
+	 * Returns the meta object for class '{@link de.silvawb.java.GenericBinding <em>Generic Binding</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Extended Interfaces</em>'.
-	 * @see de.silvawb.java.Interface#getExtendedInterfaces()
-	 * @see #getInterface()
+	 * @return the meta object for class '<em>Generic Binding</em>'.
+	 * @see de.silvawb.java.GenericBinding
 	 * @generated
 	 */
-	EReference getInterface_ExtendedInterfaces();
+	EClass getGenericBinding();
 
 	/**
-	 * Returns the meta object for the reference list '{@link de.silvawb.java.Interface#getExtendingInterfaces <em>Extending Interfaces</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Extending Interfaces</em>'.
-	 * @see de.silvawb.java.Interface#getExtendingInterfaces()
-	 * @see #getInterface()
-	 * @generated
-	 */
-	EReference getInterface_ExtendingInterfaces();
-
-	/**
-	 * Returns the meta object for class '{@link de.silvawb.java.TemplateBinding <em>Template Binding</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Template Binding</em>'.
-	 * @see de.silvawb.java.TemplateBinding
-	 * @generated
-	 */
-	EClass getTemplateBinding();
-
-	/**
-	 * Returns the meta object for the attribute '{@link de.silvawb.java.TemplateBinding#getName <em>Name</em>}'.
+	 * Returns the meta object for the attribute '{@link de.silvawb.java.GenericBinding#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see de.silvawb.java.TemplateBinding#getName()
-	 * @see #getTemplateBinding()
+	 * @see de.silvawb.java.GenericBinding#getName()
+	 * @see #getGenericBinding()
 	 * @generated
 	 */
-	EAttribute getTemplateBinding_Name();
+	EAttribute getGenericBinding_Name();
 
 	/**
-	 * Returns the meta object for the attribute '{@link de.silvawb.java.TemplateBinding#getTypeOverClassifier <em>Type Over Classifier</em>}'.
+	 * Returns the meta object for the reference list '{@link de.silvawb.java.GenericBinding#getUpperBoundings <em>Upper Boundings</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Type Over Classifier</em>'.
-	 * @see de.silvawb.java.TemplateBinding#getTypeOverClassifier()
-	 * @see #getTemplateBinding()
+	 * @return the meta object for the reference list '<em>Upper Boundings</em>'.
+	 * @see de.silvawb.java.GenericBinding#getUpperBoundings()
+	 * @see #getGenericBinding()
 	 * @generated
 	 */
-	EAttribute getTemplateBinding_TypeOverClassifier();
+	EReference getGenericBinding_UpperBoundings();
 
 	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.java.TemplateBinding#getOverClassifier <em>Over Classifier</em>}'.
+	 * Returns the meta object for the reference '{@link de.silvawb.java.GenericBinding#getLowerBounding <em>Lower Bounding</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Over Classifier</em>'.
-	 * @see de.silvawb.java.TemplateBinding#getOverClassifier()
-	 * @see #getTemplateBinding()
+	 * @return the meta object for the reference '<em>Lower Bounding</em>'.
+	 * @see de.silvawb.java.GenericBinding#getLowerBounding()
+	 * @see #getGenericBinding()
 	 * @generated
 	 */
-	EReference getTemplateBinding_OverClassifier();
+	EReference getGenericBinding_LowerBounding();
+
+	/**
+	 * Returns the meta object for the container reference '{@link de.silvawb.java.GenericBinding#getUsingClassifier <em>Using Classifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the container reference '<em>Using Classifier</em>'.
+	 * @see de.silvawb.java.GenericBinding#getUsingClassifier()
+	 * @see #getGenericBinding()
+	 * @generated
+	 */
+	EReference getGenericBinding_UsingClassifier();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -2216,20 +2043,12 @@ public interface JavaPackage extends EPackage {
 		EAttribute CLASSIFIER__NAME = eINSTANCE.getClassifier_Name();
 
 		/**
-		 * The meta object literal for the '<em><b>Template Bindings</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Generic Bindings</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CLASSIFIER__TEMPLATE_BINDINGS = eINSTANCE.getClassifier_TemplateBindings();
-
-		/**
-		 * The meta object literal for the '<em><b>Under Template Bindings</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CLASSIFIER__UNDER_TEMPLATE_BINDINGS = eINSTANCE.getClassifier_UnderTemplateBindings();
+		EReference CLASSIFIER__GENERIC_BINDINGS = eINSTANCE.getClassifier_GenericBindings();
 
 		/**
 		 * The meta object literal for the '<em><b>Fields</b></em>' containment reference list feature.
@@ -2240,36 +2059,12 @@ public interface JavaPackage extends EPackage {
 		EReference CLASSIFIER__FIELDS = eINSTANCE.getClassifier_Fields();
 
 		/**
-		 * The meta object literal for the '<em><b>Typing Fields</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CLASSIFIER__TYPING_FIELDS = eINSTANCE.getClassifier_TypingFields();
-
-		/**
-		 * The meta object literal for the '<em><b>Typing Methods</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CLASSIFIER__TYPING_METHODS = eINSTANCE.getClassifier_TypingMethods();
-
-		/**
 		 * The meta object literal for the '<em><b>Methods</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference CLASSIFIER__METHODS = eINSTANCE.getClassifier_Methods();
-
-		/**
-		 * The meta object literal for the '<em><b>Typing Arguments</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CLASSIFIER__TYPING_ARGUMENTS = eINSTANCE.getClassifier_TypingArguments();
 
 		/**
 		 * The meta object literal for the '<em><b>Interface Implementations</b></em>' containment reference list feature.
@@ -2280,12 +2075,12 @@ public interface JavaPackage extends EPackage {
 		EReference CLASSIFIER__INTERFACE_IMPLEMENTATIONS = eINSTANCE.getClassifier_InterfaceImplementations();
 
 		/**
-		 * The meta object literal for the '<em><b>Generalizations</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Generalization</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CLASSIFIER__GENERALIZATIONS = eINSTANCE.getClassifier_Generalizations();
+		EReference CLASSIFIER__GENERALIZATION = eINSTANCE.getClassifier_Generalization();
 
 		/**
 		 * The meta object literal for the '<em><b>Imports</b></em>' containment reference list feature.
@@ -2440,7 +2235,7 @@ public interface JavaPackage extends EPackage {
 		EReference METHOD__RETURN_TYPE = eINSTANCE.getMethod_ReturnType();
 
 		/**
-		 * The meta object literal for the '<em><b>Arguments</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Arguments</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -2522,12 +2317,12 @@ public interface JavaPackage extends EPackage {
 		EReference ARGUMENT__TYPE = eINSTANCE.getArgument_Type();
 
 		/**
-		 * The meta object literal for the '<em><b>Using Methods</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Using Method</b></em>' container reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ARGUMENT__USING_METHODS = eINSTANCE.getArgument_UsingMethods();
+		EReference ARGUMENT__USING_METHOD = eINSTANCE.getArgument_UsingMethod();
 
 		/**
 		 * The meta object literal for the '{@link de.silvawb.java.impl.ContainerImpl <em>Container</em>}' class.
@@ -2558,30 +2353,14 @@ public interface JavaPackage extends EPackage {
 		EClass INTERFACE = eINSTANCE.getInterface();
 
 		/**
-		 * The meta object literal for the '<em><b>Extended Interfaces</b></em>' reference list feature.
+		 * The meta object literal for the '{@link de.silvawb.java.impl.GenericBindingImpl <em>Generic Binding</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
+		 * @see de.silvawb.java.impl.GenericBindingImpl
+		 * @see de.silvawb.java.impl.JavaPackageImpl#getGenericBinding()
 		 * @generated
 		 */
-		EReference INTERFACE__EXTENDED_INTERFACES = eINSTANCE.getInterface_ExtendedInterfaces();
-
-		/**
-		 * The meta object literal for the '<em><b>Extending Interfaces</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference INTERFACE__EXTENDING_INTERFACES = eINSTANCE.getInterface_ExtendingInterfaces();
-
-		/**
-		 * The meta object literal for the '{@link de.silvawb.java.impl.TemplateBindingImpl <em>Template Binding</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see de.silvawb.java.impl.TemplateBindingImpl
-		 * @see de.silvawb.java.impl.JavaPackageImpl#getTemplateBinding()
-		 * @generated
-		 */
-		EClass TEMPLATE_BINDING = eINSTANCE.getTemplateBinding();
+		EClass GENERIC_BINDING = eINSTANCE.getGenericBinding();
 
 		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
@@ -2589,23 +2368,31 @@ public interface JavaPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute TEMPLATE_BINDING__NAME = eINSTANCE.getTemplateBinding_Name();
+		EAttribute GENERIC_BINDING__NAME = eINSTANCE.getGenericBinding_Name();
 
 		/**
-		 * The meta object literal for the '<em><b>Type Over Classifier</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Upper Boundings</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute TEMPLATE_BINDING__TYPE_OVER_CLASSIFIER = eINSTANCE.getTemplateBinding_TypeOverClassifier();
+		EReference GENERIC_BINDING__UPPER_BOUNDINGS = eINSTANCE.getGenericBinding_UpperBoundings();
 
 		/**
-		 * The meta object literal for the '<em><b>Over Classifier</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Lower Bounding</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference TEMPLATE_BINDING__OVER_CLASSIFIER = eINSTANCE.getTemplateBinding_OverClassifier();
+		EReference GENERIC_BINDING__LOWER_BOUNDING = eINSTANCE.getGenericBinding_LowerBounding();
+
+		/**
+		 * The meta object literal for the '<em><b>Using Classifier</b></em>' container reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GENERIC_BINDING__USING_CLASSIFIER = eINSTANCE.getGenericBinding_UsingClassifier();
 
 	}
 

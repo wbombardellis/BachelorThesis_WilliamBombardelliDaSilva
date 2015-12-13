@@ -50,7 +50,7 @@ public interface Generalization extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Generalizator</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link de.silvawb.java.Classifier#getGeneralizations <em>Generalizations</em>}'.
+	 * It is bidirectional and its opposite is '{@link de.silvawb.java.Classifier#getGeneralization <em>Generalization</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Generalizator</em>' container reference isn't clear,
@@ -60,8 +60,8 @@ public interface Generalization extends EObject {
 	 * @return the value of the '<em>Generalizator</em>' container reference.
 	 * @see #setGeneralizator(Classifier)
 	 * @see de.silvawb.java.JavaPackage#getGeneralization_Generalizator()
-	 * @see de.silvawb.java.Classifier#getGeneralizations
-	 * @model opposite="generalizations" transient="false" ordered="false"
+	 * @see de.silvawb.java.Classifier#getGeneralization
+	 * @model opposite="generalization" transient="false" ordered="false"
 	 * @generated
 	 */
 	Classifier getGeneralizator();

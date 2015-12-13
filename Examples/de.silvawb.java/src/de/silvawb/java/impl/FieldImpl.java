@@ -194,33 +194,11 @@ public class FieldImpl extends ContainedImpl implements Field {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetType(Classifier newType, NotificationChain msgs) {
+	public void setType(Classifier newType) {
 		Classifier oldType = type;
 		type = newType;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, JavaPackage.FIELD__TYPE, oldType, newType);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setType(Classifier newType) {
-		if (newType != type) {
-			NotificationChain msgs = null;
-			if (type != null)
-				msgs = ((InternalEObject)type).eInverseRemove(this, JavaPackage.CLASSIFIER__TYPING_FIELDS, Classifier.class, msgs);
-			if (newType != null)
-				msgs = ((InternalEObject)newType).eInverseAdd(this, JavaPackage.CLASSIFIER__TYPING_FIELDS, Classifier.class, msgs);
-			msgs = basicSetType(newType, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, JavaPackage.FIELD__TYPE, newType, newType));
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, JavaPackage.FIELD__TYPE, oldType, type));
 	}
 
 	/**
@@ -336,10 +314,6 @@ public class FieldImpl extends ContainedImpl implements Field {
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case JavaPackage.FIELD__TYPE:
-				if (type != null)
-					msgs = ((InternalEObject)type).eInverseRemove(this, JavaPackage.CLASSIFIER__TYPING_FIELDS, Classifier.class, msgs);
-				return basicSetType((Classifier)otherEnd, msgs);
 			case JavaPackage.FIELD__CONTAINING_CLASSIFIER:
 				if (eInternalContainer() != null)
 					msgs = eBasicRemoveFromContainer(msgs);
@@ -356,8 +330,6 @@ public class FieldImpl extends ContainedImpl implements Field {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case JavaPackage.FIELD__TYPE:
-				return basicSetType(null, msgs);
 			case JavaPackage.FIELD__CONTAINING_CLASSIFIER:
 				return basicSetContainingClassifier(null, msgs);
 		}
