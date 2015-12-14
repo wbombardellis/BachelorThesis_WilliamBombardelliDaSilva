@@ -2,6 +2,8 @@
  */
 package de.silvawb.java.impl;
 
+import de.silvawb.java.Annotable;
+import de.silvawb.java.AnnotationInstance;
 import de.silvawb.java.Classifier;
 import de.silvawb.java.Contained;
 import de.silvawb.java.Field;
@@ -33,6 +35,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * </p>
  * <ul>
  *   <li>{@link de.silvawb.java.impl.ClassifierImpl#getContainedElements <em>Contained Elements</em>}</li>
+ *   <li>{@link de.silvawb.java.impl.ClassifierImpl#getAnnotationInstances <em>Annotation Instances</em>}</li>
  *   <li>{@link de.silvawb.java.impl.ClassifierImpl#getName <em>Name</em>}</li>
  *   <li>{@link de.silvawb.java.impl.ClassifierImpl#getGenericBindings <em>Generic Bindings</em>}</li>
  *   <li>{@link de.silvawb.java.impl.ClassifierImpl#getFields <em>Fields</em>}</li>
@@ -54,6 +57,16 @@ public abstract class ClassifierImpl extends ContainedImpl implements Classifier
 	 * @ordered
 	 */
 	protected EList<Contained> containedElements;
+
+	/**
+	 * The cached value of the '{@link #getAnnotationInstances() <em>Annotation Instances</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAnnotationInstances()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<AnnotationInstance> annotationInstances;
 
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
@@ -164,6 +177,18 @@ public abstract class ClassifierImpl extends ContainedImpl implements Classifier
 			containedElements = new EObjectContainmentWithInverseEList<Contained>(Contained.class, this, JavaPackage.CLASSIFIER__CONTAINED_ELEMENTS, JavaPackage.CONTAINED__CONTAINER);
 		}
 		return containedElements;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<AnnotationInstance> getAnnotationInstances() {
+		if (annotationInstances == null) {
+			annotationInstances = new EObjectContainmentWithInverseEList<AnnotationInstance>(AnnotationInstance.class, this, JavaPackage.CLASSIFIER__ANNOTATION_INSTANCES, JavaPackage.ANNOTATION_INSTANCE__ANNOTABLE);
+		}
+		return annotationInstances;
 	}
 
 	/**
@@ -301,6 +326,8 @@ public abstract class ClassifierImpl extends ContainedImpl implements Classifier
 		switch (featureID) {
 			case JavaPackage.CLASSIFIER__CONTAINED_ELEMENTS:
 				return ((InternalEList<InternalEObject>)(InternalEList<?>)getContainedElements()).basicAdd(otherEnd, msgs);
+			case JavaPackage.CLASSIFIER__ANNOTATION_INSTANCES:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getAnnotationInstances()).basicAdd(otherEnd, msgs);
 			case JavaPackage.CLASSIFIER__GENERIC_BINDINGS:
 				return ((InternalEList<InternalEObject>)(InternalEList<?>)getGenericBindings()).basicAdd(otherEnd, msgs);
 			case JavaPackage.CLASSIFIER__FIELDS:
@@ -329,6 +356,8 @@ public abstract class ClassifierImpl extends ContainedImpl implements Classifier
 		switch (featureID) {
 			case JavaPackage.CLASSIFIER__CONTAINED_ELEMENTS:
 				return ((InternalEList<?>)getContainedElements()).basicRemove(otherEnd, msgs);
+			case JavaPackage.CLASSIFIER__ANNOTATION_INSTANCES:
+				return ((InternalEList<?>)getAnnotationInstances()).basicRemove(otherEnd, msgs);
 			case JavaPackage.CLASSIFIER__GENERIC_BINDINGS:
 				return ((InternalEList<?>)getGenericBindings()).basicRemove(otherEnd, msgs);
 			case JavaPackage.CLASSIFIER__FIELDS:
@@ -355,6 +384,8 @@ public abstract class ClassifierImpl extends ContainedImpl implements Classifier
 		switch (featureID) {
 			case JavaPackage.CLASSIFIER__CONTAINED_ELEMENTS:
 				return getContainedElements();
+			case JavaPackage.CLASSIFIER__ANNOTATION_INSTANCES:
+				return getAnnotationInstances();
 			case JavaPackage.CLASSIFIER__NAME:
 				return getName();
 			case JavaPackage.CLASSIFIER__GENERIC_BINDINGS:
@@ -385,6 +416,10 @@ public abstract class ClassifierImpl extends ContainedImpl implements Classifier
 			case JavaPackage.CLASSIFIER__CONTAINED_ELEMENTS:
 				getContainedElements().clear();
 				getContainedElements().addAll((Collection<? extends Contained>)newValue);
+				return;
+			case JavaPackage.CLASSIFIER__ANNOTATION_INSTANCES:
+				getAnnotationInstances().clear();
+				getAnnotationInstances().addAll((Collection<? extends AnnotationInstance>)newValue);
 				return;
 			case JavaPackage.CLASSIFIER__NAME:
 				setName((String)newValue);
@@ -427,6 +462,9 @@ public abstract class ClassifierImpl extends ContainedImpl implements Classifier
 			case JavaPackage.CLASSIFIER__CONTAINED_ELEMENTS:
 				getContainedElements().clear();
 				return;
+			case JavaPackage.CLASSIFIER__ANNOTATION_INSTANCES:
+				getAnnotationInstances().clear();
+				return;
 			case JavaPackage.CLASSIFIER__NAME:
 				setName(NAME_EDEFAULT);
 				return;
@@ -462,6 +500,8 @@ public abstract class ClassifierImpl extends ContainedImpl implements Classifier
 		switch (featureID) {
 			case JavaPackage.CLASSIFIER__CONTAINED_ELEMENTS:
 				return containedElements != null && !containedElements.isEmpty();
+			case JavaPackage.CLASSIFIER__ANNOTATION_INSTANCES:
+				return annotationInstances != null && !annotationInstances.isEmpty();
 			case JavaPackage.CLASSIFIER__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case JavaPackage.CLASSIFIER__GENERIC_BINDINGS:
@@ -493,6 +533,12 @@ public abstract class ClassifierImpl extends ContainedImpl implements Classifier
 				default: return -1;
 			}
 		}
+		if (baseClass == Annotable.class) {
+			switch (derivedFeatureID) {
+				case JavaPackage.CLASSIFIER__ANNOTATION_INSTANCES: return JavaPackage.ANNOTABLE__ANNOTATION_INSTANCES;
+				default: return -1;
+			}
+		}
 		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
 	}
 
@@ -506,6 +552,12 @@ public abstract class ClassifierImpl extends ContainedImpl implements Classifier
 		if (baseClass == de.silvawb.java.Container.class) {
 			switch (baseFeatureID) {
 				case JavaPackage.CONTAINER__CONTAINED_ELEMENTS: return JavaPackage.CLASSIFIER__CONTAINED_ELEMENTS;
+				default: return -1;
+			}
+		}
+		if (baseClass == Annotable.class) {
+			switch (baseFeatureID) {
+				case JavaPackage.ANNOTABLE__ANNOTATION_INSTANCES: return JavaPackage.CLASSIFIER__ANNOTATION_INSTANCES;
 				default: return -1;
 			}
 		}

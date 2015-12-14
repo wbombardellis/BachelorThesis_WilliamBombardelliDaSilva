@@ -87,6 +87,7 @@ public class ClassifierItemProvider
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(JavaPackage.Literals.CONTAINER__CONTAINED_ELEMENTS);
+			childrenFeatures.add(JavaPackage.Literals.ANNOTABLE__ANNOTATION_INSTANCES);
 			childrenFeatures.add(JavaPackage.Literals.CLASSIFIER__GENERIC_BINDINGS);
 			childrenFeatures.add(JavaPackage.Literals.CLASSIFIER__FIELDS);
 			childrenFeatures.add(JavaPackage.Literals.CLASSIFIER__METHODS);
@@ -141,6 +142,7 @@ public class ClassifierItemProvider
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 			case JavaPackage.CLASSIFIER__CONTAINED_ELEMENTS:
+			case JavaPackage.CLASSIFIER__ANNOTATION_INSTANCES:
 			case JavaPackage.CLASSIFIER__GENERIC_BINDINGS:
 			case JavaPackage.CLASSIFIER__FIELDS:
 			case JavaPackage.CLASSIFIER__METHODS:
@@ -188,6 +190,16 @@ public class ClassifierItemProvider
 			(createChildParameter
 				(JavaPackage.Literals.CONTAINER__CONTAINED_ELEMENTS,
 				 JavaFactory.eINSTANCE.createInterface()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(JavaPackage.Literals.CONTAINER__CONTAINED_ELEMENTS,
+				 JavaFactory.eINSTANCE.createAnnotation()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(JavaPackage.Literals.ANNOTABLE__ANNOTATION_INSTANCES,
+				 JavaFactory.eINSTANCE.createAnnotationInstance()));
 
 		newChildDescriptors.add
 			(createChildParameter

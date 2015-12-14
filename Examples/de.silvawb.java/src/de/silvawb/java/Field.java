@@ -23,7 +23,7 @@ package de.silvawb.java;
  * @model
  * @generated
  */
-public interface Field extends Contained {
+public interface Field extends Contained, Annotable {
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->

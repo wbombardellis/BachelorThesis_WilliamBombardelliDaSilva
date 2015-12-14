@@ -2,6 +2,11 @@
  */
 package de.silvawb.java.util;
 
+import de.silvawb.java.Annotable;
+import de.silvawb.java.Annotation;
+import de.silvawb.java.AnnotationInstance;
+import de.silvawb.java.AnnotationInstanceParameter;
+import de.silvawb.java.AnnotationInstanceValue;
 import de.silvawb.java.Argument;
 import de.silvawb.java.Classifier;
 import de.silvawb.java.Contained;
@@ -96,6 +101,7 @@ public class JavaSwitch<T> extends Switch<T> {
 				if (result == null) result = caseClassifier(class_);
 				if (result == null) result = caseContained(class_);
 				if (result == null) result = caseContainer(class_);
+				if (result == null) result = caseAnnotable(class_);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -116,6 +122,7 @@ public class JavaSwitch<T> extends Switch<T> {
 				T result = caseClassifier(classifier);
 				if (result == null) result = caseContained(classifier);
 				if (result == null) result = caseContainer(classifier);
+				if (result == null) result = caseAnnotable(classifier);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -123,6 +130,7 @@ public class JavaSwitch<T> extends Switch<T> {
 				Field field = (Field)theEObject;
 				T result = caseField(field);
 				if (result == null) result = caseContained(field);
+				if (result == null) result = caseAnnotable(field);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -142,6 +150,7 @@ public class JavaSwitch<T> extends Switch<T> {
 				Method method = (Method)theEObject;
 				T result = caseMethod(method);
 				if (result == null) result = caseContained(method);
+				if (result == null) result = caseAnnotable(method);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -163,12 +172,47 @@ public class JavaSwitch<T> extends Switch<T> {
 				if (result == null) result = caseClassifier(interface_);
 				if (result == null) result = caseContained(interface_);
 				if (result == null) result = caseContainer(interface_);
+				if (result == null) result = caseAnnotable(interface_);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case JavaPackage.GENERIC_BINDING: {
 				GenericBinding genericBinding = (GenericBinding)theEObject;
 				T result = caseGenericBinding(genericBinding);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case JavaPackage.ANNOTABLE: {
+				Annotable annotable = (Annotable)theEObject;
+				T result = caseAnnotable(annotable);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case JavaPackage.ANNOTATION: {
+				Annotation annotation = (Annotation)theEObject;
+				T result = caseAnnotation(annotation);
+				if (result == null) result = caseClassifier(annotation);
+				if (result == null) result = caseContained(annotation);
+				if (result == null) result = caseContainer(annotation);
+				if (result == null) result = caseAnnotable(annotation);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case JavaPackage.ANNOTATION_INSTANCE: {
+				AnnotationInstance annotationInstance = (AnnotationInstance)theEObject;
+				T result = caseAnnotationInstance(annotationInstance);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case JavaPackage.ANNOTATION_INSTANCE_PARAMETER: {
+				AnnotationInstanceParameter annotationInstanceParameter = (AnnotationInstanceParameter)theEObject;
+				T result = caseAnnotationInstanceParameter(annotationInstanceParameter);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case JavaPackage.ANNOTATION_INSTANCE_VALUE: {
+				AnnotationInstanceValue annotationInstanceValue = (AnnotationInstanceValue)theEObject;
+				T result = caseAnnotationInstanceValue(annotationInstanceValue);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -383,6 +427,81 @@ public class JavaSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseGenericBinding(GenericBinding object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Annotable</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Annotable</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAnnotable(Annotable object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Annotation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Annotation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAnnotation(Annotation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Annotation Instance</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Annotation Instance</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAnnotationInstance(AnnotationInstance object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Annotation Instance Parameter</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Annotation Instance Parameter</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAnnotationInstanceParameter(AnnotationInstanceParameter object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Annotation Instance Value</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Annotation Instance Value</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAnnotationInstanceValue(AnnotationInstanceValue object) {
 		return null;
 	}
 

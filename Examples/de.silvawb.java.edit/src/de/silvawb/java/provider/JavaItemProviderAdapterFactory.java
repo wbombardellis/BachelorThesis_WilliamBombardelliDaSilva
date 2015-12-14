@@ -371,6 +371,121 @@ public class JavaItemProviderAdapterFactory extends JavaAdapterFactory implement
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link de.silvawb.java.Annotable} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected AnnotableItemProvider annotableItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link de.silvawb.java.Annotable}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createAnnotableAdapter() {
+		if (annotableItemProvider == null) {
+			annotableItemProvider = new AnnotableItemProvider(this);
+		}
+
+		return annotableItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link de.silvawb.java.Annotation} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected AnnotationItemProvider annotationItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link de.silvawb.java.Annotation}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createAnnotationAdapter() {
+		if (annotationItemProvider == null) {
+			annotationItemProvider = new AnnotationItemProvider(this);
+		}
+
+		return annotationItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link de.silvawb.java.AnnotationInstance} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected AnnotationInstanceItemProvider annotationInstanceItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link de.silvawb.java.AnnotationInstance}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createAnnotationInstanceAdapter() {
+		if (annotationInstanceItemProvider == null) {
+			annotationInstanceItemProvider = new AnnotationInstanceItemProvider(this);
+		}
+
+		return annotationInstanceItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link de.silvawb.java.AnnotationInstanceParameter} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected AnnotationInstanceParameterItemProvider annotationInstanceParameterItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link de.silvawb.java.AnnotationInstanceParameter}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createAnnotationInstanceParameterAdapter() {
+		if (annotationInstanceParameterItemProvider == null) {
+			annotationInstanceParameterItemProvider = new AnnotationInstanceParameterItemProvider(this);
+		}
+
+		return annotationInstanceParameterItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link de.silvawb.java.AnnotationInstanceValue} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected AnnotationInstanceValueItemProvider annotationInstanceValueItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link de.silvawb.java.AnnotationInstanceValue}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createAnnotationInstanceValueAdapter() {
+		if (annotationInstanceValueItemProvider == null) {
+			annotationInstanceValueItemProvider = new AnnotationInstanceValueItemProvider(this);
+		}
+
+		return annotationInstanceValueItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -482,6 +597,11 @@ public class JavaItemProviderAdapterFactory extends JavaAdapterFactory implement
 		if (containerItemProvider != null) containerItemProvider.dispose();
 		if (interfaceItemProvider != null) interfaceItemProvider.dispose();
 		if (genericBindingItemProvider != null) genericBindingItemProvider.dispose();
+		if (annotableItemProvider != null) annotableItemProvider.dispose();
+		if (annotationItemProvider != null) annotationItemProvider.dispose();
+		if (annotationInstanceItemProvider != null) annotationInstanceItemProvider.dispose();
+		if (annotationInstanceParameterItemProvider != null) annotationInstanceParameterItemProvider.dispose();
+		if (annotationInstanceValueItemProvider != null) annotationInstanceValueItemProvider.dispose();
 	}
 
 }

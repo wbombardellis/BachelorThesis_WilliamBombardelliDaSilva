@@ -2,17 +2,23 @@
  */
 package de.silvawb.java.impl;
 
+import de.silvawb.java.Annotable;
+import de.silvawb.java.AnnotationInstance;
 import de.silvawb.java.Classifier;
 import de.silvawb.java.Field;
 import de.silvawb.java.JavaPackage;
+import java.util.Collection;
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.common.notify.NotificationChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
 import org.eclipse.emf.ecore.util.EcoreUtil;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -22,6 +28,7 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link de.silvawb.java.impl.FieldImpl#getAnnotationInstances <em>Annotation Instances</em>}</li>
  *   <li>{@link de.silvawb.java.impl.FieldImpl#getName <em>Name</em>}</li>
  *   <li>{@link de.silvawb.java.impl.FieldImpl#getType <em>Type</em>}</li>
  *   <li>{@link de.silvawb.java.impl.FieldImpl#getContainingClassifier <em>Containing Classifier</em>}</li>
@@ -33,6 +40,16 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
  * @generated
  */
 public class FieldImpl extends ContainedImpl implements Field {
+	/**
+	 * The cached value of the '{@link #getAnnotationInstances() <em>Annotation Instances</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAnnotationInstances()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<AnnotationInstance> annotationInstances;
+
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -140,6 +157,18 @@ public class FieldImpl extends ContainedImpl implements Field {
 	@Override
 	protected EClass eStaticClass() {
 		return JavaPackage.Literals.FIELD;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<AnnotationInstance> getAnnotationInstances() {
+		if (annotationInstances == null) {
+			annotationInstances = new EObjectContainmentWithInverseEList<AnnotationInstance>(AnnotationInstance.class, this, JavaPackage.FIELD__ANNOTATION_INSTANCES, JavaPackage.ANNOTATION_INSTANCE__ANNOTABLE);
+		}
+		return annotationInstances;
 	}
 
 	/**
@@ -314,6 +343,8 @@ public class FieldImpl extends ContainedImpl implements Field {
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
+			case JavaPackage.FIELD__ANNOTATION_INSTANCES:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getAnnotationInstances()).basicAdd(otherEnd, msgs);
 			case JavaPackage.FIELD__CONTAINING_CLASSIFIER:
 				if (eInternalContainer() != null)
 					msgs = eBasicRemoveFromContainer(msgs);
@@ -330,6 +361,8 @@ public class FieldImpl extends ContainedImpl implements Field {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
+			case JavaPackage.FIELD__ANNOTATION_INSTANCES:
+				return ((InternalEList<?>)getAnnotationInstances()).basicRemove(otherEnd, msgs);
 			case JavaPackage.FIELD__CONTAINING_CLASSIFIER:
 				return basicSetContainingClassifier(null, msgs);
 		}
@@ -358,6 +391,8 @@ public class FieldImpl extends ContainedImpl implements Field {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
+			case JavaPackage.FIELD__ANNOTATION_INSTANCES:
+				return getAnnotationInstances();
 			case JavaPackage.FIELD__NAME:
 				return getName();
 			case JavaPackage.FIELD__TYPE:
@@ -384,6 +419,10 @@ public class FieldImpl extends ContainedImpl implements Field {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
+			case JavaPackage.FIELD__ANNOTATION_INSTANCES:
+				getAnnotationInstances().clear();
+				getAnnotationInstances().addAll((Collection<? extends AnnotationInstance>)newValue);
+				return;
 			case JavaPackage.FIELD__NAME:
 				setName((String)newValue);
 				return;
@@ -414,6 +453,9 @@ public class FieldImpl extends ContainedImpl implements Field {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
+			case JavaPackage.FIELD__ANNOTATION_INSTANCES:
+				getAnnotationInstances().clear();
+				return;
 			case JavaPackage.FIELD__NAME:
 				setName(NAME_EDEFAULT);
 				return;
@@ -444,6 +486,8 @@ public class FieldImpl extends ContainedImpl implements Field {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
+			case JavaPackage.FIELD__ANNOTATION_INSTANCES:
+				return annotationInstances != null && !annotationInstances.isEmpty();
 			case JavaPackage.FIELD__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case JavaPackage.FIELD__TYPE:
@@ -458,6 +502,38 @@ public class FieldImpl extends ContainedImpl implements Field {
 				return isFinal != IS_FINAL_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
+		if (baseClass == Annotable.class) {
+			switch (derivedFeatureID) {
+				case JavaPackage.FIELD__ANNOTATION_INSTANCES: return JavaPackage.ANNOTABLE__ANNOTATION_INSTANCES;
+				default: return -1;
+			}
+		}
+		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
+		if (baseClass == Annotable.class) {
+			switch (baseFeatureID) {
+				case JavaPackage.ANNOTABLE__ANNOTATION_INSTANCES: return JavaPackage.FIELD__ANNOTATION_INSTANCES;
+				default: return -1;
+			}
+		}
+		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
 	}
 
 	/**

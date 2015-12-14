@@ -139,6 +139,51 @@ public interface JavaFactory extends EFactory {
 	GenericBinding createGenericBinding();
 
 	/**
+	 * Returns a new object of class '<em>Annotable</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Annotable</em>'.
+	 * @generated
+	 */
+	Annotable createAnnotable();
+
+	/**
+	 * Returns a new object of class '<em>Annotation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Annotation</em>'.
+	 * @generated
+	 */
+	Annotation createAnnotation();
+
+	/**
+	 * Returns a new object of class '<em>Annotation Instance</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Annotation Instance</em>'.
+	 * @generated
+	 */
+	AnnotationInstance createAnnotationInstance();
+
+	/**
+	 * Returns a new object of class '<em>Annotation Instance Parameter</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Annotation Instance Parameter</em>'.
+	 * @generated
+	 */
+	AnnotationInstanceParameter createAnnotationInstanceParameter();
+
+	/**
+	 * Returns a new object of class '<em>Annotation Instance Value</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Annotation Instance Value</em>'.
+	 * @generated
+	 */
+	AnnotationInstanceValue createAnnotationInstanceValue();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

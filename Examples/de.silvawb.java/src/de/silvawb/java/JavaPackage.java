@@ -317,13 +317,22 @@ public interface JavaPackage extends EPackage {
 	int CLASSIFIER__CONTAINED_ELEMENTS = CONTAINED_FEATURE_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>Annotation Instances</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASSIFIER__ANNOTATION_INSTANCES = CONTAINED_FEATURE_COUNT + 1;
+
+	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLASSIFIER__NAME = CONTAINED_FEATURE_COUNT + 1;
+	int CLASSIFIER__NAME = CONTAINED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Generic Bindings</b></em>' containment reference list.
@@ -332,7 +341,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASSIFIER__GENERIC_BINDINGS = CONTAINED_FEATURE_COUNT + 2;
+	int CLASSIFIER__GENERIC_BINDINGS = CONTAINED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Fields</b></em>' containment reference list.
@@ -341,7 +350,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASSIFIER__FIELDS = CONTAINED_FEATURE_COUNT + 3;
+	int CLASSIFIER__FIELDS = CONTAINED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Methods</b></em>' containment reference list.
@@ -350,7 +359,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASSIFIER__METHODS = CONTAINED_FEATURE_COUNT + 4;
+	int CLASSIFIER__METHODS = CONTAINED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Interface Implementations</b></em>' containment reference list.
@@ -359,7 +368,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASSIFIER__INTERFACE_IMPLEMENTATIONS = CONTAINED_FEATURE_COUNT + 5;
+	int CLASSIFIER__INTERFACE_IMPLEMENTATIONS = CONTAINED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Generalization</b></em>' containment reference.
@@ -368,7 +377,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASSIFIER__GENERALIZATION = CONTAINED_FEATURE_COUNT + 6;
+	int CLASSIFIER__GENERALIZATION = CONTAINED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Imports</b></em>' containment reference list.
@@ -377,7 +386,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASSIFIER__IMPORTS = CONTAINED_FEATURE_COUNT + 7;
+	int CLASSIFIER__IMPORTS = CONTAINED_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Classifier</em>' class.
@@ -386,7 +395,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASSIFIER_FEATURE_COUNT = CONTAINED_FEATURE_COUNT + 8;
+	int CLASSIFIER_FEATURE_COUNT = CONTAINED_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of operations of the '<em>Classifier</em>' class.
@@ -432,6 +441,15 @@ public interface JavaPackage extends EPackage {
 	 * @ordered
 	 */
 	int CLASS__CONTAINED_ELEMENTS = CLASSIFIER__CONTAINED_ELEMENTS;
+
+	/**
+	 * The feature id for the '<em><b>Annotation Instances</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS__ANNOTATION_INSTANCES = CLASSIFIER__ANNOTATION_INSTANCES;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -679,13 +697,22 @@ public interface JavaPackage extends EPackage {
 	int FIELD__IMPORTING_CLASSES = CONTAINED__IMPORTING_CLASSES;
 
 	/**
+	 * The feature id for the '<em><b>Annotation Instances</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FIELD__ANNOTATION_INSTANCES = CONTAINED_FEATURE_COUNT + 0;
+
+	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIELD__NAME = CONTAINED_FEATURE_COUNT + 0;
+	int FIELD__NAME = CONTAINED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' reference.
@@ -694,7 +721,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIELD__TYPE = CONTAINED_FEATURE_COUNT + 1;
+	int FIELD__TYPE = CONTAINED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Containing Classifier</b></em>' container reference.
@@ -703,7 +730,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIELD__CONTAINING_CLASSIFIER = CONTAINED_FEATURE_COUNT + 2;
+	int FIELD__CONTAINING_CLASSIFIER = CONTAINED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Default</b></em>' attribute.
@@ -712,7 +739,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIELD__DEFAULT = CONTAINED_FEATURE_COUNT + 3;
+	int FIELD__DEFAULT = CONTAINED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Is Static</b></em>' attribute.
@@ -721,7 +748,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIELD__IS_STATIC = CONTAINED_FEATURE_COUNT + 4;
+	int FIELD__IS_STATIC = CONTAINED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Is Final</b></em>' attribute.
@@ -730,7 +757,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIELD__IS_FINAL = CONTAINED_FEATURE_COUNT + 5;
+	int FIELD__IS_FINAL = CONTAINED_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Field</em>' class.
@@ -739,7 +766,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIELD_FEATURE_COUNT = CONTAINED_FEATURE_COUNT + 6;
+	int FIELD_FEATURE_COUNT = CONTAINED_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of operations of the '<em>Field</em>' class.
@@ -834,13 +861,22 @@ public interface JavaPackage extends EPackage {
 	int METHOD__IMPORTING_CLASSES = CONTAINED__IMPORTING_CLASSES;
 
 	/**
+	 * The feature id for the '<em><b>Annotation Instances</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int METHOD__ANNOTATION_INSTANCES = CONTAINED_FEATURE_COUNT + 0;
+
+	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int METHOD__NAME = CONTAINED_FEATURE_COUNT + 0;
+	int METHOD__NAME = CONTAINED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Return Type</b></em>' reference.
@@ -849,7 +885,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHOD__RETURN_TYPE = CONTAINED_FEATURE_COUNT + 1;
+	int METHOD__RETURN_TYPE = CONTAINED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Arguments</b></em>' containment reference list.
@@ -858,7 +894,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHOD__ARGUMENTS = CONTAINED_FEATURE_COUNT + 2;
+	int METHOD__ARGUMENTS = CONTAINED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Containing Classifier</b></em>' container reference.
@@ -867,7 +903,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHOD__CONTAINING_CLASSIFIER = CONTAINED_FEATURE_COUNT + 3;
+	int METHOD__CONTAINING_CLASSIFIER = CONTAINED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Is Final</b></em>' attribute.
@@ -876,7 +912,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHOD__IS_FINAL = CONTAINED_FEATURE_COUNT + 4;
+	int METHOD__IS_FINAL = CONTAINED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Is Static</b></em>' attribute.
@@ -885,7 +921,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHOD__IS_STATIC = CONTAINED_FEATURE_COUNT + 5;
+	int METHOD__IS_STATIC = CONTAINED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Body</b></em>' attribute.
@@ -894,7 +930,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHOD__BODY = CONTAINED_FEATURE_COUNT + 6;
+	int METHOD__BODY = CONTAINED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Concurrency</b></em>' attribute.
@@ -903,7 +939,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHOD__CONCURRENCY = CONTAINED_FEATURE_COUNT + 7;
+	int METHOD__CONCURRENCY = CONTAINED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Raised Exceptions</b></em>' reference list.
@@ -912,7 +948,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHOD__RAISED_EXCEPTIONS = CONTAINED_FEATURE_COUNT + 8;
+	int METHOD__RAISED_EXCEPTIONS = CONTAINED_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Method</em>' class.
@@ -921,7 +957,7 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHOD_FEATURE_COUNT = CONTAINED_FEATURE_COUNT + 9;
+	int METHOD_FEATURE_COUNT = CONTAINED_FEATURE_COUNT + 10;
 
 	/**
 	 * The number of operations of the '<em>Method</em>' class.
@@ -1033,6 +1069,15 @@ public interface JavaPackage extends EPackage {
 	 * @ordered
 	 */
 	int INTERFACE__CONTAINED_ELEMENTS = CLASSIFIER__CONTAINED_ELEMENTS;
+
+	/**
+	 * The feature id for the '<em><b>Annotation Instances</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERFACE__ANNOTATION_INSTANCES = CLASSIFIER__ANNOTATION_INSTANCES;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1178,6 +1223,335 @@ public interface JavaPackage extends EPackage {
 	 * @ordered
 	 */
 	int GENERIC_BINDING_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link de.silvawb.java.impl.AnnotableImpl <em>Annotable</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.silvawb.java.impl.AnnotableImpl
+	 * @see de.silvawb.java.impl.JavaPackageImpl#getAnnotable()
+	 * @generated
+	 */
+	int ANNOTABLE = 14;
+
+	/**
+	 * The feature id for the '<em><b>Annotation Instances</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTABLE__ANNOTATION_INSTANCES = 0;
+
+	/**
+	 * The number of structural features of the '<em>Annotable</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTABLE_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Annotable</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTABLE_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link de.silvawb.java.impl.AnnotationImpl <em>Annotation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.silvawb.java.impl.AnnotationImpl
+	 * @see de.silvawb.java.impl.JavaPackageImpl#getAnnotation()
+	 * @generated
+	 */
+	int ANNOTATION = 15;
+
+	/**
+	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION__VISIBILITY = CLASSIFIER__VISIBILITY;
+
+	/**
+	 * The feature id for the '<em><b>Container</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION__CONTAINER = CLASSIFIER__CONTAINER;
+
+	/**
+	 * The feature id for the '<em><b>Importing Classes</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION__IMPORTING_CLASSES = CLASSIFIER__IMPORTING_CLASSES;
+
+	/**
+	 * The feature id for the '<em><b>Contained Elements</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION__CONTAINED_ELEMENTS = CLASSIFIER__CONTAINED_ELEMENTS;
+
+	/**
+	 * The feature id for the '<em><b>Annotation Instances</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION__ANNOTATION_INSTANCES = CLASSIFIER__ANNOTATION_INSTANCES;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION__NAME = CLASSIFIER__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Generic Bindings</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION__GENERIC_BINDINGS = CLASSIFIER__GENERIC_BINDINGS;
+
+	/**
+	 * The feature id for the '<em><b>Fields</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION__FIELDS = CLASSIFIER__FIELDS;
+
+	/**
+	 * The feature id for the '<em><b>Methods</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION__METHODS = CLASSIFIER__METHODS;
+
+	/**
+	 * The feature id for the '<em><b>Interface Implementations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION__INTERFACE_IMPLEMENTATIONS = CLASSIFIER__INTERFACE_IMPLEMENTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Generalization</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION__GENERALIZATION = CLASSIFIER__GENERALIZATION;
+
+	/**
+	 * The feature id for the '<em><b>Imports</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION__IMPORTS = CLASSIFIER__IMPORTS;
+
+	/**
+	 * The number of structural features of the '<em>Annotation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION_FEATURE_COUNT = CLASSIFIER_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Annotation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION_OPERATION_COUNT = CLASSIFIER_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link de.silvawb.java.impl.AnnotationInstanceImpl <em>Annotation Instance</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.silvawb.java.impl.AnnotationInstanceImpl
+	 * @see de.silvawb.java.impl.JavaPackageImpl#getAnnotationInstance()
+	 * @generated
+	 */
+	int ANNOTATION_INSTANCE = 16;
+
+	/**
+	 * The feature id for the '<em><b>Annotation</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION_INSTANCE__ANNOTATION = 0;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION_INSTANCE__PARAMETERS = 1;
+
+	/**
+	 * The feature id for the '<em><b>Annotable</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION_INSTANCE__ANNOTABLE = 2;
+
+	/**
+	 * The number of structural features of the '<em>Annotation Instance</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION_INSTANCE_FEATURE_COUNT = 3;
+
+	/**
+	 * The number of operations of the '<em>Annotation Instance</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION_INSTANCE_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link de.silvawb.java.impl.AnnotationInstanceParameterImpl <em>Annotation Instance Parameter</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.silvawb.java.impl.AnnotationInstanceParameterImpl
+	 * @see de.silvawb.java.impl.JavaPackageImpl#getAnnotationInstanceParameter()
+	 * @generated
+	 */
+	int ANNOTATION_INSTANCE_PARAMETER = 17;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION_INSTANCE_PARAMETER__NAME = 0;
+
+	/**
+	 * The feature id for the '<em><b>Values</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION_INSTANCE_PARAMETER__VALUES = 1;
+
+	/**
+	 * The feature id for the '<em><b>Instance</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION_INSTANCE_PARAMETER__INSTANCE = 2;
+
+	/**
+	 * The number of structural features of the '<em>Annotation Instance Parameter</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION_INSTANCE_PARAMETER_FEATURE_COUNT = 3;
+
+	/**
+	 * The number of operations of the '<em>Annotation Instance Parameter</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION_INSTANCE_PARAMETER_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link de.silvawb.java.impl.AnnotationInstanceValueImpl <em>Annotation Instance Value</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.silvawb.java.impl.AnnotationInstanceValueImpl
+	 * @see de.silvawb.java.impl.JavaPackageImpl#getAnnotationInstanceValue()
+	 * @generated
+	 */
+	int ANNOTATION_INSTANCE_VALUE = 18;
+
+	/**
+	 * The feature id for the '<em><b>Parameter</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION_INSTANCE_VALUE__PARAMETER = 0;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION_INSTANCE_VALUE__VALUE = 1;
+
+	/**
+	 * The number of structural features of the '<em>Annotation Instance Value</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION_INSTANCE_VALUE_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Annotation Instance Value</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION_INSTANCE_VALUE_OPERATION_COUNT = 0;
 
 	/**
 	 * Returns the meta object for class '{@link de.silvawb.java.System <em>System</em>}'.
@@ -1848,6 +2222,155 @@ public interface JavaPackage extends EPackage {
 	EReference getGenericBinding_UsingClassifier();
 
 	/**
+	 * Returns the meta object for class '{@link de.silvawb.java.Annotable <em>Annotable</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Annotable</em>'.
+	 * @see de.silvawb.java.Annotable
+	 * @generated
+	 */
+	EClass getAnnotable();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link de.silvawb.java.Annotable#getAnnotationInstances <em>Annotation Instances</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Annotation Instances</em>'.
+	 * @see de.silvawb.java.Annotable#getAnnotationInstances()
+	 * @see #getAnnotable()
+	 * @generated
+	 */
+	EReference getAnnotable_AnnotationInstances();
+
+	/**
+	 * Returns the meta object for class '{@link de.silvawb.java.Annotation <em>Annotation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Annotation</em>'.
+	 * @see de.silvawb.java.Annotation
+	 * @generated
+	 */
+	EClass getAnnotation();
+
+	/**
+	 * Returns the meta object for class '{@link de.silvawb.java.AnnotationInstance <em>Annotation Instance</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Annotation Instance</em>'.
+	 * @see de.silvawb.java.AnnotationInstance
+	 * @generated
+	 */
+	EClass getAnnotationInstance();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.java.AnnotationInstance#getAnnotation <em>Annotation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Annotation</em>'.
+	 * @see de.silvawb.java.AnnotationInstance#getAnnotation()
+	 * @see #getAnnotationInstance()
+	 * @generated
+	 */
+	EReference getAnnotationInstance_Annotation();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link de.silvawb.java.AnnotationInstance#getParameters <em>Parameters</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Parameters</em>'.
+	 * @see de.silvawb.java.AnnotationInstance#getParameters()
+	 * @see #getAnnotationInstance()
+	 * @generated
+	 */
+	EReference getAnnotationInstance_Parameters();
+
+	/**
+	 * Returns the meta object for the container reference '{@link de.silvawb.java.AnnotationInstance#getAnnotable <em>Annotable</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the container reference '<em>Annotable</em>'.
+	 * @see de.silvawb.java.AnnotationInstance#getAnnotable()
+	 * @see #getAnnotationInstance()
+	 * @generated
+	 */
+	EReference getAnnotationInstance_Annotable();
+
+	/**
+	 * Returns the meta object for class '{@link de.silvawb.java.AnnotationInstanceParameter <em>Annotation Instance Parameter</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Annotation Instance Parameter</em>'.
+	 * @see de.silvawb.java.AnnotationInstanceParameter
+	 * @generated
+	 */
+	EClass getAnnotationInstanceParameter();
+
+	/**
+	 * Returns the meta object for the attribute '{@link de.silvawb.java.AnnotationInstanceParameter#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see de.silvawb.java.AnnotationInstanceParameter#getName()
+	 * @see #getAnnotationInstanceParameter()
+	 * @generated
+	 */
+	EAttribute getAnnotationInstanceParameter_Name();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link de.silvawb.java.AnnotationInstanceParameter#getValues <em>Values</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Values</em>'.
+	 * @see de.silvawb.java.AnnotationInstanceParameter#getValues()
+	 * @see #getAnnotationInstanceParameter()
+	 * @generated
+	 */
+	EReference getAnnotationInstanceParameter_Values();
+
+	/**
+	 * Returns the meta object for the container reference '{@link de.silvawb.java.AnnotationInstanceParameter#getInstance <em>Instance</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the container reference '<em>Instance</em>'.
+	 * @see de.silvawb.java.AnnotationInstanceParameter#getInstance()
+	 * @see #getAnnotationInstanceParameter()
+	 * @generated
+	 */
+	EReference getAnnotationInstanceParameter_Instance();
+
+	/**
+	 * Returns the meta object for class '{@link de.silvawb.java.AnnotationInstanceValue <em>Annotation Instance Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Annotation Instance Value</em>'.
+	 * @see de.silvawb.java.AnnotationInstanceValue
+	 * @generated
+	 */
+	EClass getAnnotationInstanceValue();
+
+	/**
+	 * Returns the meta object for the container reference '{@link de.silvawb.java.AnnotationInstanceValue#getParameter <em>Parameter</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the container reference '<em>Parameter</em>'.
+	 * @see de.silvawb.java.AnnotationInstanceValue#getParameter()
+	 * @see #getAnnotationInstanceValue()
+	 * @generated
+	 */
+	EReference getAnnotationInstanceValue_Parameter();
+
+	/**
+	 * Returns the meta object for the attribute '{@link de.silvawb.java.AnnotationInstanceValue#getValue <em>Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Value</em>'.
+	 * @see de.silvawb.java.AnnotationInstanceValue#getValue()
+	 * @see #getAnnotationInstanceValue()
+	 * @generated
+	 */
+	EAttribute getAnnotationInstanceValue_Value();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2393,6 +2916,128 @@ public interface JavaPackage extends EPackage {
 		 * @generated
 		 */
 		EReference GENERIC_BINDING__USING_CLASSIFIER = eINSTANCE.getGenericBinding_UsingClassifier();
+
+		/**
+		 * The meta object literal for the '{@link de.silvawb.java.impl.AnnotableImpl <em>Annotable</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.silvawb.java.impl.AnnotableImpl
+		 * @see de.silvawb.java.impl.JavaPackageImpl#getAnnotable()
+		 * @generated
+		 */
+		EClass ANNOTABLE = eINSTANCE.getAnnotable();
+
+		/**
+		 * The meta object literal for the '<em><b>Annotation Instances</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ANNOTABLE__ANNOTATION_INSTANCES = eINSTANCE.getAnnotable_AnnotationInstances();
+
+		/**
+		 * The meta object literal for the '{@link de.silvawb.java.impl.AnnotationImpl <em>Annotation</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.silvawb.java.impl.AnnotationImpl
+		 * @see de.silvawb.java.impl.JavaPackageImpl#getAnnotation()
+		 * @generated
+		 */
+		EClass ANNOTATION = eINSTANCE.getAnnotation();
+
+		/**
+		 * The meta object literal for the '{@link de.silvawb.java.impl.AnnotationInstanceImpl <em>Annotation Instance</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.silvawb.java.impl.AnnotationInstanceImpl
+		 * @see de.silvawb.java.impl.JavaPackageImpl#getAnnotationInstance()
+		 * @generated
+		 */
+		EClass ANNOTATION_INSTANCE = eINSTANCE.getAnnotationInstance();
+
+		/**
+		 * The meta object literal for the '<em><b>Annotation</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ANNOTATION_INSTANCE__ANNOTATION = eINSTANCE.getAnnotationInstance_Annotation();
+
+		/**
+		 * The meta object literal for the '<em><b>Parameters</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ANNOTATION_INSTANCE__PARAMETERS = eINSTANCE.getAnnotationInstance_Parameters();
+
+		/**
+		 * The meta object literal for the '<em><b>Annotable</b></em>' container reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ANNOTATION_INSTANCE__ANNOTABLE = eINSTANCE.getAnnotationInstance_Annotable();
+
+		/**
+		 * The meta object literal for the '{@link de.silvawb.java.impl.AnnotationInstanceParameterImpl <em>Annotation Instance Parameter</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.silvawb.java.impl.AnnotationInstanceParameterImpl
+		 * @see de.silvawb.java.impl.JavaPackageImpl#getAnnotationInstanceParameter()
+		 * @generated
+		 */
+		EClass ANNOTATION_INSTANCE_PARAMETER = eINSTANCE.getAnnotationInstanceParameter();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ANNOTATION_INSTANCE_PARAMETER__NAME = eINSTANCE.getAnnotationInstanceParameter_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Values</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ANNOTATION_INSTANCE_PARAMETER__VALUES = eINSTANCE.getAnnotationInstanceParameter_Values();
+
+		/**
+		 * The meta object literal for the '<em><b>Instance</b></em>' container reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ANNOTATION_INSTANCE_PARAMETER__INSTANCE = eINSTANCE.getAnnotationInstanceParameter_Instance();
+
+		/**
+		 * The meta object literal for the '{@link de.silvawb.java.impl.AnnotationInstanceValueImpl <em>Annotation Instance Value</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.silvawb.java.impl.AnnotationInstanceValueImpl
+		 * @see de.silvawb.java.impl.JavaPackageImpl#getAnnotationInstanceValue()
+		 * @generated
+		 */
+		EClass ANNOTATION_INSTANCE_VALUE = eINSTANCE.getAnnotationInstanceValue();
+
+		/**
+		 * The meta object literal for the '<em><b>Parameter</b></em>' container reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ANNOTATION_INSTANCE_VALUE__PARAMETER = eINSTANCE.getAnnotationInstanceValue_Parameter();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ANNOTATION_INSTANCE_VALUE__VALUE = eINSTANCE.getAnnotationInstanceValue_Value();
 
 	}
 

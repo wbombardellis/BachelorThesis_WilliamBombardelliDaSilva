@@ -2,6 +2,11 @@
  */
 package de.silvawb.java.impl;
 
+import de.silvawb.java.Annotable;
+import de.silvawb.java.Annotation;
+import de.silvawb.java.AnnotationInstance;
+import de.silvawb.java.AnnotationInstanceParameter;
+import de.silvawb.java.AnnotationInstanceValue;
 import de.silvawb.java.Argument;
 import de.silvawb.java.Contained;
 import de.silvawb.java.Field;
@@ -79,6 +84,11 @@ public class JavaFactoryImpl extends EFactoryImpl implements JavaFactory {
 			case JavaPackage.CONTAINER: return createContainer();
 			case JavaPackage.INTERFACE: return createInterface();
 			case JavaPackage.GENERIC_BINDING: return createGenericBinding();
+			case JavaPackage.ANNOTABLE: return createAnnotable();
+			case JavaPackage.ANNOTATION: return createAnnotation();
+			case JavaPackage.ANNOTATION_INSTANCE: return createAnnotationInstance();
+			case JavaPackage.ANNOTATION_INSTANCE_PARAMETER: return createAnnotationInstanceParameter();
+			case JavaPackage.ANNOTATION_INSTANCE_VALUE: return createAnnotationInstanceValue();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -212,6 +222,56 @@ public class JavaFactoryImpl extends EFactoryImpl implements JavaFactory {
 	public GenericBinding createGenericBinding() {
 		GenericBindingImpl genericBinding = new GenericBindingImpl();
 		return genericBinding;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Annotable createAnnotable() {
+		AnnotableImpl annotable = new AnnotableImpl();
+		return annotable;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Annotation createAnnotation() {
+		AnnotationImpl annotation = new AnnotationImpl();
+		return annotation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AnnotationInstance createAnnotationInstance() {
+		AnnotationInstanceImpl annotationInstance = new AnnotationInstanceImpl();
+		return annotationInstance;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AnnotationInstanceParameter createAnnotationInstanceParameter() {
+		AnnotationInstanceParameterImpl annotationInstanceParameter = new AnnotationInstanceParameterImpl();
+		return annotationInstanceParameter;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AnnotationInstanceValue createAnnotationInstanceValue() {
+		AnnotationInstanceValueImpl annotationInstanceValue = new AnnotationInstanceValueImpl();
+		return annotationInstanceValue;
 	}
 
 	/**

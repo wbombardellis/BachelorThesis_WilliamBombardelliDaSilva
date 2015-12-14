@@ -170,6 +170,11 @@ public class ContainerItemProvider
 			(createChildParameter
 				(JavaPackage.Literals.CONTAINER__CONTAINED_ELEMENTS,
 				 JavaFactory.eINSTANCE.createInterface()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(JavaPackage.Literals.CONTAINER__CONTAINED_ELEMENTS,
+				 JavaFactory.eINSTANCE.createAnnotation()));
 	}
 
 	/**

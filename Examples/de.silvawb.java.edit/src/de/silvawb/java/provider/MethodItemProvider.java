@@ -224,6 +224,7 @@ public class MethodItemProvider extends ContainedItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
+			childrenFeatures.add(JavaPackage.Literals.ANNOTABLE__ANNOTATION_INSTANCES);
 			childrenFeatures.add(JavaPackage.Literals.METHOD__ARGUMENTS);
 		}
 		return childrenFeatures;
@@ -287,6 +288,7 @@ public class MethodItemProvider extends ContainedItemProvider {
 			case JavaPackage.METHOD__CONCURRENCY:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
+			case JavaPackage.METHOD__ANNOTATION_INSTANCES:
 			case JavaPackage.METHOD__ARGUMENTS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
@@ -304,6 +306,11 @@ public class MethodItemProvider extends ContainedItemProvider {
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+
+		newChildDescriptors.add
+			(createChildParameter
+				(JavaPackage.Literals.ANNOTABLE__ANNOTATION_INSTANCES,
+				 JavaFactory.eINSTANCE.createAnnotationInstance()));
 
 		newChildDescriptors.add
 			(createChildParameter

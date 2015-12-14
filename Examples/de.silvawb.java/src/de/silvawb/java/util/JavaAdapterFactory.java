@@ -2,6 +2,11 @@
  */
 package de.silvawb.java.util;
 
+import de.silvawb.java.Annotable;
+import de.silvawb.java.Annotation;
+import de.silvawb.java.AnnotationInstance;
+import de.silvawb.java.AnnotationInstanceParameter;
+import de.silvawb.java.AnnotationInstanceValue;
 import de.silvawb.java.Argument;
 import de.silvawb.java.Classifier;
 import de.silvawb.java.Contained;
@@ -133,6 +138,26 @@ public class JavaAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseGenericBinding(GenericBinding object) {
 				return createGenericBindingAdapter();
+			}
+			@Override
+			public Adapter caseAnnotable(Annotable object) {
+				return createAnnotableAdapter();
+			}
+			@Override
+			public Adapter caseAnnotation(Annotation object) {
+				return createAnnotationAdapter();
+			}
+			@Override
+			public Adapter caseAnnotationInstance(AnnotationInstance object) {
+				return createAnnotationInstanceAdapter();
+			}
+			@Override
+			public Adapter caseAnnotationInstanceParameter(AnnotationInstanceParameter object) {
+				return createAnnotationInstanceParameterAdapter();
+			}
+			@Override
+			public Adapter caseAnnotationInstanceValue(AnnotationInstanceValue object) {
+				return createAnnotationInstanceValueAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -347,6 +372,76 @@ public class JavaAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createGenericBindingAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.java.Annotable <em>Annotable</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.java.Annotable
+	 * @generated
+	 */
+	public Adapter createAnnotableAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.java.Annotation <em>Annotation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.java.Annotation
+	 * @generated
+	 */
+	public Adapter createAnnotationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.java.AnnotationInstance <em>Annotation Instance</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.java.AnnotationInstance
+	 * @generated
+	 */
+	public Adapter createAnnotationInstanceAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.java.AnnotationInstanceParameter <em>Annotation Instance Parameter</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.java.AnnotationInstanceParameter
+	 * @generated
+	 */
+	public Adapter createAnnotationInstanceParameterAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.java.AnnotationInstanceValue <em>Annotation Instance Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.java.AnnotationInstanceValue
+	 * @generated
+	 */
+	public Adapter createAnnotationInstanceValueAdapter() {
 		return null;
 	}
 

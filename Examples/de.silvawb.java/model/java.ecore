@@ -32,7 +32,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="generalizator" ordered="false"
         eType="#//Classifier" eOpposite="#//Classifier/generalization"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Classifier" abstract="true" eSuperTypes="#//Contained #//Container">
+  <eClassifiers xsi:type="ecore:EClass" name="Classifier" abstract="true" eSuperTypes="#//Contained #//Container #//Annotable">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="genericBindings" upperBound="-1"
         eType="#//GenericBinding" containment="true" eOpposite="#//GenericBinding/usingClassifier"/>
@@ -48,7 +48,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="imports" ordered="false"
         upperBound="-1" eType="#//Import" containment="true" eOpposite="#//Import/importing"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Field" eSuperTypes="#//Contained">
+  <eClassifiers xsi:type="ecore:EClass" name="Field" eSuperTypes="#//Contained #//Annotable">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="#//Classifier"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="containingClassifier" ordered="false"
@@ -73,7 +73,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="importingClasses" ordered="false"
         upperBound="-1" eType="#//Class"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Method" eSuperTypes="#//Contained">
+  <eClassifiers xsi:type="ecore:EClass" name="Method" eSuperTypes="#//Contained #//Annotable">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="returnType" eType="#//Classifier"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="arguments" upperBound="-1"
@@ -109,5 +109,30 @@
         eType="#//Classifier"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="usingClassifier" ordered="false"
         eType="#//Classifier" eOpposite="#//Classifier/genericBindings"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Annotable">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="annotationInstances" upperBound="-1"
+        eType="#//AnnotationInstance" containment="true" eOpposite="#//AnnotationInstance/annotable"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Annotation" eSuperTypes="#//Classifier"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AnnotationInstance">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="annotation" eType="#//Annotation"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parameters" upperBound="-1"
+        eType="#//AnnotationInstanceParameter" containment="true" eOpposite="#//AnnotationInstanceParameter/instance"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="annotable" ordered="false"
+        eType="#//Annotable" eOpposite="#//Annotable/annotationInstances"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AnnotationInstanceParameter">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="values" upperBound="-1"
+        eType="#//AnnotationInstanceValue" containment="true" eOpposite="#//AnnotationInstanceValue/parameter"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="instance" ordered="false"
+        eType="#//AnnotationInstance" eOpposite="#//AnnotationInstance/parameters"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AnnotationInstanceValue">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parameter" ordered="false"
+        eType="#//AnnotationInstanceParameter" eOpposite="#//AnnotationInstanceParameter/values"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" ordered="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
 </ecore:EPackage>

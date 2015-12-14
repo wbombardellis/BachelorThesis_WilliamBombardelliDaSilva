@@ -2,6 +2,11 @@
  */
 package de.silvawb.java.impl;
 
+import de.silvawb.java.Annotable;
+import de.silvawb.java.Annotation;
+import de.silvawb.java.AnnotationInstance;
+import de.silvawb.java.AnnotationInstanceParameter;
+import de.silvawb.java.AnnotationInstanceValue;
 import de.silvawb.java.Argument;
 import de.silvawb.java.Classifier;
 import de.silvawb.java.Contained;
@@ -120,6 +125,41 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * @generated
 	 */
 	private EClass genericBindingEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass annotableEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass annotationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass annotationInstanceEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass annotationInstanceParameterEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass annotationInstanceValueEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -745,6 +785,132 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getAnnotable() {
+		return annotableEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAnnotable_AnnotationInstances() {
+		return (EReference)annotableEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAnnotation() {
+		return annotationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAnnotationInstance() {
+		return annotationInstanceEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAnnotationInstance_Annotation() {
+		return (EReference)annotationInstanceEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAnnotationInstance_Parameters() {
+		return (EReference)annotationInstanceEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAnnotationInstance_Annotable() {
+		return (EReference)annotationInstanceEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAnnotationInstanceParameter() {
+		return annotationInstanceParameterEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getAnnotationInstanceParameter_Name() {
+		return (EAttribute)annotationInstanceParameterEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAnnotationInstanceParameter_Values() {
+		return (EReference)annotationInstanceParameterEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAnnotationInstanceParameter_Instance() {
+		return (EReference)annotationInstanceParameterEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAnnotationInstanceValue() {
+		return annotationInstanceValueEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAnnotationInstanceValue_Parameter() {
+		return (EReference)annotationInstanceValueEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getAnnotationInstanceValue_Value() {
+		return (EAttribute)annotationInstanceValueEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public JavaFactory getJavaFactory() {
 		return (JavaFactory)getEFactoryInstance();
 	}
@@ -843,6 +1009,25 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 		createEReference(genericBindingEClass, GENERIC_BINDING__UPPER_BOUNDINGS);
 		createEReference(genericBindingEClass, GENERIC_BINDING__LOWER_BOUNDING);
 		createEReference(genericBindingEClass, GENERIC_BINDING__USING_CLASSIFIER);
+
+		annotableEClass = createEClass(ANNOTABLE);
+		createEReference(annotableEClass, ANNOTABLE__ANNOTATION_INSTANCES);
+
+		annotationEClass = createEClass(ANNOTATION);
+
+		annotationInstanceEClass = createEClass(ANNOTATION_INSTANCE);
+		createEReference(annotationInstanceEClass, ANNOTATION_INSTANCE__ANNOTATION);
+		createEReference(annotationInstanceEClass, ANNOTATION_INSTANCE__PARAMETERS);
+		createEReference(annotationInstanceEClass, ANNOTATION_INSTANCE__ANNOTABLE);
+
+		annotationInstanceParameterEClass = createEClass(ANNOTATION_INSTANCE_PARAMETER);
+		createEAttribute(annotationInstanceParameterEClass, ANNOTATION_INSTANCE_PARAMETER__NAME);
+		createEReference(annotationInstanceParameterEClass, ANNOTATION_INSTANCE_PARAMETER__VALUES);
+		createEReference(annotationInstanceParameterEClass, ANNOTATION_INSTANCE_PARAMETER__INSTANCE);
+
+		annotationInstanceValueEClass = createEClass(ANNOTATION_INSTANCE_VALUE);
+		createEReference(annotationInstanceValueEClass, ANNOTATION_INSTANCE_VALUE__PARAMETER);
+		createEAttribute(annotationInstanceValueEClass, ANNOTATION_INSTANCE_VALUE__VALUE);
 	}
 
 	/**
@@ -877,11 +1062,15 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 		classEClass.getESuperTypes().add(this.getClassifier());
 		classifierEClass.getESuperTypes().add(this.getContained());
 		classifierEClass.getESuperTypes().add(this.getContainer());
+		classifierEClass.getESuperTypes().add(this.getAnnotable());
 		fieldEClass.getESuperTypes().add(this.getContained());
+		fieldEClass.getESuperTypes().add(this.getAnnotable());
 		methodEClass.getESuperTypes().add(this.getContained());
+		methodEClass.getESuperTypes().add(this.getAnnotable());
 		interfaceEClass.getESuperTypes().add(this.getClassifier());
 		interfaceEClass.getESuperTypes().add(this.getContained());
 		interfaceEClass.getESuperTypes().add(this.getContainer());
+		annotationEClass.getESuperTypes().add(this.getClassifier());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(systemEClass, de.silvawb.java.System.class, "System", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -959,6 +1148,25 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 		initEReference(getGenericBinding_UpperBoundings(), this.getClassifier(), null, "upperBoundings", null, 0, -1, GenericBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getGenericBinding_LowerBounding(), this.getClassifier(), null, "lowerBounding", null, 0, 1, GenericBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getGenericBinding_UsingClassifier(), this.getClassifier(), this.getClassifier_GenericBindings(), "usingClassifier", null, 0, 1, GenericBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(annotableEClass, Annotable.class, "Annotable", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getAnnotable_AnnotationInstances(), this.getAnnotationInstance(), this.getAnnotationInstance_Annotable(), "annotationInstances", null, 0, -1, Annotable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(annotationEClass, Annotation.class, "Annotation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(annotationInstanceEClass, AnnotationInstance.class, "AnnotationInstance", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getAnnotationInstance_Annotation(), this.getAnnotation(), null, "annotation", null, 0, 1, AnnotationInstance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAnnotationInstance_Parameters(), this.getAnnotationInstanceParameter(), this.getAnnotationInstanceParameter_Instance(), "parameters", null, 0, -1, AnnotationInstance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAnnotationInstance_Annotable(), this.getAnnotable(), this.getAnnotable_AnnotationInstances(), "annotable", null, 0, 1, AnnotationInstance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(annotationInstanceParameterEClass, AnnotationInstanceParameter.class, "AnnotationInstanceParameter", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getAnnotationInstanceParameter_Name(), ecorePackage.getEString(), "name", null, 0, 1, AnnotationInstanceParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAnnotationInstanceParameter_Values(), this.getAnnotationInstanceValue(), this.getAnnotationInstanceValue_Parameter(), "values", null, 0, -1, AnnotationInstanceParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAnnotationInstanceParameter_Instance(), this.getAnnotationInstance(), this.getAnnotationInstance_Parameters(), "instance", null, 0, 1, AnnotationInstanceParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(annotationInstanceValueEClass, AnnotationInstanceValue.class, "AnnotationInstanceValue", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getAnnotationInstanceValue_Parameter(), this.getAnnotationInstanceParameter(), this.getAnnotationInstanceParameter_Values(), "parameter", null, 0, 1, AnnotationInstanceValue.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getAnnotationInstanceValue_Value(), ecorePackage.getEString(), "value", null, 0, 1, AnnotationInstanceValue.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);
