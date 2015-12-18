@@ -45,6 +45,27 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass uOPPreInt2jMAPreAssertEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass uOperation2jMethod_HelperEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass uCInv2jCInvEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass uOPPos2jMAPosEClass = null;
 
 	/**
@@ -66,13 +87,6 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass uOPPreInt2jMAPreAssertEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass uOPPosInt2jMAPosAssertEClass = null;
 
 	/**
@@ -80,7 +94,14 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass uOperation2jMethod_HelperEClass = null;
+	private EClass uProperty2jField_HelperEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass uCInvInt2jCInvAssertEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -101,7 +122,7 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass uClass2jClass_Helper_r2EClass = null;
+	private EClass uOParamenter2jMArgument_r4EClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -115,14 +136,35 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass uOParamenter2jMArgument_r4EClass = null;
+	private EClass uCInv2jCInv_r9EClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass uOPPos2jMAPos_r6EClass = null;
+	private EClass uCInvInt2jCInvAssert_r10EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass uProperty2jField_Helper_r11EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass uOPPosInt2jMAPosAssert_r8EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass uClass2jClass_Helper_r2EClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -143,7 +185,7 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass uOPPosInt2jMAPosAssert_r8EClass = null;
+	private EClass uOPPos2jMAPos_r6EClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -247,10 +289,49 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getuOPPreInt2jMAPreAssert() {
+		if (uOPPreInt2jMAPreAssertEClass == null) {
+			uOPPreInt2jMAPreAssertEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
+					.getEClassifiers().get(2);
+		}
+		return uOPPreInt2jMAPreAssertEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getuOperation2jMethod_Helper() {
+		if (uOperation2jMethod_HelperEClass == null) {
+			uOperation2jMethod_HelperEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
+					.getEClassifiers().get(3);
+		}
+		return uOperation2jMethod_HelperEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getuCInv2jCInv() {
+		if (uCInv2jCInvEClass == null) {
+			uCInv2jCInvEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
+					.getEClassifiers().get(4);
+		}
+		return uCInv2jCInvEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getuOPPos2jMAPos() {
 		if (uOPPos2jMAPosEClass == null) {
 			uOPPos2jMAPosEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
-					.getEClassifiers().get(2);
+					.getEClassifiers().get(5);
 		}
 		return uOPPos2jMAPosEClass;
 	}
@@ -263,7 +344,7 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	public EClass getuClass2jClass_Helper() {
 		if (uClass2jClass_HelperEClass == null) {
 			uClass2jClass_HelperEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
-					.getEClassifiers().get(3);
+					.getEClassifiers().get(6);
 		}
 		return uClass2jClass_HelperEClass;
 	}
@@ -276,22 +357,9 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	public EClass getuOPPre2jMAPre() {
 		if (uOPPre2jMAPreEClass == null) {
 			uOPPre2jMAPreEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
-					.getEClassifiers().get(4);
+					.getEClassifiers().get(7);
 		}
 		return uOPPre2jMAPreEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getuOPPreInt2jMAPreAssert() {
-		if (uOPPreInt2jMAPreAssertEClass == null) {
-			uOPPreInt2jMAPreAssertEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
-					.getEClassifiers().get(5);
-		}
-		return uOPPreInt2jMAPreAssertEClass;
 	}
 
 	/**
@@ -302,7 +370,7 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	public EClass getuOPPosInt2jMAPosAssert() {
 		if (uOPPosInt2jMAPosAssertEClass == null) {
 			uOPPosInt2jMAPosAssertEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
-					.getEClassifiers().get(6);
+					.getEClassifiers().get(8);
 		}
 		return uOPPosInt2jMAPosAssertEClass;
 	}
@@ -312,12 +380,25 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getuOperation2jMethod_Helper() {
-		if (uOperation2jMethod_HelperEClass == null) {
-			uOperation2jMethod_HelperEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
-					.getEClassifiers().get(7);
+	public EClass getuProperty2jField_Helper() {
+		if (uProperty2jField_HelperEClass == null) {
+			uProperty2jField_HelperEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
+					.getEClassifiers().get(9);
 		}
-		return uOperation2jMethod_HelperEClass;
+		return uProperty2jField_HelperEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getuCInvInt2jCInvAssert() {
+		if (uCInvInt2jCInvAssertEClass == null) {
+			uCInvInt2jCInvAssertEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
+					.getEClassifiers().get(10);
+		}
+		return uCInvInt2jCInvAssertEClass;
 	}
 
 	/**
@@ -328,7 +409,7 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	public EClass getuOParamenter2jMArgument() {
 		if (uOParamenter2jMArgumentEClass == null) {
 			uOParamenter2jMArgumentEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
-					.getEClassifiers().get(8);
+					.getEClassifiers().get(11);
 		}
 		return uOParamenter2jMArgumentEClass;
 	}
@@ -341,7 +422,7 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	public EClass getumlContract2javaAxiom_r1() {
 		if (umlContract2javaAxiom_r1EClass == null) {
 			umlContract2javaAxiom_r1EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
-					.getEClassifiers().get(9);
+					.getEClassifiers().get(12);
 		}
 		return umlContract2javaAxiom_r1EClass;
 	}
@@ -486,504 +567,10 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getuClass2jClass_Helper_r2() {
-		if (uClass2jClass_Helper_r2EClass == null) {
-			uClass2jClass_Helper_r2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
-					.getEClassifiers().get(10);
-		}
-		return uClass2jClass_Helper_r2EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuClass2jClass_Helper_r2_AddElementActivity() {
-		return (EReference) getuClass2jClass_Helper_r2().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuClass2jClass_Helper_r2_MoveElementActivity() {
-		return (EReference) getuClass2jClass_Helper_r2().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuClass2jClass_Helper_r2_ChangeAttributeActivity() {
-		return (EReference) getuClass2jClass_Helper_r2().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuClass2jClass_Helper_r2_TransformForwardActivity() {
-		return (EReference) getuClass2jClass_Helper_r2().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuClass2jClass_Helper_r2_TransformMappingActivity() {
-		return (EReference) getuClass2jClass_Helper_r2().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuClass2jClass_Helper_r2_TransformBackwardActivity() {
-		return (EReference) getuClass2jClass_Helper_r2().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuClass2jClass_Helper_r2_ConflictCheckForwardActivity() {
-		return (EReference) getuClass2jClass_Helper_r2().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuClass2jClass_Helper_r2_ConflictCheckMappingActivity() {
-		return (EReference) getuClass2jClass_Helper_r2().getEStructuralFeatures().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuClass2jClass_Helper_r2_ConflictCheckBackwardActivity() {
-		return (EReference) getuClass2jClass_Helper_r2().getEStructuralFeatures().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuClass2jClass_Helper_r2_SynchronizeForwardActivity() {
-		return (EReference) getuClass2jClass_Helper_r2().getEStructuralFeatures().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuClass2jClass_Helper_r2_SynchronizeBackwardActivity() {
-		return (EReference) getuClass2jClass_Helper_r2().getEStructuralFeatures().get(10);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuClass2jClass_Helper_r2_RepairForwardActivity() {
-		return (EReference) getuClass2jClass_Helper_r2().getEStructuralFeatures().get(11);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuClass2jClass_Helper_r2_RepairBackwardActivity() {
-		return (EReference) getuClass2jClass_Helper_r2().getEStructuralFeatures().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuClass2jClass_Helper_r2__AddElement__EMap() {
-		return getuClass2jClass_Helper_r2().getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuClass2jClass_Helper_r2__ChangeAttributeValues__TGGNode_EMap() {
-		return getuClass2jClass_Helper_r2().getEOperations().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuClass2jClass_Helper_r2__MoveElement__TGGNode_TGGNode_TGGNode() {
-		return getuClass2jClass_Helper_r2().getEOperations().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuClass2jClass_Helper_r2__TransformForward__TGGNode_boolean_boolean() {
-		return getuClass2jClass_Helper_r2().getEOperations().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuClass2jClass_Helper_r2__TransformMapping__TGGNode_boolean_boolean() {
-		return getuClass2jClass_Helper_r2().getEOperations().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuClass2jClass_Helper_r2__TransformBackward__TGGNode_boolean_boolean() {
-		return getuClass2jClass_Helper_r2().getEOperations().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuClass2jClass_Helper_r2__ConflictCheckForward__TGGNode() {
-		return getuClass2jClass_Helper_r2().getEOperations().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuClass2jClass_Helper_r2__ConflictCheckMapping__TGGNode() {
-		return getuClass2jClass_Helper_r2().getEOperations().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuClass2jClass_Helper_r2__ConflictCheckBackward__TGGNode() {
-		return getuClass2jClass_Helper_r2().getEOperations().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuClass2jClass_Helper_r2__SynchronizeForward__TGGNode_boolean() {
-		return getuClass2jClass_Helper_r2().getEOperations().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuClass2jClass_Helper_r2__SynchronizeBackward__TGGNode_boolean() {
-		return getuClass2jClass_Helper_r2().getEOperations().get(10);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuClass2jClass_Helper_r2__RepairForward__TGGNode_boolean() {
-		return getuClass2jClass_Helper_r2().getEOperations().get(11);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuClass2jClass_Helper_r2__RepairBackward__TGGNode_boolean() {
-		return getuClass2jClass_Helper_r2().getEOperations().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getuOPPreInt2jMAPreAssert_r7() {
-		if (uOPPreInt2jMAPreAssert_r7EClass == null) {
-			uOPPreInt2jMAPreAssert_r7EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
-					.getEClassifiers().get(11);
-		}
-		return uOPPreInt2jMAPreAssert_r7EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuOPPreInt2jMAPreAssert_r7_AddElementActivity() {
-		return (EReference) getuOPPreInt2jMAPreAssert_r7().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuOPPreInt2jMAPreAssert_r7_MoveElementActivity() {
-		return (EReference) getuOPPreInt2jMAPreAssert_r7().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuOPPreInt2jMAPreAssert_r7_ChangeAttributeActivity() {
-		return (EReference) getuOPPreInt2jMAPreAssert_r7().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuOPPreInt2jMAPreAssert_r7_TransformForwardActivity() {
-		return (EReference) getuOPPreInt2jMAPreAssert_r7().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuOPPreInt2jMAPreAssert_r7_TransformMappingActivity() {
-		return (EReference) getuOPPreInt2jMAPreAssert_r7().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuOPPreInt2jMAPreAssert_r7_TransformBackwardActivity() {
-		return (EReference) getuOPPreInt2jMAPreAssert_r7().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuOPPreInt2jMAPreAssert_r7_ConflictCheckForwardActivity() {
-		return (EReference) getuOPPreInt2jMAPreAssert_r7().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuOPPreInt2jMAPreAssert_r7_ConflictCheckMappingActivity() {
-		return (EReference) getuOPPreInt2jMAPreAssert_r7().getEStructuralFeatures().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuOPPreInt2jMAPreAssert_r7_ConflictCheckBackwardActivity() {
-		return (EReference) getuOPPreInt2jMAPreAssert_r7().getEStructuralFeatures().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuOPPreInt2jMAPreAssert_r7_SynchronizeForwardActivity() {
-		return (EReference) getuOPPreInt2jMAPreAssert_r7().getEStructuralFeatures().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuOPPreInt2jMAPreAssert_r7_SynchronizeBackwardActivity() {
-		return (EReference) getuOPPreInt2jMAPreAssert_r7().getEStructuralFeatures().get(10);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuOPPreInt2jMAPreAssert_r7_RepairForwardActivity() {
-		return (EReference) getuOPPreInt2jMAPreAssert_r7().getEStructuralFeatures().get(11);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getuOPPreInt2jMAPreAssert_r7_RepairBackwardActivity() {
-		return (EReference) getuOPPreInt2jMAPreAssert_r7().getEStructuralFeatures().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuOPPreInt2jMAPreAssert_r7__AddElement__EMap() {
-		return getuOPPreInt2jMAPreAssert_r7().getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuOPPreInt2jMAPreAssert_r7__ChangeAttributeValues__TGGNode_EMap() {
-		return getuOPPreInt2jMAPreAssert_r7().getEOperations().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuOPPreInt2jMAPreAssert_r7__MoveElement__TGGNode_TGGNode_TGGNode() {
-		return getuOPPreInt2jMAPreAssert_r7().getEOperations().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuOPPreInt2jMAPreAssert_r7__TransformForward__TGGNode_boolean_boolean() {
-		return getuOPPreInt2jMAPreAssert_r7().getEOperations().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuOPPreInt2jMAPreAssert_r7__TransformMapping__TGGNode_boolean_boolean() {
-		return getuOPPreInt2jMAPreAssert_r7().getEOperations().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuOPPreInt2jMAPreAssert_r7__TransformBackward__TGGNode_boolean_boolean() {
-		return getuOPPreInt2jMAPreAssert_r7().getEOperations().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuOPPreInt2jMAPreAssert_r7__ConflictCheckForward__TGGNode() {
-		return getuOPPreInt2jMAPreAssert_r7().getEOperations().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuOPPreInt2jMAPreAssert_r7__ConflictCheckMapping__TGGNode() {
-		return getuOPPreInt2jMAPreAssert_r7().getEOperations().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuOPPreInt2jMAPreAssert_r7__ConflictCheckBackward__TGGNode() {
-		return getuOPPreInt2jMAPreAssert_r7().getEOperations().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuOPPreInt2jMAPreAssert_r7__SynchronizeForward__TGGNode_boolean() {
-		return getuOPPreInt2jMAPreAssert_r7().getEOperations().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuOPPreInt2jMAPreAssert_r7__SynchronizeBackward__TGGNode_boolean() {
-		return getuOPPreInt2jMAPreAssert_r7().getEOperations().get(10);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuOPPreInt2jMAPreAssert_r7__RepairForward__TGGNode_boolean() {
-		return getuOPPreInt2jMAPreAssert_r7().getEOperations().get(11);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getuOPPreInt2jMAPreAssert_r7__RepairBackward__TGGNode_boolean() {
-		return getuOPPreInt2jMAPreAssert_r7().getEOperations().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getuOParamenter2jMArgument_r4() {
 		if (uOParamenter2jMArgument_r4EClass == null) {
 			uOParamenter2jMArgument_r4EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
-					.getEClassifiers().get(12);
+					.getEClassifiers().get(13);
 		}
 		return uOParamenter2jMArgument_r4EClass;
 	}
@@ -1227,12 +814,12 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getuOPPos2jMAPos_r6() {
-		if (uOPPos2jMAPos_r6EClass == null) {
-			uOPPos2jMAPos_r6EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
-					.getEClassifiers().get(13);
+	public EClass getuOPPreInt2jMAPreAssert_r7() {
+		if (uOPPreInt2jMAPreAssert_r7EClass == null) {
+			uOPPreInt2jMAPreAssert_r7EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
+					.getEClassifiers().get(14);
 		}
-		return uOPPos2jMAPos_r6EClass;
+		return uOPPreInt2jMAPreAssert_r7EClass;
 	}
 
 	/**
@@ -1240,8 +827,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuOPPos2jMAPos_r6_AddElementActivity() {
-		return (EReference) getuOPPos2jMAPos_r6().getEStructuralFeatures().get(0);
+	public EReference getuOPPreInt2jMAPreAssert_r7_AddElementActivity() {
+		return (EReference) getuOPPreInt2jMAPreAssert_r7().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1249,8 +836,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuOPPos2jMAPos_r6_MoveElementActivity() {
-		return (EReference) getuOPPos2jMAPos_r6().getEStructuralFeatures().get(1);
+	public EReference getuOPPreInt2jMAPreAssert_r7_MoveElementActivity() {
+		return (EReference) getuOPPreInt2jMAPreAssert_r7().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1258,8 +845,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuOPPos2jMAPos_r6_ChangeAttributeActivity() {
-		return (EReference) getuOPPos2jMAPos_r6().getEStructuralFeatures().get(2);
+	public EReference getuOPPreInt2jMAPreAssert_r7_ChangeAttributeActivity() {
+		return (EReference) getuOPPreInt2jMAPreAssert_r7().getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -1267,8 +854,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuOPPos2jMAPos_r6_TransformForwardActivity() {
-		return (EReference) getuOPPos2jMAPos_r6().getEStructuralFeatures().get(3);
+	public EReference getuOPPreInt2jMAPreAssert_r7_TransformForwardActivity() {
+		return (EReference) getuOPPreInt2jMAPreAssert_r7().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -1276,8 +863,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuOPPos2jMAPos_r6_TransformMappingActivity() {
-		return (EReference) getuOPPos2jMAPos_r6().getEStructuralFeatures().get(4);
+	public EReference getuOPPreInt2jMAPreAssert_r7_TransformMappingActivity() {
+		return (EReference) getuOPPreInt2jMAPreAssert_r7().getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -1285,8 +872,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuOPPos2jMAPos_r6_TransformBackwardActivity() {
-		return (EReference) getuOPPos2jMAPos_r6().getEStructuralFeatures().get(5);
+	public EReference getuOPPreInt2jMAPreAssert_r7_TransformBackwardActivity() {
+		return (EReference) getuOPPreInt2jMAPreAssert_r7().getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -1294,8 +881,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuOPPos2jMAPos_r6_ConflictCheckForwardActivity() {
-		return (EReference) getuOPPos2jMAPos_r6().getEStructuralFeatures().get(6);
+	public EReference getuOPPreInt2jMAPreAssert_r7_ConflictCheckForwardActivity() {
+		return (EReference) getuOPPreInt2jMAPreAssert_r7().getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -1303,8 +890,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuOPPos2jMAPos_r6_ConflictCheckMappingActivity() {
-		return (EReference) getuOPPos2jMAPos_r6().getEStructuralFeatures().get(7);
+	public EReference getuOPPreInt2jMAPreAssert_r7_ConflictCheckMappingActivity() {
+		return (EReference) getuOPPreInt2jMAPreAssert_r7().getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -1312,8 +899,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuOPPos2jMAPos_r6_ConflictCheckBackwardActivity() {
-		return (EReference) getuOPPos2jMAPos_r6().getEStructuralFeatures().get(8);
+	public EReference getuOPPreInt2jMAPreAssert_r7_ConflictCheckBackwardActivity() {
+		return (EReference) getuOPPreInt2jMAPreAssert_r7().getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -1321,8 +908,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuOPPos2jMAPos_r6_SynchronizeForwardActivity() {
-		return (EReference) getuOPPos2jMAPos_r6().getEStructuralFeatures().get(9);
+	public EReference getuOPPreInt2jMAPreAssert_r7_SynchronizeForwardActivity() {
+		return (EReference) getuOPPreInt2jMAPreAssert_r7().getEStructuralFeatures().get(9);
 	}
 
 	/**
@@ -1330,8 +917,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuOPPos2jMAPos_r6_SynchronizeBackwardActivity() {
-		return (EReference) getuOPPos2jMAPos_r6().getEStructuralFeatures().get(10);
+	public EReference getuOPPreInt2jMAPreAssert_r7_SynchronizeBackwardActivity() {
+		return (EReference) getuOPPreInt2jMAPreAssert_r7().getEStructuralFeatures().get(10);
 	}
 
 	/**
@@ -1339,8 +926,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuOPPos2jMAPos_r6_RepairForwardActivity() {
-		return (EReference) getuOPPos2jMAPos_r6().getEStructuralFeatures().get(11);
+	public EReference getuOPPreInt2jMAPreAssert_r7_RepairForwardActivity() {
+		return (EReference) getuOPPreInt2jMAPreAssert_r7().getEStructuralFeatures().get(11);
 	}
 
 	/**
@@ -1348,8 +935,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuOPPos2jMAPos_r6_RepairBackwardActivity() {
-		return (EReference) getuOPPos2jMAPos_r6().getEStructuralFeatures().get(12);
+	public EReference getuOPPreInt2jMAPreAssert_r7_RepairBackwardActivity() {
+		return (EReference) getuOPPreInt2jMAPreAssert_r7().getEStructuralFeatures().get(12);
 	}
 
 	/**
@@ -1357,8 +944,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuOPPos2jMAPos_r6__AddElement__EMap() {
-		return getuOPPos2jMAPos_r6().getEOperations().get(0);
+	public EOperation getuOPPreInt2jMAPreAssert_r7__AddElement__EMap() {
+		return getuOPPreInt2jMAPreAssert_r7().getEOperations().get(0);
 	}
 
 	/**
@@ -1366,8 +953,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuOPPos2jMAPos_r6__ChangeAttributeValues__TGGNode_EMap() {
-		return getuOPPos2jMAPos_r6().getEOperations().get(1);
+	public EOperation getuOPPreInt2jMAPreAssert_r7__ChangeAttributeValues__TGGNode_EMap() {
+		return getuOPPreInt2jMAPreAssert_r7().getEOperations().get(1);
 	}
 
 	/**
@@ -1375,8 +962,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuOPPos2jMAPos_r6__MoveElement__TGGNode_TGGNode_TGGNode() {
-		return getuOPPos2jMAPos_r6().getEOperations().get(2);
+	public EOperation getuOPPreInt2jMAPreAssert_r7__MoveElement__TGGNode_TGGNode_TGGNode() {
+		return getuOPPreInt2jMAPreAssert_r7().getEOperations().get(2);
 	}
 
 	/**
@@ -1384,8 +971,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuOPPos2jMAPos_r6__TransformForward__TGGNode_boolean_boolean() {
-		return getuOPPos2jMAPos_r6().getEOperations().get(3);
+	public EOperation getuOPPreInt2jMAPreAssert_r7__TransformForward__TGGNode_boolean_boolean() {
+		return getuOPPreInt2jMAPreAssert_r7().getEOperations().get(3);
 	}
 
 	/**
@@ -1393,8 +980,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuOPPos2jMAPos_r6__TransformMapping__TGGNode_boolean_boolean() {
-		return getuOPPos2jMAPos_r6().getEOperations().get(4);
+	public EOperation getuOPPreInt2jMAPreAssert_r7__TransformMapping__TGGNode_boolean_boolean() {
+		return getuOPPreInt2jMAPreAssert_r7().getEOperations().get(4);
 	}
 
 	/**
@@ -1402,8 +989,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuOPPos2jMAPos_r6__TransformBackward__TGGNode_boolean_boolean() {
-		return getuOPPos2jMAPos_r6().getEOperations().get(5);
+	public EOperation getuOPPreInt2jMAPreAssert_r7__TransformBackward__TGGNode_boolean_boolean() {
+		return getuOPPreInt2jMAPreAssert_r7().getEOperations().get(5);
 	}
 
 	/**
@@ -1411,8 +998,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuOPPos2jMAPos_r6__ConflictCheckForward__TGGNode() {
-		return getuOPPos2jMAPos_r6().getEOperations().get(6);
+	public EOperation getuOPPreInt2jMAPreAssert_r7__ConflictCheckForward__TGGNode() {
+		return getuOPPreInt2jMAPreAssert_r7().getEOperations().get(6);
 	}
 
 	/**
@@ -1420,8 +1007,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuOPPos2jMAPos_r6__ConflictCheckMapping__TGGNode() {
-		return getuOPPos2jMAPos_r6().getEOperations().get(7);
+	public EOperation getuOPPreInt2jMAPreAssert_r7__ConflictCheckMapping__TGGNode() {
+		return getuOPPreInt2jMAPreAssert_r7().getEOperations().get(7);
 	}
 
 	/**
@@ -1429,8 +1016,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuOPPos2jMAPos_r6__ConflictCheckBackward__TGGNode() {
-		return getuOPPos2jMAPos_r6().getEOperations().get(8);
+	public EOperation getuOPPreInt2jMAPreAssert_r7__ConflictCheckBackward__TGGNode() {
+		return getuOPPreInt2jMAPreAssert_r7().getEOperations().get(8);
 	}
 
 	/**
@@ -1438,8 +1025,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuOPPos2jMAPos_r6__SynchronizeForward__TGGNode_boolean() {
-		return getuOPPos2jMAPos_r6().getEOperations().get(9);
+	public EOperation getuOPPreInt2jMAPreAssert_r7__SynchronizeForward__TGGNode_boolean() {
+		return getuOPPreInt2jMAPreAssert_r7().getEOperations().get(9);
 	}
 
 	/**
@@ -1447,8 +1034,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuOPPos2jMAPos_r6__SynchronizeBackward__TGGNode_boolean() {
-		return getuOPPos2jMAPos_r6().getEOperations().get(10);
+	public EOperation getuOPPreInt2jMAPreAssert_r7__SynchronizeBackward__TGGNode_boolean() {
+		return getuOPPreInt2jMAPreAssert_r7().getEOperations().get(10);
 	}
 
 	/**
@@ -1456,8 +1043,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuOPPos2jMAPos_r6__RepairForward__TGGNode_boolean() {
-		return getuOPPos2jMAPos_r6().getEOperations().get(11);
+	public EOperation getuOPPreInt2jMAPreAssert_r7__RepairForward__TGGNode_boolean() {
+		return getuOPPreInt2jMAPreAssert_r7().getEOperations().get(11);
 	}
 
 	/**
@@ -1465,8 +1052,1243 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuOPPos2jMAPos_r6__RepairBackward__TGGNode_boolean() {
-		return getuOPPos2jMAPos_r6().getEOperations().get(12);
+	public EOperation getuOPPreInt2jMAPreAssert_r7__RepairBackward__TGGNode_boolean() {
+		return getuOPPreInt2jMAPreAssert_r7().getEOperations().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getuCInv2jCInv_r9() {
+		if (uCInv2jCInv_r9EClass == null) {
+			uCInv2jCInv_r9EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
+					.getEClassifiers().get(15);
+		}
+		return uCInv2jCInv_r9EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCInv2jCInv_r9_AddElementActivity() {
+		return (EReference) getuCInv2jCInv_r9().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCInv2jCInv_r9_MoveElementActivity() {
+		return (EReference) getuCInv2jCInv_r9().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCInv2jCInv_r9_ChangeAttributeActivity() {
+		return (EReference) getuCInv2jCInv_r9().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCInv2jCInv_r9_TransformForwardActivity() {
+		return (EReference) getuCInv2jCInv_r9().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCInv2jCInv_r9_TransformMappingActivity() {
+		return (EReference) getuCInv2jCInv_r9().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCInv2jCInv_r9_TransformBackwardActivity() {
+		return (EReference) getuCInv2jCInv_r9().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCInv2jCInv_r9_ConflictCheckForwardActivity() {
+		return (EReference) getuCInv2jCInv_r9().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCInv2jCInv_r9_ConflictCheckMappingActivity() {
+		return (EReference) getuCInv2jCInv_r9().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCInv2jCInv_r9_ConflictCheckBackwardActivity() {
+		return (EReference) getuCInv2jCInv_r9().getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCInv2jCInv_r9_SynchronizeForwardActivity() {
+		return (EReference) getuCInv2jCInv_r9().getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCInv2jCInv_r9_SynchronizeBackwardActivity() {
+		return (EReference) getuCInv2jCInv_r9().getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCInv2jCInv_r9_RepairForwardActivity() {
+		return (EReference) getuCInv2jCInv_r9().getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCInv2jCInv_r9_RepairBackwardActivity() {
+		return (EReference) getuCInv2jCInv_r9().getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCInv2jCInv_r9__AddElement__EMap() {
+		return getuCInv2jCInv_r9().getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCInv2jCInv_r9__ChangeAttributeValues__TGGNode_EMap() {
+		return getuCInv2jCInv_r9().getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCInv2jCInv_r9__MoveElement__TGGNode_TGGNode_TGGNode() {
+		return getuCInv2jCInv_r9().getEOperations().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCInv2jCInv_r9__TransformForward__TGGNode_boolean_boolean() {
+		return getuCInv2jCInv_r9().getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCInv2jCInv_r9__TransformMapping__TGGNode_boolean_boolean() {
+		return getuCInv2jCInv_r9().getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCInv2jCInv_r9__TransformBackward__TGGNode_boolean_boolean() {
+		return getuCInv2jCInv_r9().getEOperations().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCInv2jCInv_r9__ConflictCheckForward__TGGNode() {
+		return getuCInv2jCInv_r9().getEOperations().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCInv2jCInv_r9__ConflictCheckMapping__TGGNode() {
+		return getuCInv2jCInv_r9().getEOperations().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCInv2jCInv_r9__ConflictCheckBackward__TGGNode() {
+		return getuCInv2jCInv_r9().getEOperations().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCInv2jCInv_r9__SynchronizeForward__TGGNode_boolean() {
+		return getuCInv2jCInv_r9().getEOperations().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCInv2jCInv_r9__SynchronizeBackward__TGGNode_boolean() {
+		return getuCInv2jCInv_r9().getEOperations().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCInv2jCInv_r9__RepairForward__TGGNode_boolean() {
+		return getuCInv2jCInv_r9().getEOperations().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCInv2jCInv_r9__RepairBackward__TGGNode_boolean() {
+		return getuCInv2jCInv_r9().getEOperations().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getuCInvInt2jCInvAssert_r10() {
+		if (uCInvInt2jCInvAssert_r10EClass == null) {
+			uCInvInt2jCInvAssert_r10EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
+					.getEClassifiers().get(16);
+		}
+		return uCInvInt2jCInvAssert_r10EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCInvInt2jCInvAssert_r10_AddElementActivity() {
+		return (EReference) getuCInvInt2jCInvAssert_r10().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCInvInt2jCInvAssert_r10_MoveElementActivity() {
+		return (EReference) getuCInvInt2jCInvAssert_r10().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCInvInt2jCInvAssert_r10_ChangeAttributeActivity() {
+		return (EReference) getuCInvInt2jCInvAssert_r10().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCInvInt2jCInvAssert_r10_TransformForwardActivity() {
+		return (EReference) getuCInvInt2jCInvAssert_r10().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCInvInt2jCInvAssert_r10_TransformMappingActivity() {
+		return (EReference) getuCInvInt2jCInvAssert_r10().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCInvInt2jCInvAssert_r10_TransformBackwardActivity() {
+		return (EReference) getuCInvInt2jCInvAssert_r10().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCInvInt2jCInvAssert_r10_ConflictCheckForwardActivity() {
+		return (EReference) getuCInvInt2jCInvAssert_r10().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCInvInt2jCInvAssert_r10_ConflictCheckMappingActivity() {
+		return (EReference) getuCInvInt2jCInvAssert_r10().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCInvInt2jCInvAssert_r10_ConflictCheckBackwardActivity() {
+		return (EReference) getuCInvInt2jCInvAssert_r10().getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCInvInt2jCInvAssert_r10_SynchronizeForwardActivity() {
+		return (EReference) getuCInvInt2jCInvAssert_r10().getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCInvInt2jCInvAssert_r10_SynchronizeBackwardActivity() {
+		return (EReference) getuCInvInt2jCInvAssert_r10().getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCInvInt2jCInvAssert_r10_RepairForwardActivity() {
+		return (EReference) getuCInvInt2jCInvAssert_r10().getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuCInvInt2jCInvAssert_r10_RepairBackwardActivity() {
+		return (EReference) getuCInvInt2jCInvAssert_r10().getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCInvInt2jCInvAssert_r10__AddElement__EMap() {
+		return getuCInvInt2jCInvAssert_r10().getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCInvInt2jCInvAssert_r10__ChangeAttributeValues__TGGNode_EMap() {
+		return getuCInvInt2jCInvAssert_r10().getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCInvInt2jCInvAssert_r10__MoveElement__TGGNode_TGGNode_TGGNode() {
+		return getuCInvInt2jCInvAssert_r10().getEOperations().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCInvInt2jCInvAssert_r10__TransformForward__TGGNode_boolean_boolean() {
+		return getuCInvInt2jCInvAssert_r10().getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCInvInt2jCInvAssert_r10__TransformMapping__TGGNode_boolean_boolean() {
+		return getuCInvInt2jCInvAssert_r10().getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCInvInt2jCInvAssert_r10__TransformBackward__TGGNode_boolean_boolean() {
+		return getuCInvInt2jCInvAssert_r10().getEOperations().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCInvInt2jCInvAssert_r10__ConflictCheckForward__TGGNode() {
+		return getuCInvInt2jCInvAssert_r10().getEOperations().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCInvInt2jCInvAssert_r10__ConflictCheckMapping__TGGNode() {
+		return getuCInvInt2jCInvAssert_r10().getEOperations().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCInvInt2jCInvAssert_r10__ConflictCheckBackward__TGGNode() {
+		return getuCInvInt2jCInvAssert_r10().getEOperations().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCInvInt2jCInvAssert_r10__SynchronizeForward__TGGNode_boolean() {
+		return getuCInvInt2jCInvAssert_r10().getEOperations().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCInvInt2jCInvAssert_r10__SynchronizeBackward__TGGNode_boolean() {
+		return getuCInvInt2jCInvAssert_r10().getEOperations().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCInvInt2jCInvAssert_r10__RepairForward__TGGNode_boolean() {
+		return getuCInvInt2jCInvAssert_r10().getEOperations().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuCInvInt2jCInvAssert_r10__RepairBackward__TGGNode_boolean() {
+		return getuCInvInt2jCInvAssert_r10().getEOperations().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getuProperty2jField_Helper_r11() {
+		if (uProperty2jField_Helper_r11EClass == null) {
+			uProperty2jField_Helper_r11EClass = (EClass) EPackage.Registry.INSTANCE
+					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(17);
+		}
+		return uProperty2jField_Helper_r11EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuProperty2jField_Helper_r11_AddElementActivity() {
+		return (EReference) getuProperty2jField_Helper_r11().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuProperty2jField_Helper_r11_MoveElementActivity() {
+		return (EReference) getuProperty2jField_Helper_r11().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuProperty2jField_Helper_r11_ChangeAttributeActivity() {
+		return (EReference) getuProperty2jField_Helper_r11().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuProperty2jField_Helper_r11_TransformForwardActivity() {
+		return (EReference) getuProperty2jField_Helper_r11().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuProperty2jField_Helper_r11_TransformMappingActivity() {
+		return (EReference) getuProperty2jField_Helper_r11().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuProperty2jField_Helper_r11_TransformBackwardActivity() {
+		return (EReference) getuProperty2jField_Helper_r11().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuProperty2jField_Helper_r11_ConflictCheckForwardActivity() {
+		return (EReference) getuProperty2jField_Helper_r11().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuProperty2jField_Helper_r11_ConflictCheckMappingActivity() {
+		return (EReference) getuProperty2jField_Helper_r11().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuProperty2jField_Helper_r11_ConflictCheckBackwardActivity() {
+		return (EReference) getuProperty2jField_Helper_r11().getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuProperty2jField_Helper_r11_SynchronizeForwardActivity() {
+		return (EReference) getuProperty2jField_Helper_r11().getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuProperty2jField_Helper_r11_SynchronizeBackwardActivity() {
+		return (EReference) getuProperty2jField_Helper_r11().getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuProperty2jField_Helper_r11_RepairForwardActivity() {
+		return (EReference) getuProperty2jField_Helper_r11().getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuProperty2jField_Helper_r11_RepairBackwardActivity() {
+		return (EReference) getuProperty2jField_Helper_r11().getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuProperty2jField_Helper_r11__AddElement__EMap() {
+		return getuProperty2jField_Helper_r11().getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuProperty2jField_Helper_r11__ChangeAttributeValues__TGGNode_EMap() {
+		return getuProperty2jField_Helper_r11().getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuProperty2jField_Helper_r11__MoveElement__TGGNode_TGGNode_TGGNode() {
+		return getuProperty2jField_Helper_r11().getEOperations().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuProperty2jField_Helper_r11__TransformForward__TGGNode_boolean_boolean() {
+		return getuProperty2jField_Helper_r11().getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuProperty2jField_Helper_r11__TransformMapping__TGGNode_boolean_boolean() {
+		return getuProperty2jField_Helper_r11().getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuProperty2jField_Helper_r11__TransformBackward__TGGNode_boolean_boolean() {
+		return getuProperty2jField_Helper_r11().getEOperations().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuProperty2jField_Helper_r11__ConflictCheckForward__TGGNode() {
+		return getuProperty2jField_Helper_r11().getEOperations().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuProperty2jField_Helper_r11__ConflictCheckMapping__TGGNode() {
+		return getuProperty2jField_Helper_r11().getEOperations().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuProperty2jField_Helper_r11__ConflictCheckBackward__TGGNode() {
+		return getuProperty2jField_Helper_r11().getEOperations().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuProperty2jField_Helper_r11__SynchronizeForward__TGGNode_boolean() {
+		return getuProperty2jField_Helper_r11().getEOperations().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuProperty2jField_Helper_r11__SynchronizeBackward__TGGNode_boolean() {
+		return getuProperty2jField_Helper_r11().getEOperations().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuProperty2jField_Helper_r11__RepairForward__TGGNode_boolean() {
+		return getuProperty2jField_Helper_r11().getEOperations().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuProperty2jField_Helper_r11__RepairBackward__TGGNode_boolean() {
+		return getuProperty2jField_Helper_r11().getEOperations().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getuOPPosInt2jMAPosAssert_r8() {
+		if (uOPPosInt2jMAPosAssert_r8EClass == null) {
+			uOPPosInt2jMAPosAssert_r8EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
+					.getEClassifiers().get(18);
+		}
+		return uOPPosInt2jMAPosAssert_r8EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuOPPosInt2jMAPosAssert_r8_AddElementActivity() {
+		return (EReference) getuOPPosInt2jMAPosAssert_r8().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuOPPosInt2jMAPosAssert_r8_MoveElementActivity() {
+		return (EReference) getuOPPosInt2jMAPosAssert_r8().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuOPPosInt2jMAPosAssert_r8_ChangeAttributeActivity() {
+		return (EReference) getuOPPosInt2jMAPosAssert_r8().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuOPPosInt2jMAPosAssert_r8_TransformForwardActivity() {
+		return (EReference) getuOPPosInt2jMAPosAssert_r8().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuOPPosInt2jMAPosAssert_r8_TransformMappingActivity() {
+		return (EReference) getuOPPosInt2jMAPosAssert_r8().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuOPPosInt2jMAPosAssert_r8_TransformBackwardActivity() {
+		return (EReference) getuOPPosInt2jMAPosAssert_r8().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuOPPosInt2jMAPosAssert_r8_ConflictCheckForwardActivity() {
+		return (EReference) getuOPPosInt2jMAPosAssert_r8().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuOPPosInt2jMAPosAssert_r8_ConflictCheckMappingActivity() {
+		return (EReference) getuOPPosInt2jMAPosAssert_r8().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuOPPosInt2jMAPosAssert_r8_ConflictCheckBackwardActivity() {
+		return (EReference) getuOPPosInt2jMAPosAssert_r8().getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuOPPosInt2jMAPosAssert_r8_SynchronizeForwardActivity() {
+		return (EReference) getuOPPosInt2jMAPosAssert_r8().getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuOPPosInt2jMAPosAssert_r8_SynchronizeBackwardActivity() {
+		return (EReference) getuOPPosInt2jMAPosAssert_r8().getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuOPPosInt2jMAPosAssert_r8_RepairForwardActivity() {
+		return (EReference) getuOPPosInt2jMAPosAssert_r8().getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuOPPosInt2jMAPosAssert_r8_RepairBackwardActivity() {
+		return (EReference) getuOPPosInt2jMAPosAssert_r8().getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuOPPosInt2jMAPosAssert_r8__AddElement__EMap() {
+		return getuOPPosInt2jMAPosAssert_r8().getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuOPPosInt2jMAPosAssert_r8__ChangeAttributeValues__TGGNode_EMap() {
+		return getuOPPosInt2jMAPosAssert_r8().getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuOPPosInt2jMAPosAssert_r8__MoveElement__TGGNode_TGGNode_TGGNode() {
+		return getuOPPosInt2jMAPosAssert_r8().getEOperations().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuOPPosInt2jMAPosAssert_r8__TransformForward__TGGNode_boolean_boolean() {
+		return getuOPPosInt2jMAPosAssert_r8().getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuOPPosInt2jMAPosAssert_r8__TransformMapping__TGGNode_boolean_boolean() {
+		return getuOPPosInt2jMAPosAssert_r8().getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuOPPosInt2jMAPosAssert_r8__TransformBackward__TGGNode_boolean_boolean() {
+		return getuOPPosInt2jMAPosAssert_r8().getEOperations().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuOPPosInt2jMAPosAssert_r8__ConflictCheckForward__TGGNode() {
+		return getuOPPosInt2jMAPosAssert_r8().getEOperations().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuOPPosInt2jMAPosAssert_r8__ConflictCheckMapping__TGGNode() {
+		return getuOPPosInt2jMAPosAssert_r8().getEOperations().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuOPPosInt2jMAPosAssert_r8__ConflictCheckBackward__TGGNode() {
+		return getuOPPosInt2jMAPosAssert_r8().getEOperations().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuOPPosInt2jMAPosAssert_r8__SynchronizeForward__TGGNode_boolean() {
+		return getuOPPosInt2jMAPosAssert_r8().getEOperations().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuOPPosInt2jMAPosAssert_r8__SynchronizeBackward__TGGNode_boolean() {
+		return getuOPPosInt2jMAPosAssert_r8().getEOperations().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuOPPosInt2jMAPosAssert_r8__RepairForward__TGGNode_boolean() {
+		return getuOPPosInt2jMAPosAssert_r8().getEOperations().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuOPPosInt2jMAPosAssert_r8__RepairBackward__TGGNode_boolean() {
+		return getuOPPosInt2jMAPosAssert_r8().getEOperations().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getuClass2jClass_Helper_r2() {
+		if (uClass2jClass_Helper_r2EClass == null) {
+			uClass2jClass_Helper_r2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
+					.getEClassifiers().get(19);
+		}
+		return uClass2jClass_Helper_r2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Helper_r2_AddElementActivity() {
+		return (EReference) getuClass2jClass_Helper_r2().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Helper_r2_MoveElementActivity() {
+		return (EReference) getuClass2jClass_Helper_r2().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Helper_r2_ChangeAttributeActivity() {
+		return (EReference) getuClass2jClass_Helper_r2().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Helper_r2_TransformForwardActivity() {
+		return (EReference) getuClass2jClass_Helper_r2().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Helper_r2_TransformMappingActivity() {
+		return (EReference) getuClass2jClass_Helper_r2().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Helper_r2_TransformBackwardActivity() {
+		return (EReference) getuClass2jClass_Helper_r2().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Helper_r2_ConflictCheckForwardActivity() {
+		return (EReference) getuClass2jClass_Helper_r2().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Helper_r2_ConflictCheckMappingActivity() {
+		return (EReference) getuClass2jClass_Helper_r2().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Helper_r2_ConflictCheckBackwardActivity() {
+		return (EReference) getuClass2jClass_Helper_r2().getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Helper_r2_SynchronizeForwardActivity() {
+		return (EReference) getuClass2jClass_Helper_r2().getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Helper_r2_SynchronizeBackwardActivity() {
+		return (EReference) getuClass2jClass_Helper_r2().getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Helper_r2_RepairForwardActivity() {
+		return (EReference) getuClass2jClass_Helper_r2().getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getuClass2jClass_Helper_r2_RepairBackwardActivity() {
+		return (EReference) getuClass2jClass_Helper_r2().getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Helper_r2__AddElement__EMap() {
+		return getuClass2jClass_Helper_r2().getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Helper_r2__ChangeAttributeValues__TGGNode_EMap() {
+		return getuClass2jClass_Helper_r2().getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Helper_r2__MoveElement__TGGNode_TGGNode_TGGNode() {
+		return getuClass2jClass_Helper_r2().getEOperations().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Helper_r2__TransformForward__TGGNode_boolean_boolean() {
+		return getuClass2jClass_Helper_r2().getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Helper_r2__TransformMapping__TGGNode_boolean_boolean() {
+		return getuClass2jClass_Helper_r2().getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Helper_r2__TransformBackward__TGGNode_boolean_boolean() {
+		return getuClass2jClass_Helper_r2().getEOperations().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Helper_r2__ConflictCheckForward__TGGNode() {
+		return getuClass2jClass_Helper_r2().getEOperations().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Helper_r2__ConflictCheckMapping__TGGNode() {
+		return getuClass2jClass_Helper_r2().getEOperations().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Helper_r2__ConflictCheckBackward__TGGNode() {
+		return getuClass2jClass_Helper_r2().getEOperations().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Helper_r2__SynchronizeForward__TGGNode_boolean() {
+		return getuClass2jClass_Helper_r2().getEOperations().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Helper_r2__SynchronizeBackward__TGGNode_boolean() {
+		return getuClass2jClass_Helper_r2().getEOperations().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Helper_r2__RepairForward__TGGNode_boolean() {
+		return getuClass2jClass_Helper_r2().getEOperations().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getuClass2jClass_Helper_r2__RepairBackward__TGGNode_boolean() {
+		return getuClass2jClass_Helper_r2().getEOperations().get(12);
 	}
 
 	/**
@@ -1477,7 +2299,7 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	public EClass getuOPPre2jMAPre_r5() {
 		if (uOPPre2jMAPre_r5EClass == null) {
 			uOPPre2jMAPre_r5EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
-					.getEClassifiers().get(14);
+					.getEClassifiers().get(20);
 		}
 		return uOPPre2jMAPre_r5EClass;
 	}
@@ -1724,7 +2546,7 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	public EClass getuOperation2jMethod_Helper_r3() {
 		if (uOperation2jMethod_Helper_r3EClass == null) {
 			uOperation2jMethod_Helper_r3EClass = (EClass) EPackage.Registry.INSTANCE
-					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(15);
+					.getEPackage(GeneratedPackage.eNS_URI).getEClassifiers().get(21);
 		}
 		return uOperation2jMethod_Helper_r3EClass;
 	}
@@ -1968,12 +2790,12 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getuOPPosInt2jMAPosAssert_r8() {
-		if (uOPPosInt2jMAPosAssert_r8EClass == null) {
-			uOPPosInt2jMAPosAssert_r8EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
-					.getEClassifiers().get(16);
+	public EClass getuOPPos2jMAPos_r6() {
+		if (uOPPos2jMAPos_r6EClass == null) {
+			uOPPos2jMAPos_r6EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(GeneratedPackage.eNS_URI)
+					.getEClassifiers().get(22);
 		}
-		return uOPPosInt2jMAPosAssert_r8EClass;
+		return uOPPos2jMAPos_r6EClass;
 	}
 
 	/**
@@ -1981,8 +2803,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuOPPosInt2jMAPosAssert_r8_AddElementActivity() {
-		return (EReference) getuOPPosInt2jMAPosAssert_r8().getEStructuralFeatures().get(0);
+	public EReference getuOPPos2jMAPos_r6_AddElementActivity() {
+		return (EReference) getuOPPos2jMAPos_r6().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1990,8 +2812,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuOPPosInt2jMAPosAssert_r8_MoveElementActivity() {
-		return (EReference) getuOPPosInt2jMAPosAssert_r8().getEStructuralFeatures().get(1);
+	public EReference getuOPPos2jMAPos_r6_MoveElementActivity() {
+		return (EReference) getuOPPos2jMAPos_r6().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1999,8 +2821,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuOPPosInt2jMAPosAssert_r8_ChangeAttributeActivity() {
-		return (EReference) getuOPPosInt2jMAPosAssert_r8().getEStructuralFeatures().get(2);
+	public EReference getuOPPos2jMAPos_r6_ChangeAttributeActivity() {
+		return (EReference) getuOPPos2jMAPos_r6().getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -2008,8 +2830,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuOPPosInt2jMAPosAssert_r8_TransformForwardActivity() {
-		return (EReference) getuOPPosInt2jMAPosAssert_r8().getEStructuralFeatures().get(3);
+	public EReference getuOPPos2jMAPos_r6_TransformForwardActivity() {
+		return (EReference) getuOPPos2jMAPos_r6().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -2017,8 +2839,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuOPPosInt2jMAPosAssert_r8_TransformMappingActivity() {
-		return (EReference) getuOPPosInt2jMAPosAssert_r8().getEStructuralFeatures().get(4);
+	public EReference getuOPPos2jMAPos_r6_TransformMappingActivity() {
+		return (EReference) getuOPPos2jMAPos_r6().getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -2026,8 +2848,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuOPPosInt2jMAPosAssert_r8_TransformBackwardActivity() {
-		return (EReference) getuOPPosInt2jMAPosAssert_r8().getEStructuralFeatures().get(5);
+	public EReference getuOPPos2jMAPos_r6_TransformBackwardActivity() {
+		return (EReference) getuOPPos2jMAPos_r6().getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -2035,8 +2857,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuOPPosInt2jMAPosAssert_r8_ConflictCheckForwardActivity() {
-		return (EReference) getuOPPosInt2jMAPosAssert_r8().getEStructuralFeatures().get(6);
+	public EReference getuOPPos2jMAPos_r6_ConflictCheckForwardActivity() {
+		return (EReference) getuOPPos2jMAPos_r6().getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -2044,8 +2866,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuOPPosInt2jMAPosAssert_r8_ConflictCheckMappingActivity() {
-		return (EReference) getuOPPosInt2jMAPosAssert_r8().getEStructuralFeatures().get(7);
+	public EReference getuOPPos2jMAPos_r6_ConflictCheckMappingActivity() {
+		return (EReference) getuOPPos2jMAPos_r6().getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -2053,8 +2875,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuOPPosInt2jMAPosAssert_r8_ConflictCheckBackwardActivity() {
-		return (EReference) getuOPPosInt2jMAPosAssert_r8().getEStructuralFeatures().get(8);
+	public EReference getuOPPos2jMAPos_r6_ConflictCheckBackwardActivity() {
+		return (EReference) getuOPPos2jMAPos_r6().getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -2062,8 +2884,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuOPPosInt2jMAPosAssert_r8_SynchronizeForwardActivity() {
-		return (EReference) getuOPPosInt2jMAPosAssert_r8().getEStructuralFeatures().get(9);
+	public EReference getuOPPos2jMAPos_r6_SynchronizeForwardActivity() {
+		return (EReference) getuOPPos2jMAPos_r6().getEStructuralFeatures().get(9);
 	}
 
 	/**
@@ -2071,8 +2893,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuOPPosInt2jMAPosAssert_r8_SynchronizeBackwardActivity() {
-		return (EReference) getuOPPosInt2jMAPosAssert_r8().getEStructuralFeatures().get(10);
+	public EReference getuOPPos2jMAPos_r6_SynchronizeBackwardActivity() {
+		return (EReference) getuOPPos2jMAPos_r6().getEStructuralFeatures().get(10);
 	}
 
 	/**
@@ -2080,8 +2902,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuOPPosInt2jMAPosAssert_r8_RepairForwardActivity() {
-		return (EReference) getuOPPosInt2jMAPosAssert_r8().getEStructuralFeatures().get(11);
+	public EReference getuOPPos2jMAPos_r6_RepairForwardActivity() {
+		return (EReference) getuOPPos2jMAPos_r6().getEStructuralFeatures().get(11);
 	}
 
 	/**
@@ -2089,8 +2911,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getuOPPosInt2jMAPosAssert_r8_RepairBackwardActivity() {
-		return (EReference) getuOPPosInt2jMAPosAssert_r8().getEStructuralFeatures().get(12);
+	public EReference getuOPPos2jMAPos_r6_RepairBackwardActivity() {
+		return (EReference) getuOPPos2jMAPos_r6().getEStructuralFeatures().get(12);
 	}
 
 	/**
@@ -2098,8 +2920,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuOPPosInt2jMAPosAssert_r8__AddElement__EMap() {
-		return getuOPPosInt2jMAPosAssert_r8().getEOperations().get(0);
+	public EOperation getuOPPos2jMAPos_r6__AddElement__EMap() {
+		return getuOPPos2jMAPos_r6().getEOperations().get(0);
 	}
 
 	/**
@@ -2107,8 +2929,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuOPPosInt2jMAPosAssert_r8__ChangeAttributeValues__TGGNode_EMap() {
-		return getuOPPosInt2jMAPosAssert_r8().getEOperations().get(1);
+	public EOperation getuOPPos2jMAPos_r6__ChangeAttributeValues__TGGNode_EMap() {
+		return getuOPPos2jMAPos_r6().getEOperations().get(1);
 	}
 
 	/**
@@ -2116,8 +2938,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuOPPosInt2jMAPosAssert_r8__MoveElement__TGGNode_TGGNode_TGGNode() {
-		return getuOPPosInt2jMAPosAssert_r8().getEOperations().get(2);
+	public EOperation getuOPPos2jMAPos_r6__MoveElement__TGGNode_TGGNode_TGGNode() {
+		return getuOPPos2jMAPos_r6().getEOperations().get(2);
 	}
 
 	/**
@@ -2125,8 +2947,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuOPPosInt2jMAPosAssert_r8__TransformForward__TGGNode_boolean_boolean() {
-		return getuOPPosInt2jMAPosAssert_r8().getEOperations().get(3);
+	public EOperation getuOPPos2jMAPos_r6__TransformForward__TGGNode_boolean_boolean() {
+		return getuOPPos2jMAPos_r6().getEOperations().get(3);
 	}
 
 	/**
@@ -2134,8 +2956,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuOPPosInt2jMAPosAssert_r8__TransformMapping__TGGNode_boolean_boolean() {
-		return getuOPPosInt2jMAPosAssert_r8().getEOperations().get(4);
+	public EOperation getuOPPos2jMAPos_r6__TransformMapping__TGGNode_boolean_boolean() {
+		return getuOPPos2jMAPos_r6().getEOperations().get(4);
 	}
 
 	/**
@@ -2143,8 +2965,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuOPPosInt2jMAPosAssert_r8__TransformBackward__TGGNode_boolean_boolean() {
-		return getuOPPosInt2jMAPosAssert_r8().getEOperations().get(5);
+	public EOperation getuOPPos2jMAPos_r6__TransformBackward__TGGNode_boolean_boolean() {
+		return getuOPPos2jMAPos_r6().getEOperations().get(5);
 	}
 
 	/**
@@ -2152,8 +2974,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuOPPosInt2jMAPosAssert_r8__ConflictCheckForward__TGGNode() {
-		return getuOPPosInt2jMAPosAssert_r8().getEOperations().get(6);
+	public EOperation getuOPPos2jMAPos_r6__ConflictCheckForward__TGGNode() {
+		return getuOPPos2jMAPos_r6().getEOperations().get(6);
 	}
 
 	/**
@@ -2161,8 +2983,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuOPPosInt2jMAPosAssert_r8__ConflictCheckMapping__TGGNode() {
-		return getuOPPosInt2jMAPosAssert_r8().getEOperations().get(7);
+	public EOperation getuOPPos2jMAPos_r6__ConflictCheckMapping__TGGNode() {
+		return getuOPPos2jMAPos_r6().getEOperations().get(7);
 	}
 
 	/**
@@ -2170,8 +2992,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuOPPosInt2jMAPosAssert_r8__ConflictCheckBackward__TGGNode() {
-		return getuOPPosInt2jMAPosAssert_r8().getEOperations().get(8);
+	public EOperation getuOPPos2jMAPos_r6__ConflictCheckBackward__TGGNode() {
+		return getuOPPos2jMAPos_r6().getEOperations().get(8);
 	}
 
 	/**
@@ -2179,8 +3001,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuOPPosInt2jMAPosAssert_r8__SynchronizeForward__TGGNode_boolean() {
-		return getuOPPosInt2jMAPosAssert_r8().getEOperations().get(9);
+	public EOperation getuOPPos2jMAPos_r6__SynchronizeForward__TGGNode_boolean() {
+		return getuOPPos2jMAPos_r6().getEOperations().get(9);
 	}
 
 	/**
@@ -2188,8 +3010,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuOPPosInt2jMAPosAssert_r8__SynchronizeBackward__TGGNode_boolean() {
-		return getuOPPosInt2jMAPosAssert_r8().getEOperations().get(10);
+	public EOperation getuOPPos2jMAPos_r6__SynchronizeBackward__TGGNode_boolean() {
+		return getuOPPos2jMAPos_r6().getEOperations().get(10);
 	}
 
 	/**
@@ -2197,8 +3019,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuOPPosInt2jMAPosAssert_r8__RepairForward__TGGNode_boolean() {
-		return getuOPPosInt2jMAPosAssert_r8().getEOperations().get(11);
+	public EOperation getuOPPos2jMAPos_r6__RepairForward__TGGNode_boolean() {
+		return getuOPPos2jMAPos_r6().getEOperations().get(11);
 	}
 
 	/**
@@ -2206,8 +3028,8 @@ public class GeneratedPackageImpl extends EPackageImpl implements GeneratedPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getuOPPosInt2jMAPosAssert_r8__RepairBackward__TGGNode_boolean() {
-		return getuOPPosInt2jMAPosAssert_r8().getEOperations().get(12);
+	public EOperation getuOPPos2jMAPos_r6__RepairBackward__TGGNode_boolean() {
+		return getuOPPos2jMAPos_r6().getEOperations().get(12);
 	}
 
 	/**

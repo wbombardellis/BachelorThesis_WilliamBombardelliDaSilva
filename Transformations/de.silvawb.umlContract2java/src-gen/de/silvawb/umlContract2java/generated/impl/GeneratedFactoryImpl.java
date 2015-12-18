@@ -60,36 +60,48 @@ public class GeneratedFactoryImpl extends EFactoryImpl implements GeneratedFacto
 			return createumlContract2javaOperationalTGG();
 		case GeneratedPackage.UML_CONTRACT2JAVA_AXIOM:
 			return createumlContract2javaAxiom();
+		case GeneratedPackage.UOP_PRE_INT2J_MA_PRE_ASSERT:
+			return createuOPPreInt2jMAPreAssert();
+		case GeneratedPackage.UOPERATION2J_METHOD_HELPER:
+			return createuOperation2jMethod_Helper();
+		case GeneratedPackage.UC_INV2J_CINV:
+			return createuCInv2jCInv();
 		case GeneratedPackage.UOP_POS2J_MA_POS:
 			return createuOPPos2jMAPos();
 		case GeneratedPackage.UCLASS2J_CLASS_HELPER:
 			return createuClass2jClass_Helper();
 		case GeneratedPackage.UOP_PRE2J_MA_PRE:
 			return createuOPPre2jMAPre();
-		case GeneratedPackage.UOP_PRE_INT2J_MA_PRE_ASSERT:
-			return createuOPPreInt2jMAPreAssert();
 		case GeneratedPackage.UOP_POS_INT2J_MA_POS_ASSERT:
 			return createuOPPosInt2jMAPosAssert();
-		case GeneratedPackage.UOPERATION2J_METHOD_HELPER:
-			return createuOperation2jMethod_Helper();
+		case GeneratedPackage.UPROPERTY2J_FIELD_HELPER:
+			return createuProperty2jField_Helper();
+		case GeneratedPackage.UC_INV_INT2J_CINV_ASSERT:
+			return createuCInvInt2jCInvAssert();
 		case GeneratedPackage.UO_PARAMENTER2J_MARGUMENT:
 			return createuOParamenter2jMArgument();
 		case GeneratedPackage.UML_CONTRACT2JAVA_AXIOM_R1:
 			return createumlContract2javaAxiom_r1();
-		case GeneratedPackage.UCLASS2J_CLASS_HELPER_R2:
-			return createuClass2jClass_Helper_r2();
-		case GeneratedPackage.UOP_PRE_INT2J_MA_PRE_ASSERT_R7:
-			return createuOPPreInt2jMAPreAssert_r7();
 		case GeneratedPackage.UO_PARAMENTER2J_MARGUMENT_R4:
 			return createuOParamenter2jMArgument_r4();
-		case GeneratedPackage.UOP_POS2J_MA_POS_R6:
-			return createuOPPos2jMAPos_r6();
+		case GeneratedPackage.UOP_PRE_INT2J_MA_PRE_ASSERT_R7:
+			return createuOPPreInt2jMAPreAssert_r7();
+		case GeneratedPackage.UC_INV2J_CINV_R9:
+			return createuCInv2jCInv_r9();
+		case GeneratedPackage.UC_INV_INT2J_CINV_ASSERT_R10:
+			return createuCInvInt2jCInvAssert_r10();
+		case GeneratedPackage.UPROPERTY2J_FIELD_HELPER_R11:
+			return createuProperty2jField_Helper_r11();
+		case GeneratedPackage.UOP_POS_INT2J_MA_POS_ASSERT_R8:
+			return createuOPPosInt2jMAPosAssert_r8();
+		case GeneratedPackage.UCLASS2J_CLASS_HELPER_R2:
+			return createuClass2jClass_Helper_r2();
 		case GeneratedPackage.UOP_PRE2J_MA_PRE_R5:
 			return createuOPPre2jMAPre_r5();
 		case GeneratedPackage.UOPERATION2J_METHOD_HELPER_R3:
 			return createuOperation2jMethod_Helper_r3();
-		case GeneratedPackage.UOP_POS_INT2J_MA_POS_ASSERT_R8:
-			return createuOPPosInt2jMAPosAssert_r8();
+		case GeneratedPackage.UOP_POS2J_MA_POS_R6:
+			return createuOPPos2jMAPos_r6();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -113,6 +125,36 @@ public class GeneratedFactoryImpl extends EFactoryImpl implements GeneratedFacto
 	public umlContract2javaAxiom createumlContract2javaAxiom() {
 		umlContract2javaAxiomImpl umlContract2javaAxiom = new umlContract2javaAxiomImpl();
 		return umlContract2javaAxiom;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public uOPPreInt2jMAPreAssert createuOPPreInt2jMAPreAssert() {
+		uOPPreInt2jMAPreAssertImpl uOPPreInt2jMAPreAssert = new uOPPreInt2jMAPreAssertImpl();
+		return uOPPreInt2jMAPreAssert;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public uOperation2jMethod_Helper createuOperation2jMethod_Helper() {
+		uOperation2jMethod_HelperImpl uOperation2jMethod_Helper = new uOperation2jMethod_HelperImpl();
+		return uOperation2jMethod_Helper;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public uCInv2jCInv createuCInv2jCInv() {
+		uCInv2jCInvImpl uCInv2jCInv = new uCInv2jCInvImpl();
+		return uCInv2jCInv;
 	}
 
 	/**
@@ -150,16 +192,6 @@ public class GeneratedFactoryImpl extends EFactoryImpl implements GeneratedFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public uOPPreInt2jMAPreAssert createuOPPreInt2jMAPreAssert() {
-		uOPPreInt2jMAPreAssertImpl uOPPreInt2jMAPreAssert = new uOPPreInt2jMAPreAssertImpl();
-		return uOPPreInt2jMAPreAssert;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public uOPPosInt2jMAPosAssert createuOPPosInt2jMAPosAssert() {
 		uOPPosInt2jMAPosAssertImpl uOPPosInt2jMAPosAssert = new uOPPosInt2jMAPosAssertImpl();
 		return uOPPosInt2jMAPosAssert;
@@ -170,9 +202,19 @@ public class GeneratedFactoryImpl extends EFactoryImpl implements GeneratedFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public uOperation2jMethod_Helper createuOperation2jMethod_Helper() {
-		uOperation2jMethod_HelperImpl uOperation2jMethod_Helper = new uOperation2jMethod_HelperImpl();
-		return uOperation2jMethod_Helper;
+	public uProperty2jField_Helper createuProperty2jField_Helper() {
+		uProperty2jField_HelperImpl uProperty2jField_Helper = new uProperty2jField_HelperImpl();
+		return uProperty2jField_Helper;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public uCInvInt2jCInvAssert createuCInvInt2jCInvAssert() {
+		uCInvInt2jCInvAssertImpl uCInvInt2jCInvAssert = new uCInvInt2jCInvAssertImpl();
+		return uCInvInt2jCInvAssert;
 	}
 
 	/**
@@ -200,9 +242,9 @@ public class GeneratedFactoryImpl extends EFactoryImpl implements GeneratedFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public uClass2jClass_Helper_r2 createuClass2jClass_Helper_r2() {
-		uClass2jClass_Helper_r2Impl uClass2jClass_Helper_r2 = new uClass2jClass_Helper_r2Impl();
-		return uClass2jClass_Helper_r2;
+	public uOParamenter2jMArgument_r4 createuOParamenter2jMArgument_r4() {
+		uOParamenter2jMArgument_r4Impl uOParamenter2jMArgument_r4 = new uOParamenter2jMArgument_r4Impl();
+		return uOParamenter2jMArgument_r4;
 	}
 
 	/**
@@ -220,9 +262,9 @@ public class GeneratedFactoryImpl extends EFactoryImpl implements GeneratedFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public uOParamenter2jMArgument_r4 createuOParamenter2jMArgument_r4() {
-		uOParamenter2jMArgument_r4Impl uOParamenter2jMArgument_r4 = new uOParamenter2jMArgument_r4Impl();
-		return uOParamenter2jMArgument_r4;
+	public uCInv2jCInv_r9 createuCInv2jCInv_r9() {
+		uCInv2jCInv_r9Impl uCInv2jCInv_r9 = new uCInv2jCInv_r9Impl();
+		return uCInv2jCInv_r9;
 	}
 
 	/**
@@ -230,9 +272,39 @@ public class GeneratedFactoryImpl extends EFactoryImpl implements GeneratedFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public uOPPos2jMAPos_r6 createuOPPos2jMAPos_r6() {
-		uOPPos2jMAPos_r6Impl uOPPos2jMAPos_r6 = new uOPPos2jMAPos_r6Impl();
-		return uOPPos2jMAPos_r6;
+	public uCInvInt2jCInvAssert_r10 createuCInvInt2jCInvAssert_r10() {
+		uCInvInt2jCInvAssert_r10Impl uCInvInt2jCInvAssert_r10 = new uCInvInt2jCInvAssert_r10Impl();
+		return uCInvInt2jCInvAssert_r10;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public uProperty2jField_Helper_r11 createuProperty2jField_Helper_r11() {
+		uProperty2jField_Helper_r11Impl uProperty2jField_Helper_r11 = new uProperty2jField_Helper_r11Impl();
+		return uProperty2jField_Helper_r11;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public uOPPosInt2jMAPosAssert_r8 createuOPPosInt2jMAPosAssert_r8() {
+		uOPPosInt2jMAPosAssert_r8Impl uOPPosInt2jMAPosAssert_r8 = new uOPPosInt2jMAPosAssert_r8Impl();
+		return uOPPosInt2jMAPosAssert_r8;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public uClass2jClass_Helper_r2 createuClass2jClass_Helper_r2() {
+		uClass2jClass_Helper_r2Impl uClass2jClass_Helper_r2 = new uClass2jClass_Helper_r2Impl();
+		return uClass2jClass_Helper_r2;
 	}
 
 	/**
@@ -260,9 +332,9 @@ public class GeneratedFactoryImpl extends EFactoryImpl implements GeneratedFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public uOPPosInt2jMAPosAssert_r8 createuOPPosInt2jMAPosAssert_r8() {
-		uOPPosInt2jMAPosAssert_r8Impl uOPPosInt2jMAPosAssert_r8 = new uOPPosInt2jMAPosAssert_r8Impl();
-		return uOPPosInt2jMAPosAssert_r8;
+	public uOPPos2jMAPos_r6 createuOPPos2jMAPos_r6() {
+		uOPPos2jMAPos_r6Impl uOPPos2jMAPos_r6 = new uOPPos2jMAPos_r6Impl();
+		return uOPPos2jMAPos_r6;
 	}
 
 	/**

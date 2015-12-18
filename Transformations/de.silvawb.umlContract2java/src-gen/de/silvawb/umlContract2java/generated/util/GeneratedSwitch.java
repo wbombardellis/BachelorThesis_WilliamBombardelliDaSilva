@@ -98,6 +98,39 @@ public class GeneratedSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case GeneratedPackage.UOP_PRE_INT2J_MA_PRE_ASSERT: {
+			uOPPreInt2jMAPreAssert uOPPreInt2jMAPreAssert = (uOPPreInt2jMAPreAssert) theEObject;
+			T result = caseuOPPreInt2jMAPreAssert(uOPPreInt2jMAPreAssert);
+			if (result == null)
+				result = caseOperationalRuleGroup(uOPPreInt2jMAPreAssert);
+			if (result == null)
+				result = caseOperationalMappingGroup(uOPPreInt2jMAPreAssert);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case GeneratedPackage.UOPERATION2J_METHOD_HELPER: {
+			uOperation2jMethod_Helper uOperation2jMethod_Helper = (uOperation2jMethod_Helper) theEObject;
+			T result = caseuOperation2jMethod_Helper(uOperation2jMethod_Helper);
+			if (result == null)
+				result = caseOperationalRuleGroup(uOperation2jMethod_Helper);
+			if (result == null)
+				result = caseOperationalMappingGroup(uOperation2jMethod_Helper);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case GeneratedPackage.UC_INV2J_CINV: {
+			uCInv2jCInv uCInv2jCInv = (uCInv2jCInv) theEObject;
+			T result = caseuCInv2jCInv(uCInv2jCInv);
+			if (result == null)
+				result = caseOperationalRuleGroup(uCInv2jCInv);
+			if (result == null)
+				result = caseOperationalMappingGroup(uCInv2jCInv);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case GeneratedPackage.UOP_POS2J_MA_POS: {
 			uOPPos2jMAPos uOPPos2jMAPos = (uOPPos2jMAPos) theEObject;
 			T result = caseuOPPos2jMAPos(uOPPos2jMAPos);
@@ -131,17 +164,6 @@ public class GeneratedSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case GeneratedPackage.UOP_PRE_INT2J_MA_PRE_ASSERT: {
-			uOPPreInt2jMAPreAssert uOPPreInt2jMAPreAssert = (uOPPreInt2jMAPreAssert) theEObject;
-			T result = caseuOPPreInt2jMAPreAssert(uOPPreInt2jMAPreAssert);
-			if (result == null)
-				result = caseOperationalRuleGroup(uOPPreInt2jMAPreAssert);
-			if (result == null)
-				result = caseOperationalMappingGroup(uOPPreInt2jMAPreAssert);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
 		case GeneratedPackage.UOP_POS_INT2J_MA_POS_ASSERT: {
 			uOPPosInt2jMAPosAssert uOPPosInt2jMAPosAssert = (uOPPosInt2jMAPosAssert) theEObject;
 			T result = caseuOPPosInt2jMAPosAssert(uOPPosInt2jMAPosAssert);
@@ -153,13 +175,24 @@ public class GeneratedSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case GeneratedPackage.UOPERATION2J_METHOD_HELPER: {
-			uOperation2jMethod_Helper uOperation2jMethod_Helper = (uOperation2jMethod_Helper) theEObject;
-			T result = caseuOperation2jMethod_Helper(uOperation2jMethod_Helper);
+		case GeneratedPackage.UPROPERTY2J_FIELD_HELPER: {
+			uProperty2jField_Helper uProperty2jField_Helper = (uProperty2jField_Helper) theEObject;
+			T result = caseuProperty2jField_Helper(uProperty2jField_Helper);
 			if (result == null)
-				result = caseOperationalRuleGroup(uOperation2jMethod_Helper);
+				result = caseOperationalRuleGroup(uProperty2jField_Helper);
 			if (result == null)
-				result = caseOperationalMappingGroup(uOperation2jMethod_Helper);
+				result = caseOperationalMappingGroup(uProperty2jField_Helper);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case GeneratedPackage.UC_INV_INT2J_CINV_ASSERT: {
+			uCInvInt2jCInvAssert uCInvInt2jCInvAssert = (uCInvInt2jCInvAssert) theEObject;
+			T result = caseuCInvInt2jCInvAssert(uCInvInt2jCInvAssert);
+			if (result == null)
+				result = caseOperationalRuleGroup(uCInvInt2jCInvAssert);
+			if (result == null)
+				result = caseOperationalMappingGroup(uCInvInt2jCInvAssert);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -186,13 +219,13 @@ public class GeneratedSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case GeneratedPackage.UCLASS2J_CLASS_HELPER_R2: {
-			uClass2jClass_Helper_r2 uClass2jClass_Helper_r2 = (uClass2jClass_Helper_r2) theEObject;
-			T result = caseuClass2jClass_Helper_r2(uClass2jClass_Helper_r2);
+		case GeneratedPackage.UO_PARAMENTER2J_MARGUMENT_R4: {
+			uOParamenter2jMArgument_r4 uOParamenter2jMArgument_r4 = (uOParamenter2jMArgument_r4) theEObject;
+			T result = caseuOParamenter2jMArgument_r4(uOParamenter2jMArgument_r4);
 			if (result == null)
-				result = caseOperationalRule(uClass2jClass_Helper_r2);
+				result = caseOperationalRule(uOParamenter2jMArgument_r4);
 			if (result == null)
-				result = caseOperationalMapping(uClass2jClass_Helper_r2);
+				result = caseOperationalMapping(uOParamenter2jMArgument_r4);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -208,24 +241,57 @@ public class GeneratedSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case GeneratedPackage.UO_PARAMENTER2J_MARGUMENT_R4: {
-			uOParamenter2jMArgument_r4 uOParamenter2jMArgument_r4 = (uOParamenter2jMArgument_r4) theEObject;
-			T result = caseuOParamenter2jMArgument_r4(uOParamenter2jMArgument_r4);
+		case GeneratedPackage.UC_INV2J_CINV_R9: {
+			uCInv2jCInv_r9 uCInv2jCInv_r9 = (uCInv2jCInv_r9) theEObject;
+			T result = caseuCInv2jCInv_r9(uCInv2jCInv_r9);
 			if (result == null)
-				result = caseOperationalRule(uOParamenter2jMArgument_r4);
+				result = caseOperationalRule(uCInv2jCInv_r9);
 			if (result == null)
-				result = caseOperationalMapping(uOParamenter2jMArgument_r4);
+				result = caseOperationalMapping(uCInv2jCInv_r9);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case GeneratedPackage.UOP_POS2J_MA_POS_R6: {
-			uOPPos2jMAPos_r6 uOPPos2jMAPos_r6 = (uOPPos2jMAPos_r6) theEObject;
-			T result = caseuOPPos2jMAPos_r6(uOPPos2jMAPos_r6);
+		case GeneratedPackage.UC_INV_INT2J_CINV_ASSERT_R10: {
+			uCInvInt2jCInvAssert_r10 uCInvInt2jCInvAssert_r10 = (uCInvInt2jCInvAssert_r10) theEObject;
+			T result = caseuCInvInt2jCInvAssert_r10(uCInvInt2jCInvAssert_r10);
 			if (result == null)
-				result = caseOperationalRule(uOPPos2jMAPos_r6);
+				result = caseOperationalRule(uCInvInt2jCInvAssert_r10);
 			if (result == null)
-				result = caseOperationalMapping(uOPPos2jMAPos_r6);
+				result = caseOperationalMapping(uCInvInt2jCInvAssert_r10);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case GeneratedPackage.UPROPERTY2J_FIELD_HELPER_R11: {
+			uProperty2jField_Helper_r11 uProperty2jField_Helper_r11 = (uProperty2jField_Helper_r11) theEObject;
+			T result = caseuProperty2jField_Helper_r11(uProperty2jField_Helper_r11);
+			if (result == null)
+				result = caseOperationalRule(uProperty2jField_Helper_r11);
+			if (result == null)
+				result = caseOperationalMapping(uProperty2jField_Helper_r11);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case GeneratedPackage.UOP_POS_INT2J_MA_POS_ASSERT_R8: {
+			uOPPosInt2jMAPosAssert_r8 uOPPosInt2jMAPosAssert_r8 = (uOPPosInt2jMAPosAssert_r8) theEObject;
+			T result = caseuOPPosInt2jMAPosAssert_r8(uOPPosInt2jMAPosAssert_r8);
+			if (result == null)
+				result = caseOperationalRule(uOPPosInt2jMAPosAssert_r8);
+			if (result == null)
+				result = caseOperationalMapping(uOPPosInt2jMAPosAssert_r8);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case GeneratedPackage.UCLASS2J_CLASS_HELPER_R2: {
+			uClass2jClass_Helper_r2 uClass2jClass_Helper_r2 = (uClass2jClass_Helper_r2) theEObject;
+			T result = caseuClass2jClass_Helper_r2(uClass2jClass_Helper_r2);
+			if (result == null)
+				result = caseOperationalRule(uClass2jClass_Helper_r2);
+			if (result == null)
+				result = caseOperationalMapping(uClass2jClass_Helper_r2);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -252,13 +318,13 @@ public class GeneratedSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case GeneratedPackage.UOP_POS_INT2J_MA_POS_ASSERT_R8: {
-			uOPPosInt2jMAPosAssert_r8 uOPPosInt2jMAPosAssert_r8 = (uOPPosInt2jMAPosAssert_r8) theEObject;
-			T result = caseuOPPosInt2jMAPosAssert_r8(uOPPosInt2jMAPosAssert_r8);
+		case GeneratedPackage.UOP_POS2J_MA_POS_R6: {
+			uOPPos2jMAPos_r6 uOPPos2jMAPos_r6 = (uOPPos2jMAPos_r6) theEObject;
+			T result = caseuOPPos2jMAPos_r6(uOPPos2jMAPos_r6);
 			if (result == null)
-				result = caseOperationalRule(uOPPosInt2jMAPosAssert_r8);
+				result = caseOperationalRule(uOPPos2jMAPos_r6);
 			if (result == null)
-				result = caseOperationalMapping(uOPPosInt2jMAPosAssert_r8);
+				result = caseOperationalMapping(uOPPos2jMAPos_r6);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -295,6 +361,51 @@ public class GeneratedSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseumlContract2javaAxiom(umlContract2javaAxiom object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>uOP Pre Int2j MA Pre Assert</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>uOP Pre Int2j MA Pre Assert</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseuOPPreInt2jMAPreAssert(uOPPreInt2jMAPreAssert object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>uOperation2j Method Helper</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>uOperation2j Method Helper</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseuOperation2jMethod_Helper(uOperation2jMethod_Helper object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>uC Inv2j CInv</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>uC Inv2j CInv</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseuCInv2jCInv(uCInv2jCInv object) {
 		return null;
 	}
 
@@ -344,21 +455,6 @@ public class GeneratedSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>uOP Pre Int2j MA Pre Assert</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>uOP Pre Int2j MA Pre Assert</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseuOPPreInt2jMAPreAssert(uOPPreInt2jMAPreAssert object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>uOP Pos Int2j MA Pos Assert</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -374,17 +470,32 @@ public class GeneratedSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>uOperation2j Method Helper</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>uProperty2j Field Helper</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>uOperation2j Method Helper</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>uProperty2j Field Helper</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseuOperation2jMethod_Helper(uOperation2jMethod_Helper object) {
+	public T caseuProperty2jField_Helper(uProperty2jField_Helper object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>uC Inv Int2j CInv Assert</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>uC Inv Int2j CInv Assert</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseuCInvInt2jCInvAssert(uCInvInt2jCInvAssert object) {
 		return null;
 	}
 
@@ -419,17 +530,17 @@ public class GeneratedSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>uClass2j Class Helper r2</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>uO Paramenter2j MArgument r4</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>uClass2j Class Helper r2</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>uO Paramenter2j MArgument r4</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseuClass2jClass_Helper_r2(uClass2jClass_Helper_r2 object) {
+	public T caseuOParamenter2jMArgument_r4(uOParamenter2jMArgument_r4 object) {
 		return null;
 	}
 
@@ -449,32 +560,77 @@ public class GeneratedSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>uO Paramenter2j MArgument r4</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>uC Inv2j CInv r9</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>uO Paramenter2j MArgument r4</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>uC Inv2j CInv r9</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseuOParamenter2jMArgument_r4(uOParamenter2jMArgument_r4 object) {
+	public T caseuCInv2jCInv_r9(uCInv2jCInv_r9 object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>uOP Pos2j MA Pos r6</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>uC Inv Int2j CInv Assert r10</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>uOP Pos2j MA Pos r6</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>uC Inv Int2j CInv Assert r10</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseuOPPos2jMAPos_r6(uOPPos2jMAPos_r6 object) {
+	public T caseuCInvInt2jCInvAssert_r10(uCInvInt2jCInvAssert_r10 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>uProperty2j Field Helper r11</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>uProperty2j Field Helper r11</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseuProperty2jField_Helper_r11(uProperty2jField_Helper_r11 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>uOP Pos Int2j MA Pos Assert r8</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>uOP Pos Int2j MA Pos Assert r8</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseuOPPosInt2jMAPosAssert_r8(uOPPosInt2jMAPosAssert_r8 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>uClass2j Class Helper r2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>uClass2j Class Helper r2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseuClass2jClass_Helper_r2(uClass2jClass_Helper_r2 object) {
 		return null;
 	}
 
@@ -509,17 +665,17 @@ public class GeneratedSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>uOP Pos Int2j MA Pos Assert r8</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>uOP Pos2j MA Pos r6</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>uOP Pos Int2j MA Pos Assert r8</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>uOP Pos2j MA Pos r6</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseuOPPosInt2jMAPosAssert_r8(uOPPosInt2jMAPosAssert_r8 object) {
+	public T caseuOPPos2jMAPos_r6(uOPPos2jMAPos_r6 object) {
 		return null;
 	}
 
