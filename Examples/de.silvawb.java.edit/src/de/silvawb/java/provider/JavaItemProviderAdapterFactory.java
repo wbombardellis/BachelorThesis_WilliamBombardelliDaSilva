@@ -279,6 +279,75 @@ public class JavaItemProviderAdapterFactory extends JavaAdapterFactory implement
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link de.silvawb.java.Statement} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected StatementItemProvider statementItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link de.silvawb.java.Statement}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createStatementAdapter() {
+		if (statementItemProvider == null) {
+			statementItemProvider = new StatementItemProvider(this);
+		}
+
+		return statementItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link de.silvawb.java.AssertStatement} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected AssertStatementItemProvider assertStatementItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link de.silvawb.java.AssertStatement}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createAssertStatementAdapter() {
+		if (assertStatementItemProvider == null) {
+			assertStatementItemProvider = new AssertStatementItemProvider(this);
+		}
+
+		return assertStatementItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link de.silvawb.java.GETExpression} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected GETExpressionItemProvider getExpressionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link de.silvawb.java.GETExpression}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createGETExpressionAdapter() {
+		if (getExpressionItemProvider == null) {
+			getExpressionItemProvider = new GETExpressionItemProvider(this);
+		}
+
+		return getExpressionItemProvider;
+	}
+
+	/**
 	 * This keeps track of the one adapter used for all {@link de.silvawb.java.Argument} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -593,6 +662,9 @@ public class JavaItemProviderAdapterFactory extends JavaAdapterFactory implement
 		if (importItemProvider != null) importItemProvider.dispose();
 		if (containedItemProvider != null) containedItemProvider.dispose();
 		if (methodItemProvider != null) methodItemProvider.dispose();
+		if (statementItemProvider != null) statementItemProvider.dispose();
+		if (assertStatementItemProvider != null) assertStatementItemProvider.dispose();
+		if (getExpressionItemProvider != null) getExpressionItemProvider.dispose();
 		if (argumentItemProvider != null) argumentItemProvider.dispose();
 		if (containerItemProvider != null) containerItemProvider.dispose();
 		if (interfaceItemProvider != null) interfaceItemProvider.dispose();

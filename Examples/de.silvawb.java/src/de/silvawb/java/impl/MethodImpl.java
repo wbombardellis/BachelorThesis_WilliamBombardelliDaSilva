@@ -9,6 +9,7 @@ import de.silvawb.java.Classifier;
 import de.silvawb.java.JavaPackage;
 import de.silvawb.java.Method;
 
+import de.silvawb.java.Statement;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -40,9 +41,9 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link de.silvawb.java.impl.MethodImpl#getContainingClassifier <em>Containing Classifier</em>}</li>
  *   <li>{@link de.silvawb.java.impl.MethodImpl#isIsFinal <em>Is Final</em>}</li>
  *   <li>{@link de.silvawb.java.impl.MethodImpl#isIsStatic <em>Is Static</em>}</li>
- *   <li>{@link de.silvawb.java.impl.MethodImpl#getBody <em>Body</em>}</li>
  *   <li>{@link de.silvawb.java.impl.MethodImpl#getConcurrency <em>Concurrency</em>}</li>
  *   <li>{@link de.silvawb.java.impl.MethodImpl#getRaisedExceptions <em>Raised Exceptions</em>}</li>
+ *   <li>{@link de.silvawb.java.impl.MethodImpl#getBody <em>Body</em>}</li>
  * </ul>
  *
  * @generated
@@ -139,26 +140,6 @@ public class MethodImpl extends ContainedImpl implements Method {
 	protected boolean isStatic = IS_STATIC_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getBody() <em>Body</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getBody()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String BODY_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getBody() <em>Body</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getBody()
-	 * @generated
-	 * @ordered
-	 */
-	protected String body = BODY_EDEFAULT;
-
-	/**
 	 * The default value of the '{@link #getConcurrency() <em>Concurrency</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -187,6 +168,16 @@ public class MethodImpl extends ContainedImpl implements Method {
 	 * @ordered
 	 */
 	protected EList<Classifier> raisedExceptions;
+
+	/**
+	 * The cached value of the '{@link #getBody() <em>Body</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBody()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Statement> body;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -378,20 +369,11 @@ public class MethodImpl extends ContainedImpl implements Method {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getBody() {
+	public EList<Statement> getBody() {
+		if (body == null) {
+			body = new EObjectContainmentWithInverseEList<Statement>(Statement.class, this, JavaPackage.METHOD__BODY, JavaPackage.STATEMENT__METHOD);
+		}
 		return body;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setBody(String newBody) {
-		String oldBody = body;
-		body = newBody;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, JavaPackage.METHOD__BODY, oldBody, body));
 	}
 
 	/**
@@ -444,6 +426,8 @@ public class MethodImpl extends ContainedImpl implements Method {
 				if (eInternalContainer() != null)
 					msgs = eBasicRemoveFromContainer(msgs);
 				return basicSetContainingClassifier((Classifier)otherEnd, msgs);
+			case JavaPackage.METHOD__BODY:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getBody()).basicAdd(otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
@@ -462,6 +446,8 @@ public class MethodImpl extends ContainedImpl implements Method {
 				return ((InternalEList<?>)getArguments()).basicRemove(otherEnd, msgs);
 			case JavaPackage.METHOD__CONTAINING_CLASSIFIER:
 				return basicSetContainingClassifier(null, msgs);
+			case JavaPackage.METHOD__BODY:
+				return ((InternalEList<?>)getBody()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -503,12 +489,12 @@ public class MethodImpl extends ContainedImpl implements Method {
 				return isIsFinal();
 			case JavaPackage.METHOD__IS_STATIC:
 				return isIsStatic();
-			case JavaPackage.METHOD__BODY:
-				return getBody();
 			case JavaPackage.METHOD__CONCURRENCY:
 				return getConcurrency();
 			case JavaPackage.METHOD__RAISED_EXCEPTIONS:
 				return getRaisedExceptions();
+			case JavaPackage.METHOD__BODY:
+				return getBody();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -545,15 +531,16 @@ public class MethodImpl extends ContainedImpl implements Method {
 			case JavaPackage.METHOD__IS_STATIC:
 				setIsStatic((Boolean)newValue);
 				return;
-			case JavaPackage.METHOD__BODY:
-				setBody((String)newValue);
-				return;
 			case JavaPackage.METHOD__CONCURRENCY:
 				setConcurrency((String)newValue);
 				return;
 			case JavaPackage.METHOD__RAISED_EXCEPTIONS:
 				getRaisedExceptions().clear();
 				getRaisedExceptions().addAll((Collection<? extends Classifier>)newValue);
+				return;
+			case JavaPackage.METHOD__BODY:
+				getBody().clear();
+				getBody().addAll((Collection<? extends Statement>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -588,14 +575,14 @@ public class MethodImpl extends ContainedImpl implements Method {
 			case JavaPackage.METHOD__IS_STATIC:
 				setIsStatic(IS_STATIC_EDEFAULT);
 				return;
-			case JavaPackage.METHOD__BODY:
-				setBody(BODY_EDEFAULT);
-				return;
 			case JavaPackage.METHOD__CONCURRENCY:
 				setConcurrency(CONCURRENCY_EDEFAULT);
 				return;
 			case JavaPackage.METHOD__RAISED_EXCEPTIONS:
 				getRaisedExceptions().clear();
+				return;
+			case JavaPackage.METHOD__BODY:
+				getBody().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -623,12 +610,12 @@ public class MethodImpl extends ContainedImpl implements Method {
 				return isFinal != IS_FINAL_EDEFAULT;
 			case JavaPackage.METHOD__IS_STATIC:
 				return isStatic != IS_STATIC_EDEFAULT;
-			case JavaPackage.METHOD__BODY:
-				return BODY_EDEFAULT == null ? body != null : !BODY_EDEFAULT.equals(body);
 			case JavaPackage.METHOD__CONCURRENCY:
 				return CONCURRENCY_EDEFAULT == null ? concurrency != null : !CONCURRENCY_EDEFAULT.equals(concurrency);
 			case JavaPackage.METHOD__RAISED_EXCEPTIONS:
 				return raisedExceptions != null && !raisedExceptions.isEmpty();
+			case JavaPackage.METHOD__BODY:
+				return body != null && !body.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
@@ -681,8 +668,6 @@ public class MethodImpl extends ContainedImpl implements Method {
 		result.append(isFinal);
 		result.append(", isStatic: ");
 		result.append(isStatic);
-		result.append(", body: ");
-		result.append(body);
 		result.append(", concurrency: ");
 		result.append(concurrency);
 		result.append(')');

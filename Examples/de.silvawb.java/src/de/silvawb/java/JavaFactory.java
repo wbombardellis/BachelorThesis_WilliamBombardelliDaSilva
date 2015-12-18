@@ -103,6 +103,33 @@ public interface JavaFactory extends EFactory {
 	Method createMethod();
 
 	/**
+	 * Returns a new object of class '<em>Statement</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Statement</em>'.
+	 * @generated
+	 */
+	Statement createStatement();
+
+	/**
+	 * Returns a new object of class '<em>Assert Statement</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Assert Statement</em>'.
+	 * @generated
+	 */
+	AssertStatement createAssertStatement();
+
+	/**
+	 * Returns a new object of class '<em>GET Expression</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>GET Expression</em>'.
+	 * @generated
+	 */
+	GETExpression createGETExpression();
+
+	/**
 	 * Returns a new object of class '<em>Argument</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

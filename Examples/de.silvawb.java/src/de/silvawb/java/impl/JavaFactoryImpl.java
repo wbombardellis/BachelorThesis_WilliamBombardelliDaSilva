@@ -8,8 +8,10 @@ import de.silvawb.java.AnnotationInstance;
 import de.silvawb.java.AnnotationInstanceParameter;
 import de.silvawb.java.AnnotationInstanceValue;
 import de.silvawb.java.Argument;
+import de.silvawb.java.AssertStatement;
 import de.silvawb.java.Contained;
 import de.silvawb.java.Field;
+import de.silvawb.java.GETExpression;
 import de.silvawb.java.Generalization;
 import de.silvawb.java.GenericBinding;
 import de.silvawb.java.Import;
@@ -19,6 +21,7 @@ import de.silvawb.java.JavaFactory;
 import de.silvawb.java.JavaPackage;
 
 import de.silvawb.java.Method;
+import de.silvawb.java.Statement;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
@@ -80,6 +83,9 @@ public class JavaFactoryImpl extends EFactoryImpl implements JavaFactory {
 			case JavaPackage.IMPORT: return createImport();
 			case JavaPackage.CONTAINED: return createContained();
 			case JavaPackage.METHOD: return createMethod();
+			case JavaPackage.STATEMENT: return createStatement();
+			case JavaPackage.ASSERT_STATEMENT: return createAssertStatement();
+			case JavaPackage.GET_EXPRESSION: return createGETExpression();
 			case JavaPackage.ARGUMENT: return createArgument();
 			case JavaPackage.CONTAINER: return createContainer();
 			case JavaPackage.INTERFACE: return createInterface();
@@ -182,6 +188,36 @@ public class JavaFactoryImpl extends EFactoryImpl implements JavaFactory {
 	public Method createMethod() {
 		MethodImpl method = new MethodImpl();
 		return method;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Statement createStatement() {
+		StatementImpl statement = new StatementImpl();
+		return statement;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AssertStatement createAssertStatement() {
+		AssertStatementImpl assertStatement = new AssertStatementImpl();
+		return assertStatement;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public GETExpression createGETExpression() {
+		GETExpressionImpl getExpression = new GETExpressionImpl();
+		return getExpression;
 	}
 
 	/**

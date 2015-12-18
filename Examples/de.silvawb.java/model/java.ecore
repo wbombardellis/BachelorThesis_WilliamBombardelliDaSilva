@@ -84,17 +84,35 @@
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="isStatic" ordered="false"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="body" ordered="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="concurrency" ordered="false"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" defaultValueLiteral=""/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="raisedExceptions" ordered="false"
         upperBound="-1" eType="#//Classifier"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="body" upperBound="-1" eType="#//Statement"
+        containment="true" eOpposite="#//Statement/method"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Statement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="method" ordered="false"
+        eType="#//Method" eOpposite="#//Method/body"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AssertStatement" eSuperTypes="#//Statement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="assertion" ordered="false"
+        eType="#//GETExpression" containment="true" eOpposite="#//GETExpression/containerStatement"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GETExpression">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="rightSide" ordered="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="containerStatement" ordered="false"
+        eType="#//AssertStatement" eOpposite="#//AssertStatement/assertion"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="leftSide" ordered="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Argument">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="#//Classifier"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="usingMethod" ordered="false"
         eType="#//Method" eOpposite="#//Method/arguments"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="order" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Container">
     <eStructuralFeatures xsi:type="ecore:EReference" name="containedElements" ordered="false"
@@ -134,5 +152,7 @@
         eType="#//AnnotationInstanceParameter" eOpposite="#//AnnotationInstanceParameter/values"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" ordered="false"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        iD="true"/>
   </eClassifiers>
 </ecore:EPackage>

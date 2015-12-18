@@ -8,9 +8,11 @@ import de.silvawb.java.AnnotationInstance;
 import de.silvawb.java.AnnotationInstanceParameter;
 import de.silvawb.java.AnnotationInstanceValue;
 import de.silvawb.java.Argument;
+import de.silvawb.java.AssertStatement;
 import de.silvawb.java.Classifier;
 import de.silvawb.java.Contained;
 import de.silvawb.java.Field;
+import de.silvawb.java.GETExpression;
 import de.silvawb.java.Generalization;
 import de.silvawb.java.GenericBinding;
 import de.silvawb.java.Import;
@@ -20,6 +22,7 @@ import de.silvawb.java.JavaFactory;
 import de.silvawb.java.JavaPackage;
 
 import de.silvawb.java.Method;
+import de.silvawb.java.Statement;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -98,6 +101,27 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * @generated
 	 */
 	private EClass methodEClass = null;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass statementEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass assertStatementEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass getExpressionEClass = null;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -650,8 +674,80 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMethod_Body() {
-		return (EAttribute)methodEClass.getEStructuralFeatures().get(6);
+	public EReference getMethod_Body() {
+		return (EReference)methodEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getStatement() {
+		return statementEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getStatement_Method() {
+		return (EReference)statementEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAssertStatement() {
+		return assertStatementEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAssertStatement_Assertion() {
+		return (EReference)assertStatementEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getGETExpression() {
+		return getExpressionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getGETExpression_RightSide() {
+		return (EAttribute)getExpressionEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getGETExpression_ContainerStatement() {
+		return (EReference)getExpressionEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getGETExpression_LeftSide() {
+		return (EAttribute)getExpressionEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -660,7 +756,7 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * @generated
 	 */
 	public EAttribute getMethod_Concurrency() {
-		return (EAttribute)methodEClass.getEStructuralFeatures().get(7);
+		return (EAttribute)methodEClass.getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -669,7 +765,7 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * @generated
 	 */
 	public EReference getMethod_RaisedExceptions() {
-		return (EReference)methodEClass.getEStructuralFeatures().get(8);
+		return (EReference)methodEClass.getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -706,6 +802,15 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 */
 	public EReference getArgument_UsingMethod() {
 		return (EReference)argumentEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getArgument_Order() {
+		return (EAttribute)argumentEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -911,6 +1016,15 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getAnnotationInstanceValue_Id() {
+		return (EAttribute)annotationInstanceValueEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public JavaFactory getJavaFactory() {
 		return (JavaFactory)getEFactoryInstance();
 	}
@@ -990,14 +1104,26 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 		createEReference(methodEClass, METHOD__CONTAINING_CLASSIFIER);
 		createEAttribute(methodEClass, METHOD__IS_FINAL);
 		createEAttribute(methodEClass, METHOD__IS_STATIC);
-		createEAttribute(methodEClass, METHOD__BODY);
 		createEAttribute(methodEClass, METHOD__CONCURRENCY);
 		createEReference(methodEClass, METHOD__RAISED_EXCEPTIONS);
+		createEReference(methodEClass, METHOD__BODY);
+
+		statementEClass = createEClass(STATEMENT);
+		createEReference(statementEClass, STATEMENT__METHOD);
+
+		assertStatementEClass = createEClass(ASSERT_STATEMENT);
+		createEReference(assertStatementEClass, ASSERT_STATEMENT__ASSERTION);
+
+		getExpressionEClass = createEClass(GET_EXPRESSION);
+		createEAttribute(getExpressionEClass, GET_EXPRESSION__RIGHT_SIDE);
+		createEReference(getExpressionEClass, GET_EXPRESSION__CONTAINER_STATEMENT);
+		createEAttribute(getExpressionEClass, GET_EXPRESSION__LEFT_SIDE);
 
 		argumentEClass = createEClass(ARGUMENT);
 		createEAttribute(argumentEClass, ARGUMENT__NAME);
 		createEReference(argumentEClass, ARGUMENT__TYPE);
 		createEReference(argumentEClass, ARGUMENT__USING_METHOD);
+		createEAttribute(argumentEClass, ARGUMENT__ORDER);
 
 		containerEClass = createEClass(CONTAINER);
 		createEReference(containerEClass, CONTAINER__CONTAINED_ELEMENTS);
@@ -1028,6 +1154,7 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 		annotationInstanceValueEClass = createEClass(ANNOTATION_INSTANCE_VALUE);
 		createEReference(annotationInstanceValueEClass, ANNOTATION_INSTANCE_VALUE__PARAMETER);
 		createEAttribute(annotationInstanceValueEClass, ANNOTATION_INSTANCE_VALUE__VALUE);
+		createEAttribute(annotationInstanceValueEClass, ANNOTATION_INSTANCE_VALUE__ID);
 	}
 
 	/**
@@ -1067,6 +1194,7 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 		fieldEClass.getESuperTypes().add(this.getAnnotable());
 		methodEClass.getESuperTypes().add(this.getContained());
 		methodEClass.getESuperTypes().add(this.getAnnotable());
+		assertStatementEClass.getESuperTypes().add(this.getStatement());
 		interfaceEClass.getESuperTypes().add(this.getClassifier());
 		interfaceEClass.getESuperTypes().add(this.getContained());
 		interfaceEClass.getESuperTypes().add(this.getContainer());
@@ -1129,14 +1257,26 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 		initEReference(getMethod_ContainingClassifier(), this.getClassifier(), this.getClassifier_Methods(), "containingClassifier", null, 0, 1, Method.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getMethod_IsFinal(), ecorePackage.getEBoolean(), "isFinal", null, 0, 1, Method.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getMethod_IsStatic(), ecorePackage.getEBoolean(), "isStatic", null, 0, 1, Method.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getMethod_Body(), ecorePackage.getEString(), "body", null, 0, 1, Method.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getMethod_Concurrency(), ecorePackage.getEString(), "concurrency", "", 0, 1, Method.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getMethod_RaisedExceptions(), this.getClassifier(), null, "raisedExceptions", null, 0, -1, Method.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getMethod_Body(), this.getStatement(), this.getStatement_Method(), "body", null, 0, -1, Method.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(statementEClass, Statement.class, "Statement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getStatement_Method(), this.getMethod(), this.getMethod_Body(), "method", null, 0, 1, Statement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(assertStatementEClass, AssertStatement.class, "AssertStatement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getAssertStatement_Assertion(), this.getGETExpression(), this.getGETExpression_ContainerStatement(), "assertion", null, 0, 1, AssertStatement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(getExpressionEClass, GETExpression.class, "GETExpression", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getGETExpression_RightSide(), ecorePackage.getEString(), "rightSide", null, 0, 1, GETExpression.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getGETExpression_ContainerStatement(), this.getAssertStatement(), this.getAssertStatement_Assertion(), "containerStatement", null, 0, 1, GETExpression.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getGETExpression_LeftSide(), ecorePackage.getEString(), "leftSide", null, 0, 1, GETExpression.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(argumentEClass, Argument.class, "Argument", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getArgument_Name(), ecorePackage.getEString(), "name", null, 0, 1, Argument.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getArgument_Type(), this.getClassifier(), null, "type", null, 0, 1, Argument.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getArgument_UsingMethod(), this.getMethod(), this.getMethod_Arguments(), "usingMethod", null, 0, 1, Argument.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getArgument_Order(), ecorePackage.getEInt(), "order", null, 0, 1, Argument.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(containerEClass, de.silvawb.java.Container.class, "Container", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getContainer_ContainedElements(), this.getContained(), this.getContained_Container(), "containedElements", null, 0, -1, de.silvawb.java.Container.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -1167,6 +1307,7 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 		initEClass(annotationInstanceValueEClass, AnnotationInstanceValue.class, "AnnotationInstanceValue", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getAnnotationInstanceValue_Parameter(), this.getAnnotationInstanceParameter(), this.getAnnotationInstanceParameter_Values(), "parameter", null, 0, 1, AnnotationInstanceValue.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getAnnotationInstanceValue_Value(), ecorePackage.getEString(), "value", null, 0, 1, AnnotationInstanceValue.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getAnnotationInstanceValue_Id(), ecorePackage.getEInt(), "id", null, 0, 1, AnnotationInstanceValue.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

@@ -28,6 +28,7 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
  *   <li>{@link de.silvawb.java.impl.ArgumentImpl#getName <em>Name</em>}</li>
  *   <li>{@link de.silvawb.java.impl.ArgumentImpl#getType <em>Type</em>}</li>
  *   <li>{@link de.silvawb.java.impl.ArgumentImpl#getUsingMethod <em>Using Method</em>}</li>
+ *   <li>{@link de.silvawb.java.impl.ArgumentImpl#getOrder <em>Order</em>}</li>
  * </ul>
  *
  * @generated
@@ -62,6 +63,26 @@ public class ArgumentImpl extends MinimalEObjectImpl.Container implements Argume
 	 * @ordered
 	 */
 	protected Classifier type;
+
+	/**
+	 * The default value of the '{@link #getOrder() <em>Order</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getOrder()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int ORDER_EDEFAULT = 0;
+
+	/**
+	 * The cached value of the '{@link #getOrder() <em>Order</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getOrder()
+	 * @generated
+	 * @ordered
+	 */
+	protected int order = ORDER_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -187,6 +208,27 @@ public class ArgumentImpl extends MinimalEObjectImpl.Container implements Argume
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public int getOrder() {
+		return order;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setOrder(int newOrder) {
+		int oldOrder = order;
+		order = newOrder;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, JavaPackage.ARGUMENT__ORDER, oldOrder, order));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
@@ -242,6 +284,8 @@ public class ArgumentImpl extends MinimalEObjectImpl.Container implements Argume
 				return basicGetType();
 			case JavaPackage.ARGUMENT__USING_METHOD:
 				return getUsingMethod();
+			case JavaPackage.ARGUMENT__ORDER:
+				return getOrder();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -264,6 +308,9 @@ public class ArgumentImpl extends MinimalEObjectImpl.Container implements Argume
 			case JavaPackage.ARGUMENT__USING_METHOD:
 				setUsingMethod((Method)newValue);
 				return;
+			case JavaPackage.ARGUMENT__ORDER:
+				setOrder((Integer)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -285,6 +332,9 @@ public class ArgumentImpl extends MinimalEObjectImpl.Container implements Argume
 			case JavaPackage.ARGUMENT__USING_METHOD:
 				setUsingMethod((Method)null);
 				return;
+			case JavaPackage.ARGUMENT__ORDER:
+				setOrder(ORDER_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -303,6 +353,8 @@ public class ArgumentImpl extends MinimalEObjectImpl.Container implements Argume
 				return type != null;
 			case JavaPackage.ARGUMENT__USING_METHOD:
 				return getUsingMethod() != null;
+			case JavaPackage.ARGUMENT__ORDER:
+				return order != ORDER_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -319,6 +371,8 @@ public class ArgumentImpl extends MinimalEObjectImpl.Container implements Argume
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (name: ");
 		result.append(name);
+		result.append(", order: ");
+		result.append(order);
 		result.append(')');
 		return result.toString();
 	}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ASCII"?>
+<de.silvawb.java:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:de.silvawb.java="http://tu-berlin.de/silvawb/java">
+  <packages name="de.silvawb.utils">
+    <containedElements xsi:type="de.silvawb.java:Annotation" name="Inv"/>
+    <containedElements xsi:type="de.silvawb.java:Annotation" name="Pos"/>
+    <containedElements xsi:type="de.silvawb.java:Annotation" name="Pre"/>
+  </packages>
+  <packages>
+    <containedElements xsi:type="de.silvawb.java:Class">
+      <methods name="checkRep"/>
+    </containedElements>
+  </packages>
+  <packages>
+    <containedElements xsi:type="de.silvawb.java:Class">
+      <methods name="checkRep"/>
+      <methods name="op01CheckPosConstraint">
+        <arguments name="arg01" type="//@packages.1/@containedElements.0"/>
+        <body xsi:type="de.silvawb.java:AssertStatement">
+          <assertion rightSide="1" leftSide="arg01"/>
+        </body>
+      </methods>
+      <methods name="op01CheckPreConstraint">
+        <arguments name="arg01" type="//@packages.1/@containedElements.0"/>
+      </methods>
+      <methods name="op01ChechInvConstraint">
+        <arguments name="arg01" type="//@packages.1/@containedElements.0"/>
+      </methods>
+      <methods name="op01">
+        <annotationInstances annotation="//@packages.0/@containedElements.1">
+          <parameters>
+            <values value="arg01 >= "/>
+          </parameters>
+        </annotationInstances>
+        <arguments name="arg01" type="//@packages.1/@containedElements.0"/>
+      </methods>
+    </containedElements>
+  </packages>
+</de.silvawb.java:System>

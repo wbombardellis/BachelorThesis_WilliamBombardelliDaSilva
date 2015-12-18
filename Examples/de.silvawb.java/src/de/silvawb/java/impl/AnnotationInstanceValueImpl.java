@@ -27,6 +27,7 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
  * <ul>
  *   <li>{@link de.silvawb.java.impl.AnnotationInstanceValueImpl#getParameter <em>Parameter</em>}</li>
  *   <li>{@link de.silvawb.java.impl.AnnotationInstanceValueImpl#getValue <em>Value</em>}</li>
+ *   <li>{@link de.silvawb.java.impl.AnnotationInstanceValueImpl#getId <em>Id</em>}</li>
  * </ul>
  *
  * @generated
@@ -51,6 +52,26 @@ public class AnnotationInstanceValueImpl extends MinimalEObjectImpl.Container im
 	 * @ordered
 	 */
 	protected String value = VALUE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getId() <em>Id</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getId()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int ID_EDEFAULT = 0;
+
+	/**
+	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getId()
+	 * @generated
+	 * @ordered
+	 */
+	protected int id = ID_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -138,6 +159,27 @@ public class AnnotationInstanceValueImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public int getId() {
+		return id;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setId(int newId) {
+		int oldId = id;
+		id = newId;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, JavaPackage.ANNOTATION_INSTANCE_VALUE__ID, oldId, id));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -189,6 +231,8 @@ public class AnnotationInstanceValueImpl extends MinimalEObjectImpl.Container im
 				return getParameter();
 			case JavaPackage.ANNOTATION_INSTANCE_VALUE__VALUE:
 				return getValue();
+			case JavaPackage.ANNOTATION_INSTANCE_VALUE__ID:
+				return getId();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -206,6 +250,9 @@ public class AnnotationInstanceValueImpl extends MinimalEObjectImpl.Container im
 				return;
 			case JavaPackage.ANNOTATION_INSTANCE_VALUE__VALUE:
 				setValue((String)newValue);
+				return;
+			case JavaPackage.ANNOTATION_INSTANCE_VALUE__ID:
+				setId((Integer)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -225,6 +272,9 @@ public class AnnotationInstanceValueImpl extends MinimalEObjectImpl.Container im
 			case JavaPackage.ANNOTATION_INSTANCE_VALUE__VALUE:
 				setValue(VALUE_EDEFAULT);
 				return;
+			case JavaPackage.ANNOTATION_INSTANCE_VALUE__ID:
+				setId(ID_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -241,6 +291,8 @@ public class AnnotationInstanceValueImpl extends MinimalEObjectImpl.Container im
 				return getParameter() != null;
 			case JavaPackage.ANNOTATION_INSTANCE_VALUE__VALUE:
 				return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
+			case JavaPackage.ANNOTATION_INSTANCE_VALUE__ID:
+				return id != ID_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -257,6 +309,8 @@ public class AnnotationInstanceValueImpl extends MinimalEObjectImpl.Container im
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (value: ");
 		result.append(value);
+		result.append(", id: ");
+		result.append(id);
 		result.append(')');
 		return result.toString();
 	}

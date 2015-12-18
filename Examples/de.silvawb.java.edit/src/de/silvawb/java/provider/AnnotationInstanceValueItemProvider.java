@@ -61,6 +61,7 @@ public class AnnotationInstanceValueItemProvider
 			super.getPropertyDescriptors(object);
 
 			addValuePropertyDescriptor(object);
+			addIdPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -88,6 +89,28 @@ public class AnnotationInstanceValueItemProvider
 	}
 
 	/**
+	 * This adds a property descriptor for the Id feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addIdPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_AnnotationInstanceValue_id_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_AnnotationInstanceValue_id_feature", "_UI_AnnotationInstanceValue_type"),
+				 JavaPackage.Literals.ANNOTATION_INSTANCE_VALUE__ID,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
 	 * This returns AnnotationInstanceValue.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -106,10 +129,8 @@ public class AnnotationInstanceValueItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((AnnotationInstanceValue)object).getValue();
-		return label == null || label.length() == 0 ?
-			getString("_UI_AnnotationInstanceValue_type") :
-			getString("_UI_AnnotationInstanceValue_type") + " " + label;
+		AnnotationInstanceValue annotationInstanceValue = (AnnotationInstanceValue)object;
+		return getString("_UI_AnnotationInstanceValue_type") + " " + annotationInstanceValue.getId();
 	}
 	
 
@@ -126,6 +147,7 @@ public class AnnotationInstanceValueItemProvider
 
 		switch (notification.getFeatureID(AnnotationInstanceValue.class)) {
 			case JavaPackage.ANNOTATION_INSTANCE_VALUE__VALUE:
+			case JavaPackage.ANNOTATION_INSTANCE_VALUE__ID:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

@@ -111,7 +111,7 @@ public interface JavaPackage extends EPackage {
 	 * @see de.silvawb.java.impl.JavaPackageImpl#getContainer()
 	 * @generated
 	 */
-	int CONTAINER = 11;
+	int CONTAINER = 14;
 
 	/**
 	 * The feature id for the '<em><b>Contained Elements</b></em>' containment reference list.
@@ -924,22 +924,13 @@ public interface JavaPackage extends EPackage {
 	int METHOD__IS_STATIC = CONTAINED_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Body</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int METHOD__BODY = CONTAINED_FEATURE_COUNT + 7;
-
-	/**
 	 * The feature id for the '<em><b>Concurrency</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int METHOD__CONCURRENCY = CONTAINED_FEATURE_COUNT + 8;
+	int METHOD__CONCURRENCY = CONTAINED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Raised Exceptions</b></em>' reference list.
@@ -948,7 +939,16 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHOD__RAISED_EXCEPTIONS = CONTAINED_FEATURE_COUNT + 9;
+	int METHOD__RAISED_EXCEPTIONS = CONTAINED_FEATURE_COUNT + 8;
+
+	/**
+	 * The feature id for the '<em><b>Body</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int METHOD__BODY = CONTAINED_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Method</em>' class.
@@ -969,6 +969,144 @@ public interface JavaPackage extends EPackage {
 	int METHOD_OPERATION_COUNT = CONTAINED_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link de.silvawb.java.impl.StatementImpl <em>Statement</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.silvawb.java.impl.StatementImpl
+	 * @see de.silvawb.java.impl.JavaPackageImpl#getStatement()
+	 * @generated
+	 */
+	int STATEMENT = 10;
+
+	/**
+	 * The feature id for the '<em><b>Method</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STATEMENT__METHOD = 0;
+
+	/**
+	 * The number of structural features of the '<em>Statement</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STATEMENT_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Statement</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STATEMENT_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link de.silvawb.java.impl.AssertStatementImpl <em>Assert Statement</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.silvawb.java.impl.AssertStatementImpl
+	 * @see de.silvawb.java.impl.JavaPackageImpl#getAssertStatement()
+	 * @generated
+	 */
+	int ASSERT_STATEMENT = 11;
+
+	/**
+	 * The feature id for the '<em><b>Method</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSERT_STATEMENT__METHOD = STATEMENT__METHOD;
+
+	/**
+	 * The feature id for the '<em><b>Assertion</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSERT_STATEMENT__ASSERTION = STATEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Assert Statement</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSERT_STATEMENT_FEATURE_COUNT = STATEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Assert Statement</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSERT_STATEMENT_OPERATION_COUNT = STATEMENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link de.silvawb.java.impl.GETExpressionImpl <em>GET Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.silvawb.java.impl.GETExpressionImpl
+	 * @see de.silvawb.java.impl.JavaPackageImpl#getGETExpression()
+	 * @generated
+	 */
+	int GET_EXPRESSION = 12;
+
+	/**
+	 * The feature id for the '<em><b>Right Side</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GET_EXPRESSION__RIGHT_SIDE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Container Statement</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GET_EXPRESSION__CONTAINER_STATEMENT = 1;
+
+	/**
+	 * The feature id for the '<em><b>Left Side</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GET_EXPRESSION__LEFT_SIDE = 2;
+
+	/**
+	 * The number of structural features of the '<em>GET Expression</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GET_EXPRESSION_FEATURE_COUNT = 3;
+
+	/**
+	 * The number of operations of the '<em>GET Expression</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GET_EXPRESSION_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link de.silvawb.java.impl.ArgumentImpl <em>Argument</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -976,7 +1114,7 @@ public interface JavaPackage extends EPackage {
 	 * @see de.silvawb.java.impl.JavaPackageImpl#getArgument()
 	 * @generated
 	 */
-	int ARGUMENT = 10;
+	int ARGUMENT = 13;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1006,13 +1144,22 @@ public interface JavaPackage extends EPackage {
 	int ARGUMENT__USING_METHOD = 2;
 
 	/**
+	 * The feature id for the '<em><b>Order</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ARGUMENT__ORDER = 3;
+
+	/**
 	 * The number of structural features of the '<em>Argument</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ARGUMENT_FEATURE_COUNT = 3;
+	int ARGUMENT_FEATURE_COUNT = 4;
 
 	/**
 	 * The number of operations of the '<em>Argument</em>' class.
@@ -1032,7 +1179,7 @@ public interface JavaPackage extends EPackage {
 	 * @see de.silvawb.java.impl.JavaPackageImpl#getInterface()
 	 * @generated
 	 */
-	int INTERFACE = 12;
+	int INTERFACE = 15;
 
 	/**
 	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
@@ -1168,7 +1315,7 @@ public interface JavaPackage extends EPackage {
 	 * @see de.silvawb.java.impl.JavaPackageImpl#getGenericBinding()
 	 * @generated
 	 */
-	int GENERIC_BINDING = 13;
+	int GENERIC_BINDING = 16;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1232,7 +1379,7 @@ public interface JavaPackage extends EPackage {
 	 * @see de.silvawb.java.impl.JavaPackageImpl#getAnnotable()
 	 * @generated
 	 */
-	int ANNOTABLE = 14;
+	int ANNOTABLE = 17;
 
 	/**
 	 * The feature id for the '<em><b>Annotation Instances</b></em>' containment reference list.
@@ -1269,7 +1416,7 @@ public interface JavaPackage extends EPackage {
 	 * @see de.silvawb.java.impl.JavaPackageImpl#getAnnotation()
 	 * @generated
 	 */
-	int ANNOTATION = 15;
+	int ANNOTATION = 18;
 
 	/**
 	 * The feature id for the '<em><b>Visibility</b></em>' attribute.
@@ -1405,7 +1552,7 @@ public interface JavaPackage extends EPackage {
 	 * @see de.silvawb.java.impl.JavaPackageImpl#getAnnotationInstance()
 	 * @generated
 	 */
-	int ANNOTATION_INSTANCE = 16;
+	int ANNOTATION_INSTANCE = 19;
 
 	/**
 	 * The feature id for the '<em><b>Annotation</b></em>' reference.
@@ -1460,7 +1607,7 @@ public interface JavaPackage extends EPackage {
 	 * @see de.silvawb.java.impl.JavaPackageImpl#getAnnotationInstanceParameter()
 	 * @generated
 	 */
-	int ANNOTATION_INSTANCE_PARAMETER = 17;
+	int ANNOTATION_INSTANCE_PARAMETER = 20;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1515,7 +1662,7 @@ public interface JavaPackage extends EPackage {
 	 * @see de.silvawb.java.impl.JavaPackageImpl#getAnnotationInstanceValue()
 	 * @generated
 	 */
-	int ANNOTATION_INSTANCE_VALUE = 18;
+	int ANNOTATION_INSTANCE_VALUE = 21;
 
 	/**
 	 * The feature id for the '<em><b>Parameter</b></em>' container reference.
@@ -1536,13 +1683,22 @@ public interface JavaPackage extends EPackage {
 	int ANNOTATION_INSTANCE_VALUE__VALUE = 1;
 
 	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION_INSTANCE_VALUE__ID = 2;
+
+	/**
 	 * The number of structural features of the '<em>Annotation Instance Value</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ANNOTATION_INSTANCE_VALUE_FEATURE_COUNT = 2;
+	int ANNOTATION_INSTANCE_VALUE_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Annotation Instance Value</em>' class.
@@ -2061,15 +2217,100 @@ public interface JavaPackage extends EPackage {
 	EAttribute getMethod_IsStatic();
 
 	/**
-	 * Returns the meta object for the attribute '{@link de.silvawb.java.Method#getBody <em>Body</em>}'.
+	 * Returns the meta object for the containment reference list '{@link de.silvawb.java.Method#getBody <em>Body</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Body</em>'.
+	 * @return the meta object for the containment reference list '<em>Body</em>'.
 	 * @see de.silvawb.java.Method#getBody()
 	 * @see #getMethod()
 	 * @generated
 	 */
-	EAttribute getMethod_Body();
+	EReference getMethod_Body();
+
+	/**
+	 * Returns the meta object for class '{@link de.silvawb.java.Statement <em>Statement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Statement</em>'.
+	 * @see de.silvawb.java.Statement
+	 * @generated
+	 */
+	EClass getStatement();
+
+	/**
+	 * Returns the meta object for the container reference '{@link de.silvawb.java.Statement#getMethod <em>Method</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the container reference '<em>Method</em>'.
+	 * @see de.silvawb.java.Statement#getMethod()
+	 * @see #getStatement()
+	 * @generated
+	 */
+	EReference getStatement_Method();
+
+	/**
+	 * Returns the meta object for class '{@link de.silvawb.java.AssertStatement <em>Assert Statement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Assert Statement</em>'.
+	 * @see de.silvawb.java.AssertStatement
+	 * @generated
+	 */
+	EClass getAssertStatement();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link de.silvawb.java.AssertStatement#getAssertion <em>Assertion</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Assertion</em>'.
+	 * @see de.silvawb.java.AssertStatement#getAssertion()
+	 * @see #getAssertStatement()
+	 * @generated
+	 */
+	EReference getAssertStatement_Assertion();
+
+	/**
+	 * Returns the meta object for class '{@link de.silvawb.java.GETExpression <em>GET Expression</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>GET Expression</em>'.
+	 * @see de.silvawb.java.GETExpression
+	 * @generated
+	 */
+	EClass getGETExpression();
+
+	/**
+	 * Returns the meta object for the attribute '{@link de.silvawb.java.GETExpression#getRightSide <em>Right Side</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Right Side</em>'.
+	 * @see de.silvawb.java.GETExpression#getRightSide()
+	 * @see #getGETExpression()
+	 * @generated
+	 */
+	EAttribute getGETExpression_RightSide();
+
+	/**
+	 * Returns the meta object for the container reference '{@link de.silvawb.java.GETExpression#getContainerStatement <em>Container Statement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the container reference '<em>Container Statement</em>'.
+	 * @see de.silvawb.java.GETExpression#getContainerStatement()
+	 * @see #getGETExpression()
+	 * @generated
+	 */
+	EReference getGETExpression_ContainerStatement();
+
+	/**
+	 * Returns the meta object for the attribute '{@link de.silvawb.java.GETExpression#getLeftSide <em>Left Side</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Left Side</em>'.
+	 * @see de.silvawb.java.GETExpression#getLeftSide()
+	 * @see #getGETExpression()
+	 * @generated
+	 */
+	EAttribute getGETExpression_LeftSide();
 
 	/**
 	 * Returns the meta object for the attribute '{@link de.silvawb.java.Method#getConcurrency <em>Concurrency</em>}'.
@@ -2135,6 +2376,17 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getArgument_UsingMethod();
+
+	/**
+	 * Returns the meta object for the attribute '{@link de.silvawb.java.Argument#getOrder <em>Order</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Order</em>'.
+	 * @see de.silvawb.java.Argument#getOrder()
+	 * @see #getArgument()
+	 * @generated
+	 */
+	EAttribute getArgument_Order();
 
 	/**
 	 * Returns the meta object for class '{@link de.silvawb.java.Container <em>Container</em>}'.
@@ -2369,6 +2621,17 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getAnnotationInstanceValue_Value();
+
+	/**
+	 * Returns the meta object for the attribute '{@link de.silvawb.java.AnnotationInstanceValue#getId <em>Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Id</em>'.
+	 * @see de.silvawb.java.AnnotationInstanceValue#getId()
+	 * @see #getAnnotationInstanceValue()
+	 * @generated
+	 */
+	EAttribute getAnnotationInstanceValue_Id();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -2790,12 +3053,82 @@ public interface JavaPackage extends EPackage {
 		EAttribute METHOD__IS_STATIC = eINSTANCE.getMethod_IsStatic();
 
 		/**
-		 * The meta object literal for the '<em><b>Body</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Body</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute METHOD__BODY = eINSTANCE.getMethod_Body();
+		EReference METHOD__BODY = eINSTANCE.getMethod_Body();
+
+		/**
+		 * The meta object literal for the '{@link de.silvawb.java.impl.StatementImpl <em>Statement</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.silvawb.java.impl.StatementImpl
+		 * @see de.silvawb.java.impl.JavaPackageImpl#getStatement()
+		 * @generated
+		 */
+		EClass STATEMENT = eINSTANCE.getStatement();
+
+		/**
+		 * The meta object literal for the '<em><b>Method</b></em>' container reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STATEMENT__METHOD = eINSTANCE.getStatement_Method();
+
+		/**
+		 * The meta object literal for the '{@link de.silvawb.java.impl.AssertStatementImpl <em>Assert Statement</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.silvawb.java.impl.AssertStatementImpl
+		 * @see de.silvawb.java.impl.JavaPackageImpl#getAssertStatement()
+		 * @generated
+		 */
+		EClass ASSERT_STATEMENT = eINSTANCE.getAssertStatement();
+
+		/**
+		 * The meta object literal for the '<em><b>Assertion</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ASSERT_STATEMENT__ASSERTION = eINSTANCE.getAssertStatement_Assertion();
+
+		/**
+		 * The meta object literal for the '{@link de.silvawb.java.impl.GETExpressionImpl <em>GET Expression</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.silvawb.java.impl.GETExpressionImpl
+		 * @see de.silvawb.java.impl.JavaPackageImpl#getGETExpression()
+		 * @generated
+		 */
+		EClass GET_EXPRESSION = eINSTANCE.getGETExpression();
+
+		/**
+		 * The meta object literal for the '<em><b>Right Side</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GET_EXPRESSION__RIGHT_SIDE = eINSTANCE.getGETExpression_RightSide();
+
+		/**
+		 * The meta object literal for the '<em><b>Container Statement</b></em>' container reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GET_EXPRESSION__CONTAINER_STATEMENT = eINSTANCE.getGETExpression_ContainerStatement();
+
+		/**
+		 * The meta object literal for the '<em><b>Left Side</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GET_EXPRESSION__LEFT_SIDE = eINSTANCE.getGETExpression_LeftSide();
 
 		/**
 		 * The meta object literal for the '<em><b>Concurrency</b></em>' attribute feature.
@@ -2846,6 +3179,14 @@ public interface JavaPackage extends EPackage {
 		 * @generated
 		 */
 		EReference ARGUMENT__USING_METHOD = eINSTANCE.getArgument_UsingMethod();
+
+		/**
+		 * The meta object literal for the '<em><b>Order</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ARGUMENT__ORDER = eINSTANCE.getArgument_Order();
 
 		/**
 		 * The meta object literal for the '{@link de.silvawb.java.impl.ContainerImpl <em>Container</em>}' class.
@@ -3038,6 +3379,14 @@ public interface JavaPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute ANNOTATION_INSTANCE_VALUE__VALUE = eINSTANCE.getAnnotationInstanceValue_Value();
+
+		/**
+		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ANNOTATION_INSTANCE_VALUE__ID = eINSTANCE.getAnnotationInstanceValue_Id();
 
 	}
 

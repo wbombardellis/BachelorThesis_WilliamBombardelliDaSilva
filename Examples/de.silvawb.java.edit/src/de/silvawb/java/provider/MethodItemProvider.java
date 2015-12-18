@@ -51,7 +51,6 @@ public class MethodItemProvider extends ContainedItemProvider {
 			addReturnTypePropertyDescriptor(object);
 			addIsFinalPropertyDescriptor(object);
 			addIsStaticPropertyDescriptor(object);
-			addBodyPropertyDescriptor(object);
 			addConcurrencyPropertyDescriptor(object);
 			addRaisedExceptionsPropertyDescriptor(object);
 		}
@@ -147,28 +146,6 @@ public class MethodItemProvider extends ContainedItemProvider {
 	}
 
 	/**
-	 * This adds a property descriptor for the Body feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addBodyPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Method_body_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Method_body_feature", "_UI_Method_type"),
-				 JavaPackage.Literals.METHOD__BODY,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
 	 * This adds a property descriptor for the Concurrency feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -226,6 +203,7 @@ public class MethodItemProvider extends ContainedItemProvider {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(JavaPackage.Literals.ANNOTABLE__ANNOTATION_INSTANCES);
 			childrenFeatures.add(JavaPackage.Literals.METHOD__ARGUMENTS);
+			childrenFeatures.add(JavaPackage.Literals.METHOD__BODY);
 		}
 		return childrenFeatures;
 	}
@@ -284,12 +262,12 @@ public class MethodItemProvider extends ContainedItemProvider {
 			case JavaPackage.METHOD__NAME:
 			case JavaPackage.METHOD__IS_FINAL:
 			case JavaPackage.METHOD__IS_STATIC:
-			case JavaPackage.METHOD__BODY:
 			case JavaPackage.METHOD__CONCURRENCY:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 			case JavaPackage.METHOD__ANNOTATION_INSTANCES:
 			case JavaPackage.METHOD__ARGUMENTS:
+			case JavaPackage.METHOD__BODY:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -316,6 +294,16 @@ public class MethodItemProvider extends ContainedItemProvider {
 			(createChildParameter
 				(JavaPackage.Literals.METHOD__ARGUMENTS,
 				 JavaFactory.eINSTANCE.createArgument()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(JavaPackage.Literals.METHOD__BODY,
+				 JavaFactory.eINSTANCE.createStatement()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(JavaPackage.Literals.METHOD__BODY,
+				 JavaFactory.eINSTANCE.createAssertStatement()));
 	}
 
 }

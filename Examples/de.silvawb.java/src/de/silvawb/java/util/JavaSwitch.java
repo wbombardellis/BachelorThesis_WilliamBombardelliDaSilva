@@ -8,10 +8,12 @@ import de.silvawb.java.AnnotationInstance;
 import de.silvawb.java.AnnotationInstanceParameter;
 import de.silvawb.java.AnnotationInstanceValue;
 import de.silvawb.java.Argument;
+import de.silvawb.java.AssertStatement;
 import de.silvawb.java.Classifier;
 import de.silvawb.java.Contained;
 import de.silvawb.java.Container;
 import de.silvawb.java.Field;
+import de.silvawb.java.GETExpression;
 import de.silvawb.java.Generalization;
 import de.silvawb.java.GenericBinding;
 import de.silvawb.java.Import;
@@ -20,6 +22,7 @@ import de.silvawb.java.InterfaceImplementation;
 import de.silvawb.java.JavaPackage;
 
 import de.silvawb.java.Method;
+import de.silvawb.java.Statement;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 
@@ -151,6 +154,25 @@ public class JavaSwitch<T> extends Switch<T> {
 				T result = caseMethod(method);
 				if (result == null) result = caseContained(method);
 				if (result == null) result = caseAnnotable(method);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case JavaPackage.STATEMENT: {
+				Statement statement = (Statement)theEObject;
+				T result = caseStatement(statement);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case JavaPackage.ASSERT_STATEMENT: {
+				AssertStatement assertStatement = (AssertStatement)theEObject;
+				T result = caseAssertStatement(assertStatement);
+				if (result == null) result = caseStatement(assertStatement);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case JavaPackage.GET_EXPRESSION: {
+				GETExpression getExpression = (GETExpression)theEObject;
+				T result = caseGETExpression(getExpression);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -367,6 +389,51 @@ public class JavaSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseMethod(Method object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Statement</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Statement</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseStatement(Statement object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Assert Statement</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Assert Statement</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAssertStatement(AssertStatement object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>GET Expression</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>GET Expression</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGETExpression(GETExpression object) {
 		return null;
 	}
 

@@ -8,10 +8,12 @@ import de.silvawb.java.AnnotationInstance;
 import de.silvawb.java.AnnotationInstanceParameter;
 import de.silvawb.java.AnnotationInstanceValue;
 import de.silvawb.java.Argument;
+import de.silvawb.java.AssertStatement;
 import de.silvawb.java.Classifier;
 import de.silvawb.java.Contained;
 import de.silvawb.java.Container;
 import de.silvawb.java.Field;
+import de.silvawb.java.GETExpression;
 import de.silvawb.java.Generalization;
 import de.silvawb.java.GenericBinding;
 import de.silvawb.java.Import;
@@ -20,6 +22,7 @@ import de.silvawb.java.InterfaceImplementation;
 import de.silvawb.java.JavaPackage;
 
 import de.silvawb.java.Method;
+import de.silvawb.java.Statement;
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
 
@@ -122,6 +125,18 @@ public class JavaAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseMethod(Method object) {
 				return createMethodAdapter();
+			}
+			@Override
+			public Adapter caseStatement(Statement object) {
+				return createStatementAdapter();
+			}
+			@Override
+			public Adapter caseAssertStatement(AssertStatement object) {
+				return createAssertStatementAdapter();
+			}
+			@Override
+			public Adapter caseGETExpression(GETExpression object) {
+				return createGETExpressionAdapter();
 			}
 			@Override
 			public Adapter caseArgument(Argument object) {
@@ -316,6 +331,48 @@ public class JavaAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createMethodAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.java.Statement <em>Statement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.java.Statement
+	 * @generated
+	 */
+	public Adapter createStatementAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.java.AssertStatement <em>Assert Statement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.java.AssertStatement
+	 * @generated
+	 */
+	public Adapter createAssertStatementAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.java.GETExpression <em>GET Expression</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.java.GETExpression
+	 * @generated
+	 */
+	public Adapter createGETExpressionAdapter() {
 		return null;
 	}
 

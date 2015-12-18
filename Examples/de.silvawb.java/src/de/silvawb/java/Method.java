@@ -19,9 +19,9 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link de.silvawb.java.Method#getContainingClassifier <em>Containing Classifier</em>}</li>
  *   <li>{@link de.silvawb.java.Method#isIsFinal <em>Is Final</em>}</li>
  *   <li>{@link de.silvawb.java.Method#isIsStatic <em>Is Static</em>}</li>
- *   <li>{@link de.silvawb.java.Method#getBody <em>Body</em>}</li>
  *   <li>{@link de.silvawb.java.Method#getConcurrency <em>Concurrency</em>}</li>
  *   <li>{@link de.silvawb.java.Method#getRaisedExceptions <em>Raised Exceptions</em>}</li>
+ *   <li>{@link de.silvawb.java.Method#getBody <em>Body</em>}</li>
  * </ul>
  *
  * @see de.silvawb.java.JavaPackage#getMethod()
@@ -180,30 +180,22 @@ public interface Method extends Contained, Annotable {
 	void setIsStatic(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Body</b></em>' attribute.
+	 * Returns the value of the '<em><b>Body</b></em>' containment reference list.
+	 * The list contents are of type {@link de.silvawb.java.Statement}.
+	 * It is bidirectional and its opposite is '{@link de.silvawb.java.Statement#getMethod <em>Method</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Body</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Body</em>' attribute.
-	 * @see #setBody(String)
+	 * @return the value of the '<em>Body</em>' containment reference list.
 	 * @see de.silvawb.java.JavaPackage#getMethod_Body()
-	 * @model ordered="false"
+	 * @see de.silvawb.java.Statement#getMethod
+	 * @model opposite="method" containment="true"
 	 * @generated
 	 */
-	String getBody();
-
-	/**
-	 * Sets the value of the '{@link de.silvawb.java.Method#getBody <em>Body</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Body</em>' attribute.
-	 * @see #getBody()
-	 * @generated
-	 */
-	void setBody(String value);
+	EList<Statement> getBody();
 
 	/**
 	 * Returns the value of the '<em><b>Concurrency</b></em>' attribute.

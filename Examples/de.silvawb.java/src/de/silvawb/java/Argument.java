@@ -16,6 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link de.silvawb.java.Argument#getName <em>Name</em>}</li>
  *   <li>{@link de.silvawb.java.Argument#getType <em>Type</em>}</li>
  *   <li>{@link de.silvawb.java.Argument#getUsingMethod <em>Using Method</em>}</li>
+ *   <li>{@link de.silvawb.java.Argument#getOrder <em>Order</em>}</li>
  * </ul>
  *
  * @see de.silvawb.java.JavaPackage#getArgument()
@@ -102,5 +103,31 @@ public interface Argument extends EObject {
 	 * @generated
 	 */
 	void setUsingMethod(Method value);
+
+	/**
+	 * Returns the value of the '<em><b>Order</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Order</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Order</em>' attribute.
+	 * @see #setOrder(int)
+	 * @see de.silvawb.java.JavaPackage#getArgument_Order()
+	 * @model
+	 * @generated
+	 */
+	int getOrder();
+
+	/**
+	 * Sets the value of the '{@link de.silvawb.java.Argument#getOrder <em>Order</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Order</em>' attribute.
+	 * @see #getOrder()
+	 * @generated
+	 */
+	void setOrder(int value);
 
 } // Argument
