@@ -66,7 +66,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="importing" ordered="false"
         eType="#//Classifier" eOpposite="#//Classifier/imports"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Contained">
+  <eClassifiers xsi:type="ecore:EClass" name="Contained" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="visibility" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="container" ordered="false"
         eType="#//Container" eOpposite="#//Container/containedElements"/>
@@ -114,7 +114,7 @@
         eType="#//Method" eOpposite="#//Method/arguments"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="order" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Container">
+  <eClassifiers xsi:type="ecore:EClass" name="Container" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EReference" name="containedElements" ordered="false"
         upperBound="-1" eType="#//Contained" containment="true" eOpposite="#//Contained/container"/>
   </eClassifiers>
@@ -128,7 +128,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="usingClassifier" ordered="false"
         eType="#//Classifier" eOpposite="#//Classifier/genericBindings"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Annotable">
+  <eClassifiers xsi:type="ecore:EClass" name="Annotable" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EReference" name="annotationInstances" upperBound="-1"
         eType="#//AnnotationInstance" containment="true" eOpposite="#//AnnotationInstance/annotable"/>
   </eClassifiers>
