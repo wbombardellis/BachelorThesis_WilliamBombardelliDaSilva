@@ -176,13 +176,15 @@
 
 %TODO: Define the criteria for \emph: technical terms? Java? UML?...
 %TODO: Remove space in above figures
+%TODO: Standardize meta-model or metamodel
+%TODO: Define artifacts
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Chapter
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Introduction}
 The techniques for software development has changed in the course of time since the rise of general-purpose programmable computers and specially in the second half of the 20th century with the rise of digital computers \citep{ceruzzi2003history}. In the beginning of digital computer programming machine code was used to describe algorithms, but as complexity and size of such algorithms got bigger this technique soon became impracticable, what evoked the need for a more sophisticated way of programming these digital machines. The assembly languages (also known as low-level programming languages) came to solve this problem, but clearly the complexity kept increasing as well as the need for new techniques and technologies for software programming. The popularization of computing, and the increasing application of computers in the practice urged the creation of high-level programming languages (e.g. Cobol, Fortran), which kept evolving mainly in regard to the needs of the software market \citep{ceruzzi2003history}. More sophisticated languages (e.g. C, Pascal) and new paradigms (e.g. modular and object-oriented programming) also arose in the late 20th century. But the evolution of software development does not seem to stop, evidenced by the lately increasing research on new software engineering techniques such as the Model-driven Engineering.
 
-The newest characteristics of the information system market, like the constant evolution of the software systems, the interoperability between them and the big number of developers working in a common software artifact has required the use of software models; and the research on how to apply systematically and correctly such models in the development processes, what is called Model-driven Engineering or Model-driven Software Development \cite{france2007model}. This Bachelor thesis aims therefore to explore one specific realm of Model-driven Engineering research, namely the problem of synchronization of models (or artifacts) in the Java technological space. The goal here is to pick commonly used meta-models in Java systems, describe them and identify their relations, so that they can be synchronized.
+The newest characteristics of the information system market, like the constant evolution of the software systems, the interoperability between them and the big number of developers working in a common software artifact has required the use of software models; and the research on how to apply systematically and correctly such models in the development processes, what is called Model-driven Engineering (MDE) or Model-driven Software Development \cite{france2007model}. This Bachelor thesis aims therefore to explore one specific realm of Model-driven Engineering research, namely the problem of synchronization of models (or artifacts) in the Java technological space. The goal here is to pick commonly used meta-models in Java systems, describe them and identify their relations, so that they can be synchronized.
 
 %TODO: Remainder
 TALK ABOUT THE REMAINDER OF THE DOCUMENT.
@@ -200,14 +202,6 @@ The constant evolving nature of current large-scale software systems causes thei
 %---------------------------------------------
 % Section
 %---------------------------------------------
-\section{Objective}
-The goal of this bachelor thesis is first to choose software meta-models commonly used in current Java object oriented software systems, writing down the meta-model definitions; second to define the relations between the chosen meta-models; and last, to showcase how these artifacts can be synchronized in some representative cases. We work therefore with the hypothesis, that such meta-models can be found and defined; that some relations between them can be written in some language; and that some of these relation can be synchronized using a tool or technique available in the current literature.
-
-The end of this document shall present all the written definitions as well as the results of the synchronization of representative examples useful in the practice. Furthermore, the report of this thesis recording the difficulties and experiences found during the work process and an analysis and discussion of future development and challenges of the realm is also a legacy.
-
-%---------------------------------------------
-% Section
-%---------------------------------------------
 \section{Motivation}
 %TODO: us again
 The lack of a functional model synchronization tool integrating a broad range of meta-models used currently in Java software engineering is the main motivation for this thesis. Although an expressive effort has been made by the academic community to create solutions for the problem of model synchronization, no study known by us presents an effective tool, that could be used extensively in practice. We believe though, that the contribution of this thesis can be useful for the creation of such a tool.
@@ -219,59 +213,59 @@ It is worth to note also, that the contribution of this thesis might help enhanc
 %---------------------------------------------
 % Section
 %---------------------------------------------
+\section{Objective}
+In order to help filling this gap in knowledge, this bachelor thesis aims to present a set of meta-models commonly used in current Java object oriented software systems and the respective relations between them. The goal is then to contribute to current research, by providing such relations, that later could be further extended as a benchmark case or as the basis of a synchronization tool.
+
+%TODO: Synchronization?
+The end of this document shall present all the written definitions as well as the results of the synchronization of representative examples useful in the practice. Furthermore, the report of this thesis recording the difficulties and experiences found during the work process and an analysis and discussion of future development and challenges of the realm is also a legacy.
+
+
+%---------------------------------------------
+% Section
+%---------------------------------------------
 \section{Methodology}
-In order to achieve the goals the following procedure is taken. In the first moment a collection of common meta-models used in the Java technological space is to be defined, this is done through an state-of-art research, since that some meta-models have already been defined by other authors, plus the creation of our own versions of some meta-models, that are not available in the state-of-art. So for example, in this phase the choice of the applied meta-models (i.e. \emph{UML Class Diagram} and \emph{Java Code}) will be done and their definitions will be written.
+In order to achieve the goals, the following procedure is taken. In the first moment a collection of common meta-models used in the Java technological space is to be defined, this is done through an state-of-art research, since that some meta-models have already been defined by other authors, plus the creation of our own versions of some meta-models. So for example, in this phase the choice of the applied meta-models (i.e. \emph{UML Class Diagram} and \emph{Java Code}) will be done and their definitions will be written.
 
 Later on, given the defined meta-models, the relations between them can be written. So for example, in this phase the inherent relation between the \emph{UML Class Diagram} meta-model and the \emph{Java Code} meta-model will be written. Analogously, the relations between \emph{Java Code}, \emph{JavaDoc}, \emph{UML Sequence Diagram} and other meta-models of the Java technological space are also to be defined. All of these relations are developed during the work of this thesis.
 
 %TODO: Synchronization?
-After having this network of meta-models ready, creating an actual network of concrete models of any software system is trivial, thus a showcase using a synchronization method from the current academic literature is applied to illustrate the synchronization between some representative meta-models.
+After having this network of meta-models ready, a showcase using a synchronization method from the current academic literature is applied to illustrate the synchronization between some representative meta-models. We work therefore with the hypothesis, that the meta-models can be found or defined; that some relations between them can be written in some language; and that some of these relations can be synchronized using a tool or technique available in the current literature.
 
+%TODO: If synchronization is not done, then write something here
 It is out of the scope of this work a creation or implementation of a synchronization algorithm, as well as a theoretic analysis of the problem or the analysis of performance or completeness of the relations.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Chapter
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Bibliographic Review}
-Before describing the development of this thesis is important to review the academic state-of-art of model synchronization as well as to review some important definitions regarded to Model-driven Engineering.
-
-%---------------------------------------------
-% Section
-%---------------------------------------------
-\section{Important Definitions}
-\label{sec:definitions}
-Below is a list of necessary basic concepts definition, that will be used throughout this document. Some of these definitions are rather narrower than they could be, but for the scope of this thesis they seem to be suitable.
+\chapter{Foundations}
+\label{ch:foundations}
+Before describing the development of this thesis is important to review some important definitions regarded to Model-driven Engineering. Below is a list of necessary basic concept definitions, that will be used throughout this document. Some of these definitions are rather narrower than they could be, but for the scope of this thesis they seem to be suitable.
 %TODO: \emph in the citings
 
 \begin{description}
 	\item[Technological Space:] According to the definition from \citet[p. 1]{kurtev2002technological}: \emph{"A technological space is a working context with a set of associated concepts, body of knowledge, tools, required skills, and possibilities. It is often associated to a given user community with shared know-how, educational support, common literature and even workshop and conference meetings"}. By \emph{Java Technological Space} is meant the set of commonly used models, practices, techniques and technologies in Java software development. For example, object-oriented development, unit tests, code documentation and the \emph{Java Virtual Machine} are items of the Java technological space.
 
-	\item[System:] The term system is used interchangeably with the terms software, or program. And is intended to represent a software unit that abstracts a reality (or problem) and is abstracted by one or more models.
+	\item[System:] \emph{"A system is the primary element of discourse when talking about MDE."} \citep[p. 13]{favre2004foundations}. One example of a system, according to this definition, is a Java program, once it can be the primary handled element in a certain software engineering context. Nevertheless, this definition is wide enough to affirm that a UML Class Diagram is a system, since it can be the primary handled element in a certain context. This fact allows an easier-to-understand definition of model.
 
-%TODO: artifacts = models?
-	\item[Model:] The definition for software model used is given by \citet[p. 27]{seidewitz2003models}: \emph{"A model is a set of statements about some system under study (SUS). Here, statement means some expression about the SUS that can be considered true or false"}. According to them, models can be used (1) to describe a system, in this case the model makes statements about the SUS, an example is an \emph{UML sequence diagram} employed to help understand the behavior of a Java system. But models can also be used (2) to specify a system, in this case it is used in the validation of the system, an example is a \emph{UML class diagram} employed as design specification of a Java system. Further examples of models, according to this definition, are a \emph{relational database diagram} of a database, the documentation of a system in \emph{Java Doc} or even a Java source-code. The term \emph{artifact} is used as a synonym for model here.
+	\item[Model:] According to \citet{favre2004foundations}, a model is a possible role a system can play. A system plays the role of a model, when it represents another system (system under study, or SUS), i.e. By being so, when one refers to the a model $M$, it is meant, a system that represents (or abstracts) another system $S$, i.e. $M \mu S$. \citet{seidewitz2003models} affirms that, models can be used (1) to describe a system, in this case the model makes statements about the SUS, an example is an \emph{UML sequence diagram} employed to help understand the behavior of a Java program. But models can also be used (2) to specify a system, in this case it is used in the validation of the system, an example is a \emph{UML class diagram} employed as design specification of a Java system. Further examples of models, according to this definition, are a \emph{relational database diagram} of a database, the documentation of a system in \emph{Java Doc} or even a Java source-code.
 
-	\item[Modeling Language:] If, according to definition of model, a model is a set of statements, one needs a way to express such statements. Therefore \emph{"A modeling language lets us express the statements in models of some class of SUS"} \citep[p. 28]{seidewitz2003models}. Examples of modeling languages are the \emph{UML}, the \emph{diagram notation for relational database diagram} or the Java language.
+	\item[Modeling Language:] A model is expressed, using a modeling language. \emph{"A modeling language (L) is a set of models"} \citep[p. 13]{favre2004foundations}, that contains all the models $M_i$ expressed in that language, i.e. $L \owns M_i$. Examples of modeling languages are the \emph{UML}, the \emph{diagram notation for relational database diagram} or the Java language.
 
-	\item[Meta-model:] \citet[p. 28]{seidewitz2003models} affirms also: \emph{"A metamodel is a specification model for a class of SUS where each SUS in the class is itself a valid model expressed in a certain modeling language"}, that means, a meta-model is a model used to specify another model. Furthermore, \emph{"a metamodel makes statements about what can be expressed in the valid models of a certain modeling language"} \citep[p. 28]{seidewitz2003models}. In other words, a meta-model specifies what can be written using a certain modeling language. Thus, examples of meta-models are \emph{UML specification document} \citep{omg2007unified}, the \emph{entity-relationship meta-model} \citep{chen1976entity} or the Java meta-model (one example is to be found in \citet{heidenreich2009jamopp}). Finally \citet[p. 29]{seidewitz2003models} also claims: \emph{"Because a metamodel is a model, we express it in some modeling language"}. One example of a modeling language for meta-models is the \emph{EMF Ecore}\footnote{https://eclipse.org/modeling/emf}.
+	\item[Meta-model:] \citet[p. 14]{favre2004foundations2} affirms also: \emph{"A metamodel is a model of a modelling language."}. In other words, a meta-model specifies what can be written using a certain modeling language. One certain model $M$ is conform to a meta-metamodel $MM$ (i.e $M \epsilon MM$), if and only if, $M \in L$ and $MM \mu L$. Thus, examples of meta-models are \emph{UML specification document} \citep{omg2007unified}, the \emph{entity-relationship meta-model} \citep{chen1976entity} or the Java meta-model (one example is to be found in \citet{heidenreich2009jamopp}). Finally \citet[p. 29]{seidewitz2003models} also claims: \emph{"Because a metamodel is a model, we express it in some modeling language"}. One example of a modeling language for meta-models is the \emph{EMF Ecore}\footnote{https://eclipse.org/modeling/emf} (which is the modeling language for meta-models used in this thesis ans will be explained further below).
 
-	\item[Meta-metamodel:] Analogously to the meta-model definition, \emph{"a meta-metamodel is a specification model of a class of SUS where each SUS is itself a valid meta-model expressed in a certain meta-modeling language"}. To put in other words, a meta-metamodel is a model used to specify another meta-model. An example of meta-metamodel is the \emph{MOF}\citep{omg2015meta}. It is to note also, that such derivation can be done iteratively in the sense that a $meta^3model$ definition is also possible, although it is not useful for the scope of this thesis. The figures \ref{fig:model_scheme} and \ref{fig:model_scheme_practice} illustrate our understanding of the definitions above.
+	\item[Meta-metamodel:] Analogously to the meta-model definition, one can go forth and define meta-metamodel, which is a model that specifies a modelling language for meta-models. An example of meta-metamodel is the \emph{MOF}\citep{omg2015meta}, which the \emph{EMF Ecore} is conform to. It is to note also, that such derivation can be done iteratively in the sense that a $meta^3model$ definition is also possible, although it is not useful for the scope of this thesis. The figure \ref{fig:model_scheme} illustrate our understanding of the definitions above.
 
 	\begin{figure}[h]
-	    \caption{Depiction of the theoretical definitions of system, model, metamodel, meta-metamodel and modeling language. Like stated before, a system is abstracted by models, which themselves are abstracted by meta-models and so forth. A model used to specify (see the model definition) has a red line binding it and its SUS labeled with the identifier of the respective modeling language.}
-	    \begin{center}
-	        \includegraphics[width=25em]{model_scheme}
-	    \end{center}
-	    \label{fig:model_scheme}
-	    \legend{Source: The author}
-	\end{figure}
-	\begin{figure}[h]
-	    \caption{A more concrete and practical illustration of the definitions of system, model, metamodel, meta-metamodel and modeling language. This example shows a scenario very close to the implementation made in chapter \ref{chapter:metamodel_relations}.}
-	    \begin{center}
-	        \includegraphics[width=25em]{model_scheme_practice}
-	    \end{center}
-	    \label{fig:model_scheme_practice}
-	    \legend{Source: The author}
+		\caption{On the left is a depiction of the theoretical definitions of system, model, metamodel, meta-metamodel and modeling language. Like stated before, a system is represented by models, which themselves are expressed in languages and are conform to meta-models. A more concrete and practical illustration of the definitions is on the right. This example shows a scenario very close to the implementation made in chapter \ref{chapter:metamodel_relations}.}
+		\centering
+		\begin{subfigure}[h]{.49\textwidth}
+		    \includegraphics[width=\textwidth]{model_scheme}
+		\end{subfigure}
+		\begin{subfigure}[h]{.49\textwidth}
+			\includegraphics[width=\textwidth]{model_scheme_practice}
+		\end{subfigure}
+		\label{fig:model_scheme}
+		\legend{Source: The author}
 	\end{figure}
 	
 	\item[Model Relation:] Model relation here is defined abstractly as every relationship or constraint possible to happen between one source model and one target model. For instance, the models \emph{UML class diagram} and Java code have a relation, because once a new class is created in the class diagram, the correspondent class has to be created in the Java code. Moreover, a \emph{UML class diagram} with contracts definitions (pre and post-conditions) have a relation to the \emph{JUnit model}, once that the formers have to be tested correspondingly in the latter.
@@ -280,7 +274,7 @@ Below is a list of necessary basic concepts definition, that will be used throug
 	\item[Model Transformation:] Model transformation can be viewed as common data transformation – very common in computer science – with the specificity of dealing with models \cite{czarnecki2006feature}. More specifically, model transformation is defined here as a function $t : M \rightarrow N$, where $t(m) = n$ means that a target model $n \in N$ is created from a source model $m \in M$, $M$ and $N$ being respectively the set of all valid models of the meta-models $\Phi_M$ and $\Phi_N$. Practical example: Creation of Java code from \emph{UML class diagram}. Note that, model transformation is by nature deterministic, unidirectional and does not preserve the information of the target model (e.g. comments in the Java code).
 
 	%TODO: Note that? ok?
-	\item[Model Synchronization:] The goal of model synchronization is to maintain all relations between the models of a system consistent/correct as updates are performed over them \cite{diskin2011model}. More specifically, model synchronization is defined here as a function $s : M x M x N x N \rightarrow M x N $, where $s(m_0,m_1,n_0,n_1) = (m_2,n_2)$ means that final synchronized models $m_2$ and $n_2$ are created from the initial synchronized models $m_0$ and $n_o$ and the modified non-synchronized models $m_1$ and $n_1$. Practical example: Modification of a method name in the \emph{UML class diagram} has to be forwarded to the Java code, without losing extra information of it (e.g. comments). Note that, model synchronization is deterministic, bidirectional and preserves the informations of the both models. Other terms for model synchronization used interchangeably throughout this document are iterative or information preserving bidirectional model transformation.
+	\item[Model Synchronization:] The goal of model synchronization is to maintain all relations between the models of a system consistent/correct as updates are performed over them \cite{diskin2011model}. More specifically, model synchronization is defined here as a function $s : M x M x \Delta_M x N x N x \Delta_M \rightarrow M x N $, where $s(m_0,m_1,\delta_m,n_0,n_1,\delta_n) = (m_2,n_2)$ means that final synchronized models $m_2$ and $n_2$ are created from the initial synchronized models $m_0$ and $n_o$ and the modified non-synchronized models $m_1$ and $n_1$, considering the modifications (respectively $\delta_m$ and $\delta_n$) performed over both. Practical example: Modification of a method name ($\delta_m$) in the \emph{UML class diagram}($m_0$) has to be forwarded to the Java code($n_0$), without losing extra information of it (e.g. comments). Note that, model synchronization is deterministic, bidirectional and preserves the informations of the both models. Other terms for model synchronization used interchangeably throughout this document are iterative or information preserving bidirectional model transformation.
 
 	\item[Network of Models:] A network of models of a system $S$ is an undirected graph $G = (V,E)$, whereas each vertex $v_i \in V$ represents a unique model $i$ abstracting $S$, and an edge $(v_i, v_j)$ exists if, and only if there is a relation defined between both models $i$ and $j$. In the figure \ref{fig:network_example_01} is an example of a network of models, illustrating the possible complexity of such network. More discussion is to find in \citet{mens2006taxonomy}.
 
@@ -293,10 +287,10 @@ Below is a list of necessary basic concepts definition, that will be used throug
 	    \legend{Source: The Author}
 	\end{figure}
 
-	\item[Meta Object Facility:] \emph{"The Meta Object Facility (MOF) provides an open and platform-independent metadata management framework and associated set of metadata services to enable the development and interoperability of model and metadata driven systems"} \citep{omg2015meta}. The MOF describes therefore the MOF modeling language, which is used to model the meta-metamodel utilized in this thesis. Essentially, it inherits much from the UML and deals with the ideas of classes, properties and associations, providing and extensible but simple fashion to define meta-models. The figure \ref{fig:emof_classes} shows the essential part of MOF.
+	\item[Meta Object Facility:] \emph{"The Meta Object Facility (MOF) provides an open and platform-independent metadata management framework and associated set of metadata services to enable the development and interoperability of model and metadata driven systems"} \citep{omg2015meta}. The MOF describes therefore the MOF modeling language, which is used to model the meta-metamodel utilized in this thesis. Essentially, it inherits much from the UML and deals with the ideas of classes, properties and associations, providing and extensible but simple fashion to define meta-models. The figure \ref{fig:emof_classes} shows the part of MOF.
 
 	\begin{figure}[h]
-	    \caption{Essential MOF definition, which handles basically classes, properties, operations, associations, and generalization.}
+	    \caption{Part of MOF definition, which handles basically classes, properties, operations, associations, and generalization.}
 	    \begin{center}
 	        \includegraphics[width=35em]{emof_classes}   
 	    \end{center}
@@ -317,7 +311,7 @@ Below is a list of necessary basic concepts definition, that will be used throug
 
 	\item[Triple Graph:] With the use of a triple graph a relation between a source model S and a target model T are abstracted into a triple $(G_s,G_c,G_t)$ – where $G_s$ is the graph representation of source model elements, $G_t$ is the graph representation of target model elements, and $G_c$ represents the correspondence between the two set of model elements – together with two mappings $s_g: G_c \rightarrow G_s$ and $t_g: G_c \rightarrow G_t$, which bind the three graphs \citep{hermann2011correctness}.
 	
-	In this case, a modification in the triple graph $G = (G_s,G_c,G_t)$, that leads to a new triple graph $H = (H_s,H_c,H_t)$ consists in a triple graph morphism $m: G \rightarrow H$, with $m = (m_s,m_c,m_t)$. According to the figure \ref{fig:tg_morphism}.
+	In this case, an addition in the triple graph $G = (G_s,G_c,G_t)$, that leads to a new triple graph $H = (H_s,H_c,H_t)$ consists in a triple graph morphism $m: G \rightarrow H$, with $m = (m_s,m_c,m_t)$. According to the figure \ref{fig:tg_morphism}.
 
 	\begin{figure}[h]
 	    \caption{The morphism $m: G \rightarrow H$ is a triple graph $m = (m_s,m_c,m_t)$.}
@@ -334,7 +328,7 @@ Below is a list of necessary basic concepts definition, that will be used throug
 
 
 	\begin{figure}[h]
-	    \caption{In this kind of diagram for triple rules a triple graph is represented by three columns (left mode domain, correspondence domain, and right model domain) each one representing respectively the source model elements, the coorrespondence between source and target and finally the target model elements. A triple rule in turn is represented by a triple graph in black and a triple graph in green, respectively the left-hand and right-hand side (see \ref{fig:tgg_rule}). As an axiom is a triple rule with empty left-hand side only green graph occurs (see \ref{fig:tgg_axiom})}
+	    \caption{In this kind of diagram for triple rules a triple graph is represented by three columns (left model domain, correspondence domain, and right model domain) each one representing respectively the source model elements, the correspondence between source and target and finally the target model elements. A triple rule in turn is represented by a triple graph in black (left-hand side) plus a triple graph in green(right-hand side) (see \ref{fig:tgg_rule}). Because an axiom is a triple rule with empty left-hand side, only green graph occurs in an axiom (see \ref{fig:tgg_axiom}).}
 	    \label{fig:tgg_axiom_rule}
 	    \begin{subfigure}{\textwidth}
 		    \caption{Triple axiom example for the relation between UML and Java}
@@ -349,10 +343,10 @@ Below is a list of necessary basic concepts definition, that will be used throug
 	    \legend{Source: The author}
 	\end{figure}
 
-	\item[Triple Graph Grammar:] A triple graph grammar $TGG = (t_a, T_{rules}) $ consists of a triple axiom $t_a$ and a set of triple rules $T_{rules}$ \citet[p. 4]{giese2010toward}. While triple graphs are used as a description of the relations between two meta-models, TGG's describe the semantics of the transformation procedure, where triple rules correspond to operational rules of the formal semantic (see chapter \ref{chapter:metamodel_synchronization}). Figure \ref{fig:transformation_scheme} summarizes the so far defined terms.
+	\item[Triple Graph Grammar:] A triple graph grammar $TGG = (t_a, T_{rules}) $ consists of a triple axiom $t_a$ and a set of triple rules $T_{rules}$ \citep[p. 4]{giese2010toward}. While one triple graph can be used as a description of a relation between two meta-models, one TGG describes the language of the these two related models and serves rather as description of consistency. Nevertheless, extra rules can be derived from a TGG, in order to create the operational semantic of a transformation procedure \citep{giese2010toward}. Figure \ref{fig:transformation_scheme} summarizes the so far defined terms.
 
 	\begin{figure}[h]
-	    \caption{Illustration of the definitions model relation, transformation and synchronization as well as triple graph grammars (TGG). Relations between metamodels are coded by triple grammars; modifications in the models are coded by triple rules, which are then organized in a TGG. A TGG is interpreted as operational semantic definitions and executed according to the models. Again the concept of modeling language is pictured as red lines.}
+	    \caption{Illustration of the definitions of model relation, transformation and synchronization as well as triple graph grammars (TGG). Relations between metamodels are coded by triple graphs; additions in the models are coded by triple rules, which are then organized in a TGG. A TGG can be used to derive operational semantic definitions. The concept of modeling language is pictured as red lines.}
 	    \begin{center}
 	        \includegraphics[width=25em]{transformation_scheme}
 	    \end{center}
@@ -364,11 +358,11 @@ Below is a list of necessary basic concepts definition, that will be used throug
 %---------------------------------------------
 % Section
 %---------------------------------------------
-\section{Related Work}
+\chapter{State of the art}
 %TODO: us?
-A work similar to the one of this thesis, which builds a network of meta-models of the Java technogical space, by describing them and their intrinsic relations is not known by us. In this sense the results of this thesis is novel and contributive. Nevertheless some endeavors have been made in order to code relations between some meta-models and mainly to develop theoretical results and synchronization methods. \citeauthor{heidenreich2010closing} present in \citeyearpar{heidenreich2009jamopp} and \citeyearpar{heidenreich2010closing} a Java meta-model using \emph{Ecore}, what influenced considerably the development of our work, although it has not been used by us because of its size and unnecessary comprehensibility for our needs. \citet{greenyer2008tggs} comes up with a transformation between \emph{UML activity diagrams} and \emph{CSP diagrams} using \emph{TGG}. \citet{foss2011uml} defined the translation between \emph{UML} and \emph{Simulink} using graph grammars. \citet{blouin2014synchronization} reports about the synchronization between some specific meta-models of the automotive standards and influences our work, by using the same modeling language and synchronization method as us, namely \emph{EMF} \citep{steinberg2008emf} and \emph{MoTE} \citep{giese2010toward}. Finally \citet{giese2010model} introduce their approach to the synchronization of two automotive industry meta-models, lightening in the paper the \emph{MoTE} tool and its algorithm for synchronization.
+Some endeavors have been made in order to code relations between some meta-models and mainly to develop theoretical results and synchronization methods. \citeauthor{heidenreich2010closing} present in \citeyearpar{heidenreich2009jamopp} and \citeyearpar{heidenreich2010closing} a Java meta-model using \emph{Ecore}, what influenced considerably the development of our work, although it has not been used by us because of its size and unnecessary comprehensiveness for our needs. \citet{greenyer2008tggs} comes up with a transformation between \emph{UML activity diagrams} and \emph{CSP diagrams} using \emph{TGG}. \citet{foss2011uml} defined the translation between \emph{UML} and \emph{Simulink} using graph grammars. \citet{blouin2014synchronization} reports about the synchronization between some specific meta-models of the automotive standards and influences our work, by using the same modeling language and transformation method as us, namely \emph{EMF} \citep{steinberg2008emf} and \emph{MoTE} \citep{giese2010toward}. Finally \citet{giese2010model} introduce their approach to the synchronization of two automotive industry meta-models, lightening in the paper the \emph{MoTE} tool and its algorithm for synchronization.
 
-We judge that the \emph{MoTE} tool is the most adequate option for our needs, once literature about it is widely available (see also \citep{giese2009efficient} and \citep{hildebrandt2012mdelab}). Nevertheless there are other attempts to build a model synchronization tool, like the \emph{ATL Eclipse Plug-in} \citep{jouault2008atl}, which uses the \emph{Atlas Transformation Language} to code the relations between models; the Medini QVT \footnote{http://projects.ikv.de/qvt}, which claims to implement the \emph{Query/View/Transformation Language} to code the relations; and the FUJABA \citep{nickel2000fujaba}, in which relations are coded using \emph{Triple Graph Grammars}. \citet{hildebrandt2013survey} also publicized a survey on synchronization tools based on TGG. Other publications aim to solve specific problems, like the ones in \citet{hermann2011correctness}, \citet{xiong2007towards}, \citet{giese2006incremental}, \citet{ivkovic2004tracing}, or \citet{song2011instant}, where advanced algorithms for bidirectional synchronization have been proposed.
+We judge that the \emph{MoTE} transformation tool is the most adequate option for our needs, once literature about it is widely available (see also \citep{giese2009efficient} and \citep{hildebrandt2012mdelab}). Nevertheless there are other attempts to build a model synchronization tool, like the \emph{ATL Eclipse Plug-in} \citep{jouault2008atl}, which uses the \emph{Atlas Transformation Language} to code the relations between models; the Medini QVT \footnote{http://projects.ikv.de/qvt}, which claims to implement the \emph{Query/View/Transformation Language} to code the relations; and the FUJABA \citep{nickel2000fujaba}, in which relations are coded using \emph{Triple Graph Grammars}. \citet{hildebrandt2013survey} also publicized a survey on synchronization tools based on TGG. Other publications aim to solve specific problems, like the ones in \citet{hermann2011correctness}, \citet{xiong2007towards}, \citet{giese2006incremental}, \citet{ivkovic2004tracing}, or \citet{song2011instant}, where advanced algorithms for bidirectional synchronization have been proposed.
 
 A research road-map for model synchronization found in \citet{france2007model} gives an overview on the realm, and together with \citet{mattsson2009linking} show an interesting point of view about the challenges. \citet{seidewitz2003models} writes an interesting reflection  about what models mean and how to interpret them and in \citet{mens2006taxonomy} a taxonomy for model transformation is proposed, what helps to carry more precise analysis. In \citet{czarnecki2006feature} a survey was driven and a framework for classification of model transformation approaches was presented. In \citeauthor{diskin2014towards} \citeyearpar{diskin2014towards} and \citeyearpar{diskin2016three} a taxonomy for a network of models is presented and in \citet{diskin2011model} a theoretical algebraic basis is proposed.
 
@@ -379,12 +373,38 @@ Additionally, one can judge by the date of publication of these works, that the 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Meta-model Relations in the Java Technological Space}
 \label{chapter:metamodel_relations}
-With the terms and the theoretical basis clarified the report of the main development phase of the thesis is shown below. The goal here is to present the developed meta-model definitions and the relations between them, as well as justify the choices made during the work.
+With the terms and the theoretical basis clarified, the report of the main development phase of the thesis is shown below. The idea here is first to present the selected network of meta-models, by describing what each model represents and how they relate to each other. Then the developed meta-model definitions and the relations between them are exposed, as well as the justification of the choices made during the work.
 
 %---------------------------------------------
 % Section
 %---------------------------------------------
-\section{Meta-models}
+\section{The Network of Meta-models}
+The choice of which models are used in a certain Java program may vary considerably depending on the context of the development and the software requirements, which themselves can range from high dependability (e.g. airplane software) to continuous evolution (e.g. applications for cellphones) for example. Nevertheless we selected a few typical models and the relations between them and created a network of meta-models, shown in figure \ref{fig:network_metamodels}.
+
+\begin{figure}[h]
+    \caption{The created network of meta-models}
+    \begin{center}
+        \includegraphics[width=25em]{network_metamodels}
+    \end{center}
+    \label{fig:network_metamodels}
+    \legend{Source: The author}
+\end{figure}
+
+The central element of the network is the \emph{Java} meta-model. A Java model (or, Java code) contains both structural and behavioral information about the system, which is represented among other elements through \emph{classes}, \emph{fields}, \emph{methods} and \emph{statements}.
+
+%TODO: Imperative ok?
+Once a meta-model might be relatively big and comprise a huge number of elements, it is interesting to split it into smaller pieces for a specific set of relations. Take for example the UML, that includes a large number of different concerns (e.g. classifiers, state machines, activities, interaction, etc) and may be split into sub meta-models in order to ease the writing of the relations. For this reason we separate the UML into \emph{UMLClassifier}, \emph{UMLInteraction}, and \emph{UMLContract}. The first is constructed around the concept of \emph{classifier}, that is \emph{"used to classify different kinds of values"} \citep[p. 97]{omg2007unified} and is widely used under the name \emph{class} in the object oriented paradigm. In special, we focus on structured classifiers, thus considering elements like \emph{class}, \emph{property}, \emph{operation}, \emph{interface} and \emph{package}. This meta-model is usually used to describe the structure of a object oriented Java program through a class diagram, representing the definition of its classes, field and methods, but leaving out behavioral aspects. The relations between \emph{UMLClassifier} and \emph{Java} is then given by an almost direct translation between their elements. A \emph{class} in the former is transformed into a \emph{class} in the latter, a \emph{property} in a \emph{field}, an \emph{operation} in a \emph{method} and so on.
+
+To represent some behavioral aspects, \emph{UMLInteraction} is used instead. \emph{"Interactions [...] are used to get a better grip of an interaction situation for an individual designer or for a group that needs to achieve a common understanding of the situation"} \citep[p. 563]{omg2007unified}. The elements of this meta-model are usually reproduced with sequence diagrams, where \emph{lifelines} and \emph{messages} provide information about the sequence of event occurrences. In a Java program it may correspond to the sequence of calls inside a specific method. This means, the semantical information of each sequence diagram could be brought to correspondent method in the Java model.
+
+\emph{UMLContract} is based on the ideas of design-by-contract, whose main goal is to improve reliability of object oriented software \citep{meyer1992applying}, and where operations have \emph{pre} and \emph{postconditions} as well as \emph{invariants}. Its relation with \emph{Java} is basically, that each constraint of the contracts can be tested as assertions and expressed in terms of annotations in the Java source-code. Moreover, once can have check methods, that are supposed to be updated as soon as the contracts undergo changes.
+
+At last is the \emph{UnitTest}, that endeavor to enhance the software quality by means of tests. It tests small units of code, by basically verifying the pre and postconditions as well as invariants of each method. Because unit tests for Java programs are usually written in Java, we use the same meta-model for the vertices \emph{Java} and \emph{UnitTests} of our network. Anyways, the relation between both is based on creating test cases in the latter according to the contract annotations (e.g pre and postconditions, invariants, examples, etc) present in the methods of the former.
+
+%---------------------------------------------
+% Section
+%---------------------------------------------
+\section{Meta-model Definitions}
 The modeling language used to write these meta-models is the \emph{EMF Ecore} and the tool used is the special version for model development of the \emph{Eclipse Mars 4.5.1 IDE\footnote{https://projects.eclipse.org/releases/mars}}, which eases the creations of models ans their diagrams and the generation of plug-ins necessary for running the transformations, thus being more suitable than the alternatives of the \emph{Netbeans IDE}\footnote{https://eclipse.org} or the FUJABA \citep{nickel2000fujaba}, whose support or popularity in the community are not so valuable. The \emph{Ecore} language has been chosen not only for its extensible documentation and popularity in the community, but also for its ease to use in the \emph{Eclipse IDE}. The meta-models are listed in the sections below.
 
 \subsection{UML}
@@ -440,11 +460,8 @@ For the Java a brand new meta-model was designed in regard to the necessities of
 %---------------------------------------------
 \section{Relations}
 %TODO: First person
-With all the meta-models defined, the definition of the relations between their elements can be done. In order to accomplish that, TGG is used to code the relations, because it has been extensively used in current academic research; and is supported by several tools for synchronization. Other options included the \emph{ATL} \citep{jouault2008atl}, which does not seem to be enough ripe for our use; or the \emph{Henshin} \citep{arendt2010henshin}, that is not widely supported for the best tools \citep{hildebrandt2013survey}. A theoretical basis of TGG has been given in the section \ref{sec:definitions}. Here the relations written by us are presented as well as some explanations over them.
+With all the meta-models defined, the definition of the relations between their elements can be done. In order to accomplish that, TGG is used to code the relations, because it has been extensively used in current academic research; and is supported by several tools for synchronization. Other options included the \emph{ATL} \citep{jouault2008atl}, which does not seem to be enough ripe for our use; or the \emph{Henshin} \citep{arendt2010henshin}, that is not widely supported for the best tools \citep{hildebrandt2013survey}. A theoretical basis of TGG has been given in the chapter \ref{ch:foundations}. Here the relations written by us are presented as well as some explanations over them.
 
-\subsection{Splitting the Meta-models}
-%TODO: Imperative ok?
-Once the meta-models might be relatively big and comprise a huge number of elements, it is interesting to split them into smaller pieces for a specific set of relations. Take for example the UML, that includes a large number of different concerns (e.g. classifiers, state machines, activities, interaction, etc) and thus may be split into sub meta-models in order to ease the writing of the relations. These relations are given in the following sections. A later joining of all diagrams should not be problematic.
 %TODO: Show only more interesting/novel/important/representative figures and anex everything as appedix?
 
 \subsection{UmlClass2Java}
@@ -559,7 +576,7 @@ FIGURE \ref{fig:uCInv2jCInv} to \ref{fig:uOPPreInt2jMAPreAssert}
 %TODO: umlClass2java is the name?
 A network of meta-models of the Java technological space was developed, comprising a set of common meta-models used in Java software and the respective relations between them, as well as synchronization between the models was showcased, demonstrating as final result that the construction of such network and the employment of synchronization has worked and moreover seems to be promising. Despite the outcomes are not complete and not ripe enough to be put in practice, the ideas and the insights reported plus the summary of the state-of-art are valuable for current research and thus contributing.
 
-In the first phase some meta-models were developed (e.g Java), and in the second phase the relations were coded (e.g. umlClass2java). In regard to these both steps the main legacy is the novel relations between some elements of some meta-models (e.g. the relation between UML contracts and Java assertions). The third phase serve to demonstrate briefly the application of synchronization in the practice. Most of the initially set up goals were achieved, even though the relations could rather be more extensive, likewise a more comprehensive synchronization demonstration would be desired.
+In the first phase some meta-models were developed (e.g Java), and in the second phase the relations were coded (e.g. umlClass2java). In regard to these both steps the main legacy are the novel relations between some elements of some meta-models (e.g. the relation between UML contracts and Java assertions). The third phase serve to demonstrate briefly the application of synchronization in the practice. Most of the initially set up goals were achieved, even though the relations could rather be more extensive, likewise a more comprehensive synchronization demonstration would be desired.
 
 %TODO: Talk more? Summarize all?
 
