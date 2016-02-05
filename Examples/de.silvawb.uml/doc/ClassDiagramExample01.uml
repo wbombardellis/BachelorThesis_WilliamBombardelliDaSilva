@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_hKPv4MVQEeWU9Jylf6BOuw" name="Example01">
+  <packagedElement xmi:type="uml:Package" xmi:id="_QfwIsMV1EeWU9Jylf6BOuw" name="main">
+    <packagedElement xmi:type="uml:Class" xmi:id="_ULBgkMV1EeWU9Jylf6BOuw" name="Person">
+      <ownedAttribute xmi:id="_jlNWoMV1EeWU9Jylf6BOuw" name="name" type="_6FGEEMV1EeWU9Jylf6BOuw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XZ-v4MV1EeWU9Jylf6BOuw" name="Driver">
+      <ownedRule xmi:id="_UBS8AMgWEeWtRPfYkZ8rDQ" name="" constrainedElement="_B8CyMMV2EeWU9Jylf6BOuw">
+        <specification xmi:type="uml:Interval" xmi:id="_-K9scMgWEeWtRPfYkZ8rDQ" name="driverLicense >= 1" min="_fVAlYMV4EeWU9Jylf6BOuw"/>
+      </ownedRule>
+      <generalization xmi:id="__47_QMgYEeWtRPfYkZ8rDQ" general="_ULBgkMV1EeWU9Jylf6BOuw"/>
+      <ownedAttribute xmi:id="_B8CyMMV2EeWU9Jylf6BOuw" name="driverLicense" type="_HKz9IMV2EeWU9Jylf6BOuw"/>
+      <ownedAttribute xmi:id="_JCLGkMgXEeWtRPfYkZ8rDQ" name="driverLicenseStatus" type="_HKz9IMV2EeWU9Jylf6BOuw"/>
+      <ownedAttribute xmi:id="_f3AJQMgXEeWtRPfYkZ8rDQ" name="experience" visibility="private" type="_HKz9IMV2EeWU9Jylf6BOuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_liWigMgXEeWtRPfYkZ8rDQ" value="0"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_hNrpIMV2EeWU9Jylf6BOuw" name="drive" bodyCondition="__7RXAMgXEeWtRPfYkZ8rDQ" precondition="_hkzTMMV3EeWU9Jylf6BOuw">
+        <ownedRule xmi:id="_hkzTMMV3EeWU9Jylf6BOuw" name="driverLicenseStatus >= 1" constrainedElement="_JCLGkMgXEeWtRPfYkZ8rDQ">
+          <specification xmi:type="uml:Interval" xmi:id="_Cm9skMV4EeWU9Jylf6BOuw" name="" min="_fVAlYMV4EeWU9Jylf6BOuw"/>
+        </ownedRule>
+        <ownedRule xmi:id="__7RXAMgXEeWtRPfYkZ8rDQ" name="vehicle &lt;> null">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_Go9XAMgYEeWtRPfYkZ8rDQ" name="vehicle &lt;> null">
+            <language>OCL</language>
+            <body>vehicle &lt;> null</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_lZCZAMgYEeWtRPfYkZ8rDQ" name="experience > experience@pre">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_1gGjMMgYEeWtRPfYkZ8rDQ" name="experience > experience@pre">
+            <language>OCL</language>
+            <body>experience > experience@pre</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_TzmNIMV3EeWU9Jylf6BOuw" name="vehicle" type="_eLXkIMV1EeWU9Jylf6BOuw"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_eLXkIMV1EeWU9Jylf6BOuw" name="Drivable">
+      <ownedOperation xmi:id="_fu-PcMV2EeWU9Jylf6BOuw" name="start"/>
+      <ownedOperation xmi:id="_6A3ZcMV3EeWU9Jylf6BOuw" name="drive"/>
+      <ownedOperation xmi:id="_7uD7EMV3EeWU9Jylf6BOuw" name="stop"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ho6CAMV1EeWU9Jylf6BOuw" name="Car">
+      <ownedAttribute xmi:id="_ZtJP4MV2EeWU9Jylf6BOuw" name="license" type="_HKz9IMV2EeWU9Jylf6BOuw"/>
+      <interfaceRealization xmi:id="_HAt6QMgZEeWtRPfYkZ8rDQ" name="" client="_ho6CAMV1EeWU9Jylf6BOuw" supplier="_eLXkIMV1EeWU9Jylf6BOuw" contract="_eLXkIMV1EeWU9Jylf6BOuw"/>
+      <ownedOperation xmi:id="_cDLdsMV3EeWU9Jylf6BOuw" name="openDoor"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_08nuYMV1EeWU9Jylf6BOuw" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_3wyfIMV1EeWU9Jylf6BOuw" name="lang">
+      <packagedElement xmi:type="uml:Class" xmi:id="_6FGEEMV1EeWU9Jylf6BOuw" name="String"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_HKz9IMV2EeWU9Jylf6BOuw" name="Integer">
+        <ownedRule xmi:id="_dyBIoMV4EeWU9Jylf6BOuw">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_fVAlYMV4EeWU9Jylf6BOuw" value="1"/>
+        </ownedRule>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

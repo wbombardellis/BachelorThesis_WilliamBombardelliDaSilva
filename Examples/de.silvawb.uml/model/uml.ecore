@@ -280,7 +280,7 @@
       <eAnnotations source="subsets" references="#//Classifier/redefinedClassifier"/>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Class" eSuperTypes="#//EncapsulatedClassifier #//BehavioredClassifier">
+  <eClassifiers xsi:type="ecore:EClass" name="Class" eSuperTypes="#//EncapsulatedClassifier #//Classifier">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="A Class classifies a set of objects and specifies the features that characterize the structure and behavior of those objects.  A Class may have an internal structure and Ports.&#xA;&lt;p>From package UML::StructuredClassifiers.&lt;/p>"/>
     </eAnnotations>
@@ -290,7 +290,7 @@
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="The attributes (i.e., the Properties) owned by the Class.&#xA;&lt;p>From package UML::StructuredClassifiers.&lt;/p>"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="#//StructuredClassifier/ownedAttribute"/>
+        <eAnnotations source="redefines" references="#//Class/ownedAttribute"/>
         <eAnnotations source="subsets" references="#//Classifier/attribute #//Namespace/ownedMember"/>
       </contents>
       <contents xsi:type="ecore:EAttribute" name="isAbstract" ordered="false" lowerBound="1"
@@ -411,6 +411,13 @@
       </eAnnotations>
       <eAnnotations source="redefines" references="#//Classifier/general"/>
     </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ownedAttribute" upperBound="-1"
+        eType="#//Property" containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The Properties owned by the StructuredClassifier.&#xA;&lt;p>From package UML::StructuredClassifiers.&lt;/p>"/>
+      </eAnnotations>
+      <eAnnotations source="subsets" references="#//Classifier/attribute #//Namespace/ownedMember #//StructuredClassifier/role"/>
+    </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="BehavioredClassifier" abstract="true"
       eSuperTypes="#//Classifier">
@@ -469,7 +476,7 @@
       <eAnnotations source="subsets" references="#//Namespace/ownedMember"/>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Classifier" abstract="true" eSuperTypes="#//Namespace #//RedefinableElement #//Type #//TemplateableElement">
+  <eClassifiers xsi:type="ecore:EClass" name="Classifier" abstract="true" eSuperTypes="#//Namespace #//RedefinableElement #//TemplateableElement #//PackageableElement">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="A Classifier represents a classification of instances according to their Features.&#xA;&lt;p>From package UML::Classification.&lt;/p>"/>
     </eAnnotations>
@@ -7853,13 +7860,6 @@
         <details key="documentation" value="All features of type ConnectableElement, equivalent to all direct and inherited roles.&#xA;result = (allFeatures()->select(oclIsKindOf(ConnectableElement))->collect(oclAsType(ConnectableElement))->asSet())&#xA;&lt;p>From package UML::StructuredClassifiers.&lt;/p>"/>
       </eAnnotations>
     </eOperations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="ownedAttribute" upperBound="-1"
-        eType="#//Property" containment="true">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="The Properties owned by the StructuredClassifier.&#xA;&lt;p>From package UML::StructuredClassifiers.&lt;/p>"/>
-      </eAnnotations>
-      <eAnnotations source="subsets" references="#//Classifier/attribute #//Namespace/ownedMember #//StructuredClassifier/role"/>
-    </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="ownedConnector" ordered="false"
         upperBound="-1" eType="#//Connector" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -8570,7 +8570,7 @@
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="The Ports owned by the EncapsulatedClassifier.&#xA;&lt;p>From package UML::StructuredClassifiers.&lt;/p>"/>
       </eAnnotations>
-      <eAnnotations source="subsets" references="#//StructuredClassifier/ownedAttribute"/>
+      <eAnnotations source="subsets" references="#//Class/ownedAttribute"/>
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ActivityGroup" abstract="true" eSuperTypes="#//NamedElement #//ActivityContent">

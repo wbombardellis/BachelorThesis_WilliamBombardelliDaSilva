@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="ASCII"?>
+<de.silvawb.java:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:de.silvawb.java="http://tu-berlin.de/silvawb/java" name="Example01">
+  <packages name="main">
+    <containedElements xsi:type="de.silvawb.java:Class" visibility="public" name="Person" extendingClasses="//@packages.0/@containedElements.1">
+      <fields visibility="public" name="name" type="//@packages.1/@containedElements.0"/>
+    </containedElements>
+    <containedElements xsi:type="de.silvawb.java:Class" visibility="" name="Driver" extendedClass="//@packages.0/@containedElements.0">
+      <fields visibility="public" name="driverLincense" type="//@packages.1/@containedElements.1">
+        <annotationInstances annotation="//@packages.2/@containedElements.0">
+          <parameters name="constraint">
+            <values value="driverLicense >= 1"/>
+          </parameters>
+        </annotationInstances>
+      </fields>
+      <fields visibility="public" name="driverLicenseStatus" type="//@packages.1/@containedElements.1"/>
+      <fields visibility="private" name="experience" type="//@packages.1/@containedElements.1" default="0"/>
+      <methods visibility="public" name="drive">
+        <annotationInstances annotation="//@packages.2/@containedElements.0">
+          <parameters name="constraint">
+            <values value="vehicle &lt;> null"/>
+          </parameters>
+        </annotationInstances>
+        <annotationInstances annotation="//@packages.2/@containedElements.1">
+          <parameters name="constraint">
+            <values value="driverLicenseStatus >= 1"/>
+          </parameters>
+        </annotationInstances>
+        <annotationInstances annotation="//@packages.2/@containedElements.2">
+          <parameters name="constraint">
+            <values value="experience > experience@pre"/>
+          </parameters>
+        </annotationInstances>
+        <annotationInstances annotation="//@packages.2/@containedElements.3">
+          <parameters name="interactionSequence">
+            <values value="start"/>
+            <values value="drive" id="1"/>
+            <values value="stop" id="2"/>
+          </parameters>
+        </annotationInstances>
+        <arguments name="vehicle" type="//@packages.0/@containedElements.2"/>
+      </methods>
+      <methods visibility="public" name="checkRep">
+        <body xsi:type="de.silvawb.java:AssertStatement">
+          <assertion rightSide="1" leftSide="driverLicense"/>
+        </body>
+      </methods>
+      <methods visibility="private" name="driveCheckInvConstraint">
+        <arguments name="vehicle" type="//@packages.0/@containedElements.2"/>
+      </methods>
+      <methods name="driveCheckPreConstraint">
+        <arguments name="vehicle" type="//@packages.0/@containedElements.2"/>
+        <body xsi:type="de.silvawb.java:AssertStatement">
+          <assertion rightSide="1" leftSide="driverLicenseStatus"/>
+        </body>
+      </methods>
+      <methods name="driveCheckPosConstraint">
+        <arguments name="vehicle" type="//@packages.0/@containedElements.2"/>
+      </methods>
+      <generalization general="//@packages.0/@containedElements.0"/>
+      <imports imported="//@packages.2/@containedElements.0"/>
+      <imports imported="//@packages.2/@containedElements.1"/>
+      <imports imported="//@packages.2/@containedElements.2"/>
+      <imports imported="//@packages.2/@containedElements.3"/>
+    </containedElements>
+    <containedElements xsi:type="de.silvawb.java:Interface" visibility="" name="Drivable">
+      <methods name="start"/>
+      <methods name="drive"/>
+      <methods name="stop"/>
+    </containedElements>
+    <containedElements xsi:type="de.silvawb.java:Class" visibility="" name="Car">
+      <fields name="license" type="//@packages.1/@containedElements.1"/>
+      <methods name="openDoor"/>
+      <methods name="start"/>
+      <methods name="drive"/>
+      <methods name="stop"/>
+      <interfaceImplementations interface="//@packages.0/@containedElements.2"/>
+    </containedElements>
+  </packages>
+  <packages name="java.lang">
+    <containedElements xsi:type="de.silvawb.java:Class" name="String"/>
+    <containedElements xsi:type="de.silvawb.java:Class" name="Integer"/>
+    <containedElements xsi:type="de.silvawb.java:Class" name="ArrayList"/>
+  </packages>
+  <packages name="de.silvawb.utils">
+    <containedElements xsi:type="de.silvawb.java:Annotation" visibility="public" name="Inv">
+      <fields visibility="" name="constraint" type="//@packages.1/@containedElements.0"/>
+    </containedElements>
+    <containedElements xsi:type="de.silvawb.java:Annotation" visibility="public" name="Pre">
+      <fields visibility="" name="constraint" type="//@packages.1/@containedElements.0"/>
+    </containedElements>
+    <containedElements xsi:type="de.silvawb.java:Annotation" visibility="public" name="Pos">
+      <fields visibility="" name="constraint" type="//@packages.1/@containedElements.0"/>
+    </containedElements>
+    <containedElements xsi:type="de.silvawb.java:Annotation" visibility="public" name="Interaction">
+      <fields visibility="" name="interactionSequence" type="//@packages.1/@containedElements.2"/>
+    </containedElements>
+  </packages>
+</de.silvawb.java:System>

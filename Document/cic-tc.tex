@@ -1,4 +1,4 @@
-% 
+%
 % exemplo genérico de uso da classe iiufrgs.cls
 % $Id: iiufrgs.tex,v 1.1.1.1 2005/01/18 23:54:42 avila Exp $
 %
@@ -44,6 +44,7 @@
 \usepackage[round]{natbib}
 
 \usepackage{subcaption} %Support for sub figures
+\usepackage{float}
 
 %
 % Informações gerais
@@ -178,13 +179,17 @@
 %TODO: Remove space in above figures
 %TODO: Standardize meta-model or metamodel
 %TODO: Define artifacts
+%TODO: May I used the first person (us)?
+%TODO: Present tense, or past tense?
+%TODO: Review footnotes? Are they showing in every case? (not sure)
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Chapter
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Introduction}
 The techniques for software development has changed in the course of time since the rise of general-purpose programmable computers and specially in the second half of the 20th century with the rise of digital computers \citep{ceruzzi2003history}. In the beginning of digital computer programming machine code was used to describe algorithms, but as complexity and size of such algorithms got bigger this technique soon became impracticable, what evoked the need for a more sophisticated way of programming these digital machines. The assembly languages (also known as low-level programming languages) came to solve this problem, but clearly the complexity kept increasing as well as the need for new techniques and technologies for software programming. The popularization of computing, and the increasing application of computers in the practice urged the creation of high-level programming languages (e.g. Cobol, Fortran), which kept evolving mainly in regard to the needs of the software market \citep{ceruzzi2003history}. More sophisticated languages (e.g. C, Pascal) and new paradigms (e.g. modular and object-oriented programming) also arose in the late 20th century. But the evolution of software development does not seem to stop, evidenced by the lately increasing research on new software engineering techniques such as the Model-driven Engineering.
 
-The newest characteristics of the information system market, like the constant evolution of the software systems, the interoperability between them and the big number of developers working in a common software artifact has required the use of software models; and the research on how to apply systematically and correctly such models in the development processes, what is called Model-driven Engineering (MDE) or Model-driven Software Development \cite{france2007model}. This Bachelor thesis aims therefore to explore one specific realm of Model-driven Engineering research, namely the problem of synchronization of models (or artifacts) in the Java technological space. The goal here is to pick commonly used meta-models in Java systems, describe them and identify their relations, so that they can be synchronized.
+The newest characteristics of the information system market, like the constant evolution of the software systems, the interoperability between them and the big number of developers working in a common software artifact has required the use of software models; and the research on how to apply systematically and correctly such models in the development processes, what is called Model-driven Engineering (MDE) or Model-driven Software Development (MDSD) \citep{france2007model}. This Bachelor thesis aims therefore to explore one specific realm of Model-driven Engineering research, namely the problem of synchronization of models (or artifacts) in the Java technological space. The goal here is to pick commonly used meta-models in Java systems, describe them and identify their relations, so that they can be synchronized.
 
 %TODO: Remainder
 TALK ABOUT THE REMAINDER OF THE DOCUMENT.
@@ -197,27 +202,25 @@ TALK ABOUT THE REMAINDER OF THE DOCUMENT.
 According to \citet[p. 21]{czarnecki2006feature}: "\textit{Models are system abstractions that allow developers and other stakeholders to effectively address concerns, such as answering a question about the system or effecting a change}”. By defining a model as a system abstraction, it becomes clear, that a software system might have several models abstracted from it, each one representing certain aspects of the whole system. These models also have relations between them, in the sense that they all are supposed to describe the actual system consistently by not presenting logical contradictions. Here examples of models are \emph{UML class diagram}, \emph{Use Cases}, or even the source-code itself. The term model and artifacts will be used interchangeably throughout this document.
 
 %TODO: First person plural is ok?
-The constant evolving nature of current large-scale software systems causes their models to be constantly changed \cite{diskin2011model}. But in order to maintain this whole network of interconnected models consistent the changes have to be forwarded through the network, i.e. all models have to be synchronized. Suppose one have a \emph{UML Class Diagram}, a series of \emph{UML Sequence Diagrams} and the source-code. If a method has its name changed in the class diagram, all occurrences of this method has to have its name updated in the sequence diagrams and in the source-code. It turns out though, that neither a model synchronization tool comprising the most common meta-models used nowadays in Java information systems is known by us nor have we found clearly defined relation definitions between them on the literature. 
+The constant evolving nature of current large-scale software systems causes their models to be constantly changed \citep{diskin2011model}. But in order to maintain this whole network of interconnected models consistent, the changes have to be forwarded through the network, i.e. all models have to be synchronized. Suppose one have a \emph{UML Class Diagram}, a series of \emph{UML Sequence Diagrams} and the source-code. If a method has its name changed in the class diagram, all occurrences of this method have to have their name updated in the sequence diagrams and in the source-code. It turns out though, that neither a model synchronization tool comprising the most common meta-models used nowadays in Java information systems is known by us, nor have we found clearly defined relation definitions between them on the literature, even though an expressive effort has been made by the academic community to create solutions for the problem of model synchronization. 
 
 %---------------------------------------------
 % Section
 %---------------------------------------------
 \section{Motivation}
-%TODO: us again
-The lack of a functional model synchronization tool integrating a broad range of meta-models used currently in Java software engineering is the main motivation for this thesis. Although an expressive effort has been made by the academic community to create solutions for the problem of model synchronization, no study known by us presents an effective tool, that could be used extensively in practice. We believe though, that the contribution of this thesis can be useful for the creation of such a tool.
-	
-Another motivation for this thesis is the lack of relation definitions in current literature for extensively used meta-models in Java systems industry. Examples of these relations include relations between \emph{UML Class and Sequence Diagrams} and \emph{Java Code}, between \emph{Use Cases} and \emph{Requirements Diagrams}, between \emph{OCL contracts (used in design by contract methods)} and \emph{Unit Tests}, among others. It means, that the success of this thesis brings the contribution towards the definition of a network of interconnected meta-models useful to both research and industry community. Therefore the availability of such a network might finally allow the extensive use of Model-driven Engineering in practice $-$ helping bridging the gap between system abstractions and their concrete form $-$ and foster the further development of more sophisticated model synchronization methods.
+Problems of software quality, like security flaws, software not working according to its specification (i.e. bugs), or even performance questions are an issue of interest of both the industrial and the academical community. Model-driven Engineering (MDE) claims to leverage the use of models in order to help bridge the gap between the problem and the implementation domains \citep{france2007model}, and therefore to reduce some problems of quality. This discussion points to the motivation of the use of models, but also highlights the need for synchronization methods, that allow the network of models of a system to be kept consistent. In fact, the synchronization could be done manually by the users, since they can a priori update all models related to the one under changes, but this manual process usually requires much time from expensive workforce and is error-prone. Automated (or at least partially-automated) model synchronization endeavors to reach a higher reliability on the models, as well as lower costs for the software maintainer.
 
-It is worth to note also, that the contribution of this thesis might help enhancing the quality of current software construction and therefore lessening the number of software problems and errors, what seems to be a big problem nowadays, by fomenting the wide application of Model-Driven Software Development.
+In general, synchronized models enhance the documentation quality, once many of them are used for documentation purposes; ease the act of evolving software, by bridging the gap between problem (abstract) and implementation (concrete) levels; and support the debugging processes, once models are used to consult information about the system under study. On the other hand, if one model is not kept consistent with another, it may lose its validity, once the information it addresses cannot be trusted anymore, and consequently the user cannot rely on it anymore. If the number of inconsistencies between models is large enough, the users run the risk of not being able to use a big part of their set of models, what itself lowers the quality of the software.
+
+Generally, the amount of inconsistencies tend to grow as the size of a program grows. The complexity of the network of models, as well as of the synchronization task increases therefore too, what also gives reason to the application of more robust synchronization techniques. This phenomenon occurs specially in the case of a Java program, so Java is used in this thesis as an example domain.
 
 %---------------------------------------------
 % Section
 %---------------------------------------------
 \section{Objective}
-In order to help filling this gap in knowledge, this bachelor thesis aims to present a set of meta-models commonly used in current Java object oriented software systems and the respective relations between them. The goal is then to contribute to current research, by providing such relations, that later could be further extended as a benchmark case or as the basis of a synchronization tool.
+This bachelor thesis aims to (1) present some artifacts from the Java technological space, that might require synchronization, explaining their objectives and some basic elements from them; (2) formalize and explain the relations between these artifacts, so that the synchronization is possible; and finally (3) discuss how synchronization may be accomplished in a representative showcase.
 
-%TODO: Synchronization?
-The end of this document shall present all the written definitions as well as the results of the synchronization of representative examples useful in the practice. Furthermore, the report of this thesis recording the difficulties and experiences found during the work process and an analysis and discussion of future development and challenges of the realm is also a legacy.
+This document presents the documentation of the three objectives mentioned before. Furthermore, the report of the difficulties and experiences found during the work process and an examination of possible future development and challenges of the realm is also a goal.
 
 
 %---------------------------------------------
@@ -379,12 +382,12 @@ With the terms and the theoretical basis clarified, the report of the main devel
 % Section
 %---------------------------------------------
 \section{The Network of Meta-models}
-The choice of which models are used in a certain Java program may vary considerably depending on the context of the development and the software requirements, which themselves can range from high dependability (e.g. airplane software) to continuous evolution (e.g. applications for cellphones) for example. Nevertheless we selected a few typical models and the relations between them and created a network of meta-models, shown in figure \ref{fig:network_metamodels}.
+The choice of which models are used in a certain Java program may vary considerably depending on the context of the development and the software requirements, which themselves can range from high dependability (e.g. airplane software) to continuous evolution (e.g. applications for cellphones), for example. Nevertheless, we selected a few typical models and the relations between them and created a network of meta-models. The figure \ref{fig:network_metamodels} depicts this network. The bold printed vertices and edges represent respectively the meta-models and the relations, that are treated more deeply in this thesis, namely \emph{Java}, \emph{UMLClassDiagram}, \emph{UMLSequenceDiagram}, \emph{UMLContract} and \emph{UnitTest}, whereas the other vertices are by virtue of the scope of this thesis some rather more briefly discussed meta-models, namely \emph{UMLUseCaseDiagram}, \emph{RequirementDiagram}, \emph{JavaDoc}, \emph{UMLStateMachine}, \emph{ERDiagram}, \emph{FormalSpecification}. This does not mean however, that they are not worth further studying.
 
 \begin{figure}[h]
-    \caption{The created network of meta-models}
+    \caption{A network of meta-models in the Java technological spaces}
     \begin{center}
-        \includegraphics[width=25em]{network_metamodels}
+        \includegraphics[width=30em]{network_metamodels}
     \end{center}
     \label{fig:network_metamodels}
     \legend{Source: The author}
@@ -393,65 +396,159 @@ The choice of which models are used in a certain Java program may vary considera
 The central element of the network is the \emph{Java} meta-model. A Java model (or, Java code) contains both structural and behavioral information about the system, which is represented among other elements through \emph{classes}, \emph{fields}, \emph{methods} and \emph{statements}.
 
 %TODO: Imperative ok?
-Once a meta-model might be relatively big and comprise a huge number of elements, it is interesting to split it into smaller pieces for a specific set of relations. Take for example the UML, that includes a large number of different concerns (e.g. classifiers, state machines, activities, interaction, etc) and may be split into sub meta-models in order to ease the writing of the relations. For this reason we separate the UML into \emph{UMLClassifier}, \emph{UMLInteraction}, and \emph{UMLContract}. The first is constructed around the concept of \emph{classifier}, that is \emph{"used to classify different kinds of values"} \citep[p. 97]{omg2007unified} and is widely used under the name \emph{class} in the object oriented paradigm. In special, we focus on structured classifiers, thus considering elements like \emph{class}, \emph{property}, \emph{operation}, \emph{interface} and \emph{package}. This meta-model is usually used to describe the structure of a object oriented Java program through a class diagram, representing the definition of its classes, field and methods, but leaving out behavioral aspects. The relations between \emph{UMLClassifier} and \emph{Java} is then given by an almost direct translation between their elements. A \emph{class} in the former is transformed into a \emph{class} in the latter, a \emph{property} in a \emph{field}, an \emph{operation} in a \emph{method} and so on.
+Once a meta-model might be relatively big and comprise a huge number of elements, it is interesting to split it into smaller pieces for a specific set of relations. Take for example the UML, that includes a large number of different concerns (e.g. classifiers, state machines, activities, interaction, etc) and may be split into sub meta-models in order to ease the writing of the relations. For this reason we separate the UML into \emph{UMLClassDiagram}, \emph{UMLSequenceDiagram}, \emph{UMLContract}, \emph{UMLUseCaseDiagram} and \emph{UMLStateMachineDiagram}. The first is constructed around the concepts of \emph{class}, \emph{property}, \emph{operation}, \emph{interface} and \emph{package}. This meta-model is usually used to describe the structure of a object oriented Java program through a class diagram, representing the definition of its classes, field and methods, but leaving out behavioral aspects. The relations between \emph{UMLClassDiagram} and \emph{Java} is then given by an almost direct translation between their elements. A \emph{class} in the former is transformed into a \emph{class} in the latter, a \emph{property} in a \emph{field}, an \emph{operation} in a \emph{method} and so on.
 
-To represent some behavioral aspects, \emph{UMLInteraction} is used instead. \emph{"Interactions [...] are used to get a better grip of an interaction situation for an individual designer or for a group that needs to achieve a common understanding of the situation"} \citep[p. 563]{omg2007unified}. The elements of this meta-model are usually reproduced with sequence diagrams, where \emph{lifelines} and \emph{messages} provide information about the sequence of event occurrences. In a Java program it may correspond to the sequence of calls inside a specific method. This means, the semantical information of each sequence diagram could be brought to correspondent method in the Java model.
+To represent some behavioral aspects, \emph{UMLSequenceDiagram} is used instead. The elements of this meta-model are usually reproduced with sequence diagrams, where \emph{lifelines} and \emph{messages} provide information about the sequence of event occurrences. In a Java program it may correspond to the sequence of calls inside a specific method. This means, the semantical information of each sequence diagram could be brought to the correspondent method in the Java model.
 
-\emph{UMLContract} is based on the ideas of design-by-contract, whose main goal is to improve reliability of object oriented software \citep{meyer1992applying}, and where operations have \emph{pre} and \emph{postconditions} as well as \emph{invariants}. Its relation with \emph{Java} is basically, that each constraint of the contracts can be tested as assertions and expressed in terms of annotations in the Java source-code. Moreover, once can have check methods, that are supposed to be updated as soon as the contracts undergo changes.
+\emph{UMLContract} is based on the ideas of design-by-contract, whose main goal is to improve reliability of object oriented software \citep{meyer1992applying}, and where operations have \emph{pre} and \emph{postconditions} as well as \emph{invariants}. Its relation with \emph{Java} is basically, that each constraint of the contracts can (1) be tested as assertions and (2) expressed in terms of annotations in the Java source-code. Moreover, one can have check methods in Java, which serve to verify the constraints of the class and therefore are supposed to be updated as soon as the contracts undergo changes. Related to contracts are also \emph{Formal Specifications}, these taking several different forms, among them the Z Notation (see \citep{spivey1992z}), which itself also refers to \emph{pre} and \emph{postconditions}.
 
-At last is the \emph{UnitTest}, that endeavor to enhance the software quality by means of tests. It tests small units of code, by basically verifying the pre and postconditions as well as invariants of each method. Because unit tests for Java programs are usually written in Java, we use the same meta-model for the vertices \emph{Java} and \emph{UnitTests} of our network. Anyways, the relation between both is based on creating test cases in the latter according to the contract annotations (e.g pre and postconditions, invariants, examples, etc) present in the methods of the former.
+The \emph{UnitTest} endeavors to enhance the software quality by means of tests. It tests small units of code, by basically verifying the pre and postconditions as well as invariants of each method. Because unit tests for Java programs are usually written in Java, we use the same meta-model for the vertices \emph{Java} and \emph{UnitTests} of our network. Anyways, the relation between both is based on creating test cases in the latter according to the contract annotations (e.g pre and postconditions, invariants, examples, etc) present in the methods of the former.
+
+Moreover, \emph{UML Use Cases Diagrams} are used to relate \emph{Actors} (basically users of the program) and \emph{Use Cases} (specifications of behavior), and therefore have a relationship with \emph{Requirement Diagrams}, a very common tool on information system analysis for description of features of a system, and with \emph{Sequence Diagrams} (discussed before) and \emph{State Machine Diagrams}, two artifacts aiming to describe the behaviors specified by the use cases \citep[p. 637]{omg2007unified}. \emph{State Machines} are well known means for modeling functionalities of Java programs, rely on \emph{states} and \emph{transitions} and relates to \emph{Use Cases Diagrams} in the sense that it describes the behavior of a \emph{Use Case}. For this reason, one may argue, that the behavior expressed by \emph{State Machines} may also be synchronized with the implementaion of methods in the \emph{Java source-code}.
+
+The linking from \emph{Requirement Diagrams} to \emph{Unit Tests} has been proposed by \citet{noack2013automatic} and by \citet{post2009linking} and a kind of linking to source-code has been proposed by \citet{antoniol2002recovering}. \emph{JavaDoc} models play an important role as well, as they serve as program documentation for the developers. A transformation from the Java source-code to a \emph{JavaDoc} model is already achievable through the \emph{JavaDoc Tool} \footnote{http://www.oracle.com/technetwork/articles/java/index-jsp-135444.html}, which transforms comments from the source-code into HTML documentation.
+
+Finally, there is the \emph{ERDiagram} (Entity-relationship model, see \citep{chen1976entity}), used to construct data models and is applied specially to describe database schemes through basically \emph{Entities}, that often correspond to \emph{Java classes}, and \emph{Relationships} between them, what may be seen often as \emph{Java attributes}.
 
 %---------------------------------------------
 % Section
 %---------------------------------------------
 \section{Meta-model Definitions}
-The modeling language used to write these meta-models is the \emph{EMF Ecore} and the tool used is the special version for model development of the \emph{Eclipse Mars 4.5.1 IDE\footnote{https://projects.eclipse.org/releases/mars}}, which eases the creations of models ans their diagrams and the generation of plug-ins necessary for running the transformations, thus being more suitable than the alternatives of the \emph{Netbeans IDE}\footnote{https://eclipse.org} or the FUJABA \citep{nickel2000fujaba}, whose support or popularity in the community are not so valuable. The \emph{Ecore} language has been chosen not only for its extensible documentation and popularity in the community, but also for its ease to use in the \emph{Eclipse IDE}. The meta-models are listed in the sections below.
+As stated in the last section, the meta-models highlighted in the figure \ref{fig:network_metamodels} have its meta-models defined here, and the relation between them formalized. The meta-models \emph{UMLClassDiagram}, \emph{UMLSequenceDiagram}, \emph{UMLContract}, and \emph{Java} $-$ which serves also for the vertice \emph{UnitTest} $-$ are explained below with help of a running example.
 
-\subsection{UML}
+The modeling language used to write these meta-models is the \emph{EMF Ecore} and the tool used is the special version for model development of the \emph{Eclipse Mars 4.5.1 IDE\footnote{https://projects.eclipse.org/releases/mars}}, which eases the creations of models and their diagrams as well as the generation of plug-ins necessary for running the transformations. For this reason \emph{Eclipse IDE} seems to be more suitable than the alternatives \emph{Netbeans IDE}\footnote{https://netbeans.org} or FUJABA \citep{nickel2000fujaba}, whose support or popularity in the community are not so valuable. The \emph{EMF Ecore} language has been chosen not only for its extensible documentation and popularity in the community, but also for its ease to use in the \emph{Eclipse IDE}. The meta-models are listed in the sections below.
+
+%-------------------
+% Subsection
+%-------------------
+\subsection{UML Class Diagram}
 %TODO: First person again
 %TODO: Update with new concerns of the uml
-The meta-model utilized for UML represents the version 2.0 of the standard and is provided by the \emph{EMF plug-in}\footnote{https://eclipse.org/modeling/emf} for Eclipse, which clearly integrates easily with the IDE and seems to be suitable for our needs. Alternatively we could use the meta-model provided by the OMG, but then unnecessary work of adaption could late our progress. A meta-model for the latest version of the UML (2.5) has not been found. The figures \ref{fig:fig:uml_metamodel_class}, \ref{fig:uml_metamodel_sequence} and \ref{fig:uml_metamodel_contracts} address simplified views of the UML meta-model for respectively the classifiers, interactions and contracts concerns.
+The meta-model utilized for \emph{UMLClassDiagram} (also for \emph{UMLSequenceDiagram}, \emph{UMLContract}) represents the version 2.0 of the UML standard and is provided by the \emph{EMF plug-in}\footnote{https://eclipse.org/modeling/emf} for Eclipse, which clearly integrates easily with the IDE and seems to be suitable for our needs. Alternatively we could use the meta-model provided by the OMG, but then unnecessary work of adaption could late our progress. The figure \ref{fig:uml_metamodel_class} addresses a simplified view of the \emph{UMLClassDiagram}. Elements in blue are \emph{EMF Ecore} abstract elements, whilst elements in yellow are concrete. Some features like operations and some relations between elements were omitted for a better visualization. 
 
-%TODO: Simplify this image, show only what was used
-\begin{figure}[h]
-    \caption{A simplified view of the UML meta-model focused on the elements used in classes diagrams. Elements in blue are abstract elements, whilst elements in yellow are concrete. Some features like operations and some relations between elements were omitted for a better visualization.}
+The \emph{Model} (top, link on figure \ref{fig:uml_metamodel_class}) represents the whole model and is the root element of a class diagram, in the sense every other element is contained by it. \emph{Model} inherits \emph{Package}, and thus may contain \emph{Packageable Elements}. Because \emph{Packages} inherit \emph{Packageable Elements}, they may be contained by the \emph{Model}, what is the most common case. An example of a \emph{UMLClassDiagram} model (not the meta-model) is depicted in the figure \ref{fig:uml_metamodel_class_example}, where a \emph{Model} named \emph{Example01} contains a \emph{Package} named \emph{main}.
+
+A \emph{Package} may contain according to these scheme other \emph{Packages} as well as a \emph{Classifier} (top, right on  figure \ref{fig:uml_metamodel_class}), because it inherits \emph{Type}, which itself inherits \emph{Packageable Element}.The two classifiers handled in the figure are \emph{Class} and \emph{Interface}. The model if the running example contains the \emph{Classes} \emph{Person}, \emph{Driver}, and \emph{Car}; and the \emph{Interface} \emph{Drivable}.
+
+According to the meta-model, a \emph{Classifier} may have a \emph{Generalization} (i.e. inheritance), illustrated with a straight arrow from \emph{Driver} to \emph{Person} in the example on the figure \ref{fig:uml_metamodel_class_example}. Moreover, a \emph{Class} is possible to have not only \emph{Properties} (through the aggregation \emph{ownedAttribute} acquired by the inheritance chain \emph{Class}, \emph{EncapsulatedClassifier}, \emph{StructuredClassifier}), but also \emph{Operations} (through the \emph{ownedOperation} attribute). This characteristic is analogous to \emph{Interfaces}. In the running example the \emph{Person} has the \emph{Property name}, as well as the \emph{Driver} has the \emph{Property driverLicense} and the \emph{Operation drive(Drivable):void}. 
+
+%TODO: write about Parameter
+
+\begin{figure}[H]
+    \caption{Simplification of the \emph{UMLClassDiagram} meta-model}
     \begin{center}
-        \includegraphics[width=40em]{uml_metamodel_class}
+        \includegraphics[width=\textwidth]{umlClassDiagramSimple01}
     \end{center}
     \label{fig:uml_metamodel_class}
     \legend{Source: Image created by the author using the \emph{Eclipse IDE}. Meta-model from \emph{EMF plug-in}}
 \end{figure}
-%TODO: Simplify this image, show only what was used
 \begin{figure}[h]
-    \caption{A simplified view of the UML meta-model focused on the elements used in sequence diagrams.}
+    \caption{An example of a model \emph{UMLClassDiagram} containing one \emph{Model} (\emph{Example01}), one \emph{Package} (\emph{main}), three \emph{Classes} (\emph{Person}, \emph{Drive} and \emph{Car}), and one \emph{Interface}, namely \emph{Drivable}.}
     \begin{center}
-        \includegraphics[width=40em]{uml_metamodel_sequence}
+        \includegraphics[width=22em]{umlClassDiagramExample01}
+    \end{center}
+    \label{fig:uml_metamodel_class_example}
+    \legend{Source: Image created by the author using the \emph{Astah Software}\footnote{http://astah.net}.}
+\end{figure}
+
+%-------------------
+% Subsection
+%-------------------
+\subsection{UML Sequence Diagram}
+The \emph{UMLSequenceDiagram} is essentially based on the elements \emph{Interaction}, \emph{Lifeline}, and \emph{Messages}. A simplified view of the meta-model is given on the figure \ref{fig:uml_metamodel_sequence}. According to \citet[p. 563]{omg2007unified}: \emph{"Interactions [...] are used to get a better grip of an interaction situation"} \citep[p. 563]{omg2007unified}, by being so the important aspect of \emph{Sequence Diagram} are the exchange of messages between object (i.e. interaction). Sequence diagrams are quite flexible in regard to its semantics, so developers interpret the exchange of messages in different ways. Nevertheless, they are interpreted in this thesis in a rather simpler manner. An \emph{Interaction} models one scenario, in which an \emph{Operation} of a \emph{Class} is executed, and contains on or more \emph{Lifelines}, that express the life of an instance of a class. An illustration of these elements is to find in the figure \ref{fig:uml_metamodel_sequence_example}.
+
+\begin{figure}[H]
+    \caption{Simplification of the \emph{UMLSequenceDiagram} meta-model}
+    \begin{center}
+        \includegraphics[width=40em]{umlSequenceDiagramSimple01}
     \end{center}
     \label{fig:uml_metamodel_sequence}
     \legend{Source: Image created by the author using the \emph{Eclipse IDE}. Meta-model from \emph{EMF plug-in}}
 \end{figure}
-%TODO: Simplify this image, show only what was used
+
+One \emph{Lifeline} is \emph{covered by} one \emph{Action Execution Specification} (through the inheritance chain \emph{InteractionFragment}, \emph{ExecutionSpecification}, \emph{ActionExecutionSpecification}), that is depicted by a rectangle over the \emph{Lifeline} and symbolize the time, during which a the class is executed. An \emph{Action Execution Specification} has then a \emph{MessageOccurenceSpecification} as \emph{start} point, which itself is related to a \emph{Message} (through its mother class \emph{MessageEnd}). Finally, each \emph{Message} is linked to  two \emph{MessageOccurenceSpecifications} $-$ one \emph{receiveEvent} that lies on the beginning and one \emph{sendEvent} that lies on the end of the \emph{Message}); and has a \emph{signature} of an \emph{Operation} (through \emph{NamedElement}, \emph{Namespace}, \emph{BehavioralFeature}, \emph{Operation}). The comprehension of this interpretation over \emph{Sequence Diagrams} requires the reader to grasp the figure \ref{fig:uml_metamodel_sequence_example}
+
 \begin{figure}[h]
-    \caption{A simplified view of the UML meta-model focused on the elements used in contracts.}
+    \caption{An example of a model \emph{UMLSequenceDiagram} containing one \emph{Interaction} (\emph{Interaction01}), two \emph{Lifelines} (\emph{:Driver} and \emph{:Drivable}), and four \emph{Messages}.}
     \begin{center}
-        \includegraphics[width=40em]{uml_metamodel_contracts}
+        \includegraphics[width=\textwidth]{umlSequenceDiagramExample01}
+    \end{center}
+    \label{fig:uml_metamodel_sequence_example}
+    \legend{Source: Image created by the author using the \emph{Astah Software}\footnote{http://astah.net}.}
+\end{figure}
+
+To model the order in which the \emph{Messages} occur, a \emph{GeneralOrdering} establishes an order between two \emph{MessageOccurenceSpecifications}, by signalizing which of them occur \emph{before} or \emph{after} the other. So in the running example there is a \emph{GeneralOdering} instance holding the \emph{MessageOccurenceSpecifications} related to the \emph{Message 1} as happening \emph{before} the one related to the \emph{Message 1.1} (that is held as \emph{after}).
+
+As stated before, developers tend to interpret and utilize sequence diagrams in different fashions. For this thesis a set of assumptions is made in regard to that, among them lifelines represent only classes (excluding thus representation of actors); and only synchronous message are handled.
+
+%-------------------
+% Subsection
+%-------------------
+\subsection{UML Contract}
+The \emph{UMLContract} is a slice of the \emph{UML} meta-model, that aims basically to provide constraints to \emph{Operations} and \emph{Operations} of \emph{Classes}. \emph{Operations} may have \emph{pre} \emph{postconditions}, as well as \emph{Invariants}, which are modeled through the EMF class \emph{Constraint} (on the left top of the figure \ref{fig:uml_metamodel_contracts}).
+
+\begin{figure}[H]
+    \caption{Simplification of the \emph{UMLContract} meta-model}
+    \begin{center}
+        \includegraphics[width=40em]{umlContractSimple01}
     \end{center}
     \label{fig:uml_metamodel_contracts}
     \legend{Source: Image created by the author using the \emph{Eclipse IDE}. Meta-model from \emph{EMF plug-in}}
 \end{figure}
 
+A \emph{Constraint} may have then \emph{constrainedElements}, which in the scope of this thesis are whether \emph{Properties} or \emph{Parameters} (of operations). In addition, it has also a \emph{ValueSpecification}, defining the constraint itself, that in this thesis may be a \emph{OpaqueExpression} or a \emph{Interval}. The former is rather a free definition of the constraint composed by a String \emph{body}, and the \emph{language}, in which it is written (see lines 16 to 19 in figure \ref{fig:uml_metamodel_contracts_example}). The latter defines a interval of values, in which the \emph{constrained element} has to lie. Therefore it has one \emph{value specification} for the minimal and one for the maximal value. Here only \emph{intervals} with one \emph{literal integer value specification} for the minimal value will be handled, see an example in the lines 6 to 7 in figure \ref{fig:uml_metamodel_contracts_example}. This figure shows the same model from the image \ref{fig:uml_metamodel_class_example} but with a alternative visualization in form of a tree, where each line contains one element of the model.
 
+\begin{figure}[h]
+    \caption{The same model from the picture \ref{fig:uml_metamodel_class_example} but with a more comprehensive visualization of elements, including those from \emph{UMLContract}, namely lines 6 to 7 and 14 to 15 (\emph{Constraint} with \emph{Interval}), and lines 16 to 19 (\emph{Constraint} with \emph{OpaqueExpression}).}
+    \begin{center}
+        \includegraphics[width=28em]{umlContractDiagramExample01}
+    \end{center}
+    \label{fig:uml_metamodel_contracts_example}
+    \legend{Source: Image created by the author using the \emph{Eclipse IDE}. Meta-model from \emph{EMF plug-in}.}
+\end{figure}
+
+%-------------------
+% Subsection
+%-------------------
 \subsection{Java}
-For the Java a brand new meta-model was designed in regard to the necessities of this work. Other possibilities included the meta-model\footnote{http://www.eclipse.org/modeling/emf/downloads} provided by the \emph{Eclipse IDE}, whose simplicity hindered its use, or yet the one found in \citet{heidenreich2010closing}, but this one happens to be so extensive that could bring unnecessary complexity. The figure \ref{fig:java_metamodel} reports the created Java meta-model.
+A \emph{Java} model is usually the main artifact of a network of models, in that it comprises much information (both structural and behavioral) about the system under study. It can be visualized either as the digram in the figure \ref{fig:java_metamodel_example} or as plain-text (figure \ref{fig:java_metamodel_example_text01}). The first option is used here, since it seems to be more suitable when handling the model for synchronization than a plain-text source-code format. Nevertheless, there are techniques\footnote{https://eclipse.org/modeling/m2t} to transform one format into another.
 
-%TODO talk more about the meta-model?
+A new meta-model for \emph{Java} was designed in regard to the necessities of this work and includes not only structural elements (e.g. \emph{Packages},\emph{Classes}, \emph{Fields}, etc.), but also some behavioral aspects (e.g. \emph{Statements}), the latter are very shallowly modeled here, but could be further developed in future works. Other possibilities for the meta-model included the meta-model\footnote{http://www.eclipse.org/modeling/emf/downloads} provided by the \emph{Eclipse IDE}, whose simplicity hindered its use; or yet the one found in \citet{heidenreich2010closing}, but this one happens to be so extensive that could bring unnecessary complexity to this thesis. The figure \ref{fig:java_metamodel} reports the complete \emph{Java} meta-model created. Elements in blue are \emph{EMF Ecore} abstract elements, whilst elements in yellow are concrete.
 
 \begin{figure}[h]
     \caption{The Java meta-model created. It goes beyond the common classes and attributes scenario, by comprising also annotations and statements.}
     \begin{center}
-        \includegraphics[width=40em]{java_metamodel}
+        \includegraphics[width=\textwidth]{javaMetamodel}
     \end{center}
     \label{fig:java_metamodel}
+    \legend{Source: Image created by the author using the \emph{Eclipse IDE}.}
+\end{figure}
+
+The root element is the \emph{System} (on the left top of figure \ref{fig:java_metamodel}) and represents the whole Java program. It contains \emph{Packages}, that, because of the \emph{Container} inheritance, contains \emph{Classifiers} (through the \emph{Contained} inheritance). The example on the picture \ref{fig:java_metamodel_example} illustrates concrete types of \emph{Classifiers} in the lines 3, 5 and 48 (\emph{Class}) and 44 (\emph{Interface}).
+
+One \emph{Classifier} may contain \emph{Field} (lines 4, 6, 10, 11, 49), and \emph{Methods} (lines 12, 28, 31, 33, 35, 37), in addition to \emph{interface implementations} (line 54), that refer to one \emph{Interface}; and to one \emph{Generalization} (line 39), also known as inheritance or extension, which refers to another \emph{Classifier} as its \emph{general}.
+
+A \emph{Method} may have zero or more \emph{Arguments}, also known as parameters; likewise \emph{Statements} (to find on the left bottom of the picture \ref{fig:java_metamodel}). In this imperative perspective of the \emph{Java} meta-model, each method has thus an ordered list of \emph{Statements}, representing usually commands that carve the behavior of the program. In a full representation of the \emph{Java} meta-model, they could be of several kinds (e.g. arithmetic expression, logic expression, method call, control structure like \emph{if}), but for the scope of this bachelor thesis only \emph{assert statements} are modeled. An \emph{AssertStatement} basically tests a logical expression. If it does not hold, than an exception is thrown. The only logical expression supported here is the \emph{greater-or-equal expression} (\emph{GETExpression}, left bottom on the picture \ref{fig:java_metamodel}), but again the construction of a more complete meta-model shall be possible in a wider scope. An example of a \emph{Method} with \emph{AssertStatement} is to find on the lines 28 to 30 and 33 to 36 of the picture \ref{fig:java_metamodel_example}.
+
+\begin{figure}[h]
+    \caption{The equivalent \emph{Java} version of the \emph{UML} models from the pictures \ref{fig:uml_metamodel_class_example}},  \ref{fig:uml_metamodel_contracts_example} and  \ref{fig:uml_metamodel_sequence_example}
+    \begin{center}
+        \includegraphics[width=28em]{javaMetamodelExample01}
+    \end{center}
+    \label{fig:java_metamodel_example}
+    \legend{Source: Image created by the author using the \emph{Eclipse IDE}.}
+\end{figure}
+
+To finish the description of the meta-model, there is the \emph{Annotation}, which is also a kind of \emph{Classifier}. An \emph{AnnotationInstance} is than contained by an \emph{Annotable} element (i.e \emph{Classifier}, \emph{Field}, or \emph{Method}) and may contain \emph{AnnotationInstanceParameters}, which themselves may contain \emph{AnnotationInstanceValues}. The picture \ref{fig:java_metamodel_example} contains examples of annotations on the lines 7 to 9 and 13 to 26.
+
+The figure \ref{fig:java_metamodel_example_text01} shows the plain-text view over the \emph{class} \emph{Driver} of the previous example model only with some small differences. In fact this plain-text view has two elements that are not modeled in our \emph{Java} meta-model, namely expansion of logical expressions (line 21) and method calls (lines 36 to 46), but anyway it exposes the ideas behind the use of \emph{annotations} (lines 9 and 29 to 34) and their relation with \emph{UML sequence diagrams} and \emph{UML contracts}. More details are shown in the next chapter.
+
+\begin{figure}[h]
+    \caption{..}
+    \begin{center}
+        \includegraphics[width=\textwidth]{javaMetamodelExample01_Text}
+    \end{center}
+    \label{fig:java_metamodel_example_text01}
     \legend{Source: Image created by the author using the \emph{Eclipse IDE}.}
 \end{figure}
 
@@ -469,7 +566,7 @@ With all the meta-models defined, the definition of the relations between their 
 EXPLAIN FIGURE \ref{fig:uCAttribute2jCAttribute} to \ref{fig:uIRealization2jIImplementation}
 
 \begin{figure}[h]
-    \caption{}
+    \caption{..}
     \begin{center}
         \includegraphics[width=40em]{uCAttribute2jCAttribute}
     \end{center}
@@ -477,7 +574,7 @@ EXPLAIN FIGURE \ref{fig:uCAttribute2jCAttribute} to \ref{fig:uIRealization2jIImp
     \legend{Source: Image created by the author using the \emph{Eclipse IDE}.}
 \end{figure}
 \begin{figure}[h]
-    \caption{}
+    \caption{..}
     \begin{center}
         \includegraphics[width=40em]{uIRealization2jIImplementation}
     \end{center}
@@ -590,6 +687,12 @@ Secondly, the work of this thesis can be naturally continued and expanded, by co
 Furthermore, the implementation of a \emph{Eclipse} plug-in should not be a big problem, since the \emph{MoTE} already generates a plug-in for the execution of its algorithm. So the task in this case would be enhance it with a user-friendly interface plus new functionalities and naturally a slightly more practical approach (e.g. handling of actual Java code instead of quasi-theoretic scenarios like Java expressed in XML files).
 
 And lately, a relatively big issue is the use of TGG's for non-MOF-compliant meta-models $-$ or meta-models that are not naturally seen as MOF-compliant, e.g. the complete Java model. Because under certain conditions it could be interesting to see such models from another point of view than the MOF. A clear example is source-code, which can be treated in an easier way with abstract syntax trees. \citet{angyal2008novel} suggests a method to treat this case, but anyways it still remains an open problem and certainly a future challenge.
+
+%TODO: Include this? no study known by us presents an effective tool, that could be used extensively in practice. We believe though, that the contribution of this thesis can be useful for the creation of such a tool.
+
+%TODO: Include this? It means, that the success of this thesis brings the contribution towards the definition of a network of interconnected meta-models useful to both research and industry community. Therefore the availability of such a network might finally allow the extensive use of Model-driven Engineering in practice $-$ helping bridging the gap between system abstractions and their concrete form $-$ and foster the further development of more sophisticated model synchronization methods.
+
+%TODO: enhance the network presented on section 4.1
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Bibliography
