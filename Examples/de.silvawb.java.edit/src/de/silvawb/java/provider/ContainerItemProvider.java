@@ -94,17 +94,6 @@ public class ContainerItemProvider
 	}
 
 	/**
-	 * This returns Container.gif.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/Container"));
-	}
-
-	/**
 	 * This returns the label text for the adapted class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -145,11 +134,6 @@ public class ContainerItemProvider
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
-
-		newChildDescriptors.add
-			(createChildParameter
-				(JavaPackage.Literals.CONTAINER__CONTAINED_ELEMENTS,
-				 JavaFactory.eINSTANCE.createContained()));
 
 		newChildDescriptors.add
 			(createChildParameter

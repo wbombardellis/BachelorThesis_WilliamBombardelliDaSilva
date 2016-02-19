@@ -44,7 +44,42 @@
 \usepackage[round]{natbib}
 
 \usepackage{subcaption} %Support for sub figures
+\usepackage{listings}
 \usepackage{float}
+\setlength{\intextsep}{1\baselineskip} % evita espaços antes e depois de floats
+\usepackage{color}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=C,                 % the language of the code 
+  otherkeywords={algorithm, for, each, if, then, do, endif, endfor, end, return, :=, not, empty},           % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  %caption=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
 
 %
 % Informações gerais
@@ -277,7 +312,7 @@ Before describing the development of this thesis is important to review some imp
 	\item[Model Transformation:] Model transformation can be viewed as common data transformation – very common in computer science – with the specificity of dealing with models \cite{czarnecki2006feature}. More specifically, model transformation is defined here as a function $t : M \rightarrow N$, where $t(m) = n$ means that a target model $n \in N$ is created from a source model $m \in M$, $M$ and $N$ being respectively the set of all valid models of the meta-models $\Phi_M$ and $\Phi_N$. Practical example: Creation of Java code from \emph{UML class diagram}. Note that, model transformation is by nature deterministic, unidirectional and does not preserve the information of the target model (e.g. comments in the Java code).
 
 	%TODO: Note that? ok?
-	\item[Model Synchronization:] The goal of model synchronization is to maintain all relations between the models of a system consistent/correct as updates are performed over them \cite{diskin2011model}. More specifically, model synchronization is defined here as a function $s : M x M x \Delta_M x N x N x \Delta_M \rightarrow M x N $, where $s(m_0,m_1,\delta_m,n_0,n_1,\delta_n) = (m_2,n_2)$ means that final synchronized models $m_2$ and $n_2$ are created from the initial synchronized models $m_0$ and $n_o$ and the modified non-synchronized models $m_1$ and $n_1$, considering the modifications (respectively $\delta_m$ and $\delta_n$) performed over both. Practical example: Modification of a method name ($\delta_m$) in the \emph{UML class diagram}($m_0$) has to be forwarded to the Java code($n_0$), without losing extra information of it (e.g. comments). Note that, model synchronization is deterministic, bidirectional and preserves the informations of the both models. Other terms for model synchronization used interchangeably throughout this document are iterative or information preserving bidirectional model transformation.
+	\item[Model Synchronization:] The goal of model synchronization is to maintain all relations between the models of a system consistent/correct as updates are performed over them \cite{diskin2011model}. More specifically, model synchronization is defined here as a function $s : M \times M \times \Delta_M \times N \times N \times \Delta_M \rightarrow M \times N $, where $s(m_0,m_1,\delta_m,n_0,n_1,\delta_n) = (m_2,n_2)$ means that final synchronized models $m_2$ and $n_2$ are created from the initial synchronized models $m_0$ and $n_o$ and the modified non-synchronized models $m_1$ and $n_1$, considering the modifications (respectively $\delta_m$ and $\delta_n$) performed over both. Practical example: Modification of a method name ($\delta_m$) in the \emph{UML class diagram}($m_0$) has to be forwarded to the Java code($n_0$), without losing extra information of it (e.g. comments). Note that, model synchronization is deterministic, bidirectional and preserves the informations of the both models. Other terms for model synchronization are \emph{iterative} or \emph{information preserving bidirectional model transformation}.
 
 	\item[Network of Models:] A network of models of a system $S$ is an undirected graph $G = (V,E)$, whereas each vertex $v_i \in V$ represents a unique model $i$ abstracting $S$, and an edge $(v_i, v_j)$ exists if, and only if there is a relation defined between both models $i$ and $j$. In the figure \ref{fig:network_example_01} is an example of a network of models, illustrating the possible complexity of such network. More discussion is to find in \citet{mens2006taxonomy}.
 
@@ -325,13 +360,13 @@ Before describing the development of this thesis is important to review some imp
 	    \legend{Source: \citep{hermann2011correctness}}
 	\end{figure}
 
-	\item[Triple Rule:] A triple rule is a triple graph morphism $t_r = (s, c, t) : L \rightarrow R$, where $L$ and $R$ are called respectively the left-hand the right-hand sides \citep{ehrig2007information}.
+	\item[Triple Rule:] A triple rule is a triple graph morphism $t_r = (s, c, t) : L \rightarrow R$, where $L$ and $R$ are called respectively the left-hand the right-hand sides (resp. LHS and RHS) \citep{ehrig2007information}.
 	
 	\item[Triple Axiom:] A triple axiom is a triple rule $t_a = (s, c, t) : \emptyset \rightarrow R$. In order to apply such definitions in the practice, it is common to use attributed graphs and a easier to read diagram scheme depicted in the figure \ref{fig:tgg_axiom_rule}.
 
 
 	\begin{figure}[h]
-	    \caption{In this kind of diagram for triple rules a triple graph is represented by three columns (left model domain, correspondence domain, and right model domain) each one representing respectively the source model elements, the correspondence between source and target and finally the target model elements. A triple rule in turn is represented by a triple graph in black (left-hand side) plus a triple graph in green(right-hand side) (see \ref{fig:tgg_rule}). Because an axiom is a triple rule with empty left-hand side, only green graph occurs in an axiom (see \ref{fig:tgg_axiom}).}
+	    \caption{In this kind of diagram for triple rules a triple graph is represented by three columns (left model domain, correspondence domain, and right model domain) each one representing respectively the source model elements, the correspondence between source and target and finally the target model elements. A triple rule in turn is represented by a triple graph in black (left-hand side) plus a triple graph in green (right-hand side) (see \ref{fig:tgg_rule}). Because an axiom is a triple rule with empty left-hand side, only green graph occurs in an axiom (see \ref{fig:tgg_axiom}).}
 	    \label{fig:tgg_axiom_rule}
 	    \begin{subfigure}{\textwidth}
 		    \caption{Triple axiom example for the relation between UML and Java}
@@ -426,53 +461,67 @@ The modeling language used to write these meta-models is the \emph{EMF Ecore} an
 %TODO: Update with new concerns of the uml
 The meta-model utilized for \emph{UMLClassDiagram} (also for \emph{UMLSequenceDiagram}, \emph{UMLContract}) represents the version 2.0 of the UML standard and is provided by the \emph{EMF plug-in}\footnote{https://eclipse.org/modeling/emf} for Eclipse, which clearly integrates easily with the IDE and seems to be suitable for our needs. Alternatively we could use the meta-model provided by the OMG, but then unnecessary work of adaption could late our progress. The figure \ref{fig:uml_metamodel_class} addresses a simplified view of the \emph{UMLClassDiagram}. Elements in blue are \emph{EMF Ecore} abstract elements, whilst elements in yellow are concrete. Some features like operations and some relations between elements were omitted for a better visualization. 
 
-The \emph{Model} (top, link on figure \ref{fig:uml_metamodel_class}) represents the whole model and is the root element of a class diagram, in the sense every other element is contained by it. \emph{Model} inherits \emph{Package}, and thus may contain \emph{Packageable Elements}. Because \emph{Packages} inherit \emph{Packageable Elements}, they may be contained by the \emph{Model}, what is the most common case. An example of a \emph{UMLClassDiagram} model (not the meta-model) is depicted in the figure \ref{fig:uml_metamodel_class_example}, where a \emph{Model} named \emph{Example01} contains a \emph{Package} named \emph{main}.
-
-A \emph{Package} may contain according to these scheme other \emph{Packages} as well as a \emph{Classifier} (top, right on  figure \ref{fig:uml_metamodel_class}), because it inherits \emph{Type}, which itself inherits \emph{Packageable Element}.The two classifiers handled in the figure are \emph{Class} and \emph{Interface}. The model if the running example contains the \emph{Classes} \emph{Person}, \emph{Driver}, and \emph{Car}; and the \emph{Interface} \emph{Drivable}.
-
-According to the meta-model, a \emph{Classifier} may have a \emph{Generalization} (i.e. inheritance), illustrated with a straight arrow from \emph{Driver} to \emph{Person} in the example on the figure \ref{fig:uml_metamodel_class_example}. Moreover, a \emph{Class} is possible to have not only \emph{Properties} (through the aggregation \emph{ownedAttribute} acquired by the inheritance chain \emph{Class}, \emph{EncapsulatedClassifier}, \emph{StructuredClassifier}), but also \emph{Operations} (through the \emph{ownedOperation} attribute). This characteristic is analogous to \emph{Interfaces}. In the running example the \emph{Person} has the \emph{Property name}, as well as the \emph{Driver} has the \emph{Property driverLicense} and the \emph{Operation drive(Drivable):void}. 
-
-%TODO: write about Parameter
-
-\begin{figure}[H]
+\begin{figure}[h]
     \caption{Simplification of the \emph{UMLClassDiagram} meta-model}
     \begin{center}
-        \includegraphics[width=\textwidth]{umlClassDiagramSimple01}
+        \includegraphics[width=35em]{umlClassDiagramSimple01}
     \end{center}
     \label{fig:uml_metamodel_class}
     \legend{Source: Image created by the author using the \emph{Eclipse IDE}. Meta-model from \emph{EMF plug-in}}
 \end{figure}
+
+The \emph{Model} (top, link on figure \ref{fig:uml_metamodel_class}) represents the whole model and is the root element of a class diagram, in the sense every other element is contained by it. \emph{Model} inherits \emph{Package}, and thus may contain \emph{Packageable Elements}. Because \emph{Packages} inherit \emph{Packageable Elements}, they may be contained by the \emph{Model}, what is the most common case. An example of a \emph{UMLClassDiagram} model (not the meta-model) is depicted in the figure \ref{fig:uml_metamodel_class_example} in two forms: In abstract and in concrete syntax. There a \emph{Model} named \emph{Example01} contains a \emph{Package} named \emph{main}.
+
+A \emph{Package} may contain according to these scheme other \emph{Packages} as well as a \emph{Classifier} (center on the figure \ref{fig:uml_metamodel_class}), because this one inherits \emph{Packageable Element}.The two classifiers handled in the figure are \emph{Class} and \emph{Interface}. The model if the running example contains the \emph{Classes} \emph{Person}, \emph{Driver}, and \emph{Car}; and the \emph{Interface} \emph{Drivable}.
+
+%TODO: write about Parameter
+
 \begin{figure}[h]
-    \caption{An example of a model \emph{UMLClassDiagram} containing one \emph{Model} (\emph{Example01}), one \emph{Package} (\emph{main}), three \emph{Classes} (\emph{Person}, \emph{Drive} and \emph{Car}), and one \emph{Interface}, namely \emph{Drivable}.}
-    \begin{center}
-        \includegraphics[width=22em]{umlClassDiagramExample01}
-    \end{center}
+    \caption{An example of a model \emph{UMLClassDiagram} visualized in two different ways, containing one \emph{Model} (\emph{Example01}), one \emph{Package} (\emph{main}), three \emph{Classes} (\emph{Person}, \emph{Drive} and \emph{Car}), and one \emph{Interface}, namely \emph{Drivable}.}
+    \centering
+	\begin{subfigure}[h]{.35\textwidth}
+		\caption{Abstract Syntax}
+		\includegraphics[width=\textwidth]{umlClassDiagramExample01}
+	\end{subfigure}
+	\begin{subfigure}[h]{.64\textwidth}
+		\caption{Concrete Syntax}
+		\includegraphics[width=\textwidth]{umlClassDiagramExample01_Diagram}
+	\end{subfigure}
     \label{fig:uml_metamodel_class_example}
     \legend{Source: Image created by the author using the \emph{Astah Software}\footnote{http://astah.net}.}
 \end{figure}
+
+According to the meta-model, a \emph{Classifier} may have a \emph{Generalization} (i.e. inheritance), illustrated with a straight arrow from \emph{Driver} to \emph{Person} in the example on the figure \ref{fig:uml_metamodel_class_example}, or an \emph{InterfaceRealization}  illustrated with a dashed arrow from \emph{Car} to \emph{Drivable}. Moreover, a \emph{Class} is possible to have not only \emph{Properties} (through the aggregation \emph{ownedAttribute}), but also \emph{Operations} (through the \emph{ownedOperation} attribute). This characteristic is analogous to \emph{Interfaces}. In the running example the \emph{Person} has the \emph{Property name}, as well as the \emph{Driver} has the \emph{Property driverLicense} and the \emph{Operation drive(Drivable):void}. 
 
 %-------------------
 % Subsection
 %-------------------
 \subsection{UML Sequence Diagram}
-The \emph{UMLSequenceDiagram} is essentially based on the elements \emph{Interaction}, \emph{Lifeline}, and \emph{Messages}. A simplified view of the meta-model is given on the figure \ref{fig:uml_metamodel_sequence}. According to \citet[p. 563]{omg2007unified}: \emph{"Interactions [...] are used to get a better grip of an interaction situation"} \citep[p. 563]{omg2007unified}, by being so the important aspect of \emph{Sequence Diagram} are the exchange of messages between object (i.e. interaction). Sequence diagrams are quite flexible in regard to its semantics, so developers interpret the exchange of messages in different ways. Nevertheless, they are interpreted in this thesis in a rather simpler manner. An \emph{Interaction} models one scenario, in which an \emph{Operation} of a \emph{Class} is executed, and contains on or more \emph{Lifelines}, that express the life of an instance of a class. An illustration of these elements is to find in the figure \ref{fig:uml_metamodel_sequence_example}.
+The \emph{UMLSequenceDiagram} is essentially based on the elements \emph{Interaction}, \emph{Lifeline}, and \emph{Messages}. A simplified view of the meta-model is given on the figure \ref{fig:uml_metamodel_sequence}. According to \citet[p. 563]{omg2007unified}: \emph{"Interactions [...] are used to get a better grip of an interaction situation"} \citep[p. 563]{omg2007unified}, by being so the important aspect of \emph{Sequence Diagram} are the exchange of messages between object (i.e. interaction). Sequence diagrams are quite flexible in regard to its semantics, so developers interpret the exchange of messages in different ways. Nevertheless, they are interpreted in this thesis in a rather simpler manner. An \emph{Interaction} models one scenario, in which an \emph{Operation} of a \emph{Class} is executed, and contains one or more \emph{Lifelines}, that express the life of an instance of a class. A concrete illustration of these elements is to find in the example in the figure \ref{fig:uml_metamodel_sequence_example_diagram}.
 
-\begin{figure}[H]
+\begin{figure}[h]
     \caption{Simplification of the \emph{UMLSequenceDiagram} meta-model}
     \begin{center}
-        \includegraphics[width=40em]{umlSequenceDiagramSimple01}
+        \includegraphics[width=\textwidth]{umlSequenceDiagramSimple01}
     \end{center}
     \label{fig:uml_metamodel_sequence}
     \legend{Source: Image created by the author using the \emph{Eclipse IDE}. Meta-model from \emph{EMF plug-in}}
 \end{figure}
 
-One \emph{Lifeline} is \emph{covered by} one \emph{Action Execution Specification} (through the inheritance chain \emph{InteractionFragment}, \emph{ExecutionSpecification}, \emph{ActionExecutionSpecification}), that is depicted by a rectangle over the \emph{Lifeline} and symbolize the time, during which a the class is executed. An \emph{Action Execution Specification} has then a \emph{MessageOccurenceSpecification} as \emph{start} point, which itself is related to a \emph{Message} (through its mother class \emph{MessageEnd}). Finally, each \emph{Message} is linked to  two \emph{MessageOccurenceSpecifications} $-$ one \emph{receiveEvent} that lies on the beginning and one \emph{sendEvent} that lies on the end of the \emph{Message}); and has a \emph{signature} of an \emph{Operation} (through \emph{NamedElement}, \emph{Namespace}, \emph{BehavioralFeature}, \emph{Operation}). The comprehension of this interpretation over \emph{Sequence Diagrams} requires the reader to grasp the figure \ref{fig:uml_metamodel_sequence_example}
+One \emph{Lifeline} is connected to a \emph{Class} through the attribute \emph{selector} and is \emph{covered by} one \emph{Action Execution Specification}, which in a sequence diagram is depicted by a rectangle over the \emph{Lifeline} and symbolize the time, during which the respective class is executed. An \emph{Action Execution Specification} has then a \emph{MessageOccurenceSpecification} as \emph{start} point, which itself is related to a \emph{Message}. Finally, each \emph{Message} is linked to two \emph{MessageOccurenceSpecifications} $-$ one \emph{receiveEvent} that lies on the beginning and one \emph{sendEvent} that lies on the end of the \emph{Message}); and has a \emph{signature} of an \emph{Operation}. The comprehension of this interpretation over \emph{Sequence Diagrams} requires the reader to grasp the figure \ref{fig:uml_metamodel_sequence_example}
 
 \begin{figure}[h]
     \caption{An example of a model \emph{UMLSequenceDiagram} containing one \emph{Interaction} (\emph{Interaction01}), two \emph{Lifelines} (\emph{:Driver} and \emph{:Drivable}), and four \emph{Messages}.}
-    \begin{center}
-        \includegraphics[width=\textwidth]{umlSequenceDiagramExample01}
-    \end{center}
+    \centering
+   	\begin{subfigure}[h]{\textwidth}
+   		\caption{Abstract Syntax}
+   		\includegraphics[width=\textwidth]{umlSequenceDiagramExample01}
+   	\end{subfigure}
+   	\begin{subfigure}[h]{\textwidth}
+   		\caption{Concrete Syntax}
+   		\includegraphics[width=\textwidth]{umlSequenceDiagramExample01_Diagram}
+   		\label{fig:uml_metamodel_sequence_example_diagram}
+   	\end{subfigure}
     \label{fig:uml_metamodel_sequence_example}
     \legend{Source: Image created by the author using the \emph{Astah Software}\footnote{http://astah.net}.}
 \end{figure}
@@ -485,26 +534,26 @@ As stated before, developers tend to interpret and utilize sequence diagrams in 
 % Subsection
 %-------------------
 \subsection{UML Contract}
-The \emph{UMLContract} is a slice of the \emph{UML} meta-model, that aims basically to provide constraints to \emph{Operations} and \emph{Operations} of \emph{Classes}. \emph{Operations} may have \emph{pre} \emph{postconditions}, as well as \emph{Invariants}, which are modeled through the EMF class \emph{Constraint} (on the left top of the figure \ref{fig:uml_metamodel_contracts}).
+The \emph{UMLContract} is a slice of the \emph{UML} meta-model, that aims basically to provide constraints to \emph{Operations} and \emph{Properties} of \emph{Classes}. \emph{Operations} may have \emph{pre}, \emph{postconditions}, as well as \emph{Invariants}, which are modeled through the EMF class \emph{Constraint} (on the top of the figure \ref{fig:uml_metamodel_contracts}).
 
-\begin{figure}[H]
+\begin{figure}[h]
     \caption{Simplification of the \emph{UMLContract} meta-model}
     \begin{center}
-        \includegraphics[width=40em]{umlContractSimple01}
+        \includegraphics[width=\textwidth]{umlContractSimple01}
     \end{center}
     \label{fig:uml_metamodel_contracts}
     \legend{Source: Image created by the author using the \emph{Eclipse IDE}. Meta-model from \emph{EMF plug-in}}
 \end{figure}
 
-A \emph{Constraint} may have then \emph{constrainedElements}, which in the scope of this thesis are whether \emph{Properties} or \emph{Parameters} (of operations). In addition, it has also a \emph{ValueSpecification}, defining the constraint itself, that in this thesis may be a \emph{OpaqueExpression} or a \emph{Interval}. The former is rather a free definition of the constraint composed by a String \emph{body}, and the \emph{language}, in which it is written (see lines 16 to 19 in figure \ref{fig:uml_metamodel_contracts_example}). The latter defines a interval of values, in which the \emph{constrained element} has to lie. Therefore it has one \emph{value specification} for the minimal and one for the maximal value. Here only \emph{intervals} with one \emph{literal integer value specification} for the minimal value will be handled, see an example in the lines 6 to 7 in figure \ref{fig:uml_metamodel_contracts_example}. This figure shows the same model from the image \ref{fig:uml_metamodel_class_example} but with a alternative visualization in form of a tree, where each line contains one element of the model.
+A \emph{Constraint} may have then \emph{constrainedElements}, which in the scope of this thesis are whether \emph{Properties} or \emph{Parameters} (of operations). In addition, it has also a \emph{ValueSpecification}, defining the constraint itself, that in this thesis may be a \emph{OpaqueExpression} or a \emph{Interval}. The former is rather a free definition of the constraint composed by a String \emph{body}, and the \emph{language}, in which it is written (see lines 16 to 19 in figure \ref{fig:uml_metamodel_contracts_example}). The latter defines a interval of values, in which the \emph{constrained element} has to lie. Therefore it has one \emph{value specification} for the minimal and one for the maximal value. Here only \emph{intervals} with one \emph{literal integer value specification} for the minimal value will be handled, see an example in the lines 6 to 7 in figure \ref{fig:uml_metamodel_contracts_example}.
 
 \begin{figure}[h]
-    \caption{The same model from the picture \ref{fig:uml_metamodel_class_example} but with a more comprehensive visualization of elements, including those from \emph{UMLContract}, namely lines 6 to 7 and 14 to 15 (\emph{Constraint} with \emph{Interval}), and lines 16 to 19 (\emph{Constraint} with \emph{OpaqueExpression}).}
+    \caption{The expanded version of the model from the picture \ref{fig:uml_metamodel_class_example} including elements from \emph{UMLContract}, namely lines 6 to 7 and 14 to 15 (\emph{Constraint} with \emph{Interval}), and lines 16 to 19 (\emph{Constraint} with \emph{OpaqueExpression}). Only abstract syntax is used for this example.}
     \begin{center}
         \includegraphics[width=28em]{umlContractDiagramExample01}
     \end{center}
     \label{fig:uml_metamodel_contracts_example}
-    \legend{Source: Image created by the author using the \emph{Eclipse IDE}. Meta-model from \emph{EMF plug-in}.}
+    \legend{Source: Image created by the author using the \emph{Eclipse IDE}.}
 \end{figure}
 
 %-------------------
@@ -513,7 +562,7 @@ A \emph{Constraint} may have then \emph{constrainedElements}, which in the scope
 \subsection{Java}
 A \emph{Java} model is usually the main artifact of a network of models, in that it comprises much information (both structural and behavioral) about the system under study. It can be visualized either as the digram in the figure \ref{fig:java_metamodel_example} or as plain-text (figure \ref{fig:java_metamodel_example_text01}). The first option is used here, since it seems to be more suitable when handling the model for synchronization than a plain-text source-code format. Nevertheless, there are techniques\footnote{https://eclipse.org/modeling/m2t} to transform one format into another.
 
-A new meta-model for \emph{Java} was designed in regard to the necessities of this work and includes not only structural elements (e.g. \emph{Packages},\emph{Classes}, \emph{Fields}, etc.), but also some behavioral aspects (e.g. \emph{Statements}), the latter are very shallowly modeled here, but could be further developed in future works. Other possibilities for the meta-model included the meta-model\footnote{http://www.eclipse.org/modeling/emf/downloads} provided by the \emph{Eclipse IDE}, whose simplicity hindered its use; or yet the one found in \citet{heidenreich2010closing}, but this one happens to be so extensive that could bring unnecessary complexity to this thesis. The figure \ref{fig:java_metamodel} reports the complete \emph{Java} meta-model created. Elements in blue are \emph{EMF Ecore} abstract elements, whilst elements in yellow are concrete.
+A new meta-model for \emph{Java} was designed in regard to the necessities of this work and includes not only structural elements (e.g. \emph{Packages}, \emph{Classes}, \emph{Fields}, etc.), but also some behavioral aspects (e.g. \emph{Statements}), the latter are very shallowly modeled here, but could be further developed in future works. Other possibilities for the meta-model included the meta-model\footnote{http://www.eclipse.org/modeling/emf/downloads} provided by the \emph{Eclipse IDE}, whose simplicity hindered its use; or yet the one found in \citet{heidenreich2010closing}, but this one happens to be so extensive that could bring unnecessary complexity to this thesis. The figure \ref{fig:java_metamodel} reports the complete \emph{Java} meta-model created. Elements in blue are \emph{EMF Ecore} abstract elements, whilst elements in yellow are concrete.
 
 \begin{figure}[h]
     \caption{The Java meta-model created. It goes beyond the common classes and attributes scenario, by comprising also annotations and statements.}
@@ -526,14 +575,14 @@ A new meta-model for \emph{Java} was designed in regard to the necessities of th
 
 The root element is the \emph{System} (on the left top of figure \ref{fig:java_metamodel}) and represents the whole Java program. It contains \emph{Packages}, that, because of the \emph{Container} inheritance, contains \emph{Classifiers} (through the \emph{Contained} inheritance). The example on the picture \ref{fig:java_metamodel_example} illustrates concrete types of \emph{Classifiers} in the lines 3, 5 and 48 (\emph{Class}) and 44 (\emph{Interface}).
 
-One \emph{Classifier} may contain \emph{Field} (lines 4, 6, 10, 11, 49), and \emph{Methods} (lines 12, 28, 31, 33, 35, 37), in addition to \emph{interface implementations} (line 54), that refer to one \emph{Interface}; and to one \emph{Generalization} (line 39), also known as inheritance or extension, which refers to another \emph{Classifier} as its \emph{general}.
+One \emph{Classifier} may contain \emph{Fields} (lines 4, 6, 10, 11, 49), \emph{Methods} (lines 12, 28, 31, 33, 35, 37), \emph{Imports} (lines 40 to 43), in addition to \emph{interface implementations} (line 54), that refer to one \emph{Interface}; and to one \emph{Generalization} (line 39), also known as inheritance or extension, which refers to another \emph{Classifier} as its \emph{general}.
 
 A \emph{Method} may have zero or more \emph{Arguments}, also known as parameters; likewise \emph{Statements} (to find on the left bottom of the picture \ref{fig:java_metamodel}). In this imperative perspective of the \emph{Java} meta-model, each method has thus an ordered list of \emph{Statements}, representing usually commands that carve the behavior of the program. In a full representation of the \emph{Java} meta-model, they could be of several kinds (e.g. arithmetic expression, logic expression, method call, control structure like \emph{if}), but for the scope of this bachelor thesis only \emph{assert statements} are modeled. An \emph{AssertStatement} basically tests a logical expression. If it does not hold, than an exception is thrown. The only logical expression supported here is the \emph{greater-or-equal expression} (\emph{GETExpression}, left bottom on the picture \ref{fig:java_metamodel}), but again the construction of a more complete meta-model shall be possible in a wider scope. An example of a \emph{Method} with \emph{AssertStatement} is to find on the lines 28 to 30 and 33 to 36 of the picture \ref{fig:java_metamodel_example}.
 
 \begin{figure}[h]
-    \caption{The equivalent \emph{Java} version of the \emph{UML} models from the pictures \ref{fig:uml_metamodel_class_example}},  \ref{fig:uml_metamodel_contracts_example} and  \ref{fig:uml_metamodel_sequence_example}
+    \caption{The equivalent \emph{Java} version of the \emph{UML} models from the pictures \ref{fig:uml_metamodel_class_example},  \ref{fig:uml_metamodel_contracts_example} and \ref{fig:uml_metamodel_sequence_example} in abstract syntax.}
     \begin{center}
-        \includegraphics[width=28em]{javaMetamodelExample01}
+        \includegraphics[width=38em]{javaMetamodelExample01}
     \end{center}
     \label{fig:java_metamodel_example}
     \legend{Source: Image created by the author using the \emph{Eclipse IDE}.}
@@ -544,12 +593,12 @@ To finish the description of the meta-model, there is the \emph{Annotation}, whi
 The figure \ref{fig:java_metamodel_example_text01} shows the plain-text view over the \emph{class} \emph{Driver} of the previous example model only with some small differences. In fact this plain-text view has two elements that are not modeled in our \emph{Java} meta-model, namely expansion of logical expressions (line 21) and method calls (lines 36 to 46), but anyway it exposes the ideas behind the use of \emph{annotations} (lines 9 and 29 to 34) and their relation with \emph{UML sequence diagrams} and \emph{UML contracts}. More details are shown in the next chapter.
 
 \begin{figure}[h]
-    \caption{..}
+    \caption{A more comprehensive Java model based on the figure \ref{fig:java_metamodel_example}, but depicted in plain-text form, expressing the Java concrete syntax.}
     \begin{center}
         \includegraphics[width=\textwidth]{javaMetamodelExample01_Text}
     \end{center}
     \label{fig:java_metamodel_example_text01}
-    \legend{Source: Image created by the author using the \emph{Eclipse IDE}.}
+    \legend{Source: The Author.}
 \end{figure}
 
 %---------------------------------------------
@@ -557,32 +606,65 @@ The figure \ref{fig:java_metamodel_example_text01} shows the plain-text view ove
 %---------------------------------------------
 \section{Relations}
 %TODO: First person
-With all the meta-models defined, the definition of the relations between their elements can be done. In order to accomplish that, TGG is used to code the relations, because it has been extensively used in current academic research; and is supported by several tools for synchronization. Other options included the \emph{ATL} \citep{jouault2008atl}, which does not seem to be enough ripe for our use; or the \emph{Henshin} \citep{arendt2010henshin}, that is not widely supported for the best tools \citep{hildebrandt2013survey}. A theoretical basis of TGG has been given in the chapter \ref{ch:foundations}. Here the relations written by us are presented as well as some explanations over them.
+With all the meta-models defined, the definition of the relations between their elements can be done. In order to accomplish that, TGG is used to code the relations, because it has been extensively used in current academic research; and is supported by several tools for synchronization. Other options included the \emph{ATL} \citep{jouault2008atl}, which does not seem to be enough ripe for our use; or the \emph{Henshin} \citep{arendt2010henshin}, that is not widely supported for the best synchronization tools \citep{hildebrandt2013survey}. A theoretical basis of TGG has been given in the chapter \ref{ch:foundations}. Here the most representative relations are presented as well as some explanations over them.
 
-%TODO: Show only more interesting/novel/important/representative figures and anex everything as appedix?
+%TODO: anex the rest as appedix?
 
-\subsection{UmlClass2Java}
-%TODO: Explain + caption on figures
-EXPLAIN FIGURE \ref{fig:uCAttribute2jCAttribute} to \ref{fig:uIRealization2jIImplementation}
+%-------------------
+% Subsection
+%-------------------
+\subsection{Relations between \emph{Uml Class Diagram} and \emph{Java}}
+\label{subsec:umlClassDiagram2Java}
+Fig. \ref{fig:umlClassDiagram2java_type} shows the triple type graph for the relations between the \emph{UmlClassDiagram} (left) and the \emph{Java} (right) domains, with the correspondence domain being in the middle. In this graph, elements from the left domain are connected to the elements on the right domain, with whom they have a relation. So the element \emph{Model} in \emph{UmlClassDiagram} has a relation to the element \emph{System} in \emph{Java}; analogously, a \emph{Property} in \emph{UmlClassDiagram} is related to an \emph{Field} in \emph{Java}, namely whenever the former is created, the correspondent latter has to be created according to the former's characteristics (i.e. name, type, the class it belongs, etc.).
+
+\begin{figure}[H]
+    \caption{The triple type graph for \emph{Uml Class Diagram} and \emph{Java}}
+    \begin{center}
+        \includegraphics[width=.7\textwidth]{umlClassDiagram2java_type}
+    \end{center}
+    \label{fig:umlClassDiagram2java_type}
+    \legend{Source: The author}
+\end{figure}
 
 \begin{figure}[h]
-    \caption{..}
+    \caption{The triple rule \emph{uClassAttribute2jClassField}}
     \begin{center}
-        \includegraphics[width=40em]{uCAttribute2jCAttribute}
+       	\includegraphics[width=.7\textwidth]{uCAttribute2jCField}
     \end{center}
-    \label{fig:uCAttribute2jCAttribute}
+    \label{fig:uCAttribute2jCField}
     \legend{Source: Image created by the author using the \emph{Eclipse IDE}.}
 \end{figure}
+
+The triple rules describing the relation between \emph{Model} and \emph{System}, as well as \emph{Package}(UML) and \emph{Package}(Java) is available on fig. \ref{fig:tgg_rule}. The triple rule encoding the relation between an \emph{Attribute} of a \emph{Class} in \emph{UmlClassDiagram} and a \emph{Field} of a \emph{Class} in \emph{Java} is shown on fig. \ref{fig:uCAttribute2jCField}. In essence, this rule formalize the fact that for every \emph{Class Attribute} (white filling in the image) in \emph{UmlClassDiagram} a correspondent \emph{Class Field} in \emph{Java} is supposed to exist with corresponding values for the respective meta-attributes. These are in the \emph{UML Property} \emph{name}, \emph{default}, \emph{isStatic}, \emph{isLeaf}, and \emph{visibility}, which correspond in order to \emph{name}, \emph{default}, \emph{isStatic}, \emph{isFinal}, and \emph{visibility} in the \emph{Java Field}.
+
 \begin{figure}[h]
-    \caption{..}
+    \caption{The triple rule \emph{uInterfaceRealization2jInterfaceImplementation}}
     \begin{center}
-        \includegraphics[width=40em]{uIRealization2jIImplementation}
+       	\includegraphics[width=.7\textwidth]{uIRealization2jIImplementation}
     \end{center}
     \label{fig:uIRealization2jIImplementation}
     \legend{Source: Image created by the author using the \emph{Eclipse IDE}.}
 \end{figure}
 
+Analogously, the figure \ref{fig:uIRealization2jIImplementation} shows the triple rule $L_sL_cL_t \rightarrow R_sR_cR_t$ for \emph{UML InterfaceRealization} and \emph{Java InterfaceImplementation}. In this case, an \emph{InterfaceRealizations} have none meta-attributes to be described, besides the associations with \emph{Class} and \emph{Interface}. This rule could be as as follows: Given a state $S_i$ with a triple graph $L_sL_cL_t$ (LHS) containing all the color-filled in fig. \ref{fig:uIRealization2jIImplementation}, the creation of a \emph{UML InterfaceRealization} ($uInterfaceRealization \in R_s$) implies the creation of a \emph{Java InterfaceImplementation} ($uInterfaceImplementation \in R_t$) connected by an element of the correspondence domain ($uIR2jII \in R_c$) and vice-versa. The problem with this transformation is that it does not encode the fact that the implementing class in Java (\emph{jClass}) should contain the $m$ methods defined by the interface (\emph{uInterface}). A possible solution would be the creation of a new rule including an object (\emph{uMethod}) contained by (\emph{uInterface}) in $L_s$ linked with the respective \emph{jMethod} contained in \emph{jClass} in $R_t$ (RHS). This new rule should then be evaluated $m$ times by the transformation engine (for the creation of the $m$ methods in \emph{jClass}), but in fact it can be executed only once in the operational semantic scheme proposed by \citet[p. 9]{giese2010toward}. In the same scheme, the creation of such rule would entail a critical pair, given that two different rules have the object \emph{uInterfaceRealization} in the $R_s$. A definite solution is not know by us, therefore this synchronization task ends up being left to the developer.
+
+\begin{figure}[h]
+    \caption{Example of forward synchronization from a \emph{UMLClassDiagram} model (left) and a \emph{Java} (right) model}
+    \begin{center}
+       	\includegraphics[width=.9\textwidth]{umlClassDiagram2java_Example01}
+    \end{center}
+    \label{fig:umlClassDiagram2java_Example01}
+    \legend{Source: Image created by the author using the \emph{Eclipse IDE}.}
+\end{figure}
+
+
+Fig. \ref{fig:umlClassDiagram2java_Example01} shows the result of a forward transformation from \emph{UMLClassDiagram} to \emph{Java} executed by the \emph{MoTE transformation tool} based on the rules presented in this section plus some simpler rules not shown here (i.e \emph{uModel2jSystem}, \emph{uPackage2jPackage}, \emph{uClass2jClass}, emph{uCOperation2jCOperation} and \emph{uIOperation2jIOperation}).
+
+%-------------------
+% Subsection
+%-------------------
 \subsection{UmlInteraction2Java}
+\label{subsec:UmlSequenceDiagram2Java}
 FIGURE \ref{fig:uILifeline2jMAnnotation} to \ref{fig:uMessageSequence2jInteractionAnnotation_2}
 
 \begin{figure}[h]
@@ -611,7 +693,11 @@ FIGURE \ref{fig:uILifeline2jMAnnotation} to \ref{fig:uMessageSequence2jInteracti
 \end{figure}
 
 
+%-------------------
+% Subsection
+%-------------------
 \subsection{UmlContracts2Java}
+\label{subsec:UmlContracts2Java}
 FIGURE \ref{fig:uCInv2jCInv} to \ref{fig:uOPPreInt2jMAPreAssert}
 
 \begin{figure}[h]
@@ -658,11 +744,69 @@ FIGURE \ref{fig:uCInv2jCInv} to \ref{fig:uOPPreInt2jMAPreAssert}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Chapter
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Synchronization Between Some Models in the Java Technological Space}
+\chapter{Synchronization of Models in the Java Technological Space}
 \label{chapter:metamodel_synchronization}
-%TODO: assumptions: no paralel changes(one change at a time); direction given ...
 
-%TODO: img 45 p563
+%TODO: Update subsections if necessary
+In the last chapter the relations between some meta-models of the Java technological space were presented in terms of triple graphs, organized as triple rules and consequently in triple graph grammars. Each TGG was shown in a different subsection (namely \ref{subsec:umlClassDiagram2Java}, \ref{subsec:UmlSequenceDiagram2Java} and \ref{subsec:UmlContracts2Java}) and represents a different edge of the network of models built (see fig. \ref{fig:network_metamodels}). By being so, each edge corresponds to a different synchronization problem and can be sold, generally speaking, independently from the others. most of the research in the realm deals with such situation. Therefore there are several approaches attempting to solve model synchronization between two models using TGG.
+
+Between them is the \emph{FUJABA} \citep{nickel2000fujaba}, a standalone application that uses TGG to code the relations. Or the \emph{CoWolf}, an extensible framework based on \emph{Eclipse Plug-ins} supporting a pair of meta-models according to \citet{getircowolf}, but that uses \emph{Henshin} \citep{arendt2010henshin} to encode the relations. Finally there is the \emph{MoTE} transformation tool, a series of \emph{Eclipse Plug-ins} for creating TGG's, both graphically and textually; and for transforming models based on these TGG's. We take \emph{MoTE} for the most adequate option for our needs, mainly because of extensive literature about it (\citep{giese2009efficient} and \citep{hildebrandt2012mdelab}) and the easy integration with other technologies, like the \emph{EMF Ecore} or other useful \emph{Eclipse Plug-ins}.
+
+\begin{figure}[h]
+    \caption{Synchronization scheme of the \emph{MoTE} tool}
+    \begin{center}
+        \includegraphics[width=25em]{MoTE_scheme}
+    \end{center}
+    \label{fig:MoTE_scheme}
+    \legend{Source: Adapted from \citep{giese2010model}.}
+\end{figure}
+
+The figure \ref{fig:MoTE_scheme} summarizes how the \emph{MoTE} tool works. Basically, the input TGG is used to derive the operational semantics of the transformation between the source and target models, which are read and written by the synchronization tool. Only these first components (highlighted in the picture) are treated in this thesis. Note, however, that the final practical application of the synchronization is only possible through the adaptation of the logical models (presented so far in form of abstract syntax, e.g \ref{fig:java_metamodel_example}) to physical models (presented so far in form of concrete syntax, e.g \ref{fig:java_metamodel_example_text01}).
+
+As stated before, there exists one synchronization scheme similar to fig. \ref{fig:MoTE_scheme} for each edge of our network of models. But as the whole network have to be maintained, it raises the problem of synchronizing not only two models separately, but instead a whole set of models. In this scenario, each modification on a specific model has to be propagated through the net. For that, a theoretical analysis of the problem, followed by an algorithm is presented below.
+
+%---------------------------------------------
+% Section
+%---------------------------------------------
+\section{Synchronizing the Network of Models}
+As stated in the chapter \ref{ch:foundations}, a \emph{network of models} is a graph $G = (V,E)$, with $V$ being the models and $E$ the edges linking each pair of related models. When one of these vertices $v \in V$ undergoes changes, all its direct neighbors $N(v)$ have to be updated (synchronized) accordingly. As they possibly undergo changes in the process, their neighbors have to be synchronized too, as well as the next neighbors and so on. The preoccupation here is to describe an algorithm to propagate such modifications, and analyze some properties of this algorithm.
+
+A synchronization is then defined as a function $sync: S \times S \times \Delta_S \times T \rightarrow T \times \Delta_T$, where $sync (s_0, s_1, \delta_s, t_0) = (t_1, \delta_t)$ means that, given a source model $s_0$ synchronized with the target model $t_0$; a new updated source model $s_1$; and $\delta_s$ representing the modifications over $s_0$ that produced $s_1$; a new model $t_1$ synchronized with $s_1$ is produced together with the modifications $\delta_t$ necessary for such process. Here two important assumptions were made:
+
+\begin{itemize}
+\item \textbf{Supposition 1:} Only one model can be modified at a time, this means only one vertex can be modified at a time in the whole network $-$ two models are not allowed to be modified simultaneously. This does not seems to be a very problematic restriction, once that in a practical scenario the models could be maintained centralized and observed for changes. Whenever it happens, the synchronization algorithm is ran. 
+
+\item \textbf{Supposition 2:} A synchronization execution has a direction: Whether forward or backward, but not both at the same time. In the first case the source model (that underwent user changes) updates the target model, but does not have side effects, meaning that the synchronization does not provoke extra modification besides the user's ones. To put in other words, in one step the synchronization effects does not ripple back to the source, instead it goes only further.
+
+\item \textbf{Corollary 1:} One single execution of $sync (s_0, s_1, \delta_s, t_0)$ is enough to synchronize $s_1$ with $t_0$.
+\end{itemize}
+
+The goal of this paper is not the definition of the $sync$ algorithm, but the definition of an algorithm for the synchronization of a whole network of models.
+
+This synchronization is performed through a function $netsync: (V,E) \times V \times V \times \Delta_S \rightarrow (V,E)$, where $netsync ((V_0,E_0), s_0, s_1, \delta_s) = (V_1,E_1)$ means that for the synchronized network $(V_0,E_0)$ containing the vertex $s_0 \in V_0$, whose model underwent $\delta_s$ modifications, resulting in $s_1$, a new network of synchronized models $(V_1,E_1)$ is delivered. The $netsync$ algorithm is defined in the listing \ref{lst:NetSync}.
+
+%Algorithm
+\lstinputlisting[label=lst:NetSync, caption=neysync imperative algorithm definition]{algorithm/netsync_00.alg}
+
+Firstly the initial network is updated with the new vertex $s1$, then every neighbor $ni$ of $s$ is synchronized according to the modifications $ds$. If it causes modifications on $ni$, then the network is recursively further synchronized starting from $ni$. Extra assumptions were made by this algorithm:
+
+\begin{itemize}
+\item \textbf{Supposition 3:} The input network of models $(V0,E0)$ is finite.
+
+\item \textbf{Supposition 4:} The input network of models $(V0,E0)$ has no cycles.
+\end{itemize}
+
+This implies the following properties:
+
+\begin{itemize}
+\item \textbf{Theorem 1:} The algorithm always terminates. Because supposition 2 is made, it suffices only one call to $sinc$ on line 4, representing the synchronization of $s0$ and $ni$ $-$ i.e the edge $(s0,ni)$), to synchronize both models (see corollary 1). Furthermore, every edge synchronization is followed by maximal one recursive call on line 8. As the set of edges is finite (Supposition 3), so is the amount of recursive calls (line 8) and so is the number of loops iterating over any vertex neighbors (lines 3 to 10). So is guaranteed the termination of the algorithm.
+
+\item \textbf{Theorem 2:} The time complexity of $netsync((V0,E0), s0, s1, ds)$ is in the worst case $O(\Delta(V0,E0) |E0|)$, where a $sync$ call is taken as elementary operation.
+
+\item \textbf{Theorem 3:} The algorithm is deterministic...
+\end{itemize}
+
+DISCUSS CYCLE; TGG for Multiple models
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Chapter
@@ -688,11 +832,15 @@ Furthermore, the implementation of a \emph{Eclipse} plug-in should not be a big 
 
 And lately, a relatively big issue is the use of TGG's for non-MOF-compliant meta-models $-$ or meta-models that are not naturally seen as MOF-compliant, e.g. the complete Java model. Because under certain conditions it could be interesting to see such models from another point of view than the MOF. A clear example is source-code, which can be treated in an easier way with abstract syntax trees. \citet{angyal2008novel} suggests a method to treat this case, but anyways it still remains an open problem and certainly a future challenge.
 
+%TODO: Problem on interface several methods
+
 %TODO: Include this? no study known by us presents an effective tool, that could be used extensively in practice. We believe though, that the contribution of this thesis can be useful for the creation of such a tool.
 
 %TODO: Include this? It means, that the success of this thesis brings the contribution towards the definition of a network of interconnected meta-models useful to both research and industry community. Therefore the availability of such a network might finally allow the extensive use of Model-driven Engineering in practice $-$ helping bridging the gap between system abstractions and their concrete form $-$ and foster the further development of more sophisticated model synchronization methods.
 
 %TODO: enhance the network presented on section 4.1
+
+%TODO: Enhance algortihm network sync + theoretical basis
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Bibliography

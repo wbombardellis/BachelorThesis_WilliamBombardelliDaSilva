@@ -36,6 +36,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link de.silvawb.java.impl.AnnotationInstanceImpl#getAnnotation <em>Annotation</em>}</li>
  *   <li>{@link de.silvawb.java.impl.AnnotationInstanceImpl#getParameters <em>Parameters</em>}</li>
  *   <li>{@link de.silvawb.java.impl.AnnotationInstanceImpl#getAnnotable <em>Annotable</em>}</li>
+ *   <li>{@link de.silvawb.java.impl.AnnotationInstanceImpl#getName <em>Name</em>}</li>
  * </ul>
  *
  * @generated
@@ -60,6 +61,26 @@ public class AnnotationInstanceImpl extends MinimalEObjectImpl.Container impleme
 	 * @ordered
 	 */
 	protected EList<AnnotationInstanceParameter> parameters;
+
+	/**
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String name = NAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -176,6 +197,27 @@ public class AnnotationInstanceImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, JavaPackage.ANNOTATION_INSTANCE__NAME, oldName, name));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
@@ -235,6 +277,8 @@ public class AnnotationInstanceImpl extends MinimalEObjectImpl.Container impleme
 				return getParameters();
 			case JavaPackage.ANNOTATION_INSTANCE__ANNOTABLE:
 				return getAnnotable();
+			case JavaPackage.ANNOTATION_INSTANCE__NAME:
+				return getName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -258,6 +302,9 @@ public class AnnotationInstanceImpl extends MinimalEObjectImpl.Container impleme
 			case JavaPackage.ANNOTATION_INSTANCE__ANNOTABLE:
 				setAnnotable((Annotable)newValue);
 				return;
+			case JavaPackage.ANNOTATION_INSTANCE__NAME:
+				setName((String)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -279,6 +326,9 @@ public class AnnotationInstanceImpl extends MinimalEObjectImpl.Container impleme
 			case JavaPackage.ANNOTATION_INSTANCE__ANNOTABLE:
 				setAnnotable((Annotable)null);
 				return;
+			case JavaPackage.ANNOTATION_INSTANCE__NAME:
+				setName(NAME_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -297,8 +347,26 @@ public class AnnotationInstanceImpl extends MinimalEObjectImpl.Container impleme
 				return parameters != null && !parameters.isEmpty();
 			case JavaPackage.ANNOTATION_INSTANCE__ANNOTABLE:
 				return getAnnotable() != null;
+			case JavaPackage.ANNOTATION_INSTANCE__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (name: ");
+		result.append(name);
+		result.append(')');
+		return result.toString();
 	}
 
 } //AnnotationInstanceImpl

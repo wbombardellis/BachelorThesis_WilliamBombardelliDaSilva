@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class ContainerImpl extends MinimalEObjectImpl.Container implements de.silvawb.java.Container {
+public abstract class ContainerImpl extends MinimalEObjectImpl.Container implements de.silvawb.java.Container {
 	/**
 	 * The cached value of the '{@link #getContainedElements() <em>Contained Elements</em>}' containment reference list.
 	 * <!-- begin-user-doc -->

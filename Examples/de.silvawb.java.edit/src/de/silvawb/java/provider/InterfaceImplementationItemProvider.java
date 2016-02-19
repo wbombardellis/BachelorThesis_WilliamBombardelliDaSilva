@@ -3,6 +3,7 @@
 package de.silvawb.java.provider;
 
 
+import de.silvawb.java.InterfaceImplementation;
 import de.silvawb.java.JavaPackage;
 
 import java.util.Collection;
@@ -20,7 +21,9 @@ import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.IItemPropertySource;
 import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
 import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
+import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
+import org.eclipse.emf.edit.provider.ViewerNotification;
 
 /**
  * This is the item provider adapter for a {@link de.silvawb.java.InterfaceImplementation} object.
@@ -58,6 +61,7 @@ public class InterfaceImplementationItemProvider
 			super.getPropertyDescriptors(object);
 
 			addInterfacePropertyDescriptor(object);
+			addNamePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -85,6 +89,28 @@ public class InterfaceImplementationItemProvider
 	}
 
 	/**
+	 * This adds a property descriptor for the Name feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addNamePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_InterfaceImplementation_name_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_InterfaceImplementation_name_feature", "_UI_InterfaceImplementation_type"),
+				 JavaPackage.Literals.INTERFACE_IMPLEMENTATION__NAME,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
 	 * This returns InterfaceImplementation.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -103,7 +129,10 @@ public class InterfaceImplementationItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		return getString("_UI_InterfaceImplementation_type");
+		String label = ((InterfaceImplementation)object).getName();
+		return label == null || label.length() == 0 ?
+			getString("_UI_InterfaceImplementation_type") :
+			getString("_UI_InterfaceImplementation_type") + " " + label;
 	}
 	
 
@@ -117,6 +146,12 @@ public class InterfaceImplementationItemProvider
 	@Override
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
+
+		switch (notification.getFeatureID(InterfaceImplementation.class)) {
+			case JavaPackage.INTERFACE_IMPLEMENTATION__NAME:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+				return;
+		}
 		super.notifyChanged(notification);
 	}
 

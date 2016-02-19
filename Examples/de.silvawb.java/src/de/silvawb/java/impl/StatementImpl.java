@@ -26,11 +26,31 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
  * </p>
  * <ul>
  *   <li>{@link de.silvawb.java.impl.StatementImpl#getMethod <em>Method</em>}</li>
+ *   <li>{@link de.silvawb.java.impl.StatementImpl#getName <em>Name</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class StatementImpl extends MinimalEObjectImpl.Container implements Statement {
+public abstract class StatementImpl extends MinimalEObjectImpl.Container implements Statement {
+	/**
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAME_EDEFAULT = null;
+	/**
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String name = NAME_EDEFAULT;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -96,6 +116,27 @@ public class StatementImpl extends MinimalEObjectImpl.Container implements State
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, JavaPackage.STATEMENT__NAME, oldName, name));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -145,6 +186,8 @@ public class StatementImpl extends MinimalEObjectImpl.Container implements State
 		switch (featureID) {
 			case JavaPackage.STATEMENT__METHOD:
 				return getMethod();
+			case JavaPackage.STATEMENT__NAME:
+				return getName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -159,6 +202,9 @@ public class StatementImpl extends MinimalEObjectImpl.Container implements State
 		switch (featureID) {
 			case JavaPackage.STATEMENT__METHOD:
 				setMethod((Method)newValue);
+				return;
+			case JavaPackage.STATEMENT__NAME:
+				setName((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -175,6 +221,9 @@ public class StatementImpl extends MinimalEObjectImpl.Container implements State
 			case JavaPackage.STATEMENT__METHOD:
 				setMethod((Method)null);
 				return;
+			case JavaPackage.STATEMENT__NAME:
+				setName(NAME_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -189,8 +238,26 @@ public class StatementImpl extends MinimalEObjectImpl.Container implements State
 		switch (featureID) {
 			case JavaPackage.STATEMENT__METHOD:
 				return getMethod() != null;
+			case JavaPackage.STATEMENT__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (name: ");
+		result.append(name);
+		result.append(')');
+		return result.toString();
 	}
 
 } //StatementImpl

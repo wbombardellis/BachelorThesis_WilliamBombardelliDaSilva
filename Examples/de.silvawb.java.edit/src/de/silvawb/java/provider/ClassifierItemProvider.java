@@ -169,11 +169,6 @@ public class ClassifierItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(JavaPackage.Literals.CONTAINER__CONTAINED_ELEMENTS,
-				 JavaFactory.eINSTANCE.createContained()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(JavaPackage.Literals.CONTAINER__CONTAINED_ELEMENTS,
 				 JavaFactory.eINSTANCE.createClass()));
 
 		newChildDescriptors.add

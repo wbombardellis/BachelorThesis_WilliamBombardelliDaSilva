@@ -233,29 +233,6 @@ public class JavaItemProviderAdapterFactory extends JavaAdapterFactory implement
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link de.silvawb.java.Contained} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ContainedItemProvider containedItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link de.silvawb.java.Contained}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createContainedAdapter() {
-		if (containedItemProvider == null) {
-			containedItemProvider = new ContainedItemProvider(this);
-		}
-
-		return containedItemProvider;
-	}
-
-	/**
 	 * This keeps track of the one adapter used for all {@link de.silvawb.java.Method} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -276,29 +253,6 @@ public class JavaItemProviderAdapterFactory extends JavaAdapterFactory implement
 		}
 
 		return methodItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link de.silvawb.java.Statement} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected StatementItemProvider statementItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link de.silvawb.java.Statement}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createStatementAdapter() {
-		if (statementItemProvider == null) {
-			statementItemProvider = new StatementItemProvider(this);
-		}
-
-		return statementItemProvider;
 	}
 
 	/**
@@ -371,29 +325,6 @@ public class JavaItemProviderAdapterFactory extends JavaAdapterFactory implement
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link de.silvawb.java.Container} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ContainerItemProvider containerItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link de.silvawb.java.Container}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createContainerAdapter() {
-		if (containerItemProvider == null) {
-			containerItemProvider = new ContainerItemProvider(this);
-		}
-
-		return containerItemProvider;
-	}
-
-	/**
 	 * This keeps track of the one adapter used for all {@link de.silvawb.java.Interface} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -437,29 +368,6 @@ public class JavaItemProviderAdapterFactory extends JavaAdapterFactory implement
 		}
 
 		return genericBindingItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link de.silvawb.java.Annotable} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected AnnotableItemProvider annotableItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link de.silvawb.java.Annotable}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createAnnotableAdapter() {
-		if (annotableItemProvider == null) {
-			annotableItemProvider = new AnnotableItemProvider(this);
-		}
-
-		return annotableItemProvider;
 	}
 
 	/**
@@ -660,16 +568,12 @@ public class JavaItemProviderAdapterFactory extends JavaAdapterFactory implement
 		if (generalizationItemProvider != null) generalizationItemProvider.dispose();
 		if (fieldItemProvider != null) fieldItemProvider.dispose();
 		if (importItemProvider != null) importItemProvider.dispose();
-		if (containedItemProvider != null) containedItemProvider.dispose();
 		if (methodItemProvider != null) methodItemProvider.dispose();
-		if (statementItemProvider != null) statementItemProvider.dispose();
 		if (assertStatementItemProvider != null) assertStatementItemProvider.dispose();
 		if (getExpressionItemProvider != null) getExpressionItemProvider.dispose();
 		if (argumentItemProvider != null) argumentItemProvider.dispose();
-		if (containerItemProvider != null) containerItemProvider.dispose();
 		if (interfaceItemProvider != null) interfaceItemProvider.dispose();
 		if (genericBindingItemProvider != null) genericBindingItemProvider.dispose();
-		if (annotableItemProvider != null) annotableItemProvider.dispose();
 		if (annotationItemProvider != null) annotationItemProvider.dispose();
 		if (annotationInstanceItemProvider != null) annotationInstanceItemProvider.dispose();
 		if (annotationInstanceParameterItemProvider != null) annotationInstanceParameterItemProvider.dispose();

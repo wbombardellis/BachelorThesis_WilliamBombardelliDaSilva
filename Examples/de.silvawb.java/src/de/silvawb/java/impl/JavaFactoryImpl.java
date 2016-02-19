@@ -2,14 +2,12 @@
  */
 package de.silvawb.java.impl;
 
-import de.silvawb.java.Annotable;
 import de.silvawb.java.Annotation;
 import de.silvawb.java.AnnotationInstance;
 import de.silvawb.java.AnnotationInstanceParameter;
 import de.silvawb.java.AnnotationInstanceValue;
 import de.silvawb.java.Argument;
 import de.silvawb.java.AssertStatement;
-import de.silvawb.java.Contained;
 import de.silvawb.java.Field;
 import de.silvawb.java.GETExpression;
 import de.silvawb.java.Generalization;
@@ -21,7 +19,6 @@ import de.silvawb.java.JavaFactory;
 import de.silvawb.java.JavaPackage;
 
 import de.silvawb.java.Method;
-import de.silvawb.java.Statement;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
@@ -81,16 +78,12 @@ public class JavaFactoryImpl extends EFactoryImpl implements JavaFactory {
 			case JavaPackage.GENERALIZATION: return createGeneralization();
 			case JavaPackage.FIELD: return createField();
 			case JavaPackage.IMPORT: return createImport();
-			case JavaPackage.CONTAINED: return createContained();
 			case JavaPackage.METHOD: return createMethod();
-			case JavaPackage.STATEMENT: return createStatement();
 			case JavaPackage.ASSERT_STATEMENT: return createAssertStatement();
 			case JavaPackage.GET_EXPRESSION: return createGETExpression();
 			case JavaPackage.ARGUMENT: return createArgument();
-			case JavaPackage.CONTAINER: return createContainer();
 			case JavaPackage.INTERFACE: return createInterface();
 			case JavaPackage.GENERIC_BINDING: return createGenericBinding();
-			case JavaPackage.ANNOTABLE: return createAnnotable();
 			case JavaPackage.ANNOTATION: return createAnnotation();
 			case JavaPackage.ANNOTATION_INSTANCE: return createAnnotationInstance();
 			case JavaPackage.ANNOTATION_INSTANCE_PARAMETER: return createAnnotationInstanceParameter();
@@ -175,29 +168,9 @@ public class JavaFactoryImpl extends EFactoryImpl implements JavaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Contained createContained() {
-		ContainedImpl contained = new ContainedImpl();
-		return contained;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public Method createMethod() {
 		MethodImpl method = new MethodImpl();
 		return method;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Statement createStatement() {
-		StatementImpl statement = new StatementImpl();
-		return statement;
 	}
 
 	/**
@@ -235,16 +208,6 @@ public class JavaFactoryImpl extends EFactoryImpl implements JavaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public de.silvawb.java.Container createContainer() {
-		ContainerImpl container = new ContainerImpl();
-		return container;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public Interface createInterface() {
 		InterfaceImpl interface_ = new InterfaceImpl();
 		return interface_;
@@ -258,16 +221,6 @@ public class JavaFactoryImpl extends EFactoryImpl implements JavaFactory {
 	public GenericBinding createGenericBinding() {
 		GenericBindingImpl genericBinding = new GenericBindingImpl();
 		return genericBinding;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Annotable createAnnotable() {
-		AnnotableImpl annotable = new AnnotableImpl();
-		return annotable;
 	}
 
 	/**

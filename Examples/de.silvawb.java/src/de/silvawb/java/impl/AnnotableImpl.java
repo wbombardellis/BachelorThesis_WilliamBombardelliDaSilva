@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class AnnotableImpl extends MinimalEObjectImpl.Container implements Annotable {
+public abstract class AnnotableImpl extends MinimalEObjectImpl.Container implements Annotable {
 	/**
 	 * The cached value of the '{@link #getAnnotationInstances() <em>Annotation Instances</em>}' containment reference list.
 	 * <!-- begin-user-doc -->

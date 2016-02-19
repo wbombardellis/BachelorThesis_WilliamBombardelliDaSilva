@@ -418,6 +418,8 @@
       </eAnnotations>
       <eAnnotations source="subsets" references="#//Classifier/attribute #//Namespace/ownedMember #//StructuredClassifier/role"/>
     </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interfaceRealization" eType="#//InterfaceRealization"
+        eOpposite="#//InterfaceRealization/implementingClassifier"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="BehavioredClassifier" abstract="true"
       eSuperTypes="#//Classifier">
@@ -460,13 +462,6 @@
         <details key="documentation" value="A Behavior that specifies the behavior of the BehavioredClassifier itself.&#xA;&lt;p>From package UML::SimpleClassifiers.&lt;/p>"/>
       </eAnnotations>
       <eAnnotations source="subsets" references="#//BehavioredClassifier/ownedBehavior"/>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="interfaceRealization" ordered="false"
-        upperBound="-1" eType="#//InterfaceRealization" containment="true" eOpposite="#//InterfaceRealization/implementingClassifier">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="The set of InterfaceRealizations owned by the BehavioredClassifier. Interface realizations reference the Interfaces of which the BehavioredClassifier is an implementation.&#xA;&lt;p>From package UML::SimpleClassifiers.&lt;/p>"/>
-      </eAnnotations>
-      <eAnnotations source="subsets" references="#//Element/ownedElement"/>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="ownedBehavior" ordered="false"
         upperBound="-1" eType="#//Behavior" containment="true">
@@ -5195,7 +5190,7 @@
       </eParameters>
     </eOperations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="constrainedElement" upperBound="-1"
-        eType="#//Element">
+        eType="#//ConnectableElement">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="The ordered set of Elements referenced by this Constraint.&#xA;&lt;p>From package UML::CommonStructure.&lt;/p>"/>
       </eAnnotations>
@@ -8543,7 +8538,7 @@
       <eAnnotations source="subsets" references="#//Dependency/supplier"/>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="implementingClassifier"
-        ordered="false" lowerBound="1" eType="#//BehavioredClassifier" eOpposite="#//BehavioredClassifier/interfaceRealization">
+        ordered="false" lowerBound="1" eType="#//Class" eOpposite="#//Class/interfaceRealization">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="References the BehavioredClassifier that owns this InterfaceRealization, i.e., the BehavioredClassifier that realizes the Interface to which it refers.&#xA;&lt;p>From package UML::SimpleClassifiers.&lt;/p>"/>
       </eAnnotations>
@@ -15054,19 +15049,19 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="receiveEvent" ordered="false"
-        eType="#//MessageEnd">
+        eType="#//MessageOccurrenceSpecification">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="References the Receiving of the Message.&#xA;&lt;p>From package UML::Interactions.&lt;/p>"/>
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="sendEvent" ordered="false"
-        eType="#//MessageEnd">
+        eType="#//MessageOccurrenceSpecification">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="References the Sending of the Message.&#xA;&lt;p>From package UML::Interactions.&lt;/p>"/>
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="signature" ordered="false"
-        eType="#//NamedElement">
+        eType="#//Operation">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="The signature of the Message is the specification of its content. It refers either an Operation or a Signal.&#xA;&lt;p>From package UML::Interactions.&lt;/p>"/>
       </eAnnotations>
@@ -15136,12 +15131,6 @@
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="InteractionFragment is an abstract notion of the most general interaction unit. An InteractionFragment is a piece of an Interaction. Each InteractionFragment is conceptually like an Interaction by itself.&#xA;&lt;p>From package UML::Interactions.&lt;/p>"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="covered" ordered="false"
-        upperBound="-1" eType="#//Lifeline" eOpposite="#//Lifeline/coveredBy">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="References the Lifelines that the InteractionFragment involves.&#xA;&lt;p>From package UML::Interactions.&lt;/p>"/>
-      </eAnnotations>
-    </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="enclosingOperand" ordered="false"
         eType="#//InteractionOperand" eOpposite="#//InteractionOperand/fragment">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -15264,14 +15253,14 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="selector" ordered="false"
-        eType="#//ValueSpecification" containment="true">
+        eType="#//Class" containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="If the referenced ConnectableElement is multivalued, then this specifies the specific individual part within that set.&#xA;&lt;p>From package UML::Interactions.&lt;/p>"/>
       </eAnnotations>
       <eAnnotations source="subsets" references="#//Element/ownedElement"/>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="coveredBy" ordered="false"
-        upperBound="-1" eType="#//InteractionFragment" eOpposite="#//InteractionFragment/covered">
+        upperBound="-1" eType="#//ActionExecutionSpecification" eOpposite="#//ActionExecutionSpecification/covered">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="References the InteractionFragments in which this Lifeline takes part.&#xA;&lt;p>From package UML::Interactions.&lt;/p>"/>
       </eAnnotations>
@@ -15921,13 +15910,13 @@
       </eParameters>
     </eOperations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="after" ordered="false"
-        lowerBound="1" eType="#//OccurrenceSpecification" eOpposite="#//OccurrenceSpecification/toBefore">
+        lowerBound="1" eType="#//MessageOccurrenceSpecification" eOpposite="#//MessageOccurrenceSpecification/toBefore">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="The OccurrenceSpecification referenced comes after the OccurrenceSpecification referenced by before.&#xA;&lt;p>From package UML::Interactions.&lt;/p>"/>
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="before" ordered="false"
-        lowerBound="1" eType="#//OccurrenceSpecification" eOpposite="#//OccurrenceSpecification/toAfter">
+        lowerBound="1" eType="#//MessageOccurrenceSpecification" eOpposite="#//MessageOccurrenceSpecification/toAfter">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="The OccurrenceSpecification referenced comes before the OccurrenceSpecification referenced by after.&#xA;&lt;p>From package UML::Interactions.&lt;/p>"/>
       </eAnnotations>
@@ -15947,7 +15936,7 @@
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="References the Lifeline on which the OccurrenceSpecification appears.&#xA;&lt;p>From package UML::Interactions.&lt;/p>"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="#//InteractionFragment/covered"/>
+        <eAnnotations source="redefines"/>
       </contents>
     </eAnnotations>
     <eOperations name="getCovered" ordered="false" eType="#//Lifeline">
@@ -15961,18 +15950,6 @@
       </eAnnotations>
       <eParameters name="value" ordered="false" lowerBound="1" eType="#//Lifeline"/>
     </eOperations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="toAfter" ordered="false"
-        upperBound="-1" eType="#//GeneralOrdering" eOpposite="#//GeneralOrdering/before">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="References the GeneralOrderings that specify EventOcurrences that must occur after this OccurrenceSpecification.&#xA;&lt;p>From package UML::Interactions.&lt;/p>"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="toBefore" ordered="false"
-        upperBound="-1" eType="#//GeneralOrdering" eOpposite="#//GeneralOrdering/after">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="References the GeneralOrderings that specify EventOcurrences that must occur before this OccurrenceSpecification.&#xA;&lt;p>From package UML::Interactions.&lt;/p>"/>
-      </eAnnotations>
-    </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="MessageKind">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -16131,6 +16108,14 @@
         <details key="documentation" value="Action whose execution is occurring.&#xA;&lt;p>From package UML::Interactions.&lt;/p>"/>
       </eAnnotations>
     </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="covered" eType="#//Lifeline"
+        eOpposite="#//Lifeline/coveredBy"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="start" ordered="false"
+        lowerBound="1" eType="#//MessageOccurrenceSpecification">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="References the OccurrenceSpecification that designates the start of the Action or Behavior.&#xA;&lt;p>From package UML::Interactions.&lt;/p>"/>
+      </eAnnotations>
+    </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ExecutionSpecification" abstract="true"
       eSuperTypes="#//InteractionFragment">
@@ -16160,12 +16145,6 @@
         lowerBound="1" eType="#//OccurrenceSpecification">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="References the OccurrenceSpecification that designates the finish of the Action or Behavior.&#xA;&lt;p>From package UML::Interactions.&lt;/p>"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="start" ordered="false"
-        lowerBound="1" eType="#//OccurrenceSpecification">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="References the OccurrenceSpecification that designates the start of the Action or Behavior.&#xA;&lt;p>From package UML::Interactions.&lt;/p>"/>
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
@@ -16474,6 +16453,10 @@
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="A MessageOccurrenceSpecification specifies the occurrence of Message events, such as sending and receiving of Signals or invoking or receiving of Operation calls. A MessageOccurrenceSpecification is a kind of MessageEnd. Messages are generated either by synchronous Operation calls or asynchronous Signal sends. They are received by the execution of corresponding AcceptEventActions.&#xA;&lt;p>From package UML::Interactions.&lt;/p>"/>
     </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="toAfter" eType="#//GeneralOrdering"
+        eOpposite="#//GeneralOrdering/before"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="toBefore" eType="#//GeneralOrdering"
+        eOpposite="#//GeneralOrdering/after"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ExecutionOccurrenceSpecification" eSuperTypes="#//OccurrenceSpecification">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -16500,7 +16483,7 @@
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="References the Lifeline on which the StateInvariant appears.&#xA;&lt;p>From package UML::Interactions.&lt;/p>"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="#//InteractionFragment/covered"/>
+        <eAnnotations source="redefines"/>
       </contents>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="invariant" ordered="false"

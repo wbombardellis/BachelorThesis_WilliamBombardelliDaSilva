@@ -252,14 +252,14 @@ public interface GeneratedPackage extends EPackage {
 	int UML_CONTRACT2JAVA_AXIOM_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_AXIOM_GROUP_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uOPPreInt2jMAPreAssertImpl <em>uOP Pre Int2j MA Pre Assert</em>}' class.
+	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uProperty2jField_HelperImpl <em>uProperty2j Field Helper</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see de.silvawb.umlContract2java.generated.impl.uOPPreInt2jMAPreAssertImpl
-	 * @see de.silvawb.umlContract2java.generated.impl.GeneratedPackageImpl#getuOPPreInt2jMAPreAssert()
+	 * @see de.silvawb.umlContract2java.generated.impl.uProperty2jField_HelperImpl
+	 * @see de.silvawb.umlContract2java.generated.impl.GeneratedPackageImpl#getuProperty2jField_Helper()
 	 * @generated
 	 */
-	int UOP_PRE_INT2J_MA_PRE_ASSERT = 2;
+	int UPROPERTY2J_FIELD_HELPER = 2;
 
 	/**
 	 * The feature id for the '<em><b>Rule Group ID</b></em>' attribute.
@@ -268,7 +268,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOP_PRE_INT2J_MA_PRE_ASSERT__RULE_GROUP_ID = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULE_GROUP_ID;
+	int UPROPERTY2J_FIELD_HELPER__RULE_GROUP_ID = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULE_GROUP_ID;
 
 	/**
 	 * The feature id for the '<em><b>Rules</b></em>' containment reference list.
@@ -277,7 +277,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOP_PRE_INT2J_MA_PRE_ASSERT__RULES = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULES;
+	int UPROPERTY2J_FIELD_HELPER__RULES = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULES;
 
 	/**
 	 * The feature id for the '<em><b>Operational TGG</b></em>' container reference.
@@ -286,16 +286,16 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOP_PRE_INT2J_MA_PRE_ASSERT__OPERATIONAL_TGG = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__OPERATIONAL_TGG;
+	int UPROPERTY2J_FIELD_HELPER__OPERATIONAL_TGG = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__OPERATIONAL_TGG;
 
 	/**
-	 * The number of structural features of the '<em>uOP Pre Int2j MA Pre Assert</em>' class.
+	 * The number of structural features of the '<em>uProperty2j Field Helper</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UOP_PRE_INT2J_MA_PRE_ASSERT_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_FEATURE_COUNT + 0;
+	int UPROPERTY2J_FIELD_HELPER_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_FEATURE_COUNT + 0;
 
 	/**
 	 * The operation id for the '<em>Get Operational Mapping</em>' operation.
@@ -304,26 +304,26 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOP_PRE_INT2J_MA_PRE_ASSERT___GET_OPERATIONAL_MAPPING__STRING = OperationalTGGPackage.OPERATIONAL_RULE_GROUP___GET_OPERATIONAL_MAPPING__STRING;
+	int UPROPERTY2J_FIELD_HELPER___GET_OPERATIONAL_MAPPING__STRING = OperationalTGGPackage.OPERATIONAL_RULE_GROUP___GET_OPERATIONAL_MAPPING__STRING;
 
 	/**
-	 * The number of operations of the '<em>uOP Pre Int2j MA Pre Assert</em>' class.
+	 * The number of operations of the '<em>uProperty2j Field Helper</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UOP_PRE_INT2J_MA_PRE_ASSERT_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_OPERATION_COUNT + 0;
+	int UPROPERTY2J_FIELD_HELPER_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uOperation2jMethod_HelperImpl <em>uOperation2j Method Helper</em>}' class.
+	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uOPPre2jMAPreImpl <em>uOP Pre2j MA Pre</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see de.silvawb.umlContract2java.generated.impl.uOperation2jMethod_HelperImpl
-	 * @see de.silvawb.umlContract2java.generated.impl.GeneratedPackageImpl#getuOperation2jMethod_Helper()
+	 * @see de.silvawb.umlContract2java.generated.impl.uOPPre2jMAPreImpl
+	 * @see de.silvawb.umlContract2java.generated.impl.GeneratedPackageImpl#getuOPPre2jMAPre()
 	 * @generated
 	 */
-	int UOPERATION2J_METHOD_HELPER = 3;
+	int UOP_PRE2J_MA_PRE = 3;
 
 	/**
 	 * The feature id for the '<em><b>Rule Group ID</b></em>' attribute.
@@ -332,7 +332,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOPERATION2J_METHOD_HELPER__RULE_GROUP_ID = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULE_GROUP_ID;
+	int UOP_PRE2J_MA_PRE__RULE_GROUP_ID = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULE_GROUP_ID;
 
 	/**
 	 * The feature id for the '<em><b>Rules</b></em>' containment reference list.
@@ -341,7 +341,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOPERATION2J_METHOD_HELPER__RULES = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULES;
+	int UOP_PRE2J_MA_PRE__RULES = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULES;
 
 	/**
 	 * The feature id for the '<em><b>Operational TGG</b></em>' container reference.
@@ -350,16 +350,16 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOPERATION2J_METHOD_HELPER__OPERATIONAL_TGG = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__OPERATIONAL_TGG;
+	int UOP_PRE2J_MA_PRE__OPERATIONAL_TGG = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__OPERATIONAL_TGG;
 
 	/**
-	 * The number of structural features of the '<em>uOperation2j Method Helper</em>' class.
+	 * The number of structural features of the '<em>uOP Pre2j MA Pre</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UOPERATION2J_METHOD_HELPER_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_FEATURE_COUNT + 0;
+	int UOP_PRE2J_MA_PRE_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_FEATURE_COUNT + 0;
 
 	/**
 	 * The operation id for the '<em>Get Operational Mapping</em>' operation.
@@ -368,16 +368,16 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOPERATION2J_METHOD_HELPER___GET_OPERATIONAL_MAPPING__STRING = OperationalTGGPackage.OPERATIONAL_RULE_GROUP___GET_OPERATIONAL_MAPPING__STRING;
+	int UOP_PRE2J_MA_PRE___GET_OPERATIONAL_MAPPING__STRING = OperationalTGGPackage.OPERATIONAL_RULE_GROUP___GET_OPERATIONAL_MAPPING__STRING;
 
 	/**
-	 * The number of operations of the '<em>uOperation2j Method Helper</em>' class.
+	 * The number of operations of the '<em>uOP Pre2j MA Pre</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UOPERATION2J_METHOD_HELPER_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_OPERATION_COUNT + 0;
+	int UOP_PRE2J_MA_PRE_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uCInv2jCInvImpl <em>uC Inv2j CInv</em>}' class.
@@ -444,70 +444,6 @@ public interface GeneratedPackage extends EPackage {
 	int UC_INV2J_CINV_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uOPPos2jMAPosImpl <em>uOP Pos2j MA Pos</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see de.silvawb.umlContract2java.generated.impl.uOPPos2jMAPosImpl
-	 * @see de.silvawb.umlContract2java.generated.impl.GeneratedPackageImpl#getuOPPos2jMAPos()
-	 * @generated
-	 */
-	int UOP_POS2J_MA_POS = 5;
-
-	/**
-	 * The feature id for the '<em><b>Rule Group ID</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_POS2J_MA_POS__RULE_GROUP_ID = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULE_GROUP_ID;
-
-	/**
-	 * The feature id for the '<em><b>Rules</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_POS2J_MA_POS__RULES = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULES;
-
-	/**
-	 * The feature id for the '<em><b>Operational TGG</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_POS2J_MA_POS__OPERATIONAL_TGG = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__OPERATIONAL_TGG;
-
-	/**
-	 * The number of structural features of the '<em>uOP Pos2j MA Pos</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_POS2J_MA_POS_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_FEATURE_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>Get Operational Mapping</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_POS2J_MA_POS___GET_OPERATIONAL_MAPPING__STRING = OperationalTGGPackage.OPERATIONAL_RULE_GROUP___GET_OPERATIONAL_MAPPING__STRING;
-
-	/**
-	 * The number of operations of the '<em>uOP Pos2j MA Pos</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_POS2J_MA_POS_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uClass2jClass_HelperImpl <em>uClass2j Class Helper</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -515,7 +451,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @see de.silvawb.umlContract2java.generated.impl.GeneratedPackageImpl#getuClass2jClass_Helper()
 	 * @generated
 	 */
-	int UCLASS2J_CLASS_HELPER = 6;
+	int UCLASS2J_CLASS_HELPER = 5;
 
 	/**
 	 * The feature id for the '<em><b>Rule Group ID</b></em>' attribute.
@@ -572,14 +508,14 @@ public interface GeneratedPackage extends EPackage {
 	int UCLASS2J_CLASS_HELPER_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uOPPre2jMAPreImpl <em>uOP Pre2j MA Pre</em>}' class.
+	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uOParamenter2jMArgumentImpl <em>uO Paramenter2j MArgument</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see de.silvawb.umlContract2java.generated.impl.uOPPre2jMAPreImpl
-	 * @see de.silvawb.umlContract2java.generated.impl.GeneratedPackageImpl#getuOPPre2jMAPre()
+	 * @see de.silvawb.umlContract2java.generated.impl.uOParamenter2jMArgumentImpl
+	 * @see de.silvawb.umlContract2java.generated.impl.GeneratedPackageImpl#getuOParamenter2jMArgument()
 	 * @generated
 	 */
-	int UOP_PRE2J_MA_PRE = 7;
+	int UO_PARAMENTER2J_MARGUMENT = 6;
 
 	/**
 	 * The feature id for the '<em><b>Rule Group ID</b></em>' attribute.
@@ -588,7 +524,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOP_PRE2J_MA_PRE__RULE_GROUP_ID = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULE_GROUP_ID;
+	int UO_PARAMENTER2J_MARGUMENT__RULE_GROUP_ID = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULE_GROUP_ID;
 
 	/**
 	 * The feature id for the '<em><b>Rules</b></em>' containment reference list.
@@ -597,7 +533,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOP_PRE2J_MA_PRE__RULES = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULES;
+	int UO_PARAMENTER2J_MARGUMENT__RULES = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULES;
 
 	/**
 	 * The feature id for the '<em><b>Operational TGG</b></em>' container reference.
@@ -606,16 +542,16 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOP_PRE2J_MA_PRE__OPERATIONAL_TGG = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__OPERATIONAL_TGG;
+	int UO_PARAMENTER2J_MARGUMENT__OPERATIONAL_TGG = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__OPERATIONAL_TGG;
 
 	/**
-	 * The number of structural features of the '<em>uOP Pre2j MA Pre</em>' class.
+	 * The number of structural features of the '<em>uO Paramenter2j MArgument</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UOP_PRE2J_MA_PRE_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_FEATURE_COUNT + 0;
+	int UO_PARAMENTER2J_MARGUMENT_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_FEATURE_COUNT + 0;
 
 	/**
 	 * The operation id for the '<em>Get Operational Mapping</em>' operation.
@@ -624,16 +560,80 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOP_PRE2J_MA_PRE___GET_OPERATIONAL_MAPPING__STRING = OperationalTGGPackage.OPERATIONAL_RULE_GROUP___GET_OPERATIONAL_MAPPING__STRING;
+	int UO_PARAMENTER2J_MARGUMENT___GET_OPERATIONAL_MAPPING__STRING = OperationalTGGPackage.OPERATIONAL_RULE_GROUP___GET_OPERATIONAL_MAPPING__STRING;
 
 	/**
-	 * The number of operations of the '<em>uOP Pre2j MA Pre</em>' class.
+	 * The number of operations of the '<em>uO Paramenter2j MArgument</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UOP_PRE2J_MA_PRE_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_OPERATION_COUNT + 0;
+	int UO_PARAMENTER2J_MARGUMENT_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uOperation2jMethod_HelperImpl <em>uOperation2j Method Helper</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.silvawb.umlContract2java.generated.impl.uOperation2jMethod_HelperImpl
+	 * @see de.silvawb.umlContract2java.generated.impl.GeneratedPackageImpl#getuOperation2jMethod_Helper()
+	 * @generated
+	 */
+	int UOPERATION2J_METHOD_HELPER = 7;
+
+	/**
+	 * The feature id for the '<em><b>Rule Group ID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOPERATION2J_METHOD_HELPER__RULE_GROUP_ID = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULE_GROUP_ID;
+
+	/**
+	 * The feature id for the '<em><b>Rules</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOPERATION2J_METHOD_HELPER__RULES = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULES;
+
+	/**
+	 * The feature id for the '<em><b>Operational TGG</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOPERATION2J_METHOD_HELPER__OPERATIONAL_TGG = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__OPERATIONAL_TGG;
+
+	/**
+	 * The number of structural features of the '<em>uOperation2j Method Helper</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOPERATION2J_METHOD_HELPER_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_FEATURE_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Get Operational Mapping</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOPERATION2J_METHOD_HELPER___GET_OPERATIONAL_MAPPING__STRING = OperationalTGGPackage.OPERATIONAL_RULE_GROUP___GET_OPERATIONAL_MAPPING__STRING;
+
+	/**
+	 * The number of operations of the '<em>uOperation2j Method Helper</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOPERATION2J_METHOD_HELPER_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uOPPosInt2jMAPosAssertImpl <em>uOP Pos Int2j MA Pos Assert</em>}' class.
@@ -700,14 +700,14 @@ public interface GeneratedPackage extends EPackage {
 	int UOP_POS_INT2J_MA_POS_ASSERT_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uProperty2jField_HelperImpl <em>uProperty2j Field Helper</em>}' class.
+	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uOPPos2jMAPosImpl <em>uOP Pos2j MA Pos</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see de.silvawb.umlContract2java.generated.impl.uProperty2jField_HelperImpl
-	 * @see de.silvawb.umlContract2java.generated.impl.GeneratedPackageImpl#getuProperty2jField_Helper()
+	 * @see de.silvawb.umlContract2java.generated.impl.uOPPos2jMAPosImpl
+	 * @see de.silvawb.umlContract2java.generated.impl.GeneratedPackageImpl#getuOPPos2jMAPos()
 	 * @generated
 	 */
-	int UPROPERTY2J_FIELD_HELPER = 9;
+	int UOP_POS2J_MA_POS = 9;
 
 	/**
 	 * The feature id for the '<em><b>Rule Group ID</b></em>' attribute.
@@ -716,7 +716,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UPROPERTY2J_FIELD_HELPER__RULE_GROUP_ID = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULE_GROUP_ID;
+	int UOP_POS2J_MA_POS__RULE_GROUP_ID = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULE_GROUP_ID;
 
 	/**
 	 * The feature id for the '<em><b>Rules</b></em>' containment reference list.
@@ -725,7 +725,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UPROPERTY2J_FIELD_HELPER__RULES = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULES;
+	int UOP_POS2J_MA_POS__RULES = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULES;
 
 	/**
 	 * The feature id for the '<em><b>Operational TGG</b></em>' container reference.
@@ -734,16 +734,16 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UPROPERTY2J_FIELD_HELPER__OPERATIONAL_TGG = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__OPERATIONAL_TGG;
+	int UOP_POS2J_MA_POS__OPERATIONAL_TGG = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__OPERATIONAL_TGG;
 
 	/**
-	 * The number of structural features of the '<em>uProperty2j Field Helper</em>' class.
+	 * The number of structural features of the '<em>uOP Pos2j MA Pos</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UPROPERTY2J_FIELD_HELPER_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_FEATURE_COUNT + 0;
+	int UOP_POS2J_MA_POS_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_FEATURE_COUNT + 0;
 
 	/**
 	 * The operation id for the '<em>Get Operational Mapping</em>' operation.
@@ -752,16 +752,16 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UPROPERTY2J_FIELD_HELPER___GET_OPERATIONAL_MAPPING__STRING = OperationalTGGPackage.OPERATIONAL_RULE_GROUP___GET_OPERATIONAL_MAPPING__STRING;
+	int UOP_POS2J_MA_POS___GET_OPERATIONAL_MAPPING__STRING = OperationalTGGPackage.OPERATIONAL_RULE_GROUP___GET_OPERATIONAL_MAPPING__STRING;
 
 	/**
-	 * The number of operations of the '<em>uProperty2j Field Helper</em>' class.
+	 * The number of operations of the '<em>uOP Pos2j MA Pos</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UPROPERTY2J_FIELD_HELPER_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_OPERATION_COUNT + 0;
+	int UOP_POS2J_MA_POS_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uCInvInt2jCInvAssertImpl <em>uC Inv Int2j CInv Assert</em>}' class.
@@ -828,14 +828,14 @@ public interface GeneratedPackage extends EPackage {
 	int UC_INV_INT2J_CINV_ASSERT_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uOParamenter2jMArgumentImpl <em>uO Paramenter2j MArgument</em>}' class.
+	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uOPPreInt2jMAPreAssertImpl <em>uOP Pre Int2j MA Pre Assert</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see de.silvawb.umlContract2java.generated.impl.uOParamenter2jMArgumentImpl
-	 * @see de.silvawb.umlContract2java.generated.impl.GeneratedPackageImpl#getuOParamenter2jMArgument()
+	 * @see de.silvawb.umlContract2java.generated.impl.uOPPreInt2jMAPreAssertImpl
+	 * @see de.silvawb.umlContract2java.generated.impl.GeneratedPackageImpl#getuOPPreInt2jMAPreAssert()
 	 * @generated
 	 */
-	int UO_PARAMENTER2J_MARGUMENT = 11;
+	int UOP_PRE_INT2J_MA_PRE_ASSERT = 11;
 
 	/**
 	 * The feature id for the '<em><b>Rule Group ID</b></em>' attribute.
@@ -844,7 +844,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UO_PARAMENTER2J_MARGUMENT__RULE_GROUP_ID = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULE_GROUP_ID;
+	int UOP_PRE_INT2J_MA_PRE_ASSERT__RULE_GROUP_ID = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULE_GROUP_ID;
 
 	/**
 	 * The feature id for the '<em><b>Rules</b></em>' containment reference list.
@@ -853,7 +853,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UO_PARAMENTER2J_MARGUMENT__RULES = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULES;
+	int UOP_PRE_INT2J_MA_PRE_ASSERT__RULES = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__RULES;
 
 	/**
 	 * The feature id for the '<em><b>Operational TGG</b></em>' container reference.
@@ -862,16 +862,16 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UO_PARAMENTER2J_MARGUMENT__OPERATIONAL_TGG = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__OPERATIONAL_TGG;
+	int UOP_PRE_INT2J_MA_PRE_ASSERT__OPERATIONAL_TGG = OperationalTGGPackage.OPERATIONAL_RULE_GROUP__OPERATIONAL_TGG;
 
 	/**
-	 * The number of structural features of the '<em>uO Paramenter2j MArgument</em>' class.
+	 * The number of structural features of the '<em>uOP Pre Int2j MA Pre Assert</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UO_PARAMENTER2J_MARGUMENT_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_FEATURE_COUNT + 0;
+	int UOP_PRE_INT2J_MA_PRE_ASSERT_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_FEATURE_COUNT + 0;
 
 	/**
 	 * The operation id for the '<em>Get Operational Mapping</em>' operation.
@@ -880,16 +880,16 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UO_PARAMENTER2J_MARGUMENT___GET_OPERATIONAL_MAPPING__STRING = OperationalTGGPackage.OPERATIONAL_RULE_GROUP___GET_OPERATIONAL_MAPPING__STRING;
+	int UOP_PRE_INT2J_MA_PRE_ASSERT___GET_OPERATIONAL_MAPPING__STRING = OperationalTGGPackage.OPERATIONAL_RULE_GROUP___GET_OPERATIONAL_MAPPING__STRING;
 
 	/**
-	 * The number of operations of the '<em>uO Paramenter2j MArgument</em>' class.
+	 * The number of operations of the '<em>uOP Pre Int2j MA Pre Assert</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UO_PARAMENTER2J_MARGUMENT_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_OPERATION_COUNT + 0;
+	int UOP_PRE_INT2J_MA_PRE_ASSERT_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_GROUP_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.umlContract2javaAxiom_r1Impl <em>uml Contract2java Axiom r1</em>}' class.
@@ -1443,6 +1443,661 @@ public interface GeneratedPackage extends EPackage {
 	int UO_PARAMENTER2J_MARGUMENT_R4_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 13;
 
 	/**
+	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uCInv2jCInv_r9Impl <em>uC Inv2j CInv r9</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.silvawb.umlContract2java.generated.impl.uCInv2jCInv_r9Impl
+	 * @see de.silvawb.umlContract2java.generated.impl.GeneratedPackageImpl#getuCInv2jCInv_r9()
+	 * @generated
+	 */
+	int UC_INV2J_CINV_R9 = 14;
+
+	/**
+	 * The feature id for the '<em><b>Created TGG Nodes</b></em>' map.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9__CREATED_TGG_NODES = OperationalTGGPackage.OPERATIONAL_RULE__CREATED_TGG_NODES;
+
+	/**
+	 * The feature id for the '<em><b>Rule ID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9__RULE_ID = OperationalTGGPackage.OPERATIONAL_RULE__RULE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Operational Rule Group</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9__OPERATIONAL_RULE_GROUP = OperationalTGGPackage.OPERATIONAL_RULE__OPERATIONAL_RULE_GROUP;
+
+	/**
+	 * The feature id for the '<em><b>Preferred Input Corr Node Types</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9__PREFERRED_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__PREFERRED_INPUT_CORR_NODE_TYPES;
+
+	/**
+	 * The feature id for the '<em><b>All Input Corr Node Types</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9__ALL_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__ALL_INPUT_CORR_NODE_TYPES;
+
+	/**
+	 * The feature id for the '<em><b>Add Element Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9__ADD_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Move Element Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9__MOVE_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Change Attribute Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9__CHANGE_ATTRIBUTE_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Transform Forward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9__TRANSFORM_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Transform Mapping Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9__TRANSFORM_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Transform Backward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9__TRANSFORM_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Conflict Check Forward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9__CONFLICT_CHECK_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Conflict Check Mapping Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9__CONFLICT_CHECK_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 7;
+
+	/**
+	 * The feature id for the '<em><b>Conflict Check Backward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9__CONFLICT_CHECK_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 8;
+
+	/**
+	 * The feature id for the '<em><b>Synchronize Forward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9__SYNCHRONIZE_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 9;
+
+	/**
+	 * The feature id for the '<em><b>Synchronize Backward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9__SYNCHRONIZE_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 10;
+
+	/**
+	 * The feature id for the '<em><b>Repair Forward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9__REPAIR_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 11;
+
+	/**
+	 * The feature id for the '<em><b>Repair Backward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9__REPAIR_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 12;
+
+	/**
+	 * The number of structural features of the '<em>uC Inv2j CInv r9</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 13;
+
+	/**
+	 * The operation id for the '<em>Delete Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9___DELETE_ELEMENT__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE___DELETE_ELEMENT__TGGNODE;
+
+	/**
+	 * The operation id for the '<em>Add Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9___ADD_ELEMENT__EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Change Attribute Values</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9___CHANGE_ATTRIBUTE_VALUES__TGGNODE_EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 1;
+
+	/**
+	 * The operation id for the '<em>Move Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9___MOVE_ELEMENT__TGGNODE_TGGNODE_TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 2;
+
+	/**
+	 * The operation id for the '<em>Transform Forward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9___TRANSFORM_FORWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 3;
+
+	/**
+	 * The operation id for the '<em>Transform Mapping</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9___TRANSFORM_MAPPING__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 4;
+
+	/**
+	 * The operation id for the '<em>Transform Backward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9___TRANSFORM_BACKWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 5;
+
+	/**
+	 * The operation id for the '<em>Conflict Check Forward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9___CONFLICT_CHECK_FORWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 6;
+
+	/**
+	 * The operation id for the '<em>Conflict Check Mapping</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9___CONFLICT_CHECK_MAPPING__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 7;
+
+	/**
+	 * The operation id for the '<em>Conflict Check Backward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9___CONFLICT_CHECK_BACKWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 8;
+
+	/**
+	 * The operation id for the '<em>Synchronize Forward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9___SYNCHRONIZE_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 9;
+
+	/**
+	 * The operation id for the '<em>Synchronize Backward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9___SYNCHRONIZE_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 10;
+
+	/**
+	 * The operation id for the '<em>Repair Forward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9___REPAIR_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 11;
+
+	/**
+	 * The operation id for the '<em>Repair Backward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9___REPAIR_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 12;
+
+	/**
+	 * The number of operations of the '<em>uC Inv2j CInv r9</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV2J_CINV_R9_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 13;
+
+	/**
+	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uOPPre2jMAPre_r5Impl <em>uOP Pre2j MA Pre r5</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.silvawb.umlContract2java.generated.impl.uOPPre2jMAPre_r5Impl
+	 * @see de.silvawb.umlContract2java.generated.impl.GeneratedPackageImpl#getuOPPre2jMAPre_r5()
+	 * @generated
+	 */
+	int UOP_PRE2J_MA_PRE_R5 = 15;
+
+	/**
+	 * The feature id for the '<em><b>Created TGG Nodes</b></em>' map.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5__CREATED_TGG_NODES = OperationalTGGPackage.OPERATIONAL_RULE__CREATED_TGG_NODES;
+
+	/**
+	 * The feature id for the '<em><b>Rule ID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5__RULE_ID = OperationalTGGPackage.OPERATIONAL_RULE__RULE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Operational Rule Group</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5__OPERATIONAL_RULE_GROUP = OperationalTGGPackage.OPERATIONAL_RULE__OPERATIONAL_RULE_GROUP;
+
+	/**
+	 * The feature id for the '<em><b>Preferred Input Corr Node Types</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5__PREFERRED_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__PREFERRED_INPUT_CORR_NODE_TYPES;
+
+	/**
+	 * The feature id for the '<em><b>All Input Corr Node Types</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5__ALL_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__ALL_INPUT_CORR_NODE_TYPES;
+
+	/**
+	 * The feature id for the '<em><b>Add Element Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5__ADD_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Move Element Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5__MOVE_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Change Attribute Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5__CHANGE_ATTRIBUTE_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Transform Forward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5__TRANSFORM_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Transform Mapping Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5__TRANSFORM_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Transform Backward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5__TRANSFORM_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Conflict Check Forward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5__CONFLICT_CHECK_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Conflict Check Mapping Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5__CONFLICT_CHECK_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 7;
+
+	/**
+	 * The feature id for the '<em><b>Conflict Check Backward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5__CONFLICT_CHECK_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 8;
+
+	/**
+	 * The feature id for the '<em><b>Synchronize Forward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5__SYNCHRONIZE_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 9;
+
+	/**
+	 * The feature id for the '<em><b>Synchronize Backward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5__SYNCHRONIZE_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 10;
+
+	/**
+	 * The feature id for the '<em><b>Repair Forward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5__REPAIR_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 11;
+
+	/**
+	 * The feature id for the '<em><b>Repair Backward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5__REPAIR_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 12;
+
+	/**
+	 * The number of structural features of the '<em>uOP Pre2j MA Pre r5</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 13;
+
+	/**
+	 * The operation id for the '<em>Delete Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5___DELETE_ELEMENT__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE___DELETE_ELEMENT__TGGNODE;
+
+	/**
+	 * The operation id for the '<em>Add Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5___ADD_ELEMENT__EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Change Attribute Values</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5___CHANGE_ATTRIBUTE_VALUES__TGGNODE_EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 1;
+
+	/**
+	 * The operation id for the '<em>Move Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5___MOVE_ELEMENT__TGGNODE_TGGNODE_TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 2;
+
+	/**
+	 * The operation id for the '<em>Transform Forward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5___TRANSFORM_FORWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 3;
+
+	/**
+	 * The operation id for the '<em>Transform Mapping</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5___TRANSFORM_MAPPING__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 4;
+
+	/**
+	 * The operation id for the '<em>Transform Backward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5___TRANSFORM_BACKWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 5;
+
+	/**
+	 * The operation id for the '<em>Conflict Check Forward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5___CONFLICT_CHECK_FORWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 6;
+
+	/**
+	 * The operation id for the '<em>Conflict Check Mapping</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5___CONFLICT_CHECK_MAPPING__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 7;
+
+	/**
+	 * The operation id for the '<em>Conflict Check Backward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5___CONFLICT_CHECK_BACKWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 8;
+
+	/**
+	 * The operation id for the '<em>Synchronize Forward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5___SYNCHRONIZE_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 9;
+
+	/**
+	 * The operation id for the '<em>Synchronize Backward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5___SYNCHRONIZE_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 10;
+
+	/**
+	 * The operation id for the '<em>Repair Forward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5___REPAIR_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 11;
+
+	/**
+	 * The operation id for the '<em>Repair Backward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5___REPAIR_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 12;
+
+	/**
+	 * The number of operations of the '<em>uOP Pre2j MA Pre r5</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOP_PRE2J_MA_PRE_R5_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 13;
+
+	/**
 	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uOPPreInt2jMAPreAssert_r7Impl <em>uOP Pre Int2j MA Pre Assert r7</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1450,7 +2105,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @see de.silvawb.umlContract2java.generated.impl.GeneratedPackageImpl#getuOPPreInt2jMAPreAssert_r7()
 	 * @generated
 	 */
-	int UOP_PRE_INT2J_MA_PRE_ASSERT_R7 = 14;
+	int UOP_PRE_INT2J_MA_PRE_ASSERT_R7 = 16;
 
 	/**
 	 * The feature id for the '<em><b>Created TGG Nodes</b></em>' map.
@@ -1783,1010 +2438,6 @@ public interface GeneratedPackage extends EPackage {
 	int UOP_PRE_INT2J_MA_PRE_ASSERT_R7_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 13;
 
 	/**
-	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uCInv2jCInv_r9Impl <em>uC Inv2j CInv r9</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see de.silvawb.umlContract2java.generated.impl.uCInv2jCInv_r9Impl
-	 * @see de.silvawb.umlContract2java.generated.impl.GeneratedPackageImpl#getuCInv2jCInv_r9()
-	 * @generated
-	 */
-	int UC_INV2J_CINV_R9 = 15;
-
-	/**
-	 * The feature id for the '<em><b>Created TGG Nodes</b></em>' map.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9__CREATED_TGG_NODES = OperationalTGGPackage.OPERATIONAL_RULE__CREATED_TGG_NODES;
-
-	/**
-	 * The feature id for the '<em><b>Rule ID</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9__RULE_ID = OperationalTGGPackage.OPERATIONAL_RULE__RULE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Operational Rule Group</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9__OPERATIONAL_RULE_GROUP = OperationalTGGPackage.OPERATIONAL_RULE__OPERATIONAL_RULE_GROUP;
-
-	/**
-	 * The feature id for the '<em><b>Preferred Input Corr Node Types</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9__PREFERRED_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__PREFERRED_INPUT_CORR_NODE_TYPES;
-
-	/**
-	 * The feature id for the '<em><b>All Input Corr Node Types</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9__ALL_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__ALL_INPUT_CORR_NODE_TYPES;
-
-	/**
-	 * The feature id for the '<em><b>Add Element Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9__ADD_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Move Element Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9__MOVE_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Change Attribute Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9__CHANGE_ATTRIBUTE_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Transform Forward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9__TRANSFORM_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 3;
-
-	/**
-	 * The feature id for the '<em><b>Transform Mapping Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9__TRANSFORM_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 4;
-
-	/**
-	 * The feature id for the '<em><b>Transform Backward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9__TRANSFORM_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 5;
-
-	/**
-	 * The feature id for the '<em><b>Conflict Check Forward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9__CONFLICT_CHECK_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 6;
-
-	/**
-	 * The feature id for the '<em><b>Conflict Check Mapping Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9__CONFLICT_CHECK_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 7;
-
-	/**
-	 * The feature id for the '<em><b>Conflict Check Backward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9__CONFLICT_CHECK_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 8;
-
-	/**
-	 * The feature id for the '<em><b>Synchronize Forward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9__SYNCHRONIZE_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 9;
-
-	/**
-	 * The feature id for the '<em><b>Synchronize Backward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9__SYNCHRONIZE_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 10;
-
-	/**
-	 * The feature id for the '<em><b>Repair Forward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9__REPAIR_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 11;
-
-	/**
-	 * The feature id for the '<em><b>Repair Backward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9__REPAIR_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 12;
-
-	/**
-	 * The number of structural features of the '<em>uC Inv2j CInv r9</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 13;
-
-	/**
-	 * The operation id for the '<em>Delete Element</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9___DELETE_ELEMENT__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE___DELETE_ELEMENT__TGGNODE;
-
-	/**
-	 * The operation id for the '<em>Add Element</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9___ADD_ELEMENT__EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>Change Attribute Values</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9___CHANGE_ATTRIBUTE_VALUES__TGGNODE_EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 1;
-
-	/**
-	 * The operation id for the '<em>Move Element</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9___MOVE_ELEMENT__TGGNODE_TGGNODE_TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 2;
-
-	/**
-	 * The operation id for the '<em>Transform Forward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9___TRANSFORM_FORWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 3;
-
-	/**
-	 * The operation id for the '<em>Transform Mapping</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9___TRANSFORM_MAPPING__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 4;
-
-	/**
-	 * The operation id for the '<em>Transform Backward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9___TRANSFORM_BACKWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 5;
-
-	/**
-	 * The operation id for the '<em>Conflict Check Forward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9___CONFLICT_CHECK_FORWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 6;
-
-	/**
-	 * The operation id for the '<em>Conflict Check Mapping</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9___CONFLICT_CHECK_MAPPING__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 7;
-
-	/**
-	 * The operation id for the '<em>Conflict Check Backward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9___CONFLICT_CHECK_BACKWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 8;
-
-	/**
-	 * The operation id for the '<em>Synchronize Forward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9___SYNCHRONIZE_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 9;
-
-	/**
-	 * The operation id for the '<em>Synchronize Backward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9___SYNCHRONIZE_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 10;
-
-	/**
-	 * The operation id for the '<em>Repair Forward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9___REPAIR_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 11;
-
-	/**
-	 * The operation id for the '<em>Repair Backward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9___REPAIR_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 12;
-
-	/**
-	 * The number of operations of the '<em>uC Inv2j CInv r9</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV2J_CINV_R9_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 13;
-
-	/**
-	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uCInvInt2jCInvAssert_r10Impl <em>uC Inv Int2j CInv Assert r10</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see de.silvawb.umlContract2java.generated.impl.uCInvInt2jCInvAssert_r10Impl
-	 * @see de.silvawb.umlContract2java.generated.impl.GeneratedPackageImpl#getuCInvInt2jCInvAssert_r10()
-	 * @generated
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10 = 16;
-
-	/**
-	 * The feature id for the '<em><b>Created TGG Nodes</b></em>' map.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10__CREATED_TGG_NODES = OperationalTGGPackage.OPERATIONAL_RULE__CREATED_TGG_NODES;
-
-	/**
-	 * The feature id for the '<em><b>Rule ID</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10__RULE_ID = OperationalTGGPackage.OPERATIONAL_RULE__RULE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Operational Rule Group</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10__OPERATIONAL_RULE_GROUP = OperationalTGGPackage.OPERATIONAL_RULE__OPERATIONAL_RULE_GROUP;
-
-	/**
-	 * The feature id for the '<em><b>Preferred Input Corr Node Types</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10__PREFERRED_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__PREFERRED_INPUT_CORR_NODE_TYPES;
-
-	/**
-	 * The feature id for the '<em><b>All Input Corr Node Types</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10__ALL_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__ALL_INPUT_CORR_NODE_TYPES;
-
-	/**
-	 * The feature id for the '<em><b>Add Element Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10__ADD_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Move Element Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10__MOVE_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Change Attribute Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10__CHANGE_ATTRIBUTE_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 2;
-
-	/**
-	 * The feature id for the '<em><b>Transform Forward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10__TRANSFORM_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 3;
-
-	/**
-	 * The feature id for the '<em><b>Transform Mapping Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10__TRANSFORM_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 4;
-
-	/**
-	 * The feature id for the '<em><b>Transform Backward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10__TRANSFORM_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 5;
-
-	/**
-	 * The feature id for the '<em><b>Conflict Check Forward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10__CONFLICT_CHECK_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 6;
-
-	/**
-	 * The feature id for the '<em><b>Conflict Check Mapping Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10__CONFLICT_CHECK_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 7;
-
-	/**
-	 * The feature id for the '<em><b>Conflict Check Backward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10__CONFLICT_CHECK_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 8;
-
-	/**
-	 * The feature id for the '<em><b>Synchronize Forward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10__SYNCHRONIZE_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 9;
-
-	/**
-	 * The feature id for the '<em><b>Synchronize Backward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10__SYNCHRONIZE_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 10;
-
-	/**
-	 * The feature id for the '<em><b>Repair Forward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10__REPAIR_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 11;
-
-	/**
-	 * The feature id for the '<em><b>Repair Backward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10__REPAIR_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 12;
-
-	/**
-	 * The number of structural features of the '<em>uC Inv Int2j CInv Assert r10</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 13;
-
-	/**
-	 * The operation id for the '<em>Delete Element</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10___DELETE_ELEMENT__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE___DELETE_ELEMENT__TGGNODE;
-
-	/**
-	 * The operation id for the '<em>Add Element</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10___ADD_ELEMENT__EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>Change Attribute Values</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10___CHANGE_ATTRIBUTE_VALUES__TGGNODE_EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 1;
-
-	/**
-	 * The operation id for the '<em>Move Element</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10___MOVE_ELEMENT__TGGNODE_TGGNODE_TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 2;
-
-	/**
-	 * The operation id for the '<em>Transform Forward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10___TRANSFORM_FORWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 3;
-
-	/**
-	 * The operation id for the '<em>Transform Mapping</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10___TRANSFORM_MAPPING__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 4;
-
-	/**
-	 * The operation id for the '<em>Transform Backward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10___TRANSFORM_BACKWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 5;
-
-	/**
-	 * The operation id for the '<em>Conflict Check Forward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10___CONFLICT_CHECK_FORWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 6;
-
-	/**
-	 * The operation id for the '<em>Conflict Check Mapping</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10___CONFLICT_CHECK_MAPPING__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 7;
-
-	/**
-	 * The operation id for the '<em>Conflict Check Backward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10___CONFLICT_CHECK_BACKWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 8;
-
-	/**
-	 * The operation id for the '<em>Synchronize Forward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10___SYNCHRONIZE_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 9;
-
-	/**
-	 * The operation id for the '<em>Synchronize Backward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10___SYNCHRONIZE_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 10;
-
-	/**
-	 * The operation id for the '<em>Repair Forward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10___REPAIR_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 11;
-
-	/**
-	 * The operation id for the '<em>Repair Backward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10___REPAIR_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 12;
-
-	/**
-	 * The number of operations of the '<em>uC Inv Int2j CInv Assert r10</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UC_INV_INT2J_CINV_ASSERT_R10_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 13;
-
-	/**
-	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uProperty2jField_Helper_r11Impl <em>uProperty2j Field Helper r11</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see de.silvawb.umlContract2java.generated.impl.uProperty2jField_Helper_r11Impl
-	 * @see de.silvawb.umlContract2java.generated.impl.GeneratedPackageImpl#getuProperty2jField_Helper_r11()
-	 * @generated
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11 = 17;
-
-	/**
-	 * The feature id for the '<em><b>Created TGG Nodes</b></em>' map.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11__CREATED_TGG_NODES = OperationalTGGPackage.OPERATIONAL_RULE__CREATED_TGG_NODES;
-
-	/**
-	 * The feature id for the '<em><b>Rule ID</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11__RULE_ID = OperationalTGGPackage.OPERATIONAL_RULE__RULE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Operational Rule Group</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11__OPERATIONAL_RULE_GROUP = OperationalTGGPackage.OPERATIONAL_RULE__OPERATIONAL_RULE_GROUP;
-
-	/**
-	 * The feature id for the '<em><b>Preferred Input Corr Node Types</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11__PREFERRED_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__PREFERRED_INPUT_CORR_NODE_TYPES;
-
-	/**
-	 * The feature id for the '<em><b>All Input Corr Node Types</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11__ALL_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__ALL_INPUT_CORR_NODE_TYPES;
-
-	/**
-	 * The feature id for the '<em><b>Add Element Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11__ADD_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Move Element Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11__MOVE_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Change Attribute Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11__CHANGE_ATTRIBUTE_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 2;
-
-	/**
-	 * The feature id for the '<em><b>Transform Forward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11__TRANSFORM_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 3;
-
-	/**
-	 * The feature id for the '<em><b>Transform Mapping Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11__TRANSFORM_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 4;
-
-	/**
-	 * The feature id for the '<em><b>Transform Backward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11__TRANSFORM_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 5;
-
-	/**
-	 * The feature id for the '<em><b>Conflict Check Forward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11__CONFLICT_CHECK_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 6;
-
-	/**
-	 * The feature id for the '<em><b>Conflict Check Mapping Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11__CONFLICT_CHECK_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 7;
-
-	/**
-	 * The feature id for the '<em><b>Conflict Check Backward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11__CONFLICT_CHECK_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 8;
-
-	/**
-	 * The feature id for the '<em><b>Synchronize Forward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11__SYNCHRONIZE_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 9;
-
-	/**
-	 * The feature id for the '<em><b>Synchronize Backward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11__SYNCHRONIZE_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 10;
-
-	/**
-	 * The feature id for the '<em><b>Repair Forward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11__REPAIR_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 11;
-
-	/**
-	 * The feature id for the '<em><b>Repair Backward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11__REPAIR_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 12;
-
-	/**
-	 * The number of structural features of the '<em>uProperty2j Field Helper r11</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 13;
-
-	/**
-	 * The operation id for the '<em>Delete Element</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11___DELETE_ELEMENT__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE___DELETE_ELEMENT__TGGNODE;
-
-	/**
-	 * The operation id for the '<em>Add Element</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11___ADD_ELEMENT__EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>Change Attribute Values</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11___CHANGE_ATTRIBUTE_VALUES__TGGNODE_EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 1;
-
-	/**
-	 * The operation id for the '<em>Move Element</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11___MOVE_ELEMENT__TGGNODE_TGGNODE_TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 2;
-
-	/**
-	 * The operation id for the '<em>Transform Forward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11___TRANSFORM_FORWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 3;
-
-	/**
-	 * The operation id for the '<em>Transform Mapping</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11___TRANSFORM_MAPPING__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 4;
-
-	/**
-	 * The operation id for the '<em>Transform Backward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11___TRANSFORM_BACKWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 5;
-
-	/**
-	 * The operation id for the '<em>Conflict Check Forward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11___CONFLICT_CHECK_FORWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 6;
-
-	/**
-	 * The operation id for the '<em>Conflict Check Mapping</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11___CONFLICT_CHECK_MAPPING__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 7;
-
-	/**
-	 * The operation id for the '<em>Conflict Check Backward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11___CONFLICT_CHECK_BACKWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 8;
-
-	/**
-	 * The operation id for the '<em>Synchronize Forward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11___SYNCHRONIZE_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 9;
-
-	/**
-	 * The operation id for the '<em>Synchronize Backward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11___SYNCHRONIZE_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 10;
-
-	/**
-	 * The operation id for the '<em>Repair Forward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11___REPAIR_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 11;
-
-	/**
-	 * The operation id for the '<em>Repair Backward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11___REPAIR_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 12;
-
-	/**
-	 * The number of operations of the '<em>uProperty2j Field Helper r11</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPROPERTY2J_FIELD_HELPER_R11_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 13;
-
-	/**
 	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uOPPosInt2jMAPosAssert_r8Impl <em>uOP Pos Int2j MA Pos Assert r8</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2794,7 +2445,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @see de.silvawb.umlContract2java.generated.impl.GeneratedPackageImpl#getuOPPosInt2jMAPosAssert_r8()
 	 * @generated
 	 */
-	int UOP_POS_INT2J_MA_POS_ASSERT_R8 = 18;
+	int UOP_POS_INT2J_MA_POS_ASSERT_R8 = 17;
 
 	/**
 	 * The feature id for the '<em><b>Created TGG Nodes</b></em>' map.
@@ -3127,669 +2778,6 @@ public interface GeneratedPackage extends EPackage {
 	int UOP_POS_INT2J_MA_POS_ASSERT_R8_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 13;
 
 	/**
-	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uClass2jClass_Helper_r2Impl <em>uClass2j Class Helper r2</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see de.silvawb.umlContract2java.generated.impl.uClass2jClass_Helper_r2Impl
-	 * @see de.silvawb.umlContract2java.generated.impl.GeneratedPackageImpl#getuClass2jClass_Helper_r2()
-	 * @generated
-	 */
-	int UCLASS2J_CLASS_HELPER_R2 = 19;
-
-	/**
-	 * The feature id for the '<em><b>Created TGG Nodes</b></em>' map.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2__CREATED_TGG_NODES = OperationalTGGPackage.OPERATIONAL_RULE__CREATED_TGG_NODES;
-
-	/**
-	 * The feature id for the '<em><b>Rule ID</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2__RULE_ID = OperationalTGGPackage.OPERATIONAL_RULE__RULE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Operational Rule Group</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2__OPERATIONAL_RULE_GROUP = OperationalTGGPackage.OPERATIONAL_RULE__OPERATIONAL_RULE_GROUP;
-
-	/**
-	 * The feature id for the '<em><b>Preferred Input Corr Node Types</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2__PREFERRED_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__PREFERRED_INPUT_CORR_NODE_TYPES;
-
-	/**
-	 * The feature id for the '<em><b>All Input Corr Node Types</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2__ALL_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__ALL_INPUT_CORR_NODE_TYPES;
-
-	/**
-	 * The feature id for the '<em><b>Add Element Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2__ADD_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Move Element Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2__MOVE_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Change Attribute Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2__CHANGE_ATTRIBUTE_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Transform Forward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2__TRANSFORM_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 3;
-
-	/**
-	 * The feature id for the '<em><b>Transform Mapping Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2__TRANSFORM_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 4;
-
-	/**
-	 * The feature id for the '<em><b>Transform Backward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2__TRANSFORM_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 5;
-
-	/**
-	 * The feature id for the '<em><b>Conflict Check Forward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2__CONFLICT_CHECK_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 6;
-
-	/**
-	 * The feature id for the '<em><b>Conflict Check Mapping Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2__CONFLICT_CHECK_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 7;
-
-	/**
-	 * The feature id for the '<em><b>Conflict Check Backward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2__CONFLICT_CHECK_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 8;
-
-	/**
-	 * The feature id for the '<em><b>Synchronize Forward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2__SYNCHRONIZE_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 9;
-
-	/**
-	 * The feature id for the '<em><b>Synchronize Backward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2__SYNCHRONIZE_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 10;
-
-	/**
-	 * The feature id for the '<em><b>Repair Forward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2__REPAIR_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 11;
-
-	/**
-	 * The feature id for the '<em><b>Repair Backward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2__REPAIR_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 12;
-
-	/**
-	 * The number of structural features of the '<em>uClass2j Class Helper r2</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 13;
-
-	/**
-	 * The operation id for the '<em>Delete Element</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2___DELETE_ELEMENT__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE___DELETE_ELEMENT__TGGNODE;
-
-	/**
-	 * The operation id for the '<em>Add Element</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2___ADD_ELEMENT__EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>Change Attribute Values</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2___CHANGE_ATTRIBUTE_VALUES__TGGNODE_EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 1;
-
-	/**
-	 * The operation id for the '<em>Move Element</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2___MOVE_ELEMENT__TGGNODE_TGGNODE_TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 2;
-
-	/**
-	 * The operation id for the '<em>Transform Forward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2___TRANSFORM_FORWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 3;
-
-	/**
-	 * The operation id for the '<em>Transform Mapping</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2___TRANSFORM_MAPPING__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 4;
-
-	/**
-	 * The operation id for the '<em>Transform Backward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2___TRANSFORM_BACKWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 5;
-
-	/**
-	 * The operation id for the '<em>Conflict Check Forward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2___CONFLICT_CHECK_FORWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 6;
-
-	/**
-	 * The operation id for the '<em>Conflict Check Mapping</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2___CONFLICT_CHECK_MAPPING__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 7;
-
-	/**
-	 * The operation id for the '<em>Conflict Check Backward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2___CONFLICT_CHECK_BACKWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 8;
-
-	/**
-	 * The operation id for the '<em>Synchronize Forward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2___SYNCHRONIZE_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 9;
-
-	/**
-	 * The operation id for the '<em>Synchronize Backward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2___SYNCHRONIZE_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 10;
-
-	/**
-	 * The operation id for the '<em>Repair Forward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2___REPAIR_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 11;
-
-	/**
-	 * The operation id for the '<em>Repair Backward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2___REPAIR_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 12;
-
-	/**
-	 * The number of operations of the '<em>uClass2j Class Helper r2</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UCLASS2J_CLASS_HELPER_R2_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 13;
-
-	/**
-	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uOPPre2jMAPre_r5Impl <em>uOP Pre2j MA Pre r5</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see de.silvawb.umlContract2java.generated.impl.uOPPre2jMAPre_r5Impl
-	 * @see de.silvawb.umlContract2java.generated.impl.GeneratedPackageImpl#getuOPPre2jMAPre_r5()
-	 * @generated
-	 */
-	int UOP_PRE2J_MA_PRE_R5 = 20;
-
-	/**
-	 * The feature id for the '<em><b>Created TGG Nodes</b></em>' map.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5__CREATED_TGG_NODES = OperationalTGGPackage.OPERATIONAL_RULE__CREATED_TGG_NODES;
-
-	/**
-	 * The feature id for the '<em><b>Rule ID</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5__RULE_ID = OperationalTGGPackage.OPERATIONAL_RULE__RULE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Operational Rule Group</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5__OPERATIONAL_RULE_GROUP = OperationalTGGPackage.OPERATIONAL_RULE__OPERATIONAL_RULE_GROUP;
-
-	/**
-	 * The feature id for the '<em><b>Preferred Input Corr Node Types</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5__PREFERRED_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__PREFERRED_INPUT_CORR_NODE_TYPES;
-
-	/**
-	 * The feature id for the '<em><b>All Input Corr Node Types</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5__ALL_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__ALL_INPUT_CORR_NODE_TYPES;
-
-	/**
-	 * The feature id for the '<em><b>Add Element Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5__ADD_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Move Element Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5__MOVE_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Change Attribute Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5__CHANGE_ATTRIBUTE_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Transform Forward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5__TRANSFORM_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 3;
-
-	/**
-	 * The feature id for the '<em><b>Transform Mapping Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5__TRANSFORM_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 4;
-
-	/**
-	 * The feature id for the '<em><b>Transform Backward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5__TRANSFORM_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 5;
-
-	/**
-	 * The feature id for the '<em><b>Conflict Check Forward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5__CONFLICT_CHECK_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 6;
-
-	/**
-	 * The feature id for the '<em><b>Conflict Check Mapping Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5__CONFLICT_CHECK_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 7;
-
-	/**
-	 * The feature id for the '<em><b>Conflict Check Backward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5__CONFLICT_CHECK_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
-			+ 8;
-
-	/**
-	 * The feature id for the '<em><b>Synchronize Forward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5__SYNCHRONIZE_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 9;
-
-	/**
-	 * The feature id for the '<em><b>Synchronize Backward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5__SYNCHRONIZE_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 10;
-
-	/**
-	 * The feature id for the '<em><b>Repair Forward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5__REPAIR_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 11;
-
-	/**
-	 * The feature id for the '<em><b>Repair Backward Activity</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5__REPAIR_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 12;
-
-	/**
-	 * The number of structural features of the '<em>uOP Pre2j MA Pre r5</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 13;
-
-	/**
-	 * The operation id for the '<em>Delete Element</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5___DELETE_ELEMENT__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE___DELETE_ELEMENT__TGGNODE;
-
-	/**
-	 * The operation id for the '<em>Add Element</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5___ADD_ELEMENT__EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>Change Attribute Values</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5___CHANGE_ATTRIBUTE_VALUES__TGGNODE_EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 1;
-
-	/**
-	 * The operation id for the '<em>Move Element</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5___MOVE_ELEMENT__TGGNODE_TGGNODE_TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 2;
-
-	/**
-	 * The operation id for the '<em>Transform Forward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5___TRANSFORM_FORWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 3;
-
-	/**
-	 * The operation id for the '<em>Transform Mapping</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5___TRANSFORM_MAPPING__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 4;
-
-	/**
-	 * The operation id for the '<em>Transform Backward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5___TRANSFORM_BACKWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 5;
-
-	/**
-	 * The operation id for the '<em>Conflict Check Forward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5___CONFLICT_CHECK_FORWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 6;
-
-	/**
-	 * The operation id for the '<em>Conflict Check Mapping</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5___CONFLICT_CHECK_MAPPING__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 7;
-
-	/**
-	 * The operation id for the '<em>Conflict Check Backward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5___CONFLICT_CHECK_BACKWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 8;
-
-	/**
-	 * The operation id for the '<em>Synchronize Forward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5___SYNCHRONIZE_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 9;
-
-	/**
-	 * The operation id for the '<em>Synchronize Backward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5___SYNCHRONIZE_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 10;
-
-	/**
-	 * The operation id for the '<em>Repair Forward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5___REPAIR_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 11;
-
-	/**
-	 * The operation id for the '<em>Repair Backward</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5___REPAIR_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
-			+ 12;
-
-	/**
-	 * The number of operations of the '<em>uOP Pre2j MA Pre r5</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UOP_PRE2J_MA_PRE_R5_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 13;
-
-	/**
 	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uOperation2jMethod_Helper_r3Impl <em>uOperation2j Method Helper r3</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3797,7 +2785,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @see de.silvawb.umlContract2java.generated.impl.GeneratedPackageImpl#getuOperation2jMethod_Helper_r3()
 	 * @generated
 	 */
-	int UOPERATION2J_METHOD_HELPER_R3 = 21;
+	int UOPERATION2J_METHOD_HELPER_R3 = 18;
 
 	/**
 	 * The feature id for the '<em><b>Created TGG Nodes</b></em>' map.
@@ -4129,6 +3117,679 @@ public interface GeneratedPackage extends EPackage {
 	int UOPERATION2J_METHOD_HELPER_R3_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 13;
 
 	/**
+	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uCInvInt2jCInvAssert_r10Impl <em>uC Inv Int2j CInv Assert r10</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.silvawb.umlContract2java.generated.impl.uCInvInt2jCInvAssert_r10Impl
+	 * @see de.silvawb.umlContract2java.generated.impl.GeneratedPackageImpl#getuCInvInt2jCInvAssert_r10()
+	 * @generated
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10 = 19;
+
+	/**
+	 * The feature id for the '<em><b>Created TGG Nodes</b></em>' map.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10__CREATED_TGG_NODES = OperationalTGGPackage.OPERATIONAL_RULE__CREATED_TGG_NODES;
+
+	/**
+	 * The feature id for the '<em><b>Rule ID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10__RULE_ID = OperationalTGGPackage.OPERATIONAL_RULE__RULE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Operational Rule Group</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10__OPERATIONAL_RULE_GROUP = OperationalTGGPackage.OPERATIONAL_RULE__OPERATIONAL_RULE_GROUP;
+
+	/**
+	 * The feature id for the '<em><b>Preferred Input Corr Node Types</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10__PREFERRED_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__PREFERRED_INPUT_CORR_NODE_TYPES;
+
+	/**
+	 * The feature id for the '<em><b>All Input Corr Node Types</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10__ALL_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__ALL_INPUT_CORR_NODE_TYPES;
+
+	/**
+	 * The feature id for the '<em><b>Add Element Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10__ADD_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Move Element Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10__MOVE_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Change Attribute Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10__CHANGE_ATTRIBUTE_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 2;
+
+	/**
+	 * The feature id for the '<em><b>Transform Forward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10__TRANSFORM_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 3;
+
+	/**
+	 * The feature id for the '<em><b>Transform Mapping Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10__TRANSFORM_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 4;
+
+	/**
+	 * The feature id for the '<em><b>Transform Backward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10__TRANSFORM_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 5;
+
+	/**
+	 * The feature id for the '<em><b>Conflict Check Forward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10__CONFLICT_CHECK_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 6;
+
+	/**
+	 * The feature id for the '<em><b>Conflict Check Mapping Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10__CONFLICT_CHECK_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 7;
+
+	/**
+	 * The feature id for the '<em><b>Conflict Check Backward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10__CONFLICT_CHECK_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 8;
+
+	/**
+	 * The feature id for the '<em><b>Synchronize Forward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10__SYNCHRONIZE_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 9;
+
+	/**
+	 * The feature id for the '<em><b>Synchronize Backward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10__SYNCHRONIZE_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 10;
+
+	/**
+	 * The feature id for the '<em><b>Repair Forward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10__REPAIR_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 11;
+
+	/**
+	 * The feature id for the '<em><b>Repair Backward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10__REPAIR_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 12;
+
+	/**
+	 * The number of structural features of the '<em>uC Inv Int2j CInv Assert r10</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 13;
+
+	/**
+	 * The operation id for the '<em>Delete Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10___DELETE_ELEMENT__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE___DELETE_ELEMENT__TGGNODE;
+
+	/**
+	 * The operation id for the '<em>Add Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10___ADD_ELEMENT__EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Change Attribute Values</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10___CHANGE_ATTRIBUTE_VALUES__TGGNODE_EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 1;
+
+	/**
+	 * The operation id for the '<em>Move Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10___MOVE_ELEMENT__TGGNODE_TGGNODE_TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 2;
+
+	/**
+	 * The operation id for the '<em>Transform Forward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10___TRANSFORM_FORWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 3;
+
+	/**
+	 * The operation id for the '<em>Transform Mapping</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10___TRANSFORM_MAPPING__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 4;
+
+	/**
+	 * The operation id for the '<em>Transform Backward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10___TRANSFORM_BACKWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 5;
+
+	/**
+	 * The operation id for the '<em>Conflict Check Forward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10___CONFLICT_CHECK_FORWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 6;
+
+	/**
+	 * The operation id for the '<em>Conflict Check Mapping</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10___CONFLICT_CHECK_MAPPING__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 7;
+
+	/**
+	 * The operation id for the '<em>Conflict Check Backward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10___CONFLICT_CHECK_BACKWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 8;
+
+	/**
+	 * The operation id for the '<em>Synchronize Forward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10___SYNCHRONIZE_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 9;
+
+	/**
+	 * The operation id for the '<em>Synchronize Backward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10___SYNCHRONIZE_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 10;
+
+	/**
+	 * The operation id for the '<em>Repair Forward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10___REPAIR_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 11;
+
+	/**
+	 * The operation id for the '<em>Repair Backward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10___REPAIR_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 12;
+
+	/**
+	 * The number of operations of the '<em>uC Inv Int2j CInv Assert r10</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UC_INV_INT2J_CINV_ASSERT_R10_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 13;
+
+	/**
+	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uClass2jClass_Helper_r2Impl <em>uClass2j Class Helper r2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.silvawb.umlContract2java.generated.impl.uClass2jClass_Helper_r2Impl
+	 * @see de.silvawb.umlContract2java.generated.impl.GeneratedPackageImpl#getuClass2jClass_Helper_r2()
+	 * @generated
+	 */
+	int UCLASS2J_CLASS_HELPER_R2 = 20;
+
+	/**
+	 * The feature id for the '<em><b>Created TGG Nodes</b></em>' map.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2__CREATED_TGG_NODES = OperationalTGGPackage.OPERATIONAL_RULE__CREATED_TGG_NODES;
+
+	/**
+	 * The feature id for the '<em><b>Rule ID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2__RULE_ID = OperationalTGGPackage.OPERATIONAL_RULE__RULE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Operational Rule Group</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2__OPERATIONAL_RULE_GROUP = OperationalTGGPackage.OPERATIONAL_RULE__OPERATIONAL_RULE_GROUP;
+
+	/**
+	 * The feature id for the '<em><b>Preferred Input Corr Node Types</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2__PREFERRED_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__PREFERRED_INPUT_CORR_NODE_TYPES;
+
+	/**
+	 * The feature id for the '<em><b>All Input Corr Node Types</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2__ALL_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__ALL_INPUT_CORR_NODE_TYPES;
+
+	/**
+	 * The feature id for the '<em><b>Add Element Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2__ADD_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Move Element Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2__MOVE_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Change Attribute Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2__CHANGE_ATTRIBUTE_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Transform Forward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2__TRANSFORM_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Transform Mapping Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2__TRANSFORM_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Transform Backward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2__TRANSFORM_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 5;
+
+	/**
+	 * The feature id for the '<em><b>Conflict Check Forward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2__CONFLICT_CHECK_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 6;
+
+	/**
+	 * The feature id for the '<em><b>Conflict Check Mapping Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2__CONFLICT_CHECK_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 7;
+
+	/**
+	 * The feature id for the '<em><b>Conflict Check Backward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2__CONFLICT_CHECK_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 8;
+
+	/**
+	 * The feature id for the '<em><b>Synchronize Forward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2__SYNCHRONIZE_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 9;
+
+	/**
+	 * The feature id for the '<em><b>Synchronize Backward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2__SYNCHRONIZE_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 10;
+
+	/**
+	 * The feature id for the '<em><b>Repair Forward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2__REPAIR_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 11;
+
+	/**
+	 * The feature id for the '<em><b>Repair Backward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2__REPAIR_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 12;
+
+	/**
+	 * The number of structural features of the '<em>uClass2j Class Helper r2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 13;
+
+	/**
+	 * The operation id for the '<em>Delete Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2___DELETE_ELEMENT__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE___DELETE_ELEMENT__TGGNODE;
+
+	/**
+	 * The operation id for the '<em>Add Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2___ADD_ELEMENT__EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Change Attribute Values</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2___CHANGE_ATTRIBUTE_VALUES__TGGNODE_EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 1;
+
+	/**
+	 * The operation id for the '<em>Move Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2___MOVE_ELEMENT__TGGNODE_TGGNODE_TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 2;
+
+	/**
+	 * The operation id for the '<em>Transform Forward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2___TRANSFORM_FORWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 3;
+
+	/**
+	 * The operation id for the '<em>Transform Mapping</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2___TRANSFORM_MAPPING__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 4;
+
+	/**
+	 * The operation id for the '<em>Transform Backward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2___TRANSFORM_BACKWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 5;
+
+	/**
+	 * The operation id for the '<em>Conflict Check Forward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2___CONFLICT_CHECK_FORWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 6;
+
+	/**
+	 * The operation id for the '<em>Conflict Check Mapping</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2___CONFLICT_CHECK_MAPPING__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 7;
+
+	/**
+	 * The operation id for the '<em>Conflict Check Backward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2___CONFLICT_CHECK_BACKWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 8;
+
+	/**
+	 * The operation id for the '<em>Synchronize Forward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2___SYNCHRONIZE_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 9;
+
+	/**
+	 * The operation id for the '<em>Synchronize Backward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2___SYNCHRONIZE_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 10;
+
+	/**
+	 * The operation id for the '<em>Repair Forward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2___REPAIR_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 11;
+
+	/**
+	 * The operation id for the '<em>Repair Backward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2___REPAIR_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 12;
+
+	/**
+	 * The number of operations of the '<em>uClass2j Class Helper r2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UCLASS2J_CLASS_HELPER_R2_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 13;
+
+	/**
 	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uOPPos2jMAPos_r6Impl <em>uOP Pos2j MA Pos r6</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4136,7 +3797,7 @@ public interface GeneratedPackage extends EPackage {
 	 * @see de.silvawb.umlContract2java.generated.impl.GeneratedPackageImpl#getuOPPos2jMAPos_r6()
 	 * @generated
 	 */
-	int UOP_POS2J_MA_POS_R6 = 22;
+	int UOP_POS2J_MA_POS_R6 = 21;
 
 	/**
 	 * The feature id for the '<em><b>Created TGG Nodes</b></em>' map.
@@ -4458,6 +4119,345 @@ public interface GeneratedPackage extends EPackage {
 	int UOP_POS2J_MA_POS_R6_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 13;
 
 	/**
+	 * The meta object id for the '{@link de.silvawb.umlContract2java.generated.impl.uProperty2jField_Helper_r11Impl <em>uProperty2j Field Helper r11</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.silvawb.umlContract2java.generated.impl.uProperty2jField_Helper_r11Impl
+	 * @see de.silvawb.umlContract2java.generated.impl.GeneratedPackageImpl#getuProperty2jField_Helper_r11()
+	 * @generated
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11 = 22;
+
+	/**
+	 * The feature id for the '<em><b>Created TGG Nodes</b></em>' map.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11__CREATED_TGG_NODES = OperationalTGGPackage.OPERATIONAL_RULE__CREATED_TGG_NODES;
+
+	/**
+	 * The feature id for the '<em><b>Rule ID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11__RULE_ID = OperationalTGGPackage.OPERATIONAL_RULE__RULE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Operational Rule Group</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11__OPERATIONAL_RULE_GROUP = OperationalTGGPackage.OPERATIONAL_RULE__OPERATIONAL_RULE_GROUP;
+
+	/**
+	 * The feature id for the '<em><b>Preferred Input Corr Node Types</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11__PREFERRED_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__PREFERRED_INPUT_CORR_NODE_TYPES;
+
+	/**
+	 * The feature id for the '<em><b>All Input Corr Node Types</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11__ALL_INPUT_CORR_NODE_TYPES = OperationalTGGPackage.OPERATIONAL_RULE__ALL_INPUT_CORR_NODE_TYPES;
+
+	/**
+	 * The feature id for the '<em><b>Add Element Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11__ADD_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Move Element Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11__MOVE_ELEMENT_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Change Attribute Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11__CHANGE_ATTRIBUTE_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 2;
+
+	/**
+	 * The feature id for the '<em><b>Transform Forward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11__TRANSFORM_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 3;
+
+	/**
+	 * The feature id for the '<em><b>Transform Mapping Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11__TRANSFORM_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 4;
+
+	/**
+	 * The feature id for the '<em><b>Transform Backward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11__TRANSFORM_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 5;
+
+	/**
+	 * The feature id for the '<em><b>Conflict Check Forward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11__CONFLICT_CHECK_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 6;
+
+	/**
+	 * The feature id for the '<em><b>Conflict Check Mapping Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11__CONFLICT_CHECK_MAPPING_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 7;
+
+	/**
+	 * The feature id for the '<em><b>Conflict Check Backward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11__CONFLICT_CHECK_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 8;
+
+	/**
+	 * The feature id for the '<em><b>Synchronize Forward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11__SYNCHRONIZE_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 9;
+
+	/**
+	 * The feature id for the '<em><b>Synchronize Backward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11__SYNCHRONIZE_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 10;
+
+	/**
+	 * The feature id for the '<em><b>Repair Forward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11__REPAIR_FORWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 11;
+
+	/**
+	 * The feature id for the '<em><b>Repair Backward Activity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11__REPAIR_BACKWARD_ACTIVITY = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT
+			+ 12;
+
+	/**
+	 * The number of structural features of the '<em>uProperty2j Field Helper r11</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11_FEATURE_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_FEATURE_COUNT + 13;
+
+	/**
+	 * The operation id for the '<em>Delete Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11___DELETE_ELEMENT__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE___DELETE_ELEMENT__TGGNODE;
+
+	/**
+	 * The operation id for the '<em>Add Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11___ADD_ELEMENT__EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Change Attribute Values</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11___CHANGE_ATTRIBUTE_VALUES__TGGNODE_EMAP = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 1;
+
+	/**
+	 * The operation id for the '<em>Move Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11___MOVE_ELEMENT__TGGNODE_TGGNODE_TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 2;
+
+	/**
+	 * The operation id for the '<em>Transform Forward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11___TRANSFORM_FORWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 3;
+
+	/**
+	 * The operation id for the '<em>Transform Mapping</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11___TRANSFORM_MAPPING__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 4;
+
+	/**
+	 * The operation id for the '<em>Transform Backward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11___TRANSFORM_BACKWARD__TGGNODE_BOOLEAN_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 5;
+
+	/**
+	 * The operation id for the '<em>Conflict Check Forward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11___CONFLICT_CHECK_FORWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 6;
+
+	/**
+	 * The operation id for the '<em>Conflict Check Mapping</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11___CONFLICT_CHECK_MAPPING__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 7;
+
+	/**
+	 * The operation id for the '<em>Conflict Check Backward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11___CONFLICT_CHECK_BACKWARD__TGGNODE = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 8;
+
+	/**
+	 * The operation id for the '<em>Synchronize Forward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11___SYNCHRONIZE_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 9;
+
+	/**
+	 * The operation id for the '<em>Synchronize Backward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11___SYNCHRONIZE_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 10;
+
+	/**
+	 * The operation id for the '<em>Repair Forward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11___REPAIR_FORWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 11;
+
+	/**
+	 * The operation id for the '<em>Repair Backward</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11___REPAIR_BACKWARD__TGGNODE_BOOLEAN = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT
+			+ 12;
+
+	/**
+	 * The number of operations of the '<em>uProperty2j Field Helper r11</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPROPERTY2J_FIELD_HELPER_R11_OPERATION_COUNT = OperationalTGGPackage.OPERATIONAL_RULE_OPERATION_COUNT + 13;
+
+	/**
 	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.umlContract2javaOperationalTGG <em>uml Contract2java Operational TGG</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4478,54 +4478,14 @@ public interface GeneratedPackage extends EPackage {
 	EClass getumlContract2javaAxiom();
 
 	/**
-	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert <em>uOP Pre Int2j MA Pre Assert</em>}'.
+	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper <em>uProperty2j Field Helper</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>uOP Pre Int2j MA Pre Assert</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert
+	 * @return the meta object for class '<em>uProperty2j Field Helper</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper
 	 * @generated
 	 */
-	EClass getuOPPreInt2jMAPreAssert();
-
-	/**
-	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uOperation2jMethod_Helper <em>uOperation2j Method Helper</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>uOperation2j Method Helper</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOperation2jMethod_Helper
-	 * @generated
-	 */
-	EClass getuOperation2jMethod_Helper();
-
-	/**
-	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uCInv2jCInv <em>uC Inv2j CInv</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>uC Inv2j CInv</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uCInv2jCInv
-	 * @generated
-	 */
-	EClass getuCInv2jCInv();
-
-	/**
-	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uOPPos2jMAPos <em>uOP Pos2j MA Pos</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>uOP Pos2j MA Pos</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPos2jMAPos
-	 * @generated
-	 */
-	EClass getuOPPos2jMAPos();
-
-	/**
-	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper <em>uClass2j Class Helper</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>uClass2j Class Helper</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper
-	 * @generated
-	 */
-	EClass getuClass2jClass_Helper();
+	EClass getuProperty2jField_Helper();
 
 	/**
 	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uOPPre2jMAPre <em>uOP Pre2j MA Pre</em>}'.
@@ -4538,6 +4498,46 @@ public interface GeneratedPackage extends EPackage {
 	EClass getuOPPre2jMAPre();
 
 	/**
+	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uCInv2jCInv <em>uC Inv2j CInv</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>uC Inv2j CInv</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uCInv2jCInv
+	 * @generated
+	 */
+	EClass getuCInv2jCInv();
+
+	/**
+	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper <em>uClass2j Class Helper</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>uClass2j Class Helper</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper
+	 * @generated
+	 */
+	EClass getuClass2jClass_Helper();
+
+	/**
+	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uOParamenter2jMArgument <em>uO Paramenter2j MArgument</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>uO Paramenter2j MArgument</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOParamenter2jMArgument
+	 * @generated
+	 */
+	EClass getuOParamenter2jMArgument();
+
+	/**
+	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uOperation2jMethod_Helper <em>uOperation2j Method Helper</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>uOperation2j Method Helper</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOperation2jMethod_Helper
+	 * @generated
+	 */
+	EClass getuOperation2jMethod_Helper();
+
+	/**
 	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert <em>uOP Pos Int2j MA Pos Assert</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4548,14 +4548,14 @@ public interface GeneratedPackage extends EPackage {
 	EClass getuOPPosInt2jMAPosAssert();
 
 	/**
-	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper <em>uProperty2j Field Helper</em>}'.
+	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uOPPos2jMAPos <em>uOP Pos2j MA Pos</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>uProperty2j Field Helper</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper
+	 * @return the meta object for class '<em>uOP Pos2j MA Pos</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPos2jMAPos
 	 * @generated
 	 */
-	EClass getuProperty2jField_Helper();
+	EClass getuOPPos2jMAPos();
 
 	/**
 	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert <em>uC Inv Int2j CInv Assert</em>}'.
@@ -4568,14 +4568,14 @@ public interface GeneratedPackage extends EPackage {
 	EClass getuCInvInt2jCInvAssert();
 
 	/**
-	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uOParamenter2jMArgument <em>uO Paramenter2j MArgument</em>}'.
+	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert <em>uOP Pre Int2j MA Pre Assert</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>uO Paramenter2j MArgument</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOParamenter2jMArgument
+	 * @return the meta object for class '<em>uOP Pre Int2j MA Pre Assert</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert
 	 * @generated
 	 */
-	EClass getuOParamenter2jMArgument();
+	EClass getuOPPreInt2jMAPreAssert();
 
 	/**
 	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.umlContract2javaAxiom_r1 <em>uml Contract2java Axiom r1</em>}'.
@@ -5029,289 +5029,6 @@ public interface GeneratedPackage extends EPackage {
 	EOperation getuOParamenter2jMArgument_r4__RepairBackward__TGGNode_boolean();
 
 	/**
-	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7 <em>uOP Pre Int2j MA Pre Assert r7</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>uOP Pre Int2j MA Pre Assert r7</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7
-	 * @generated
-	 */
-	EClass getuOPPreInt2jMAPreAssert_r7();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getAddElementActivity <em>Add Element Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Add Element Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getAddElementActivity()
-	 * @see #getuOPPreInt2jMAPreAssert_r7()
-	 * @generated
-	 */
-	EReference getuOPPreInt2jMAPreAssert_r7_AddElementActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getMoveElementActivity <em>Move Element Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Move Element Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getMoveElementActivity()
-	 * @see #getuOPPreInt2jMAPreAssert_r7()
-	 * @generated
-	 */
-	EReference getuOPPreInt2jMAPreAssert_r7_MoveElementActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getChangeAttributeActivity <em>Change Attribute Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Change Attribute Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getChangeAttributeActivity()
-	 * @see #getuOPPreInt2jMAPreAssert_r7()
-	 * @generated
-	 */
-	EReference getuOPPreInt2jMAPreAssert_r7_ChangeAttributeActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getTransformForwardActivity <em>Transform Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Transform Forward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getTransformForwardActivity()
-	 * @see #getuOPPreInt2jMAPreAssert_r7()
-	 * @generated
-	 */
-	EReference getuOPPreInt2jMAPreAssert_r7_TransformForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getTransformMappingActivity <em>Transform Mapping Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Transform Mapping Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getTransformMappingActivity()
-	 * @see #getuOPPreInt2jMAPreAssert_r7()
-	 * @generated
-	 */
-	EReference getuOPPreInt2jMAPreAssert_r7_TransformMappingActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getTransformBackwardActivity <em>Transform Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Transform Backward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getTransformBackwardActivity()
-	 * @see #getuOPPreInt2jMAPreAssert_r7()
-	 * @generated
-	 */
-	EReference getuOPPreInt2jMAPreAssert_r7_TransformBackwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getConflictCheckForwardActivity <em>Conflict Check Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Conflict Check Forward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getConflictCheckForwardActivity()
-	 * @see #getuOPPreInt2jMAPreAssert_r7()
-	 * @generated
-	 */
-	EReference getuOPPreInt2jMAPreAssert_r7_ConflictCheckForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getConflictCheckMappingActivity <em>Conflict Check Mapping Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Conflict Check Mapping Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getConflictCheckMappingActivity()
-	 * @see #getuOPPreInt2jMAPreAssert_r7()
-	 * @generated
-	 */
-	EReference getuOPPreInt2jMAPreAssert_r7_ConflictCheckMappingActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getConflictCheckBackwardActivity <em>Conflict Check Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Conflict Check Backward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getConflictCheckBackwardActivity()
-	 * @see #getuOPPreInt2jMAPreAssert_r7()
-	 * @generated
-	 */
-	EReference getuOPPreInt2jMAPreAssert_r7_ConflictCheckBackwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getSynchronizeForwardActivity <em>Synchronize Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Synchronize Forward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getSynchronizeForwardActivity()
-	 * @see #getuOPPreInt2jMAPreAssert_r7()
-	 * @generated
-	 */
-	EReference getuOPPreInt2jMAPreAssert_r7_SynchronizeForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getSynchronizeBackwardActivity <em>Synchronize Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Synchronize Backward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getSynchronizeBackwardActivity()
-	 * @see #getuOPPreInt2jMAPreAssert_r7()
-	 * @generated
-	 */
-	EReference getuOPPreInt2jMAPreAssert_r7_SynchronizeBackwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getRepairForwardActivity <em>Repair Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Repair Forward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getRepairForwardActivity()
-	 * @see #getuOPPreInt2jMAPreAssert_r7()
-	 * @generated
-	 */
-	EReference getuOPPreInt2jMAPreAssert_r7_RepairForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getRepairBackwardActivity <em>Repair Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Repair Backward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getRepairBackwardActivity()
-	 * @see #getuOPPreInt2jMAPreAssert_r7()
-	 * @generated
-	 */
-	EReference getuOPPreInt2jMAPreAssert_r7_RepairBackwardActivity();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#addElement(org.eclipse.emf.common.util.EMap) <em>Add Element</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Add Element</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#addElement(org.eclipse.emf.common.util.EMap)
-	 * @generated
-	 */
-	EOperation getuOPPreInt2jMAPreAssert_r7__AddElement__EMap();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap) <em>Change Attribute Values</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Change Attribute Values</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap)
-	 * @generated
-	 */
-	EOperation getuOPPreInt2jMAPreAssert_r7__ChangeAttributeValues__TGGNode_EMap();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode) <em>Move Element</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Move Element</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getuOPPreInt2jMAPreAssert_r7__MoveElement__TGGNode_TGGNode_TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Transform Forward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
-	 * @generated
-	 */
-	EOperation getuOPPreInt2jMAPreAssert_r7__TransformForward__TGGNode_boolean_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Mapping</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Transform Mapping</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
-	 * @generated
-	 */
-	EOperation getuOPPreInt2jMAPreAssert_r7__TransformMapping__TGGNode_boolean_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Transform Backward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
-	 * @generated
-	 */
-	EOperation getuOPPreInt2jMAPreAssert_r7__TransformBackward__TGGNode_boolean_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Conflict Check Forward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getuOPPreInt2jMAPreAssert_r7__ConflictCheckForward__TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Mapping</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Conflict Check Mapping</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getuOPPreInt2jMAPreAssert_r7__ConflictCheckMapping__TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Conflict Check Backward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getuOPPreInt2jMAPreAssert_r7__ConflictCheckBackward__TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Synchronize Forward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getuOPPreInt2jMAPreAssert_r7__SynchronizeForward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Synchronize Backward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getuOPPreInt2jMAPreAssert_r7__SynchronizeBackward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Repair Forward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getuOPPreInt2jMAPreAssert_r7__RepairForward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Repair Backward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getuOPPreInt2jMAPreAssert_r7__RepairBackward__TGGNode_boolean();
-
-	/**
 	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uCInv2jCInv_r9 <em>uC Inv2j CInv r9</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5593,1138 +5310,6 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getuCInv2jCInv_r9__RepairBackward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10 <em>uC Inv Int2j CInv Assert r10</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>uC Inv Int2j CInv Assert r10</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10
-	 * @generated
-	 */
-	EClass getuCInvInt2jCInvAssert_r10();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getAddElementActivity <em>Add Element Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Add Element Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getAddElementActivity()
-	 * @see #getuCInvInt2jCInvAssert_r10()
-	 * @generated
-	 */
-	EReference getuCInvInt2jCInvAssert_r10_AddElementActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getMoveElementActivity <em>Move Element Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Move Element Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getMoveElementActivity()
-	 * @see #getuCInvInt2jCInvAssert_r10()
-	 * @generated
-	 */
-	EReference getuCInvInt2jCInvAssert_r10_MoveElementActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getChangeAttributeActivity <em>Change Attribute Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Change Attribute Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getChangeAttributeActivity()
-	 * @see #getuCInvInt2jCInvAssert_r10()
-	 * @generated
-	 */
-	EReference getuCInvInt2jCInvAssert_r10_ChangeAttributeActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getTransformForwardActivity <em>Transform Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Transform Forward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getTransformForwardActivity()
-	 * @see #getuCInvInt2jCInvAssert_r10()
-	 * @generated
-	 */
-	EReference getuCInvInt2jCInvAssert_r10_TransformForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getTransformMappingActivity <em>Transform Mapping Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Transform Mapping Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getTransformMappingActivity()
-	 * @see #getuCInvInt2jCInvAssert_r10()
-	 * @generated
-	 */
-	EReference getuCInvInt2jCInvAssert_r10_TransformMappingActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getTransformBackwardActivity <em>Transform Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Transform Backward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getTransformBackwardActivity()
-	 * @see #getuCInvInt2jCInvAssert_r10()
-	 * @generated
-	 */
-	EReference getuCInvInt2jCInvAssert_r10_TransformBackwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getConflictCheckForwardActivity <em>Conflict Check Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Conflict Check Forward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getConflictCheckForwardActivity()
-	 * @see #getuCInvInt2jCInvAssert_r10()
-	 * @generated
-	 */
-	EReference getuCInvInt2jCInvAssert_r10_ConflictCheckForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getConflictCheckMappingActivity <em>Conflict Check Mapping Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Conflict Check Mapping Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getConflictCheckMappingActivity()
-	 * @see #getuCInvInt2jCInvAssert_r10()
-	 * @generated
-	 */
-	EReference getuCInvInt2jCInvAssert_r10_ConflictCheckMappingActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getConflictCheckBackwardActivity <em>Conflict Check Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Conflict Check Backward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getConflictCheckBackwardActivity()
-	 * @see #getuCInvInt2jCInvAssert_r10()
-	 * @generated
-	 */
-	EReference getuCInvInt2jCInvAssert_r10_ConflictCheckBackwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getSynchronizeForwardActivity <em>Synchronize Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Synchronize Forward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getSynchronizeForwardActivity()
-	 * @see #getuCInvInt2jCInvAssert_r10()
-	 * @generated
-	 */
-	EReference getuCInvInt2jCInvAssert_r10_SynchronizeForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getSynchronizeBackwardActivity <em>Synchronize Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Synchronize Backward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getSynchronizeBackwardActivity()
-	 * @see #getuCInvInt2jCInvAssert_r10()
-	 * @generated
-	 */
-	EReference getuCInvInt2jCInvAssert_r10_SynchronizeBackwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getRepairForwardActivity <em>Repair Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Repair Forward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getRepairForwardActivity()
-	 * @see #getuCInvInt2jCInvAssert_r10()
-	 * @generated
-	 */
-	EReference getuCInvInt2jCInvAssert_r10_RepairForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getRepairBackwardActivity <em>Repair Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Repair Backward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getRepairBackwardActivity()
-	 * @see #getuCInvInt2jCInvAssert_r10()
-	 * @generated
-	 */
-	EReference getuCInvInt2jCInvAssert_r10_RepairBackwardActivity();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#addElement(org.eclipse.emf.common.util.EMap) <em>Add Element</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Add Element</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#addElement(org.eclipse.emf.common.util.EMap)
-	 * @generated
-	 */
-	EOperation getuCInvInt2jCInvAssert_r10__AddElement__EMap();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap) <em>Change Attribute Values</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Change Attribute Values</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap)
-	 * @generated
-	 */
-	EOperation getuCInvInt2jCInvAssert_r10__ChangeAttributeValues__TGGNode_EMap();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode) <em>Move Element</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Move Element</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getuCInvInt2jCInvAssert_r10__MoveElement__TGGNode_TGGNode_TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Transform Forward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
-	 * @generated
-	 */
-	EOperation getuCInvInt2jCInvAssert_r10__TransformForward__TGGNode_boolean_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Mapping</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Transform Mapping</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
-	 * @generated
-	 */
-	EOperation getuCInvInt2jCInvAssert_r10__TransformMapping__TGGNode_boolean_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Transform Backward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
-	 * @generated
-	 */
-	EOperation getuCInvInt2jCInvAssert_r10__TransformBackward__TGGNode_boolean_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Conflict Check Forward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getuCInvInt2jCInvAssert_r10__ConflictCheckForward__TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Mapping</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Conflict Check Mapping</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getuCInvInt2jCInvAssert_r10__ConflictCheckMapping__TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Conflict Check Backward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getuCInvInt2jCInvAssert_r10__ConflictCheckBackward__TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Synchronize Forward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getuCInvInt2jCInvAssert_r10__SynchronizeForward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Synchronize Backward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getuCInvInt2jCInvAssert_r10__SynchronizeBackward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Repair Forward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getuCInvInt2jCInvAssert_r10__RepairForward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Repair Backward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getuCInvInt2jCInvAssert_r10__RepairBackward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11 <em>uProperty2j Field Helper r11</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>uProperty2j Field Helper r11</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11
-	 * @generated
-	 */
-	EClass getuProperty2jField_Helper_r11();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getAddElementActivity <em>Add Element Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Add Element Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getAddElementActivity()
-	 * @see #getuProperty2jField_Helper_r11()
-	 * @generated
-	 */
-	EReference getuProperty2jField_Helper_r11_AddElementActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getMoveElementActivity <em>Move Element Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Move Element Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getMoveElementActivity()
-	 * @see #getuProperty2jField_Helper_r11()
-	 * @generated
-	 */
-	EReference getuProperty2jField_Helper_r11_MoveElementActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getChangeAttributeActivity <em>Change Attribute Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Change Attribute Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getChangeAttributeActivity()
-	 * @see #getuProperty2jField_Helper_r11()
-	 * @generated
-	 */
-	EReference getuProperty2jField_Helper_r11_ChangeAttributeActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getTransformForwardActivity <em>Transform Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Transform Forward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getTransformForwardActivity()
-	 * @see #getuProperty2jField_Helper_r11()
-	 * @generated
-	 */
-	EReference getuProperty2jField_Helper_r11_TransformForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getTransformMappingActivity <em>Transform Mapping Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Transform Mapping Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getTransformMappingActivity()
-	 * @see #getuProperty2jField_Helper_r11()
-	 * @generated
-	 */
-	EReference getuProperty2jField_Helper_r11_TransformMappingActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getTransformBackwardActivity <em>Transform Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Transform Backward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getTransformBackwardActivity()
-	 * @see #getuProperty2jField_Helper_r11()
-	 * @generated
-	 */
-	EReference getuProperty2jField_Helper_r11_TransformBackwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getConflictCheckForwardActivity <em>Conflict Check Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Conflict Check Forward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getConflictCheckForwardActivity()
-	 * @see #getuProperty2jField_Helper_r11()
-	 * @generated
-	 */
-	EReference getuProperty2jField_Helper_r11_ConflictCheckForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getConflictCheckMappingActivity <em>Conflict Check Mapping Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Conflict Check Mapping Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getConflictCheckMappingActivity()
-	 * @see #getuProperty2jField_Helper_r11()
-	 * @generated
-	 */
-	EReference getuProperty2jField_Helper_r11_ConflictCheckMappingActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getConflictCheckBackwardActivity <em>Conflict Check Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Conflict Check Backward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getConflictCheckBackwardActivity()
-	 * @see #getuProperty2jField_Helper_r11()
-	 * @generated
-	 */
-	EReference getuProperty2jField_Helper_r11_ConflictCheckBackwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getSynchronizeForwardActivity <em>Synchronize Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Synchronize Forward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getSynchronizeForwardActivity()
-	 * @see #getuProperty2jField_Helper_r11()
-	 * @generated
-	 */
-	EReference getuProperty2jField_Helper_r11_SynchronizeForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getSynchronizeBackwardActivity <em>Synchronize Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Synchronize Backward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getSynchronizeBackwardActivity()
-	 * @see #getuProperty2jField_Helper_r11()
-	 * @generated
-	 */
-	EReference getuProperty2jField_Helper_r11_SynchronizeBackwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getRepairForwardActivity <em>Repair Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Repair Forward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getRepairForwardActivity()
-	 * @see #getuProperty2jField_Helper_r11()
-	 * @generated
-	 */
-	EReference getuProperty2jField_Helper_r11_RepairForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getRepairBackwardActivity <em>Repair Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Repair Backward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getRepairBackwardActivity()
-	 * @see #getuProperty2jField_Helper_r11()
-	 * @generated
-	 */
-	EReference getuProperty2jField_Helper_r11_RepairBackwardActivity();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#addElement(org.eclipse.emf.common.util.EMap) <em>Add Element</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Add Element</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#addElement(org.eclipse.emf.common.util.EMap)
-	 * @generated
-	 */
-	EOperation getuProperty2jField_Helper_r11__AddElement__EMap();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap) <em>Change Attribute Values</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Change Attribute Values</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap)
-	 * @generated
-	 */
-	EOperation getuProperty2jField_Helper_r11__ChangeAttributeValues__TGGNode_EMap();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode) <em>Move Element</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Move Element</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getuProperty2jField_Helper_r11__MoveElement__TGGNode_TGGNode_TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Transform Forward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
-	 * @generated
-	 */
-	EOperation getuProperty2jField_Helper_r11__TransformForward__TGGNode_boolean_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Mapping</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Transform Mapping</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
-	 * @generated
-	 */
-	EOperation getuProperty2jField_Helper_r11__TransformMapping__TGGNode_boolean_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Transform Backward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
-	 * @generated
-	 */
-	EOperation getuProperty2jField_Helper_r11__TransformBackward__TGGNode_boolean_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Conflict Check Forward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getuProperty2jField_Helper_r11__ConflictCheckForward__TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Mapping</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Conflict Check Mapping</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getuProperty2jField_Helper_r11__ConflictCheckMapping__TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Conflict Check Backward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getuProperty2jField_Helper_r11__ConflictCheckBackward__TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Synchronize Forward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getuProperty2jField_Helper_r11__SynchronizeForward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Synchronize Backward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getuProperty2jField_Helper_r11__SynchronizeBackward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Repair Forward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getuProperty2jField_Helper_r11__RepairForward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Repair Backward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getuProperty2jField_Helper_r11__RepairBackward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8 <em>uOP Pos Int2j MA Pos Assert r8</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>uOP Pos Int2j MA Pos Assert r8</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8
-	 * @generated
-	 */
-	EClass getuOPPosInt2jMAPosAssert_r8();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getAddElementActivity <em>Add Element Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Add Element Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getAddElementActivity()
-	 * @see #getuOPPosInt2jMAPosAssert_r8()
-	 * @generated
-	 */
-	EReference getuOPPosInt2jMAPosAssert_r8_AddElementActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getMoveElementActivity <em>Move Element Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Move Element Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getMoveElementActivity()
-	 * @see #getuOPPosInt2jMAPosAssert_r8()
-	 * @generated
-	 */
-	EReference getuOPPosInt2jMAPosAssert_r8_MoveElementActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getChangeAttributeActivity <em>Change Attribute Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Change Attribute Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getChangeAttributeActivity()
-	 * @see #getuOPPosInt2jMAPosAssert_r8()
-	 * @generated
-	 */
-	EReference getuOPPosInt2jMAPosAssert_r8_ChangeAttributeActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getTransformForwardActivity <em>Transform Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Transform Forward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getTransformForwardActivity()
-	 * @see #getuOPPosInt2jMAPosAssert_r8()
-	 * @generated
-	 */
-	EReference getuOPPosInt2jMAPosAssert_r8_TransformForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getTransformMappingActivity <em>Transform Mapping Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Transform Mapping Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getTransformMappingActivity()
-	 * @see #getuOPPosInt2jMAPosAssert_r8()
-	 * @generated
-	 */
-	EReference getuOPPosInt2jMAPosAssert_r8_TransformMappingActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getTransformBackwardActivity <em>Transform Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Transform Backward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getTransformBackwardActivity()
-	 * @see #getuOPPosInt2jMAPosAssert_r8()
-	 * @generated
-	 */
-	EReference getuOPPosInt2jMAPosAssert_r8_TransformBackwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getConflictCheckForwardActivity <em>Conflict Check Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Conflict Check Forward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getConflictCheckForwardActivity()
-	 * @see #getuOPPosInt2jMAPosAssert_r8()
-	 * @generated
-	 */
-	EReference getuOPPosInt2jMAPosAssert_r8_ConflictCheckForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getConflictCheckMappingActivity <em>Conflict Check Mapping Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Conflict Check Mapping Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getConflictCheckMappingActivity()
-	 * @see #getuOPPosInt2jMAPosAssert_r8()
-	 * @generated
-	 */
-	EReference getuOPPosInt2jMAPosAssert_r8_ConflictCheckMappingActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getConflictCheckBackwardActivity <em>Conflict Check Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Conflict Check Backward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getConflictCheckBackwardActivity()
-	 * @see #getuOPPosInt2jMAPosAssert_r8()
-	 * @generated
-	 */
-	EReference getuOPPosInt2jMAPosAssert_r8_ConflictCheckBackwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getSynchronizeForwardActivity <em>Synchronize Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Synchronize Forward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getSynchronizeForwardActivity()
-	 * @see #getuOPPosInt2jMAPosAssert_r8()
-	 * @generated
-	 */
-	EReference getuOPPosInt2jMAPosAssert_r8_SynchronizeForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getSynchronizeBackwardActivity <em>Synchronize Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Synchronize Backward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getSynchronizeBackwardActivity()
-	 * @see #getuOPPosInt2jMAPosAssert_r8()
-	 * @generated
-	 */
-	EReference getuOPPosInt2jMAPosAssert_r8_SynchronizeBackwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getRepairForwardActivity <em>Repair Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Repair Forward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getRepairForwardActivity()
-	 * @see #getuOPPosInt2jMAPosAssert_r8()
-	 * @generated
-	 */
-	EReference getuOPPosInt2jMAPosAssert_r8_RepairForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getRepairBackwardActivity <em>Repair Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Repair Backward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getRepairBackwardActivity()
-	 * @see #getuOPPosInt2jMAPosAssert_r8()
-	 * @generated
-	 */
-	EReference getuOPPosInt2jMAPosAssert_r8_RepairBackwardActivity();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#addElement(org.eclipse.emf.common.util.EMap) <em>Add Element</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Add Element</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#addElement(org.eclipse.emf.common.util.EMap)
-	 * @generated
-	 */
-	EOperation getuOPPosInt2jMAPosAssert_r8__AddElement__EMap();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap) <em>Change Attribute Values</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Change Attribute Values</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap)
-	 * @generated
-	 */
-	EOperation getuOPPosInt2jMAPosAssert_r8__ChangeAttributeValues__TGGNode_EMap();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode) <em>Move Element</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Move Element</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getuOPPosInt2jMAPosAssert_r8__MoveElement__TGGNode_TGGNode_TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Transform Forward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
-	 * @generated
-	 */
-	EOperation getuOPPosInt2jMAPosAssert_r8__TransformForward__TGGNode_boolean_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Mapping</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Transform Mapping</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
-	 * @generated
-	 */
-	EOperation getuOPPosInt2jMAPosAssert_r8__TransformMapping__TGGNode_boolean_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Transform Backward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
-	 * @generated
-	 */
-	EOperation getuOPPosInt2jMAPosAssert_r8__TransformBackward__TGGNode_boolean_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Conflict Check Forward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getuOPPosInt2jMAPosAssert_r8__ConflictCheckForward__TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Mapping</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Conflict Check Mapping</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getuOPPosInt2jMAPosAssert_r8__ConflictCheckMapping__TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Conflict Check Backward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getuOPPosInt2jMAPosAssert_r8__ConflictCheckBackward__TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Synchronize Forward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getuOPPosInt2jMAPosAssert_r8__SynchronizeForward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Synchronize Backward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getuOPPosInt2jMAPosAssert_r8__SynchronizeBackward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Repair Forward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getuOPPosInt2jMAPosAssert_r8__RepairForward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Repair Backward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getuOPPosInt2jMAPosAssert_r8__RepairBackward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2 <em>uClass2j Class Helper r2</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>uClass2j Class Helper r2</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2
-	 * @generated
-	 */
-	EClass getuClass2jClass_Helper_r2();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getAddElementActivity <em>Add Element Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Add Element Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getAddElementActivity()
-	 * @see #getuClass2jClass_Helper_r2()
-	 * @generated
-	 */
-	EReference getuClass2jClass_Helper_r2_AddElementActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getMoveElementActivity <em>Move Element Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Move Element Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getMoveElementActivity()
-	 * @see #getuClass2jClass_Helper_r2()
-	 * @generated
-	 */
-	EReference getuClass2jClass_Helper_r2_MoveElementActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getChangeAttributeActivity <em>Change Attribute Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Change Attribute Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getChangeAttributeActivity()
-	 * @see #getuClass2jClass_Helper_r2()
-	 * @generated
-	 */
-	EReference getuClass2jClass_Helper_r2_ChangeAttributeActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getTransformForwardActivity <em>Transform Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Transform Forward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getTransformForwardActivity()
-	 * @see #getuClass2jClass_Helper_r2()
-	 * @generated
-	 */
-	EReference getuClass2jClass_Helper_r2_TransformForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getTransformMappingActivity <em>Transform Mapping Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Transform Mapping Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getTransformMappingActivity()
-	 * @see #getuClass2jClass_Helper_r2()
-	 * @generated
-	 */
-	EReference getuClass2jClass_Helper_r2_TransformMappingActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getTransformBackwardActivity <em>Transform Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Transform Backward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getTransformBackwardActivity()
-	 * @see #getuClass2jClass_Helper_r2()
-	 * @generated
-	 */
-	EReference getuClass2jClass_Helper_r2_TransformBackwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getConflictCheckForwardActivity <em>Conflict Check Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Conflict Check Forward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getConflictCheckForwardActivity()
-	 * @see #getuClass2jClass_Helper_r2()
-	 * @generated
-	 */
-	EReference getuClass2jClass_Helper_r2_ConflictCheckForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getConflictCheckMappingActivity <em>Conflict Check Mapping Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Conflict Check Mapping Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getConflictCheckMappingActivity()
-	 * @see #getuClass2jClass_Helper_r2()
-	 * @generated
-	 */
-	EReference getuClass2jClass_Helper_r2_ConflictCheckMappingActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getConflictCheckBackwardActivity <em>Conflict Check Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Conflict Check Backward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getConflictCheckBackwardActivity()
-	 * @see #getuClass2jClass_Helper_r2()
-	 * @generated
-	 */
-	EReference getuClass2jClass_Helper_r2_ConflictCheckBackwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getSynchronizeForwardActivity <em>Synchronize Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Synchronize Forward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getSynchronizeForwardActivity()
-	 * @see #getuClass2jClass_Helper_r2()
-	 * @generated
-	 */
-	EReference getuClass2jClass_Helper_r2_SynchronizeForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getSynchronizeBackwardActivity <em>Synchronize Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Synchronize Backward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getSynchronizeBackwardActivity()
-	 * @see #getuClass2jClass_Helper_r2()
-	 * @generated
-	 */
-	EReference getuClass2jClass_Helper_r2_SynchronizeBackwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getRepairForwardActivity <em>Repair Forward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Repair Forward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getRepairForwardActivity()
-	 * @see #getuClass2jClass_Helper_r2()
-	 * @generated
-	 */
-	EReference getuClass2jClass_Helper_r2_RepairForwardActivity();
-
-	/**
-	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getRepairBackwardActivity <em>Repair Backward Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Repair Backward Activity</em>'.
-	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getRepairBackwardActivity()
-	 * @see #getuClass2jClass_Helper_r2()
-	 * @generated
-	 */
-	EReference getuClass2jClass_Helper_r2_RepairBackwardActivity();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#addElement(org.eclipse.emf.common.util.EMap) <em>Add Element</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Add Element</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#addElement(org.eclipse.emf.common.util.EMap)
-	 * @generated
-	 */
-	EOperation getuClass2jClass_Helper_r2__AddElement__EMap();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap) <em>Change Attribute Values</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Change Attribute Values</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap)
-	 * @generated
-	 */
-	EOperation getuClass2jClass_Helper_r2__ChangeAttributeValues__TGGNode_EMap();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode) <em>Move Element</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Move Element</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getuClass2jClass_Helper_r2__MoveElement__TGGNode_TGGNode_TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Transform Forward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
-	 * @generated
-	 */
-	EOperation getuClass2jClass_Helper_r2__TransformForward__TGGNode_boolean_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Mapping</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Transform Mapping</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
-	 * @generated
-	 */
-	EOperation getuClass2jClass_Helper_r2__TransformMapping__TGGNode_boolean_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Transform Backward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
-	 * @generated
-	 */
-	EOperation getuClass2jClass_Helper_r2__TransformBackward__TGGNode_boolean_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Conflict Check Forward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getuClass2jClass_Helper_r2__ConflictCheckForward__TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Mapping</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Conflict Check Mapping</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getuClass2jClass_Helper_r2__ConflictCheckMapping__TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Conflict Check Backward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode)
-	 * @generated
-	 */
-	EOperation getuClass2jClass_Helper_r2__ConflictCheckBackward__TGGNode();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Synchronize Forward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getuClass2jClass_Helper_r2__SynchronizeForward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Synchronize Backward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getuClass2jClass_Helper_r2__SynchronizeBackward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Forward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Repair Forward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getuClass2jClass_Helper_r2__RepairForward__TGGNode_boolean();
-
-	/**
-	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Backward</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Repair Backward</em>' operation.
-	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
-	 * @generated
-	 */
-	EOperation getuClass2jClass_Helper_r2__RepairBackward__TGGNode_boolean();
 
 	/**
 	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uOPPre2jMAPre_r5 <em>uOP Pre2j MA Pre r5</em>}'.
@@ -7010,6 +5595,572 @@ public interface GeneratedPackage extends EPackage {
 	EOperation getuOPPre2jMAPre_r5__RepairBackward__TGGNode_boolean();
 
 	/**
+	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7 <em>uOP Pre Int2j MA Pre Assert r7</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>uOP Pre Int2j MA Pre Assert r7</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7
+	 * @generated
+	 */
+	EClass getuOPPreInt2jMAPreAssert_r7();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getAddElementActivity <em>Add Element Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Add Element Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getAddElementActivity()
+	 * @see #getuOPPreInt2jMAPreAssert_r7()
+	 * @generated
+	 */
+	EReference getuOPPreInt2jMAPreAssert_r7_AddElementActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getMoveElementActivity <em>Move Element Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Move Element Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getMoveElementActivity()
+	 * @see #getuOPPreInt2jMAPreAssert_r7()
+	 * @generated
+	 */
+	EReference getuOPPreInt2jMAPreAssert_r7_MoveElementActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getChangeAttributeActivity <em>Change Attribute Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Change Attribute Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getChangeAttributeActivity()
+	 * @see #getuOPPreInt2jMAPreAssert_r7()
+	 * @generated
+	 */
+	EReference getuOPPreInt2jMAPreAssert_r7_ChangeAttributeActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getTransformForwardActivity <em>Transform Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Transform Forward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getTransformForwardActivity()
+	 * @see #getuOPPreInt2jMAPreAssert_r7()
+	 * @generated
+	 */
+	EReference getuOPPreInt2jMAPreAssert_r7_TransformForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getTransformMappingActivity <em>Transform Mapping Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Transform Mapping Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getTransformMappingActivity()
+	 * @see #getuOPPreInt2jMAPreAssert_r7()
+	 * @generated
+	 */
+	EReference getuOPPreInt2jMAPreAssert_r7_TransformMappingActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getTransformBackwardActivity <em>Transform Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Transform Backward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getTransformBackwardActivity()
+	 * @see #getuOPPreInt2jMAPreAssert_r7()
+	 * @generated
+	 */
+	EReference getuOPPreInt2jMAPreAssert_r7_TransformBackwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getConflictCheckForwardActivity <em>Conflict Check Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Conflict Check Forward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getConflictCheckForwardActivity()
+	 * @see #getuOPPreInt2jMAPreAssert_r7()
+	 * @generated
+	 */
+	EReference getuOPPreInt2jMAPreAssert_r7_ConflictCheckForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getConflictCheckMappingActivity <em>Conflict Check Mapping Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Conflict Check Mapping Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getConflictCheckMappingActivity()
+	 * @see #getuOPPreInt2jMAPreAssert_r7()
+	 * @generated
+	 */
+	EReference getuOPPreInt2jMAPreAssert_r7_ConflictCheckMappingActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getConflictCheckBackwardActivity <em>Conflict Check Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Conflict Check Backward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getConflictCheckBackwardActivity()
+	 * @see #getuOPPreInt2jMAPreAssert_r7()
+	 * @generated
+	 */
+	EReference getuOPPreInt2jMAPreAssert_r7_ConflictCheckBackwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getSynchronizeForwardActivity <em>Synchronize Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Synchronize Forward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getSynchronizeForwardActivity()
+	 * @see #getuOPPreInt2jMAPreAssert_r7()
+	 * @generated
+	 */
+	EReference getuOPPreInt2jMAPreAssert_r7_SynchronizeForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getSynchronizeBackwardActivity <em>Synchronize Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Synchronize Backward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getSynchronizeBackwardActivity()
+	 * @see #getuOPPreInt2jMAPreAssert_r7()
+	 * @generated
+	 */
+	EReference getuOPPreInt2jMAPreAssert_r7_SynchronizeBackwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getRepairForwardActivity <em>Repair Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Repair Forward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getRepairForwardActivity()
+	 * @see #getuOPPreInt2jMAPreAssert_r7()
+	 * @generated
+	 */
+	EReference getuOPPreInt2jMAPreAssert_r7_RepairForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getRepairBackwardActivity <em>Repair Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Repair Backward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#getRepairBackwardActivity()
+	 * @see #getuOPPreInt2jMAPreAssert_r7()
+	 * @generated
+	 */
+	EReference getuOPPreInt2jMAPreAssert_r7_RepairBackwardActivity();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#addElement(org.eclipse.emf.common.util.EMap) <em>Add Element</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Add Element</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#addElement(org.eclipse.emf.common.util.EMap)
+	 * @generated
+	 */
+	EOperation getuOPPreInt2jMAPreAssert_r7__AddElement__EMap();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap) <em>Change Attribute Values</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Change Attribute Values</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap)
+	 * @generated
+	 */
+	EOperation getuOPPreInt2jMAPreAssert_r7__ChangeAttributeValues__TGGNode_EMap();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode) <em>Move Element</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Move Element</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getuOPPreInt2jMAPreAssert_r7__MoveElement__TGGNode_TGGNode_TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Transform Forward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
+	 * @generated
+	 */
+	EOperation getuOPPreInt2jMAPreAssert_r7__TransformForward__TGGNode_boolean_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Mapping</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Transform Mapping</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
+	 * @generated
+	 */
+	EOperation getuOPPreInt2jMAPreAssert_r7__TransformMapping__TGGNode_boolean_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Transform Backward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
+	 * @generated
+	 */
+	EOperation getuOPPreInt2jMAPreAssert_r7__TransformBackward__TGGNode_boolean_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Conflict Check Forward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getuOPPreInt2jMAPreAssert_r7__ConflictCheckForward__TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Mapping</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Conflict Check Mapping</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getuOPPreInt2jMAPreAssert_r7__ConflictCheckMapping__TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Conflict Check Backward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getuOPPreInt2jMAPreAssert_r7__ConflictCheckBackward__TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Synchronize Forward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getuOPPreInt2jMAPreAssert_r7__SynchronizeForward__TGGNode_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Synchronize Backward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getuOPPreInt2jMAPreAssert_r7__SynchronizeBackward__TGGNode_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Repair Forward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getuOPPreInt2jMAPreAssert_r7__RepairForward__TGGNode_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Repair Backward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getuOPPreInt2jMAPreAssert_r7__RepairBackward__TGGNode_boolean();
+
+	/**
+	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8 <em>uOP Pos Int2j MA Pos Assert r8</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>uOP Pos Int2j MA Pos Assert r8</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8
+	 * @generated
+	 */
+	EClass getuOPPosInt2jMAPosAssert_r8();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getAddElementActivity <em>Add Element Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Add Element Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getAddElementActivity()
+	 * @see #getuOPPosInt2jMAPosAssert_r8()
+	 * @generated
+	 */
+	EReference getuOPPosInt2jMAPosAssert_r8_AddElementActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getMoveElementActivity <em>Move Element Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Move Element Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getMoveElementActivity()
+	 * @see #getuOPPosInt2jMAPosAssert_r8()
+	 * @generated
+	 */
+	EReference getuOPPosInt2jMAPosAssert_r8_MoveElementActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getChangeAttributeActivity <em>Change Attribute Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Change Attribute Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getChangeAttributeActivity()
+	 * @see #getuOPPosInt2jMAPosAssert_r8()
+	 * @generated
+	 */
+	EReference getuOPPosInt2jMAPosAssert_r8_ChangeAttributeActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getTransformForwardActivity <em>Transform Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Transform Forward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getTransformForwardActivity()
+	 * @see #getuOPPosInt2jMAPosAssert_r8()
+	 * @generated
+	 */
+	EReference getuOPPosInt2jMAPosAssert_r8_TransformForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getTransformMappingActivity <em>Transform Mapping Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Transform Mapping Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getTransformMappingActivity()
+	 * @see #getuOPPosInt2jMAPosAssert_r8()
+	 * @generated
+	 */
+	EReference getuOPPosInt2jMAPosAssert_r8_TransformMappingActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getTransformBackwardActivity <em>Transform Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Transform Backward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getTransformBackwardActivity()
+	 * @see #getuOPPosInt2jMAPosAssert_r8()
+	 * @generated
+	 */
+	EReference getuOPPosInt2jMAPosAssert_r8_TransformBackwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getConflictCheckForwardActivity <em>Conflict Check Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Conflict Check Forward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getConflictCheckForwardActivity()
+	 * @see #getuOPPosInt2jMAPosAssert_r8()
+	 * @generated
+	 */
+	EReference getuOPPosInt2jMAPosAssert_r8_ConflictCheckForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getConflictCheckMappingActivity <em>Conflict Check Mapping Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Conflict Check Mapping Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getConflictCheckMappingActivity()
+	 * @see #getuOPPosInt2jMAPosAssert_r8()
+	 * @generated
+	 */
+	EReference getuOPPosInt2jMAPosAssert_r8_ConflictCheckMappingActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getConflictCheckBackwardActivity <em>Conflict Check Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Conflict Check Backward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getConflictCheckBackwardActivity()
+	 * @see #getuOPPosInt2jMAPosAssert_r8()
+	 * @generated
+	 */
+	EReference getuOPPosInt2jMAPosAssert_r8_ConflictCheckBackwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getSynchronizeForwardActivity <em>Synchronize Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Synchronize Forward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getSynchronizeForwardActivity()
+	 * @see #getuOPPosInt2jMAPosAssert_r8()
+	 * @generated
+	 */
+	EReference getuOPPosInt2jMAPosAssert_r8_SynchronizeForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getSynchronizeBackwardActivity <em>Synchronize Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Synchronize Backward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getSynchronizeBackwardActivity()
+	 * @see #getuOPPosInt2jMAPosAssert_r8()
+	 * @generated
+	 */
+	EReference getuOPPosInt2jMAPosAssert_r8_SynchronizeBackwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getRepairForwardActivity <em>Repair Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Repair Forward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getRepairForwardActivity()
+	 * @see #getuOPPosInt2jMAPosAssert_r8()
+	 * @generated
+	 */
+	EReference getuOPPosInt2jMAPosAssert_r8_RepairForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getRepairBackwardActivity <em>Repair Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Repair Backward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#getRepairBackwardActivity()
+	 * @see #getuOPPosInt2jMAPosAssert_r8()
+	 * @generated
+	 */
+	EReference getuOPPosInt2jMAPosAssert_r8_RepairBackwardActivity();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#addElement(org.eclipse.emf.common.util.EMap) <em>Add Element</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Add Element</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#addElement(org.eclipse.emf.common.util.EMap)
+	 * @generated
+	 */
+	EOperation getuOPPosInt2jMAPosAssert_r8__AddElement__EMap();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap) <em>Change Attribute Values</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Change Attribute Values</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap)
+	 * @generated
+	 */
+	EOperation getuOPPosInt2jMAPosAssert_r8__ChangeAttributeValues__TGGNode_EMap();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode) <em>Move Element</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Move Element</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getuOPPosInt2jMAPosAssert_r8__MoveElement__TGGNode_TGGNode_TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Transform Forward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
+	 * @generated
+	 */
+	EOperation getuOPPosInt2jMAPosAssert_r8__TransformForward__TGGNode_boolean_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Mapping</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Transform Mapping</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
+	 * @generated
+	 */
+	EOperation getuOPPosInt2jMAPosAssert_r8__TransformMapping__TGGNode_boolean_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Transform Backward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
+	 * @generated
+	 */
+	EOperation getuOPPosInt2jMAPosAssert_r8__TransformBackward__TGGNode_boolean_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Conflict Check Forward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getuOPPosInt2jMAPosAssert_r8__ConflictCheckForward__TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Mapping</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Conflict Check Mapping</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getuOPPosInt2jMAPosAssert_r8__ConflictCheckMapping__TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Conflict Check Backward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getuOPPosInt2jMAPosAssert_r8__ConflictCheckBackward__TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Synchronize Forward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getuOPPosInt2jMAPosAssert_r8__SynchronizeForward__TGGNode_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Synchronize Backward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getuOPPosInt2jMAPosAssert_r8__SynchronizeBackward__TGGNode_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Repair Forward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getuOPPosInt2jMAPosAssert_r8__RepairForward__TGGNode_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Repair Backward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getuOPPosInt2jMAPosAssert_r8__RepairBackward__TGGNode_boolean();
+
+	/**
 	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uOperation2jMethod_Helper_r3 <em>uOperation2j Method Helper r3</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -7293,6 +6444,572 @@ public interface GeneratedPackage extends EPackage {
 	EOperation getuOperation2jMethod_Helper_r3__RepairBackward__TGGNode_boolean();
 
 	/**
+	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10 <em>uC Inv Int2j CInv Assert r10</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>uC Inv Int2j CInv Assert r10</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10
+	 * @generated
+	 */
+	EClass getuCInvInt2jCInvAssert_r10();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getAddElementActivity <em>Add Element Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Add Element Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getAddElementActivity()
+	 * @see #getuCInvInt2jCInvAssert_r10()
+	 * @generated
+	 */
+	EReference getuCInvInt2jCInvAssert_r10_AddElementActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getMoveElementActivity <em>Move Element Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Move Element Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getMoveElementActivity()
+	 * @see #getuCInvInt2jCInvAssert_r10()
+	 * @generated
+	 */
+	EReference getuCInvInt2jCInvAssert_r10_MoveElementActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getChangeAttributeActivity <em>Change Attribute Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Change Attribute Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getChangeAttributeActivity()
+	 * @see #getuCInvInt2jCInvAssert_r10()
+	 * @generated
+	 */
+	EReference getuCInvInt2jCInvAssert_r10_ChangeAttributeActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getTransformForwardActivity <em>Transform Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Transform Forward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getTransformForwardActivity()
+	 * @see #getuCInvInt2jCInvAssert_r10()
+	 * @generated
+	 */
+	EReference getuCInvInt2jCInvAssert_r10_TransformForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getTransformMappingActivity <em>Transform Mapping Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Transform Mapping Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getTransformMappingActivity()
+	 * @see #getuCInvInt2jCInvAssert_r10()
+	 * @generated
+	 */
+	EReference getuCInvInt2jCInvAssert_r10_TransformMappingActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getTransformBackwardActivity <em>Transform Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Transform Backward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getTransformBackwardActivity()
+	 * @see #getuCInvInt2jCInvAssert_r10()
+	 * @generated
+	 */
+	EReference getuCInvInt2jCInvAssert_r10_TransformBackwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getConflictCheckForwardActivity <em>Conflict Check Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Conflict Check Forward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getConflictCheckForwardActivity()
+	 * @see #getuCInvInt2jCInvAssert_r10()
+	 * @generated
+	 */
+	EReference getuCInvInt2jCInvAssert_r10_ConflictCheckForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getConflictCheckMappingActivity <em>Conflict Check Mapping Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Conflict Check Mapping Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getConflictCheckMappingActivity()
+	 * @see #getuCInvInt2jCInvAssert_r10()
+	 * @generated
+	 */
+	EReference getuCInvInt2jCInvAssert_r10_ConflictCheckMappingActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getConflictCheckBackwardActivity <em>Conflict Check Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Conflict Check Backward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getConflictCheckBackwardActivity()
+	 * @see #getuCInvInt2jCInvAssert_r10()
+	 * @generated
+	 */
+	EReference getuCInvInt2jCInvAssert_r10_ConflictCheckBackwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getSynchronizeForwardActivity <em>Synchronize Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Synchronize Forward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getSynchronizeForwardActivity()
+	 * @see #getuCInvInt2jCInvAssert_r10()
+	 * @generated
+	 */
+	EReference getuCInvInt2jCInvAssert_r10_SynchronizeForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getSynchronizeBackwardActivity <em>Synchronize Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Synchronize Backward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getSynchronizeBackwardActivity()
+	 * @see #getuCInvInt2jCInvAssert_r10()
+	 * @generated
+	 */
+	EReference getuCInvInt2jCInvAssert_r10_SynchronizeBackwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getRepairForwardActivity <em>Repair Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Repair Forward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getRepairForwardActivity()
+	 * @see #getuCInvInt2jCInvAssert_r10()
+	 * @generated
+	 */
+	EReference getuCInvInt2jCInvAssert_r10_RepairForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getRepairBackwardActivity <em>Repair Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Repair Backward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#getRepairBackwardActivity()
+	 * @see #getuCInvInt2jCInvAssert_r10()
+	 * @generated
+	 */
+	EReference getuCInvInt2jCInvAssert_r10_RepairBackwardActivity();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#addElement(org.eclipse.emf.common.util.EMap) <em>Add Element</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Add Element</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#addElement(org.eclipse.emf.common.util.EMap)
+	 * @generated
+	 */
+	EOperation getuCInvInt2jCInvAssert_r10__AddElement__EMap();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap) <em>Change Attribute Values</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Change Attribute Values</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap)
+	 * @generated
+	 */
+	EOperation getuCInvInt2jCInvAssert_r10__ChangeAttributeValues__TGGNode_EMap();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode) <em>Move Element</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Move Element</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getuCInvInt2jCInvAssert_r10__MoveElement__TGGNode_TGGNode_TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Transform Forward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
+	 * @generated
+	 */
+	EOperation getuCInvInt2jCInvAssert_r10__TransformForward__TGGNode_boolean_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Mapping</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Transform Mapping</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
+	 * @generated
+	 */
+	EOperation getuCInvInt2jCInvAssert_r10__TransformMapping__TGGNode_boolean_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Transform Backward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
+	 * @generated
+	 */
+	EOperation getuCInvInt2jCInvAssert_r10__TransformBackward__TGGNode_boolean_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Conflict Check Forward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getuCInvInt2jCInvAssert_r10__ConflictCheckForward__TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Mapping</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Conflict Check Mapping</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getuCInvInt2jCInvAssert_r10__ConflictCheckMapping__TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Conflict Check Backward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getuCInvInt2jCInvAssert_r10__ConflictCheckBackward__TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Synchronize Forward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getuCInvInt2jCInvAssert_r10__SynchronizeForward__TGGNode_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Synchronize Backward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getuCInvInt2jCInvAssert_r10__SynchronizeBackward__TGGNode_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Repair Forward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getuCInvInt2jCInvAssert_r10__RepairForward__TGGNode_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Repair Backward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getuCInvInt2jCInvAssert_r10__RepairBackward__TGGNode_boolean();
+
+	/**
+	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2 <em>uClass2j Class Helper r2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>uClass2j Class Helper r2</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2
+	 * @generated
+	 */
+	EClass getuClass2jClass_Helper_r2();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getAddElementActivity <em>Add Element Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Add Element Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getAddElementActivity()
+	 * @see #getuClass2jClass_Helper_r2()
+	 * @generated
+	 */
+	EReference getuClass2jClass_Helper_r2_AddElementActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getMoveElementActivity <em>Move Element Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Move Element Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getMoveElementActivity()
+	 * @see #getuClass2jClass_Helper_r2()
+	 * @generated
+	 */
+	EReference getuClass2jClass_Helper_r2_MoveElementActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getChangeAttributeActivity <em>Change Attribute Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Change Attribute Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getChangeAttributeActivity()
+	 * @see #getuClass2jClass_Helper_r2()
+	 * @generated
+	 */
+	EReference getuClass2jClass_Helper_r2_ChangeAttributeActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getTransformForwardActivity <em>Transform Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Transform Forward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getTransformForwardActivity()
+	 * @see #getuClass2jClass_Helper_r2()
+	 * @generated
+	 */
+	EReference getuClass2jClass_Helper_r2_TransformForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getTransformMappingActivity <em>Transform Mapping Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Transform Mapping Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getTransformMappingActivity()
+	 * @see #getuClass2jClass_Helper_r2()
+	 * @generated
+	 */
+	EReference getuClass2jClass_Helper_r2_TransformMappingActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getTransformBackwardActivity <em>Transform Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Transform Backward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getTransformBackwardActivity()
+	 * @see #getuClass2jClass_Helper_r2()
+	 * @generated
+	 */
+	EReference getuClass2jClass_Helper_r2_TransformBackwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getConflictCheckForwardActivity <em>Conflict Check Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Conflict Check Forward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getConflictCheckForwardActivity()
+	 * @see #getuClass2jClass_Helper_r2()
+	 * @generated
+	 */
+	EReference getuClass2jClass_Helper_r2_ConflictCheckForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getConflictCheckMappingActivity <em>Conflict Check Mapping Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Conflict Check Mapping Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getConflictCheckMappingActivity()
+	 * @see #getuClass2jClass_Helper_r2()
+	 * @generated
+	 */
+	EReference getuClass2jClass_Helper_r2_ConflictCheckMappingActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getConflictCheckBackwardActivity <em>Conflict Check Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Conflict Check Backward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getConflictCheckBackwardActivity()
+	 * @see #getuClass2jClass_Helper_r2()
+	 * @generated
+	 */
+	EReference getuClass2jClass_Helper_r2_ConflictCheckBackwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getSynchronizeForwardActivity <em>Synchronize Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Synchronize Forward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getSynchronizeForwardActivity()
+	 * @see #getuClass2jClass_Helper_r2()
+	 * @generated
+	 */
+	EReference getuClass2jClass_Helper_r2_SynchronizeForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getSynchronizeBackwardActivity <em>Synchronize Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Synchronize Backward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getSynchronizeBackwardActivity()
+	 * @see #getuClass2jClass_Helper_r2()
+	 * @generated
+	 */
+	EReference getuClass2jClass_Helper_r2_SynchronizeBackwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getRepairForwardActivity <em>Repair Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Repair Forward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getRepairForwardActivity()
+	 * @see #getuClass2jClass_Helper_r2()
+	 * @generated
+	 */
+	EReference getuClass2jClass_Helper_r2_RepairForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getRepairBackwardActivity <em>Repair Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Repair Backward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#getRepairBackwardActivity()
+	 * @see #getuClass2jClass_Helper_r2()
+	 * @generated
+	 */
+	EReference getuClass2jClass_Helper_r2_RepairBackwardActivity();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#addElement(org.eclipse.emf.common.util.EMap) <em>Add Element</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Add Element</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#addElement(org.eclipse.emf.common.util.EMap)
+	 * @generated
+	 */
+	EOperation getuClass2jClass_Helper_r2__AddElement__EMap();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap) <em>Change Attribute Values</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Change Attribute Values</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap)
+	 * @generated
+	 */
+	EOperation getuClass2jClass_Helper_r2__ChangeAttributeValues__TGGNode_EMap();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode) <em>Move Element</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Move Element</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getuClass2jClass_Helper_r2__MoveElement__TGGNode_TGGNode_TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Transform Forward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
+	 * @generated
+	 */
+	EOperation getuClass2jClass_Helper_r2__TransformForward__TGGNode_boolean_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Mapping</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Transform Mapping</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
+	 * @generated
+	 */
+	EOperation getuClass2jClass_Helper_r2__TransformMapping__TGGNode_boolean_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Transform Backward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
+	 * @generated
+	 */
+	EOperation getuClass2jClass_Helper_r2__TransformBackward__TGGNode_boolean_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Conflict Check Forward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getuClass2jClass_Helper_r2__ConflictCheckForward__TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Mapping</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Conflict Check Mapping</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getuClass2jClass_Helper_r2__ConflictCheckMapping__TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Conflict Check Backward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getuClass2jClass_Helper_r2__ConflictCheckBackward__TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Synchronize Forward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getuClass2jClass_Helper_r2__SynchronizeForward__TGGNode_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Synchronize Backward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getuClass2jClass_Helper_r2__SynchronizeBackward__TGGNode_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Repair Forward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getuClass2jClass_Helper_r2__RepairForward__TGGNode_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Repair Backward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getuClass2jClass_Helper_r2__RepairBackward__TGGNode_boolean();
+
+	/**
 	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uOPPos2jMAPos_r6 <em>uOP Pos2j MA Pos r6</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -7574,6 +7291,289 @@ public interface GeneratedPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getuOPPos2jMAPos_r6__RepairBackward__TGGNode_boolean();
+
+	/**
+	 * Returns the meta object for class '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11 <em>uProperty2j Field Helper r11</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>uProperty2j Field Helper r11</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11
+	 * @generated
+	 */
+	EClass getuProperty2jField_Helper_r11();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getAddElementActivity <em>Add Element Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Add Element Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getAddElementActivity()
+	 * @see #getuProperty2jField_Helper_r11()
+	 * @generated
+	 */
+	EReference getuProperty2jField_Helper_r11_AddElementActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getMoveElementActivity <em>Move Element Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Move Element Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getMoveElementActivity()
+	 * @see #getuProperty2jField_Helper_r11()
+	 * @generated
+	 */
+	EReference getuProperty2jField_Helper_r11_MoveElementActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getChangeAttributeActivity <em>Change Attribute Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Change Attribute Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getChangeAttributeActivity()
+	 * @see #getuProperty2jField_Helper_r11()
+	 * @generated
+	 */
+	EReference getuProperty2jField_Helper_r11_ChangeAttributeActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getTransformForwardActivity <em>Transform Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Transform Forward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getTransformForwardActivity()
+	 * @see #getuProperty2jField_Helper_r11()
+	 * @generated
+	 */
+	EReference getuProperty2jField_Helper_r11_TransformForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getTransformMappingActivity <em>Transform Mapping Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Transform Mapping Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getTransformMappingActivity()
+	 * @see #getuProperty2jField_Helper_r11()
+	 * @generated
+	 */
+	EReference getuProperty2jField_Helper_r11_TransformMappingActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getTransformBackwardActivity <em>Transform Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Transform Backward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getTransformBackwardActivity()
+	 * @see #getuProperty2jField_Helper_r11()
+	 * @generated
+	 */
+	EReference getuProperty2jField_Helper_r11_TransformBackwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getConflictCheckForwardActivity <em>Conflict Check Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Conflict Check Forward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getConflictCheckForwardActivity()
+	 * @see #getuProperty2jField_Helper_r11()
+	 * @generated
+	 */
+	EReference getuProperty2jField_Helper_r11_ConflictCheckForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getConflictCheckMappingActivity <em>Conflict Check Mapping Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Conflict Check Mapping Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getConflictCheckMappingActivity()
+	 * @see #getuProperty2jField_Helper_r11()
+	 * @generated
+	 */
+	EReference getuProperty2jField_Helper_r11_ConflictCheckMappingActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getConflictCheckBackwardActivity <em>Conflict Check Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Conflict Check Backward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getConflictCheckBackwardActivity()
+	 * @see #getuProperty2jField_Helper_r11()
+	 * @generated
+	 */
+	EReference getuProperty2jField_Helper_r11_ConflictCheckBackwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getSynchronizeForwardActivity <em>Synchronize Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Synchronize Forward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getSynchronizeForwardActivity()
+	 * @see #getuProperty2jField_Helper_r11()
+	 * @generated
+	 */
+	EReference getuProperty2jField_Helper_r11_SynchronizeForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getSynchronizeBackwardActivity <em>Synchronize Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Synchronize Backward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getSynchronizeBackwardActivity()
+	 * @see #getuProperty2jField_Helper_r11()
+	 * @generated
+	 */
+	EReference getuProperty2jField_Helper_r11_SynchronizeBackwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getRepairForwardActivity <em>Repair Forward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Repair Forward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getRepairForwardActivity()
+	 * @see #getuProperty2jField_Helper_r11()
+	 * @generated
+	 */
+	EReference getuProperty2jField_Helper_r11_RepairForwardActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getRepairBackwardActivity <em>Repair Backward Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Repair Backward Activity</em>'.
+	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#getRepairBackwardActivity()
+	 * @see #getuProperty2jField_Helper_r11()
+	 * @generated
+	 */
+	EReference getuProperty2jField_Helper_r11_RepairBackwardActivity();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#addElement(org.eclipse.emf.common.util.EMap) <em>Add Element</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Add Element</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#addElement(org.eclipse.emf.common.util.EMap)
+	 * @generated
+	 */
+	EOperation getuProperty2jField_Helper_r11__AddElement__EMap();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap) <em>Change Attribute Values</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Change Attribute Values</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#changeAttributeValues(de.mdelab.mltgg.mote2.TGGNode, org.eclipse.emf.common.util.EMap)
+	 * @generated
+	 */
+	EOperation getuProperty2jField_Helper_r11__ChangeAttributeValues__TGGNode_EMap();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode) <em>Move Element</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Move Element</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#moveElement(de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode, de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getuProperty2jField_Helper_r11__MoveElement__TGGNode_TGGNode_TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Transform Forward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#transformForward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
+	 * @generated
+	 */
+	EOperation getuProperty2jField_Helper_r11__TransformForward__TGGNode_boolean_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Mapping</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Transform Mapping</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#transformMapping(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
+	 * @generated
+	 */
+	EOperation getuProperty2jField_Helper_r11__TransformMapping__TGGNode_boolean_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean) <em>Transform Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Transform Backward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#transformBackward(de.mdelab.mltgg.mote2.TGGNode, boolean, boolean)
+	 * @generated
+	 */
+	EOperation getuProperty2jField_Helper_r11__TransformBackward__TGGNode_boolean_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Conflict Check Forward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#conflictCheckForward(de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getuProperty2jField_Helper_r11__ConflictCheckForward__TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Mapping</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Conflict Check Mapping</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#conflictCheckMapping(de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getuProperty2jField_Helper_r11__ConflictCheckMapping__TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode) <em>Conflict Check Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Conflict Check Backward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#conflictCheckBackward(de.mdelab.mltgg.mote2.TGGNode)
+	 * @generated
+	 */
+	EOperation getuProperty2jField_Helper_r11__ConflictCheckBackward__TGGNode();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Synchronize Forward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#synchronizeForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getuProperty2jField_Helper_r11__SynchronizeForward__TGGNode_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Synchronize Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Synchronize Backward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#synchronizeBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getuProperty2jField_Helper_r11__SynchronizeBackward__TGGNode_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Forward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Repair Forward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#repairForward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getuProperty2jField_Helper_r11__RepairForward__TGGNode_boolean();
+
+	/**
+	 * Returns the meta object for the '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean) <em>Repair Backward</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Repair Backward</em>' operation.
+	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11#repairBackward(de.mdelab.mltgg.mote2.TGGNode, boolean)
+	 * @generated
+	 */
+	EOperation getuProperty2jField_Helper_r11__RepairBackward__TGGNode_boolean();
 
 	/**
 	 * Returns the factory that creates the instances of the model.

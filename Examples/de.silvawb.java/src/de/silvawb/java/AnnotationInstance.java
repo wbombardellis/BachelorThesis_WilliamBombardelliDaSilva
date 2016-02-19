@@ -18,6 +18,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link de.silvawb.java.AnnotationInstance#getAnnotation <em>Annotation</em>}</li>
  *   <li>{@link de.silvawb.java.AnnotationInstance#getParameters <em>Parameters</em>}</li>
  *   <li>{@link de.silvawb.java.AnnotationInstance#getAnnotable <em>Annotable</em>}</li>
+ *   <li>{@link de.silvawb.java.AnnotationInstance#getName <em>Name</em>}</li>
  * </ul>
  *
  * @see de.silvawb.java.JavaPackage#getAnnotationInstance()
@@ -96,5 +97,31 @@ public interface AnnotationInstance extends EObject {
 	 * @generated
 	 */
 	void setAnnotable(Annotable value);
+
+	/**
+	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Name</em>' attribute.
+	 * @see #setName(String)
+	 * @see de.silvawb.java.JavaPackage#getAnnotationInstance_Name()
+	 * @model
+	 * @generated
+	 */
+	String getName();
+
+	/**
+	 * Sets the value of the '{@link de.silvawb.java.AnnotationInstance#getName <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
+	 * @generated
+	 */
+	void setName(String value);
 
 } // AnnotationInstance

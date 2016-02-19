@@ -99,7 +99,10 @@ public class AssertStatementItemProvider extends StatementItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		return getString("_UI_AssertStatement_type");
+		String label = ((AssertStatement)object).getName();
+		return label == null || label.length() == 0 ?
+			getString("_UI_AssertStatement_type") :
+			getString("_UI_AssertStatement_type") + " " + label;
 	}
 	
 

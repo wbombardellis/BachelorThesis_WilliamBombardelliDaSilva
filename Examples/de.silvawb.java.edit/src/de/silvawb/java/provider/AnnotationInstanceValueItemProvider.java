@@ -62,6 +62,7 @@ public class AnnotationInstanceValueItemProvider
 
 			addValuePropertyDescriptor(object);
 			addIdPropertyDescriptor(object);
+			addNamePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -111,6 +112,28 @@ public class AnnotationInstanceValueItemProvider
 	}
 
 	/**
+	 * This adds a property descriptor for the Name feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addNamePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_AnnotationInstanceValue_name_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_AnnotationInstanceValue_name_feature", "_UI_AnnotationInstanceValue_type"),
+				 JavaPackage.Literals.ANNOTATION_INSTANCE_VALUE__NAME,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
 	 * This returns AnnotationInstanceValue.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -129,8 +152,10 @@ public class AnnotationInstanceValueItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		AnnotationInstanceValue annotationInstanceValue = (AnnotationInstanceValue)object;
-		return getString("_UI_AnnotationInstanceValue_type") + " " + annotationInstanceValue.getId();
+		String label = ((AnnotationInstanceValue)object).getName();
+		return label == null || label.length() == 0 ?
+			getString("_UI_AnnotationInstanceValue_type") :
+			getString("_UI_AnnotationInstanceValue_type") + " " + label;
 	}
 	
 
@@ -148,6 +173,7 @@ public class AnnotationInstanceValueItemProvider
 		switch (notification.getFeatureID(AnnotationInstanceValue.class)) {
 			case JavaPackage.ANNOTATION_INSTANCE_VALUE__VALUE:
 			case JavaPackage.ANNOTATION_INSTANCE_VALUE__ID:
+			case JavaPackage.ANNOTATION_INSTANCE_VALUE__NAME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

@@ -6,41 +6,41 @@
     </containedElements>
     <containedElements xsi:type="de.silvawb.java:Class" visibility="" name="Driver" extendedClass="//@packages.0/@containedElements.0">
       <fields visibility="public" name="driverLincense" type="//@packages.1/@containedElements.1">
-        <annotationInstances annotation="//@packages.2/@containedElements.0">
+        <annotationInstances annotation="//@packages.2/@containedElements.0" name="Inv">
           <parameters name="constraint">
-            <values value="driverLicense >= 1"/>
+            <values value="driverLicense >= 1" name="driverLicense >= 1"/>
           </parameters>
         </annotationInstances>
       </fields>
       <fields visibility="public" name="driverLicenseStatus" type="//@packages.1/@containedElements.1"/>
       <fields visibility="private" name="experience" type="//@packages.1/@containedElements.1" default="0"/>
       <methods visibility="public" name="drive">
-        <annotationInstances annotation="//@packages.2/@containedElements.0">
+        <annotationInstances annotation="//@packages.2/@containedElements.0" name="Inv">
           <parameters name="constraint">
-            <values value="vehicle &lt;> null"/>
+            <values value="vehicle &lt;> null" name="vehicle &lt;> null"/>
           </parameters>
         </annotationInstances>
-        <annotationInstances annotation="//@packages.2/@containedElements.1">
+        <annotationInstances annotation="//@packages.2/@containedElements.1" name="Pre">
           <parameters name="constraint">
-            <values value="driverLicenseStatus >= 1"/>
+            <values value="driverLicenseStatus >= 1" name="driverLicenseStatus >= 1"/>
           </parameters>
         </annotationInstances>
-        <annotationInstances annotation="//@packages.2/@containedElements.2">
+        <annotationInstances annotation="//@packages.2/@containedElements.2" name="Pos">
           <parameters name="constraint">
-            <values value="experience > experience@pre"/>
+            <values value="experience > experience@pre" name="experience > experience@pre"/>
           </parameters>
         </annotationInstances>
-        <annotationInstances annotation="//@packages.2/@containedElements.3">
+        <annotationInstances annotation="//@packages.2/@containedElements.3" name="Interaction">
           <parameters name="interactionSequence">
-            <values value="start"/>
-            <values value="drive" id="1"/>
-            <values value="stop" id="2"/>
+            <values value="start" name="start"/>
+            <values value="drive" id="1" name="drive"/>
+            <values value="stop" id="2" name="stop"/>
           </parameters>
         </annotationInstances>
         <arguments name="vehicle" type="//@packages.0/@containedElements.2"/>
       </methods>
       <methods visibility="public" name="checkRep">
-        <body xsi:type="de.silvawb.java:AssertStatement">
+        <body xsi:type="de.silvawb.java:AssertStatement" name="driverLicense >= 1">
           <assertion rightSide="1" leftSide="driverLicense"/>
         </body>
       </methods>
@@ -49,18 +49,18 @@
       </methods>
       <methods name="driveCheckPreConstraint">
         <arguments name="vehicle" type="//@packages.0/@containedElements.2"/>
-        <body xsi:type="de.silvawb.java:AssertStatement">
+        <body xsi:type="de.silvawb.java:AssertStatement" name="driverLicenseStatus >= 1">
           <assertion rightSide="1" leftSide="driverLicenseStatus"/>
         </body>
       </methods>
       <methods name="driveCheckPosConstraint">
         <arguments name="vehicle" type="//@packages.0/@containedElements.2"/>
       </methods>
-      <generalization general="//@packages.0/@containedElements.0"/>
-      <imports imported="//@packages.2/@containedElements.0"/>
-      <imports imported="//@packages.2/@containedElements.1"/>
-      <imports imported="//@packages.2/@containedElements.2"/>
-      <imports imported="//@packages.2/@containedElements.3"/>
+      <generalization general="//@packages.0/@containedElements.0" name="Person"/>
+      <imports imported="//@packages.2/@containedElements.0" name="de.silvawb.utils.Inv"/>
+      <imports imported="//@packages.2/@containedElements.1" name="de.silvawb.utils.Pre"/>
+      <imports imported="//@packages.2/@containedElements.2" name="de.silvawb.utils.Pos"/>
+      <imports imported="//@packages.2/@containedElements.3" name="de.silvawb.utils.Interaction"/>
     </containedElements>
     <containedElements xsi:type="de.silvawb.java:Interface" visibility="" name="Drivable">
       <methods name="start"/>
@@ -73,7 +73,7 @@
       <methods name="start"/>
       <methods name="drive"/>
       <methods name="stop"/>
-      <interfaceImplementations interface="//@packages.0/@containedElements.2"/>
+      <interfaceImplementations interface="//@packages.0/@containedElements.2" name="Drivable"/>
     </containedElements>
   </packages>
   <packages name="java.lang">

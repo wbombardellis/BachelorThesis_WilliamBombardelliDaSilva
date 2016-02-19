@@ -27,6 +27,7 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
  * <ul>
  *   <li>{@link de.silvawb.java.impl.ImportImpl#getImported <em>Imported</em>}</li>
  *   <li>{@link de.silvawb.java.impl.ImportImpl#getImporting <em>Importing</em>}</li>
+ *   <li>{@link de.silvawb.java.impl.ImportImpl#getName <em>Name</em>}</li>
  * </ul>
  *
  * @generated
@@ -41,6 +42,25 @@ public class ImportImpl extends MinimalEObjectImpl.Container implements Import {
 	 * @ordered
 	 */
 	protected Classifier imported;
+
+	/**
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAME_EDEFAULT = null;
+	/**
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String name = NAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -145,6 +165,27 @@ public class ImportImpl extends MinimalEObjectImpl.Container implements Import {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, JavaPackage.IMPORT__NAME, oldName, name));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -197,6 +238,8 @@ public class ImportImpl extends MinimalEObjectImpl.Container implements Import {
 				return basicGetImported();
 			case JavaPackage.IMPORT__IMPORTING:
 				return getImporting();
+			case JavaPackage.IMPORT__NAME:
+				return getName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -214,6 +257,9 @@ public class ImportImpl extends MinimalEObjectImpl.Container implements Import {
 				return;
 			case JavaPackage.IMPORT__IMPORTING:
 				setImporting((Classifier)newValue);
+				return;
+			case JavaPackage.IMPORT__NAME:
+				setName((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -233,6 +279,9 @@ public class ImportImpl extends MinimalEObjectImpl.Container implements Import {
 			case JavaPackage.IMPORT__IMPORTING:
 				setImporting((Classifier)null);
 				return;
+			case JavaPackage.IMPORT__NAME:
+				setName(NAME_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -249,8 +298,26 @@ public class ImportImpl extends MinimalEObjectImpl.Container implements Import {
 				return imported != null;
 			case JavaPackage.IMPORT__IMPORTING:
 				return getImporting() != null;
+			case JavaPackage.IMPORT__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (name: ");
+		result.append(name);
+		result.append(')');
+		return result.toString();
 	}
 
 } //ImportImpl

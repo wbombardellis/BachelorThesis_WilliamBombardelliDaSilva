@@ -27,6 +27,7 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
  * <ul>
  *   <li>{@link de.silvawb.java.impl.GeneralizationImpl#getGeneral <em>General</em>}</li>
  *   <li>{@link de.silvawb.java.impl.GeneralizationImpl#getGeneralizator <em>Generalizator</em>}</li>
+ *   <li>{@link de.silvawb.java.impl.GeneralizationImpl#getName <em>Name</em>}</li>
  * </ul>
  *
  * @generated
@@ -41,6 +42,25 @@ public class GeneralizationImpl extends MinimalEObjectImpl.Container implements 
 	 * @ordered
 	 */
 	protected Classifier general;
+
+	/**
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAME_EDEFAULT = null;
+	/**
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String name = NAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -145,6 +165,27 @@ public class GeneralizationImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, JavaPackage.GENERALIZATION__NAME, oldName, name));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -197,6 +238,8 @@ public class GeneralizationImpl extends MinimalEObjectImpl.Container implements 
 				return basicGetGeneral();
 			case JavaPackage.GENERALIZATION__GENERALIZATOR:
 				return getGeneralizator();
+			case JavaPackage.GENERALIZATION__NAME:
+				return getName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -214,6 +257,9 @@ public class GeneralizationImpl extends MinimalEObjectImpl.Container implements 
 				return;
 			case JavaPackage.GENERALIZATION__GENERALIZATOR:
 				setGeneralizator((Classifier)newValue);
+				return;
+			case JavaPackage.GENERALIZATION__NAME:
+				setName((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -233,6 +279,9 @@ public class GeneralizationImpl extends MinimalEObjectImpl.Container implements 
 			case JavaPackage.GENERALIZATION__GENERALIZATOR:
 				setGeneralizator((Classifier)null);
 				return;
+			case JavaPackage.GENERALIZATION__NAME:
+				setName(NAME_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -249,8 +298,26 @@ public class GeneralizationImpl extends MinimalEObjectImpl.Container implements 
 				return general != null;
 			case JavaPackage.GENERALIZATION__GENERALIZATOR:
 				return getGeneralizator() != null;
+			case JavaPackage.GENERALIZATION__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (name: ");
+		result.append(name);
+		result.append(')');
+		return result.toString();
 	}
 
 } //GeneralizationImpl

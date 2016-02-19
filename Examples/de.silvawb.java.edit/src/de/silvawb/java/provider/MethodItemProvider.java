@@ -298,11 +298,6 @@ public class MethodItemProvider extends ContainedItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(JavaPackage.Literals.METHOD__BODY,
-				 JavaFactory.eINSTANCE.createStatement()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(JavaPackage.Literals.METHOD__BODY,
 				 JavaFactory.eINSTANCE.createAssertStatement()));
 	}
 

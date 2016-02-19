@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see de.silvawb.java.JavaPackage#getAnnotable()
- * @model
+ * @model abstract="true"
  * @generated
  */
 public interface Annotable extends EObject {

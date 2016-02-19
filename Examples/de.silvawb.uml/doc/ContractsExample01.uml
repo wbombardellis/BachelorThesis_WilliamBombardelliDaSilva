@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ASCII"?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" name="Example01">
+  <packagedElement xsi:type="uml:Package" name="main">
+    <packagedElement xsi:type="uml:Class" name="Person">
+      <ownedAttribute name="name" type="//java/lang/String"/>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Class" name="Driver">
+      <ownedRule name="" constrainedElement="//main/Driver/driverLicense">
+        <specification xsi:type="uml:Interval" name="driverLicense >= 1" min="//java/lang/Integer/@ownedRule.0/@specification"/>
+      </ownedRule>
+      <generalization general="//main/Person"/>
+      <ownedAttribute name="driverLicense" type="//java/lang/Integer"/>
+      <ownedAttribute name="driverLicenseStatus" type="//java/lang/Integer"/>
+      <ownedAttribute name="experience" visibility="private" type="//java/lang/Integer">
+        <defaultValue xsi:type="uml:LiteralString" value="0"/>
+      </ownedAttribute>
+      <ownedOperation name="drive" bodyCondition="//main/Driver/drive/vehicle%20%3C%3E%20null" precondition="//main/Driver/drive/driverLicenseStatus%20%3E=%201">
+        <ownedRule name="driverLicenseStatus >= 1" constrainedElement="//main/Driver/driverLicenseStatus">
+          <specification xsi:type="uml:Interval" name="" min="//java/lang/Integer/@ownedRule.0/@specification"/>
+        </ownedRule>
+        <ownedRule name="vehicle &lt;> null">
+          <specification xsi:type="uml:OpaqueExpression" name="vehicle &lt;> null">
+            <body>vehicle &lt;> null</body>
+            <language>OCL</language>
+          </specification>
+        </ownedRule>
+        <ownedRule name="experience > experience@pre">
+          <specification xsi:type="uml:OpaqueExpression" name="experience > experience@pre">
+            <body>experience > experience@pre</body>
+            <language>OCL</language>
+          </specification>
+        </ownedRule>
+        <ownedParameter name="vehicle" type="//main/Drivable"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Interface" name="Drivable">
+      <ownedOperation name="start"/>
+      <ownedOperation name="drive"/>
+      <ownedOperation name="stop"/>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Class" name="Car">
+      <ownedAttribute name="license" type="//java/lang/Integer"/>
+      <interfaceRealization name="" client="//main/Car" supplier="//main/Drivable" contract="//main/Drivable"/>
+      <ownedOperation name="openDoor"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Package" name="java">
+    <packagedElement xsi:type="uml:Package" name="lang">
+      <packagedElement xsi:type="uml:Class" name="String"/>
+      <packagedElement xsi:type="uml:Class" name="Integer">
+        <ownedRule>
+          <specification xsi:type="uml:LiteralInteger" value="1"/>
+        </ownedRule>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

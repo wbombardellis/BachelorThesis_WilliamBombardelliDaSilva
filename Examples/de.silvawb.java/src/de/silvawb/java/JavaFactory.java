@@ -85,15 +85,6 @@ public interface JavaFactory extends EFactory {
 	Import createImport();
 
 	/**
-	 * Returns a new object of class '<em>Contained</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Contained</em>'.
-	 * @generated
-	 */
-	Contained createContained();
-
-	/**
 	 * Returns a new object of class '<em>Method</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -101,15 +92,6 @@ public interface JavaFactory extends EFactory {
 	 * @generated
 	 */
 	Method createMethod();
-
-	/**
-	 * Returns a new object of class '<em>Statement</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Statement</em>'.
-	 * @generated
-	 */
-	Statement createStatement();
 
 	/**
 	 * Returns a new object of class '<em>Assert Statement</em>'.
@@ -139,15 +121,6 @@ public interface JavaFactory extends EFactory {
 	Argument createArgument();
 
 	/**
-	 * Returns a new object of class '<em>Container</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Container</em>'.
-	 * @generated
-	 */
-	Container createContainer();
-
-	/**
 	 * Returns a new object of class '<em>Interface</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -164,15 +137,6 @@ public interface JavaFactory extends EFactory {
 	 * @generated
 	 */
 	GenericBinding createGenericBinding();
-
-	/**
-	 * Returns a new object of class '<em>Annotable</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Annotable</em>'.
-	 * @generated
-	 */
-	Annotable createAnnotable();
 
 	/**
 	 * Returns a new object of class '<em>Annotation</em>'.

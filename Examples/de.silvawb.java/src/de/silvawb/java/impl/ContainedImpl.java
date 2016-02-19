@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
  *
  * @generated
  */
-public class ContainedImpl extends MinimalEObjectImpl.Container implements Contained {
+public abstract class ContainedImpl extends MinimalEObjectImpl.Container implements Contained {
 	/**
 	 * The default value of the '{@link #getVisibility() <em>Visibility</em>}' attribute.
 	 * <!-- begin-user-doc -->

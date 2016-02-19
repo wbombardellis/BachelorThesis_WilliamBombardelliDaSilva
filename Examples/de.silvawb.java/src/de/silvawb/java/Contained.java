@@ -20,7 +20,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see de.silvawb.java.JavaPackage#getContained()
- * @model
+ * @model abstract="true"
  * @generated
  */
 public interface Contained extends EObject {

@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see de.silvawb.java.JavaPackage#getContainer()
- * @model
+ * @model abstract="true"
  * @generated
  */
 public interface Container extends EObject {

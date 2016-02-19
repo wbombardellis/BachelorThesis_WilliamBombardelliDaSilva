@@ -98,17 +98,6 @@ public class GeneratedSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case GeneratedPackage.UMESSAGE_SEQUENCE2J_INTERACTION_ANNOTATION_2: {
-			uMessageSequence2jInteractionAnnotation_2 uMessageSequence2jInteractionAnnotation_2 = (uMessageSequence2jInteractionAnnotation_2) theEObject;
-			T result = caseuMessageSequence2jInteractionAnnotation_2(uMessageSequence2jInteractionAnnotation_2);
-			if (result == null)
-				result = caseOperationalRuleGroup(uMessageSequence2jInteractionAnnotation_2);
-			if (result == null)
-				result = caseOperationalMappingGroup(uMessageSequence2jInteractionAnnotation_2);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
 		case GeneratedPackage.UI_LIFELINE2J_MANNOTATION: {
 			uILifeline2jMAnnotation uILifeline2jMAnnotation = (uILifeline2jMAnnotation) theEObject;
 			T result = caseuILifeline2jMAnnotation(uILifeline2jMAnnotation);
@@ -116,17 +105,6 @@ public class GeneratedSwitch<T> extends Switch<T> {
 				result = caseOperationalRuleGroup(uILifeline2jMAnnotation);
 			if (result == null)
 				result = caseOperationalMappingGroup(uILifeline2jMAnnotation);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case GeneratedPackage.UOPERATION2J_METHOD_HELPER_RULE: {
-			uOperation2jMethod_HelperRule uOperation2jMethod_HelperRule = (uOperation2jMethod_HelperRule) theEObject;
-			T result = caseuOperation2jMethod_HelperRule(uOperation2jMethod_HelperRule);
-			if (result == null)
-				result = caseOperationalRuleGroup(uOperation2jMethod_HelperRule);
-			if (result == null)
-				result = caseOperationalMappingGroup(uOperation2jMethod_HelperRule);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -142,6 +120,28 @@ public class GeneratedSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case GeneratedPackage.UOPERATION2J_METHOD_HELPER_RULE: {
+			uOperation2jMethod_HelperRule uOperation2jMethod_HelperRule = (uOperation2jMethod_HelperRule) theEObject;
+			T result = caseuOperation2jMethod_HelperRule(uOperation2jMethod_HelperRule);
+			if (result == null)
+				result = caseOperationalRuleGroup(uOperation2jMethod_HelperRule);
+			if (result == null)
+				result = caseOperationalMappingGroup(uOperation2jMethod_HelperRule);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case GeneratedPackage.UMESSAGE_SEQUENCE2J_INTERACTION_ANNOTATION_2: {
+			uMessageSequence2jInteractionAnnotation_2 uMessageSequence2jInteractionAnnotation_2 = (uMessageSequence2jInteractionAnnotation_2) theEObject;
+			T result = caseuMessageSequence2jInteractionAnnotation_2(uMessageSequence2jInteractionAnnotation_2);
+			if (result == null)
+				result = caseOperationalRuleGroup(uMessageSequence2jInteractionAnnotation_2);
+			if (result == null)
+				result = caseOperationalMappingGroup(uMessageSequence2jInteractionAnnotation_2);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case GeneratedPackage.UML_INTERACTION2JAVA_AXIOM_R1: {
 			umlInteraction2javaAxiom_r1 umlInteraction2javaAxiom_r1 = (umlInteraction2javaAxiom_r1) theEObject;
 			T result = caseumlInteraction2javaAxiom_r1(umlInteraction2javaAxiom_r1);
@@ -153,13 +153,13 @@ public class GeneratedSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case GeneratedPackage.UMESSAGE_SEQUENCE2J_INTERACTION_ANNOTATION_R3: {
-			uMessageSequence2jInteractionAnnotation_r3 uMessageSequence2jInteractionAnnotation_r3 = (uMessageSequence2jInteractionAnnotation_r3) theEObject;
-			T result = caseuMessageSequence2jInteractionAnnotation_r3(uMessageSequence2jInteractionAnnotation_r3);
+		case GeneratedPackage.UOPERATION2J_METHOD_HELPER_RULE_R4: {
+			uOperation2jMethod_HelperRule_r4 uOperation2jMethod_HelperRule_r4 = (uOperation2jMethod_HelperRule_r4) theEObject;
+			T result = caseuOperation2jMethod_HelperRule_r4(uOperation2jMethod_HelperRule_r4);
 			if (result == null)
-				result = caseOperationalRule(uMessageSequence2jInteractionAnnotation_r3);
+				result = caseOperationalRule(uOperation2jMethod_HelperRule_r4);
 			if (result == null)
-				result = caseOperationalMapping(uMessageSequence2jInteractionAnnotation_r3);
+				result = caseOperationalMapping(uOperation2jMethod_HelperRule_r4);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -175,6 +175,17 @@ public class GeneratedSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case GeneratedPackage.UMESSAGE_SEQUENCE2J_INTERACTION_ANNOTATION_R3: {
+			uMessageSequence2jInteractionAnnotation_r3 uMessageSequence2jInteractionAnnotation_r3 = (uMessageSequence2jInteractionAnnotation_r3) theEObject;
+			T result = caseuMessageSequence2jInteractionAnnotation_r3(uMessageSequence2jInteractionAnnotation_r3);
+			if (result == null)
+				result = caseOperationalRule(uMessageSequence2jInteractionAnnotation_r3);
+			if (result == null)
+				result = caseOperationalMapping(uMessageSequence2jInteractionAnnotation_r3);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case GeneratedPackage.UI_LIFELINE2J_MANNOTATION_R2: {
 			uILifeline2jMAnnotation_r2 uILifeline2jMAnnotation_r2 = (uILifeline2jMAnnotation_r2) theEObject;
 			T result = caseuILifeline2jMAnnotation_r2(uILifeline2jMAnnotation_r2);
@@ -182,17 +193,6 @@ public class GeneratedSwitch<T> extends Switch<T> {
 				result = caseOperationalRule(uILifeline2jMAnnotation_r2);
 			if (result == null)
 				result = caseOperationalMapping(uILifeline2jMAnnotation_r2);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case GeneratedPackage.UOPERATION2J_METHOD_HELPER_RULE_R4: {
-			uOperation2jMethod_HelperRule_r4 uOperation2jMethod_HelperRule_r4 = (uOperation2jMethod_HelperRule_r4) theEObject;
-			T result = caseuOperation2jMethod_HelperRule_r4(uOperation2jMethod_HelperRule_r4);
-			if (result == null)
-				result = caseOperationalRule(uOperation2jMethod_HelperRule_r4);
-			if (result == null)
-				result = caseOperationalMapping(uOperation2jMethod_HelperRule_r4);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -233,21 +233,6 @@ public class GeneratedSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>uMessage Sequence2j Interaction Annotation 2</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>uMessage Sequence2j Interaction Annotation 2</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseuMessageSequence2jInteractionAnnotation_2(uMessageSequence2jInteractionAnnotation_2 object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>uI Lifeline2j MAnnotation</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -259,21 +244,6 @@ public class GeneratedSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseuILifeline2jMAnnotation(uILifeline2jMAnnotation object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>uOperation2j Method Helper Rule</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>uOperation2j Method Helper Rule</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseuOperation2jMethod_HelperRule(uOperation2jMethod_HelperRule object) {
 		return null;
 	}
 
@@ -293,6 +263,36 @@ public class GeneratedSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>uOperation2j Method Helper Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>uOperation2j Method Helper Rule</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseuOperation2jMethod_HelperRule(uOperation2jMethod_HelperRule object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>uMessage Sequence2j Interaction Annotation 2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>uMessage Sequence2j Interaction Annotation 2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseuMessageSequence2jInteractionAnnotation_2(uMessageSequence2jInteractionAnnotation_2 object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>uml Interaction2java Axiom r1</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -308,17 +308,17 @@ public class GeneratedSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>uMessage Sequence2j Interaction Annotation r3</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>uOperation2j Method Helper Rule r4</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>uMessage Sequence2j Interaction Annotation r3</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>uOperation2j Method Helper Rule r4</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseuMessageSequence2jInteractionAnnotation_r3(uMessageSequence2jInteractionAnnotation_r3 object) {
+	public T caseuOperation2jMethod_HelperRule_r4(uOperation2jMethod_HelperRule_r4 object) {
 		return null;
 	}
 
@@ -338,6 +338,21 @@ public class GeneratedSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>uMessage Sequence2j Interaction Annotation r3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>uMessage Sequence2j Interaction Annotation r3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseuMessageSequence2jInteractionAnnotation_r3(uMessageSequence2jInteractionAnnotation_r3 object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>uI Lifeline2j MAnnotation r2</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -349,21 +364,6 @@ public class GeneratedSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseuILifeline2jMAnnotation_r2(uILifeline2jMAnnotation_r2 object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>uOperation2j Method Helper Rule r4</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>uOperation2j Method Helper Rule r4</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseuOperation2jMethod_HelperRule_r4(uOperation2jMethod_HelperRule_r4 object) {
 		return null;
 	}
 

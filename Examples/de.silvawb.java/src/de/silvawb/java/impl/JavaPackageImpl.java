@@ -386,6 +386,15 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getInterfaceImplementation_Name() {
+		return (EAttribute)interfaceImplementationEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getGeneralization() {
 		return generalizationEClass;
 	}
@@ -406,6 +415,15 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 */
 	public EReference getGeneralization_Generalizator() {
 		return (EReference)generalizationEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getGeneralization_Name() {
+		return (EAttribute)generalizationEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -575,6 +593,15 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getImport_Name() {
+		return (EAttribute)importEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getContained() {
 		return containedEClass;
 	}
@@ -694,6 +721,15 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 */
 	public EReference getStatement_Method() {
 		return (EReference)statementEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getStatement_Name() {
+		return (EAttribute)statementEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -953,6 +989,15 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getAnnotationInstance_Name() {
+		return (EAttribute)annotationInstanceEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getAnnotationInstanceParameter() {
 		return annotationInstanceParameterEClass;
 	}
@@ -1025,6 +1070,15 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getAnnotationInstanceValue_Name() {
+		return (EAttribute)annotationInstanceValueEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public JavaFactory getJavaFactory() {
 		return (JavaFactory)getEFactoryInstance();
 	}
@@ -1066,10 +1120,12 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 		interfaceImplementationEClass = createEClass(INTERFACE_IMPLEMENTATION);
 		createEReference(interfaceImplementationEClass, INTERFACE_IMPLEMENTATION__INTERFACE);
 		createEReference(interfaceImplementationEClass, INTERFACE_IMPLEMENTATION__IMPLEMENTER);
+		createEAttribute(interfaceImplementationEClass, INTERFACE_IMPLEMENTATION__NAME);
 
 		generalizationEClass = createEClass(GENERALIZATION);
 		createEReference(generalizationEClass, GENERALIZATION__GENERAL);
 		createEReference(generalizationEClass, GENERALIZATION__GENERALIZATOR);
+		createEAttribute(generalizationEClass, GENERALIZATION__NAME);
 
 		classifierEClass = createEClass(CLASSIFIER);
 		createEAttribute(classifierEClass, CLASSIFIER__NAME);
@@ -1091,6 +1147,7 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 		importEClass = createEClass(IMPORT);
 		createEReference(importEClass, IMPORT__IMPORTED);
 		createEReference(importEClass, IMPORT__IMPORTING);
+		createEAttribute(importEClass, IMPORT__NAME);
 
 		containedEClass = createEClass(CONTAINED);
 		createEAttribute(containedEClass, CONTAINED__VISIBILITY);
@@ -1110,6 +1167,7 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 
 		statementEClass = createEClass(STATEMENT);
 		createEReference(statementEClass, STATEMENT__METHOD);
+		createEAttribute(statementEClass, STATEMENT__NAME);
 
 		assertStatementEClass = createEClass(ASSERT_STATEMENT);
 		createEReference(assertStatementEClass, ASSERT_STATEMENT__ASSERTION);
@@ -1145,6 +1203,7 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 		createEReference(annotationInstanceEClass, ANNOTATION_INSTANCE__ANNOTATION);
 		createEReference(annotationInstanceEClass, ANNOTATION_INSTANCE__PARAMETERS);
 		createEReference(annotationInstanceEClass, ANNOTATION_INSTANCE__ANNOTABLE);
+		createEAttribute(annotationInstanceEClass, ANNOTATION_INSTANCE__NAME);
 
 		annotationInstanceParameterEClass = createEClass(ANNOTATION_INSTANCE_PARAMETER);
 		createEAttribute(annotationInstanceParameterEClass, ANNOTATION_INSTANCE_PARAMETER__NAME);
@@ -1155,6 +1214,7 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 		createEReference(annotationInstanceValueEClass, ANNOTATION_INSTANCE_VALUE__PARAMETER);
 		createEAttribute(annotationInstanceValueEClass, ANNOTATION_INSTANCE_VALUE__VALUE);
 		createEAttribute(annotationInstanceValueEClass, ANNOTATION_INSTANCE_VALUE__ID);
+		createEAttribute(annotationInstanceValueEClass, ANNOTATION_INSTANCE_VALUE__NAME);
 	}
 
 	/**
@@ -1219,10 +1279,12 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 		initEClass(interfaceImplementationEClass, InterfaceImplementation.class, "InterfaceImplementation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getInterfaceImplementation_Interface(), this.getInterface(), null, "interface", null, 0, 1, InterfaceImplementation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getInterfaceImplementation_Implementer(), this.getClassifier(), this.getClassifier_InterfaceImplementations(), "implementer", null, 0, 1, InterfaceImplementation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getInterfaceImplementation_Name(), ecorePackage.getEString(), "name", null, 0, 1, InterfaceImplementation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(generalizationEClass, Generalization.class, "Generalization", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getGeneralization_General(), this.getClassifier(), null, "general", null, 0, 1, Generalization.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getGeneralization_Generalizator(), this.getClassifier(), this.getClassifier_Generalization(), "generalizator", null, 0, 1, Generalization.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getGeneralization_Name(), ecorePackage.getEString(), "name", null, 0, 1, Generalization.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(classifierEClass, Classifier.class, "Classifier", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getClassifier_Name(), ecorePackage.getEString(), "name", null, 0, 1, Classifier.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1244,8 +1306,9 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 		initEClass(importEClass, Import.class, "Import", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getImport_Imported(), this.getClassifier(), null, "imported", null, 0, 1, Import.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getImport_Importing(), this.getClassifier(), this.getClassifier_Imports(), "importing", null, 0, 1, Import.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getImport_Name(), ecorePackage.getEString(), "name", null, 0, 1, Import.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(containedEClass, Contained.class, "Contained", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(containedEClass, Contained.class, "Contained", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getContained_Visibility(), ecorePackage.getEString(), "visibility", null, 0, 1, Contained.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getContained_Container(), this.getContainer(), this.getContainer_ContainedElements(), "container", null, 0, 1, Contained.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getContained_ImportingClasses(), this.getClass_(), null, "importingClasses", null, 0, -1, Contained.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -1261,8 +1324,9 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 		initEReference(getMethod_RaisedExceptions(), this.getClassifier(), null, "raisedExceptions", null, 0, -1, Method.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getMethod_Body(), this.getStatement(), this.getStatement_Method(), "body", null, 0, -1, Method.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(statementEClass, Statement.class, "Statement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(statementEClass, Statement.class, "Statement", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getStatement_Method(), this.getMethod(), this.getMethod_Body(), "method", null, 0, 1, Statement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getStatement_Name(), ecorePackage.getEString(), "name", null, 0, 1, Statement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(assertStatementEClass, AssertStatement.class, "AssertStatement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getAssertStatement_Assertion(), this.getGETExpression(), this.getGETExpression_ContainerStatement(), "assertion", null, 0, 1, AssertStatement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -1278,7 +1342,7 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 		initEReference(getArgument_UsingMethod(), this.getMethod(), this.getMethod_Arguments(), "usingMethod", null, 0, 1, Argument.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getArgument_Order(), ecorePackage.getEInt(), "order", null, 0, 1, Argument.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(containerEClass, de.silvawb.java.Container.class, "Container", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(containerEClass, de.silvawb.java.Container.class, "Container", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getContainer_ContainedElements(), this.getContained(), this.getContained_Container(), "containedElements", null, 0, -1, de.silvawb.java.Container.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(interfaceEClass, Interface.class, "Interface", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1289,7 +1353,7 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 		initEReference(getGenericBinding_LowerBounding(), this.getClassifier(), null, "lowerBounding", null, 0, 1, GenericBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getGenericBinding_UsingClassifier(), this.getClassifier(), this.getClassifier_GenericBindings(), "usingClassifier", null, 0, 1, GenericBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(annotableEClass, Annotable.class, "Annotable", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(annotableEClass, Annotable.class, "Annotable", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getAnnotable_AnnotationInstances(), this.getAnnotationInstance(), this.getAnnotationInstance_Annotable(), "annotationInstances", null, 0, -1, Annotable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(annotationEClass, Annotation.class, "Annotation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1298,6 +1362,7 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 		initEReference(getAnnotationInstance_Annotation(), this.getAnnotation(), null, "annotation", null, 0, 1, AnnotationInstance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAnnotationInstance_Parameters(), this.getAnnotationInstanceParameter(), this.getAnnotationInstanceParameter_Instance(), "parameters", null, 0, -1, AnnotationInstance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAnnotationInstance_Annotable(), this.getAnnotable(), this.getAnnotable_AnnotationInstances(), "annotable", null, 0, 1, AnnotationInstance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getAnnotationInstance_Name(), ecorePackage.getEString(), "name", null, 0, 1, AnnotationInstance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(annotationInstanceParameterEClass, AnnotationInstanceParameter.class, "AnnotationInstanceParameter", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAnnotationInstanceParameter_Name(), ecorePackage.getEString(), "name", null, 0, 1, AnnotationInstanceParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1308,6 +1373,7 @@ public class JavaPackageImpl extends EPackageImpl implements JavaPackage {
 		initEReference(getAnnotationInstanceValue_Parameter(), this.getAnnotationInstanceParameter(), this.getAnnotationInstanceParameter_Values(), "parameter", null, 0, 1, AnnotationInstanceValue.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getAnnotationInstanceValue_Value(), ecorePackage.getEString(), "value", null, 0, 1, AnnotationInstanceValue.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getAnnotationInstanceValue_Id(), ecorePackage.getEInt(), "id", null, 0, 1, AnnotationInstanceValue.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAnnotationInstanceValue_Name(), ecorePackage.getEString(), "name", null, 0, 1, AnnotationInstanceValue.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

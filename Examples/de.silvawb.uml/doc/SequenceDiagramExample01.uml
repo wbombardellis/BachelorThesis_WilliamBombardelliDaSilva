@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_hKPv4MVQEeWU9Jylf6BOuw" name="Example01">
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_579fAMxAEeWVleIsvh-O1g">
+    <lifeline xmi:id="_654f0MxAEeWVleIsvh-O1g" name=":Driver" coveredBy="_U5h4sMxBEeWVleIsvh-O1g"/>
+    <lifeline xmi:id="_OlAxMMxCEeWVleIsvh-O1g" name=":Drivable" coveredBy="_V2cXcMxCEeWVleIsvh-O1g _f3lFMMxCEeWVleIsvh-O1g _iho3sMxCEeWVleIsvh-O1g"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_U5h4sMxBEeWVleIsvh-O1g" name=":Driver" covered="_654f0MxAEeWVleIsvh-O1g" start="_binFgMxBEeWVleIsvh-O1g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_binFgMxBEeWVleIsvh-O1g" name="1 (sendEvent)" toAfter="_WT79AMxIEeWVleIsvh-O1g" message="_hAwwQMxBEeWVleIsvh-O1g"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_V2cXcMxCEeWVleIsvh-O1g" name=":Drivable (1)" covered="_OlAxMMxCEeWVleIsvh-O1g" start="_9u690MxBEeWVleIsvh-O1g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_58BT8MxBEeWVleIsvh-O1g" name="1.1 (receiveEvent)" toAfter="_X4ZZYMxIEeWVleIsvh-O1g" toBefore="_WT79AMxIEeWVleIsvh-O1g" message="_7ODjkMxBEeWVleIsvh-O1g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9u690MxBEeWVleIsvh-O1g" name="1.1 (sendEvent)" message="_7ODjkMxBEeWVleIsvh-O1g"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_f3lFMMxCEeWVleIsvh-O1g" name=":Drivable (2)" covered="_OlAxMMxCEeWVleIsvh-O1g" start="_u1jgYMxCEeWVleIsvh-O1g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_tlTZcMxCEeWVleIsvh-O1g" name="1.2 (receiveEvent)" toAfter="_Y8tWEMxIEeWVleIsvh-O1g" toBefore="_X4ZZYMxIEeWVleIsvh-O1g" message="_whPmIMxCEeWVleIsvh-O1g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_u1jgYMxCEeWVleIsvh-O1g" name="1.2 (sendEvent)" message="_whPmIMxCEeWVleIsvh-O1g"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_iho3sMxCEeWVleIsvh-O1g" name=":Drivable (3)" covered="_OlAxMMxCEeWVleIsvh-O1g" start="_t0fPgMxDEeWVleIsvh-O1g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qksSsMxDEeWVleIsvh-O1g" name="1.3 (receiveEvent)" toBefore="_Y8tWEMxIEeWVleIsvh-O1g" message="_vP9H8MxDEeWVleIsvh-O1g"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_t0fPgMxDEeWVleIsvh-O1g" name="1.3 (sendEvent)" message="_vP9H8MxDEeWVleIsvh-O1g"/>
+    <message xmi:id="_hAwwQMxBEeWVleIsvh-O1g" name="1: drive(vehicle:Drivable) : void" sendEvent="_binFgMxBEeWVleIsvh-O1g" signature="_hNrpIMV2EeWU9Jylf6BOuw"/>
+    <message xmi:id="_7ODjkMxBEeWVleIsvh-O1g" name="1.1: start() : void" receiveEvent="_58BT8MxBEeWVleIsvh-O1g" sendEvent="_9u690MxBEeWVleIsvh-O1g" signature="_fu-PcMV2EeWU9Jylf6BOuw"/>
+    <message xmi:id="_whPmIMxCEeWVleIsvh-O1g" name="1.2: drive() : void" receiveEvent="_tlTZcMxCEeWVleIsvh-O1g" sendEvent="_u1jgYMxCEeWVleIsvh-O1g" signature="_6A3ZcMV3EeWU9Jylf6BOuw"/>
+    <message xmi:id="_vP9H8MxDEeWVleIsvh-O1g" name="1.3 : stop() : void" receiveEvent="_qksSsMxDEeWVleIsvh-O1g" sendEvent="_t0fPgMxDEeWVleIsvh-O1g" signature="_7uD7EMV3EeWU9Jylf6BOuw"/>
+    <generalOrdering xmi:id="_WT79AMxIEeWVleIsvh-O1g" name="1 &lt; 1.1" after="_58BT8MxBEeWVleIsvh-O1g" before="_binFgMxBEeWVleIsvh-O1g"/>
+    <generalOrdering xmi:id="_X4ZZYMxIEeWVleIsvh-O1g" name="1.1 &lt; 1.2 " after="_tlTZcMxCEeWVleIsvh-O1g" before="_58BT8MxBEeWVleIsvh-O1g"/>
+    <generalOrdering xmi:id="_Y8tWEMxIEeWVleIsvh-O1g" name="1.2 &lt; 1.3" after="_qksSsMxDEeWVleIsvh-O1g" before="_tlTZcMxCEeWVleIsvh-O1g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_QfwIsMV1EeWU9Jylf6BOuw" name="main">
+    <packagedElement xmi:type="uml:Class" xmi:id="_ULBgkMV1EeWU9Jylf6BOuw" name="Person">
+      <ownedAttribute xmi:id="_jlNWoMV1EeWU9Jylf6BOuw" name="name" type="_6FGEEMV1EeWU9Jylf6BOuw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XZ-v4MV1EeWU9Jylf6BOuw" name="Driver">
+      <generalization xmi:id="__47_QMgYEeWtRPfYkZ8rDQ" general="_ULBgkMV1EeWU9Jylf6BOuw"/>
+      <ownedAttribute xmi:id="_B8CyMMV2EeWU9Jylf6BOuw" name="driverLicense" type="_HKz9IMV2EeWU9Jylf6BOuw"/>
+      <ownedAttribute xmi:id="_JCLGkMgXEeWtRPfYkZ8rDQ" name="driverLicenseStatus" type="_HKz9IMV2EeWU9Jylf6BOuw"/>
+      <ownedAttribute xmi:id="_f3AJQMgXEeWtRPfYkZ8rDQ" name="experience" visibility="private" type="_HKz9IMV2EeWU9Jylf6BOuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_liWigMgXEeWtRPfYkZ8rDQ" value="0"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_hNrpIMV2EeWU9Jylf6BOuw" name="drive">
+        <ownedParameter xmi:id="_TzmNIMV3EeWU9Jylf6BOuw" name="vehicle" type="_eLXkIMV1EeWU9Jylf6BOuw"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_eLXkIMV1EeWU9Jylf6BOuw" name="Drivable">
+      <ownedOperation xmi:id="_fu-PcMV2EeWU9Jylf6BOuw" name="start"/>
+      <ownedOperation xmi:id="_6A3ZcMV3EeWU9Jylf6BOuw" name="drive"/>
+      <ownedOperation xmi:id="_7uD7EMV3EeWU9Jylf6BOuw" name="stop"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ho6CAMV1EeWU9Jylf6BOuw" name="Car">
+      <ownedAttribute xmi:id="_ZtJP4MV2EeWU9Jylf6BOuw" name="license" type="_HKz9IMV2EeWU9Jylf6BOuw"/>
+      <interfaceRealization xmi:id="_HAt6QMgZEeWtRPfYkZ8rDQ" name="" client="_ho6CAMV1EeWU9Jylf6BOuw" supplier="_eLXkIMV1EeWU9Jylf6BOuw" contract="_eLXkIMV1EeWU9Jylf6BOuw"/>
+      <ownedOperation xmi:id="_cDLdsMV3EeWU9Jylf6BOuw" name="openDoor"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_08nuYMV1EeWU9Jylf6BOuw" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_3wyfIMV1EeWU9Jylf6BOuw" name="lang">
+      <packagedElement xmi:type="uml:Class" xmi:id="_6FGEEMV1EeWU9Jylf6BOuw" name="String"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_HKz9IMV2EeWU9Jylf6BOuw" name="Integer">
+        <ownedRule xmi:id="_dyBIoMV4EeWU9Jylf6BOuw">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_fVAlYMV4EeWU9Jylf6BOuw" value="1"/>
+        </ownedRule>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

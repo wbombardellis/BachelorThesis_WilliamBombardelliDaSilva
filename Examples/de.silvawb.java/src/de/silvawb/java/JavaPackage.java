@@ -596,13 +596,22 @@ public interface JavaPackage extends EPackage {
 	int INTERFACE_IMPLEMENTATION__IMPLEMENTER = 1;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERFACE_IMPLEMENTATION__NAME = 2;
+
+	/**
 	 * The number of structural features of the '<em>Interface Implementation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERFACE_IMPLEMENTATION_FEATURE_COUNT = 2;
+	int INTERFACE_IMPLEMENTATION_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Interface Implementation</em>' class.
@@ -642,13 +651,22 @@ public interface JavaPackage extends EPackage {
 	int GENERALIZATION__GENERALIZATOR = 1;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERALIZATION__NAME = 2;
+
+	/**
 	 * The number of structural features of the '<em>Generalization</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GENERALIZATION_FEATURE_COUNT = 2;
+	int GENERALIZATION_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Generalization</em>' class.
@@ -806,13 +824,22 @@ public interface JavaPackage extends EPackage {
 	int IMPORT__IMPORTING = 1;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMPORT__NAME = 2;
+
+	/**
 	 * The number of structural features of the '<em>Import</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int IMPORT_FEATURE_COUNT = 2;
+	int IMPORT_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Import</em>' class.
@@ -988,13 +1015,22 @@ public interface JavaPackage extends EPackage {
 	int STATEMENT__METHOD = 0;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STATEMENT__NAME = 1;
+
+	/**
 	 * The number of structural features of the '<em>Statement</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STATEMENT_FEATURE_COUNT = 1;
+	int STATEMENT_FEATURE_COUNT = 2;
 
 	/**
 	 * The number of operations of the '<em>Statement</em>' class.
@@ -1023,6 +1059,15 @@ public interface JavaPackage extends EPackage {
 	 * @ordered
 	 */
 	int ASSERT_STATEMENT__METHOD = STATEMENT__METHOD;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSERT_STATEMENT__NAME = STATEMENT__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Assertion</b></em>' containment reference.
@@ -1582,13 +1627,22 @@ public interface JavaPackage extends EPackage {
 	int ANNOTATION_INSTANCE__ANNOTABLE = 2;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION_INSTANCE__NAME = 3;
+
+	/**
 	 * The number of structural features of the '<em>Annotation Instance</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ANNOTATION_INSTANCE_FEATURE_COUNT = 3;
+	int ANNOTATION_INSTANCE_FEATURE_COUNT = 4;
 
 	/**
 	 * The number of operations of the '<em>Annotation Instance</em>' class.
@@ -1692,13 +1746,22 @@ public interface JavaPackage extends EPackage {
 	int ANNOTATION_INSTANCE_VALUE__ID = 2;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANNOTATION_INSTANCE_VALUE__NAME = 3;
+
+	/**
 	 * The number of structural features of the '<em>Annotation Instance Value</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ANNOTATION_INSTANCE_VALUE_FEATURE_COUNT = 3;
+	int ANNOTATION_INSTANCE_VALUE_FEATURE_COUNT = 4;
 
 	/**
 	 * The number of operations of the '<em>Annotation Instance Value</em>' class.
@@ -1871,6 +1934,17 @@ public interface JavaPackage extends EPackage {
 	EReference getInterfaceImplementation_Implementer();
 
 	/**
+	 * Returns the meta object for the attribute '{@link de.silvawb.java.InterfaceImplementation#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see de.silvawb.java.InterfaceImplementation#getName()
+	 * @see #getInterfaceImplementation()
+	 * @generated
+	 */
+	EAttribute getInterfaceImplementation_Name();
+
+	/**
 	 * Returns the meta object for class '{@link de.silvawb.java.Generalization <em>Generalization</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1901,6 +1975,17 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getGeneralization_Generalizator();
+
+	/**
+	 * Returns the meta object for the attribute '{@link de.silvawb.java.Generalization#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see de.silvawb.java.Generalization#getName()
+	 * @see #getGeneralization()
+	 * @generated
+	 */
+	EAttribute getGeneralization_Name();
 
 	/**
 	 * Returns the meta object for class '{@link de.silvawb.java.Classifier <em>Classifier</em>}'.
@@ -2098,6 +2183,17 @@ public interface JavaPackage extends EPackage {
 	EReference getImport_Importing();
 
 	/**
+	 * Returns the meta object for the attribute '{@link de.silvawb.java.Import#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see de.silvawb.java.Import#getName()
+	 * @see #getImport()
+	 * @generated
+	 */
+	EAttribute getImport_Name();
+
+	/**
 	 * Returns the meta object for class '{@link de.silvawb.java.Contained <em>Contained</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2247,6 +2343,17 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getStatement_Method();
+
+	/**
+	 * Returns the meta object for the attribute '{@link de.silvawb.java.Statement#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see de.silvawb.java.Statement#getName()
+	 * @see #getStatement()
+	 * @generated
+	 */
+	EAttribute getStatement_Name();
 
 	/**
 	 * Returns the meta object for class '{@link de.silvawb.java.AssertStatement <em>Assert Statement</em>}'.
@@ -2548,6 +2655,17 @@ public interface JavaPackage extends EPackage {
 	EReference getAnnotationInstance_Annotable();
 
 	/**
+	 * Returns the meta object for the attribute '{@link de.silvawb.java.AnnotationInstance#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see de.silvawb.java.AnnotationInstance#getName()
+	 * @see #getAnnotationInstance()
+	 * @generated
+	 */
+	EAttribute getAnnotationInstance_Name();
+
+	/**
 	 * Returns the meta object for class '{@link de.silvawb.java.AnnotationInstanceParameter <em>Annotation Instance Parameter</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2632,6 +2750,17 @@ public interface JavaPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getAnnotationInstanceValue_Id();
+
+	/**
+	 * Returns the meta object for the attribute '{@link de.silvawb.java.AnnotationInstanceValue#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see de.silvawb.java.AnnotationInstanceValue#getName()
+	 * @see #getAnnotationInstanceValue()
+	 * @generated
+	 */
+	EAttribute getAnnotationInstanceValue_Name();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -2785,6 +2914,14 @@ public interface JavaPackage extends EPackage {
 		EReference INTERFACE_IMPLEMENTATION__IMPLEMENTER = eINSTANCE.getInterfaceImplementation_Implementer();
 
 		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERFACE_IMPLEMENTATION__NAME = eINSTANCE.getInterfaceImplementation_Name();
+
+		/**
 		 * The meta object literal for the '{@link de.silvawb.java.impl.GeneralizationImpl <em>Generalization</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2809,6 +2946,14 @@ public interface JavaPackage extends EPackage {
 		 * @generated
 		 */
 		EReference GENERALIZATION__GENERALIZATOR = eINSTANCE.getGeneralization_Generalizator();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GENERALIZATION__NAME = eINSTANCE.getGeneralization_Name();
 
 		/**
 		 * The meta object literal for the '{@link de.silvawb.java.impl.ClassifierImpl <em>Classifier</em>}' class.
@@ -2961,6 +3106,14 @@ public interface JavaPackage extends EPackage {
 		EReference IMPORT__IMPORTING = eINSTANCE.getImport_Importing();
 
 		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IMPORT__NAME = eINSTANCE.getImport_Name();
+
+		/**
 		 * The meta object literal for the '{@link de.silvawb.java.impl.ContainedImpl <em>Contained</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -3077,6 +3230,14 @@ public interface JavaPackage extends EPackage {
 		 * @generated
 		 */
 		EReference STATEMENT__METHOD = eINSTANCE.getStatement_Method();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute STATEMENT__NAME = eINSTANCE.getStatement_Name();
 
 		/**
 		 * The meta object literal for the '{@link de.silvawb.java.impl.AssertStatementImpl <em>Assert Statement</em>}' class.
@@ -3321,6 +3482,14 @@ public interface JavaPackage extends EPackage {
 		EReference ANNOTATION_INSTANCE__ANNOTABLE = eINSTANCE.getAnnotationInstance_Annotable();
 
 		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ANNOTATION_INSTANCE__NAME = eINSTANCE.getAnnotationInstance_Name();
+
+		/**
 		 * The meta object literal for the '{@link de.silvawb.java.impl.AnnotationInstanceParameterImpl <em>Annotation Instance Parameter</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -3387,6 +3556,14 @@ public interface JavaPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute ANNOTATION_INSTANCE_VALUE__ID = eINSTANCE.getAnnotationInstanceValue_Id();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ANNOTATION_INSTANCE_VALUE__NAME = eINSTANCE.getAnnotationInstanceValue_Name();
 
 	}
 

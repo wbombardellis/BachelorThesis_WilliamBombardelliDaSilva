@@ -87,18 +87,8 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseuMessageSequence2jInteractionAnnotation_2(uMessageSequence2jInteractionAnnotation_2 object) {
-			return createuMessageSequence2jInteractionAnnotation_2Adapter();
-		}
-
-		@Override
 		public Adapter caseuILifeline2jMAnnotation(uILifeline2jMAnnotation object) {
 			return createuILifeline2jMAnnotationAdapter();
-		}
-
-		@Override
-		public Adapter caseuOperation2jMethod_HelperRule(uOperation2jMethod_HelperRule object) {
-			return createuOperation2jMethod_HelperRuleAdapter();
 		}
 
 		@Override
@@ -107,14 +97,23 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseuOperation2jMethod_HelperRule(uOperation2jMethod_HelperRule object) {
+			return createuOperation2jMethod_HelperRuleAdapter();
+		}
+
+		@Override
+		public Adapter caseuMessageSequence2jInteractionAnnotation_2(uMessageSequence2jInteractionAnnotation_2 object) {
+			return createuMessageSequence2jInteractionAnnotation_2Adapter();
+		}
+
+		@Override
 		public Adapter caseumlInteraction2javaAxiom_r1(umlInteraction2javaAxiom_r1 object) {
 			return createumlInteraction2javaAxiom_r1Adapter();
 		}
 
 		@Override
-		public Adapter caseuMessageSequence2jInteractionAnnotation_r3(
-				uMessageSequence2jInteractionAnnotation_r3 object) {
-			return createuMessageSequence2jInteractionAnnotation_r3Adapter();
+		public Adapter caseuOperation2jMethod_HelperRule_r4(uOperation2jMethod_HelperRule_r4 object) {
+			return createuOperation2jMethod_HelperRule_r4Adapter();
 		}
 
 		@Override
@@ -124,13 +123,14 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseuILifeline2jMAnnotation_r2(uILifeline2jMAnnotation_r2 object) {
-			return createuILifeline2jMAnnotation_r2Adapter();
+		public Adapter caseuMessageSequence2jInteractionAnnotation_r3(
+				uMessageSequence2jInteractionAnnotation_r3 object) {
+			return createuMessageSequence2jInteractionAnnotation_r3Adapter();
 		}
 
 		@Override
-		public Adapter caseuOperation2jMethod_HelperRule_r4(uOperation2jMethod_HelperRule_r4 object) {
-			return createuOperation2jMethod_HelperRule_r4Adapter();
+		public Adapter caseuILifeline2jMAnnotation_r2(uILifeline2jMAnnotation_r2 object) {
+			return createuILifeline2jMAnnotation_r2Adapter();
 		}
 
 		@Override
@@ -221,20 +221,6 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link de.silvawb.umlInteraction2java.generated.uMessageSequence2jInteractionAnnotation_2 <em>uMessage Sequence2j Interaction Annotation 2</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see de.silvawb.umlInteraction2java.generated.uMessageSequence2jInteractionAnnotation_2
-	 * @generated
-	 */
-	public Adapter createuMessageSequence2jInteractionAnnotation_2Adapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link de.silvawb.umlInteraction2java.generated.uILifeline2jMAnnotation <em>uI Lifeline2j MAnnotation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -245,20 +231,6 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createuILifeline2jMAnnotationAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link de.silvawb.umlInteraction2java.generated.uOperation2jMethod_HelperRule <em>uOperation2j Method Helper Rule</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see de.silvawb.umlInteraction2java.generated.uOperation2jMethod_HelperRule
-	 * @generated
-	 */
-	public Adapter createuOperation2jMethod_HelperRuleAdapter() {
 		return null;
 	}
 
@@ -277,6 +249,34 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.umlInteraction2java.generated.uOperation2jMethod_HelperRule <em>uOperation2j Method Helper Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.umlInteraction2java.generated.uOperation2jMethod_HelperRule
+	 * @generated
+	 */
+	public Adapter createuOperation2jMethod_HelperRuleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.umlInteraction2java.generated.uMessageSequence2jInteractionAnnotation_2 <em>uMessage Sequence2j Interaction Annotation 2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.umlInteraction2java.generated.uMessageSequence2jInteractionAnnotation_2
+	 * @generated
+	 */
+	public Adapter createuMessageSequence2jInteractionAnnotation_2Adapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link de.silvawb.umlInteraction2java.generated.umlInteraction2javaAxiom_r1 <em>uml Interaction2java Axiom r1</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -291,16 +291,16 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link de.silvawb.umlInteraction2java.generated.uMessageSequence2jInteractionAnnotation_r3 <em>uMessage Sequence2j Interaction Annotation r3</em>}'.
+	 * Creates a new adapter for an object of class '{@link de.silvawb.umlInteraction2java.generated.uOperation2jMethod_HelperRule_r4 <em>uOperation2j Method Helper Rule r4</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see de.silvawb.umlInteraction2java.generated.uMessageSequence2jInteractionAnnotation_r3
+	 * @see de.silvawb.umlInteraction2java.generated.uOperation2jMethod_HelperRule_r4
 	 * @generated
 	 */
-	public Adapter createuMessageSequence2jInteractionAnnotation_r3Adapter() {
+	public Adapter createuOperation2jMethod_HelperRule_r4Adapter() {
 		return null;
 	}
 
@@ -319,6 +319,20 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.umlInteraction2java.generated.uMessageSequence2jInteractionAnnotation_r3 <em>uMessage Sequence2j Interaction Annotation r3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.umlInteraction2java.generated.uMessageSequence2jInteractionAnnotation_r3
+	 * @generated
+	 */
+	public Adapter createuMessageSequence2jInteractionAnnotation_r3Adapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link de.silvawb.umlInteraction2java.generated.uILifeline2jMAnnotation_r2 <em>uI Lifeline2j MAnnotation r2</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -329,20 +343,6 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createuILifeline2jMAnnotation_r2Adapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link de.silvawb.umlInteraction2java.generated.uOperation2jMethod_HelperRule_r4 <em>uOperation2j Method Helper Rule r4</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see de.silvawb.umlInteraction2java.generated.uOperation2jMethod_HelperRule_r4
-	 * @generated
-	 */
-	public Adapter createuOperation2jMethod_HelperRule_r4Adapter() {
 		return null;
 	}
 
