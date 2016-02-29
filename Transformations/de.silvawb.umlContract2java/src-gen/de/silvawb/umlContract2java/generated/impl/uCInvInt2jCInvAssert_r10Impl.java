@@ -761,7 +761,7 @@ public class uCInvInt2jCInvAssert_r10Impl extends OperationalRuleImpl implements
 		((de.silvawb.umlContract2java.generated.umlContract2javaOperationalTGG) this.getOperationalRuleGroup()
 				.getOperationalTGG()).executeActivity(this.getAddElementActivity(), parametersCopy);
 
-		return (TGGNode) parametersCopy.get("uOPPI2jMAPI");
+		return (TGGNode) parametersCopy.get("uCII2jMAI");
 	}
 
 	/**
@@ -774,7 +774,7 @@ public class uCInvInt2jCInvAssert_r10Impl extends OperationalRuleImpl implements
 		org.eclipse.emf.common.util.EMap<String, Object> params = new org.eclipse.emf.common.util.BasicEMap<String, Object>(
 				ruleParameters.map());
 
-		params.put("uOPPI2jMAPI", correspondenceNode);
+		params.put("uCII2jMAI", correspondenceNode);
 
 		((de.silvawb.umlContract2java.generated.umlContract2javaOperationalTGG) this.getOperationalRuleGroup()
 				.getOperationalTGG()).executeActivity(this.getChangeAttributeActivity(), params);
@@ -791,7 +791,7 @@ public class uCInvInt2jCInvAssert_r10Impl extends OperationalRuleImpl implements
 			final TGGNode newPreviousCorrespondenceNode) throws TransformationException {
 		org.eclipse.emf.common.util.EMap<String, Object> params = new org.eclipse.emf.common.util.BasicEMap<String, Object>();
 
-		params.put("uOPPI2jMAPI", correspondenceNode);
+		params.put("uCII2jMAI", correspondenceNode);
 		params.put("__oldPreviousCorrespondenceNode", oldPreviousCorrespondenceNode);
 		params.put("__newPreviousCorrespondenceNode", newPreviousCorrespondenceNode);
 

@@ -87,43 +87,8 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseuProperty2jField_Helper(uProperty2jField_Helper object) {
-			return createuProperty2jField_HelperAdapter();
-		}
-
-		@Override
-		public Adapter caseuOPPre2jMAPre(uOPPre2jMAPre object) {
-			return createuOPPre2jMAPreAdapter();
-		}
-
-		@Override
-		public Adapter caseuCInv2jCInv(uCInv2jCInv object) {
-			return createuCInv2jCInvAdapter();
-		}
-
-		@Override
 		public Adapter caseuClass2jClass_Helper(uClass2jClass_Helper object) {
 			return createuClass2jClass_HelperAdapter();
-		}
-
-		@Override
-		public Adapter caseuOParamenter2jMArgument(uOParamenter2jMArgument object) {
-			return createuOParamenter2jMArgumentAdapter();
-		}
-
-		@Override
-		public Adapter caseuOperation2jMethod_Helper(uOperation2jMethod_Helper object) {
-			return createuOperation2jMethod_HelperAdapter();
-		}
-
-		@Override
-		public Adapter caseuOPPosInt2jMAPosAssert(uOPPosInt2jMAPosAssert object) {
-			return createuOPPosInt2jMAPosAssertAdapter();
-		}
-
-		@Override
-		public Adapter caseuOPPos2jMAPos(uOPPos2jMAPos object) {
-			return createuOPPos2jMAPosAdapter();
 		}
 
 		@Override
@@ -132,13 +97,58 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseuOParamenter2jMArgument(uOParamenter2jMArgument object) {
+			return createuOParamenter2jMArgumentAdapter();
+		}
+
+		@Override
+		public Adapter caseuOPPre2jMAPre(uOPPre2jMAPre object) {
+			return createuOPPre2jMAPreAdapter();
+		}
+
+		@Override
+		public Adapter caseuProperty2jField_Helper(uProperty2jField_Helper object) {
+			return createuProperty2jField_HelperAdapter();
+		}
+
+		@Override
+		public Adapter caseuOPPosInt2jMAPosAssert(uOPPosInt2jMAPosAssert object) {
+			return createuOPPosInt2jMAPosAssertAdapter();
+		}
+
+		@Override
+		public Adapter caseuOperation2jMethod_Helper(uOperation2jMethod_Helper object) {
+			return createuOperation2jMethod_HelperAdapter();
+		}
+
+		@Override
+		public Adapter caseuCInv2jCInv(uCInv2jCInv object) {
+			return createuCInv2jCInvAdapter();
+		}
+
+		@Override
+		public Adapter caseuOPPos2jMAPos(uOPPos2jMAPos object) {
+			return createuOPPos2jMAPosAdapter();
+		}
+
+		@Override
 		public Adapter caseuOPPreInt2jMAPreAssert(uOPPreInt2jMAPreAssert object) {
 			return createuOPPreInt2jMAPreAssertAdapter();
 		}
 
 		@Override
+		public Adapter caseuOInv2jMAInv(uOInv2jMAInv object) {
+			return createuOInv2jMAInvAdapter();
+		}
+
+		@Override
 		public Adapter caseumlContract2javaAxiom_r1(umlContract2javaAxiom_r1 object) {
 			return createumlContract2javaAxiom_r1Adapter();
+		}
+
+		@Override
+		public Adapter caseuOPPosInt2jMAPosAssert_r8(uOPPosInt2jMAPosAssert_r8 object) {
+			return createuOPPosInt2jMAPosAssert_r8Adapter();
 		}
 
 		@Override
@@ -157,28 +167,8 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseuOPPreInt2jMAPreAssert_r7(uOPPreInt2jMAPreAssert_r7 object) {
-			return createuOPPreInt2jMAPreAssert_r7Adapter();
-		}
-
-		@Override
-		public Adapter caseuOPPosInt2jMAPosAssert_r8(uOPPosInt2jMAPosAssert_r8 object) {
-			return createuOPPosInt2jMAPosAssert_r8Adapter();
-		}
-
-		@Override
-		public Adapter caseuOperation2jMethod_Helper_r3(uOperation2jMethod_Helper_r3 object) {
-			return createuOperation2jMethod_Helper_r3Adapter();
-		}
-
-		@Override
-		public Adapter caseuCInvInt2jCInvAssert_r10(uCInvInt2jCInvAssert_r10 object) {
-			return createuCInvInt2jCInvAssert_r10Adapter();
-		}
-
-		@Override
-		public Adapter caseuClass2jClass_Helper_r2(uClass2jClass_Helper_r2 object) {
-			return createuClass2jClass_Helper_r2Adapter();
+		public Adapter caseuOInv2jMAInv_r11(uOInv2jMAInv_r11 object) {
+			return createuOInv2jMAInv_r11Adapter();
 		}
 
 		@Override
@@ -187,8 +177,28 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseuClass2jClass_Helper_r2(uClass2jClass_Helper_r2 object) {
+			return createuClass2jClass_Helper_r2Adapter();
+		}
+
+		@Override
+		public Adapter caseuOPPreInt2jMAPreAssert_r7(uOPPreInt2jMAPreAssert_r7 object) {
+			return createuOPPreInt2jMAPreAssert_r7Adapter();
+		}
+
+		@Override
+		public Adapter caseuCInvInt2jCInvAssert_r10(uCInvInt2jCInvAssert_r10 object) {
+			return createuCInvInt2jCInvAssert_r10Adapter();
+		}
+
+		@Override
 		public Adapter caseuProperty2jField_Helper_r11(uProperty2jField_Helper_r11 object) {
 			return createuProperty2jField_Helper_r11Adapter();
+		}
+
+		@Override
+		public Adapter caseuOperation2jMethod_Helper_r3(uOperation2jMethod_Helper_r3 object) {
+			return createuOperation2jMethod_Helper_r3Adapter();
 		}
 
 		@Override
@@ -279,48 +289,6 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper <em>uProperty2j Field Helper</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper
-	 * @generated
-	 */
-	public Adapter createuProperty2jField_HelperAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.uOPPre2jMAPre <em>uOP Pre2j MA Pre</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see de.silvawb.umlContract2java.generated.uOPPre2jMAPre
-	 * @generated
-	 */
-	public Adapter createuOPPre2jMAPreAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.uCInv2jCInv <em>uC Inv2j CInv</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see de.silvawb.umlContract2java.generated.uCInv2jCInv
-	 * @generated
-	 */
-	public Adapter createuCInv2jCInvAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper <em>uClass2j Class Helper</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -331,62 +299,6 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createuClass2jClass_HelperAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.uOParamenter2jMArgument <em>uO Paramenter2j MArgument</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see de.silvawb.umlContract2java.generated.uOParamenter2jMArgument
-	 * @generated
-	 */
-	public Adapter createuOParamenter2jMArgumentAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.uOperation2jMethod_Helper <em>uOperation2j Method Helper</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see de.silvawb.umlContract2java.generated.uOperation2jMethod_Helper
-	 * @generated
-	 */
-	public Adapter createuOperation2jMethod_HelperAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert <em>uOP Pos Int2j MA Pos Assert</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert
-	 * @generated
-	 */
-	public Adapter createuOPPosInt2jMAPosAssertAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.uOPPos2jMAPos <em>uOP Pos2j MA Pos</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see de.silvawb.umlContract2java.generated.uOPPos2jMAPos
-	 * @generated
-	 */
-	public Adapter createuOPPos2jMAPosAdapter() {
 		return null;
 	}
 
@@ -405,6 +317,104 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.uOParamenter2jMArgument <em>uO Paramenter2j MArgument</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.umlContract2java.generated.uOParamenter2jMArgument
+	 * @generated
+	 */
+	public Adapter createuOParamenter2jMArgumentAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.uOPPre2jMAPre <em>uOP Pre2j MA Pre</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.umlContract2java.generated.uOPPre2jMAPre
+	 * @generated
+	 */
+	public Adapter createuOPPre2jMAPreAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper <em>uProperty2j Field Helper</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.umlContract2java.generated.uProperty2jField_Helper
+	 * @generated
+	 */
+	public Adapter createuProperty2jField_HelperAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert <em>uOP Pos Int2j MA Pos Assert</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert
+	 * @generated
+	 */
+	public Adapter createuOPPosInt2jMAPosAssertAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.uOperation2jMethod_Helper <em>uOperation2j Method Helper</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.umlContract2java.generated.uOperation2jMethod_Helper
+	 * @generated
+	 */
+	public Adapter createuOperation2jMethod_HelperAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.uCInv2jCInv <em>uC Inv2j CInv</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.umlContract2java.generated.uCInv2jCInv
+	 * @generated
+	 */
+	public Adapter createuCInv2jCInvAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.uOPPos2jMAPos <em>uOP Pos2j MA Pos</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.umlContract2java.generated.uOPPos2jMAPos
+	 * @generated
+	 */
+	public Adapter createuOPPos2jMAPosAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert <em>uOP Pre Int2j MA Pre Assert</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -419,6 +429,20 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.uOInv2jMAInv <em>uO Inv2j MA Inv</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.umlContract2java.generated.uOInv2jMAInv
+	 * @generated
+	 */
+	public Adapter createuOInv2jMAInvAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.umlContract2javaAxiom_r1 <em>uml Contract2java Axiom r1</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -429,6 +453,20 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createumlContract2javaAxiom_r1Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8 <em>uOP Pos Int2j MA Pos Assert r8</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8
+	 * @generated
+	 */
+	public Adapter createuOPPosInt2jMAPosAssert_r8Adapter() {
 		return null;
 	}
 
@@ -475,72 +513,16 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7 <em>uOP Pre Int2j MA Pre Assert r7</em>}'.
+	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.uOInv2jMAInv_r11 <em>uO Inv2j MA Inv r11</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7
+	 * @see de.silvawb.umlContract2java.generated.uOInv2jMAInv_r11
 	 * @generated
 	 */
-	public Adapter createuOPPreInt2jMAPreAssert_r7Adapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8 <em>uOP Pos Int2j MA Pos Assert r8</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see de.silvawb.umlContract2java.generated.uOPPosInt2jMAPosAssert_r8
-	 * @generated
-	 */
-	public Adapter createuOPPosInt2jMAPosAssert_r8Adapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.uOperation2jMethod_Helper_r3 <em>uOperation2j Method Helper r3</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see de.silvawb.umlContract2java.generated.uOperation2jMethod_Helper_r3
-	 * @generated
-	 */
-	public Adapter createuOperation2jMethod_Helper_r3Adapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10 <em>uC Inv Int2j CInv Assert r10</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10
-	 * @generated
-	 */
-	public Adapter createuCInvInt2jCInvAssert_r10Adapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2 <em>uClass2j Class Helper r2</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2
-	 * @generated
-	 */
-	public Adapter createuClass2jClass_Helper_r2Adapter() {
+	public Adapter createuOInv2jMAInv_r11Adapter() {
 		return null;
 	}
 
@@ -559,6 +541,48 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2 <em>uClass2j Class Helper r2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.umlContract2java.generated.uClass2jClass_Helper_r2
+	 * @generated
+	 */
+	public Adapter createuClass2jClass_Helper_r2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7 <em>uOP Pre Int2j MA Pre Assert r7</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.umlContract2java.generated.uOPPreInt2jMAPreAssert_r7
+	 * @generated
+	 */
+	public Adapter createuOPPreInt2jMAPreAssert_r7Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10 <em>uC Inv Int2j CInv Assert r10</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.umlContract2java.generated.uCInvInt2jCInvAssert_r10
+	 * @generated
+	 */
+	public Adapter createuCInvInt2jCInvAssert_r10Adapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.uProperty2jField_Helper_r11 <em>uProperty2j Field Helper r11</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -569,6 +593,20 @@ public class GeneratedAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createuProperty2jField_Helper_r11Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.silvawb.umlContract2java.generated.uOperation2jMethod_Helper_r3 <em>uOperation2j Method Helper r3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.silvawb.umlContract2java.generated.uOperation2jMethod_Helper_r3
+	 * @generated
+	 */
+	public Adapter createuOperation2jMethod_Helper_r3Adapter() {
 		return null;
 	}
 

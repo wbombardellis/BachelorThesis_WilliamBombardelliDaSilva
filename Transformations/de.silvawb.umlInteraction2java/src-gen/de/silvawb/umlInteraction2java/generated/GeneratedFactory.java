@@ -40,6 +40,33 @@ public interface GeneratedFactory extends EFactory {
 	umlInteraction2javaAxiom createumlInteraction2javaAxiom();
 
 	/**
+	 * Returns a new object of class '<em>uMessage Sequence2j Interaction Annotation 2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>uMessage Sequence2j Interaction Annotation 2</em>'.
+	 * @generated
+	 */
+	uMessageSequence2jInteractionAnnotation_2 createuMessageSequence2jInteractionAnnotation_2();
+
+	/**
+	 * Returns a new object of class '<em>uInterface2j Interface Helper</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>uInterface2j Interface Helper</em>'.
+	 * @generated
+	 */
+	uInterface2jInterface_Helper createuInterface2jInterface_Helper();
+
+	/**
+	 * Returns a new object of class '<em>uI Operation2j IMethod Helper</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>uI Operation2j IMethod Helper</em>'.
+	 * @generated
+	 */
+	uIOperation2jIMethod_Helper createuIOperation2jIMethod_Helper();
+
+	/**
 	 * Returns a new object of class '<em>uI Lifeline2j MAnnotation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -47,6 +74,15 @@ public interface GeneratedFactory extends EFactory {
 	 * @generated
 	 */
 	uILifeline2jMAnnotation createuILifeline2jMAnnotation();
+
+	/**
+	 * Returns a new object of class '<em>uOperation2j Method Helper</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>uOperation2j Method Helper</em>'.
+	 * @generated
+	 */
+	uOperation2jMethod_Helper createuOperation2jMethod_Helper();
 
 	/**
 	 * Returns a new object of class '<em>uMessage Sequence2j Interaction Annotation</em>'.
@@ -58,24 +94,6 @@ public interface GeneratedFactory extends EFactory {
 	uMessageSequence2jInteractionAnnotation createuMessageSequence2jInteractionAnnotation();
 
 	/**
-	 * Returns a new object of class '<em>uOperation2j Method Helper Rule</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>uOperation2j Method Helper Rule</em>'.
-	 * @generated
-	 */
-	uOperation2jMethod_HelperRule createuOperation2jMethod_HelperRule();
-
-	/**
-	 * Returns a new object of class '<em>uMessage Sequence2j Interaction Annotation 2</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>uMessage Sequence2j Interaction Annotation 2</em>'.
-	 * @generated
-	 */
-	uMessageSequence2jInteractionAnnotation_2 createuMessageSequence2jInteractionAnnotation_2();
-
-	/**
 	 * Returns a new object of class '<em>uml Interaction2java Axiom r1</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -85,13 +103,22 @@ public interface GeneratedFactory extends EFactory {
 	umlInteraction2javaAxiom_r1 createumlInteraction2javaAxiom_r1();
 
 	/**
-	 * Returns a new object of class '<em>uOperation2j Method Helper Rule r4</em>'.
+	 * Returns a new object of class '<em>uI Lifeline2j MAnnotation r2</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>uOperation2j Method Helper Rule r4</em>'.
+	 * @return a new object of class '<em>uI Lifeline2j MAnnotation r2</em>'.
 	 * @generated
 	 */
-	uOperation2jMethod_HelperRule_r4 createuOperation2jMethod_HelperRule_r4();
+	uILifeline2jMAnnotation_r2 createuILifeline2jMAnnotation_r2();
+
+	/**
+	 * Returns a new object of class '<em>uInterface2j Interface Helper r6</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>uInterface2j Interface Helper r6</em>'.
+	 * @generated
+	 */
+	uInterface2jInterface_Helper_r6 createuInterface2jInterface_Helper_r6();
 
 	/**
 	 * Returns a new object of class '<em>uMessage Sequence2j Interaction Annotation 2r5</em>'.
@@ -103,6 +130,24 @@ public interface GeneratedFactory extends EFactory {
 	uMessageSequence2jInteractionAnnotation_2_r5 createuMessageSequence2jInteractionAnnotation_2_r5();
 
 	/**
+	 * Returns a new object of class '<em>uOperation2j Method Helper r4</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>uOperation2j Method Helper r4</em>'.
+	 * @generated
+	 */
+	uOperation2jMethod_Helper_r4 createuOperation2jMethod_Helper_r4();
+
+	/**
+	 * Returns a new object of class '<em>uI Operation2j IMethod Helper r7</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>uI Operation2j IMethod Helper r7</em>'.
+	 * @generated
+	 */
+	uIOperation2jIMethod_Helper_r7 createuIOperation2jIMethod_Helper_r7();
+
+	/**
 	 * Returns a new object of class '<em>uMessage Sequence2j Interaction Annotation r3</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -110,15 +155,6 @@ public interface GeneratedFactory extends EFactory {
 	 * @generated
 	 */
 	uMessageSequence2jInteractionAnnotation_r3 createuMessageSequence2jInteractionAnnotation_r3();
-
-	/**
-	 * Returns a new object of class '<em>uI Lifeline2j MAnnotation r2</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>uI Lifeline2j MAnnotation r2</em>'.
-	 * @generated
-	 */
-	uILifeline2jMAnnotation_r2 createuILifeline2jMAnnotation_r2();
 
 	/**
 	 * Returns the package supported by this factory.

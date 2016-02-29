@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ASCII"?>
+<de.silvawb.java:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:de.silvawb.java="http://tu-berlin.de/silvawb/java">
+  <packages name="de.silvawb.utils">
+    <containedElements xsi:type="de.silvawb.java:Annotation" name="Inv"/>
+    <containedElements xsi:type="de.silvawb.java:Annotation" name="Pos"/>
+    <containedElements xsi:type="de.silvawb.java:Annotation" name="Pre"/>
+  </packages>
+  <packages>
+    <containedElements xsi:type="de.silvawb.java:Class">
+      <fields name="driverLicense">
+        <annotationInstances annotation="//@packages.0/@containedElements.0">
+          <parameters>
+            <values value="driverLicense >= 1"/>
+          </parameters>
+        </annotationInstances>
+      </fields>
+      <fields name="driverLicenseStatus"/>
+      <fields name="experience"/>
+      <methods name="checkRep">
+        <body xsi:type="de.silvawb.java:AssertStatement">
+          <assertion rightSide="1" leftSide="driverLicense"/>
+        </body>
+      </methods>
+      <methods name="driveCheckPreConstraint">
+        <arguments name="vehicle"/>
+        <body xsi:type="de.silvawb.java:AssertStatement">
+          <assertion rightSide="1" leftSide="driverLicenseStatus"/>
+        </body>
+      </methods>
+      <methods name="driveCheckPosConstraint">
+        <arguments name="vehicle"/>
+      </methods>
+      <methods name="drive">
+        <annotationInstances annotation="//@packages.0/@containedElements.1">
+          <parameters>
+            <values value="experience > experience@pre"/>
+          </parameters>
+        </annotationInstances>
+        <annotationInstances annotation="//@packages.0/@containedElements.2">
+          <parameters>
+            <values value="driverLicenseStatus >= 1"/>
+          </parameters>
+        </annotationInstances>
+        <annotationInstances annotation="//@packages.0/@containedElements.0">
+          <parameters>
+            <values value="vehicle &lt;> null"/>
+          </parameters>
+        </annotationInstances>
+        <arguments name="vehicle"/>
+      </methods>
+      <methods name="driveCheckInvConstraint">
+        <arguments name="vehicle"/>
+      </methods>
+    </containedElements>
+  </packages>
+</de.silvawb.java:System>

@@ -387,7 +387,7 @@ public interface uOPPre2jMAPre_r5 extends OperationalRule {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model required="true" exceptions="de.mdelab.mltgg.mote2.helpers.TransformationException" parametersMapType="de.mdelab.mltgg.mote2.helpers.MapEntry<KeyType, ValueType>"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='final EMap<String, Object> parametersCopy = new org.eclipse.emf.common.util.BasicEMap<String, Object>(parameters.map());\n\n((de.silvawb.umlContract2java.generated.umlContract2javaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getAddElementActivity(),\tparametersCopy);\n\nreturn (TGGNode) parametersCopy.get(\"uOP2jMP\");'"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='final EMap<String, Object> parametersCopy = new org.eclipse.emf.common.util.BasicEMap<String, Object>(parameters.map());\n\n((de.silvawb.umlContract2java.generated.umlContract2javaOperationalTGG) this.getOperationalRuleGroup().getOperationalTGG()).executeActivity(this.getAddElementActivity(),\tparametersCopy);\n\nreturn (TGGNode) parametersCopy.get(\"uOPr2jMAPr\");'"
 	 * @generated
 	 */
 	TGGNode addElement(EMap<String, Object> parameters) throws TransformationException;
@@ -396,7 +396,7 @@ public interface uOPPre2jMAPre_r5 extends OperationalRule {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model required="true" exceptions="de.mdelab.mltgg.mote2.helpers.TransformationException" correspondenceNodeRequired="true" ruleParametersMapType="de.mdelab.mltgg.mote2.helpers.MapEntry<KeyType, ValueType>"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='org.eclipse.emf.common.util.EMap<String, Object> params = new org.eclipse.emf.common.util.BasicEMap<String, Object>(ruleParameters.map());\n\t\t\nparams.put(\"uOP2jMP\", correspondenceNode);\n\t\t\n((de.silvawb.umlContract2java.generated.umlContract2javaOperationalTGG) this\n\t\t\t\t.getOperationalRuleGroup().getOperationalTGG())\n\t\t\t\t.executeActivity(this.getChangeAttributeActivity(), params);\n\t\t\nreturn (Boolean) params.get(\"__returnValue\");'"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='org.eclipse.emf.common.util.EMap<String, Object> params = new org.eclipse.emf.common.util.BasicEMap<String, Object>(ruleParameters.map());\n\t\t\nparams.put(\"uOPr2jMAPr\", correspondenceNode);\n\t\t\n((de.silvawb.umlContract2java.generated.umlContract2javaOperationalTGG) this\n\t\t\t\t.getOperationalRuleGroup().getOperationalTGG())\n\t\t\t\t.executeActivity(this.getChangeAttributeActivity(), params);\n\t\t\nreturn (Boolean) params.get(\"__returnValue\");'"
 	 * @generated
 	 */
 	boolean changeAttributeValues(TGGNode correspondenceNode, EMap<String, Object> ruleParameters)
@@ -406,7 +406,7 @@ public interface uOPPre2jMAPre_r5 extends OperationalRule {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model required="true" exceptions="de.mdelab.mltgg.mote2.helpers.TransformationException" correspondenceNodeRequired="true" oldPreviousCorrespondenceNodeRequired="true" newPreviousCorrespondenceNodeRequired="true"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='org.eclipse.emf.common.util.EMap<String, Object> params = new org.eclipse.emf.common.util.BasicEMap<String, Object>();\n\t\t\nparams.put(\"uOP2jMP\", correspondenceNode);\nparams.put(\"__oldPreviousCorrespondenceNode\", oldPreviousCorrespondenceNode);\nparams.put(\"__newPreviousCorrespondenceNode\", newPreviousCorrespondenceNode);\n\t\t\n((de.silvawb.umlContract2java.generated.umlContract2javaOperationalTGG) this\n\t\t\t\t.getOperationalRuleGroup().getOperationalTGG())\n\t\t\t\t.executeActivity(this.getMoveElementActivity(), params);\n\t\t\nreturn (Boolean) params.get(\"__returnValue\");'"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='org.eclipse.emf.common.util.EMap<String, Object> params = new org.eclipse.emf.common.util.BasicEMap<String, Object>();\n\t\t\nparams.put(\"uOPr2jMAPr\", correspondenceNode);\nparams.put(\"__oldPreviousCorrespondenceNode\", oldPreviousCorrespondenceNode);\nparams.put(\"__newPreviousCorrespondenceNode\", newPreviousCorrespondenceNode);\n\t\t\n((de.silvawb.umlContract2java.generated.umlContract2javaOperationalTGG) this\n\t\t\t\t.getOperationalRuleGroup().getOperationalTGG())\n\t\t\t\t.executeActivity(this.getMoveElementActivity(), params);\n\t\t\nreturn (Boolean) params.get(\"__returnValue\");'"
 	 * @generated
 	 */
 	boolean moveElement(TGGNode correspondenceNode, TGGNode oldPreviousCorrespondenceNode,

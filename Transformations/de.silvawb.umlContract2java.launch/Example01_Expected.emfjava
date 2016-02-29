@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ASCII"?>
+<de.silvawb.java:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:de.silvawb.java="http://tu-berlin.de/silvawb/java" name="Example01">
+  <packages name="main">
+    <containedElements xsi:type="de.silvawb.java:Class" visibility="" name="Driver">
+      <fields visibility="public" name="driverLincense">
+        <annotationInstances annotation="//@packages.1/@containedElements.0" name="Inv">
+          <parameters name="constraint">
+            <values value="driverLicense >= 1" name="driverLicense >= 1"/>
+          </parameters>
+        </annotationInstances>
+      </fields>
+      <fields visibility="public" name="driverLicenseStatus"/>
+      <fields visibility="private" name="experience" default="0"/>
+      <methods visibility="public" name="drive">
+        <annotationInstances annotation="//@packages.1/@containedElements.0" name="Inv">
+          <parameters name="constraint">
+            <values value="vehicle &lt;> null" name="vehicle &lt;> null"/>
+          </parameters>
+        </annotationInstances>
+        <annotationInstances annotation="//@packages.1/@containedElements.1" name="Pre">
+          <parameters name="constraint">
+            <values value="driverLicenseStatus >= 1" name="driverLicenseStatus >= 1"/>
+          </parameters>
+        </annotationInstances>
+        <annotationInstances annotation="//@packages.1/@containedElements.2" name="Pos">
+          <parameters name="constraint">
+            <values value="experience > experience@pre" name="experience > experience@pre"/>
+          </parameters>
+        </annotationInstances>
+        <arguments name="vehicle"/>
+      </methods>
+      <methods visibility="public" name="checkRep">
+        <body xsi:type="de.silvawb.java:AssertStatement" name="driverLicense >= 1">
+          <assertion rightSide="1" leftSide="driverLicense"/>
+        </body>
+      </methods>
+      <methods visibility="private" name="driveCheckInvConstraint">
+        <arguments name="vehicle"/>
+      </methods>
+      <methods name="driveCheckPreConstraint">
+        <arguments name="vehicle"/>
+        <body xsi:type="de.silvawb.java:AssertStatement" name="driverLicenseStatus >= 1">
+          <assertion rightSide="1" leftSide="driverLicenseStatus"/>
+        </body>
+      </methods>
+      <methods name="driveCheckPosConstraint">
+        <arguments name="vehicle"/>
+      </methods>
+      <imports imported="//@packages.1/@containedElements.0" name="de.silvawb.utils.Inv"/>
+      <imports imported="//@packages.1/@containedElements.1" name="de.silvawb.utils.Pre"/>
+      <imports imported="//@packages.1/@containedElements.2" name="de.silvawb.utils.Pos"/>
+      <imports name="de.silvawb.utils.Interaction"/>
+    </containedElements>
+  </packages>
+  <packages name="de.silvawb.utils">
+    <containedElements xsi:type="de.silvawb.java:Annotation" visibility="public" name="Inv">
+      <fields visibility="" name="constraint"/>
+    </containedElements>
+    <containedElements xsi:type="de.silvawb.java:Annotation" visibility="public" name="Pre">
+      <fields visibility="" name="constraint"/>
+    </containedElements>
+    <containedElements xsi:type="de.silvawb.java:Annotation" visibility="public" name="Pos">
+      <fields visibility="" name="constraint"/>
+    </containedElements>
+  </packages>
+</de.silvawb.java:System>

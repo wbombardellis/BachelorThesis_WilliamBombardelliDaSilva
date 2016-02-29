@@ -761,7 +761,7 @@ public class uOPPre2jMAPre_r5Impl extends OperationalRuleImpl implements uOPPre2
 		((de.silvawb.umlContract2java.generated.umlContract2javaOperationalTGG) this.getOperationalRuleGroup()
 				.getOperationalTGG()).executeActivity(this.getAddElementActivity(), parametersCopy);
 
-		return (TGGNode) parametersCopy.get("uOP2jMP");
+		return (TGGNode) parametersCopy.get("uOPr2jMAPr");
 	}
 
 	/**
@@ -774,7 +774,7 @@ public class uOPPre2jMAPre_r5Impl extends OperationalRuleImpl implements uOPPre2
 		org.eclipse.emf.common.util.EMap<String, Object> params = new org.eclipse.emf.common.util.BasicEMap<String, Object>(
 				ruleParameters.map());
 
-		params.put("uOP2jMP", correspondenceNode);
+		params.put("uOPr2jMAPr", correspondenceNode);
 
 		((de.silvawb.umlContract2java.generated.umlContract2javaOperationalTGG) this.getOperationalRuleGroup()
 				.getOperationalTGG()).executeActivity(this.getChangeAttributeActivity(), params);
@@ -791,7 +791,7 @@ public class uOPPre2jMAPre_r5Impl extends OperationalRuleImpl implements uOPPre2
 			final TGGNode newPreviousCorrespondenceNode) throws TransformationException {
 		org.eclipse.emf.common.util.EMap<String, Object> params = new org.eclipse.emf.common.util.BasicEMap<String, Object>();
 
-		params.put("uOP2jMP", correspondenceNode);
+		params.put("uOPr2jMAPr", correspondenceNode);
 		params.put("__oldPreviousCorrespondenceNode", oldPreviousCorrespondenceNode);
 		params.put("__newPreviousCorrespondenceNode", newPreviousCorrespondenceNode);
 

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ASCII"?>
+<de.silvawb.java:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:de.silvawb.java="http://tu-berlin.de/silvawb/java" name="Example01">
+  <packages name="main">
+    <containedElements xsi:type="de.silvawb.java:Class" visibility="" name="Driver">
+      <methods visibility="public" name="drive">
+        <annotationInstances annotation="//@packages.1/@containedElements.0" name="Interaction">
+          <parameters name="interactionSequence">
+            <values value="start" name="start"/>
+            <values value="drive" id="1" name="drive"/>
+            <values value="stop" id="2" name="stop"/>
+          </parameters>
+        </annotationInstances>
+        <arguments name="vehicle" type="//@packages.0/@containedElements.1"/>
+      </methods>
+      <imports imported="//@packages.1/@containedElements.0" name="de.silvawb.utils.Interaction"/>
+    </containedElements>
+    <containedElements xsi:type="de.silvawb.java:Interface" visibility="" name="Drivable">
+      <methods name="start"/>
+      <methods name="drive"/>
+      <methods name="stop"/>
+    </containedElements>
+  </packages>
+  <packages name="de.silvawb.utils">
+    <containedElements xsi:type="de.silvawb.java:Annotation" visibility="public" name="Interaction">
+      <fields visibility="" name="interactionSequence"/>
+    </containedElements>
+  </packages>
+</de.silvawb.java:System>

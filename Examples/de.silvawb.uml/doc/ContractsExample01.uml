@@ -1,55 +1,156 @@
 <?xml version="1.0" encoding="ASCII"?>
-<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" name="Example01">
-  <packagedElement xsi:type="uml:Package" name="main">
-    <packagedElement xsi:type="uml:Class" name="Person">
-      <ownedAttribute name="name" type="//java/lang/String"/>
+<uml:Model xmi:version="20131001"
+    xmlns:xmi="http://www.omg.org/spec/XMI/20131001"
+    xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML"
+    xmi:id="_YUP6sNxpEeWxVdeiZbeUaA"
+    name="Example01">
+  <packagedElement
+      xmi:type="uml:Package"
+      xmi:id="_YUQhwNxpEeWxVdeiZbeUaA"
+      name="main">
+    <packagedElement
+        xmi:type="uml:Class"
+        xmi:id="_YUQhwdxpEeWxVdeiZbeUaA"
+        name="Person">
+      <ownedAttribute
+          xmi:id="_YUQhwtxpEeWxVdeiZbeUaA"
+          name="name"
+          type="_YURv59xpEeWxVdeiZbeUaA"/>
     </packagedElement>
-    <packagedElement xsi:type="uml:Class" name="Driver">
-      <ownedRule name="" constrainedElement="//main/Driver/driverLicense">
-        <specification xsi:type="uml:Interval" name="driverLicense >= 1" min="//java/lang/Integer/@ownedRule.0/@specification"/>
+    <packagedElement
+        xmi:type="uml:Class"
+        xmi:id="_YUQhw9xpEeWxVdeiZbeUaA"
+        name="Driver">
+      <ownedRule
+          xmi:id="_YUQhxNxpEeWxVdeiZbeUaA"
+          name="driverLicense >= 1"
+          constrainedElement="_YUQhx9xpEeWxVdeiZbeUaA">
+        <specification
+            xmi:type="uml:Interval"
+            xmi:id="_YUQhxdxpEeWxVdeiZbeUaA"
+            name=""
+            min="_YURv6txpEeWxVdeiZbeUaA"/>
       </ownedRule>
-      <generalization general="//main/Person"/>
-      <ownedAttribute name="driverLicense" type="//java/lang/Integer"/>
-      <ownedAttribute name="driverLicenseStatus" type="//java/lang/Integer"/>
-      <ownedAttribute name="experience" visibility="private" type="//java/lang/Integer">
-        <defaultValue xsi:type="uml:LiteralString" value="0"/>
+      <generalization
+          xmi:id="_YUQhxtxpEeWxVdeiZbeUaA"
+          general="_YUQhwdxpEeWxVdeiZbeUaA"/>
+      <ownedAttribute
+          xmi:id="_YUQhx9xpEeWxVdeiZbeUaA"
+          name="driverLicense"
+          type="_YURv6NxpEeWxVdeiZbeUaA"/>
+      <ownedAttribute
+          xmi:id="_YUQhyNxpEeWxVdeiZbeUaA"
+          name="driverLicenseStatus"
+          type="_YURv6NxpEeWxVdeiZbeUaA"/>
+      <ownedAttribute
+          xmi:id="_YURI0NxpEeWxVdeiZbeUaA"
+          name="experience"
+          visibility="private"
+          type="_YURv6NxpEeWxVdeiZbeUaA">
+        <defaultValue
+            xmi:type="uml:LiteralString"
+            xmi:id="_YURI0dxpEeWxVdeiZbeUaA"
+            value="0"/>
       </ownedAttribute>
-      <ownedOperation name="drive" bodyCondition="//main/Driver/drive/vehicle%20%3C%3E%20null" precondition="//main/Driver/drive/driverLicenseStatus%20%3E=%201">
-        <ownedRule name="driverLicenseStatus >= 1" constrainedElement="//main/Driver/driverLicenseStatus">
-          <specification xsi:type="uml:Interval" name="" min="//java/lang/Integer/@ownedRule.0/@specification"/>
+      <ownedOperation
+          xmi:id="_YURI0txpEeWxVdeiZbeUaA"
+          name="drive"
+          bodyCondition="_YURI1dxpEeWxVdeiZbeUaA"
+          postcondition="_YURI19xpEeWxVdeiZbeUaA"
+          precondition="_YURI09xpEeWxVdeiZbeUaA">
+        <ownedRule
+            xmi:id="_YURI09xpEeWxVdeiZbeUaA"
+            name="driverLicenseStatus >= 1"
+            constrainedElement="_YUQhyNxpEeWxVdeiZbeUaA">
+          <specification
+              xmi:type="uml:Interval"
+              xmi:id="_YURI1NxpEeWxVdeiZbeUaA"
+              name=""
+              min="_YURv6txpEeWxVdeiZbeUaA"/>
         </ownedRule>
-        <ownedRule name="vehicle &lt;> null">
-          <specification xsi:type="uml:OpaqueExpression" name="vehicle &lt;> null">
+        <ownedRule
+            xmi:id="_YURI1dxpEeWxVdeiZbeUaA"
+            name="vehicle &lt;> null">
+          <specification
+              xmi:type="uml:OpaqueExpression"
+              xmi:id="_YURI1txpEeWxVdeiZbeUaA"
+              name="vehicle &lt;> null">
+            <language>OCL</language>
             <body>vehicle &lt;> null</body>
-            <language>OCL</language>
           </specification>
         </ownedRule>
-        <ownedRule name="experience > experience@pre">
-          <specification xsi:type="uml:OpaqueExpression" name="experience > experience@pre">
+        <ownedRule
+            xmi:id="_YURI19xpEeWxVdeiZbeUaA"
+            name="experience > experience@pre">
+          <specification
+              xmi:type="uml:OpaqueExpression"
+              xmi:id="_YURI2NxpEeWxVdeiZbeUaA"
+              name="experience > experience@pre">
+            <language>OCL</language>
             <body>experience > experience@pre</body>
-            <language>OCL</language>
           </specification>
         </ownedRule>
-        <ownedParameter name="vehicle" type="//main/Drivable"/>
+        <ownedParameter
+            xmi:id="_YURI2dxpEeWxVdeiZbeUaA"
+            name="vehicle"
+            type="_YURI2txpEeWxVdeiZbeUaA"/>
       </ownedOperation>
     </packagedElement>
-    <packagedElement xsi:type="uml:Interface" name="Drivable">
-      <ownedOperation name="start"/>
-      <ownedOperation name="drive"/>
-      <ownedOperation name="stop"/>
+    <packagedElement
+        xmi:type="uml:Interface"
+        xmi:id="_YURI2txpEeWxVdeiZbeUaA"
+        name="Drivable">
+      <ownedOperation
+          xmi:id="_YURI29xpEeWxVdeiZbeUaA"
+          name="start"/>
+      <ownedOperation
+          xmi:id="_YURI3NxpEeWxVdeiZbeUaA"
+          name="drive"/>
+      <ownedOperation
+          xmi:id="_YURv4NxpEeWxVdeiZbeUaA"
+          name="stop"/>
     </packagedElement>
-    <packagedElement xsi:type="uml:Class" name="Car">
-      <ownedAttribute name="license" type="//java/lang/Integer"/>
-      <interfaceRealization name="" client="//main/Car" supplier="//main/Drivable" contract="//main/Drivable"/>
-      <ownedOperation name="openDoor"/>
+    <packagedElement
+        xmi:type="uml:Class"
+        xmi:id="_YURv4dxpEeWxVdeiZbeUaA"
+        name="Car">
+      <ownedAttribute
+          xmi:id="_YURv4txpEeWxVdeiZbeUaA"
+          name="license"
+          type="_YURv6NxpEeWxVdeiZbeUaA"/>
+      <interfaceRealization
+          xmi:id="_YURv49xpEeWxVdeiZbeUaA"
+          name=""
+          client="_YURv4dxpEeWxVdeiZbeUaA"
+          supplier="_YURI2txpEeWxVdeiZbeUaA"
+          contract="_YURI2txpEeWxVdeiZbeUaA"/>
+      <ownedOperation
+          xmi:id="_YURv5NxpEeWxVdeiZbeUaA"
+          name="openDoor"/>
     </packagedElement>
   </packagedElement>
-  <packagedElement xsi:type="uml:Package" name="java">
-    <packagedElement xsi:type="uml:Package" name="lang">
-      <packagedElement xsi:type="uml:Class" name="String"/>
-      <packagedElement xsi:type="uml:Class" name="Integer">
-        <ownedRule>
-          <specification xsi:type="uml:LiteralInteger" value="1"/>
+  <packagedElement
+      xmi:type="uml:Package"
+      xmi:id="_YURv5dxpEeWxVdeiZbeUaA"
+      name="java">
+    <packagedElement
+        xmi:type="uml:Package"
+        xmi:id="_YURv5txpEeWxVdeiZbeUaA"
+        name="lang">
+      <packagedElement
+          xmi:type="uml:Class"
+          xmi:id="_YURv59xpEeWxVdeiZbeUaA"
+          name="String"/>
+      <packagedElement
+          xmi:type="uml:Class"
+          xmi:id="_YURv6NxpEeWxVdeiZbeUaA"
+          name="Integer">
+        <ownedRule
+            xmi:id="_YURv6dxpEeWxVdeiZbeUaA">
+          <specification
+              xmi:type="uml:LiteralInteger"
+              xmi:id="_YURv6txpEeWxVdeiZbeUaA"
+              value="1"/>
         </ownedRule>
       </packagedElement>
     </packagedElement>
