@@ -201,7 +201,16 @@ Bachelorstudiengang Informatik \\
 	\end{figure}
 \end{frame}
 
-%TODO: solltest du kurz auf die Einschränkungen der aktuelle State oft he Art eingehen, um für den Zuhörer zu motivieren warum dein Ansatz notwendig ist.
+\begin{frame}
+	\frametitle{The problems of the current state-of-the-art}
+	\begin{itemize}
+		\item Definitions of the \textbf{metamodels} in literature
+		\pause
+		\item Definitions of the \textbf{relations} in literature
+		\pause
+		\item Approach able to treat synchronization of \textbf{complex technological spaces} with a large number of \textbf{tangled} metamodels.
+	\end{itemize}
+\end{frame}
 
 %-------------------
 % Subsection
@@ -263,7 +272,7 @@ Bachelorstudiengang Informatik \\
 	\frametitle{UMLContract}
 	\begin{itemize}
 		\item No concrete syntax defined
-		\item Contraints (pre or postcondition or invariant) related to Properties or Operations
+		\item Constraints (pre or postcondition or invariant) related to Properties or Operations
 		\begin{itemize}
 			\item Opaque Expression (textual definition)
 			\item Interval
@@ -289,18 +298,20 @@ Bachelorstudiengang Informatik \\
 \end{frame}
 
 \begin{frame}
-	\frametitle{Triple Graphs}
+	\frametitle{Triple Graph Grammar}
 	\nocite{hermann2011correctness}
 	\begin{itemize}
 		\item Relations coded by triple graphs
-	\end{itemize}
-	\begin{figure}
-		\includegraphics[width=.7\textwidth]{tripleGraphs}
-	\end{figure}
-	\pause
-	\begin{itemize}
-		\item Each edge of the network has a triple graphs grammar (TGG).
-		\item A TGG is basically a grammar constructed upon triple graphs.
+		\begin{figure}
+			\includegraphics[width=.7\textwidth]{tripleGraphs}
+		\end{figure}
+		\pause
+		\item Triple graphs are organized in triple rules $L \rightarrow R$.
+		\begin{figure}
+			\includegraphics[width=.7\textwidth]{tripleRules}
+		\end{figure}
+		\pause
+		\item These triple rules form a triple graph grammar (TGG) for each edge.
 	\end{itemize}
 \end{frame}
 
@@ -391,21 +402,21 @@ Bachelorstudiengang Informatik \\
 	\begin{enumerate}
 		\item Metamodel definitions of artifacts from the Java Technological Space
 		\begin{itemize}
-			\item Contributive for the use with TGG
-			\item Simplifications and incompleteness
+			\item Metamodels can be used in future works.
+			\item Metamodels are not complete.
 		\end{itemize}
 		\pause
 		\item Creation of a network of metamodels including the relations' formalizations
 		\begin{itemize}
 			\item Exploration of TGGs for defining the relations
 			\item Evaluation of the definitions through forward transformation
-			\item Simplifications
+			\item Relations are not complete.
 		\end{itemize}
 		\pause
 		\item The proposal of an algorithm for network synchronization
 		\begin{itemize}
 			\item Novel view of the model synchronization problem
-			\item Assumptions
+			\item Algorithm has very limiting assumptions.
 		\end{itemize}
 	\end{enumerate}
 \end{frame}
@@ -504,12 +515,27 @@ Bachelorstudiengang Informatik \\
 
 %%%%%%%%%%%%%%%%%%%%%% The Relations %%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[t]
+	\frametitle{One triple rule for UMLClassDiagram2java}
+	\begin{figure}
+		\includegraphics[width=\textwidth]{uCAttribute2jCField}
+	\end{figure}
+\end{frame}
+
+\begin{frame}[t]
 	\frametitle{Result of the implementation for UMLClassDiagram2java}
 	\begin{itemize}
 		\item Forward transformation was applied.
 	\end{itemize}
 	\begin{figure}
 		\includegraphics[width=\textwidth]{umlClassDiagram2java_Example01}
+	\end{figure}
+\end{frame}
+
+\begin{frame}[t]
+	\frametitle{One triple rule for UMLSequenceDiagram2java}
+
+	\begin{figure}
+		\includegraphics[width=\textwidth]{uMessageSequence2jInteractionAnnotation}
 	\end{figure}
 \end{frame}
 
@@ -525,6 +551,13 @@ Bachelorstudiengang Informatik \\
 \end{frame}
 
 \begin{frame}[t]
+	\frametitle{One triple rule for UMLContract2java}
+	\begin{figure}
+		\includegraphics[width=.9\textwidth]{uOPPreInt2jMAPreAssert}
+	\end{figure}
+\end{frame}
+
+\begin{frame}[t]
 	\frametitle{Result of the Implementation for UMLContract2java}	
 	\begin{itemize}
 		\item Forward transformation was applied.
@@ -533,6 +566,9 @@ Bachelorstudiengang Informatik \\
 		\includegraphics[width=\textwidth]{umlContracts2java_Example01}
 	\end{figure}
 \end{frame}
+
+
+
 %----------------------------------------------------------------------------------------
 
 \end{document}
