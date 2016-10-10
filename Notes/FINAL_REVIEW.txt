@@ -1,0 +1,203 @@
+Hier mein Feedback:
+
+ 
+
+Presentation
+
+-        Presentation style was good. Good tempo, good volume, good expression.
+
+o   smaller thing: you often said "Äh".
+
+-        From questions it became clear that the objective was not so easy to understand for non-expert listeners
+
+o   There were some mix-ups with models and meta-models during the presentation
+
+-        You sometimes called the concrete syntax examples on slides 20, 21, 23 model, sometimes you called them meta-models
+
+o   The examples are models. You did not show your EMF meta models in this part of the presentation
+
+-        The state of the art could have been more detailed on approaches for synchronizing multiple models
+
+o   This was also one of the follow up questions
+
+ 
+
+Thesis
+
+-        Structure and content was good. I had some issues, though:
+
+-        Bigger issues:
+
+o   Page 49 /50 Discussion of Assumptions
+
+§  For my tastes the discussion focuses too much on technical details and assumes wrongly, that the algorithm can be "naturally continued and expanded".
+
+§  To enable the algorithm you made some very restricting assumptions, which limit the applicability of the algorithm considerably:
+
+·        Assumption 1 excludes synchronization approaches that can already deal with concurrent changes. Such changes can happen and should be handleable. Assuming a version control system just moves important tasks, like conflict detection and resolution, that should be integrated in the synchronization to an external and anonymous entity. I.e., the synchronized information should influence the way in which conflicts are resolved.
+
+·        Assumption 2 excludes approaches in which the input model is further updated. This can happen if the original change is actually not consistent. In this case synchronization approaches can make the source model consistent along with the target model.
+
+·        Assumption 3 is reasonable. An infinite set of models or relations is likely cause problems in storage / time that are unmanageable even without considering synchronization.
+
+·        Assumption 4 is correctly discussed by you.
+
+·        Assumption 5 is reasonable at least in the scope of most synchronization approaches.
+
+§  Dealing with these assumptions, especially assumption 1 to 3 is a severe challenge and I don't see any trivial way of handling all of them with your algorithm.
+
+§  For me it is one important outcome of your thesis that you had to make these assumptions in the first place. However, you should have taken my hint of discussion the assumptions for more than just assumption 4.
+
+§  I'm not saying that the discussed points are irrelevant, I am just missing a specific discussion of the assumptions since you were able to define them so clearly in the previous section.
+
+o   Page 36 Missing elements in Sequence Diagram to Java Relation
+
+§  Both the Java and Sequence diagram meta model contain elements that represent classes and operations. Why are these not related in the type graph? It seems like the requirement of the referred classes to match is pretty important.
+
+§  In your example in Figure 4.15 you use relations that relate packages, classes and methods.
+
+·        E.g., relation uM2jM relates packages, operations, classes, methods. If you exclude all elements that cannot be related because of your limited meta model this element could only refer to one element: the Interaction
+
+§  Similarly, in the UML Contract section you relate elements that are not related in your triple type graph
+
+o   Problems in Algorithm and Proofs (-3)
+
+§  Page 47 Proof for Theorem 1 misses one assumption
+
+·         The proof for Theorem 1 needs to refer to Assumption 5. In an undirected graph there is always the trivial cycle of taking the same edge twice. You exclude this with your assumption 5 stating that if both are synchronized already then an no changes will result and thus the if-condition on line 5 will exclude further recursion.
+
+·         without the mention of this assumption your proof is strictly speaking not correct.
+
+§   Page 47 No proof for Theorem 2
+
+·         the paper gives no proof for Theorem 2. Furthermore, I would have expected the maximal effort for sync to appear somewhere in the effort estimation. I don't know what the assumtion that sync is elementary means, but it is very likely not linear.
+
+o                 - Page 47 Proof for Theorem 3
+
+·         You seem to have an implicit case distinction (E1 = E0). In text you never explicitly state when the second case starts.
+
+·         You cannot assume sync to be deterministic in general. There are plenty of approaches (also on TGGs) that are not deterministic or assume very harsh criteria to be so. If you want to assume that sync is deterministic (and you need to in order to show determinism for your algorithm) then you should have this as an additional assumption.
+
+-        smaller issues and inconsistencies
+
+o   Language and style (Formulierung)
+
+§  semi-frequent spelling and grammar mistakes
+
+§  inconsistencies in reference style (e.g., handling of page numbers)
+
+o   Page 9 inconsistent objective description
+
+§   explore (...) by (...) establishing synchronization techniques does not match
+
+·         explore means you do some conceptual work, maybe develop some partial approaches and test their limits
+
+·         establish synchronization techniques would mean to actually solve the problem
+
+§   I evaluated the thesis based on the first objective since this is what we talked about and what fits best to what you did by developing a synchronization mechanism of very limited applicability and then discussing its limits and generalization.
+
+§   The second objective is not feasible in a bachelor thesis (or PhD thesis for that matter) due to it's scope and difering opinions on what a correct synchronization mechanism would be.
+
+o   Minor Inconsistencies
+
+§   Introduction / abstract - gap between models and synchronization
+
+·         There is a gap between having multiple models and needing to synchronize them. This missing information is that they need to overlap in the aspects they represent. If they don't they don't need to be synchronized
+
+·        you called this overlap "relation" in Section 1.1.
+
+·        this is not stated in introduction / abstract, which could be perceived as a gap in argument by a reader.
+
+§   Page 11 imprecise hypothesis
+
+·         In your hypothesis you state that "relations can be transformed". It doesn't really make sense to transform (i.e., change) relations in the scope of your thesis.
+
+·         I think you probably meant that models can be synchronized along these relations.
+
+§  Page 12 Wrong definition of System
+
+·        The quote by Favre you used as definition was never meant as a definition. It was meant as a describing statement.
+
+·         A system is Favres notion of everything. The statement “primary element of discourse” relates to the fact that for him everything is a system
+
+·         Similarly you could say that objects are the primary element of discourse in object oriented programming. That's no useful definition of object, though.
+
+§   Page 18 incorrect description of Figure 2.5
+
+·         The figure caption states that the figure illustrates model relation and synchronization. Yet the figure only handles triple graphs and transformation.
+
+§   Page 19 - 20 Unclear relation of sota section
+
+·         the relevance of sota section "A research roadmap ... is proposed" is not clear to me as a reader
+
+·         you seem to enumerate some very general work and don't really described what its content is and how it relates to your work
+
+·         e.g., as a reader I don't gain any benefits from knowing that France and Rumpe give some overview of model synchronization or that Mathston has an interesting point of view.
+
+·         it may be that these publications are relevant. But you do not give the reader any insights why or any summary of the points he should take away for the thesis.
+
+§   Page 21 - Motivation of your selection of models
+
+·        you could have better motivated your selection of models.
+
+·         a potential reason you could have given is that you intentionally selected models that represent different aspects of the java program
+
+·         another reason is probably in the existence of meta-models for some of these models which makes your work easier.
+
+§   Page 32 Missing details on Mote earlier
+
+·         Since Mote is one of your main tools you should give the reader a short paragraph as introduction to Mote and how it works before you use it the first time.
+
+·         Neither the mention at the beginning of Section 4.3 nor in sota contain enough information
+
+·         the mention in section 5 is better but too late.
+
+§   Page 29/30 - Argument about restricted Java Meta Model
+
+·         The arguments on why you need a less complex Java meta model and why you only modeled Assert statements should involve the goal of the thesis more explicit.
+
+·         The correct argument to make could be that the meta-model should contain the elements necessary to express your example relations and as few as possible other elements.
+
+·         Arguments like "excess of simplicity" or "unnecessary complexity" should be made with that goal in mind.
+
+§   Page 14 EMF Ecore as language and Example (-1)
+
+·         There seems to be some confusion going on with regards to Modeling language and Meta model regarding EMF Ecore.
+
+·         EMF Ecore is actually a Meta-Meta-Model. The language would be all meta-models expressible with this model.
+
+·         Also EMF Ecore is only loosely connected to UML in that it is based, but not the same as EMOF.
+
+·         In your example, which is based on UML, EMF Ecore is not supposed to appear as it is not required to defined UML.
+
+·         there is also some mix-up going on in the naming. This is how I would have written down the example:
+
+o    the Meta meta model is MOF (which is correct in your figure)
+
+o    Modeling Language 2 is the set of all Meta-Models definable with MOF. If any system in the figure is called UML it should be this system as UML is basically providing a set of meta-models (for the different diagram types.)
+
+o    The meta-model would then be the UML class diagram meta-model. UML meta-model sounds strange, especially since one might consider MOF to be the UML meta-model.
+
+o    Now the UML class diagram meta-model defines the set of all syntactically correct class diagrams (which is the modeling language 1).
+
+o    Model and SUS are (one specific) class diagram and the Java program. These two are correct in your figure.
+
+§   Page 22 - Example of Sequence Diagrams
+
+·         This example still is very hard to understand to me.
+
+·         All entities are on the same layer and the relations are not derivable from the figure. So it is very hard to grasp how these elements are connected. You basically have to guess / derive from the model structure where the arrows should go.
+
+·         This is amplified by the fact that you only describe the ordering in text. The relations on top are the hard part for me and if the tool is not able to show them in a comprehensible way then the missing information should be supplemented by the text.
+
+ 
+
+Unter Beachtung dieser Kritik ist die Note eine 2.3
+
+Ich habe das Gutachten bereits rausgeschickt. Es geht jetzt seine üblichen Wege durchs DAI-Labor und dann durch die Universität.
+
+ 
+
+Liebe Grüße,
+
+Frank
